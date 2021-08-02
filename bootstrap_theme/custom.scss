@@ -1,0 +1,124 @@
+/* Bootstrap theme customized with Pinegrow Web Editor */
+/* Vars go before the @import */
+/* Click on the Uncomment icon in the Style panel to uncomment and customize the variables: */
+// $primary: #007bff;
+// $secondary: #6c757d;
+// $success: #28a745;
+// $info: #17a2b8;
+// $warning: #ffc107;
+// $danger: #dc3545;
+// $light: #f8f9fa;
+// $dark: #343a40;
+// $body-bg: #ffffff;
+// $body-color: #212529;
+/* Import web fonts - Must come before any CSS rules. Refresh the Page view after making changes to import statements. */
+// @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Playfair+Display:wght@400;700;900&display=swap');
+// $font-family-sans-serif: 'Lato', sans-serif;
+// $headings-font-family: 'Playfair Display', serif;
+$spacer: 1.5rem;
+$primary: #433a6c;
+$primary-darker: #433a6c;
+$secondary: #3fa9f5;
+$info: #b53027;
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+$font-family-sans-serif: 'Raleway', sans-serif;
+
+@import "bootstrap/bootstrap";
+
+/* Custom CSS rules come here */
+// start pd-topBar-1
+.pd-topBar-1 {
+    border-bottom: 1px solid $secondary;
+
+    a {
+        display: inline-block;
+        font-size: 0.8rem;
+        text-decoration: none;
+        transition: transform 0.4s;
+    }
+
+    a:hover {
+        transform: scale(1.05);
+    }
+
+    .pd-topBar-1-social-icon {
+        transition: transform 0.4s;
+
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .pd-topBar-1 {
+        display: none;
+    }
+}
+
+// end pd-topBar-1
+// start pd-topBar-2
+.pd-topBar-2 {
+    a {
+        color: $white;
+        display: inline-block;
+        font-size: 0.8rem;
+        text-decoration: none;
+        transition: transform 0.4s;
+    }
+
+    a:hover {
+        transform: scale(1.05);
+    }
+
+    .pd-topBar-1-social-icon {
+        transition: transform 0.4s;
+
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .pd-topBar-2 {
+        display: none;
+    }
+}
+
+// end pd-topBar-2
+// start pd-topBar-3
+.pd-topBar-3 {
+    // use https://cssgradient.io/
+    background: linear-gradient(0deg, rgba(67,58,108,1) 0%, rgba(67,58,108,1) 84%, rgba(67,58,108,0.8995973389355743) 100%);
+
+    a {
+        color: $white;
+        display: inline-block;
+        font-size: 0.8rem;
+        text-decoration: none;
+        transition: transform 0.4s;
+    }
+
+    a:hover {
+        transform: scale(1.05);
+    }
+
+    .pd-topBar-1-social-icon {
+        transition: transform 0.4s;
+
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .pd-topBar-3 {
+        display: none;
+    }
+}
+
+// end pd-topBar-3
