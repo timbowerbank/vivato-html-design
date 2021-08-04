@@ -8771,3 +8771,124 @@ progress {
 @media (max-width: 767px) {
   .pd-topBar-3 {
     display: none; } }
+
+.pd-topBar-4 {
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6; }
+  .pd-topBar-4 a {
+    display: inline-block;
+    font-size: 0.7rem;
+    text-decoration: none;
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    -o-transition: transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s; }
+  .pd-topBar-4 .pd-topBar-4-social-icon {
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    -o-transition: transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s; }
+    .pd-topBar-4 .pd-topBar-4-social-icon:hover {
+      -webkit-transform: scale(1.3);
+          -ms-transform: scale(1.3);
+              transform: scale(1.3); }
+  .pd-topBar-4 a:hover:not(.pd-topBar-4-btn):not(.pd-topBar-4-social-icon) {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05); }
+  .pd-topBar-4 .pd-topBar-4-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    background-color: #b53027;
+    -webkit-transition: background-color 0.4;
+    -o-transition: background-color 0.4;
+    transition: background-color 0.4;
+    cursor: pointer; }
+    .pd-topBar-4 .pd-topBar-4-btn span {
+      -webkit-transition: -webkit-transform 0.4s;
+      transition: -webkit-transform 0.4s;
+      -o-transition: transform 0.4s;
+      transition: transform 0.4s;
+      transition: transform 0.4s, -webkit-transform 0.4s; }
+    .pd-topBar-4 .pd-topBar-4-btn:hover {
+      background-color: #8b251e; }
+      .pd-topBar-4 .pd-topBar-4-btn:hover span {
+        -webkit-transform: scale(1.06);
+            -ms-transform: scale(1.06);
+                transform: scale(1.06); }
+
+@media (max-width: 767px) {
+  .pd-topBar-4 {
+    display: none; } }
+  .pd-topBar-5 a {
+    display: inline-block;
+    font-size: 0.7rem;
+    text-decoration: none;
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    -o-transition: transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s;
+    color: #fff; }
+  .pd-topBar-5 .pd-topBar-5-social-icon {
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    -o-transition: transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s; }
+    .pd-topBar-5 .pd-topBar-5-social-icon:hover {
+      -webkit-transform: scale(1.3);
+          -ms-transform: scale(1.3);
+              transform: scale(1.3); }
+  .pd-topBar-5 a:hover:not(.pd-topBar-5-btn):not(.pd-topBar-5-social-icon) {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05); }
+  .pd-topBar-5 .pd-topBar-5-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    background-color: #b53027;
+    -webkit-transition: background-color 0.4;
+    -o-transition: background-color 0.4;
+    transition: background-color 0.4;
+    cursor: pointer; }
+    .pd-topBar-5 .pd-topBar-5-btn span {
+      -webkit-transition: -webkit-transform 0.4s;
+      transition: -webkit-transform 0.4s;
+      -o-transition: transform 0.4s;
+      transition: transform 0.4s;
+      transition: transform 0.4s, -webkit-transform 0.4s; }
+    .pd-topBar-5 .pd-topBar-5-btn:hover {
+      background-color: #8b251e; }
+      .pd-topBar-5 .pd-topBar-5-btn:hover span {
+        -webkit-transform: scale(1.06);
+            -ms-transform: scale(1.06);
+                transform: scale(1.06); }
+
+@media (max-width: 767px) {
+  .pd-topBar-5 {
+    display: none; } }

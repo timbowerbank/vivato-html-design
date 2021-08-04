@@ -122,3 +122,113 @@ $font-family-sans-serif: 'Raleway', sans-serif;
 }
 
 // end pd-topBar-3
+// start pd-topBar-4
+.pd-topBar-4 {
+    border-top: 1px solid $gray-300;
+    border-bottom: 1px solid $gray-300;
+
+    a {
+        display: inline-block;
+        font-size: 0.7rem;
+        text-decoration: none;
+        transition: transform 0.4s;
+    }
+
+    .pd-topBar-4-social-icon {
+        transition: transform 0.4s;
+
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
+
+    a:hover:not(.pd-topBar-4-btn):not(.pd-topBar-4-social-icon) {
+        transform: scale(1.05);
+    }
+
+    .pd-topBar-4-btn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-transform: uppercase;
+        color: $white;
+        font-weight: 700;
+        background-color: $info;
+        transition: background-color 0.4;
+        cursor: pointer;
+
+        span {
+            transition: transform 0.4s;
+        }
+
+        &:hover {
+            background-color: darken($info, 10%);
+
+            span {
+                transform: scale(1.06);
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .pd-topBar-4 {
+        display: none;
+    }
+}
+
+// end .pd-topBar-4
+// start pd-topBar-5
+.pd-topBar-5 {
+    a {
+        display: inline-block;
+        font-size: 0.7rem;
+        text-decoration: none;
+        transition: transform 0.4s;
+        color: $white;
+    }
+
+    .pd-topBar-5-social-icon {
+        transition: transform 0.4s;
+
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
+
+    a:hover:not(.pd-topBar-5-btn):not(.pd-topBar-5-social-icon) {
+        transform: scale(1.05);
+    }
+
+    .pd-topBar-5-btn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-transform: uppercase;
+        color: $white;
+        font-weight: 700;
+        background-color: $info;
+        transition: background-color 0.4;
+        cursor: pointer;
+
+        span {
+            transition: transform 0.4s;
+        }
+
+        &:hover {
+            background-color: darken($info, 10%);
+
+            span {
+                transform: scale(1.06);
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .pd-topBar-5 {
+        display: none;
+    }
+}
+
+// end pd-topBar-5
