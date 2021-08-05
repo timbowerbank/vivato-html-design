@@ -3,6 +3,7 @@
 /* Click on the Uncomment icon in the Style panel to uncomment and customize the variables: */
 /* Import web fonts - Must come before any CSS rules. Refresh the Page view after making changes to import statements. */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap");
 /*!
  * Bootstrap v5.0.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -8679,7 +8680,6 @@ progress {
   .d-print-none {
     display: none !important; } }
 
-/* Custom CSS rules come here */
 .pd-topBar-1 {
   border-bottom: 1px solid #3fa9f5; }
   .pd-topBar-1 a {
@@ -8892,3 +8892,128 @@ progress {
 @media (max-width: 767px) {
   .pd-topBar-5 {
     display: none; } }
+
+.pd-topBar-6 {
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6; }
+  .pd-topBar-6 a {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-decoration: none;
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    -o-transition: transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s; }
+  .pd-topBar-6 .pd-topBar-6-social-icon {
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    -o-transition: transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s; }
+    .pd-topBar-6 .pd-topBar-6-social-icon:hover {
+      -webkit-transform: scale(1.3);
+          -ms-transform: scale(1.3);
+              transform: scale(1.3); }
+  .pd-topBar-6 a:hover:not(.pd-topBar-6-btn):not(.pd-topBar-6-social-icon) {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05); }
+  .pd-topBar-6 .pd-topBar-6-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: 700;
+    -webkit-transition: background-color 0.4;
+    -o-transition: background-color 0.4;
+    transition: background-color 0.4;
+    cursor: pointer;
+    border-left: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6; }
+    .pd-topBar-6 .pd-topBar-6-btn span {
+      -webkit-transition: -webkit-transform 0.4s;
+      transition: -webkit-transform 0.4s;
+      -o-transition: transform 0.4s;
+      transition: transform 0.4s;
+      transition: transform 0.4s, -webkit-transform 0.4s; }
+    .pd-topBar-6 .pd-topBar-6-btn:hover {
+      background-color: #dae0e5; }
+      .pd-topBar-6 .pd-topBar-6-btn:hover span {
+        -webkit-transform: scale(1.06);
+            -ms-transform: scale(1.06);
+                transform: scale(1.06); }
+
+@media (max-width: 767px) {
+  .pd-topBar-6 {
+    display: none; } }
+
+.pd-topBar-7 {
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6; }
+  .pd-topBar-7 a {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-decoration: none;
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    -o-transition: transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s; }
+  .pd-topBar-7 p {
+    margin-bottom: 0px;
+    font-weight: 700;
+    font-size: 0.8rem; }
+  .pd-topBar-7 .pd-topBar-7-social-icon {
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    -o-transition: transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s; }
+    .pd-topBar-7 .pd-topBar-7-social-icon:hover {
+      -webkit-transform: scale(1.3);
+          -ms-transform: scale(1.3);
+              transform: scale(1.3); }
+  .pd-topBar-7 a:hover:not(.pd-topBar-7-btn):not(.pd-topBar-7-social-icon) {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05); }
+
+@media (max-width: 767px) {
+  .pd-topBar-7 {
+    display: none; } }
+
+.pd-topBar-8 {
+  border-bottom: 1px solid #e9ecef; }
+  .pd-topBar-8 p {
+    font-family: 'Zilla Slab', serif;
+    font-size: 1rem;
+    margin-bottom: 0px; }
+
+@media (max-width: 767px) {
+  .pd-topBar-8 {
+    display: none; } }
+
+.pd-topBar-9 {
+  border-bottom: 1px solid #e9ecef; }
+  .pd-topBar-9 p {
+    font-family: 'Zilla Slab', serif;
+    font-size: 1rem;
+    margin-bottom: 0px;
+    color: #fff; }
+    .pd-topBar-9 p a {
+      color: #fff; }
+
+@media (max-width: 767px) {
+  .pd-topBar-9 {
+    display: none; } }
+
+/* Custom CSS rules come here */
