@@ -29,8 +29,8 @@ $font-family-sans-serif: 'Raleway', sans-serif;
 @import "bootstrap/bootstrap";
 
 // import Pendigital sass
-// topBar
 @import "pendigital/factory_topBar";
 @import "pendigital/factory_mainNavs";
+@import "pendigital/factory_hamburgers";
 
 /* Custom CSS rules come here */

@@ -13,20 +13,43 @@
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        <section id="pd-mainNav-1">
+        <section id="pd-mainNav-1" class="pd-mainNav-1">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-auto d-flex flex-column justify-content-center" style="height: 80px;">
-                        <a href="/" name="anchor" style="display: inline-block;"><img src="images/design-assets/fort-logo.svg" height="60" width="155" alt="Logo"></a>                          
+                    <div class="col-auto d-flex flex-column justify-content-center" style="height: 100px;">
+                        <a href="/" name="anchor" style="display: inline-block;"><img src="images/design-assets/fort-logo.svg" height="60" width="155" alt="Logo"></a> 
                     </div>
-                    <div class="col-md">
-                        <nav class="align-items-center d-flex flex-row justify-content-end" style="height: 100%;">
-                            <a href="#" name="anchor" style="padding-left: 10px; padding-right: 10px; font-weight: 700; text-decoration: none;">About</a>
-                            <a href="#" name="anchor" style="padding-left: 10px; padding-right: 10px; font-weight: 700; text-decoration: none;">Services</a>
-                            <a href="#" name="anchor" style="padding-left: 10px; padding-right: 10px; font-weight: 700; text-decoration: none;">Portfolio</a>
-                            <a href="#" name="anchor" style="padding-left: 10px; padding-right: 10px; font-weight: 700; text-decoration: none;">FAQs</a>
-                            <a href="#" name="anchor" class="btn btn-info ">Request Quote</a>
-                        </nav>                                                  
+                    <div class="col">
+                        <nav>
+                            <div class="pd-mainNav-inner-1">
+                                <a href="#" name="anchor">About</a>
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle" href="#" role="button" id="dropDown1" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropDown1">
+                                        <li>
+                                            <a class="dropdown-item" href="#">Service 1</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Service 2</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Service 3</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Service 4</a>
+                                        </li>                                         
+                                    </ul>
+                                </div>
+                                <a href="#" name="anchor">Portfolio</a>
+                                <a href="#" name="anchor">FAQs</a>
+                                <a href="#" name="anchor" class="btn btn-info ">Request Quote</a>
+                            </div>
+                            <div class="pd-mainNav-hamburger-1">
+                                <button class="hamburger hamburger--arrowalt" type="button" style="z-index: 900;" aria-label="Menu button for navigation">
+                                    <span class="hamburger-box"> <span class="hamburger-inner"></span> </span>
+                                </button>
+                            </div>
+                        </nav>                         
                     </div>
                 </div>
             </div>

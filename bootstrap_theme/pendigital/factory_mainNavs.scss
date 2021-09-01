@@ -1,0 +1,98 @@
+.pd-mainNav-1 {
+    box-shadow: inset 0px -6px 18px rgba(210, 210, 210, 0.25);
+    border-bottom: 2px solid $info;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+    a {
+        &:focus {
+            outline: 2px dotted $primary!important;
+            outline-offset: 2px!important;
+        }
+    }
+
+    nav {
+        height: 100%;
+    }
+
+    .pd-mainNav-inner-1 {
+        display: none;
+        height: 100%;
+
+        @include media-breakpoint-up(md) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        a {
+            padding-left: 16px;
+            padding-right: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 0.9rem;
+            color: $primary;
+            transition: color 0.4s;
+
+            &:hover {
+                color: lighten($primary, 20);
+            }
+
+            &:focus {
+                outline: 2px dotted $primary!important;
+                outline-offset: 5px!important;
+            }
+        }
+    }
+
+    .pd-mainNav-hamburger-1 {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+    }
+
+    .dropdown-menu {
+        border: none;
+        background: $secondary;
+        border-radius: 3px;
+    }
+
+    .dropdown-item {
+        color: $white!important;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        border-bottom: 1px solid $white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: $secondary;
+        transition: background-color 0.4s;
+
+        &:hover {
+            background-color: darken($secondary, 10%);
+        }
+
+        &:focus {
+            outline: 2px dotted $white!important;
+            outline-offset: -6px!important;
+        }
+    }
+
+    .btn {
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1.6px;
+        font-size: 0.7rem!important;
+        padding: 8px 20px 8px 20px;
+        border-radius: 3px;
+        margin-left: 10px;
+        color: $white!important;
+    }
+}
+
