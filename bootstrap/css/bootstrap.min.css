@@ -9023,8 +9023,8 @@ progress {
   padding-top: 2px;
   padding-bottom: 2px; }
     .pd-mainNav-1 a:focus {
-      outline: 2px dotted #433a6c !important;
-      outline-offset: 2px !important; }
+      outline: 2px dotted #433a6c;
+      outline-offset: 2px; }
   .pd-mainNav-1 nav {
     height: 100%; }
   .pd-mainNav-1 .pd-mainNav-inner-1 {
@@ -9058,8 +9058,8 @@ progress {
       .pd-mainNav-1 .pd-mainNav-inner-1 a:hover {
         color: #6f62aa; }
       .pd-mainNav-1 .pd-mainNav-inner-1 a:focus {
-        outline: 2px dotted #433a6c !important;
-        outline-offset: 5px !important; }
+        outline: 2px dotted #433a6c;
+        outline-offset: 5px; }
   .pd-mainNav-1 .pd-mainNav-hamburger-1 {
     height: 100%;
     display: -webkit-box;
