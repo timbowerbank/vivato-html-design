@@ -8691,6 +8691,9 @@ progress {
     -o-transition: transform 0.4s;
     transition: transform 0.4s;
     transition: transform 0.4s, -webkit-transform 0.4s; }
+    .pd-topBar-1 a:focus {
+      outline: 2px dotted #433a6c;
+      outline-offset: 2px; }
   .pd-topBar-1 a:hover {
     -webkit-transform: scale(1.05);
         -ms-transform: scale(1.05);
@@ -8719,6 +8722,9 @@ progress {
     -o-transition: transform 0.4s;
     transition: transform 0.4s;
     transition: transform 0.4s, -webkit-transform 0.4s; }
+    .pd-topBar-2 a:focus {
+      outline: 2px dotted #fff;
+      outline-offset: 2px; }
   .pd-topBar-2 a:hover {
     -webkit-transform: scale(1.05);
         -ms-transform: scale(1.05);
@@ -8753,6 +8759,9 @@ progress {
     -o-transition: transform 0.4s;
     transition: transform 0.4s;
     transition: transform 0.4s, -webkit-transform 0.4s; }
+    .pd-topBar-3 a:focus {
+      outline: 2px dotted #fff;
+      outline-offset: 2px; }
   .pd-topBar-3 a:hover {
     -webkit-transform: scale(1.05);
         -ms-transform: scale(1.05);
@@ -8784,6 +8793,9 @@ progress {
     -o-transition: transform 0.4s;
     transition: transform 0.4s;
     transition: transform 0.4s, -webkit-transform 0.4s; }
+    .pd-topBar-4 a:focus {
+      outline: 2px dotted #433a6c;
+      outline-offset: 2px; }
   .pd-topBar-4 .pd-topBar-4-social-icon {
     -webkit-transition: -webkit-transform 0.4s;
     transition: -webkit-transform 0.4s;
@@ -8829,6 +8841,9 @@ progress {
         -webkit-transform: scale(1.06);
             -ms-transform: scale(1.06);
                 transform: scale(1.06); }
+    .pd-topBar-4 .pd-topBar-4-btn:focus {
+      outline: 2px dotted #fff;
+      outline-offset: -2px; }
 
 @media (max-width: 767px) {
   .pd-topBar-4 {
@@ -8843,6 +8858,9 @@ progress {
     transition: transform 0.4s;
     transition: transform 0.4s, -webkit-transform 0.4s;
     color: #fff; }
+    .pd-topBar-5 a:focus {
+      outline: 2px dotted #fff;
+      outline-offset: 2px; }
   .pd-topBar-5 .pd-topBar-5-social-icon {
     -webkit-transition: -webkit-transform 0.4s;
     transition: -webkit-transform 0.4s;
@@ -8888,6 +8906,9 @@ progress {
         -webkit-transform: scale(1.06);
             -ms-transform: scale(1.06);
                 transform: scale(1.06); }
+    .pd-topBar-5 .pd-topBar-5-btn:focus {
+      outline: 2px dotted #fff;
+      outline-offset: -2px; }
 
 @media (max-width: 767px) {
   .pd-topBar-5 {
@@ -8906,6 +8927,9 @@ progress {
     -o-transition: transform 0.4s;
     transition: transform 0.4s;
     transition: transform 0.4s, -webkit-transform 0.4s; }
+    .pd-topBar-6 a:focus {
+      outline: 2px dotted #433a6c;
+      outline-offset: 2px; }
   .pd-topBar-6 .pd-topBar-6-social-icon {
     -webkit-transition: -webkit-transform 0.4s;
     transition: -webkit-transform 0.4s;
@@ -8950,6 +8974,9 @@ progress {
         -webkit-transform: scale(1.06);
             -ms-transform: scale(1.06);
                 transform: scale(1.06); }
+    .pd-topBar-6 .pd-topBar-6-btn:focus {
+      outline: 2px dotted #433a6c;
+      outline-offset: -2px; }
 
 @media (max-width: 767px) {
   .pd-topBar-6 {
@@ -8968,6 +8995,9 @@ progress {
     -o-transition: transform 0.4s;
     transition: transform 0.4s;
     transition: transform 0.4s, -webkit-transform 0.4s; }
+    .pd-topBar-7 a:focus {
+      outline: 2px dotted #433a6c;
+      outline-offset: 2px; }
   .pd-topBar-7 p {
     margin-bottom: 0px;
     font-weight: 700;
@@ -8986,6 +9016,9 @@ progress {
     -webkit-transform: scale(1.05);
         -ms-transform: scale(1.05);
             transform: scale(1.05); }
+    .pd-topBar-7 .btn:focus {
+      -webkit-box-shadow: none;
+              box-shadow: none; }
 
 @media (max-width: 767px) {
   .pd-topBar-7 {
@@ -8993,6 +9026,9 @@ progress {
 
 .pd-topBar-8 {
   border-bottom: 1px solid #e9ecef; }
+    .pd-topBar-8 a:focus {
+      outline: 2px dotted #433a6c;
+      outline-offset: 2px; }
   .pd-topBar-8 p {
     font-family: 'Zilla Slab', serif;
     font-size: 1rem;
@@ -9090,9 +9126,9 @@ progress {
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #3fa9f5;
-    -webkit-transition: background-color 0.4s;
-    -o-transition: background-color 0.4s;
-    transition: background-color 0.4s; }
+    -webkit-transition: background-color 0.4s !important;
+    -o-transition: background-color 0.4s !important;
+    transition: background-color 0.4s !important; }
     .pd-mainNav-1 .dropdown-item:hover {
       background-color: #0f93f2; }
     .pd-mainNav-1 .dropdown-item:focus {
@@ -9107,6 +9143,9 @@ progress {
     border-radius: 3px;
     margin-left: 10px;
     color: #fff !important; }
+    .pd-mainNav-1 .btn:focus {
+      -webkit-box-shadow: none;
+              box-shadow: none; }
 
 /* !
  * Hamburgers

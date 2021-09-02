@@ -72,10 +72,10 @@
         padding-top: 10px;
         padding-bottom: 10px;
         background-color: $secondary;
-        transition: background-color 0.4s;
+        transition: background-color 0.4s!important;
 
         &:hover {
-            background-color: darken($secondary, 10%);
+            background-color: darken($secondary, 10);
         }
 
         &:focus {
@@ -93,6 +93,10 @@
         border-radius: 3px;
         margin-left: 10px;
         color: $white!important;
+
+        &:focus {
+            box-shadow: none;
+        }
     }
 }
 
