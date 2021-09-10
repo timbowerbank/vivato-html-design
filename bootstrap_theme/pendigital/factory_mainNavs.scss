@@ -30,6 +30,8 @@
         a {
             padding-left: 16px;
             padding-right: 16px;
+            margin-left: 5px;
+            margin-right: 5px;
             font-weight: 700;
             text-decoration: none;
             font-size: 0.9rem;
@@ -74,6 +76,8 @@
 
     .dropdown-item {
         color: $white!important;
+        margin-left: 0px!important;
+        margin-right: 0px!important;
         font-size: 0.8rem;
         text-transform: uppercase;
         border-bottom: 1px solid $white;
@@ -145,11 +149,15 @@
         a {
             padding-left: 16px;
             padding-right: 16px;
+            margin-left: 5px;
+            margin-right: 5px;
             font-weight: 700;
             text-decoration: none;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             color: $primary;
             transition: color 0.4s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
 
             &:hover {
                 color: lighten($primary, 20);
@@ -193,6 +201,8 @@
 
     .dropdown-item {
         color: $white!important;
+        margin-left: 0px!important;
+        margin-right: 0px!important;
         font-size: 0.8rem;
         text-transform: uppercase;
         border-bottom: 1px solid $white;
@@ -253,24 +263,28 @@
     .pd-mainNav-inner-3 {
         display: none;
         height: 100%;
+        padding-left: 40px;
 
         @include media-breakpoint-up(md) {
             display: flex;
             flex-direction: row;
             align-items: center;
-            justify-content: flex-end;
+            justify-content: space-between;
 
-            div {
+            div:not(.dropdown) {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                justify-content: space-around;
+                justify-content: flex-start;
+                width: 100%;
             }
         }
 
         a {
             padding-left: 16px;
             padding-right: 16px;
+            margin-left: 5px;
+            margin-right: 5px;
             font-weight: 700;
             text-decoration: none;
             font-size: 0.9rem;
@@ -315,6 +329,8 @@
 
     .dropdown-item {
         color: $white!important;
+        margin-left: 0px!important;
+        margin-right: 0px!important;
         font-size: 0.8rem;
         text-transform: uppercase;
         border-bottom: 1px solid $white;
@@ -343,9 +359,10 @@
         letter-spacing: 1.6px;
         font-size: 0.7rem!important;
         padding: 8px 20px 8px 20px;
-        border-radius: 3px;
+        border-radius: 20px;
         margin-left: 10px;
         color: $white!important;
+        width: 240px;
 
         &:focus {
             box-shadow: none;

@@ -9084,6 +9084,8 @@ progress {
     .pd-mainNav-1 .pd-mainNav-inner-1 a {
       padding-left: 16px;
       padding-right: 16px;
+      margin-left: 5px;
+      margin-right: 5px;
       font-weight: 700;
       text-decoration: none;
       font-size: 0.9rem;
@@ -9125,6 +9127,8 @@ progress {
     border-radius: 3px; }
   .pd-mainNav-1 .dropdown-item {
     color: #fff !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
     font-size: 0.8rem;
     text-transform: uppercase;
     border-bottom: 1px solid #fff;
@@ -9186,13 +9190,17 @@ progress {
     .pd-mainNav-2 .pd-mainNav-inner-2 a {
       padding-left: 16px;
       padding-right: 16px;
+      margin-left: 5px;
+      margin-right: 5px;
       font-weight: 700;
       text-decoration: none;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       color: #433a6c;
       -webkit-transition: color 0.4s;
       -o-transition: color 0.4s;
-      transition: color 0.4s; }
+      transition: color 0.4s;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
       .pd-mainNav-2 .pd-mainNav-inner-2 a:hover {
         color: #6f62aa; }
       .pd-mainNav-2 .pd-mainNav-inner-2 a:focus {
@@ -9229,6 +9237,8 @@ progress {
     border-radius: 3px; }
   .pd-mainNav-2 .dropdown-item {
     color: #fff !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
     font-size: 0.8rem;
     text-transform: uppercase;
     border-bottom: 1px solid #fff;
@@ -9271,7 +9281,8 @@ progress {
     height: 100%; }
   .pd-mainNav-3 .pd-mainNav-inner-3 {
     display: none;
-    height: 100%; }
+    height: 100%;
+    padding-left: 40px; }
     @media (min-width: 768px) {
       .pd-mainNav-3 .pd-mainNav-inner-3 {
         display: -webkit-box;
@@ -9284,10 +9295,10 @@ progress {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        -webkit-box-pack: end;
-            -ms-flex-pack: end;
-                justify-content: flex-end; }
-        .pd-mainNav-3 .pd-mainNav-inner-3 div {
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        .pd-mainNav-3 .pd-mainNav-inner-3 div:not(.dropdown) {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -9298,11 +9309,15 @@ progress {
           -webkit-box-align: center;
               -ms-flex-align: center;
                   align-items: center;
-          -ms-flex-pack: distribute;
-              justify-content: space-around; } }
+          -webkit-box-pack: start;
+              -ms-flex-pack: start;
+                  justify-content: flex-start;
+          width: 100%; } }
     .pd-mainNav-3 .pd-mainNav-inner-3 a {
       padding-left: 16px;
       padding-right: 16px;
+      margin-left: 5px;
+      margin-right: 5px;
       font-weight: 700;
       text-decoration: none;
       font-size: 0.9rem;
@@ -9344,6 +9359,8 @@ progress {
     border-radius: 3px; }
   .pd-mainNav-3 .dropdown-item {
     color: #fff !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
     font-size: 0.8rem;
     text-transform: uppercase;
     border-bottom: 1px solid #fff;
@@ -9366,9 +9383,10 @@ progress {
     letter-spacing: 1.6px;
     font-size: 0.7rem !important;
     padding: 8px 20px 8px 20px;
-    border-radius: 3px;
+    border-radius: 20px;
     margin-left: 10px;
-    color: #fff !important; }
+    color: #fff !important;
+    width: 240px; }
     .pd-mainNav-3 .btn:focus {
       -webkit-box-shadow: none;
               box-shadow: none; }
