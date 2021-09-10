@@ -9391,6 +9391,116 @@ progress {
       -webkit-box-shadow: none;
               box-shadow: none; }
 
+.pd-mainNav-4 {
+  -webkit-box-shadow: inset 2px -38px 26px -12px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 2px -38px 26px -12px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid #ffffff;
+  padding-top: 2px;
+  padding-bottom: 2px; }
+    .pd-mainNav-4 a:focus {
+      outline: 2px dotted #fff;
+      outline-offset: 2px; }
+  .pd-mainNav-4 nav {
+    height: 100%; }
+  .pd-mainNav-4 .pd-mainNav-inner-4 {
+    display: none;
+    height: 100%; }
+    @media (min-width: 768px) {
+      .pd-mainNav-4 .pd-mainNav-inner-4 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end; } }
+    .pd-mainNav-4 .pd-mainNav-inner-4 a {
+      padding-left: 16px;
+      padding-right: 16px;
+      margin-left: 5px;
+      margin-right: 5px;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 0.8rem;
+      color: #fff;
+      -webkit-transition: color 0.4s;
+      -o-transition: color 0.4s;
+      transition: color 0.4s;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+      .pd-mainNav-4 .pd-mainNav-inner-4 a:hover {
+        color: #dee2e6; }
+      .pd-mainNav-4 .pd-mainNav-inner-4 a:focus {
+        outline: 2px dotted #fff;
+        outline-offset: 5px; }
+      .pd-mainNav-4 .pd-mainNav-inner-4 a:last-child {
+        padding-right: 0px; }
+    .pd-mainNav-4 .pd-mainNav-inner-4 a.pd-pageActive-4 {
+      background: #b53027;
+      border-radius: 4px;
+      padding: 10px;
+      color: #fff; }
+  .pd-mainNav-4 .pd-mainNav-hamburger-4 {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media (min-width: 768px) {
+      .pd-mainNav-4 .pd-mainNav-hamburger-4 {
+        display: none; } }
+  .pd-mainNav-4 .dropdown-menu {
+    border: none;
+    background: #3fa9f5;
+    border-radius: 3px; }
+  .pd-mainNav-4 .dropdown-item {
+    color: #fff !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #3fa9f5;
+    -webkit-transition: background-color 0.4s !important;
+    -o-transition: background-color 0.4s !important;
+    transition: background-color 0.4s !important; }
+    .pd-mainNav-4 .dropdown-item:hover {
+      background-color: #0f93f2; }
+    .pd-mainNav-4 .dropdown-item:focus {
+      outline: 2px dotted #fff !important;
+      outline-offset: -6px !important; }
+  .pd-mainNav-4 .dropdown-item.pd-pageActive-4 {
+    border-radius: 0 !important; }
+  .pd-mainNav-4 .btn {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    font-size: 0.7rem !important;
+    padding: 8px 20px 8px 20px;
+    border-radius: 3px;
+    margin-left: 10px;
+    color: #fff !important; }
+    .pd-mainNav-4 .btn:focus {
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+
 /* !
  * Hamburgers
  * @description Tasty CSS-animated hamburgers

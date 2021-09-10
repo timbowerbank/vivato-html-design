@@ -369,3 +369,129 @@
         }
     }
 }
+
+// start pd-mainNav-4
+.pd-mainNav-4 {
+    box-shadow: inset 2px -38px 26px -12px rgba(0,0,0,0.2);
+    border-bottom: 1px solid #ffffff;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+    a {
+        &:focus {
+            outline: 2px dotted $white;
+            outline-offset: 2px;
+        }
+    }
+
+    nav {
+        height: 100%;
+    }
+
+    .pd-mainNav-inner-4 {
+        display: none;
+        height: 100%;
+
+        @include media-breakpoint-up(md) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        a {
+            padding-left: 16px;
+            padding-right: 16px;
+            margin-left: 5px;
+            margin-right: 5px;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 0.8rem;
+            color: $white;
+            transition: color 0.4s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+
+            &:hover {
+                color: $gray-300;
+            }
+
+            &:focus {
+                outline: 2px dotted $white;
+                outline-offset: 5px;
+            }
+
+            &:last-child {
+                padding-right: 0px;
+            }
+        }
+
+        a.pd-pageActive-4 {
+            background: $info;
+            border-radius: 4px;
+            padding: 10px;
+            color: $white;
+        }
+    }
+
+    .pd-mainNav-hamburger-4 {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+    }
+
+    .dropdown-menu {
+        border: none;
+        background: $secondary;
+        border-radius: 3px;
+    }
+
+    .dropdown-item {
+        color: $white!important;
+        margin-left: 0px!important;
+        margin-right: 0px!important;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        border-bottom: 1px solid $white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: $secondary;
+        transition: background-color 0.4s!important;
+
+        &:hover {
+            background-color: darken($secondary, 10);
+        }
+
+        &:focus {
+            outline: 2px dotted $white!important;
+            outline-offset: -6px!important;
+        }
+    }
+
+    .dropdown-item.pd-pageActive-4 {
+        border-radius: 0!important;
+    }
+
+    .btn {
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1.6px;
+        font-size: 0.7rem!important;
+        padding: 8px 20px 8px 20px;
+        border-radius: 3px;
+        margin-left: 10px;
+        color: $white!important;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
+
+// end pd-mainNav-4
