@@ -9501,6 +9501,147 @@ progress {
       -webkit-box-shadow: none;
               box-shadow: none; }
 
+.pd-mainNav-5 {
+  background-color: #433a6c;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s; }
+    .pd-mainNav-5 a:focus {
+      outline: 2px dotted #fff;
+      outline-offset: 2px; }
+  .pd-mainNav-5 nav {
+    height: 100%; }
+  .pd-mainNav-5 .pd-mainNav-inner-5 {
+    display: none;
+    height: 100%; }
+    @media (min-width: 768px) {
+      .pd-mainNav-5 .pd-mainNav-inner-5 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end; } }
+    .pd-mainNav-5 .pd-mainNav-inner-5 a {
+      padding-left: 16px;
+      padding-right: 16px;
+      margin-left: 5px;
+      margin-right: 5px;
+      text-transform: uppercase;
+      font-weight: 400;
+      text-decoration: none;
+      font-size: 0.8rem;
+      color: #f7f7f7;
+      -webkit-transition: color 0.4s;
+      -o-transition: color 0.4s;
+      transition: color 0.4s; }
+      .pd-mainNav-5 .pd-mainNav-inner-5 a:hover {
+        color: #e8e8e8; }
+      .pd-mainNav-5 .pd-mainNav-inner-5 a:focus {
+        outline: 2px dotted #433a6c;
+        outline-offset: 5px; }
+    .pd-mainNav-5 .pd-mainNav-inner-5 a.pd-pageActive-5 {
+      background: #b53027;
+      border-radius: 4px;
+      padding: 10px;
+      color: #fff; }
+  .pd-mainNav-5 .pd-mainNav-hamburger-5 {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media (min-width: 768px) {
+      .pd-mainNav-5 .pd-mainNav-hamburger-5 {
+        display: none; } }
+  .pd-mainNav-5 .dropdown-menu {
+    border: none;
+    background: #3fa9f5;
+    border-radius: 3px; }
+  .pd-mainNav-5 .dropdown-item {
+    color: #fff !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #3fa9f5;
+    -webkit-transition: background-color 0.4s !important;
+    -o-transition: background-color 0.4s !important;
+    transition: background-color 0.4s !important; }
+    .pd-mainNav-5 .dropdown-item:hover {
+      background-color: #0f93f2; }
+    .pd-mainNav-5 .dropdown-item:focus {
+      outline: 2px dotted #fff !important;
+      outline-offset: -6px !important; }
+  .pd-mainNav-5 .dropdown-item.pd-pageActive-5 {
+    background: #b53027 !important;
+    border: none !important;
+    border-radius: 0 !important; }
+  .pd-mainNav-5 .btn {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.7rem !important;
+    padding: 12px 20px !important;
+    border-radius: 10px;
+    margin-left: 10px;
+    color: #fff !important; }
+    .pd-mainNav-5 .btn:focus {
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+  .pd-mainNav-5 .btn-outline-light {
+    border: 1px solid #ebebeb !important;
+    -webkit-transition: background 0.2s, border 0.2s, color 0.2s, -webkit-box-shadow 0.2s !important;
+    transition: background 0.2s, border 0.2s, color 0.2s, -webkit-box-shadow 0.2s !important;
+    -o-transition: background 0.2s, border 0.2s, color 0.2s, box-shadow 0.2s !important;
+    transition: background 0.2s, border 0.2s, color 0.2s, box-shadow 0.2s !important;
+    transition: background 0.2s, border 0.2s, color 0.2s, box-shadow 0.2s, -webkit-box-shadow 0.2s !important; }
+    .pd-mainNav-5 .btn-outline-light:hover {
+      background: #ebebeb;
+      border: #dbdfe4;
+      color: #383838 !important;
+      -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+              box-shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px; }
+
+.pd-mainNav-5.pd-mainNav-5-inverted {
+  -webkit-box-shadow: 0 10px 5px -5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 10px 5px -5px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1000;
+  background-color: #f7f7f7; }
+  .pd-mainNav-5.pd-mainNav-5-inverted #logo {
+    content: url(/images/design-assets/fort-logo.svg); }
+    .pd-mainNav-5.pd-mainNav-5-inverted .pd-mainNav-inner-5 a {
+      color: #222222; }
+    .pd-mainNav-5.pd-mainNav-5-inverted .pd-mainNav-inner-5 a.pd-pageActive-5 {
+      color: #ebebeb; }
+    .pd-mainNav-5.pd-mainNav-5-inverted .pd-mainNav-inner-5 .btn-outline-light {
+      border: 1px solid #222222 !important;
+      color: #222222 !important;
+      background: transparent; }
+
 /* !
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
@@ -9546,6 +9687,13 @@ progress {
 .hamburger.is-active .hamburger-inner::after {
   background-color: #433a6c; }
 
+.hamburger.is-active .hamburger-inner.hamburger-inverted {
+  background-color: #fff; }
+  .hamburger.is-active .hamburger-inner.hamburger-inverted:before {
+    background-color: #fff; }
+  .hamburger.is-active .hamburger-inner.hamburger-inverted:after {
+    background-color: #fff; }
+
 .hamburger-box {
   width: 40px;
   height: 24px;
@@ -9576,6 +9724,13 @@ progress {
   -webkit-transition-timing-function: ease;
        -o-transition-timing-function: ease;
           transition-timing-function: ease; }
+
+.hamburger-inner.hamburger-inverted {
+  background-color: #fff; }
+  .hamburger-inner.hamburger-inverted:before {
+    background-color: #fff; }
+  .hamburger-inner.hamburger-inverted:after {
+    background-color: #fff; }
 
 .hamburger-inner::before,
 .hamburger-inner::after {

@@ -495,3 +495,173 @@
 }
 
 // end pd-mainNav-4
+// start pd-mainNav-5
+.pd-mainNav-5 {
+    background-color: $primary;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+    a {
+        &:focus {
+            outline: 2px dotted $white;
+            outline-offset: 2px;
+        }
+    }
+
+    nav {
+        height: 100%;
+    }
+
+    .pd-mainNav-inner-5 {
+        display: none;
+        height: 100%;
+
+        @include media-breakpoint-up(md) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        a {
+            padding-left: 16px;
+            padding-right: 16px;
+            margin-left: 5px;
+            margin-right: 5px;
+            text-transform: uppercase;
+            font-weight: 400;
+            text-decoration: none;
+            font-size: 0.8rem;
+            color: #f7f7f7;
+            transition: color 0.4s;
+
+            &:hover {
+                color: darken(#ebebeb, 1);
+            }
+
+            &:focus {
+                outline: 2px dotted $primary;
+                outline-offset: 5px;
+            }
+        }
+
+        a.pd-pageActive-5 {
+            background: $info;
+
+            // border: 1px solid $white;
+            border-radius: 4px;
+            padding: 10px;
+            color: $white;
+        }
+    }
+
+    .pd-mainNav-hamburger-5 {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+    }
+
+    .dropdown-menu {
+        border: none;
+        background: $secondary;
+        border-radius: 3px;
+    }
+
+    .dropdown-item {
+        color: $white!important;
+        margin-left: 0px!important;
+        margin-right: 0px!important;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        border-bottom: 1px solid $white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: $secondary;
+        transition: background-color 0.4s!important;
+
+        &:hover {
+            background-color: darken($secondary, 10);
+        }
+
+        &:focus {
+            outline: 2px dotted $white!important;
+            outline-offset: -6px!important;
+        }
+    }
+
+    .dropdown-item.pd-pageActive-5 {
+        background: $info!important;
+        border: none!important;
+        border-radius: 0!important;
+    }
+
+    .btn {
+        text-transform: uppercase;
+        font-weight: 700;
+
+        // letter-spacing: 1.6px;
+        font-size: 0.7rem!important;
+        padding: 12px 20px!important;
+        border-radius: 10px;
+        margin-left: 10px;
+        color: $white!important;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .btn-outline-light {
+        border: 1px solid #ebebeb!important;
+        transition: background .2s, border .2s, color .2s, box-shadow .2s!important;
+    }
+
+    .btn-outline-light {
+        &:hover {
+            background: #ebebeb;
+            border: darken($gray-300, 1);
+            color: #383838!important;
+            box-shadow: rgba(0,0,0,.1) 0 10px 15px -3px,rgba(0,0,0,.05) 0 4px 6px -2px;
+        }
+    }
+
+    transition: all .2s;
+}
+
+.pd-mainNav-5.pd-mainNav-5-inverted {
+    box-shadow: 0 10px 5px -5px rgba(0,0,0,.15);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+
+    #logo {
+        content: url(/images/design-assets/fort-logo.svg);
+    }
+
+    background-color: #f7f7f7;
+
+    .pd-mainNav-inner-5 {
+        a {
+            color: #222222;
+        }
+
+        a.pd-pageActive-5 {
+            color: #ebebeb;
+        }
+
+        .btn-outline-light {
+            border: 1px solid #222222!important;
+            color: #222222!important;
+            background: transparent;
+        }
+    }
+}
+
+// end pd-mainNav-5
