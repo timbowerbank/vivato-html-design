@@ -10,76 +10,129 @@
         <!-- Bootstrap core CSS -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <!-- Custom styles for this template -->
+        <link rel="stylesheet" href="blocks.css">
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <section id="pd-topBar-3" class="pd-topBar-3">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 pb-2 pt-2">
-                            <a name="anchor" href="tel:07976361908"><strong>Phone:</strong> 07976 361908</a>
-                            <a name="anchor" href="mailto:tim@fortmarketing.co.uk" class="ps-2"><strong>Email:</strong> tim@fortmarketing.co.uk</a> 
-                        </div>
-                        <div class="col-md-6 d-flex flex-row justify-content-end pb-2 pt-2">
-                            <a name="anchor" href="https://www.twitter.com" class="ms-2 pd-topBar-1-social-icon"><img width="28" height="28" alt="twitter icon" src="images/design-assets/icon-twitter.svg"></a>
-                            <a name="anchor" href="https://www.facebook.com" class="ms-2 pd-topBar-1-social-icon"><img width="28" height="28" alt="facebook icon" src="images/design-assets/icon-facebook.svg"></a>
-                            <a name="anchor" href="https://www.linkedin.com" class="ms-2 pd-topBar-1-social-icon"><img width="28" height="28" alt="linkedin icon" src="images/design-assets/icon-linkedin.svg"></a> 
-                        </div>
+        <section id="pd-mainNav-6" class="pd-mainNav-6">
+            <div class="container">
+                <div class="row" style="position: relative;">
+                    <div class="col-auto d-flex flex-column justify-content-center" style="height: 78px; position: relative; z-index: 1000;">
+                        <a href="/" name="anchor" style="display: inline-block;"><img height="50" width="156" alt="Logo" src="images/design-assets/fort-logo-white.svg" id="logo"></a> 
                     </div>
-                </div>
-            </section>
-        </header>
-        <header style="position: relative;">
-            <section id="pd-mainNav-4" class="pd-mainNav-4" style="z-index: 1000; position: relative;">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-auto d-flex flex-column justify-content-center" style="height: 100px;">
-                            <a href="/" name="anchor" style="display: inline-block;"><img height="60" width="155" alt="Logo" src="images/design-assets/fort-logo-white.svg"></a> 
-                        </div>
-                        <div class="col">
-                            <nav>
-                                <div class="pd-mainNav-inner-4">
-                                    <a href="#" name="anchor" class="pd-pageActive-4">About</a>
-                                    <div class="dropdown">
-                                        <a class="dropdown-toggle" href="#" role="button" id="dropDown1" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
-                                        <ul class="dropdown-menu" aria-labelledby="dropDown1">
+                    <div class="col">
+                        <nav>
+                            <div class="pd-mainNav-inner-6">
+                                <ul> 
+                                    <li>
+                                        <a href="#" name="anchor" class="pd-pageActive-6">About</a>
+                                    </li>
+                                    <li class="pd-dropdown">
+                                        <a href="#" name="anchor" class="pd-dropdown-toggle" aria-expanded="false">Services<span><img class="pd-dropdown-caret" width="8" height="5"></span></a>
+                                        <ul class="pd-dropdown-menu">
                                             <li>
-                                                <a class="dropdown-item" href="#">Service 1</a>
+                                                <a class="pd-dropdown-item" href="#">Service 1</a>
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#">Service 2</a>
+                                                <a class="pd-dropdown-item" href="#">Service 2</a>
                                             </li>
-                                            <li>
-                                                <a class="dropdown-item pd-pageActive-2" href="#">Service 3</a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">Service 4</a>
-                                            </li>                                             
                                         </ul>
-                                    </div>
-                                    <a href="#" name="anchor">Portfolio</a>
-                                    <a href="#" name="anchor">Resources</a>
-                                    <a href="#" name="anchor">FAQs</a>
-                                </div>
-                                <div class="pd-mainNav-hamburger-4">
-                                    <button class="hamburger hamburger--arrowalt" type="button" style="z-index: 900;" aria-label="Menu button for navigation">
-                                        <span class="hamburger-box"> <span class="hamburger-inner"></span> </span>
-                                    </button>
-                                </div>
-                            </nav>                             
-                        </div>
+                                    </li>                                     
+                                    <li>
+                                        <a href="#" name="anchor">Portfolio</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" name="anchor">Segments</a>
+                                    </li>                                     
+                                    <li>
+                                        <a href="#" name="anchor" class="btn btn-outline-light">Login</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="pd-mainNav-hamburger-6">
+                                <button class="hamburger hamburger--arrowalt" type="button" style="z-index: 900;" aria-label="Menu button for navigation">
+                                    <span class="hamburger-box"> <span class="hamburger-inner hamburger-inverted"></span> </span>
+                                </button>
+                            </div>
+                        </nav>                         
                     </div>
                 </div>
-            </section>
-            <section style="height: 800px; margin-top: -106px; position: relative;">
-                <img style="position: absolute; width: 100%; height: 100%; object-fit: cover; object-position: center center;" src="images/uploads/hero-sample-2.jpg">
-            </section>
-        </header>
+            </div>
+        </section>
+        <section style="height: 800px; margin-top: -106px; position: relative;">
+            <img style="position: absolute; width: 100%; height: 100%; object-fit: cover; object-position: center center;" src="images/uploads/hero-sample-2.jpg">
+        </section>
+        <section class="bg-light pb-5 pt-5"> 
+            <div class="container pb-5 pt-5"> 
+                <div class="align-items-center mb-3 row"> 
+                    <div class="col-lg-7"> 
+                        <h2 class="h6 mb-1">Services</h2> 
+                        <h3 class="fw-bold h2 mb-1">We can do useful things for our clients</h3>
+                        <p class="fw-light">                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae congue tortor. </p> 
+                    </div>                     
+                    <div class="col-lg-auto ms-auto"> 
+                        <a href="#" class="btn btn-dark">Read More</a> 
+                    </div>                     
+                </div>                 
+                <div class="row"> 
+                    <div class="col-sm-6 col-xl-3 pb-3 pt-3"> 
+                        <div class="bg-white d-block pb-5 ps-4 pe-4 pt-5 shadow"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="currentColor" class="mb-3"> 
+                                <path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm13.464 12.536L20 12l-3.536-3.536L15.05 9.88 17.172 12l-2.122 2.121 1.414 1.415zM6.828 12L8.95 9.879 7.536 8.464 4 12l3.536 3.536L8.95 14.12 6.828 12zm4.416 5l3.64-10h-2.128l-3.64 10h2.128z"></path>                                 
+                            </svg>                             
+                            <h4 class="fw-bold h5">Development</h4> 
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae congue tortor.</p>
+                            <a href="#">Learn More</a> 
+                        </div>                         
+                    </div>                     
+                    <div class="col-sm-6 col-xl-3 pb-3 pt-3"> 
+                        <div class="bg-white d-block mb-sm-n5 mt-sm-5 pb-5 ps-4 pe-4 pt-5 shadow"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="currentColor" class="mb-3"> 
+                                <path d="M5.636 12.707l1.828 1.829L8.88 13.12 7.05 11.293l1.414-1.414 1.829 1.828 1.414-1.414L9.88 8.464l1.414-1.414L13.12 8.88l1.415-1.415-1.829-1.828 2.829-2.828a1 1 0 0 1 1.414 0l4.242 4.242a1 1 0 0 1 0 1.414L8.464 21.192a1 1 0 0 1-1.414 0L2.808 16.95a1 1 0 0 1 0-1.414l2.828-2.829zm8.485 5.656l4.243-4.242L21 16.757V21h-4.242l-2.637-2.637zM5.636 9.878L2.807 7.05a1 1 0 0 1 0-1.415l2.829-2.828a1 1 0 0 1 1.414 0L9.88 5.635 5.636 9.878z"></path>                                 
+                            </svg>                             
+                            <h4 class="fw-bold h5">Product Design</h4> 
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae congue tortor.</p>
+                            <a href="#">Learn More</a> 
+                        </div>                         
+                    </div>                     
+                    <div class="col-sm-6 col-xl-3 pb-3 pt-3"> 
+                        <div class="bg-white d-block pb-5 ps-4 pe-4 pt-5 shadow"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="currentColor" class="mb-3"> 
+                                <path d="M15 21h-2v-3h-2v3H9v-2H7v2H4a1 1 0 0 1-1-1v-3h2v-2H3v-2h3v-2H3V9h2V7H3V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v9h9a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-3v-2h-2v2z"></path>                                 
+                            </svg>                             
+                            <h4 class="fw-bold h5">UI/UX Research</h4> 
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae congue tortor.</p>
+                            <a href="#">Learn More</a> 
+                        </div>                         
+                    </div>                     
+                    <div class="col-sm-6 col-xl-3 pb-3 pt-3"> 
+                        <div class="bg-white d-block mt-sm-5 pb-5 ps-4 pe-4 pt-5 shadow"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="currentColor" class="mb-3"> 
+                                <path d="M8 5h3v9H8v3H6v-3H3V5h3V2h2v3zm10 5h3v9h-3v3h-2v-3h-3v-9h3V7h2v3z"></path>                                 
+                            </svg>                             
+                            <h4 class="fw-bold h5">Digital Marketing</h4> 
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae congue tortor.</p>
+                            <a href="#">Learn More</a> 
+                        </div>                         
+                    </div>                     
+                </div>                 
+            </div>             
+        </section>
+        <section class="bg-light pb-5 pt-5 text-center"> 
+            <div class="container  pb-5 pt-5"> 
+                <div class="align-items-center row"> 
+                    <div class="col-lg-7 ms-auto me-auto"> 
+                        <h2 class="fw-bold mb-4">Our ability to feel, act and communicate is indistinguishable from magic.</h2>
+                        <a href="#" class="btn btn-primary text-uppercase">Read More</a> 
+                    </div>                     
+                </div>                 
+            </div>             
+        </section>
         <!-- Bootstrap core JavaScript
     ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="assets/js/popper.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="/assets/js/functions.js"></script>
     </body>
 </html>

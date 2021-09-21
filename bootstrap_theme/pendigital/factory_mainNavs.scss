@@ -670,6 +670,8 @@
     background-color: $primary;
     padding-top: 2px;
     padding-bottom: 2px;
+    position: relative;
+    z-index: 1000;
 
     a {
         &:focus {
@@ -720,7 +722,7 @@
                     }
 
                     &:focus {
-                        outline: 2px dotted $primary;
+                        outline: 2px dotted $white;
                         outline-offset: 5px;
                     }
                 }
@@ -755,7 +757,6 @@
                     transform: translate3d(5px, 22px, 0px);
                 }
 
-                // start paste
                 ul li {
                     width: 100%;
                 }
@@ -783,20 +784,20 @@
                     }
                 }
 
-                .dropdown-item.pd-pageActive-6 {
+                .pd-dropdown-item.pd-pageActive-6 {
                     background: $info!important;
                     border: none!important;
                     border-radius: 0!important;
                 }
-
-                // end paste
             }
 
+            // end of li
             li.pd-dropdown {
                 position: relative;
             }
         }
 
+        // end of ul
         a.pd-pageActive-6 {
             background: $info;
 
@@ -817,20 +818,63 @@
         bottom: 0;
         left: 0;
         right: 0;
-        padding-top: 40px;
+        padding-top: 140px;
+        padding-bottom: 40px;
         background: linear-gradient(46.3deg,#5137c4 11.79%,#0071f6 144.33%);
         box-shadow: rgba(0,0,0,.1) 0 10px 15px -3px,rgba(0,0,0,.05) 0 4px 6px -2px;
+        overflow: auto;
 
         ul {
             flex-direction: column;
+            align-items: flex-start;
 
             li {
                 margin-top: 10px;
                 margin-bottom: 10px;
+                width: 100%;
+
+                a {
+                    font-size: 1.2rem;
+
+                    &:hover {
+                        color: darken(#ebebeb, 1);
+                    }
+
+                    &:focus {
+                        outline: 2px dotted $white;
+                        outline-offset: 5px;
+                    }
+                }
+
+                a.pd-pageActive-6 {
+                    padding-left: 16px;
+                    padding-right: 16px;
+                }
+
+                a.btn {
+                    width: 100%;
+                    font-size: 1rem!important;
+                }
 
                 ul.pd-dropdown-menu.show {
                     display: block;
                     position: static;
+                    transform: none;
+                    background: none;
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+
+                    li {
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                        position: relative;
+
+                        a.pd-dropdown-item {
+                            background: none;
+                            position: relative;
+                            left: 30px;
+                        }
+                    }
                 }
             }
         }
@@ -895,18 +939,66 @@
     background-color: #f7f7f7;
 
     .pd-mainNav-inner-6 {
-        a {
-            color: #222222;
+        ul {
+            li {
+                a {
+                    color: #222222;
+
+                    &:hover {
+                        color: lighten(#222222, 50%);
+                    }
+                }
+
+                a.pd-pageActive-6 {
+                    color: #ebebeb;
+                }
+            }
         }
 
-        a.pd-pageActive-6 {
-            color: #ebebeb;
+        ul li a.pd-dropdown-toggle {
+            .pd-dropdown-caret {
+                content: url(/images/design-assets/icon-caret.svg);
+            }
         }
 
         .btn-outline-light {
             border: 1px solid #222222!important;
             color: #222222!important;
             background: transparent;
+        }
+    }
+}
+
+.pd-mainNav-6.open {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.pd-mainNav-6.pd-mainNav-6-inverted.open {
+    #logo {
+        content: url(/images/design-assets/fort-logo-white.svg);
+    }
+
+    .pd-mainNav-inner-6 {
+        ul {
+            li {
+                a {
+                    color: $white!important;
+                }
+            }
+        }
+
+        ul li a.pd-dropdown-toggle {
+            .pd-dropdown-caret {
+                content: url(/images/design-assets/icon-caret-white.svg);
+            }
+        }
+
+        .btn-outline-light {
+            border: 1px solid #ebebeb!important;
+            transition: background .2s, border .2s, color .2s, box-shadow .2s!important;
         }
     }
 }

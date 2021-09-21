@@ -1,8 +1,11 @@
 // load event on the window object
 window.addEventListener("load", () => {
 
+    // initHamburgerBtn6()
+    initHamburgerBtn6();
+
     // initNavScrollListener()
-    //initNavScrollListener5();
+    initNavScrollListener6();
 
     // initPdDropdowns()
     initPdDropdowns();
@@ -60,6 +63,114 @@ function navScrollListener5() {
 // *** pd-mainNav-6 ***
 // ********************
 
+// initHamburger
+var hamburgerBtn6;
+var hamburgerInner6;
+var outerNav6;
+var innerNav6;
+var navToggle6 = false;
+var isInvertedState6 = false;
+function initHamburgerBtn6() {
+
+    hamburgerBtn6 = document.getElementsByClassName("hamburger")[0];
+    hamburgerBtn6.addEventListener("click", manageMobMenuListener6);
+    hamburgerInner6 = document.querySelector(".hamburger-inner");
+    innerNav6 = document.querySelector(".pd-mainNav-inner-6");
+    outerNav6 = document.querySelector(".pd-mainNav-6");
+
+}
+
+function manageMobMenuListener6(e) {
+    
+    navToggle6 = !navToggle6;
+
+    if(navToggle6) {
+  
+      // manage the look of the hamburger menu
+      hamburgerBtn6.classList.add("is-active");
+  
+      // activate the site menu by adding CSS and add open class to outer nav 
+      innerNav6.classList.add("open");
+      outerNav6.classList.add("open");
+
+      // check state of hamburger menu
+      if(hamburgerInner6.classList.contains("hamburger-inverted")) {
+          // it means it is white
+          isInvertedState6 = true;
+      } else {
+          // it means it is black
+          isInvertedState6 = false;
+          hamburgerInner6.classList.add("hamburger-inverted");
+      }
+      
+
+  
+    } else {
+  
+        hamburgerBtn6.classList.remove("is-active");
+
+        // deactivate menu
+        innerNav6.classList.remove("open");
+        outerNav6.classList.remove("open");
+
+        // restore state of hamburger menu
+        if(!isInvertedState6) {
+            hamburgerInner6.classList.remove("hamburger-inverted");
+        }
+  
+    }
+
+
+}
+
+// end hamburger
+
+
+// start scroll listener
+
+var mainNav6;
+var mainNavBurger6;
+
+// initNavScrollListener6() ***
+function initNavScrollListener6() {
+    // assign mainNav and mainNavBurger
+    mainNav6 = document.querySelector("#pd-mainNav-6");
+    mainNavBurger6 = document.querySelector(".hamburger-inner");
+
+    // add a scroll listener to the main window object
+    window.addEventListener("scroll", navScrollListener6);
+
+
+}
+
+// *** navScrollListener6() ***
+function navScrollListener6() {
+    
+    // if distance scrolled is 300px from top
+    // then add pd-mainNav-6-inverted to id: pd-mainNav-6
+    if(document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        if(!mainNav6.classList.contains("pd-mainNav-6-inverted")) {
+            mainNav6.classList.add("pd-mainNav-6-inverted");
+            if(!navToggle6) {
+                mainNavBurger6.classList.remove("hamburger-inverted");
+            }
+            
+        } 
+    } else {
+        if(mainNav6.classList.contains("pd-mainNav-6-inverted")) {
+            mainNav6.classList.remove("pd-mainNav-6-inverted");
+            mainNavBurger6.classList.add("hamburger-inverted");
+        }
+
+    }
+
+
+}
+
+// end scroll listener
+
+// start dropdowns
+
 var pdDropdowns;
 var dropDownActive;
 function initPdDropdowns() {
@@ -89,12 +200,15 @@ function closeDropDownListener(e) {
     if (!e.target.matches('.pd-dropdown-toggle')) {
         // loop through all pdDropdowns and if they have show
         dropDownActive.classList.toggle("show");
+        
 
         // loop through all .pd-dropdown-menu
         let dropDownsToCheck = document.querySelectorAll(".pd-dropdown-menu");
         for (const dropdown of dropDownsToCheck) {
             if(dropdown.classList.contains("show")) {
                 dropdown.classList.toggle("show");
+                let dropDownBtn = dropdown.previousSibling;
+                dropDownBtn.setAttribute('aria-expanded', 'false');
             }
         }
 
@@ -104,6 +218,7 @@ function closeDropDownListener(e) {
 
 }
 
+// end dropdowns
 
 // ************************
 // *** end pd-mainNav-6 ***
