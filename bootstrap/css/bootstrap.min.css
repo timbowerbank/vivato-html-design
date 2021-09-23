@@ -9727,7 +9727,7 @@ progress {
           border-radius: 3px;
           padding-top: 8px;
           padding-bottom: 8px; }
-        .pd-mainNav-6 .pd-mainNav-inner-6 ul li ul.pd-dropdown-menu.show {
+        .pd-mainNav-6 .pd-mainNav-inner-6 ul li ul.pd-dropdown-menu.pd-show {
           display: block;
           -webkit-box-orient: vertical;
           -webkit-box-direction: normal;
@@ -9822,8 +9822,7 @@ progress {
         .pd-mainNav-6 .pd-mainNav-inner-6.open ul li a.btn {
           width: 100%;
           font-size: 1rem !important; }
-        .pd-mainNav-6 .pd-mainNav-inner-6.open ul li ul.pd-dropdown-menu.show {
-          display: block;
+        .pd-mainNav-6 .pd-mainNav-inner-6.open ul li ul.pd-dropdown-menu {
           position: static;
           -webkit-transform: none;
               -ms-transform: none;
@@ -9831,14 +9830,22 @@ progress {
           background: none;
           padding-top: 0px;
           padding-bottom: 0px; }
-          .pd-mainNav-6 .pd-mainNav-inner-6.open ul li ul.pd-dropdown-menu.show li {
+          .pd-mainNav-6 .pd-mainNav-inner-6.open ul li ul.pd-dropdown-menu li {
             margin-top: 0px;
             margin-bottom: 0px;
             position: relative; }
-            .pd-mainNav-6 .pd-mainNav-inner-6.open ul li ul.pd-dropdown-menu.show li a.pd-dropdown-item {
+            .pd-mainNav-6 .pd-mainNav-inner-6.open ul li ul.pd-dropdown-menu li a.pd-dropdown-item {
               background: none;
               position: relative;
               left: 30px; }
+        .pd-mainNav-6 .pd-mainNav-inner-6.open ul li ul.pd-dropdown-menu.pd-show {
+          display: block; }
+        .pd-mainNav-6 .pd-mainNav-inner-6.open ul li ul.pd-dropdown-menu.pd-show.pd-collapsing {
+          overflow: hidden;
+          -webkit-transition: height .35s;
+          -o-transition: height .35s;
+          transition: height .35s;
+          height: 0px; }
   .pd-mainNav-6 .pd-mainNav-hamburger-6 {
     height: 100%;
     display: -webkit-box;

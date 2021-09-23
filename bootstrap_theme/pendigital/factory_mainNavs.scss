@@ -748,7 +748,7 @@
                     padding-bottom: 8px;
                 }
 
-                ul.pd-dropdown-menu.show {
+                ul.pd-dropdown-menu.pd-show {
                     display: block;
                     flex-direction: column;
                     position: absolute;
@@ -856,8 +856,7 @@
                     font-size: 1rem!important;
                 }
 
-                ul.pd-dropdown-menu.show {
-                    display: block;
+                ul.pd-dropdown-menu {
                     position: static;
                     transform: none;
                     background: none;
@@ -875,6 +874,16 @@
                             left: 30px;
                         }
                     }
+                }
+
+                ul.pd-dropdown-menu.pd-show {
+                    display: block;
+                }
+
+                ul.pd-dropdown-menu.pd-show.pd-collapsing {
+                    overflow: hidden;
+                    transition: height .35s;
+                    height: 0px;
                 }
             }
         }

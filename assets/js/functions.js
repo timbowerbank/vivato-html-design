@@ -188,27 +188,73 @@ function dropdownClickListener(e) {
 
     // get the target and its next sibling which is the dropdown menu
     let dropDownBtn = e.target;
+    let isDropDownOpening = false;
     dropDownActive = dropDownBtn.nextElementSibling;
-    dropDownActive.classList.toggle("show");
     
     // listen for click events on the document
     document.addEventListener("click", closeDropDownListener);
+
+    // check for mobile
+    if(window.innerWidth > 767) {
+
+        dropDownActive.classList.toggle("pd-show");
+           
+    } else {
+
+        if(!dropDownActive.classList.contains("pd-show")) {
+            // open the toggle
+            isDropDownOpening = true;
+
+            dropDownActive.classList.add("pd-show");
+            let dropDownActiveHeight = dropDownActive.offsetHeight;
+            dropDownActiveHeight = "height: " + dropDownActiveHeight + "px";
+
+            // add pd-collapsing, repaint dom
+            dropDownActive.classList.add("pd-collapsing");
+            console.log(dropDownActive.offsetHeight); // forces repaint!!
+
+            // set the height on the style attribute
+            dropDownActive.setAttribute("style", dropDownActiveHeight);
+
+            
+        } else {
+            // close the toggle
+            dropDownActive.removeAttribute("style");
+            dropDownActive.classList.add("pd-collapsing");
+
+            isDropDownOpening = false;
+
+        }
+
+        // listen for the transition end event
+        dropDownActive.addEventListener("transitionend", (e)=> {
+            dropDownActive.classList.remove("pd-collapsing");
+
+            if(!isDropDownOpening) {
+                // remove pd-show
+                dropDownActive.classList.remove("pd-show");
+                isDropDownOpening = !isDropDownOpening;
+            }
+        });
+        
+        
+
+    }
 }
+
 
 function closeDropDownListener(e) {
 
     if (!e.target.matches('.pd-dropdown-toggle')) {
         // loop through all pdDropdowns and if they have show
-        dropDownActive.classList.toggle("show");
+        dropDownActive.classList.toggle("pd-show");
         
 
         // loop through all .pd-dropdown-menu
         let dropDownsToCheck = document.querySelectorAll(".pd-dropdown-menu");
         for (const dropdown of dropDownsToCheck) {
-            if(dropdown.classList.contains("show")) {
-                dropdown.classList.toggle("show");
-                let dropDownBtn = dropdown.previousSibling;
-                dropDownBtn.setAttribute('aria-expanded', 'false');
+            if(dropdown.classList.contains("pd-show")) {
+                dropdown.classList.toggle("pd-show");
             }
         }
 
