@@ -8,7 +8,7 @@ window.addEventListener("load", () => {
     initNavScrollListener6();
 
     // initPdDropdowns()
-    initPdDropdowns();
+    initDropDowns2();
 
 });
 
@@ -171,100 +171,242 @@ function navScrollListener6() {
 
 // start dropdowns
 
-var pdDropdowns;
-var dropDownActive;
-function initPdDropdowns() {
-    // find all elements with the class .pd-dropdown
-    pdDropdowns = document.querySelectorAll(".pd-dropdown-toggle");
-   // loop through all dropdowns and add an event listener
-   for(const dropdown of pdDropdowns) {
-        dropdown.addEventListener("click", dropdownClickListener);
-   }
-}
+// var pdDropdowns;
+// var dropDownActive;
+// function initPdDropdowns() {
+//     // find all elements with the class .pd-dropdown
+//     pdDropdowns = document.querySelectorAll(".pd-dropdown-toggle");
+//    // loop through all dropdowns and add an event listener
+//    for(const dropdown of pdDropdowns) {
+//         dropdown.addEventListener("click", dropdownClickListener);
+//    }
+// }
 
-function dropdownClickListener(e) {
+// function dropdownClickListener(e) {
 
-    // prevent default behaviour
-    e.preventDefault();
+//     // prevent default behaviour
+//     e.preventDefault();
 
-    // get the target and its next sibling which is the dropdown menu
-    let dropDownBtn = e.target;
-    let isDropDownOpening = false;
-    dropDownActive = dropDownBtn.nextElementSibling;
+//     // get the target and its next sibling which is the dropdown menu
+//     let dropDownBtn = e.target;
+//     let isDropDownOpening = false;
+//     dropDownActive = dropDownBtn.nextElementSibling;
     
-    // listen for click events on the document
-    document.addEventListener("click", closeDropDownListener);
+//     // listen for click events on the document
+//     document.addEventListener("click", closeDropDownListener);
 
-    // check for mobile
-    if(window.innerWidth > 767) {
+//     // check for mobile
+//     if(window.innerWidth > 767) {
 
-        dropDownActive.classList.toggle("pd-show");
+//         dropDownActive.classList.toggle("pd-show");
            
-    } else {
+//     } else {
 
-        if(!dropDownActive.classList.contains("pd-show")) {
+//         if(!dropDownActive.classList.contains("pd-show")) {
 
-            // open the toggle
-            isDropDownOpening = true;
+//             // open the toggle
+//             isDropDownOpening = true;
 
-            dropDownActive.classList.add("pd-show");
-            let dropDownActiveHeight = dropDownActive.offsetHeight;
-            dropDownActiveHeight = "height: " + dropDownActiveHeight + "px";
+//             dropDownActive.classList.add("pd-show");
+//             let dropDownActiveHeight = dropDownActive.offsetHeight;
+//             dropDownActiveHeight = "height: " + dropDownActiveHeight + "px";
 
-            // add pd-collapsing, repaint dom
-            dropDownActive.classList.add("pd-collapsing");
-            console.log(dropDownActive.offsetHeight); // forces repaint!!
+//             // add pd-collapsing, repaint dom
+//             dropDownActive.classList.add("pd-collapsing");
+//             console.log(dropDownActive.offsetHeight); // forces repaint!!
 
-            // set the height on the style attribute
-            dropDownActive.setAttribute("style", dropDownActiveHeight);
+//             // set the height on the style attribute
+//             dropDownActive.setAttribute("style", dropDownActiveHeight);
 
             
-        } else {
-            // close the toggle
-            dropDownActive.removeAttribute("style");
-            dropDownActive.classList.add("pd-collapsing");
+//         } else {
+//             // close the toggle
+//             dropDownActive.removeAttribute("style");
+//             dropDownActive.classList.add("pd-collapsing");
 
-            isDropDownOpening = false;
+//             isDropDownOpening = false;
 
-        }
+//         }
 
-        // listen for the transition end event
-        dropDownActive.addEventListener("transitionend", (e)=> {
-            dropDownActive.classList.remove("pd-collapsing");
+//         // listen for the transition end event
+//         dropDownActive.addEventListener("transitionend", (e)=> {
+//             dropDownActive.classList.remove("pd-collapsing");
 
-            if(!isDropDownOpening) {
-                // remove pd-show
-                dropDownActive.classList.remove("pd-show");
-                isDropDownOpening = !isDropDownOpening;
-            }
-        });
+//             if(!isDropDownOpening) {
+//                 // remove pd-show
+//                 dropDownActive.classList.remove("pd-show");
+//                 isDropDownOpening = !isDropDownOpening;
+//             }
+//         });
         
+//     }
+// }
+
+
+// ************************
+// *** initDropDowns2() ***
+// ************************
+
+function initDropDowns2() {
+
+    // loop through all dropdowns and add the dropDownClickListener2 and the dropDownTransitionEndListener
+    const dropDownBtns = document.getElementsByClassName("pd-dropdown");
+    for(const dropDown of dropDownBtns) {
+        // add the dropDownClickListener2 to the button
+        dropDown.addEventListener("click", dropDownClickListener2);
+
+        // get the ul sibling
+        const dropDownUl = dropDown.nextElementSibling;
+        dropDownUl.addEventListener("transitionend", dropDownTransitionEndListener);
     }
+
+
 }
 
 
 
+// ********************************
+// *** dropDownClickListener2() ***
+// ********************************
 
-function closeDropDownListener(e) {
+function dropDownClickListener2(e) {
 
-    if (!e.target.matches('.pd-dropdown-toggle')) {
-        // loop through all pdDropdowns and if they have show
-        dropDownActive.classList.toggle("pd-show");
-        
+    // get mobile state
+    const isMobile = document.innerWidth < 768 ? true : false; 
 
-        // loop through all .pd-dropdown-menu
-        let dropDownsToCheck = document.querySelectorAll(".pd-dropdown-menu");
-        for (const dropdown of dropDownsToCheck) {
-            if(dropdown.classList.contains("pd-show")) {
-                dropdown.classList.toggle("pd-show");
+    // get the id of the object which is the next node
+    const dropDownBtn = e.target;
+    console.log(dropDownBtn);
+    const dropDown = dropDownBtn.nextElementSibling;
+    const thisDropDownId = dropDown.id;
+
+    // get a reference to all dropdowns
+    const dropDowns = document.getElementsByClassName("pd-dropdown-menu");
+
+    // toggle the ones that are already open
+    for(const dropDown of dropDowns) {
+        // check it's not this one
+        if(dropDown.id !== thisDropDownId && dropDown.classList.contains("pd-show")) {
+            // it's open and needs to be shut, act appropriately according to mobile state
+            if(isMobile) {
+                animateToggleDropDown(dropDown.id);
+            } else {
+                dropDown.classList.remove("pd-show");
             }
+            
         }
+    }
+
+    // now just toggle the one requesting
+    if(isMobile) {
+        animateToggleDropDown(thisDropDownId);
+    } else {
+        toggleDropDown(thisDropDownId);
+    }
+
+}
+
+// ************************
+// *** toggleDropDown() ***
+// ************************
+
+function toggleDropDown(newId) {
+    // get a reference to the object
+    const dropDown = document.querySelector(`#${newId}`);
+
+    if(dropDown.classList.contains("pd-show")) {
+        // we're open and need to shut
+        dropDown.classList.remove("pd-show");
+    } else {
+        // we're closed and we need to open
+        dropDown.classList.add("pd-show");
+    }
+
+}
+
+
+// *******************************
+// *** animateToggleDropDown() ***
+// *******************************
+
+function animateToggleDropDown(newId) {
+
+    // get a reference to the object
+    const dropDown = document.querySelector(`#${newId}`);
+
+    // find out if the object is open or closed
+    if(dropDown.classList.contains("pd-show")) {
+
+        // we're open
+
+        // close the toggle
+        dropDown.removeAttribute("style");
+        dropDown.classList.add("pd-collapsing");
+
+    } else {
+
+        // we're closed
+
+        // add pd-show
+        dropDown.classList.add("pd-show");
+
+        // get the height and change into a string we can use
+        let dropDownActiveHeight = dropDown.offsetHeight;
+        dropDownActiveHeight = "height: " + dropDownActiveHeight + "px";
+
+        // add pd-collapsing, repaint dom
+        dropDown.classList.add("pd-collapsing");
+        console.log(dropDown.offsetHeight); // forces repaint!!
+
+        // set the height on the style attribute
+        dropDown.setAttribute("style", dropDownActiveHeight);
 
     }
 
+}
 
+
+// ***************************************
+// *** dropDownTransitionEndListener() ***
+// ***************************************
+
+function dropDownTransitionEndListener(e) {
+    // get a reference to the object
+    const dropDown = e.target;
+
+    // if there is no style attribute - we're closing, so remove pd-show
+    if(dropDown.getAttribute("style") == null || dropDown.getAttribute("style") == "") {
+        // remove pd-show
+        dropDown.classList.remove("pd-show");
+    }
+
+    // remove pd-collapsing
+    dropDown.classList.remove("pd-collapsing");
 
 }
+
+
+
+// function closeDropDownListener(e) {
+
+//     if (!e.target.matches('.pd-dropdown-toggle')) {
+//         // loop through all pdDropdowns and if they have show
+//         dropDownActive.classList.toggle("pd-show");
+        
+
+//         // loop through all .pd-dropdown-menu
+//         let dropDownsToCheck = document.querySelectorAll(".pd-dropdown-menu");
+//         for (const dropdown of dropDownsToCheck) {
+//             if(dropdown.classList.contains("pd-show")) {
+//                 dropdown.classList.toggle("pd-show");
+//             }
+//         }
+
+//     }
+
+
+
+// }
 
 // end dropdowns
 
