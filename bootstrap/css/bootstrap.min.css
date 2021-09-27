@@ -9712,6 +9712,8 @@ progress {
         .pd-mainNav-6 .pd-mainNav-inner-6 ul li a.pd-dropdown-toggle {
           white-space: nowrap;
           display: inline-block; }
+          .pd-mainNav-6 .pd-mainNav-inner-6 ul li a.pd-dropdown-toggle > * {
+            pointer-events: none; }
           .pd-mainNav-6 .pd-mainNav-inner-6 ul li a.pd-dropdown-toggle .pd-dropdown-caret {
             margin-left: 4px;
             content: url(/images/design-assets/icon-caret-white.svg); }

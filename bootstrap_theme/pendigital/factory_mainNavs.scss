@@ -731,6 +731,10 @@
                     white-space: nowrap;
                     display: inline-block;
 
+                    > * {
+                        pointer-events: none;
+                    }
+
                     .pd-dropdown-caret {
                         margin-left: 4px;
                         content: url(/images/design-assets/icon-caret-white.svg);

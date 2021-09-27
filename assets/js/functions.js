@@ -183,6 +183,7 @@ function initPdDropdowns() {
 }
 
 function dropdownClickListener(e) {
+
     // prevent default behaviour
     e.preventDefault();
 
@@ -202,6 +203,7 @@ function dropdownClickListener(e) {
     } else {
 
         if(!dropDownActive.classList.contains("pd-show")) {
+
             // open the toggle
             isDropDownOpening = true;
 
@@ -237,10 +239,10 @@ function dropdownClickListener(e) {
             }
         });
         
-        
-
     }
 }
+
+
 
 
 function closeDropDownListener(e) {
