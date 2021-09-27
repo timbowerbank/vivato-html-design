@@ -293,7 +293,8 @@ function dropDownClickListener2(e) {
             if(isMobile) {
                 animateToggleDropDown(dropDown.id);
             } else {
-                dropDown.classList.remove("pd-show");
+                // dropDown.classList.remove("pd-show");
+                toggleDropDown(dropDown.id);
             }
             
         }
@@ -333,6 +334,8 @@ function closeDropDownListener(e) {
                 if(dropDown.classList.contains("pd-show")) {
                     // then remove it
                     dropDown.classList.remove("pd-show");
+                    const dropDownBtn = dropDown.previousElementSibling;
+                    dropDownBtn.setAttribute("aria-expanded", "false");
                 }
             }
 
@@ -378,6 +381,9 @@ function animateToggleDropDown(newId) {
     // get a reference to the object
     const dropDown = document.querySelector(`#${newId}`);
 
+    // get a reference to the btn
+    const dropDownBtn = dropDown.previousElementSibling;
+
     // find out if the object is open or closed
     if(dropDown.classList.contains("pd-show")) {
 
@@ -386,6 +392,9 @@ function animateToggleDropDown(newId) {
         // close the toggle
         dropDown.removeAttribute("style");
         dropDown.classList.add("pd-collapsing");
+
+        // set the aria expanded attribute
+        dropDownBtn.setAttribute("aria-expanded", "false");
 
     } else {
 
@@ -404,6 +413,9 @@ function animateToggleDropDown(newId) {
 
         // set the height on the style attribute
         dropDown.setAttribute("style", dropDownActiveHeight);
+
+        // set the aria expanded attribute
+        dropDownBtn.setAttribute("aria-expanded", "true");
 
     }
 
@@ -425,10 +437,8 @@ function dropDownTransitionEndListener(e) {
     if(dropDown.getAttribute("style") == null || dropDown.getAttribute("style") == "") {
         // remove pd-show
         dropDown.classList.remove("pd-show");
-        dropDownBtn.setAttribute("aria-expanded", false);
-    } else {
-        dropDownBtn.setAttribute("aria-expanded", true);
-    }
+        
+    } 
 
     // remove pd-collapsing
     dropDown.classList.remove("pd-collapsing");
