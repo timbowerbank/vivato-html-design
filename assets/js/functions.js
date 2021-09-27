@@ -250,7 +250,7 @@ function navScrollListener6() {
 function initDropDowns2() {
 
     // loop through all dropdowns and add the dropDownClickListener2 and the dropDownTransitionEndListener
-    const dropDownBtns = document.getElementsByClassName("pd-dropdown");
+    const dropDownBtns = document.getElementsByClassName("pd-dropdown-toggle");
     for(const dropDown of dropDownBtns) {
         // add the dropDownClickListener2 to the button
         dropDown.addEventListener("click", dropDownClickListener2);
@@ -259,6 +259,9 @@ function initDropDowns2() {
         const dropDownUl = dropDown.nextElementSibling;
         dropDownUl.addEventListener("transitionend", dropDownTransitionEndListener);
     }
+
+    // listen for click events on the document
+    document.addEventListener("click", closeDropDownListener);
 
 
 }
@@ -272,11 +275,10 @@ function initDropDowns2() {
 function dropDownClickListener2(e) {
 
     // get mobile state
-    const isMobile = document.innerWidth < 768 ? true : false; 
+    const isMobile = window.innerWidth < 768 ? true : false; 
 
     // get the id of the object which is the next node
     const dropDownBtn = e.target;
-    console.log(dropDownBtn);
     const dropDown = dropDownBtn.nextElementSibling;
     const thisDropDownId = dropDown.id;
 
@@ -306,6 +308,41 @@ function dropDownClickListener2(e) {
 
 }
 
+
+
+// *******************************
+// *** closeDropDownListener() ***
+// *******************************
+
+function closeDropDownListener(e) {
+
+    // get mobile state
+    const isMobile = window.innerWidth < 768 ? true : false;
+
+    if(!isMobile) {
+        // we're in desktop mode
+        // !e.target.matches('.pd-dropdown-toggle')
+        if(e.target.matches(".pd-dropdown-toggle") || e.target.matches(".pd-dropdown-item")) {
+            // do nothing... this is already taken care of
+            
+        } else {
+
+            // loop through all the dropdowns and if they have pd-show on them then change them
+            const dropDowns = document.getElementsByClassName("pd-dropdown-menu");
+            for(const dropDown of dropDowns) {
+                if(dropDown.classList.contains("pd-show")) {
+                    // then remove it
+                    dropDown.classList.remove("pd-show");
+                }
+            }
+
+        }
+
+        
+
+    }
+}
+
 // ************************
 // *** toggleDropDown() ***
 // ************************
@@ -314,12 +351,19 @@ function toggleDropDown(newId) {
     // get a reference to the object
     const dropDown = document.querySelector(`#${newId}`);
 
+    // get a reference to the previous sibling, which is the button
+    const dropDownBtn = dropDown.previousElementSibling;
+
     if(dropDown.classList.contains("pd-show")) {
         // we're open and need to shut
         dropDown.classList.remove("pd-show");
+        // also set aria-expanded on previous sibling
+        dropDownBtn.setAttribute("aria-expanded", "false");
+        
     } else {
         // we're closed and we need to open
         dropDown.classList.add("pd-show");
+        dropDownBtn.setAttribute("aria-expanded", "true");
     }
 
 }
@@ -374,10 +418,16 @@ function dropDownTransitionEndListener(e) {
     // get a reference to the object
     const dropDown = e.target;
 
+    // get a reference to the previous sibling, which is the button
+    const dropDownBtn = dropDown.previousElementSibling;
+
     // if there is no style attribute - we're closing, so remove pd-show
     if(dropDown.getAttribute("style") == null || dropDown.getAttribute("style") == "") {
         // remove pd-show
         dropDown.classList.remove("pd-show");
+        dropDownBtn.setAttribute("aria-expanded", false);
+    } else {
+        dropDownBtn.setAttribute("aria-expanded", true);
     }
 
     // remove pd-collapsing
