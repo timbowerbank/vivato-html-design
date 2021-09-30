@@ -806,6 +806,23 @@
             }
         }
 
+        .pd-mainNav-social-6 {
+            display: flex;
+            width: 100%;
+            padding: 30px;
+            flex-direction: row;
+            justify-content: center;
+
+            img {
+                margin-left: 8px;
+                margin-right: 8px;
+            }
+
+            @include media-breakpoint-up(md) {
+                display: none;
+            }
+        }
+
         .pd-mainNav-mask-6 {
             display: none;
         }

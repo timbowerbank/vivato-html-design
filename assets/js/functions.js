@@ -80,7 +80,8 @@ var isInvertedState6 = false;
 function initHamburgerBtn6() {
 
     bodyNav6 = document.querySelector("body");
-    hamburgerBtn6 = document.getElementsByClassName("hamburger")[0];
+    // hamburgerBtn6 = document.getElementsByClassName("hamburger")[0];
+    hamburgerBtn6 = document.querySelector(".pd-mainNav-6 .hamburger");
     hamburgerBtn6.addEventListener("click", manageMobMenuListener6);
     hamburgerInner6 = document.querySelector(".hamburger-inner");
     innerNav6 = document.querySelector(".pd-mainNav-inner-6");
@@ -167,7 +168,7 @@ var mainNavBurger6;
 function initNavScrollListener6() {
     // assign mainNav and mainNavBurger
     mainNav6 = document.querySelector("#pd-mainNav-6");
-    mainNavBurger6 = document.querySelector(".hamburger-inner");
+    mainNavBurger6 = document.querySelector("#pd-mainNav-6 .hamburger-inner");
 
     // add a scroll listener to the main window object
     window.addEventListener("scroll", navScrollListener6);
@@ -224,6 +225,9 @@ function initDropDowns6() {
 
 // *** dropDownClickListener6() ***
 function dropDownClickListener6(e) {
+
+    // prevent the default
+    e.preventDefault();
 
     // get mobile state
     const isMobile = window.innerWidth < 768 ? true : false; 
@@ -296,6 +300,7 @@ function closeDropDownListener6(e) {
 
 // *** toggleDropDown6() ***
 function toggleDropDown6(newId) {
+
     // get a reference to the object
     const dropDown = document.querySelector(`#${newId}`);
 

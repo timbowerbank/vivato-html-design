@@ -9771,6 +9771,25 @@ progress {
           border-radius: 0 !important; }
       .pd-mainNav-6 .pd-mainNav-inner-6 ul li.pd-dropdown {
         position: relative; }
+    .pd-mainNav-6 .pd-mainNav-inner-6 .pd-mainNav-social-6 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      padding: 30px;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .pd-mainNav-6 .pd-mainNav-inner-6 .pd-mainNav-social-6 img {
+        margin-left: 8px;
+        margin-right: 8px; }
+      @media (min-width: 768px) {
+        .pd-mainNav-6 .pd-mainNav-inner-6 .pd-mainNav-social-6 {
+          display: none; } }
     .pd-mainNav-6 .pd-mainNav-inner-6 .pd-mainNav-mask-6 {
       display: none; }
     .pd-mainNav-6 .pd-mainNav-inner-6 a.pd-pageActive-6 {
