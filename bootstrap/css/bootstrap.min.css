@@ -9642,6 +9642,10 @@ progress {
       color: #222222 !important;
       background: transparent; }
 
+.pd-mainNav-6-body-noScroll {
+  overflow: hidden;
+  height: 100vh; }
+
 .pd-mainNav-6 {
   background-color: #433a6c;
   padding-top: 2px;
@@ -9767,6 +9771,8 @@ progress {
           border-radius: 0 !important; }
       .pd-mainNav-6 .pd-mainNav-inner-6 ul li.pd-dropdown {
         position: relative; }
+    .pd-mainNav-6 .pd-mainNav-inner-6 .pd-mainNav-mask-6 {
+      display: none; }
     .pd-mainNav-6 .pd-mainNav-inner-6 a.pd-pageActive-6 {
       background: #b53027;
       border-radius: 4px;
@@ -9793,12 +9799,10 @@ progress {
     right: 0;
     padding-top: 140px;
     padding-bottom: 40px;
-    background: -webkit-linear-gradient(43.7deg, #5137c4 11.79%, #0071f6 144.33%);
-    background: -o-linear-gradient(43.7deg, #5137c4 11.79%, #0071f6 144.33%);
-    background: linear-gradient(46.3deg, #5137c4 11.79%, #0071f6 144.33%);
+    background: #433a6c;
     -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
             box-shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
-    overflow: auto; }
+    overflow-y: scroll; }
     .pd-mainNav-6 .pd-mainNav-inner-6.open ul {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -9848,6 +9852,14 @@ progress {
           -o-transition: height .35s;
           transition: height .35s;
           height: 0px; }
+    .pd-mainNav-6 .pd-mainNav-inner-6.open .pd-mainNav-mask-6 {
+      display: block;
+      position: fixed;
+      opacity: 90%;
+      width: 100%;
+      background: #433a6c;
+      top: 0;
+      height: 78px; }
   .pd-mainNav-6 .pd-mainNav-hamburger-6 {
     height: 100%;
     display: -webkit-box;

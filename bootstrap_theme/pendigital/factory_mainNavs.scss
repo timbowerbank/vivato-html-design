@@ -666,6 +666,11 @@
 
 // end pd-mainNav-5
 // start pd-mainNav-6
+.pd-mainNav-6-body-noScroll {
+    overflow: hidden;
+    height: 100vh;
+}
+
 .pd-mainNav-6 {
     background-color: $primary;
     padding-top: 2px;
@@ -801,6 +806,10 @@
             }
         }
 
+        .pd-mainNav-mask-6 {
+            display: none;
+        }
+
         // end of ul
         a.pd-pageActive-6 {
             background: $info;
@@ -824,9 +833,11 @@
         right: 0;
         padding-top: 140px;
         padding-bottom: 40px;
-        background: linear-gradient(46.3deg,#5137c4 11.79%,#0071f6 144.33%);
+
+        // background: linear-gradient(46.3deg,#5137c4 11.79%,#0071f6 144.33%);
+        background: $primary;
         box-shadow: rgba(0,0,0,.1) 0 10px 15px -3px,rgba(0,0,0,.05) 0 4px 6px -2px;
-        overflow: auto;
+        overflow-y: scroll;
 
         ul {
             flex-direction: column;
@@ -890,6 +901,16 @@
                     height: 0px;
                 }
             }
+        }
+
+        .pd-mainNav-mask-6 {
+            display: block;
+            position: fixed;
+            opacity: 90%;
+            width: 100%;
+            background: $primary;
+            top: 0;
+            height: 78px;
         }
     }
 

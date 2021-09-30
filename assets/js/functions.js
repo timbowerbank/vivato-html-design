@@ -64,6 +64,7 @@ function navScrollListener5() {
 // ********************
 
 // initHamburger
+var bodyNav6;
 var hamburgerBtn6;
 var hamburgerInner6;
 var outerNav6;
@@ -72,6 +73,7 @@ var navToggle6 = false;
 var isInvertedState6 = false;
 function initHamburgerBtn6() {
 
+    bodyNav6 = document.querySelector("body");
     hamburgerBtn6 = document.getElementsByClassName("hamburger")[0];
     hamburgerBtn6.addEventListener("click", manageMobMenuListener6);
     hamburgerInner6 = document.querySelector(".hamburger-inner");
@@ -81,40 +83,64 @@ function initHamburgerBtn6() {
 }
 
 function manageMobMenuListener6(e) {
+
+    const windowScrollY = window.scrollY;
     
     navToggle6 = !navToggle6;
 
     if(navToggle6) {
-  
-      // manage the look of the hamburger menu
-      hamburgerBtn6.classList.add("is-active");
-  
-      // activate the site menu by adding CSS and add open class to outer nav 
-      innerNav6.classList.add("open");
-      outerNav6.classList.add("open");
 
-      // check state of hamburger menu
-      if(hamburgerInner6.classList.contains("hamburger-inverted")) {
-          // it means it is white
-          isInvertedState6 = true;
-      } else {
-          // it means it is black
-          isInvertedState6 = false;
-          hamburgerInner6.classList.add("hamburger-inverted");
-      }
-      
-
+        // fix the body
+        document.body.style.position = 'fixed';
+        document.body.style.top = `-${windowScrollY}px`;
   
+        // check state of hamburger menu
+        if(hamburgerInner6.classList.contains("hamburger-inverted")) {
+            // it means it is white
+            isInvertedState6 = true;
+            console.log("contains hamburger-inverted");
+            console.log("isInvertedState: " + isInvertedState6);
+        } else {
+            // it means it is black
+            isInvertedState6 = false;
+            hamburgerInner6.classList.add("hamburger-inverted");
+        }
+
+        // manage the look of the hamburger menu
+        hamburgerBtn6.classList.add("is-active");
+    
+        // stop the main body scrolling
+        bodyNav6.classList.add("pd-mainNav-6-body-noScroll");
+
+        // activate the site menu by adding CSS and add open class to outer nav 
+        innerNav6.classList.add("open");
+        outerNav6.classList.add("open");
+
     } else {
+
+        // allow body to scroll again 
+        const scrollY = document.body.style.top;
+        document.body.style.position = '';
+        document.body.style.top = '';
+        window.scrollTo({
+            left: 0,
+            top: parseInt(scrollY || '0') * -1,
+            behavior: 'instant'
+        });
   
         hamburgerBtn6.classList.remove("is-active");
+
+        // allow body to scroll again
+        bodyNav6.classList.remove("pd-mainNav-6-body-noScroll");
 
         // deactivate menu
         innerNav6.classList.remove("open");
         outerNav6.classList.remove("open");
 
         // restore state of hamburger menu
-        if(!isInvertedState6) {
+        if(isInvertedState6) {
+            hamburgerInner6.classList.add("hamburger-inverted");
+        } else {
             hamburgerInner6.classList.remove("hamburger-inverted");
         }
   
