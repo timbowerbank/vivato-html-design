@@ -98,8 +98,7 @@ function manageMobMenuListener6(e) {
         if(hamburgerInner6.classList.contains("hamburger-inverted")) {
             // it means it is white
             isInvertedState6 = true;
-            console.log("contains hamburger-inverted");
-            console.log("isInvertedState: " + isInvertedState6);
+
         } else {
             // it means it is black
             isInvertedState6 = false;
@@ -118,7 +117,7 @@ function manageMobMenuListener6(e) {
 
     } else {
 
-        // allow body to scroll again 
+        // allow body to scroll again but make sure window is in the same scroll position as it was before
         const scrollY = document.body.style.top;
         document.body.style.position = '';
         document.body.style.top = '';
@@ -435,7 +434,8 @@ function animateToggleDropDown(newId) {
 
         // add pd-collapsing, repaint dom
         dropDown.classList.add("pd-collapsing");
-        console.log(dropDown.offsetHeight); // forces repaint!!
+        // console.log(dropDown.offsetHeight); // forces repaint!!
+        void(dropDown.offsetHeight);
 
         // set the height on the style attribute
         dropDown.setAttribute("style", dropDownActiveHeight);
