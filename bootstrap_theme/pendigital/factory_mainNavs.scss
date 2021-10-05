@@ -813,13 +813,22 @@
             flex-direction: row;
             justify-content: center;
 
-            img {
-                margin-left: 10px;
-                margin-right: 10px;
-                transition: transform 0.4s;
+            a {
+                display: inline-block;
 
-                &:hover {
-                    transform: scale(1.1);
+                img {
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    transition: transform 0.4s;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+
+                    &:focus {
+                        outline: 2px dotted $white;
+                        outline-offset: 2px;
+                    }
                 }
             }
 
@@ -988,6 +997,13 @@
     width: 100%;
     z-index: 1000;
 
+    a {
+        &:focus {
+            outline: 2px dotted $primary;
+            outline-offset: 5px;
+        }
+    }
+
     #logo {
         content: url(/images/design-assets/fort-logo.svg);
     }
@@ -1002,6 +1018,11 @@
 
                     &:hover {
                         color: lighten(#222222, 50%);
+                    }
+
+                    &:focus {
+                        outline: 2px dotted $primary;
+                        outline-offset: 5px;
                     }
                 }
 

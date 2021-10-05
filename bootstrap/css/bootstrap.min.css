@@ -9784,18 +9784,23 @@ progress {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
-      .pd-mainNav-6 .pd-mainNav-inner-6 .pd-mainNav-social-6 img {
-        margin-left: 10px;
-        margin-right: 10px;
-        -webkit-transition: -webkit-transform 0.4s;
-        transition: -webkit-transform 0.4s;
-        -o-transition: transform 0.4s;
-        transition: transform 0.4s;
-        transition: transform 0.4s, -webkit-transform 0.4s; }
-        .pd-mainNav-6 .pd-mainNav-inner-6 .pd-mainNav-social-6 img:hover {
-          -webkit-transform: scale(1.1);
-              -ms-transform: scale(1.1);
-                  transform: scale(1.1); }
+      .pd-mainNav-6 .pd-mainNav-inner-6 .pd-mainNav-social-6 a {
+        display: inline-block; }
+        .pd-mainNav-6 .pd-mainNav-inner-6 .pd-mainNav-social-6 a img {
+          margin-left: 10px;
+          margin-right: 10px;
+          -webkit-transition: -webkit-transform 0.4s;
+          transition: -webkit-transform 0.4s;
+          -o-transition: transform 0.4s;
+          transition: transform 0.4s;
+          transition: transform 0.4s, -webkit-transform 0.4s; }
+          .pd-mainNav-6 .pd-mainNav-inner-6 .pd-mainNav-social-6 a img:hover {
+            -webkit-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                    transform: scale(1.1); }
+          .pd-mainNav-6 .pd-mainNav-inner-6 .pd-mainNav-social-6 a img:focus {
+            outline: 2px dotted #fff;
+            outline-offset: 2px; }
       @media (min-width: 768px) {
         .pd-mainNav-6 .pd-mainNav-inner-6 .pd-mainNav-social-6 {
           display: none; } }
@@ -9939,12 +9944,18 @@ progress {
   width: 100%;
   z-index: 1000;
   background-color: #f7f7f7; }
+    .pd-mainNav-6.pd-mainNav-6-inverted a:focus {
+      outline: 2px dotted #433a6c;
+      outline-offset: 5px; }
   .pd-mainNav-6.pd-mainNav-6-inverted #logo {
     content: url(/images/design-assets/fort-logo.svg); }
         .pd-mainNav-6.pd-mainNav-6-inverted .pd-mainNav-inner-6 ul li a {
           color: #222222; }
           .pd-mainNav-6.pd-mainNav-6-inverted .pd-mainNav-inner-6 ul li a:hover {
             color: #a2a2a2; }
+          .pd-mainNav-6.pd-mainNav-6-inverted .pd-mainNav-inner-6 ul li a:focus {
+            outline: 2px dotted #433a6c;
+            outline-offset: 5px; }
         .pd-mainNav-6.pd-mainNav-6-inverted .pd-mainNav-inner-6 ul li a.pd-pageActive-6 {
           color: #ebebeb; }
       .pd-mainNav-6.pd-mainNav-6-inverted .pd-mainNav-inner-6 ul li a.pd-dropdown-toggle .pd-dropdown-caret {
