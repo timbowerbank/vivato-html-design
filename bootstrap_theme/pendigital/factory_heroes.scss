@@ -1,0 +1,58 @@
+.pd-hero-1 {
+	background: $primary;
+    h1 {
+        color: white;
+        font-weight: 700;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+    }
+
+    .pd-hero-1-headline {
+        color: white;
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 1.4;
+
+        @media (min-width: 768px) and (max-width: 1199px) {
+            font-size: 2rem;
+        }
+    }
+
+    div.pd-hero-image-1-outer {
+        width: 100%;
+
+        @media (min-width: 768px) and (max-width: 1199px) {
+            overflow-x: hidden;
+        }
+
+        img.pd-hero-image-1 {
+            width: 100%;
+            background: rgba(255,255,255,.176);
+            border-radius: 15px;
+            padding: 15px;
+            box-shadow: rgba(0,0,0,.1) 0 10px 15px -3px,rgba(0,0,0,.05) 0 4px 6px -2px;
+            border: 2px solid rgba(254,254,254,.25);
+
+            @media (min-width: 768px) and (max-width: 1199px) {
+                width: 700px;
+            }
+        }
+    }
+
+	a {
+		.pd-hero-1-play-icon {
+			margin-right: 5px;
+			content: url(/images/design-assets/icon-arrow-play-white.svg);
+
+		}
+
+		&:hover {
+			.pd-hero-1-play-icon {
+				content: url(/images/design-assets/icon-arrow-play-primary.svg)!important;
+			}
+		}
+	}
+
+	}
+	
+}

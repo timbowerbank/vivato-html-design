@@ -10120,4 +10120,41 @@ progress {
   transition: bottom 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22), -webkit-transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22); }
 
 /* purgecss end ignore */
+.pd-hero-1 {
+  background: #433a6c; }
+  .pd-hero-1 h1, .pd-hero-1 .h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase; }
+  .pd-hero-1 .pd-hero-1-headline {
+    color: white;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.4; }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .pd-hero-1 .pd-hero-1-headline {
+        font-size: 2rem; } }
+  .pd-hero-1 div.pd-hero-image-1-outer {
+    width: 100%; }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .pd-hero-1 div.pd-hero-image-1-outer {
+        overflow-x: hidden; } }
+    .pd-hero-1 div.pd-hero-image-1-outer img.pd-hero-image-1 {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.176);
+      border-radius: 15px;
+      padding: 15px;
+      -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+              box-shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+      border: 2px solid rgba(254, 254, 254, 0.25); }
+      @media (min-width: 768px) and (max-width: 1199px) {
+        .pd-hero-1 div.pd-hero-image-1-outer img.pd-hero-image-1 {
+          width: 700px; } }
+    .pd-hero-1 a .pd-hero-1-play-icon {
+      margin-right: 5px;
+      content: url(/images/design-assets/icon-arrow-play-white.svg); }
+      .pd-hero-1 a .pd-hero-1-play-icon:hover {
+        content: url(/images/design-assets/icon-arrow-play-primary.svg); }
+
 /* Custom CSS rules come here */
