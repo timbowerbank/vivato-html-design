@@ -28,11 +28,19 @@
                     </div>
                     <div class="col-md-8 pe-md-0 ps-md-5" style="position: relative;">
                         <div class="pd-hero-image-1-outer">
+                            <script>
+                                function imageLoadedListener(e) {
+                                    const heroImageLoader = document.querySelector(".pd-hero-1-loader");
+                                    const heroImage = document.querySelector(".pd-hero-image-1");
+                                    heroImageLoader.classList.add("pd-hero-1-remove-loader");
+                                    heroImage.classList.add("pd-hero-image-1-loaded");
+                                }
+                            </script>
                             <picture>
                                 <source srcset="/images/uploads/hero-scissors.webp 1600w, 
                                             /images/uploads/hero-scissors-mob.webp 820w" sizes="(max-width: 600px) calc(100vw - 64px), 1600px" type="image/webp">
                                 <img srcset="/images/uploads/hero-scissors.png 1600w, 
-                                            /images/uploads/hero-scissors-mob.png 820w" sizes="(max-width: 600px) calc(100vw - 64px), 1600px" src="/images/uploads/hero-scissors-mob.png" alt="image of scissors app" class="pd-hero-image-1">
+                                            /images/uploads/hero-scissors-mob.png 820w" sizes="(max-width: 600px) calc(100vw - 64px), 1600px" src="/images/uploads/hero-scissors-mob.png" alt="image of scissors app" class="pd-hero-image-1" onload="imageLoadedListener()">
                             </picture>
                         </div>
                         <div class="pd-hero-1-loader">
