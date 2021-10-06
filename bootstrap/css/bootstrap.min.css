@@ -10121,7 +10121,10 @@ progress {
 
 /* purgecss end ignore */
 .pd-hero-1 {
-  background: #433a6c; }
+  background: -webkit-gradient(linear, left top, left bottom, from(#433a6c), to(#2e284b));
+  background: -webkit-linear-gradient(top, #433a6c, #2e284b);
+  background: -o-linear-gradient(top, #433a6c, #2e284b);
+  background: linear-gradient(180deg, #433a6c, #2e284b); }
   .pd-hero-1 h1, .pd-hero-1 .h1 {
     color: white;
     font-weight: 700;
@@ -10162,6 +10165,9 @@ progress {
       content: url(/images/design-assets/icon-arrow-play-white.svg); }
       .pd-hero-1 a:hover .pd-hero-1-play-icon {
         content: url(/images/design-assets/icon-arrow-play-primary.svg); }
+    .pd-hero-1 a:focus {
+      outline: 2px dotted #fff;
+      outline-offset: 2px; }
   .pd-hero-1 .pd-hero-1-loader {
     position: absolute;
     width: 100%;

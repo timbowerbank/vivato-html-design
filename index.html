@@ -111,17 +111,35 @@
             <div class="align-items-center container-xl d-flex flex-row">
                 <div class="row">
                     <div class="col-md-4 d-flex flex-column justify-content-center mb-4 mb-md-0 p-3">
-                        <h1>Recruitment Agency Software</h1>
-                        <p class="pd-hero-1-headline">An intuitive tool for temp staffers</p>
-                        <p style="color: white; text-transform: uppercase;">Risk-free trial</p>
-                        <div>
+                        <header>
+                            <h1>Recruitment Agency Software</h1>
+                            <p class="pd-hero-1-headline">An intuitive tool for temp staffers</p>
+                            <p style="color: white; text-transform: uppercase;">Risk-free trial</p>
+                        </header>
+                        <footer>
                             <a href="#" name="anchor" class="btn btn-info mb-2 me-2">Start Now</a>
                             <a href="#" name="anchor" class="btn btn-outline-light mb-2"><span><img width="10" class="pd-hero-1-play-icon"></span>Watch how it works</a>
-                        </div>                         
+                        </footer>                         
                     </div>
-                    <div class="col-md-8 pe-md-0 ps-md-5">
+                    <div class="col-md-8 pe-md-0 ps-md-5" style="position: relative;">
                         <div class="pd-hero-image-1-outer">
-                            <img src="images/uploads/hero-scissors.png" class="pd-hero-image-1">
+                            <script>
+                                function imageLoadedListener(e) {
+                                    const heroImageLoader = document.querySelector(".pd-hero-1-loader");
+                                    const heroImage = document.querySelector(".pd-hero-image-1");
+                                    heroImageLoader.classList.add("pd-hero-1-remove-loader");
+                                    heroImage.classList.add("pd-hero-image-1-loaded");
+                                }
+                            </script>
+                            <picture>
+                                <source srcset="/images/uploads/hero-scissors.webp 1600w, 
+                                            /images/uploads/hero-scissors-mob.webp 820w" sizes="(max-width: 600px) calc(100vw - 64px), 1600px" type="image/webp">
+                                <img srcset="/images/uploads/hero-scissors.png 1600w, 
+                                            /images/uploads/hero-scissors-mob.png 820w" sizes="(max-width: 600px) calc(100vw - 64px), 1600px" src="/images/uploads/hero-scissors-mob.png" alt="image of scissors app" class="pd-hero-image-1" onload="imageLoadedListener()">
+                            </picture>
+                        </div>
+                        <div class="pd-hero-1-loader">
+                            <img src="images/design-assets/icon-loading-white.svg" alt="image loading icon" width="200" height="200">
                         </div>                         
                     </div>
                 </div>

@@ -1,5 +1,6 @@
 .pd-hero-1 {
-    background: $primary;
+    // background: $primary;
+    background: linear-gradient(180deg, $primary, darken($primary, 10%));
 
     h1 {
         color: white;
@@ -56,6 +57,11 @@
             .pd-hero-1-play-icon {
                 content: url(/images/design-assets/icon-arrow-play-primary.svg);
             }
+        }
+
+        &:focus {
+            outline: 2px dotted $white;
+            outline-offset: 2px;
         }
     }
 
