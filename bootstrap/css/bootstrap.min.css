@@ -10190,4 +10190,288 @@ progress {
   .pd-hero-1 .pd-hero-1-loader.pd-hero-1-remove-loader {
     display: none; }
 
+.pd-hero-2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#433a6c), to(#2e284b));
+  background: -webkit-linear-gradient(top, #433a6c, #2e284b);
+  background: -o-linear-gradient(top, #433a6c, #2e284b);
+  background: linear-gradient(180deg, #433a6c, #2e284b);
+  min-height: 80vh;
+  padding-top: 160px;
+  padding-bottom: 160px; }
+  .pd-hero-2 .pd-hero-2-headline-outer {
+    width: 80%; }
+  .pd-hero-2 h1, .pd-hero-2 .h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    text-align: center; }
+  .pd-hero-2 .pd-hero-2-headline {
+    color: white;
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 1.4; }
+    @media (max-width: 575px) {
+      .pd-hero-2 .pd-hero-2-headline {
+        font-size: 2rem; } }
+  .pd-hero-2 .pd-hero-2-subHeadline {
+    color: white;
+    text-align: center;
+    font-size: 1rem; }
+  .pd-hero-2 .pd-hero-2-form-outer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+    .pd-hero-2 .pd-hero-2-form-outer form {
+      text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+  @media (min-width: 576px) {
+    .pd-hero-2 .pd-hero-2-form-outer {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .pd-hero-2 .pd-hero-2-form-outer form {
+        width: 320px;
+        display: block; } }
+  .pd-hero-2 div.pd-hero-image-2-outer {
+    width: 100%; }
+    .pd-hero-2 div.pd-hero-image-2-outer img.pd-hero-image-2 {
+      opacity: 0;
+      -webkit-transition: opacity .4s;
+      -o-transition: opacity .4s;
+      transition: opacity .4s;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.176);
+      border-radius: 15px;
+      padding: 15px;
+      -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+              box-shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+      border: 2px solid rgba(254, 254, 254, 0.25); }
+      @media (min-width: 768px) {
+        .pd-hero-2 div.pd-hero-image-2-outer img.pd-hero-image-2 {
+          width: 700px; } }
+    .pd-hero-2 div.pd-hero-image-2-outer img.pd-hero-image-2.pd-hero-image-2-loaded {
+      opacity: 1; }
+  .pd-hero-2 .pd-hero-2-loader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    left: 0; }
+  .pd-hero-2 .pd-hero-2-loader.pd-hero-2-remove-loader {
+    display: none; }
+
+.pd-hero-3 {
+  min-height: 80vh;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-top: 1px solid #e9ecef;
+  border-bottom: 1px solid #e9ecef; }
+  @media (min-width: 576px) {
+    .pd-hero-3 {
+      padding-top: 140px;
+      padding-bottom: 140px; } }
+  .pd-hero-3 .pd-hero-3-headline-outer {
+    width: 80%; }
+  .pd-hero-3 h1, .pd-hero-3 .h1 {
+    color: #433a6c;
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    text-align: center; }
+  .pd-hero-3 .pd-hero-3-headline {
+    color: #433a6c;
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 1.4; }
+    @media (max-width: 575px) {
+      .pd-hero-3 .pd-hero-3-headline {
+        font-size: 2rem; } }
+  .pd-hero-3 .pd-hero-3-subHeadline {
+    color: #433a6c;
+    text-align: center;
+    font-size: 1rem; }
+  .pd-hero-3 .pd-hero-3-form-outer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+    .pd-hero-3 .pd-hero-3-form-outer form {
+      text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+  @media (min-width: 576px) {
+    .pd-hero-3 .pd-hero-3-form-outer {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .pd-hero-3 .pd-hero-3-form-outer form {
+        width: 320px;
+        display: block; } }
+  .pd-hero-3 div.pd-hero-image-3-outer {
+    width: 100%; }
+    .pd-hero-3 div.pd-hero-image-3-outer img.pd-hero-image-3 {
+      opacity: 0;
+      -webkit-transition: opacity .4s;
+      -o-transition: opacity .4s;
+      transition: opacity .4s;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 15px;
+      padding: 15px;
+      -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+              box-shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+      border: 2px solid rgba(254, 254, 254, 0.25); }
+      @media (min-width: 768px) {
+        .pd-hero-3 div.pd-hero-image-3-outer img.pd-hero-image-3 {
+          width: 700px; } }
+    .pd-hero-3 div.pd-hero-image-3-outer img.pd-hero-image-3.pd-hero-image-3-loaded {
+      opacity: 1; }
+  .pd-hero-3 .pd-hero-3-loader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    left: 0; }
+  .pd-hero-3 .pd-hero-3-loader.pd-hero-3-remove-loader {
+    display: none; }
+
+.pd-hero-4 {
+  border-top: 1px solid #e9ecef;
+  border-bottom: 1px solid #e9ecef; }
+  .pd-hero-4 h1, .pd-hero-4 .h1 {
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: #433a6c; }
+  .pd-hero-4 .pd-hero-4-headline {
+    color: #433a6c;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.5; }
+    @media (max-width: 575px) {
+      .pd-hero-4 .pd-hero-4-headline {
+        font-size: 2rem; } }
+  .pd-hero-4 .pd-hero-4-subHeadline {
+    color: #433a6c;
+    font-size: 1rem; }
+  .pd-hero-4 .pd-hero-4-images-outer {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 500px;
+    position: relative;
+    overflow-y: hidden;
+    min-height: 360px;
+    height: 100%;
+    padding-left: 0px; }
+  .pd-hero-4 .pd-hero-4-image-large-outer {
+    width: 400px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3); }
+  .pd-hero-4 .pd-hero-4-image-small-outer {
+    width: 180px;
+    position: absolute;
+    bottom: -80px;
+    left: 30px;
+    -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3); }
+
+.pd-hero-5 {
+  border-top: 1px solid #e9ecef;
+  border-bottom: 1px solid #e9ecef;
+  background: -webkit-gradient(linear, left top, left bottom, from(#433a6c), to(#2e284b));
+  background: -webkit-linear-gradient(top, #433a6c, #2e284b);
+  background: -o-linear-gradient(top, #433a6c, #2e284b);
+  background: linear-gradient(180deg, #433a6c, #2e284b); }
+  .pd-hero-5 h1, .pd-hero-5 .h1 {
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: white; }
+  .pd-hero-5 .pd-hero-5-headline {
+    color: white;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.5; }
+    @media (max-width: 575px) {
+      .pd-hero-5 .pd-hero-5-headline {
+        font-size: 2rem; } }
+  .pd-hero-5 .pd-hero-5-subHeadline {
+    color: white;
+    font-size: 1rem; }
+  .pd-hero-5 .pd-hero-5-images-outer {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 500px;
+    position: relative;
+    overflow-y: hidden;
+    min-height: 360px;
+    height: 100%;
+    padding-left: 0px; }
+  .pd-hero-5 .pd-hero-5-image-large-outer {
+    width: 400px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3); }
+  .pd-hero-5 .pd-hero-5-image-small-outer {
+    width: 180px;
+    position: absolute;
+    bottom: -80px;
+    left: 30px;
+    -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3); }
+
 /* Custom CSS rules come here */
