@@ -1,5 +1,6 @@
 .pd-hero-1 {
-	background: $primary;
+    background: $primary;
+
     h1 {
         color: white;
         font-weight: 700;
@@ -39,20 +40,18 @@
         }
     }
 
-	a {
-		.pd-hero-1-play-icon {
-			margin-right: 5px;
-			content: url(/images/design-assets/icon-arrow-play-white.svg);
+    a {
+        .pd-hero-1-play-icon {
+            margin-right: 5px;
+            content: url(/images/design-assets/icon-arrow-play-white.svg);
+        }
 
-		}
-
-		&:hover {
-			.pd-hero-1-play-icon {
-				content: url(/images/design-assets/icon-arrow-play-primary.svg)!important;
-			}
-		}
-	}
-
-	}
-	
+        &:hover {
+            .pd-hero-1-play-icon {
+                content: url(/images/design-assets/icon-arrow-play-primary.svg);
+            }
+        }
+    }
 }
+	
+

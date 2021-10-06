@@ -10154,7 +10154,7 @@ progress {
     .pd-hero-1 a .pd-hero-1-play-icon {
       margin-right: 5px;
       content: url(/images/design-assets/icon-arrow-play-white.svg); }
-      .pd-hero-1 a .pd-hero-1-play-icon:hover {
+      .pd-hero-1 a:hover .pd-hero-1-play-icon {
         content: url(/images/design-assets/icon-arrow-play-primary.svg); }
 
 /* Custom CSS rules come here */
