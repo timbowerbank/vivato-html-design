@@ -26,9 +26,17 @@
                             <a href="#" name="anchor" class="btn btn-outline-light mb-2"><span><img width="10" class="pd-hero-1-play-icon"></span>Watch how it works</a>
                         </div>                         
                     </div>
-                    <div class="col-md-8 pe-md-0 ps-md-5">
+                    <div class="col-md-8 pe-md-0 ps-md-5" style="position: relative;">
                         <div class="pd-hero-image-1-outer">
-                            <img src="images/uploads/hero-scissors.png" class="pd-hero-image-1">
+                            <picture>
+                                <source srcset="/images/uploads/hero-scissors.webp 1600w, 
+                                            /images/uploads/hero-scissors-mob.webp 820w" sizes="(max-width: 600px) calc(100vw - 64px), 1600px" type="image/webp">
+                                <img srcset="/images/uploads/hero-scissors.png 1600w, 
+                                            /images/uploads/hero-scissors-mob.png 820w" sizes="(max-width: 600px) calc(100vw - 64px), 1600px" src="/images/uploads/hero-scissors-mob.png" alt="image of scissors app" class="pd-hero-image-1">
+                            </picture>
+                        </div>
+                        <div class="pd-hero-1-loader">
+                            <img src="images/design-assets/icon-loading-white.svg" alt="image loading icon" width="200" height="200">
                         </div>                         
                     </div>
                 </div>

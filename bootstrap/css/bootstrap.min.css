@@ -10141,6 +10141,10 @@ progress {
       .pd-hero-1 div.pd-hero-image-1-outer {
         overflow-x: hidden; } }
     .pd-hero-1 div.pd-hero-image-1-outer img.pd-hero-image-1 {
+      opacity: 0;
+      -webkit-transition: opacity .4s;
+      -o-transition: opacity .4s;
+      transition: opacity .4s;
       width: 100%;
       background: rgba(255, 255, 255, 0.176);
       border-radius: 15px;
@@ -10151,10 +10155,33 @@ progress {
       @media (min-width: 768px) and (max-width: 1199px) {
         .pd-hero-1 div.pd-hero-image-1-outer img.pd-hero-image-1 {
           width: 700px; } }
+    .pd-hero-1 div.pd-hero-image-1-outer img.pd-hero-image-1.pd-hero-image-1-loaded {
+      opacity: 1; }
     .pd-hero-1 a .pd-hero-1-play-icon {
       margin-right: 5px;
       content: url(/images/design-assets/icon-arrow-play-white.svg); }
       .pd-hero-1 a:hover .pd-hero-1-play-icon {
         content: url(/images/design-assets/icon-arrow-play-primary.svg); }
+  .pd-hero-1 .pd-hero-1-loader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    left: 0; }
+  .pd-hero-1 .pd-hero-1-loader.pd-hero-1-remove-loader {
+    display: none; }
 
 /* Custom CSS rules come here */
