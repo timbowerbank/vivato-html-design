@@ -20,6 +20,11 @@
         }
     }
 
+    .pd-hero-1-subHeadline {
+        color: $white;
+        font-size: 1rem;
+    }
+
     div.pd-hero-image-1-outer {
         width: 100%;
 
@@ -183,12 +188,12 @@
 
 .pd-hero-3 {
     // background: $primary;
-    // background: linear-gradient(180deg, $primary, darken($primary, 10%));
+    background: linear-gradient($gray-100 0%, $white 10%, $white 90%, $gray-100 100%);
     min-height: 80vh;
     padding-top: 80px;
     padding-bottom: 80px;
-    border-top: 1px solid $gray-200;
-    border-bottom: 1px solid $gray-200;
+    border-top: 1px solid $gray-100;
+    border-bottom: 1px solid $gray-100;
 
     @media (min-width: 576px) {
         padding-top: 140px;
@@ -288,19 +293,26 @@
 }
 
 .pd-hero-4 {
-    border-top: 1px solid $gray-200;
-    border-bottom: 1px solid $gray-200;
+    border-top: 1px solid $gray-100;
+    border-bottom: 1px solid $gray-100;
+    background: linear-gradient($gray-100 0%, $white 10%, $white 90%, $gray-100 100%);
 
     h1 {
         font-weight: 700;
-        font-size: 0.8rem;
-        color: $primary;
+        font-size: 0.7rem;
+        color: $white;
+        display: inline-block;
+        background: $secondary;
+        padding: 8px 14px;
+        border-radius: 50em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
     }
 
     .pd-hero-4-headline {
         color: $primary;
         font-weight: 700;
-        font-size: 1.8rem;
+        font-size: 2rem;
         line-height: 1.5;
 
         @media (max-width: 575px) {
@@ -312,50 +324,27 @@
         color: $primary;
         font-size: 1rem;
     }
-
-    .pd-hero-4-images-outer {
-        margin-right: auto;
-        margin-left: auto;
-        max-width: 500px;
-        position: relative;
-        overflow-y: hidden;
-        min-height: 360px;
-        height: 100%;
-        padding-left: 0px;
-    }
-
-    .pd-hero-4-image-large-outer {
-        width: 400px;
-        position: absolute;
-        right: 10px;
-        top: 10px;
-        box-shadow: 0px 0px 12px rgba(0,0,0,0.3);
-    }
-
-    .pd-hero-4-image-small-outer {
-        width: 180px;
-        position: absolute;
-        bottom: -80px;
-        left: 30px;
-        box-shadow: 0px 0px 12px rgba(0,0,0,0.3);
-    }
 }
 
 .pd-hero-5 {
-    border-top: 1px solid $gray-200;
-    border-bottom: 1px solid $gray-200;
     background: linear-gradient(180deg, $primary, darken($primary, 10%));
 
     h1 {
         font-weight: 700;
-        font-size: 0.8rem;
-        color: white;
+        font-size: 0.7rem;
+        color: $primary;
+        display: inline-block;
+        background: rgba(255, 255, 255, 1);
+        padding: 8px 14px;
+        border-radius: 50em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
     }
 
     .pd-hero-5-headline {
         color: white;
         font-weight: 700;
-        font-size: 1.8rem;
+        font-size: 2rem;
         line-height: 1.5;
 
         @media (max-width: 575px) {
@@ -367,34 +356,74 @@
         color: white;
         font-size: 1rem;
     }
+}
 
-    .pd-hero-5-images-outer {
-        margin-right: auto;
-        margin-left: auto;
-        max-width: 500px;
+.pd-hero-6 {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    min-height: 640px;
+
+    .container {
+        padding-top: 9rem;
+        padding-bottom: 9rem;
         position: relative;
-        overflow-y: hidden;
-        min-height: 360px;
+    }
+
+    h1 {
+        font-weight: 700;
+        font-size: 0.7rem;
+        color: $white;
+        display: inline-block;
+
+        // background: rgba(255, 255, 255, 1);
+        background: $secondary;
+        padding: 8px 14px;
+        border-radius: 50em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-hero-6-headline {
+        color: white;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 1.5;
+
+        @media (max-width: 575px) {
+            font-size: 2rem;
+        }
+    }
+
+    .pd-hero-6-subHeadline {
+        color: white;
+        font-size: 1rem;
+    }
+
+    .pd-hero-6-image {
+        position: absolute;
+        object-fit: cover;
+        opacity: 1;
+        width: 100%;
         height: 100%;
-        padding-left: 0px;
+        object-position: center center;
     }
 
-    .pd-hero-5-image-large-outer {
-        width: 400px;
+    .pd-hero-6-image-overlay {
         position: absolute;
-        right: 10px;
-        top: 10px;
-        box-shadow: 0px 0px 12px rgba(0,0,0,0.3);
-    }
-
-    .pd-hero-5-image-small-outer {
-        width: 180px;
-        position: absolute;
-        bottom: -80px;
-        left: 30px;
-        box-shadow: 0px 0px 12px rgba(0,0,0,0.3);
+        width: 100%;
+        height: 100%;
+        background: linear-gradient($black 0%, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0.8) 60%, $black 100%);
+        opacity: 0.7;
     }
 }
+
+
+
+
 
 
 	

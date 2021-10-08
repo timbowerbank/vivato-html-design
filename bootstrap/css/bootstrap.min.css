@@ -10138,6 +10138,9 @@ progress {
     @media (min-width: 768px) and (max-width: 1199px) {
       .pd-hero-1 .pd-hero-1-headline {
         font-size: 2rem; } }
+  .pd-hero-1 .pd-hero-1-subHeadline {
+    color: #fff;
+    font-size: 1rem; }
   .pd-hero-1 div.pd-hero-image-1-outer {
     width: 100%; }
     @media (min-width: 768px) and (max-width: 1199px) {
@@ -10288,11 +10291,15 @@ progress {
     display: none; }
 
 .pd-hero-3 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f8f9fa), color-stop(10%, #fff), color-stop(90%, #fff), to(#f8f9fa));
+  background: -webkit-linear-gradient(#f8f9fa 0%, #fff 10%, #fff 90%, #f8f9fa 100%);
+  background: -o-linear-gradient(#f8f9fa 0%, #fff 10%, #fff 90%, #f8f9fa 100%);
+  background: linear-gradient(#f8f9fa 0%, #fff 10%, #fff 90%, #f8f9fa 100%);
   min-height: 80vh;
   padding-top: 80px;
   padding-bottom: 80px;
-  border-top: 1px solid #e9ecef;
-  border-bottom: 1px solid #e9ecef; }
+  border-top: 1px solid #f8f9fa;
+  border-bottom: 1px solid #f8f9fa; }
   @media (min-width: 576px) {
     .pd-hero-3 {
       padding-top: 140px;
@@ -10387,16 +10394,26 @@ progress {
     display: none; }
 
 .pd-hero-4 {
-  border-top: 1px solid #e9ecef;
-  border-bottom: 1px solid #e9ecef; }
+  border-top: 1px solid #f8f9fa;
+  border-bottom: 1px solid #f8f9fa;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f8f9fa), color-stop(10%, #fff), color-stop(90%, #fff), to(#f8f9fa));
+  background: -webkit-linear-gradient(#f8f9fa 0%, #fff 10%, #fff 90%, #f8f9fa 100%);
+  background: -o-linear-gradient(#f8f9fa 0%, #fff 10%, #fff 90%, #f8f9fa 100%);
+  background: linear-gradient(#f8f9fa 0%, #fff 10%, #fff 90%, #f8f9fa 100%); }
   .pd-hero-4 h1, .pd-hero-4 .h1 {
     font-weight: 700;
-    font-size: 0.8rem;
-    color: #433a6c; }
+    font-size: 0.7rem;
+    color: #fff;
+    display: inline-block;
+    background: #3fa9f5;
+    padding: 8px 14px;
+    border-radius: 50em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
   .pd-hero-4 .pd-hero-4-headline {
     color: #433a6c;
     font-weight: 700;
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 1.5; }
     @media (max-width: 575px) {
       .pd-hero-4 .pd-hero-4-headline {
@@ -10404,45 +10421,26 @@ progress {
   .pd-hero-4 .pd-hero-4-subHeadline {
     color: #433a6c;
     font-size: 1rem; }
-  .pd-hero-4 .pd-hero-4-images-outer {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 500px;
-    position: relative;
-    overflow-y: hidden;
-    min-height: 360px;
-    height: 100%;
-    padding-left: 0px; }
-  .pd-hero-4 .pd-hero-4-image-large-outer {
-    width: 400px;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
-            box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3); }
-  .pd-hero-4 .pd-hero-4-image-small-outer {
-    width: 180px;
-    position: absolute;
-    bottom: -80px;
-    left: 30px;
-    -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
-            box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3); }
 
 .pd-hero-5 {
-  border-top: 1px solid #e9ecef;
-  border-bottom: 1px solid #e9ecef;
   background: -webkit-gradient(linear, left top, left bottom, from(#433a6c), to(#2e284b));
   background: -webkit-linear-gradient(top, #433a6c, #2e284b);
   background: -o-linear-gradient(top, #433a6c, #2e284b);
   background: linear-gradient(180deg, #433a6c, #2e284b); }
   .pd-hero-5 h1, .pd-hero-5 .h1 {
     font-weight: 700;
-    font-size: 0.8rem;
-    color: white; }
+    font-size: 0.7rem;
+    color: #433a6c;
+    display: inline-block;
+    background: white;
+    padding: 8px 14px;
+    border-radius: 50em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
   .pd-hero-5 .pd-hero-5-headline {
     color: white;
     font-weight: 700;
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 1.5; }
     @media (max-width: 575px) {
       .pd-hero-5 .pd-hero-5-headline {
@@ -10450,28 +10448,66 @@ progress {
   .pd-hero-5 .pd-hero-5-subHeadline {
     color: white;
     font-size: 1rem; }
-  .pd-hero-5 .pd-hero-5-images-outer {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 500px;
-    position: relative;
-    overflow-y: hidden;
-    min-height: 360px;
+
+.pd-hero-6 {
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 640px; }
+  .pd-hero-6 .container {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+    position: relative; }
+  .pd-hero-6 h1, .pd-hero-6 .h1 {
+    font-weight: 700;
+    font-size: 0.7rem;
+    color: #fff;
+    display: inline-block;
+    background: #3fa9f5;
+    padding: 8px 14px;
+    border-radius: 50em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
+  .pd-hero-6 .pd-hero-6-headline {
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.5; }
+    @media (max-width: 575px) {
+      .pd-hero-6 .pd-hero-6-headline {
+        font-size: 2rem; } }
+  .pd-hero-6 .pd-hero-6-subHeadline {
+    color: white;
+    font-size: 1rem; }
+  .pd-hero-6 .pd-hero-6-image {
+    position: absolute;
+    -o-object-fit: cover;
+       object-fit: cover;
+    opacity: 1;
+    width: 100%;
     height: 100%;
-    padding-left: 0px; }
-  .pd-hero-5 .pd-hero-5-image-large-outer {
-    width: 400px;
+    -o-object-position: center center;
+       object-position: center center; }
+  .pd-hero-6 .pd-hero-6-image-overlay {
     position: absolute;
-    right: 10px;
-    top: 10px;
-    -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
-            box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3); }
-  .pd-hero-5 .pd-hero-5-image-small-outer {
-    width: 180px;
-    position: absolute;
-    bottom: -80px;
-    left: 30px;
-    -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
-            box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3); }
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(40%, rgba(0, 0, 0, 0.8)), color-stop(60%, rgba(0, 0, 0, 0.8)), to(#000));
+    background: -webkit-linear-gradient(#000 0%, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0.8) 60%, #000 100%);
+    background: -o-linear-gradient(#000 0%, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0.8) 60%, #000 100%);
+    background: linear-gradient(#000 0%, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0.8) 60%, #000 100%);
+    opacity: 0.7; }
 
 /* Custom CSS rules come here */
