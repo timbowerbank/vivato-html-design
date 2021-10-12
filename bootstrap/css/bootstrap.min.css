@@ -10421,6 +10421,41 @@ progress {
   .pd-hero-4 .pd-hero-4-subHeadline {
     color: #433a6c;
     font-size: 1rem; }
+  .pd-hero-4 .pd-hero-4-image {
+    opacity: 0;
+    -webkit-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+    transition: opacity 0.4s; }
+  .pd-hero-4 .pd-hero-4-image.pd-hero-image-4-loaded {
+    opacity: 1; }
+  .pd-hero-4 .pd-hero-4-cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+    .pd-hero-4 .pd-hero-4-cta .btn {
+      margin-top: 10px; }
+  @media (min-width: 576px) {
+    .pd-hero-4 .pd-hero-4-cta {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .pd-hero-4 .pd-hero-4-cta .btn {
+        margin-left: 20px;
+        margin-top: 0px; } }
 
 .pd-hero-5 {
   background: -webkit-gradient(linear, left top, left bottom, from(#433a6c), to(#2e284b));
@@ -10448,6 +10483,41 @@ progress {
   .pd-hero-5 .pd-hero-5-subHeadline {
     color: white;
     font-size: 1rem; }
+  .pd-hero-5 .pd-hero-5-image {
+    opacity: 0;
+    -webkit-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+    transition: opacity 0.4s; }
+  .pd-hero-5 .pd-hero-5-image.pd-hero-image-5-loaded {
+    opacity: 1; }
+  .pd-hero-5 .pd-hero-5-cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+    .pd-hero-5 .pd-hero-5-cta .btn {
+      margin-top: 10px; }
+  @media (min-width: 576px) {
+    .pd-hero-5 .pd-hero-5-cta {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .pd-hero-5 .pd-hero-5-cta .btn {
+        margin-left: 20px;
+        margin-top: 0px; } }
 
 .pd-hero-6 {
   position: relative;
@@ -10542,5 +10612,121 @@ progress {
       .pd-hero-6 .pd-hero-6-cta .btn {
         margin-left: 20px;
         margin-top: 0px; } }
+
+.pd-hero-7 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#433a6c), to(#2e284b));
+  background: -webkit-linear-gradient(top, #433a6c, #2e284b);
+  background: -o-linear-gradient(top, #433a6c, #2e284b);
+  background: linear-gradient(180deg, #433a6c, #2e284b); }
+  .pd-hero-7 h1, .pd-hero-7 .h1 {
+    font-weight: 700;
+    font-size: 0.7rem;
+    color: #fff;
+    display: inline-block;
+    background: #3fa9f5;
+    padding: 8px 14px;
+    border-radius: 50em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
+  .pd-hero-7 .pd-hero-7-headline {
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.5; }
+    @media (max-width: 575px) {
+      .pd-hero-7 .pd-hero-7-headline {
+        font-size: 2rem; } }
+  .pd-hero-7 .pd-hero-7-subHeadline {
+    color: white;
+    font-size: 1rem; }
+  .pd-hero-7 .pd-hero-7-cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+    .pd-hero-7 .pd-hero-7-cta .btn {
+      margin-top: 10px; }
+  @media (min-width: 576px) {
+    .pd-hero-7 .pd-hero-7-cta {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .pd-hero-7 .pd-hero-7-cta .btn {
+        margin-left: 20px;
+        margin-top: 0px; } }
+  .pd-hero-7 .pd-hero-7-image-outer {
+    width: 70%; }
+
+.pd-hero-8 {
+  border-top: 1px solid #f8f9fa;
+  border-bottom: 1px solid #f8f9fa;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f8f9fa), color-stop(10%, #fff), color-stop(90%, #fff), to(#f8f9fa));
+  background: -webkit-linear-gradient(#f8f9fa 0%, #fff 10%, #fff 90%, #f8f9fa 100%);
+  background: -o-linear-gradient(#f8f9fa 0%, #fff 10%, #fff 90%, #f8f9fa 100%);
+  background: linear-gradient(#f8f9fa 0%, #fff 10%, #fff 90%, #f8f9fa 100%); }
+  .pd-hero-8 h1, .pd-hero-8 .h1 {
+    font-weight: 700;
+    font-size: 0.7rem;
+    color: #fff;
+    display: inline-block;
+    background: #3fa9f5;
+    padding: 8px 14px;
+    border-radius: 50em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
+  .pd-hero-8 .pd-hero-8-headline {
+    color: #433a6c;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.5; }
+    @media (max-width: 575px) {
+      .pd-hero-8 .pd-hero-8-headline {
+        font-size: 2rem; } }
+  .pd-hero-8 .pd-hero-8-subHeadline {
+    color: #433a6c;
+    font-size: 1rem; }
+  .pd-hero-8 .pd-hero-8-cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+    .pd-hero-8 .pd-hero-8-cta .btn {
+      margin-top: 10px; }
+  @media (min-width: 576px) {
+    .pd-hero-8 .pd-hero-8-cta {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .pd-hero-8 .pd-hero-8-cta .btn {
+        margin-left: 20px;
+        margin-top: 0px; } }
+  .pd-hero-8 .pd-hero-8-image-outer {
+    width: 70%; }
 
 /* Custom CSS rules come here */

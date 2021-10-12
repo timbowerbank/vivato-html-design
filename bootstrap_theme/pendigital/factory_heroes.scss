@@ -324,6 +324,38 @@
         color: $primary;
         font-size: 1rem;
     }
+
+    .pd-hero-4-image {
+        opacity: 0;
+        transition: opacity 0.4s;
+    }
+
+    .pd-hero-4-image.pd-hero-image-4-loaded {
+        opacity: 1;
+    }
+
+    .pd-hero-4-cta {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        .btn {
+            margin-top: 10px;
+        }
+    }
+
+    @media (min-width: 576px) {
+        .pd-hero-4-cta {
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            .btn {
+                margin-left: 20px;
+                margin-top: 0px;
+            }
+        }
+    }
 }
 
 .pd-hero-5 {
@@ -355,6 +387,38 @@
     .pd-hero-5-subHeadline {
         color: white;
         font-size: 1rem;
+    }
+
+    .pd-hero-5-image {
+        opacity: 0;
+        transition: opacity 0.4s;
+    }
+
+    .pd-hero-5-image.pd-hero-image-5-loaded {
+        opacity: 1;
+    }
+
+    .pd-hero-5-cta {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        .btn {
+            margin-top: 10px;
+        }
+    }
+
+    @media (min-width: 576px) {
+        .pd-hero-5-cta {
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            .btn {
+                margin-left: 20px;
+                margin-top: 0px;
+            }
+        }
     }
 }
 
@@ -446,6 +510,130 @@
                 margin-top: 0px;
             }
         }
+    }
+}
+
+.pd-hero-7 {
+    background: linear-gradient(180deg, $primary, darken($primary, 10%));
+
+    h1 {
+        font-weight: 700;
+        font-size: 0.7rem;
+        color: $white;
+        display: inline-block;
+
+        // background: rgba(255, 255, 255, 1);
+        background: $secondary;
+        padding: 8px 14px;
+        border-radius: 50em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-hero-7-headline {
+        color: white;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 1.5;
+
+        @media (max-width: 575px) {
+            font-size: 2rem;
+        }
+    }
+
+    .pd-hero-7-subHeadline {
+        color: white;
+        font-size: 1rem;
+    }
+
+    .pd-hero-7-cta {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        .btn {
+            margin-top: 10px;
+        }
+    }
+
+    @media (min-width: 576px) {
+        .pd-hero-7-cta {
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            .btn {
+                margin-left: 20px;
+                margin-top: 0px;
+            }
+        }
+    }
+
+    .pd-hero-7-image-outer {
+        width: 70%;
+    }
+}
+
+.pd-hero-8 {
+    border-top: 1px solid $gray-100;
+    border-bottom: 1px solid $gray-100;
+    background: linear-gradient($gray-100 0%, $white 10%, $white 90%, $gray-100 100%);
+
+    h1 {
+        font-weight: 700;
+        font-size: 0.7rem;
+        color: $white;
+        display: inline-block;
+
+        // background: rgba(255, 255, 255, 1);
+        background: $secondary;
+        padding: 8px 14px;
+        border-radius: 50em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-hero-8-headline {
+        color: $primary;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 1.5;
+
+        @media (max-width: 575px) {
+            font-size: 2rem;
+        }
+    }
+
+    .pd-hero-8-subHeadline {
+        color: $primary;
+        font-size: 1rem;
+    }
+
+    .pd-hero-8-cta {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        .btn {
+            margin-top: 10px;
+        }
+    }
+
+    @media (min-width: 576px) {
+        .pd-hero-8-cta {
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            .btn {
+                margin-left: 20px;
+                margin-top: 0px;
+            }
+        }
+    }
+
+    .pd-hero-8-image-outer {
+        width: 70%;
     }
 }
 
