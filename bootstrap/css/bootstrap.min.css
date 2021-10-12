@@ -10495,11 +10495,16 @@ progress {
     position: absolute;
     -o-object-fit: cover;
        object-fit: cover;
-    opacity: 1;
     width: 100%;
     height: 100%;
     -o-object-position: center center;
-       object-position: center center; }
+       object-position: center center;
+    opacity: 0;
+    -webkit-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+    transition: opacity 0.4s; }
+  .pd-hero-6 .pd-hero-6-image.pd-hero-image-6-loaded {
+    opacity: 1; }
   .pd-hero-6 .pd-hero-6-image-overlay {
     position: absolute;
     width: 100%;

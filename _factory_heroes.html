@@ -158,14 +158,14 @@ Focus on retaining candidates and clients.</p>
                                         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email"> 
                                     </div>                                     
                                     <button type="submit" class="btn btn-info ms-2">
-                                        <span><img src="images/design-assets/icon-arrow-01.svg" alt="arrow icon" width="16" height="16" class="me-1"/></span>Book a demo
+                                        <span><img src="/images/design-assets/icon-arrow-01.svg" alt="arrow icon" width="16" height="16" class="me-1"/></span>Book a demo
                                     </button>                                     
                                 </form>
                             </div>
                         </div>                         
                     </div>
                     <div class="align-items-center col-lg-6 col-md-12 d-flex flex-column justify-content-end">
-                        <img src="images/uploads/hero-scissors-collage.png" class="img-fluid" alt="Image of scissors app software"/> 
+                        <img src="/images/uploads/hero-scissors-collage.png" class="img-fluid" alt="Image of scissors app software"/> 
                     </div>
                 </div>
             </div>
@@ -185,21 +185,39 @@ Focus on retaining candidates and clients.</p>
                                         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email"> 
                                     </div>                                     
                                     <button type="submit" class="btn btn-info ms-2">
-                                        <span><img src="images/design-assets/icon-arrow-01.svg" alt="arrow icon" width="16" height="16" class="me-1"/></span>Book a demo
+                                        <span><img src="/images/design-assets/icon-arrow-01.svg" alt="arrow icon" width="16" height="16" class="me-1"/></span>Book a demo
                                     </button>                                     
                                 </form>
                             </div>
                         </div>                         
                     </div>
                     <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-end pe-3 ps-3">
-                        <img src="images/uploads/hero-scissors-collage.png" class="img-fluid" alt="image of scissors app software"/> 
+                        <img src="/images/uploads/hero-scissors-collage.png" class="img-fluid" alt="image of scissors app software"/> 
                     </div>
                 </div>
             </div>
         </section>
         <section class="pb-5 pt-5"></section>
-        <section style="position: relative; overflow: hidden; display: flex; flex-direction: column; align-items: stretch; justify-content: space-between;">
-            <img src="images/uploads/hero-scissors-people-working.jpg" style="position: absolute; object-fit: cover; width: 100%; height: 100%; object-position: center center;" class="pd-hero-6"/>
+        <section class="pd-hero-6">
+            <script>
+                function imageLoadedListener6(e) {
+                    const heroImage6 = document.querySelector(".pd-hero-6-image");
+                    heroImage6.classList.add("pd-hero-image-6-loaded");
+                }
+            </script>
+            <picture>
+                <source srcset="/images/uploads/hero-scissors-people-working.webp 1800w, 
+                                /images/uploads/hero-scissors-people-working-mob.webp 820w" 
+                        sizes="(max-width: 600px) 100vw, 1800px" 
+                        type="image/webp">
+                <img srcset="/images/uploads/hero-scissors-people-working.jpg 1800w,
+                            /images/uploads/hero-scissors-people-working-mob.jpg 820w"
+                    sizes="(max-width: 600px) 100vw, 1800px"
+                    src="/images/uploads/hero-scissors-people-working.jpg" 
+                    class="pd-hero-6-image" onload="imageLoadedListener6()" />
+            </picture>
+            
+            <div class="pd-hero-6-image-overlay"></div>
             <div class="container flex-grow-1 flex-shrink-0" style="padding-top: 9rem; padding-bottom: 9rem; position: relative;">
                 <div class="row">
                     <div class="col-md-6">
@@ -217,7 +235,7 @@ Focus on retaining candidates and clients.</p>
                                     </button>                                     
                                 </form>
                             </div>
-                        </div>                                                  
+                        </div>                         
                     </div>
                 </div>
             </div>

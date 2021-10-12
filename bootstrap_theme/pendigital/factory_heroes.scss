@@ -406,10 +406,15 @@
     .pd-hero-6-image {
         position: absolute;
         object-fit: cover;
-        opacity: 1;
         width: 100%;
         height: 100%;
         object-position: center center;
+        opacity: 0;
+        transition: opacity 0.4s;
+    }
+
+    .pd-hero-6-image.pd-hero-image-6-loaded {
+        opacity: 1;
     }
 
     .pd-hero-6-image-overlay {
