@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="blocks.css">
         <link href="style.css" rel="stylesheet">
     </head>
-    <body>
+    <body style="position: relative;">
         <section id="pd-topBar-7" class="pd-topBar-7" style="background: #f7f7f7;">
             <div class="container">
                 <div class="row">
@@ -36,7 +36,7 @@
                 </div>
             </div>
         </section>
-        <section id="pd-mainNav-6" class="pd-mainNav-6">
+        <section id="pd-mainNav-6" class="pd-mainNav-6 pd-mainNav-6-transparent">
             <div class="container">
                 <div class="row" style="position: relative;">
                     <div class="col-auto d-flex flex-column justify-content-center" style="height: 78px; position: relative; z-index: 1000;">
@@ -108,18 +108,31 @@
                 </div>
             </div>
         </section>
-        <section class="pb-5 pd-hero-7 pt-5">
-            <div class="container">
+        <section class="pd-hero-6" style="margin-top: -82px;">
+            <script>
+                function imageLoadedListener6(e) {
+                    const heroImage6 = document.querySelector(".pd-hero-6-image");
+                    heroImage6.classList.add("pd-hero-image-6-loaded");
+                }
+            </script>
+            <picture>
+                <source srcset="/images/uploads/hero-scissors-people-working.webp 1800w, 
+                                /images/uploads/hero-scissors-people-working-mob.webp 820w" sizes="(max-width: 600px) 100vw, 1800px" type="image/webp">
+                <img srcset="/images/uploads/hero-scissors-people-working.jpg 1800w,
+                            /images/uploads/hero-scissors-people-working-mob.jpg 820w" sizes="(max-width: 600px) 100vw, 1800px" src="/images/uploads/hero-scissors-people-working.jpg" class="pd-hero-6-image" onload="imageLoadedListener6()"/>
+            </picture>
+            <div class="pd-hero-6-image-overlay"></div>
+            <div class="container flex-grow-1 flex-shrink-0" style="padding-top: 12rem; padding-bottom: 9rem; position: relative;">
                 <div class="row">
-                    <div class="align-items-center col-lg-6 col-md-7 d-flex flex-row justify-content-start">
+                    <div class="col-md-8">
                         <div>
                             <header>
                                 <h1>Recruitment Software</h1>
-                                <p class="pd-hero-7-headline">Take back hours of data entry. Throw away your paper stacks. Focus on retaining candidates and clients.</p>
+                                <p class="pd-hero-6-headline">Take back hours of data entry. Throw away your paper stacks. Focus on retaining candidates and clients.</p>
                             </header>
-                            <p class="pd-hero-7-subHeadline">Intuitive temporary staffing software, engineered by recruiters for recruiters.</p>
+                            <p class="pd-hero-6-subHeadline">Intuitive temporary staffing software, engineered by recruiters for recruiters.</p>
                             <footer>
-                                <form role="form" class="pd-hero-7-cta"> 
+                                <form role="form" class="pd-hero-6-cta"> 
                                     <div> 
                                         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email"> 
                                     </div>                                     
@@ -128,11 +141,6 @@
                                     </button>                                     
                                 </form>
                             </footer>
-                        </div>                         
-                    </div>
-                    <div class="align-items-center col-lg-6 col-md-5 d-flex flex-row justify-content-center pt-5 pt-md-0">
-                        <div class="pd-hero-7-image-outer">
-                            <img alt="image of office working using scissors software" width="400" height="400" class="img-fluid" src="images/uploads/hero-scissors-office-primary.svg">
                         </div>                         
                     </div>
                 </div>

@@ -16,15 +16,24 @@
 // $font-family-sans-serif: 'Lato', sans-serif;
 // $headings-font-family: 'Playfair Display', serif;
 $spacer: 1.5rem;
-$primary: #433a6c;
+
+// $primary: #433a6c; Fort Marketing
+// $primary: #007aff; old scissors blue
+$primary: #493bb3;
 $primary-darker: #433a6c;
-$secondary: #3fa9f5;
-$info: #b53027;
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+// $secondary: #3fa9f5;
+$secondary: #17A9E6;
 
-$font-family-sans-serif: 'Raleway', sans-serif;
+// $info: #b53027;
+$info: #00CC66;
+
+// @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+// $font-family-sans-serif: 'Raleway', sans-serif;
+$font-family-sans-serif: 'Montserrat', sans-serif;
 
 @import "bootstrap/bootstrap";
 

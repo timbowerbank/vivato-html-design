@@ -108,32 +108,39 @@
                 </div>
             </div>
         </section>
-        <section class="pb-5 pd-hero-7 pt-5">
+        <section class="pd-hero-5 pt-5">
             <div class="container">
                 <div class="row">
-                    <div class="align-items-center col-lg-6 col-md-7 d-flex flex-row justify-content-start">
+                    <div class="col-lg-12 col-xl-6 d-flex flex-column justify-content-center pb-5">
                         <div>
                             <header>
                                 <h1>Recruitment Software</h1>
-                                <p class="pd-hero-7-headline">Take back hours of data entry. Throw away your paper stacks. Focus on retaining candidates and clients.</p>
+                                <p class="pd-hero-5-headline">Reduce data entry. Eliminate paperwork. Boost quality time with your customers.</p>
                             </header>
-                            <p class="pd-hero-7-subHeadline">Intuitive temporary staffing software, engineered by recruiters for recruiters.</p>
+                            <p class="pd-hero-5-subHeadline">Intuitive temporary staffing software, engineered by recruiters for recruiters.</p>
                             <footer>
-                                <form role="form" class="pd-hero-7-cta"> 
+                                <form role="form" class="pd-hero-5-cta"> 
                                     <div> 
                                         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email"> 
                                     </div>                                     
                                     <button type="submit" class="btn btn-info ">
-                                        <span><img src="images/design-assets/icon-arrow-01.svg" alt="arrow icon" width="16" height="16" class="me-1"/></span>Book a demo
+                                        <span><img src="/images/design-assets/icon-arrow-01.svg" alt="arrow icon" width="16" height="16" class="me-1"/></span>Book a demo
                                     </button>                                     
                                 </form>
                             </footer>
                         </div>                         
                     </div>
-                    <div class="align-items-center col-lg-6 col-md-5 d-flex flex-row justify-content-center pt-5 pt-md-0">
-                        <div class="pd-hero-7-image-outer">
-                            <img alt="image of office working using scissors software" width="400" height="400" class="img-fluid" src="images/uploads/hero-scissors-office-primary.svg">
-                        </div>                         
+                    <div class="col-lg-12 col-xl-6 d-flex flex-column justify-content-end pe-3 ps-3">
+                        <script>
+                            function imageLoadedListener5(e) {
+                                const heroImage5 = document.querySelector(".pd-hero-5-image");
+                                heroImage5.classList.add("pd-hero-image-5-loaded");
+                            }
+                        </script>
+                        <picture>
+                            <source srcset="/images/uploads/hero-scissors-collage.webp" type="image/webp">
+                            <img src="/images/uploads/hero-scissors-collage.png" class="img-fluid pd-hero-5-image" alt="Image of scissors app software" onload="imageLoadedListener5()"/> 
+                        </picture>
                     </div>
                 </div>
             </div>

@@ -23,6 +23,7 @@
     .pd-hero-1-subHeadline {
         color: $white;
         font-size: 1rem;
+        font-weight: 300;
     }
 
     div.pd-hero-image-1-outer {
@@ -70,6 +71,10 @@
         }
     }
 
+    a.btn-info {
+        color: $white;
+    }
+
     .pd-hero-1-loader {
         position: absolute;
         width: 100%;
@@ -91,8 +96,8 @@
     // background: $primary;
     background: linear-gradient(180deg, $primary, darken($primary, 10%));
     min-height: 80vh;
-    padding-top: 160px;
-    padding-bottom: 160px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 
     .pd-hero-2-headline-outer {
         width: 80%;
@@ -121,6 +126,7 @@
         color: white;
         text-align: center;
         font-size: 1rem;
+        font-weight: 300;
     }
 
     .pd-hero-2-form-outer {
@@ -184,17 +190,24 @@
     .pd-hero-2-loader.pd-hero-2-remove-loader {
         display: none;
     }
+
+    button.btn-info {
+        color: $white;
+    }
 }
 
 .pd-hero-3 {
     // background: $primary;
-    background: linear-gradient($gray-100 0%, $white 10%, $white 90%, $gray-100 100%);
+    // background: linear-gradient($gray-100 0%, $white 10%, $white 90%, $gray-100 100%);
+    border-top: 1px solid $gray-300;
+    border-bottom: 1px solid $gray-300;
+    background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
     min-height: 80vh;
     padding-top: 80px;
     padding-bottom: 80px;
-    border-top: 1px solid $gray-100;
-    border-bottom: 1px solid $gray-100;
 
+    // border-top: 1px solid $gray-100;
+    // border-bottom: 1px solid $gray-100;
     @media (min-width: 576px) {
         padding-top: 140px;
         padding-bottom: 140px;
@@ -205,7 +218,7 @@
     }
 
     h1 {
-        color: $primary;
+        color: $gray-600;
         font-weight: 700;
         font-size: 0.8rem;
         text-transform: uppercase;
@@ -224,9 +237,10 @@
     }
 
     .pd-hero-3-subHeadline {
-        color: $primary;
+        color: $gray-600;
         text-align: center;
         font-size: 1rem;
+        font-weight: 300;
     }
 
     .pd-hero-3-form-outer {
@@ -290,19 +304,26 @@
     .pd-hero-3-loader.pd-hero-3-remove-loader {
         display: none;
     }
+
+    button.btn-info {
+        color: $white;
+    }
 }
 
 .pd-hero-4 {
-    border-top: 1px solid $gray-100;
-    border-bottom: 1px solid $gray-100;
-    background: linear-gradient($gray-100 0%, $white 10%, $white 90%, $gray-100 100%);
+    // border-top: 1px solid $gray-100;
+    // border-bottom: 1px solid $gray-100;
+    // background: linear-gradient($gray-100 0%, $white 10%, $white 90%, $gray-100 100%);
+    border-top: 1px solid $gray-300;
+    border-bottom: 1px solid $gray-300;
+    background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
 
     h1 {
         font-weight: 700;
         font-size: 0.7rem;
         color: $white;
         display: inline-block;
-        background: $secondary;
+        background: $info;
         padding: 8px 14px;
         border-radius: 50em;
         text-transform: uppercase;
@@ -321,8 +342,9 @@
     }
 
     .pd-hero-4-subHeadline {
-        color: $primary;
+        color: $gray-600;
         font-size: 1rem;
+        font-weight: 300;
     }
 
     .pd-hero-4-image {
@@ -341,6 +363,10 @@
 
         .btn {
             margin-top: 10px;
+        }
+
+        .btn.btn-info {
+            color: $white;
         }
     }
 
@@ -364,9 +390,11 @@
     h1 {
         font-weight: 700;
         font-size: 0.7rem;
-        color: $primary;
+        color: $white;
         display: inline-block;
-        background: rgba(255, 255, 255, 1);
+
+        // background: rgba(255, 255, 255, 1);
+        background: $info;
         padding: 8px 14px;
         border-radius: 50em;
         text-transform: uppercase;
@@ -387,6 +415,7 @@
     .pd-hero-5-subHeadline {
         color: white;
         font-size: 1rem;
+        font-weight: 300;
     }
 
     .pd-hero-5-image {
@@ -405,6 +434,10 @@
 
         .btn {
             margin-top: 10px;
+        }
+
+        .btn.btn-info {
+            color: $white;
         }
     }
 
@@ -465,6 +498,7 @@
     .pd-hero-6-subHeadline {
         color: white;
         font-size: 1rem;
+        font-weight: 300;
     }
 
     .pd-hero-6-image {
@@ -497,6 +531,10 @@
         .btn {
             margin-top: 10px;
         }
+
+        .btn.btn-info {
+            color: $white;
+        }
     }
 
     @media (min-width: 576px) {
@@ -523,7 +561,7 @@
         display: inline-block;
 
         // background: rgba(255, 255, 255, 1);
-        background: $secondary;
+        background: $info;
         padding: 8px 14px;
         border-radius: 50em;
         text-transform: uppercase;
@@ -544,6 +582,7 @@
     .pd-hero-7-subHeadline {
         color: white;
         font-size: 1rem;
+        font-weight: 300;
     }
 
     .pd-hero-7-cta {
@@ -553,6 +592,10 @@
 
         .btn {
             margin-top: 10px;
+        }
+
+        .btn.btn-info {
+            color: $white;
         }
     }
 
@@ -566,6 +609,10 @@
                 margin-left: 20px;
                 margin-top: 0px;
             }
+
+            .btn.btn-info {
+                color: $white;
+            }
         }
     }
 
@@ -575,9 +622,9 @@
 }
 
 .pd-hero-8 {
-    border-top: 1px solid $gray-100;
-    border-bottom: 1px solid $gray-100;
-    background: linear-gradient($gray-100 0%, $white 10%, $white 90%, $gray-100 100%);
+    border-top: 1px solid $gray-300;
+    border-bottom: 1px solid $gray-300;
+    background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
 
     h1 {
         font-weight: 700;
@@ -586,7 +633,7 @@
         display: inline-block;
 
         // background: rgba(255, 255, 255, 1);
-        background: $secondary;
+        background: $info;
         padding: 8px 14px;
         border-radius: 50em;
         text-transform: uppercase;
@@ -605,8 +652,9 @@
     }
 
     .pd-hero-8-subHeadline {
-        color: $primary;
+        color: $gray-600;
         font-size: 1rem;
+        font-weight: 300;
     }
 
     .pd-hero-8-cta {
@@ -616,6 +664,10 @@
 
         .btn {
             margin-top: 10px;
+        }
+
+        .btn.btn-info {
+            color: $white;
         }
     }
 
