@@ -878,6 +878,10 @@
         ul {
             flex-direction: column;
             align-items: flex-start;
+            width: 100%;
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
 
             li {
                 margin-top: 10px;
@@ -903,7 +907,7 @@
                 }
 
                 a.btn {
-                    width: 100%;
+                    min-width: 40%;
                     font-size: 1rem!important;
                 }
 
@@ -922,7 +926,8 @@
                         a.pd-dropdown-item {
                             background: none;
                             position: relative;
-                            left: 30px;
+
+                            // left: 30px;
                         }
                     }
                 }

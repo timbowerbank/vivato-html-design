@@ -103,6 +103,12 @@
         width: 80%;
     }
 
+    @media (max-width: 575px) {
+        .pd-hero-2-headline-outer {
+            width: 100%;
+        }
+    }
+
     h1 {
         color: white;
         font-weight: 700;
@@ -193,6 +199,18 @@
 
     button.btn-info {
         color: $white;
+
+        &:focus {
+            outline: 2px dotted $white;
+            outline-offset: 2px;
+        }
+    }
+
+    input {
+        &:focus {
+            outline: 2px dotted $white;
+            outline-offset: 5px;
+        }
     }
 }
 
@@ -215,6 +233,12 @@
 
     .pd-hero-3-headline-outer {
         width: 80%;
+    }
+
+    @media (max-width: 575px) {
+        .pd-hero-3-headline-outer {
+            width: 100%;
+        }
     }
 
     h1 {
@@ -307,6 +331,18 @@
 
     button.btn-info {
         color: $white;
+
+        &:focus {
+            outline: 2px dotted $primary;
+            outline-offset: 2px;
+        }
+    }
+
+    input {
+        &:focus {
+            outline: 2px dotted $primary;
+            outline-offset: 5px;
+        }
     }
 }
 
@@ -314,8 +350,8 @@
     // border-top: 1px solid $gray-100;
     // border-bottom: 1px solid $gray-100;
     // background: linear-gradient($gray-100 0%, $white 10%, $white 90%, $gray-100 100%);
-    border-top: 1px solid $gray-300;
-    border-bottom: 1px solid $gray-300;
+    border-top: 1px solid $gray-200;
+    border-bottom: 1px solid $gray-200;
     background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
 
     h1 {
@@ -379,7 +415,19 @@
             .btn {
                 margin-left: 20px;
                 margin-top: 0px;
+
+                &:focus {
+                    outline: 2px dotted $primary;
+                    outline-offset: 2px;
+                }
             }
+        }
+    }
+
+    input {
+        &:focus {
+            outline: 2px dotted $primary;
+            outline-offset: 5px;
         }
     }
 }
@@ -450,7 +498,19 @@
             .btn {
                 margin-left: 20px;
                 margin-top: 0px;
+
+                &:focus {
+                    outline: 2px dotted $white;
+                    outline-offset: 2px;
+                }
             }
+        }
+    }
+
+    input {
+        &:focus {
+            outline: 2px dotted $white;
+            outline-offset: 5px;
         }
     }
 }
@@ -546,7 +606,19 @@
             .btn {
                 margin-left: 20px;
                 margin-top: 0px;
+
+                &:focus {
+                    outline: 2px dotted $white;
+                    outline-offset: 5px;
+                }
             }
+        }
+    }
+
+    input {
+        &:focus {
+            outline: 2px dotted $white;
+            outline-offset: 5px;
         }
     }
 }
@@ -612,7 +684,19 @@
 
             .btn.btn-info {
                 color: $white;
+
+                &:focus {
+                    outline: 2px dotted $white;
+                    outline-offset: 2px;
+                }
             }
+        }
+    }
+
+    input {
+        &:focus {
+            outline: 2px dotted $white;
+            outline-offset: 5px;
         }
     }
 
@@ -622,8 +706,8 @@
 }
 
 .pd-hero-8 {
-    border-top: 1px solid $gray-300;
-    border-bottom: 1px solid $gray-300;
+    border-top: 1px solid $gray-200;
+    border-bottom: 1px solid $gray-200;
     background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
 
     h1 {
@@ -680,7 +764,19 @@
             .btn {
                 margin-left: 20px;
                 margin-top: 0px;
+
+                &:focus {
+                    outline: 2px dotted $primary;
+                    outline-offset: 2px;
+                }
             }
+        }
+    }
+
+    input {
+        &:focus {
+            outline: 2px dotted $primary;
+            outline-offset: 5px;
         }
     }
 

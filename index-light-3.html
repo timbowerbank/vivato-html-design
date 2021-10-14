@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>Blank Template for Bootstrap</title>
+        <title>Light image collage</title>
         <!-- Bootstrap core CSS -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <!-- Custom styles for this template -->
@@ -108,49 +108,39 @@
                 </div>
             </div>
         </section>
-        <section class="pd-hero-3">
+        <section class="pd-hero-4 pt-5">
             <div class="container">
                 <div class="row">
-                    <div class="align-items-center col d-flex flex-column">
-                        <div class="pd-hero-3-headline-outer">
+                    <div class="col-lg-12 col-xl-6 d-flex flex-column justify-content-center pb-5">
+                        <div>
                             <header>
                                 <h1>Recruitment Software</h1>
-                                <p class="pd-hero-3-headline text-center">Take back hours of data entry. Throw away your paper stacks.
-Focus on retaining candidates and clients.</p>
+                                <p class="pd-hero-4-headline">Reduce data entry. Eliminate paperwork. Boost quality time with your customers.</p>
                             </header>
-                            <p class="pd-hero-3-subHeadline">Intuitive temporary staffing software, run by recruiters.</p>
-                            <footer class="pb-4 pd-hero-3-form-outer pt-2">
-                                <form>
-                                    <div class="mb-3">
-                                        <input type="email" class="form-control" id="email" value="Enter your email address">
-                                    </div>
-                                    <button type="submit" class="btn btn-info">
-                                        <span><img src="images/design-assets/icon-arrow-01.svg" alt="arrow icon" width="16" height="16" class="me-1"/></span>Book a demo
-                                    </button>
+                            <p class="pd-hero-4-subHeadline">Intuitive temporary staffing software, engineered by recruiters for recruiters.</p>
+                            <footer>
+                                <form role="form" class="pd-hero-4-cta"> 
+                                    <div> 
+                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email"> 
+                                    </div>                                     
+                                    <button type="submit" class="btn btn-info ">
+                                        <span><img src="/images/design-assets/icon-arrow-01.svg" alt="arrow icon" width="16" height="16" class="me-1"/></span>Book a demo
+                                    </button>                                     
                                 </form>
                             </footer>
-                        </div>
-                        <div style="position: relative;">
-                            <div class="pd-hero-image-3-outer">
-                                <script>
-                                function imageLoadedListener3(e) {
-                                    const heroImageLoader3 = document.querySelector(".pd-hero-3-loader");
-                                    const heroImage3 = document.querySelector(".pd-hero-image-3");
-                                    heroImageLoader3.classList.add("pd-hero-3-remove-loader");
-                                    heroImage3.classList.add("pd-hero-image-3-loaded");
-                                }
-                            </script>
-                                <picture>
-                                    <source srcset="/images/uploads/hero-scissors.webp 1600w, 
-                                            /images/uploads/hero-scissors-mob.webp 820w" sizes="(max-width: 600px) calc(100vw - 64px), 1600px" type="image/webp">
-                                    <img srcset="/images/uploads/hero-scissors.png 1600w, 
-                                            /images/uploads/hero-scissors-mob.png 820w" sizes="(max-width: 600px) calc(100vw - 64px), 1600px" src="/images/uploads/hero-scissors-mob.png" alt="image of scissors app" onload="imageLoadedListener3()" class="pd-hero-image-3">
-                                </picture>
-                            </div>
-                            <div class="pd-hero-3-loader">
-                                <img src="images/design-assets/icon-loading-white.svg" alt="image loading icon" width="200" height="200">
-                            </div>
                         </div>                         
+                    </div>
+                    <div class="align-items-center col-lg-12 col-xl-6 d-flex flex-column justify-content-end">
+                        <script>
+                            function imageLoadedListener4(e) {
+                                const heroImage4 = document.querySelector(".pd-hero-4-image");
+                                heroImage4.classList.add("pd-hero-image-4-loaded");
+                            }
+                        </script>
+                        <picture>
+                            <source srcset="/images/uploads/hero-scissors-collage.webp" type="image/webp">
+                            <img src="/images/uploads/hero-scissors-collage.png" class="img-fluid pd-hero-4-image" alt="Image of scissors app software" onload="imageLoadedListener4()"/> 
+                        </picture>
                     </div>
                 </div>
             </div>
