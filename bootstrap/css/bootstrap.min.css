@@ -10688,8 +10688,8 @@ progress {
   padding-bottom: 80px; }
   @media (min-width: 576px) {
     .pd-hero-3 {
-      padding-top: 140px;
-      padding-bottom: 140px; } }
+      padding-top: 80px;
+      padding-bottom: 80px; } }
   .pd-hero-3 .pd-hero-3-headline-outer {
     width: 80%; }
   @media (max-width: 575px) {
