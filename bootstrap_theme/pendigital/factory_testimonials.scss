@@ -54,6 +54,11 @@
             text-decoration: none;
             color: lighten($primary, 10%);
         }
+
+        &:focus {
+            outline: 2px dotted $primary;
+            outline-offset: 2px;
+        }
     }
 }
 
@@ -111,6 +116,11 @@
 
     .btn.btn-info {
         color: $white;
+
+        &:focus {
+            outline: 2px dotted $primary;
+            outline-offset: 5px;
+        }
     }
 }
 
@@ -195,6 +205,11 @@
         &:hover {
             text-decoration: none;
             color: darken($white, 10%);
+        }
+
+        &:focus {
+            outline: 2px dotted $white;
+            outline-offset: 2px;
         }
     }
 }
@@ -282,6 +297,11 @@
             text-decoration: none;
             color: darken($white, 10%);
         }
+
+        &:focus {
+            outline: 2px dotted $white;
+            outline-offset: 2px;
+        }
     }
 
     .pd-testimonial-4-image-wrapper {
@@ -312,6 +332,235 @@
 }
 
 // end pd-testimonial-4
+// start pd-testimonial-5
+.pd-testimonial-5 {
+    border-top: 1px solid $gray-300;
+    border-bottom: 1px solid $gray-300;
+    background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
+
+    h2 {
+        font-weight: 700;
+        font-size: 0.7rem;
+        color: $white;
+        display: inline-block;
+        background: $info;
+        padding: 8px 14px;
+        border-radius: 50em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-testimonial-5-bubble {
+        background: $white;
+        border-radius: 5px;
+        box-shadow: 5px 5px 12px -1px rgba(0, 0, 0, 0.2);
+        font-size: 0.9rem;
+        line-height: 2;
+        font-weight: 300;
+    }
+
+    .pd-testimonial-5-author-wrapper {
+        h3 {
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        p {
+            color: $gray-600;
+            font-weight: 400;
+            font-size: 1rem;
+        }
+
+        img {
+            border-radius: 50%;
+            width: 90px;
+            height: 90px;
+        }
+    }
+
+    .pd-testimonial-5-link {
+        font-weight: 700;
+        color: $primary;
+        text-decoration: none;
+        transition: color 0.4s;
+
+        &:hover {
+            text-decoration: none;
+            color: darken($primary, 10%);
+        }
+
+        &:focus {
+            outline: 2px dotted $primary;
+            outline-offset: 2px;
+        }
+    }
+}
+
+// end pd-testimonial-5
+// start pd-testimonial-6
+.pd-testimonial-6 {
+    border-top: 1px solid $gray-300;
+    border-bottom: 1px solid $gray-300;
+    background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
+
+    h2 {
+        font-weight: 700;
+        font-size: 0.7rem;
+        color: $white;
+        display: inline-block;
+        background: $info;
+        padding: 8px 14px;
+        border-radius: 50em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-testimonial-6-bubble {
+        background: linear-gradient(lighten($primary, 10%) 0%, $primary 100%);
+        border-radius: 5px;
+        box-shadow: 5px 5px 12px -1px rgba(0, 0, 0, 0.2);
+        color: $white;
+        font-weight: 400;
+        line-height: 2;
+        font-size: 0.9rem;
+    }
+
+    .pd-testimonial-6-author-wrapper {
+        h3 {
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        p {
+            color: $gray-600;
+            font-weight: 400;
+            font-size: 1rem;
+        }
+
+        img {
+            border-radius: 50%;
+            width: 90px;
+            height: 90px;
+        }
+    }
+
+    .pd-testimonial-6-link {
+        font-weight: 700;
+        color: $primary;
+        text-decoration: none;
+        transition: color 0.4s;
+
+        &:hover {
+            text-decoration: none;
+            color: darken($primary, 10%);
+        }
+
+        &:focus {
+            outline: 2px dotted $primary;
+            outline-offset: 2px;
+        }
+    }
+}
+
+// end pd-testimonial-6
+// start pd-testimonial-7
+.pd-testimonial-7 {
+    background: linear-gradient(180deg, $primary, darken($primary, 10%));
+    border-top: 1px solid $gray-300;
+    border-bottom: 1px solid $gray-300;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    position: relative;
+
+    h2 {
+        font-weight: 700;
+        font-size: 0.7rem;
+        color: $white;
+        display: inline-block;
+        background: $info;
+        padding: 8px 14px;
+        border-radius: 50em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-testimonial-7-bubble {
+        background: $white;
+        border-radius: 5px;
+        box-shadow: 5px 5px 12px -1px rgba(0, 0, 0, 0.2);
+        color: $black;
+        font-weight: 400;
+        line-height: 2;
+        font-size: 0.9rem;
+        opacity: 0.85;
+    }
+
+    .pd-testimonial-7-author-wrapper {
+        h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: $white;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 1rem;
+            color: $white;
+        }
+
+        img {
+            border-radius: 50%;
+            width: 90px;
+            height: 90px;
+        }
+    }
+
+    .pd-testimonial-7-link {
+        font-weight: 700;
+        color: $white;
+        text-decoration: none;
+        transition: color 0.4s;
+
+        &:hover {
+            text-decoration: none;
+            color: darken($white, 10%);
+        }
+
+        &:focus {
+            outline: 2px dotted $white;
+            outline-offset: 2px;
+        }
+    }
+
+    .pd-testimonial-7-image-wrapper {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+        height: 100%;
+        z-index: 0;
+        width: 100%;
+
+        img {
+            object-fit: cover;
+            object-position: center center;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .pd-testimonial-7-overlay {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.8) 100%);
+    }
+}
+
+
+
 
 
 
