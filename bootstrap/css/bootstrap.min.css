@@ -11635,6 +11635,12 @@ progress {
     background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.8) 100%);
     background: -o-linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.8) 100%);
     background: linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.8) 100%); }
+
+.pd-cards-1 {
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  padding-top: 100px;
+  padding-bottom: 100px; }
   .pd-cards-1 h2, .pd-cards-1 .h2 {
     background: #00CC66;
     font-weight: 700;
@@ -11682,14 +11688,17 @@ progress {
       .pd-cards-1 .pd-cards-1-card-outer .pd-cards-1-body h3, .pd-cards-1 .pd-cards-1-card-outer .pd-cards-1-body .h3 {
         font-weight: 700;
         line-height: 2;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         margin-bottom: 0px; }
       .pd-cards-1 .pd-cards-1-card-outer .pd-cards-1-body p {
         line-height: 2;
         color: #6c757d; }
       .pd-cards-1 .pd-cards-1-card-outer .pd-cards-1-footer p {
         color: #17A9E6;
-        font-weight: 700; }
+        font-weight: 700;
+        -webkit-transition: color 0.4s;
+        -o-transition: color 0.4s;
+        transition: color 0.4s; }
         .pd-cards-1 .pd-cards-1-card-outer .pd-cards-1-footer p:after {
           content: ">";
           padding-left: 4px; }
@@ -11697,8 +11706,173 @@ progress {
           -webkit-transform: scale(1.1);
               -ms-transform: scale(1.1);
                   transform: scale(1.1); }
+        .pd-cards-1 .pd-cards-1-card-outer:hover .pd-cards-1-footer p {
+          color: #44bbec; }
     .pd-cards-1 .pd-cards-1-card-outer:focus {
       outline: 2px dotted #17A9E6;
       outline-offset: 5px; }
+  .pd-cards-1 .pd-cards-1-link {
+    font-weight: 700;
+    text-decoration: none;
+    color: #17A9E6;
+    -webkit-transition: color 0.4s;
+    -o-transition: color 0.4s;
+    transition: color 0.4s; }
+    .pd-cards-1 .pd-cards-1-link:hover {
+      color: #44bbec; }
+    .pd-cards-1 .pd-cards-1-link:focus {
+      outline: 2px dotted #17A9E6;
+      outline-offset: 2px; }
+
+.pd-cards-2 {
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .pd-cards-2 h2, .pd-cards-2 .h2 {
+    background: #00CC66;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #fff;
+    border-radius: 50em;
+    padding: 8px 14px;
+    display: inline-block; }
+  .pd-cards-2 .pd-cards-2-headline {
+    font-size: 2rem;
+    color: #000;
+    line-height: 1.5;
+    font-weight: 300; }
+    .pd-cards-2 .pd-cards-2-headline strong {
+      font-weight: 700; }
+  .pd-cards-2 .pd-cards-2-subHeadline {
+    font-size: 1rem;
+    color: #000;
+    line-height: 1.5;
+    font-weight: 300; }
+    .pd-cards-2 .pd-cards-2-subHeadline strong {
+      font-weight: 700; }
+  .pd-cards-2 .pd-cards-2-card-outer {
+    display: block;
+    color: #000; }
+    .pd-cards-2 .pd-cards-2-card-outer .pd-cards-2-image-outer {
+      height: 200px;
+      overflow: hidden; }
+      .pd-cards-2 .pd-cards-2-card-outer .pd-cards-2-image-outer img {
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: center center;
+           object-position: center center;
+        width: 100%;
+        height: 100%; }
+    .pd-cards-2 .pd-cards-2-card-outer .pd-cards-2-body {
+      padding-top: 10px;
+      padding-bottom: 10px; }
+      .pd-cards-2 .pd-cards-2-card-outer .pd-cards-2-body h3, .pd-cards-2 .pd-cards-2-card-outer .pd-cards-2-body .h3 {
+        font-weight: 700;
+        line-height: 2;
+        font-size: 1.2rem;
+        margin-bottom: 0px; }
+      .pd-cards-2 .pd-cards-2-card-outer .pd-cards-2-body p {
+        line-height: 2;
+        color: #6c757d; }
+  .pd-cards-2 .pd-cards-2-link {
+    font-weight: 700;
+    text-decoration: none;
+    color: #17A9E6;
+    -webkit-transition: color 0.4s;
+    -o-transition: color 0.4s;
+    transition: color 0.4s; }
+    .pd-cards-2 .pd-cards-2-link:hover {
+      color: #44bbec; }
+    .pd-cards-2 .pd-cards-2-link:focus {
+      outline: 2px dotted #17A9E6;
+      outline-offset: 2px; }
+
+.pd-cards-3 {
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .pd-cards-3 h2, .pd-cards-3 .h2 {
+    background: #00CC66;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #fff;
+    border-radius: 50em;
+    padding: 8px 14px;
+    display: inline-block; }
+  .pd-cards-3 .pd-cards-3-headline {
+    font-size: 2rem;
+    color: #000;
+    line-height: 1.5;
+    font-weight: 300; }
+    .pd-cards-3 .pd-cards-3-headline strong {
+      font-weight: 700; }
+  .pd-cards-3 .pd-cards-3-subHeadline {
+    font-size: 1rem;
+    color: #000;
+    line-height: 1.5;
+    font-weight: 300; }
+    .pd-cards-3 .pd-cards-3-subHeadline strong {
+      font-weight: 700; }
+  .pd-cards-3 .pd-cards-4-outer {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: #fff; }
+    .pd-cards-3 .pd-cards-4-outer .pd-cards-4-image-outer {
+      min-height: 300px;
+      overflow: hidden;
+      position: relative; }
+      .pd-cards-3 .pd-cards-4-outer .pd-cards-4-image-outer img {
+        position: absolute;
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: center center;
+           object-position: center center;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: -webkit-transform 0.4s;
+        transition: -webkit-transform 0.4s;
+        -o-transition: transform 0.4s;
+        transition: transform 0.4s;
+        transition: transform 0.4s, -webkit-transform 0.4s; }
+    .pd-cards-3 .pd-cards-4-outer .pd-cards-4-image-overlay {
+      position: absolute;
+      top: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), color-stop(90%, rgba(0, 0, 0, 0.7)));
+      background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.7) 90%);
+      background: -o-linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.7) 90%);
+      background: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.7) 90%); }
+    .pd-cards-3 .pd-cards-4-outer .pd-cards-4-body {
+      position: absolute;
+      bottom: 0px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      z-index: 2;
+      -webkit-transition: margin-left 0.4s, -webkit-transform 0.4s;
+      transition: margin-left 0.4s, -webkit-transform 0.4s;
+      -o-transition: transform 0.4s, margin-left 0.4s;
+      transition: transform 0.4s, margin-left 0.4s;
+      transition: transform 0.4s, margin-left 0.4s, -webkit-transform 0.4s; }
+      .pd-cards-3 .pd-cards-4-outer .pd-cards-4-body h3, .pd-cards-3 .pd-cards-4-outer .pd-cards-4-body .h3 {
+        font-weight: 700;
+        margin-bottom: 0px;
+        line-height: 1.6;
+        font-size: 1.2rem; }
+        .pd-cards-3 .pd-cards-4-outer:hover .pd-cards-4-image-outer img {
+          -webkit-transform: scale(1.1);
+              -ms-transform: scale(1.1);
+                  transform: scale(1.1); }
+      .pd-cards-3 .pd-cards-4-outer:hover .pd-cards-4-body {
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1);
+        margin-left: 10px; }
 
 /* Custom CSS rules come here */
