@@ -1,0 +1,34 @@
+// start pd-cards-1
+.pd-cards-1 {
+    h2 {
+        background: $info;
+        font-weight: 700;
+        font-size: 0.9rem;
+        color: $white;
+        border-radius: 50em;
+        padding: 8px 14px;
+        display: inline-block;
+    }
+
+    .pd-cards-1-headline {
+        font-size: 2rem;
+        color: $black;
+        line-height: 1.5;
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-cards-1-subHeadline {
+        font-size: 1rem;
+        color: $black;
+        line-height: 1.5;
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+}
