@@ -12185,4 +12185,56 @@ progress {
       outline: 2px dotted #fff;
       outline-offset: 2px; }
 
+.pd-section-1 {
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6; }
+  .pd-section-1 h2, .pd-section-1 .h2 {
+    font-weight: 700;
+    font-size: 0.7rem;
+    color: #fff;
+    display: inline-block;
+    background: #00CC66;
+    padding: 8px 14px;
+    border-radius: 50em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
+  .pd-section-1 .pd-section-1-headline {
+    color: #000;
+    font-weight: 300;
+    line-height: 1.4;
+    font-size: 2rem; }
+    .pd-section-1 .pd-section-1-headline strong {
+      font-weight: 700; }
+  .pd-section-1 .pd-section-1-para {
+    color: #6c757d;
+    line-height: 2;
+    font-weight: 300; }
+  .pd-section-1 .pd-section-1-image-outer {
+    position: relative;
+    min-height: 500px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px; }
+    .pd-section-1 .pd-section-1-image-outer img {
+      width: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      height: 100%;
+      -o-object-position: center center;
+         object-position: center center;
+      position: absolute; }
+  .pd-section-1 .pd-section-1-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(30%, rgba(0, 0, 0, 0.4)), color-stop(80%, rgba(0, 0, 0, 0.6)), to(#000));
+    background: -webkit-linear-gradient(#000 0%, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.6) 80%, #000 100%);
+    background: -o-linear-gradient(#000 0%, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.6) 80%, #000 100%);
+    background: linear-gradient(#000 0%, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.6) 80%, #000 100%);
+    opacity: 0.6;
+    border-radius: 15px; }
+
 /* Custom CSS rules come here */
