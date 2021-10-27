@@ -11900,7 +11900,11 @@ progress {
   border-top: 1px solid #dee2e6;
   border-bottom: 1px solid #dee2e6;
   padding-top: 100px;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), color-stop(20%, #f9f9f9), color-stop(90%, #f9f9f9), to(#f7f7f7));
+  background: -webkit-linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
+  background: -o-linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
+  background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%); }
   .pd-cards-4 h2, .pd-cards-4 .h2 {
     background: #00CC66;
     font-weight: 700;
@@ -11930,7 +11934,8 @@ progress {
     padding-right: 40px;
     padding-left: 40px;
     padding-top: 60px;
-    padding-bottom: 40px; }
+    padding-bottom: 40px;
+    background: #fff; }
     .pd-cards-4 .pd-cards-4-card-outer h3, .pd-cards-4 .pd-cards-4-card-outer .h3 {
       font-weight: 700;
       font-size: 2rem;
@@ -11951,11 +11956,12 @@ progress {
       .pd-cards-4 .pd-cards-4-card-outer ul li {
         padding-top: 4px;
         padding-bottom: 4px;
-        padding-left: 14px;
+        padding-left: 32px;
         position: relative; }
         .pd-cards-4 .pd-cards-4-card-outer ul li:before {
-          content: ">";
-          padding-right: 4px;
+          content: url(/images/design-assets/icon-checkmark.svg);
+          width: 12px;
+          height: 12px;
           position: absolute;
           left: 0; }
   .pd-cards-4 .pd-cards-4-link {
@@ -12033,11 +12039,12 @@ progress {
       .pd-cards-5 .pd-cards-5-card-outer ul li {
         padding-top: 4px;
         padding-bottom: 4px;
-        padding-left: 14px;
+        padding-left: 32px;
         position: relative; }
         .pd-cards-5 .pd-cards-5-card-outer ul li:before {
-          content: ">";
-          padding-right: 4px;
+          content: url(/images/design-assets/icon-checkmark.svg);
+          width: 12px;
+          height: 12px;
           position: absolute;
           left: 0; }
     .pd-cards-5 .pd-cards-5-card-outer p.pd-cards-5-readMore {
@@ -12070,6 +12077,112 @@ progress {
       color: #44bbec; }
     .pd-cards-5 .pd-cards-5-link:focus {
       outline: 2px dotted #17A9E6;
+      outline-offset: 2px; }
+
+.pd-cards-6 {
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));
+  background: -webkit-linear-gradient(top, #17A9E6, #1287b8);
+  background: -o-linear-gradient(top, #17A9E6, #1287b8);
+  background: linear-gradient(180deg, #17A9E6, #1287b8); }
+  .pd-cards-6 h2, .pd-cards-6 .h2 {
+    background: #00CC66;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #fff;
+    border-radius: 50em;
+    padding: 8px 14px;
+    display: inline-block; }
+  .pd-cards-6 .pd-cards-6-headline {
+    font-size: 2rem;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 300; }
+    .pd-cards-6 .pd-cards-6-headline strong {
+      font-weight: 700; }
+  .pd-cards-6 .pd-cards-6-subHeadline {
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 300; }
+    .pd-cards-6 .pd-cards-6-subHeadline strong {
+      font-weight: 700; }
+  .pd-cards-6 .pd-cards-6-card-outer {
+    border: 1px solid #dee2e6;
+    border-radius: 15px;
+    position: relative;
+    background: #fff;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    text-decoration: none;
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    -o-transition: transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s; }
+    .pd-cards-6 .pd-cards-6-card-outer h3, .pd-cards-6 .pd-cards-6-card-outer .h3 {
+      font-weight: 700;
+      font-size: 2rem;
+      color: #000;
+      line-height: 1.6;
+      margin-bottom: 20px; }
+    .pd-cards-6 .pd-cards-6-card-outer p {
+      color: #6c757d;
+      line-height: 2; }
+    .pd-cards-6 .pd-cards-6-card-outer ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      color: #000;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.8rem; }
+      .pd-cards-6 .pd-cards-6-card-outer ul li {
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 32px;
+        position: relative; }
+        .pd-cards-6 .pd-cards-6-card-outer ul li:before {
+          content: url(/images/design-assets/icon-checkmark.svg);
+          width: 12px;
+          height: 12px;
+          position: absolute;
+          left: 0; }
+    .pd-cards-6 .pd-cards-6-card-outer p.pd-cards-6-readMore {
+      color: #17A9E6;
+      padding-top: 20px;
+      text-transform: uppercase;
+      margin-bottom: 0px;
+      -webkit-transition: color 0.4s;
+      -o-transition: color 0.4s;
+      transition: color 0.4s; }
+    .pd-cards-6 .pd-cards-6-card-outer:hover {
+      -webkit-box-shadow: 8px 8px 18px rgba(0, 0, 0, 0.4);
+              box-shadow: 8px 8px 18px rgba(0, 0, 0, 0.4);
+      -webkit-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+              transform: scale(1.05); }
+      .pd-cards-6 .pd-cards-6-card-outer:hover .pd-cards-6-readMore {
+        color: #44bbec; }
+    .pd-cards-6 .pd-cards-6-card-outer:focus {
+      outline: 2px dotted #fff;
+      outline-offset: 4px; }
+  .pd-cards-6 .pd-cards-6-link {
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    -webkit-transition: color 0.4s;
+    -o-transition: color 0.4s;
+    transition: color 0.4s; }
+    .pd-cards-6 .pd-cards-6-link:hover {
+      color: #44bbec; }
+    .pd-cards-6 .pd-cards-6-link:focus {
+      outline: 2px dotted #fff;
       outline-offset: 2px; }
 
 /* Custom CSS rules come here */

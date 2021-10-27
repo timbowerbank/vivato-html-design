@@ -353,6 +353,7 @@
     border-bottom: 1px solid $gray-300;
     padding-top: 100px;
     padding-bottom: 100px;
+    background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
 
     h2 {
         background: $info;
@@ -394,6 +395,7 @@
         padding-left: 40px;
         padding-top: 60px;
         padding-bottom: 40px;
+        background: $white;
 
         h3 {
             font-weight: 700;
@@ -420,12 +422,13 @@
             li {
                 padding-top: 4px;
                 padding-bottom: 4px;
-                padding-left: 14px;
+                padding-left: 32px;
                 position: relative;
 
                 &:before {
-                    content: ">";
-                    padding-right: 4px;
+                    content: url(/images/design-assets/icon-checkmark.svg);
+                    width: 12px;
+                    height: 12px;
                     position: absolute;
                     left: 0;
                 }
@@ -528,12 +531,13 @@
             li {
                 padding-top: 4px;
                 padding-bottom: 4px;
-                padding-left: 14px;
+                padding-left: 32px;
                 position: relative;
 
                 &:before {
-                    content: ">";
-                    padding-right: 4px;
+                    content: url(/images/design-assets/icon-checkmark.svg);
+                    width: 12px;
+                    height: 12px;
                     position: absolute;
                     left: 0;
                 }
@@ -581,3 +585,136 @@
 }
 
 // end pd-cards-5
+// start pd-cards-6
+.pd-cards-6 {
+    border-top: 1px solid $gray-300;
+    border-bottom: 1px solid $gray-300;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: linear-gradient(180deg, $primary, darken($primary, 10%));
+
+    h2 {
+        background: $info;
+        font-weight: 700;
+        font-size: 0.9rem;
+        color: $white;
+        border-radius: 50em;
+        padding: 8px 14px;
+        display: inline-block;
+    }
+
+    .pd-cards-6-headline {
+        font-size: 2rem;
+        color: $white;
+        line-height: 1.5;
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-cards-6-subHeadline {
+        font-size: 1rem;
+        color: $white;
+        line-height: 1.5;
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    // anchor outer
+    .pd-cards-6-card-outer {
+        border: 1px solid $gray-300;
+        border-radius: 15px;
+        position: relative;
+        background: $white;
+        padding-right: 40px;
+        padding-left: 40px;
+        padding-top: 60px;
+        padding-bottom: 40px;
+        text-decoration: none;
+        transition: transform 0.4s;
+
+        // opacity: 0.95;
+        h3 {
+            font-weight: 700;
+            font-size: 2rem;
+            color: $black;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: $gray-600;
+            line-height: 2;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            color: $black;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+
+            li {
+                padding-top: 4px;
+                padding-bottom: 4px;
+                padding-left: 32px;
+                position: relative;
+
+                &:before {
+                    content: url(/images/design-assets/icon-checkmark.svg);
+                    width: 12px;
+                    height: 12px;
+                    position: absolute;
+                    left: 0;
+                }
+            }
+        }
+
+        p.pd-cards-6-readMore {
+            color: $primary;
+            padding-top: 20px;
+            text-transform: uppercase;
+            margin-bottom: 0px;
+            transition: color 0.4s;
+        }
+
+        &:hover {
+            box-shadow: 8px 8px 18px rgba(0, 0, 0, 0.4);
+            transform: scale(1.05);
+
+            .pd-cards-6-readMore {
+                color: lighten($primary, 10%);
+            }
+        }
+
+        &:focus {
+            outline: 2px dotted $white;
+            outline-offset: 4px;
+        }
+    }
+
+    .pd-cards-6-link {
+        font-weight: 700;
+        text-decoration: none;
+        color: $white;
+        transition: color 0.4s;
+
+        &:hover {
+            color: lighten($primary, 10%);
+        }
+
+        &:focus {
+            outline: 2px dotted $white;
+            outline-offset: 2px;
+        }
+    }
+}
+
+// end pd-cards-6
