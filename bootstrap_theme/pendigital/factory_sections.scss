@@ -116,13 +116,136 @@
     .pd-section-2-image-overlay {
         position: absolute;
         width: 100%;
-        height: 100%;
+        min-height: 540px;
         background: linear-gradient($black 0%, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.6) 80%, $black 100%);
         opacity: 0.6;
         top: 0px;
         left: 0px;
     }
 }
+
+// end pd-section-2
+// start pd-section-3
+.pd-section-3 {
+    border-top: 1px solid $gray-300;
+    border-bottom: 1px solid $gray-300;
+    background: linear-gradient($gray-100 0%, $white 20%, $white 80%, $gray-100 100%);
+
+    h2 {
+        font-weight: 700;
+        font-size: 0.7rem;
+        color: $white;
+        display: inline-block;
+
+        // background: rgba(255, 255, 255, 1);
+        background: $info;
+        padding: 8px 14px;
+        border-radius: 50em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-section-3-headline {
+        color: $black;
+        font-weight: 300;
+        line-height: 1.4;
+        font-size: 2rem;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-section-3-para {
+        color: $gray-600;
+        line-height: 2;
+        font-weight: 300;
+    }
+
+    .pd-section-3-image-outer {
+        padding-right: 10px;
+        padding-left: 10px;
+        height: 100%;
+        min-height: 400px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: auto;
+            height: 400px;
+        }
+    }
+}
+
+// end pd-section-3
+// start pd-section-4
+.pd-section-4 {
+    border-top: 1px solid $gray-300;
+    border-bottom: 1px solid $gray-300;
+
+    // background: linear-gradient($gray-100 0%, $white 20%, $white 80%, $gray-100 100%);
+    h2 {
+        font-weight: 700;
+        font-size: 0.7rem;
+        color: $white;
+        display: inline-block;
+
+        // background: rgba(255, 255, 255, 1);
+        background: $info;
+        padding: 8px 14px;
+        border-radius: 50em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-section-4-headline {
+        color: $black;
+        font-weight: 300;
+        line-height: 1.4;
+        font-size: 2rem;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-section-4-para {
+        color: $gray-600;
+        line-height: 2;
+        font-weight: 300;
+    }
+
+    .pd-section-4-image-outer {
+        height: 100%;
+        min-height: 380px;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 240px;
+            position: absolute;
+            bottom: -140px;
+            height: auto;
+        }
+    }
+
+    // column
+    .pd-section-4-text-outer {
+        min-height: 0px;
+    }
+
+    @media (min-width: 992px) {
+        .pd-section-4-text-outer {
+            min-height: 450px;
+        }
+    }
+}
+
+
 
 
 
