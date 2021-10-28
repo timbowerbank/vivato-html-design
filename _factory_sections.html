@@ -31,7 +31,6 @@
                                 <p><strong>Cras justo odio, dapibus ac facilisis in, egestas.</strong></p>
                             </div>
                         </header>                         
-
                         <div class="pd-section-1-para">
                             <p>Suspendisse maximus nec elit vel egestas. Proin sagittis est massa, vitae maximus neque congue vitae. Nulla vestibulum eros vel urna sollicitudin hendrerit. Curabitur ac iaculis arcu, non vulputate massa.</p>
                         </div>                         
@@ -39,10 +38,13 @@
                     <div class="col-md-6 order-md-2">
                         <div style="position: relative;">
                             <div class="pd-section-1-image-outer">
-                                <img src="images/uploads/cards-sample-1.jpg" alt="image of someone using the product" width="450" height="500">
+                                <picture>
+                                    <source srcset="/images/uploads/cards-sample-1.webp" type="image/webp">
+                                    <img src="/images/uploads/cards-sample-1.jpg" alt="image of someone using the product" width="450" height="500" loading="lazy">
+                                </picture>
                             </div>
                             <div class="pd-section-1-image-overlay"></div>
-                        </div>                                                  
+                        </div>                         
                     </div>
                 </article>
                 <article class="row">
@@ -53,7 +55,6 @@
                                 <p><strong>Donec ut diam et enim feugiat posuere. Vivamus arcu lacus,</strong></p>
                             </div>
                         </header>                         
-
                         <div class="pd-section-1-para">
                             <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
                         </div>                         
@@ -61,10 +62,13 @@
                     <div class="col-md-6">
                         <div style="position: relative;">
                             <div class="pd-section-1-image-outer">
-                                <img alt="image of someone using the product" width="450" height="500" src="images/uploads/cards-sample-2.jpg">
+                                <picture>
+                                    <source srcset="/images/uploads/cards-sample-2.webp" type="image/webp">
+                                    <img src="/images/uploads/cards-sample-2.jpg" alt="image of someone using the product" width="450" height="500" loading="lazy">
+                                </picture>
                             </div>
                             <div class="pd-section-1-image-overlay"></div>
-                        </div>                                                  
+                        </div>                         
                     </div>
                 </article>
             </div>
@@ -72,6 +76,59 @@
         <section class="pb-5 pt-5" style="position: relative;">
             <div style="position: absolute; bottom: 1px;">
                 <p style="font-weight: 700; padding-bottom: 5px; padding-left: 10px; margin-bottom: 0px;">pd-section-2</p>
+            </div>
+        </section>
+        <section class="pb-5 pd-section-2 pt-5">
+            <div class="container">
+                <div class="row">
+                    <article class="align-items-start col-md-6 d-flex flex-column justify-content-center order-2 order-md-1 p-4">
+                        <header>
+                            <h2>Feature 1</h2>
+                            <div class="pd-section-2-headline">
+                                <p><strong>Cras justo odio, dapibus ac facilisis in, egestas.</strong></p>
+                            </div>
+                        </header>                         
+                        <div class="pd-section-1-para">
+                            <p class="pd-section-2-para">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                        </div>                         
+                    </article>
+                    <article class="col-md-6 order-1 order-md-2 pe-0 ps-0" style="position: relative;">
+                        <div class="pd-section-2-image-outer">
+                            <picture>
+                                <source srcset="/images/uploads/cards-sample-1.webp" type="image/webp">
+                                <img src="/images/uploads/cards-sample-1.jpg" alt="image of someone using the product" width="450" height="500" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="pd-section-2-image-overlay"></div>                                                  
+                    </article>
+                </div>
+                <div class="row">
+                    <article class="align-items-start col-md-6 d-flex flex-column justify-content-center order-2 order-md-2 p-4">
+                        <header>
+                            <h2>Feature 2</h2>
+                            <div class="pd-section-2-headline">
+                                <p><strong>Donec ut diam et enim feugiat posuere. Vivamus arcu lacus,</strong></p>
+                            </div>
+                        </header>                         
+                        <div class="pd-section-1-para">
+                            <p class="pd-section-2-para">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                        </div>                         
+                    </article>
+                    <article class="col-md-6 order-1 order-md-1 pe-0 ps-0" style="position: relative;">
+                        <div class="pd-section-2-image-outer">
+                            <picture>
+                                <source srcset="/images/uploads/cards-sample-2.webp" type="image/webp">
+                                <img src="/images/uploads/cards-sample-2.jpg" alt="image of someone using the product" width="450" height="500" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="pd-section-2-image-overlay"></div>                                                  
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="pb-5 pt-5" style="position: relative;">
+            <div style="position: absolute; bottom: 1px;">
+                <p style="font-weight: 700; padding-bottom: 5px; padding-left: 10px; margin-bottom: 0px;">pd-section-3</p>
             </div>
         </section>
         <script src="assets/js/popper.min.js"></script>
