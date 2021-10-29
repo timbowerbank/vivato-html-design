@@ -12188,7 +12188,9 @@ progress {
 .pd-section-1 {
   border-top: 1px solid #dee2e6;
   border-bottom: 1px solid #dee2e6; }
-  .pd-section-1 h2, .pd-section-1 .h2, .pd-section-1 h3, .pd-section-1 .h3 {
+  .pd-section-1 h2, .pd-section-1 .h2,
+  .pd-section-1 h3,
+  .pd-section-1 .h3 {
     font-weight: 700;
     font-size: 0.7rem;
     color: #fff;
@@ -12363,18 +12365,180 @@ progress {
   .pd-section-4 .pd-section-4-image-outer {
     height: 100%;
     min-height: 380px;
-    width: 100%;
+    width: 280px;
     position: relative;
     overflow: hidden; }
     .pd-section-4 .pd-section-4-image-outer img {
-      width: 240px;
+      width: 280px;
       position: absolute;
-      bottom: -140px;
+      bottom: -200px;
+      left: 0;
       height: auto; }
   .pd-section-4 .pd-section-4-text-outer {
     min-height: 0px; }
   @media (min-width: 992px) {
     .pd-section-4 .pd-section-4-text-outer {
       min-height: 450px; } }
+
+.pd-section-5 {
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));
+  background: -webkit-linear-gradient(top, #17A9E6, #1287b8);
+  background: -o-linear-gradient(top, #17A9E6, #1287b8);
+  background: linear-gradient(180deg, #17A9E6, #1287b8); }
+  .pd-section-5 h2, .pd-section-5 .h2 {
+    font-weight: 700;
+    font-size: 0.7rem;
+    color: #fff;
+    display: inline-block;
+    background: #00CC66;
+    padding: 8px 14px;
+    border-radius: 50em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
+  .pd-section-5 .pd-section-5-headline {
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.4;
+    font-size: 2rem; }
+    .pd-section-5 .pd-section-5-headline strong {
+      font-weight: 700; }
+  .pd-section-5 .pd-section-5-para {
+    color: #fff;
+    line-height: 2;
+    font-weight: 300; }
+  .pd-section-5 .pd-section-5-image-outer {
+    height: 100%;
+    min-height: 380px;
+    width: 280px;
+    position: relative;
+    overflow: hidden; }
+    .pd-section-5 .pd-section-5-image-outer img {
+      width: 280px;
+      position: absolute;
+      bottom: -200px;
+      left: 0;
+      height: auto; }
+  .pd-section-5 .pd-section-5-text-outer {
+    min-height: 0px; }
+  @media (min-width: 992px) {
+    .pd-section-5 .pd-section-5-text-outer {
+      min-height: 450px; } }
+
+.pd-section-6 {
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(18, 18, 18, 0.85)), to(#121212));
+  background: -webkit-linear-gradient(rgba(18, 18, 18, 0.85) 0%, #121212 100%);
+  background: -o-linear-gradient(rgba(18, 18, 18, 0.85) 0%, #121212 100%);
+  background: linear-gradient(rgba(18, 18, 18, 0.85) 0%, #121212 100%); }
+  .pd-section-6 h2, .pd-section-6 .h2 {
+    font-weight: 700;
+    font-size: 0.7rem;
+    color: #fff;
+    display: inline-block;
+    background: #00CC66;
+    padding: 8px 14px;
+    border-radius: 50em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
+  .pd-section-6 .pd-section-6-headline {
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.4;
+    font-size: 2rem; }
+    .pd-section-6 .pd-section-6-headline strong {
+      font-weight: 700; }
+  .pd-section-6 .pd-section-6-para {
+    color: #fff;
+    line-height: 2;
+    font-weight: 300; }
+  .pd-section-6 .pd-section-6-image-outer {
+    height: 100%;
+    min-height: 380px;
+    width: 280px;
+    position: relative;
+    overflow: hidden; }
+    .pd-section-6 .pd-section-6-image-outer img {
+      width: 280px;
+      position: absolute;
+      bottom: -200px;
+      left: 0;
+      height: auto; }
+  .pd-section-6 .pd-section-6-text-outer {
+    min-height: 0px; }
+  @media (min-width: 992px) {
+    .pd-section-6 .pd-section-6-text-outer {
+      min-height: 450px; } }
+
+.pd-section-7 {
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(18, 18, 18, 0.85)), to(#121212));
+  background: -webkit-linear-gradient(rgba(18, 18, 18, 0.85) 0%, #121212 100%);
+  background: -o-linear-gradient(rgba(18, 18, 18, 0.85) 0%, #121212 100%);
+  background: linear-gradient(rgba(18, 18, 18, 0.85) 0%, #121212 100%); }
+  .pd-section-7 h2, .pd-section-7 .h2 {
+    font-weight: 700;
+    font-size: 0.7rem;
+    color: #fff;
+    display: inline-block;
+    background: #00CC66;
+    padding: 8px 14px;
+    border-radius: 50em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
+  .pd-section-7 .pd-section-7-headline {
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.4;
+    font-size: 2rem; }
+    .pd-section-7 .pd-section-7-headline strong {
+      font-weight: 700; }
+  .pd-section-7 .pd-section-7-para {
+    color: #fff;
+    line-height: 2;
+    font-weight: 300; }
+  .pd-section-7 .pd-section-7-image-outer {
+    height: 100%;
+    min-height: 380px;
+    width: 280px;
+    position: relative;
+    overflow: hidden; }
+    .pd-section-7 .pd-section-7-image-outer img {
+      width: 280px;
+      position: absolute;
+      bottom: -200px;
+      left: 0;
+      height: auto; }
+  .pd-section-7 .pd-section-7-text-outer {
+    min-height: 0px; }
+  @media (min-width: 992px) {
+    .pd-section-7 .pd-section-7-text-outer {
+      min-height: 450px; } }
+  .pd-section-7 .pd-section-7-image-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(30%, rgba(0, 0, 0, 0.2)), color-stop(70%, rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.8)));
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.35) 70%, rgba(0, 0, 0, 0.8) 100%);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.35) 70%, rgba(0, 0, 0, 0.8) 100%);
+    background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.35) 70%, rgba(0, 0, 0, 0.8) 100%); }
+  .pd-section-7 .pd-section-7-background-image-outer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: red;
+    opacity: 0.5;
+    overflow: hidden; }
+    .pd-section-7 .pd-section-7-background-image-outer img {
+      -o-object-fit: cover;
+         object-fit: cover;
+      -o-object-position: center center;
+         object-position: center center;
+      width: 100%;
+      height: 100%; }
 
 /* Custom CSS rules come here */
