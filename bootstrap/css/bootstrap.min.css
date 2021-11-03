@@ -12626,4 +12626,47 @@ progress {
       outline: 2px dotted #fff;
       outline-offset: 2px; }
 
+.pd-testimonial-slider-1 {
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .pd-testimonial-slider-1 h2, .pd-testimonial-slider-1 .h2 {
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: #6c757d; }
+  .pd-testimonial-slider-1 .pd-testimonial-slider-1-quotes {
+    position: absolute;
+    z-index: 0; }
+  .pd-testimonial-slider-1 .pd-testimonial-slider-1-quotes.left {
+    top: -50px;
+    left: 0px; }
+  .pd-testimonial-slider-1 .pd-testimonial-slider-1-quotes.right {
+    right: 0px !important;
+    bottom: -50px; }
+  .pd-testimonial-slider-1 .pd-testimonial-slider-1-mainText {
+    z-index: 10;
+    position: relative;
+    font-weight: 300; }
+  .pd-testimonial-slider-1 .pd-testimonial-slider-1-quotation {
+    line-height: 2.2;
+    font-size: 1.2rem; }
+  .pd-testimonial-slider-1 .pd-testimonial-slider-1-author {
+    z-index: 10;
+    position: relative; }
+  .pd-testimonial-slider-1 .pd-testimonial-slider-1-link {
+    font-weight: 700;
+    text-decoration: none;
+    -webkit-transition: color 0.4s;
+    -o-transition: color 0.4s;
+    transition: color 0.4s; }
+    .pd-testimonial-slider-1 .pd-testimonial-slider-1-link:hover {
+      text-decoration: none;
+      color: #44bbec; }
+    .pd-testimonial-slider-1 .pd-testimonial-slider-1-link:focus {
+      outline: 2px dotted #17A9E6;
+      outline-offset: 2px; }
+
 /* Custom CSS rules come here */

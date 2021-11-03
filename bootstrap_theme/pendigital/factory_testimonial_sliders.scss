@@ -1,0 +1,65 @@
+// start testimonial slider 1
+.pd-testimonial-slider-1 {
+    // background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
+    border-top: 1px solid $gray-300;
+    border-bottom: 1px solid $gray-300;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    h2 {
+        letter-spacing: 1.2px;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        color: $gray-600;
+    }
+
+    .pd-testimonial-slider-1-quotes {
+        position: absolute;
+        z-index: 0;
+    }
+
+    .pd-testimonial-slider-1-quotes.left {
+        top: -50px;
+        left: 0px;
+    }
+
+    .pd-testimonial-slider-1-quotes.right {
+        right: 0px!important;
+        bottom: -50px;
+    }
+
+    .pd-testimonial-slider-1-mainText {
+        z-index: 10;
+        position: relative;
+        font-weight: 300;
+    }
+
+    .pd-testimonial-slider-1-quotation {
+        line-height: 2.2;
+        font-size: 1.2rem;
+    }
+
+    .pd-testimonial-slider-1-author {
+        z-index: 10;
+        position: relative;
+    }
+
+    .pd-testimonial-slider-1-link {
+        font-weight: 700;
+        text-decoration: none;
+        transition: color 0.4s;
+
+        &:hover {
+            text-decoration: none;
+            color: lighten($primary, 10%);
+        }
+
+        &:focus {
+            outline: 2px dotted $primary;
+            outline-offset: 2px;
+        }
+    }
+}
+
+// end pd-testimonial-slider-1
