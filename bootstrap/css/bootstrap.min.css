@@ -12632,11 +12632,15 @@ progress {
   padding-top: 100px;
   padding-bottom: 100px; }
   .pd-testimonial-slider-1 h2, .pd-testimonial-slider-1 .h2 {
-    letter-spacing: 1.2px;
     font-weight: 700;
+    font-size: 0.7rem;
+    color: #fff;
+    display: inline-block;
+    background: #00CC66;
+    padding: 8px 14px;
+    border-radius: 50em;
     text-transform: uppercase;
-    font-size: 0.8rem;
-    color: #6c757d; }
+    letter-spacing: 0.1em; }
   .pd-testimonial-slider-1 .pd-testimonial-slider-1-quotes {
     position: absolute;
     z-index: 0; }
@@ -12656,6 +12660,13 @@ progress {
   .pd-testimonial-slider-1 .pd-testimonial-slider-1-author {
     z-index: 10;
     position: relative; }
+  .pd-testimonial-slider-1 .pd-testimonial-slider-1-arrowWrapper {
+    border: none;
+    background: none;
+    position: absolute;
+    top: 50%; }
+  .pd-testimonial-slider-1 .pd-testimonial-slider-1-arrowWrapper.glide__arrow--right {
+    right: 0; }
   .pd-testimonial-slider-1 .pd-testimonial-slider-1-link {
     font-weight: 700;
     text-decoration: none;
@@ -12668,5 +12679,23 @@ progress {
     .pd-testimonial-slider-1 .pd-testimonial-slider-1-link:focus {
       outline: 2px dotted #17A9E6;
       outline-offset: 2px; }
+  .pd-testimonial-slider-1 .glide__bullets {
+    text-align: center; }
+    .pd-testimonial-slider-1 .glide__bullets .glide__bullet {
+      width: 9px;
+      height: 9px;
+      padding: 0;
+      border-radius: 50%;
+      border: 2px solid #1287b8;
+      background: #17A9E6;
+      -webkit-transition: -webkit-transform 0.4s;
+      transition: -webkit-transform 0.4s;
+      -o-transition: transform 0.4s;
+      transition: transform 0.4s;
+      transition: transform 0.4s, -webkit-transform 0.4s; }
+    .pd-testimonial-slider-1 .glide__bullets .glide__bullet.glide__bullet--active {
+      -webkit-transform: scale(1.3);
+          -ms-transform: scale(1.3);
+              transform: scale(1.3); }
 
 /* Custom CSS rules come here */
