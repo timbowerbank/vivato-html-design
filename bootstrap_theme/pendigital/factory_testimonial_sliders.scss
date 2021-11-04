@@ -468,6 +468,7 @@
             padding: 10px;
             border: 1px solid $gray-300;
             border-radius: 5px;
+            width: 52px;
         }
 
         .pd-testimonial-slider-4-arrowWrapper.glide__arrow--left {
@@ -608,6 +609,7 @@
             padding: 10px;
             border: 1px solid $gray-300;
             border-radius: 5px;
+            width: 52px;
         }
 
         .pd-testimonial-slider-5-arrowWrapper.glide__arrow--left {
@@ -745,10 +747,12 @@
     @media (max-width: 639px) {
         .pd-testimonial-slider-6-arrowWrapper {
             top: -60px;
-            background: $gray-200;
+
+            // background: $gray-600;
             padding: 10px;
-            border: 1px solid $gray-300;
+            border: 1px solid $white;
             border-radius: 5px;
+            width: 52px;
         }
 
         .pd-testimonial-slider-6-arrowWrapper.glide__arrow--left {
