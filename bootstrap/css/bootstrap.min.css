@@ -13275,4 +13275,43 @@ progress {
     background: -o-linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.7) 100%);
     background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.7) 100%); }
 
+.pd-logo-strip-1 {
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  background: #f8f9fa; }
+  .pd-logo-strip-1 h2, .pd-logo-strip-1 .h2 {
+    font-weight: 700;
+    font-size: 0.7rem;
+    color: #fff;
+    display: inline-block;
+    background: #00CC66;
+    padding: 8px 14px;
+    border-radius: 50em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
+  .pd-logo-strip-1 .pd-logo-strip-1-subHeadline {
+    font-weight: 300;
+    font-size: 0.8rem; }
+  .pd-logo-strip-1 .glide__bullets {
+    text-align: center; }
+    .pd-logo-strip-1 .glide__bullets .glide__bullet {
+      width: 9px;
+      height: 9px;
+      padding: 0;
+      border-radius: 50%;
+      border: 2px solid #1287b8;
+      background: #17A9E6;
+      -webkit-transition: -webkit-transform 0.4s;
+      transition: -webkit-transform 0.4s;
+      -o-transition: transform 0.4s;
+      transition: transform 0.4s;
+      transition: transform 0.4s, -webkit-transform 0.4s; }
+      .pd-logo-strip-1 .glide__bullets .glide__bullet:focus {
+        outline: 2px dotted #17A9E6;
+        outline-offset: 2px; }
+    .pd-logo-strip-1 .glide__bullets .glide__bullet.glide__bullet--active {
+      -webkit-transform: scale(1.3);
+          -ms-transform: scale(1.3);
+              transform: scale(1.3); }
+
 /* Custom CSS rules come here */
