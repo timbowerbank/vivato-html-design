@@ -54,6 +54,11 @@
         background: none;
         position: absolute;
         top: 50%;
+
+        &:focus {
+            outline: 2px dotted $primary;
+            outline-offset: 2px;
+        }
     }
 
     .pd-testimonial-slider-1-arrowWrapper.glide__arrow--right {
@@ -87,6 +92,11 @@
             border: 2px solid darken($primary, 10%);
             background: $primary;
             transition: transform 0.4s;
+
+            &:focus {
+                outline: 2px dotted $primary;
+                outline-offset: 2px;
+            }
         }
 
         .glide__bullet.glide__bullet--active {
@@ -146,11 +156,6 @@
         font-size: 1.2rem;
     }
 
-    // .pd-testimonial-slider-2-author {
-    // z-index: 10;
-    // position: relative;
-    // color: $white;
-    // }
     .pd-testimonial-slider-2-author {
         display: flex;
         flex-direction: row;
@@ -177,6 +182,11 @@
         background: none;
         position: absolute;
         top: 50%;
+
+        &:focus {
+            outline: 2px dotted $white;
+            outline-offset: 2px;
+        }
     }
 
     .pd-testimonial-slider-2-arrowWrapper.glide__arrow--right {
@@ -211,6 +221,11 @@
             border: 2px solid darken($white, 10%);
             background: $white;
             transition: transform 0.4s;
+
+            &:focus {
+                outline: 2px dotted $white;
+                outline-offset: 2px;
+            }
         }
 
         .glide__bullet.glide__bullet--active {
@@ -296,6 +311,11 @@
         background: none;
         position: absolute;
         top: 50%;
+
+        &:focus {
+            outline: 2px dotted $white;
+            outline-offset: 2px;
+        }
     }
 
     .pd-testimonial-slider-3-arrowWrapper.glide__arrow--right {
@@ -330,6 +350,11 @@
             border: 2px solid darken($white, 10%);
             background: $white;
             transition: transform 0.4s;
+
+            &:focus {
+                outline: 2px dotted $white;
+                outline-offset: 2px;
+            }
         }
 
         .glide__bullet.glide__bullet--active {
@@ -421,6 +446,11 @@
         background: none;
         position: absolute;
         top: 50%;
+
+        &:focus {
+            outline: 2px dotted $primary;
+            outline-offset: 2px;
+        }
     }
 
     .pd-testimonial-slider-4-arrowWrapper.glide__arrow--right {
@@ -485,6 +515,11 @@
             border: 2px solid darken($primary, 10%);
             background: $primary;
             transition: transform 0.4s;
+
+            &:focus {
+                outline: 2px dotted $primary;
+                outline-offset: 2px;
+            }
         }
 
         .glide__bullet.glide__bullet--active {
@@ -551,6 +586,11 @@
         background: none;
         position: absolute;
         top: 50%;
+
+        &:focus {
+            outline: 2px dotted $primary;
+            outline-offset: 2px;
+        }
     }
 
     .pd-testimonial-slider-5-arrowWrapper.glide__arrow--right {
@@ -615,6 +655,11 @@
             border: 2px solid darken($primary, 10%);
             background: $primary;
             transition: transform 0.4s;
+
+            &:focus {
+                outline: 2px dotted $primary;
+                outline-offset: 2px;
+            }
         }
 
         .glide__bullet.glide__bullet--active {

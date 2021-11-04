@@ -12665,6 +12665,9 @@ progress {
     background: none;
     position: absolute;
     top: 50%; }
+    .pd-testimonial-slider-1 .pd-testimonial-slider-1-arrowWrapper:focus {
+      outline: 2px dotted #17A9E6;
+      outline-offset: 2px; }
   .pd-testimonial-slider-1 .pd-testimonial-slider-1-arrowWrapper.glide__arrow--right {
     right: 0; }
   .pd-testimonial-slider-1 .pd-testimonial-slider-1-link {
@@ -12693,6 +12696,9 @@ progress {
       -o-transition: transform 0.4s;
       transition: transform 0.4s;
       transition: transform 0.4s, -webkit-transform 0.4s; }
+      .pd-testimonial-slider-1 .glide__bullets .glide__bullet:focus {
+        outline: 2px dotted #17A9E6;
+        outline-offset: 2px; }
     .pd-testimonial-slider-1 .glide__bullets .glide__bullet.glide__bullet--active {
       -webkit-transform: scale(1.3);
           -ms-transform: scale(1.3);
@@ -12769,6 +12775,9 @@ progress {
     background: none;
     position: absolute;
     top: 50%; }
+    .pd-testimonial-slider-2 .pd-testimonial-slider-2-arrowWrapper:focus {
+      outline: 2px dotted #fff;
+      outline-offset: 2px; }
   .pd-testimonial-slider-2 .pd-testimonial-slider-2-arrowWrapper.glide__arrow--right {
     right: 0; }
   .pd-testimonial-slider-2 .pd-testimonial-slider-2-link {
@@ -12798,6 +12807,9 @@ progress {
       -o-transition: transform 0.4s;
       transition: transform 0.4s;
       transition: transform 0.4s, -webkit-transform 0.4s; }
+      .pd-testimonial-slider-2 .glide__bullets .glide__bullet:focus {
+        outline: 2px dotted #fff;
+        outline-offset: 2px; }
     .pd-testimonial-slider-2 .glide__bullets .glide__bullet.glide__bullet--active {
       -webkit-transform: scale(1.3);
           -ms-transform: scale(1.3);
@@ -12871,6 +12883,9 @@ progress {
     background: none;
     position: absolute;
     top: 50%; }
+    .pd-testimonial-slider-3 .pd-testimonial-slider-3-arrowWrapper:focus {
+      outline: 2px dotted #fff;
+      outline-offset: 2px; }
   .pd-testimonial-slider-3 .pd-testimonial-slider-3-arrowWrapper.glide__arrow--right {
     right: 0; }
   .pd-testimonial-slider-3 .pd-testimonial-slider-3-link {
@@ -12900,6 +12915,9 @@ progress {
       -o-transition: transform 0.4s;
       transition: transform 0.4s;
       transition: transform 0.4s, -webkit-transform 0.4s; }
+      .pd-testimonial-slider-3 .glide__bullets .glide__bullet:focus {
+        outline: 2px dotted #fff;
+        outline-offset: 2px; }
     .pd-testimonial-slider-3 .glide__bullets .glide__bullet.glide__bullet--active {
       -webkit-transform: scale(1.3);
           -ms-transform: scale(1.3);
@@ -12974,6 +12992,9 @@ progress {
     background: none;
     position: absolute;
     top: 50%; }
+    .pd-testimonial-slider-4 .pd-testimonial-slider-4-arrowWrapper:focus {
+      outline: 2px dotted #17A9E6;
+      outline-offset: 2px; }
   .pd-testimonial-slider-4 .pd-testimonial-slider-4-arrowWrapper.glide__arrow--right {
     right: -40px; }
   .pd-testimonial-slider-4 .pd-testimonial-slider-4-arrowWrapper.glide__arrow--left {
@@ -13018,6 +13039,9 @@ progress {
       -o-transition: transform 0.4s;
       transition: transform 0.4s;
       transition: transform 0.4s, -webkit-transform 0.4s; }
+      .pd-testimonial-slider-4 .glide__bullets .glide__bullet:focus {
+        outline: 2px dotted #17A9E6;
+        outline-offset: 2px; }
     .pd-testimonial-slider-4 .glide__bullets .glide__bullet.glide__bullet--active {
       -webkit-transform: scale(1.3);
           -ms-transform: scale(1.3);
@@ -13068,6 +13092,9 @@ progress {
     background: none;
     position: absolute;
     top: 50%; }
+    .pd-testimonial-slider-5 .pd-testimonial-slider-5-arrowWrapper:focus {
+      outline: 2px dotted #17A9E6;
+      outline-offset: 2px; }
   .pd-testimonial-slider-5 .pd-testimonial-slider-5-arrowWrapper.glide__arrow--right {
     right: -40px; }
   .pd-testimonial-slider-5 .pd-testimonial-slider-5-arrowWrapper.glide__arrow--left {
@@ -13112,6 +13139,9 @@ progress {
       -o-transition: transform 0.4s;
       transition: transform 0.4s;
       transition: transform 0.4s, -webkit-transform 0.4s; }
+      .pd-testimonial-slider-5 .glide__bullets .glide__bullet:focus {
+        outline: 2px dotted #17A9E6;
+        outline-offset: 2px; }
     .pd-testimonial-slider-5 .glide__bullets .glide__bullet.glide__bullet--active {
       -webkit-transform: scale(1.3);
           -ms-transform: scale(1.3);
