@@ -12569,6 +12569,10 @@ progress {
     .pd-section-8 .pd-section-8-image-wrapper img {
       width: 100%;
       height: 100%; }
+    @media (min-width: 992px) {
+      .pd-section-8 .pd-section-8-image-wrapper {
+        width: 70%;
+        padding: 0px 40px; } }
   .pd-section-8 .pd-section-8-link {
     font-weight: 700;
     text-decoration: none;
@@ -12581,6 +12585,41 @@ progress {
     .pd-section-8 .pd-section-8-link:focus {
       outline: 2px dotted #17A9E6;
       outline-offset: 2px; }
+
+.pd-section-9 {
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6; }
+  .pd-section-9 h2, .pd-section-9 .h2 {
+    font-weight: 700;
+    font-size: 0.7rem;
+    color: #fff;
+    display: inline-block;
+    background: #00CC66;
+    padding: 8px 14px;
+    border-radius: 50em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
+  .pd-section-9 .pd-section-9-headline {
+    font-weight: 300; }
+    .pd-section-9 .pd-section-9-headline strong {
+      font-weight: 700;
+      font-size: 2rem; }
+  .pd-section-9 .pd-section-9-subHeadline {
+    font-weight: 300;
+    line-height: 2; }
+  .pd-section-9 .pd-section-9-image-wrapper {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative; }
+    @media (min-width: 992px) {
+      .pd-section-9 .pd-section-9-image-wrapper {
+        padding-left: 40px;
+        padding-right: 40px;
+        width: 80%; } }
+    .pd-section-9 .pd-section-9-image-wrapper img {
+      width: 100%;
+      height: 100%; }
 
 .pd-footer-1 {
   background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));
