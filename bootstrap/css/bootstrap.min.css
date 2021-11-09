@@ -13951,12 +13951,187 @@ progress {
     padding: 30px; }
     .pd-hero-video-5-modal .pd-hero-video-5-modal-video-outer video {
       width: 100%; }
-      @media (min-width: 1199px) {
+      @media (min-width: 1200px) {
         .pd-hero-video-5-modal .pd-hero-video-5-modal-video-outer video {
-          width: 80vw;
-          max-width: 1800px; } }
+          max-width: 1200px; } }
 
 .pd-hero-video-5-modal.open {
+  display: block; }
+
+.pd-hero-video-6 {
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 640px; }
+  .pd-hero-video-6 .container {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+    position: relative; }
+  .pd-hero-video-6 h1, .pd-hero-video-6 .h1 {
+    font-weight: 700;
+    font-size: 0.7rem;
+    color: #fff;
+    display: inline-block;
+    background: #00CC66;
+    padding: 8px 14px;
+    border-radius: 50em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
+  .pd-hero-video-6 .pd-hero-video-6-headline {
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.5; }
+    @media (max-width: 575px) {
+      .pd-hero-video-6 .pd-hero-video-6-headline {
+        font-size: 2rem; } }
+  .pd-hero-video-6 .pd-hero-video-6-subHeadline {
+    color: white;
+    font-size: 1rem;
+    font-weight: 300; }
+  .pd-hero-video-6 .pd-hero-video-6-image {
+    position: absolute;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+    -o-object-position: center center;
+       object-position: center center;
+    opacity: 0;
+    -webkit-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+    transition: opacity 0.4s; }
+  .pd-hero-video-6 .pd-hero-video-6-image.pd-hero-video-image-6-loaded {
+    opacity: 1; }
+  .pd-hero-video-6 .pd-hero-video-6-image-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(40%, rgba(0, 0, 0, 0.8)), color-stop(60%, rgba(0, 0, 0, 0.8)), to(#000));
+    background: -webkit-linear-gradient(#000 0%, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0.8) 60%, #000 100%);
+    background: -o-linear-gradient(#000 0%, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0.8) 60%, #000 100%);
+    background: linear-gradient(#000 0%, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0.8) 60%, #000 100%);
+    opacity: 0.7; }
+  .pd-hero-video-6 .pd-hero-video-6-play-outer {
+    position: relative;
+    display: inline-block; }
+    .pd-hero-video-6 .pd-hero-video-6-play-outer a.pd-hero-video-6-modal-link {
+      position: relative;
+      display: inline-block;
+      z-index: 1;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      opacity: 0.9; }
+      .pd-hero-video-6 .pd-hero-video-6-play-outer a.pd-hero-video-6-modal-link:hover {
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1); }
+    .pd-hero-video-6 .pd-hero-video-6-play-outer:after {
+      content: "";
+      position: absolute;
+      top: 20px;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      border-radius: 50%;
+      -webkit-box-shadow: 0 0 0 0 white;
+              box-shadow: 0 0 0 0 white;
+      -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation: pulse 2s infinite;
+              animation: pulse 2s infinite;
+      z-index: 0; }
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8); }
+  70% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+    -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+            box-shadow: 0 0 0 10px rgba(255, 255, 255, 0); }
+  100% {
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); } }
+    .pd-hero-video-6 .pd-hero-video-6-play-outer svg {
+      -webkit-filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.4));
+              filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.4)); }
+
+.pd-hero-video-6-modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  z-index: 1;
+  overflow: auto;
+  -webkit-transition: background 0.4s;
+  -o-transition: background 0.4s;
+  transition: background 0.4s; }
+  .pd-hero-video-6-modal span {
+    position: absolute;
+    top: 10px;
+    right: 10px; }
+    .pd-hero-video-6-modal span a.pd-hero-video-6-close {
+      display: inline-block;
+      -webkit-transition: -webkit-transform 0.4s;
+      transition: -webkit-transform 0.4s;
+      -o-transition: transform 0.4s;
+      transition: transform 0.4s;
+      transition: transform 0.4s, -webkit-transform 0.4s;
+      text-decoration: none;
+      color: #fff; }
+      .pd-hero-video-6-modal span a.pd-hero-video-6-close img {
+        margin-left: 4px; }
+      .pd-hero-video-6-modal span a.pd-hero-video-6-close:hover {
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1);
+        color: #fff !important; }
+  .pd-hero-video-6-modal .pd-hero-video-6-modal-video-outer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    padding: 30px; }
+    .pd-hero-video-6-modal .pd-hero-video-6-modal-video-outer video {
+      width: 100%; }
+      @media (min-width: 1200px) {
+        .pd-hero-video-6-modal .pd-hero-video-6-modal-video-outer video {
+          max-width: 1200px; } }
+
+.pd-hero-video-6-modal.open {
   display: block; }
 
 /* Custom CSS rules come here */

@@ -442,9 +442,9 @@
         video {
             width: 100%;
 
-            @media (min-width: 1199px) {
-                width: 80vw;
-                max-width: 1800px;
+            @media (min-width: 1200px) {
+                // width: 80vw;
+                max-width: 1200px;
             }
         }
     }
@@ -455,3 +455,185 @@
 }
 
 // end of pd-hero-video-5
+// start pd-hero-video-6
+.pd-hero-video-6 {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    min-height: 640px;
+
+    .container {
+        padding-top: 9rem;
+        padding-bottom: 9rem;
+        position: relative;
+    }
+
+    h1 {
+        font-weight: 700;
+        font-size: 0.7rem;
+        color: $white;
+        display: inline-block;
+
+        // background: rgba(255, 255, 255, 1);
+        background: $info;
+        padding: 8px 14px;
+        border-radius: 50em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-hero-video-6-headline {
+        color: white;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 1.5;
+
+        @media (max-width: 575px) {
+            font-size: 2rem;
+        }
+    }
+
+    .pd-hero-video-6-subHeadline {
+        color: white;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .pd-hero-video-6-image {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-position: center center;
+        opacity: 0;
+        transition: opacity 0.4s;
+    }
+
+    .pd-hero-video-6-image.pd-hero-video-image-6-loaded {
+        opacity: 1;
+    }
+
+    .pd-hero-video-6-image-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient($black 0%, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0.8) 60%, $black 100%);
+        opacity: 0.7;
+    }
+
+    .pd-hero-video-6-play-outer {
+        position: relative;
+        display: inline-block;
+
+        a.pd-hero-video-6-modal-link {
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+            transition: 0.3s;
+            opacity: 0.9;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 20px;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+
+            // background: $white;
+            border-radius: 50%;
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
+            transform: scale(1);
+            animation: pulse 2s infinite;
+            z-index: 0;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(0.85);
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8);
+            }
+
+            70% {
+                transform: scale(1.4);
+                box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+            }
+
+            100% {
+                transform: scale(0.85);
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+            }
+        }
+
+        svg {
+            filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.4));
+        }
+    }
+}
+
+.pd-hero-video-6-modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    z-index: 1;
+    overflow: auto;
+    transition: background 0.4s;
+
+    span {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+
+        a.pd-hero-video-6-close {
+            display: inline-block;
+            transition: transform 0.4s;
+            text-decoration: none;
+            color: $white;
+
+            img {
+                margin-left: 4px;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+                color: $white!important;
+            }
+        }
+    }
+
+    .pd-hero-video-6-modal-video-outer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 30px;
+
+        video {
+            width: 100%;
+
+            @media (min-width: 1200px) {
+                // width: 80vw;
+                max-width: 1200px;
+            }
+        }
+    }
+}
+
+.pd-hero-video-6-modal.open {
+    display: block;
+}
+
+// end pd-hero-video-6
