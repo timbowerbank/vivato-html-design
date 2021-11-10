@@ -14190,4 +14190,131 @@ progress {
 .pd-hero-video-6-modal.open {
   display: block; }
 
+.pd-mission-1 {
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), color-stop(20%, #f9f9f9), color-stop(90%, #f9f9f9), to(#f7f7f7));
+  background: -webkit-linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
+  background: -o-linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
+  background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%); }
+  .pd-mission-1 h2, .pd-mission-1 .h2 {
+    font-weight: 700;
+    font-size: 0.7rem;
+    color: #fff;
+    display: inline-block;
+    background: #00CC66;
+    padding: 8px 14px;
+    border-radius: 50em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
+  .pd-mission-1 .pd-mission-1-outer {
+    padding: 40px;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    background: #fff;
+    -webkit-box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1);
+            box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1); }
+  .pd-mission-1 .pd-mission-1-statement {
+    line-height: 2.4;
+    font-weight: 300;
+    color: #6c757d;
+    font-size: 1.2rem; }
+    .pd-mission-1 .pd-mission-1-statement strong {
+      font-weight: 700; }
+
+.pd-mission-2 {
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6; }
+  .pd-mission-2 h2, .pd-mission-2 .h2 {
+    font-weight: 700;
+    font-size: 0.7rem;
+    color: #fff;
+    display: inline-block;
+    background: #00CC66;
+    padding: 8px 14px;
+    border-radius: 50em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
+  .pd-mission-2 .pd-mission-2-outer {
+    padding: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 10px;
+    background: #fff;
+    -webkit-box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.1);
+            box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.1); }
+    @media (max-width: 767px) {
+      .pd-mission-2 .pd-mission-2-outer {
+        margin-left: 0px;
+        margin-right: 0px; } }
+  .pd-mission-2 .pd-mission-2-statement {
+    line-height: 2.4;
+    font-weight: 400;
+    color: #6c757d;
+    font-size: 1.2rem; }
+    .pd-mission-2 .pd-mission-2-statement strong {
+      font-weight: 700; }
+
+.pd-mission-3 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));
+  background: -webkit-linear-gradient(top, #17A9E6, #1287b8);
+  background: -o-linear-gradient(top, #17A9E6, #1287b8);
+  background: linear-gradient(180deg, #17A9E6, #1287b8); }
+  .pd-mission-3 h2, .pd-mission-3 .h2 {
+    font-weight: 700;
+    font-size: 0.7rem;
+    color: #fff;
+    display: inline-block;
+    background: #00CC66;
+    padding: 8px 14px;
+    border-radius: 50em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
+  .pd-mission-3 .pd-mission-3-outer {
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 10px; }
+    @media (max-width: 767px) {
+      .pd-mission-3 .pd-mission-3-outer {
+        margin-left: 0px;
+        margin-right: 0px; } }
+    .pd-mission-3 .pd-mission-3-outer .pd-mission-3-statement {
+      font-weight: 400;
+      line-height: 2;
+      font-size: 1.6rem;
+      color: #fff; }
+      .pd-mission-3 .pd-mission-3-outer .pd-mission-3-statement strong {
+        font-weight: 700; }
+
+.pd-mission-4 {
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .pd-mission-4 h2, .pd-mission-4 .h2 {
+    font-weight: 700;
+    font-size: 0.7rem;
+    color: #fff;
+    display: inline-block;
+    background: #00CC66;
+    padding: 8px 14px;
+    border-radius: 50em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
+  .pd-mission-4 .pd-mission-4-outer {
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 10px; }
+    @media (max-width: 767px) {
+      .pd-mission-4 .pd-mission-4-outer {
+        margin-left: 0px;
+        margin-right: 0px; } }
+    .pd-mission-4 .pd-mission-4-outer .pd-mission-4-statement {
+      font-weight: 400;
+      line-height: 2;
+      font-size: 1.6rem;
+      color: #000; }
+      .pd-mission-4 .pd-mission-4-outer .pd-mission-4-statement strong {
+        font-weight: 700; }
+
 /* Custom CSS rules come here */
