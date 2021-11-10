@@ -14317,4 +14317,34 @@ progress {
       .pd-mission-4 .pd-mission-4-outer .pd-mission-4-statement strong {
         font-weight: 700; }
 
+.pd-ribbon-1 {
+  background-color: #17A9E6; }
+  .pd-ribbon-1 .pd-ribbon-1-statement {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding: 20px 40px; }
+    .pd-ribbon-1 .pd-ribbon-1-statement p {
+      font-size: 1.2rem;
+      font-weight: 300;
+      line-height: 1.4;
+      margin-bottom: 0px;
+      color: #fff; }
+      .pd-ribbon-1 .pd-ribbon-1-statement p strong {
+        font-weight: 700; }
+
+.pd-ribbon-2 {
+  background-color: #212529; }
+  .pd-ribbon-2 .pd-ribbon-2-statement {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding: 20px 40px; }
+    .pd-ribbon-2 .pd-ribbon-2-statement p {
+      font-size: 1.2rem;
+      font-weight: 300;
+      line-height: 1.4;
+      margin-bottom: 0px;
+      color: #fff; }
+      .pd-ribbon-2 .pd-ribbon-2-statement p strong {
+        font-weight: 700; }
+
 /* Custom CSS rules come here */
