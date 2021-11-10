@@ -126,9 +126,13 @@
 
     .pd-hero-video-3-headline {
         color: $primary;
-        font-weight: 700;
+        font-weight: 300;
         font-size: 2rem;
         line-height: 1.5;
+
+        strong {
+            font-weight: 700;
+        }
 
         @media (max-width: 575px) {
             font-size: 2rem;
@@ -139,6 +143,10 @@
         color: $gray-600;
         font-size: 1rem;
         font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
     }
 
     .pd-hero-video-3-cta {
@@ -208,9 +216,13 @@
 
     .pd-hero-video-4-headline {
         color: $white;
-        font-weight: 700;
+        font-weight: 300;
         font-size: 2rem;
         line-height: 1.5;
+
+        strong {
+            font-weight: 700;
+        }
 
         @media (max-width: 575px) {
             font-size: 2rem;
@@ -221,6 +233,10 @@
         color: $white;
         font-size: 1rem;
         font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
     }
 
     .pd-hero-video-4-cta {
@@ -290,9 +306,13 @@
 
     .pd-hero-video-5-headline {
         color: white;
-        font-weight: 700;
+        font-weight: 300;
         font-size: 2rem;
         line-height: 1.5;
+
+        strong {
+            font-weight: 700;
+        }
 
         @media (max-width: 575px) {
             font-size: 2rem;
@@ -303,6 +323,10 @@
         color: white;
         font-size: 1rem;
         font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
     }
 
     .pd-hero-video-5-image-outer {
@@ -443,6 +467,10 @@
         padding-top: 9rem;
         padding-bottom: 9rem;
         position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
     }
 
     h1 {
@@ -461,9 +489,13 @@
 
     .pd-hero-video-6-headline {
         color: white;
-        font-weight: 700;
+        font-weight: 300;
         font-size: 2rem;
         line-height: 1.5;
+
+        strong {
+            font-weight: 700;
+        }
 
         @media (max-width: 575px) {
             font-size: 2rem;
@@ -474,6 +506,10 @@
         color: white;
         font-size: 1rem;
         font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
     }
 
     .pd-hero-video-6-image {

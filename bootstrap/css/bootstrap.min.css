@@ -13632,9 +13632,11 @@ progress {
     letter-spacing: 0.1em; }
   .pd-hero-video-3 .pd-hero-video-3-headline {
     color: #17A9E6;
-    font-weight: 700;
+    font-weight: 300;
     font-size: 2rem;
     line-height: 1.5; }
+    .pd-hero-video-3 .pd-hero-video-3-headline strong {
+      font-weight: 700; }
     @media (max-width: 575px) {
       .pd-hero-video-3 .pd-hero-video-3-headline {
         font-size: 2rem; } }
@@ -13642,6 +13644,8 @@ progress {
     color: #6c757d;
     font-size: 1rem;
     font-weight: 300; }
+    .pd-hero-video-3 .pd-hero-video-3-subHeadline strong {
+      font-weight: 700; }
   .pd-hero-video-3 .pd-hero-video-3-cta {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -13710,9 +13714,11 @@ progress {
     letter-spacing: 0.1em; }
   .pd-hero-video-4 .pd-hero-video-4-headline {
     color: #fff;
-    font-weight: 700;
+    font-weight: 300;
     font-size: 2rem;
     line-height: 1.5; }
+    .pd-hero-video-4 .pd-hero-video-4-headline strong {
+      font-weight: 700; }
     @media (max-width: 575px) {
       .pd-hero-video-4 .pd-hero-video-4-headline {
         font-size: 2rem; } }
@@ -13720,6 +13726,8 @@ progress {
     color: #fff;
     font-size: 1rem;
     font-weight: 300; }
+    .pd-hero-video-4 .pd-hero-video-4-subHeadline strong {
+      font-weight: 700; }
   .pd-hero-video-4 .pd-hero-video-4-cta {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -13788,9 +13796,11 @@ progress {
     letter-spacing: 0.1em; }
   .pd-hero-video-5 .pd-hero-video-5-headline {
     color: white;
-    font-weight: 700;
+    font-weight: 300;
     font-size: 2rem;
     line-height: 1.5; }
+    .pd-hero-video-5 .pd-hero-video-5-headline strong {
+      font-weight: 700; }
     @media (max-width: 575px) {
       .pd-hero-video-5 .pd-hero-video-5-headline {
         font-size: 2rem; } }
@@ -13798,6 +13808,8 @@ progress {
     color: white;
     font-size: 1rem;
     font-weight: 300; }
+    .pd-hero-video-5 .pd-hero-video-5-subHeadline strong {
+      font-weight: 700; }
   .pd-hero-video-5 .pd-hero-video-5-image-outer {
     width: 70%; }
   .pd-hero-video-5 .pd-hero-video-5-play-outer {
@@ -13950,7 +13962,20 @@ progress {
   .pd-hero-video-6 .container {
     padding-top: 9rem;
     padding-bottom: 9rem;
-    position: relative; }
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .pd-hero-video-6 h1, .pd-hero-video-6 .h1 {
     font-weight: 700;
     font-size: 0.7rem;
@@ -13963,9 +13988,11 @@ progress {
     letter-spacing: 0.1em; }
   .pd-hero-video-6 .pd-hero-video-6-headline {
     color: white;
-    font-weight: 700;
+    font-weight: 300;
     font-size: 2rem;
     line-height: 1.5; }
+    .pd-hero-video-6 .pd-hero-video-6-headline strong {
+      font-weight: 700; }
     @media (max-width: 575px) {
       .pd-hero-video-6 .pd-hero-video-6-headline {
         font-size: 2rem; } }
@@ -13973,6 +14000,8 @@ progress {
     color: white;
     font-size: 1rem;
     font-weight: 300; }
+    .pd-hero-video-6 .pd-hero-video-6-subHeadline strong {
+      font-weight: 700; }
   .pd-hero-video-6 .pd-hero-video-6-image {
     position: absolute;
     -o-object-fit: cover;
