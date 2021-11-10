@@ -1,0 +1,105 @@
+// start pd-people-1
+.pd-people-1 {
+    h2 {
+        background: $info;
+        font-weight: 700;
+        font-size: 0.9rem;
+        color: $white;
+        border-radius: 50em;
+        padding: 8px 14px;
+        display: inline-block;
+    }
+
+    .pd-people-1-headline {
+        font-size: 2rem;
+        color: $black;
+        line-height: 1.5;
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-people-1-subHeadline {
+        font-size: 1rem;
+        color: $black;
+        line-height: 1.5;
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    // outer anchor
+    .pd-people-1-card-outer {
+        background: $white;
+        border-radius: 10px;
+        text-decoration: none;
+        box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        transition: transform 0.4s;
+
+        .pd-people-1-image {
+            img {
+                border-radius: 50%;
+            }
+        }
+
+        header {
+            h3 {
+                color: $black;
+                font-weight: 700;
+                font-size: 1.4rem;
+                margin-bottom: 0px;
+                line-height: 1.4;
+            }
+
+            p {
+                margin-bottom: 0px;
+                color: $primary;
+                font-weight: 700;
+                line-height: 1.4;
+            }
+        }
+
+        .pd-people-1-body {
+            p {
+                color: $gray-600;
+                font-weight: 300;
+                line-height: 2;
+            }
+        }
+
+        footer {
+            p {
+                color: $primary;
+                font-weight: 700;
+                transition: color 0.4s;
+
+                &:after {
+                    content: ">";
+                    padding-left: 4px;
+                }
+            }
+        }
+
+        &:hover {
+            transform: scale(1.05);
+
+            footer {
+                p {
+                    color: lighten($primary, 10%);
+                }
+            }
+        }
+
+        &:focus {
+            outline: 2px dotted $primary;
+            outline-offset: 2px;
+        }
+    }
+
+    // end of anchor
+}

@@ -14346,5 +14346,74 @@ progress {
       color: #fff; }
       .pd-ribbon-2 .pd-ribbon-2-statement p strong {
         font-weight: 700; }
+  .pd-people-1 h2, .pd-people-1 .h2 {
+    background: #00CC66;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #fff;
+    border-radius: 50em;
+    padding: 8px 14px;
+    display: inline-block; }
+  .pd-people-1 .pd-people-1-headline {
+    font-size: 2rem;
+    color: #000;
+    line-height: 1.5;
+    font-weight: 300; }
+    .pd-people-1 .pd-people-1-headline strong {
+      font-weight: 700; }
+  .pd-people-1 .pd-people-1-subHeadline {
+    font-size: 1rem;
+    color: #000;
+    line-height: 1.5;
+    font-weight: 300; }
+    .pd-people-1 .pd-people-1-subHeadline strong {
+      font-weight: 700; }
+  .pd-people-1 .pd-people-1-card-outer {
+    background: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    -webkit-box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.1);
+            box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    -o-transition: transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s; }
+      .pd-people-1 .pd-people-1-card-outer .pd-people-1-image img {
+        border-radius: 50%; }
+      .pd-people-1 .pd-people-1-card-outer header h3, .pd-people-1 .pd-people-1-card-outer header .h3 {
+        color: #000;
+        font-weight: 700;
+        font-size: 1.4rem;
+        margin-bottom: 0px;
+        line-height: 1.4; }
+      .pd-people-1 .pd-people-1-card-outer header p {
+        margin-bottom: 0px;
+        color: #17A9E6;
+        font-weight: 700;
+        line-height: 1.4; }
+      .pd-people-1 .pd-people-1-card-outer .pd-people-1-body p {
+        color: #6c757d;
+        font-weight: 300;
+        line-height: 2; }
+      .pd-people-1 .pd-people-1-card-outer footer p {
+        color: #17A9E6;
+        font-weight: 700;
+        -webkit-transition: color 0.4s;
+        -o-transition: color 0.4s;
+        transition: color 0.4s; }
+        .pd-people-1 .pd-people-1-card-outer footer p:after {
+          content: ">";
+          padding-left: 4px; }
+    .pd-people-1 .pd-people-1-card-outer:hover {
+      -webkit-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+              transform: scale(1.05); }
+        .pd-people-1 .pd-people-1-card-outer:hover footer p {
+          color: #44bbec; }
+    .pd-people-1 .pd-people-1-card-outer:focus {
+      outline: 2px dotted #17A9E6;
+      outline-offset: 2px; }
 
 /* Custom CSS rules come here */
