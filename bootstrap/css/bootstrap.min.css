@@ -14459,6 +14459,7 @@ progress {
       transition: background 0.4s;
       border-top: 1px solid #dee2e6;
       border-right: 1px solid #dee2e6;
+      border-left: 1px solid #dee2e6;
       height: 80px;
       text-decoration: none;
       text-transform: uppercase;
@@ -14504,7 +14505,17 @@ progress {
         .pd-specials-1 .pd-specials-1-buttons-outer .pd-specials-1-button:focus p {
           outline: 2px dotted #17A9E6;
           outline-offset: 5px; }
+    .pd-specials-1 .pd-specials-1-buttons-outer .pd-specials-1-button.show {
+      background: none;
+      border-left: none; }
   .pd-specials-1 .pd-specials-1-card {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+    z-index: 1;
     background: #fff;
     padding: 30px;
     border-bottom: 1px solid #dee2e6;
@@ -14554,7 +14565,7 @@ progress {
                 flex-direction: column;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-        height: 140px; }
+        max-height: 140px; }
         .pd-specials-1 .pd-specials-1-card .pd-specials-1-bullet-outer ul li {
           padding-top: 4px;
           padding-bottom: 4px;
@@ -14567,5 +14578,8 @@ progress {
             height: 12px;
             position: absolute;
             left: 0; }
+  .pd-specials-1 .pd-specials-1-card.show {
+    visibility: visible;
+    opacity: 1; }
 
 /* Custom CSS rules come here */

@@ -32,11 +32,6 @@
                 border-bottom: 1px solid $gray-300;
             }
 
-            &:first-child {
-                border-left: none;
-                background: none;
-            }
-
             p {
                 margin-bottom: 0px;
                 margin-left: 10px;
@@ -72,6 +67,11 @@
                     outline-offset: 5px;
                 }
             }
+        }
+
+        .pd-specials-1-button.show {
+            background: none;
+            border-left: none;
         }
     }
 
