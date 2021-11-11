@@ -158,6 +158,11 @@
                 max-height: 140px;
 
                 // overflow-x: hidden;
+                @media (max-width: 575px) {
+                    flex-wrap: nowrap;
+                    max-height: fit-content;
+                }
+
                 li {
                     padding-top: 4px;
                     padding-bottom: 4px;

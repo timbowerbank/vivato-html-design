@@ -14415,6 +14415,11 @@ progress {
     .pd-people-1 .pd-people-1-card-outer:focus {
       outline: 2px dotted #17A9E6;
       outline-offset: 2px; }
+  .pd-specials-1 .pd-specials-1-card-col {
+    position: relative; }
+    @media (max-width: 991px) {
+      .pd-specials-1 .pd-specials-1-nav-col {
+        display: none; } }
   .pd-specials-1 .pd-specials-1-buttons-outer {
     min-height: 460px;
     display: -webkit-box;
@@ -14502,9 +14507,6 @@ progress {
             width: 100%; }
       .pd-specials-1 .pd-specials-1-buttons-outer .pd-specials-1-button:focus {
         outline: none; }
-        .pd-specials-1 .pd-specials-1-buttons-outer .pd-specials-1-button:focus p {
-          outline: 2px dotted #17A9E6;
-          outline-offset: 5px; }
     .pd-specials-1 .pd-specials-1-buttons-outer .pd-specials-1-button.show {
       background: none;
       border-left: none; }
@@ -14521,6 +14523,11 @@ progress {
     border-bottom: 1px solid #dee2e6;
     border-left: 1px solid #dee2e6;
     border-top: 1px solid #dee2e6; }
+    @media (max-width: 991px) {
+      .pd-specials-1 .pd-specials-1-card {
+        border-right: 1px solid #dee2e6;
+        position: relative;
+        height: 0px; } }
     .pd-specials-1 .pd-specials-1-card header {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -14529,6 +14536,12 @@ progress {
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row; }
+      @media (max-width: 575px) {
+        .pd-specials-1 .pd-specials-1-card header {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; } }
       .pd-specials-1 .pd-specials-1-card header h3, .pd-specials-1 .pd-specials-1-card header .h3 {
         background: #00CC66;
         font-weight: 700;
@@ -14537,6 +14550,9 @@ progress {
         border-radius: 50em;
         padding: 8px 14px;
         display: inline-block; }
+        @media (max-width: 575px) {
+          .pd-specials-1 .pd-specials-1-card header h3, .pd-specials-1 .pd-specials-1-card header .h3 {
+            margin-top: 20px; } }
       .pd-specials-1 .pd-specials-1-card header .pd-specials-1-headline {
         font-size: 1.4rem;
         color: #000;
@@ -14566,6 +14582,13 @@ progress {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         max-height: 140px; }
+        @media (max-width: 575px) {
+          .pd-specials-1 .pd-specials-1-card .pd-specials-1-bullet-outer ul {
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+            max-height: -webkit-fit-content;
+            max-height: -moz-fit-content;
+            max-height: fit-content; } }
         .pd-specials-1 .pd-specials-1-card .pd-specials-1-bullet-outer ul li {
           padding-top: 4px;
           padding-bottom: 4px;
@@ -14581,5 +14604,8 @@ progress {
   .pd-specials-1 .pd-specials-1-card.show {
     visibility: visible;
     opacity: 1; }
+    @media (max-width: 991px) {
+      .pd-specials-1 .pd-specials-1-card.show {
+        height: auto; } }
 
 /* Custom CSS rules come here */
