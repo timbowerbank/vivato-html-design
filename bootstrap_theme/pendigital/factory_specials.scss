@@ -119,6 +119,10 @@
                 border-radius: 50em;
                 padding: 8px 14px;
                 display: inline-block;
+
+                @media (max-width: 575px) {
+                    margin-top: 20px;
+                }
             }
 
             .pd-specials-1-headline {
@@ -177,7 +181,7 @@
         visibility: visible;
         opacity: 1;
 
-        @media (max-width: 575px) {
+        @media (max-width: 991px) {
             height: auto;
         }
     }
