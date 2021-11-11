@@ -14415,5 +14415,157 @@ progress {
     .pd-people-1 .pd-people-1-card-outer:focus {
       outline: 2px dotted #17A9E6;
       outline-offset: 2px; }
+  .pd-specials-1 .pd-specials-1-buttons-outer {
+    min-height: 460px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .pd-specials-1 .pd-specials-1-buttons-outer .pd-specials-1-button {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      min-height: 80px;
+      padding: 4px;
+      background: -webkit-gradient(linear, left top, left bottom, from(#f8f9fa), color-stop(20%, #ffffff), color-stop(80%, #ffffff), to(#f8f9fa));
+      background: -webkit-linear-gradient(#f8f9fa 0%, #ffffff 20%, #ffffff 80%, #f8f9fa 100%);
+      background: -o-linear-gradient(#f8f9fa 0%, #ffffff 20%, #ffffff 80%, #f8f9fa 100%);
+      background: linear-gradient(#f8f9fa 0%, #ffffff 20%, #ffffff 80%, #f8f9fa 100%);
+      -webkit-transition: background 0.4s;
+      -o-transition: background 0.4s;
+      transition: background 0.4s;
+      border-top: 1px solid #dee2e6;
+      border-right: 1px solid #dee2e6;
+      height: 80px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #17A9E6;
+      font-weight: 700; }
+      .pd-specials-1 .pd-specials-1-buttons-outer .pd-specials-1-button:last-child {
+        border-bottom: 1px solid #dee2e6; }
+      .pd-specials-1 .pd-specials-1-buttons-outer .pd-specials-1-button p {
+        margin-bottom: 0px;
+        margin-left: 10px;
+        -webkit-transition: -webkit-transform 0.4s;
+        transition: -webkit-transform 0.4s;
+        -o-transition: transform 0.4s;
+        transition: transform 0.4s;
+        transition: transform 0.4s, -webkit-transform 0.4s;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        .pd-specials-1 .pd-specials-1-buttons-outer .pd-specials-1-button p:after {
+          content: "";
+          width: 0px;
+          border-bottom: 2px solid #17A9E6;
+          -webkit-transition: width 0.4s;
+          -o-transition: width 0.4s;
+          transition: width 0.4s; }
+      .pd-specials-1 .pd-specials-1-buttons-outer .pd-specials-1-button:hover {
+        background: -webkit-gradient(linear, left top, left bottom, from(#e9ecef), color-stop(40%, #ffffff), color-stop(60%, #ffffff), to(#e9ecef));
+        background: -webkit-linear-gradient(#e9ecef 0%, #ffffff 40%, #ffffff 60%, #e9ecef 100%);
+        background: -o-linear-gradient(#e9ecef 0%, #ffffff 40%, #ffffff 60%, #e9ecef 100%);
+        background: linear-gradient(#e9ecef 0%, #ffffff 40%, #ffffff 60%, #e9ecef 100%); }
+        .pd-specials-1 .pd-specials-1-buttons-outer .pd-specials-1-button:hover p {
+          -webkit-transform: translateY(-10px);
+              -ms-transform: translateY(-10px);
+                  transform: translateY(-10px); }
+          .pd-specials-1 .pd-specials-1-buttons-outer .pd-specials-1-button:hover p:after {
+            width: 100%; }
+      .pd-specials-1 .pd-specials-1-buttons-outer .pd-specials-1-button:focus {
+        outline: none; }
+        .pd-specials-1 .pd-specials-1-buttons-outer .pd-specials-1-button:focus p {
+          outline: 2px dotted #17A9E6;
+          outline-offset: 5px; }
+  .pd-specials-1 .pd-specials-1-card {
+    background: #fff;
+    padding: 30px;
+    border-bottom: 1px solid #dee2e6;
+    border-left: 1px solid #dee2e6;
+    border-top: 1px solid #dee2e6; }
+    .pd-specials-1 .pd-specials-1-card header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+      .pd-specials-1 .pd-specials-1-card header h3, .pd-specials-1 .pd-specials-1-card header .h3 {
+        background: #00CC66;
+        font-weight: 700;
+        font-size: 0.9rem;
+        color: #fff;
+        border-radius: 50em;
+        padding: 8px 14px;
+        display: inline-block; }
+      .pd-specials-1 .pd-specials-1-card header .pd-specials-1-headline {
+        font-size: 1.4rem;
+        color: #000;
+        line-height: 1.5;
+        font-weight: 300; }
+        .pd-specials-1 .pd-specials-1-card header .pd-specials-1-headline strong {
+          font-weight: 700; }
+    .pd-specials-1 .pd-specials-1-card .pd-specials-1-card-body {
+      line-height: 2;
+      font-weight: 300;
+      color: #6c757d; }
+      .pd-specials-1 .pd-specials-1-card .pd-specials-1-bullet-outer ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        color: #000;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        height: 140px; }
+        .pd-specials-1 .pd-specials-1-card .pd-specials-1-bullet-outer ul li {
+          padding-top: 4px;
+          padding-bottom: 4px;
+          padding-left: 32px;
+          position: relative;
+          max-width: 240px; }
+          .pd-specials-1 .pd-specials-1-card .pd-specials-1-bullet-outer ul li:before {
+            content: url(/images/design-assets/icon-checkmark.svg);
+            width: 12px;
+            height: 12px;
+            position: absolute;
+            left: 0; }
 
 /* Custom CSS rules come here */

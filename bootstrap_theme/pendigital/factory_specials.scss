@@ -1,0 +1,160 @@
+// start pd-specials-1
+.pd-specials-1 {
+    .pd-specials-1-buttons-outer {
+        min-height: 460px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        // outer link
+        .pd-specials-1-button {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            flex-grow: 1;
+            min-height: 80px;
+            padding: 4px;
+            background: linear-gradient($gray-100 0%, #ffffff 20%, #ffffff 80%, $gray-100 100%);
+            transition: background 0.4s;
+            border-top: 1px solid $gray-300;
+            border-right: 1px solid $gray-300;
+            border-left: 1px solid $gray-300;
+            height: 80px;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $primary;
+            font-weight: 700;
+
+            &:last-child {
+                border-bottom: 1px solid $gray-300;
+            }
+
+            &:first-child {
+                border-left: none;
+                background: none;
+            }
+
+            p {
+                margin-bottom: 0px;
+                margin-left: 10px;
+                transition: transform 0.4s;
+                display: flex;
+                flex-direction: column;
+
+                &:after {
+                    content: "";
+                    width: 0px;
+                    border-bottom: 2px solid $primary;
+                    transition: width 0.4s;
+                }
+            }
+
+            &:hover {
+                background: linear-gradient($gray-200 0%, #ffffff 40%, #ffffff 60%, $gray-200 100%);
+
+                p {
+                    transform: translateY(-10px);
+
+                    &:after {
+                        width: 100%;
+                    }
+                }
+            }
+
+            &:focus {
+                outline: none;
+
+                p {
+                    outline: 2px dotted $primary;
+                    outline-offset: 5px;
+                }
+            }
+        }
+    }
+
+    .pd-specials-1-card {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.4s;
+        z-index: 1;
+        background: $white;
+        padding: 30px;
+        border-bottom: 1px solid $gray-300;
+        border-left: 1px solid $gray-300;
+        border-top: 1px solid $gray-300;
+
+        header {
+            display: flex;
+            flex-direction: row;
+
+            h3 {
+                background: $info;
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: $white;
+                border-radius: 50em;
+                padding: 8px 14px;
+                display: inline-block;
+            }
+
+            .pd-specials-1-headline {
+                font-size: 1.4rem;
+                color: $black;
+                line-height: 1.5;
+                font-weight: 300;
+
+                strong {
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .pd-specials-1-card-body {
+            line-height: 2;
+            font-weight: 300;
+            color: $gray-600;
+        }
+
+        .pd-specials-1-bullet-outer {
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                color: $black;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: 0.8rem;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                max-height: 140px;
+
+                // overflow-x: hidden;
+                li {
+                    padding-top: 4px;
+                    padding-bottom: 4px;
+                    padding-left: 32px;
+                    position: relative;
+                    max-width: 240px;
+
+                    &:before {
+                        content: url(/images/design-assets/icon-checkmark.svg);
+                        width: 12px;
+                        height: 12px;
+                        position: absolute;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .pd-specials-1-card.show {
+        visibility: visible;
+        opacity: 1;
+    }
+}
