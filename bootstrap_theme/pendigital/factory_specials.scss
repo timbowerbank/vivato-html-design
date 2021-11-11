@@ -1,5 +1,15 @@
 // start pd-specials-1
 .pd-specials-1 {
+    .pd-specials-1-card-col {
+        position: relative;
+    }
+
+    .pd-specials-1-nav-col {
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
+
     .pd-specials-1-buttons-outer {
         min-height: 460px;
         display: flex;
@@ -62,10 +72,10 @@
             &:focus {
                 outline: none;
 
-                p {
-                    outline: 2px dotted $primary;
-                    outline-offset: 5px;
-                }
+                // p {
+                // outline: 2px dotted $primary;
+                // outline-offset: 5px;
+                // }
             }
         }
 
@@ -87,9 +97,19 @@
         border-left: 1px solid $gray-300;
         border-top: 1px solid $gray-300;
 
+        @media (max-width: 991px) {
+            border-right: 1px solid $gray-300;
+            position: relative;
+            height: 0px;
+        }
+
         header {
             display: flex;
             flex-direction: row;
+
+            @media (max-width: 575px) {
+                flex-direction: column;
+            }
 
             h3 {
                 background: $info;
@@ -156,5 +176,9 @@
     .pd-specials-1-card.show {
         visibility: visible;
         opacity: 1;
+
+        @media (max-width: 575px) {
+            height: auto;
+        }
     }
 }
