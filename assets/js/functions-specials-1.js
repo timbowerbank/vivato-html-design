@@ -44,7 +44,7 @@ function initPdSpecial1() {
 
         const pdSpecialParentId = pdSpecial.id;
 
-        // *** loop through their buttons
+        // *** loop through their desktop buttons
         const pdSpecialButtons = pdSpecial.getElementsByClassName("pd-specials-1-button");
         for(const pdSpecialBtn of pdSpecialButtons) {
             // add parent id
@@ -56,6 +56,16 @@ function initPdSpecial1() {
             // calc total height
             pdSpecial1MaxButtonHeight += pdSpecialBtn.offsetHeight;
             
+        }
+
+        // *** loop through their mobile buttons
+        const pdMobileButtons = pdSpecial.getElementsByClassName("pd-specials-1-button-mobile");
+        for (const pdMobileBtn of pdMobileButtons) {
+            // set the reference of the parent
+            pdMobileBtn.setAttribute('data-pd-special-one-id', pdSpecialParentId);
+
+            // add the event listener
+            pdMobileBtn.addEventListener("click", pdSpecial1BtnListener);
         }
 
         // *** loop through their cards to find the max height, sort the aria-hidden attribute at the same time
@@ -108,7 +118,6 @@ function initPdSpecial1() {
 
         }
 
-
     }
 }
 
@@ -122,18 +131,37 @@ function pdSpecial1BtnListener(e) {
 
     // loop through all buttons to add or remove 'show' class
     const pdParent = document.getElementById(pdParentId);
-    const pdBtns = pdParent.getElementsByClassName("pd-specials-1-button");
-    for(const btn of pdBtns) {
-        if(btn.dataset.pdSpecialOne === pdBtnCardId) {
-            // add show
-            btn.classList.add("show");
-        } else {
-            // remove show if it is present
-            if(btn.classList.contains("show")) {
-                btn.classList.remove("show");
+    // if(window.innerWidth > 991) {
+
+        const pdBtns = pdParent.getElementsByClassName("pd-specials-1-button");
+        for(const btn of pdBtns) {
+            if(btn.dataset.pdSpecialOne === pdBtnCardId) {
+                // add show
+                btn.classList.add("show");
+            } else {
+                // remove show if it is present
+                if(btn.classList.contains("show")) {
+                    btn.classList.remove("show");
+                }
             }
         }
-    }
+
+    // } else {
+
+        const pdBtnsMob = pdParent.getElementsByClassName("pd-specials-1-button-mobile");
+        for(const btn of pdBtnsMob) {
+            if(btn.dataset.pdSpecialOne === pdBtnCardId) {
+                // add show
+                btn.classList.add("show");
+            } else {
+                // remove show if it is present
+                if(btn.classList.contains("show")) {
+                    btn.classList.remove("show");
+                }
+            }
+        }
+    // }
+    
 
     // add show to the correct slide
     const pdCards = pdParent.getElementsByClassName("pd-specials-1-card");

@@ -14660,6 +14660,42 @@ progress {
         text-transform: uppercase;
         font-weight: 700;
         margin-left: 10px;
-        white-space: normal; }
+        white-space: normal;
+        -webkit-transition: -webkit-transform 0.4s;
+        transition: -webkit-transform 0.4s;
+        -o-transition: transform 0.4s;
+        transition: transform 0.4s;
+        transition: transform 0.4s, -webkit-transform 0.4s; }
+        .pd-specials-1 .pd-specials-1-button-mobile div p:after {
+          content: "";
+          width: 0px;
+          border-bottom: 2px solid #17A9E6;
+          -webkit-transition: width 0.4s;
+          -o-transition: width 0.4s;
+          transition: width 0.4s; }
+  .pd-specials-1 .pd-specials-1-button-mobile.show {
+    background: -webkit-gradient(linear, left top, left bottom, from(#e9ecef), color-stop(40%, #ffffff), color-stop(60%, #ffffff), to(#e9ecef));
+    background: -webkit-linear-gradient(#e9ecef 0%, #ffffff 40%, #ffffff 60%, #e9ecef 100%);
+    background: -o-linear-gradient(#e9ecef 0%, #ffffff 40%, #ffffff 60%, #e9ecef 100%);
+    background: linear-gradient(#e9ecef 0%, #ffffff 40%, #ffffff 60%, #e9ecef 100%); }
+      .pd-specials-1 .pd-specials-1-button-mobile.show div p {
+        -webkit-transform: translateY(-10px);
+            -ms-transform: translateY(-10px);
+                transform: translateY(-10px);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: start;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start; }
+        .pd-specials-1 .pd-specials-1-button-mobile.show div p:after {
+          width: 100%; }
 
 /* Custom CSS rules come here */
