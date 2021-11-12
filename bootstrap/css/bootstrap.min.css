@@ -14506,7 +14506,17 @@ progress {
           .pd-specials-1 .pd-specials-1-buttons-outer .pd-specials-1-button:hover p:after {
             width: 100%; }
       .pd-specials-1 .pd-specials-1-buttons-outer .pd-specials-1-button:focus {
-        outline: none; }
+        outline: none;
+        background: -webkit-gradient(linear, left top, left bottom, from(#e9ecef), color-stop(40%, #ffffff), color-stop(60%, #ffffff), to(#e9ecef));
+        background: -webkit-linear-gradient(#e9ecef 0%, #ffffff 40%, #ffffff 60%, #e9ecef 100%);
+        background: -o-linear-gradient(#e9ecef 0%, #ffffff 40%, #ffffff 60%, #e9ecef 100%);
+        background: linear-gradient(#e9ecef 0%, #ffffff 40%, #ffffff 60%, #e9ecef 100%); }
+        .pd-specials-1 .pd-specials-1-buttons-outer .pd-specials-1-button:focus p {
+          -webkit-transform: translateY(-10px);
+              -ms-transform: translateY(-10px);
+                  transform: translateY(-10px); }
+          .pd-specials-1 .pd-specials-1-buttons-outer .pd-specials-1-button:focus p:after {
+            width: 100%; }
     .pd-specials-1 .pd-specials-1-buttons-outer .pd-specials-1-button.show {
       background: none;
       border-left: none; }
@@ -14527,7 +14537,9 @@ progress {
       .pd-specials-1 .pd-specials-1-card {
         border-right: 1px solid #dee2e6;
         position: relative;
-        height: 0px; } }
+        height: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px; } }
     .pd-specials-1 .pd-specials-1-card header {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -14606,6 +14618,48 @@ progress {
     opacity: 1; }
     @media (max-width: 991px) {
       .pd-specials-1 .pd-specials-1-card.show {
-        height: auto; } }
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px; } }
+    @media (min-width: 992px) {
+      .pd-specials-1 .pd-specials-1-nav-mobile-col {
+        display: none; } }
+  .pd-specials-1 .pd-specials-1-button-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f8f9fa), color-stop(20%, #ffffff), color-stop(80%, #ffffff), to(#f8f9fa));
+    background: -webkit-linear-gradient(#f8f9fa 0%, #ffffff 20%, #ffffff 80%, #f8f9fa 100%);
+    background: -o-linear-gradient(#f8f9fa 0%, #ffffff 20%, #ffffff 80%, #f8f9fa 100%);
+    background: linear-gradient(#f8f9fa 0%, #ffffff 20%, #ffffff 80%, #f8f9fa 100%);
+    border: 1px solid #dee2e6;
+    border-radius: 50em;
+    padding: 10px 28px;
+    width: 260px;
+    height: 80px;
+    color: #17A9E6; }
+    .pd-specials-1 .pd-specials-1-button-mobile div {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 160px;
+              flex: 0 0 160px;
+      width: 210px;
+      height: auto; }
+      .pd-specials-1 .pd-specials-1-button-mobile div p {
+        margin-bottom: 0px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-left: 10px;
+        white-space: normal; }
 
 /* Custom CSS rules come here */
