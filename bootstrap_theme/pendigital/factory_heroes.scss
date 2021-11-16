@@ -1,0 +1,863 @@
+.pd-hero-1 {
+    // background: $primary;
+    background: linear-gradient(180deg, $primary, darken($primary, 10%));
+
+    h1 {
+        color: white;
+        font-weight: 700;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+    }
+
+    .pd-hero-1-headline {
+        color: white;
+        font-weight: 300;
+        font-size: 3rem;
+        line-height: 1.4;
+
+        strong {
+            font-weight: 700;
+        }
+
+        @media (min-width: 768px) and (max-width: 1199px) {
+            font-size: 2rem;
+        }
+    }
+
+    .pd-hero-1-subHeadline {
+        color: $white;
+        font-size: 1rem;
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    div.pd-hero-image-1-outer {
+        width: 100%;
+
+        @media (min-width: 768px) and (max-width: 1199px) {
+            overflow-x: hidden;
+        }
+
+        img.pd-hero-image-1 {
+            opacity: 0;
+            transition: opacity .4s;
+            width: 100%;
+            background: rgba(255,255,255,.176);
+            border-radius: 15px;
+            padding: 15px;
+            box-shadow: rgba(0,0,0,.1) 0 10px 15px -3px,rgba(0,0,0,.05) 0 4px 6px -2px;
+            border: 2px solid rgba(254,254,254,.25);
+
+            @media (min-width: 768px) and (max-width: 1199px) {
+                width: 700px;
+            }
+        }
+
+        img.pd-hero-image-1.pd-hero-image-1-loaded {
+            opacity: 1;
+        }
+    }
+
+    a {
+        .pd-hero-1-play-icon {
+            margin-right: 5px;
+            content: url(/images/design-assets/icon-arrow-play-white.svg);
+        }
+
+        &:hover {
+            .pd-hero-1-play-icon {
+                content: url(/images/design-assets/icon-arrow-play-primary.svg);
+            }
+        }
+
+        &:focus {
+            outline: 2px dotted $white;
+            outline-offset: 2px;
+        }
+    }
+
+    a.btn-info {
+        color: $white;
+    }
+
+    .pd-hero-1-loader {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        left: 0;
+    }
+
+    .pd-hero-1-loader.pd-hero-1-remove-loader {
+        display: none;
+    }
+}
+
+.pd-hero-2 {
+    // background: $primary;
+    background: linear-gradient(180deg, $primary, darken($primary, 10%));
+    min-height: 80vh;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .pd-hero-2-headline-outer {
+        width: 80%;
+    }
+
+    @media (max-width: 575px) {
+        .pd-hero-2-headline-outer {
+            width: 100%;
+        }
+    }
+
+    h1 {
+        color: white;
+        font-weight: 700;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .pd-hero-2-headline {
+        color: white;
+        font-weight: 300;
+        font-size: 2.8rem;
+        line-height: 1.4;
+
+        strong {
+            font-weight: 700;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 2rem;
+        }
+    }
+
+    .pd-hero-2-subHeadline {
+        color: white;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-hero-2-form-outer {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        form {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    @media (min-width: 576px) {
+        .pd-hero-2-form-outer {
+            align-items: center;
+
+            form {
+                width: 320px;
+                display: block;
+            }
+        }
+    }
+
+    div.pd-hero-image-2-outer {
+        width: 100%;
+
+        img.pd-hero-image-2 {
+            opacity: 0;
+            transition: opacity .4s;
+            width: 100%;
+            background: rgba(255,255,255,.176);
+            border-radius: 15px;
+            padding: 15px;
+            box-shadow: rgba(0,0,0,.1) 0 10px 15px -3px,rgba(0,0,0,.05) 0 4px 6px -2px;
+            border: 2px solid rgba(254,254,254,.25);
+
+            @media (min-width: 768px) {
+                width: 700px;
+            }
+        }
+
+        img.pd-hero-image-2.pd-hero-image-2-loaded {
+            opacity: 1;
+        }
+    }
+
+    .pd-hero-2-loader {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        left: 0;
+    }
+
+    .pd-hero-2-loader.pd-hero-2-remove-loader {
+        display: none;
+    }
+
+    button.btn-info {
+        color: $white;
+
+        &:focus {
+            outline: 2px dotted $white;
+            outline-offset: 2px;
+        }
+    }
+
+    input {
+        &:focus {
+            outline: 2px dotted $white;
+            outline-offset: 5px;
+        }
+    }
+}
+
+.pd-hero-3 {
+    // background: $primary;
+    // background: linear-gradient($gray-100 0%, $white 10%, $white 90%, $gray-100 100%);
+    border-top: 1px solid $gray-300;
+    border-bottom: 1px solid $gray-300;
+    background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
+    min-height: 80vh;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    // border-top: 1px solid $gray-100;
+    // border-bottom: 1px solid $gray-100;
+    @media (min-width: 576px) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .pd-hero-3-headline-outer {
+        width: 80%;
+    }
+
+    @media (max-width: 575px) {
+        .pd-hero-3-headline-outer {
+            width: 100%;
+        }
+    }
+
+    h1 {
+        color: $gray-600;
+        font-weight: 700;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .pd-hero-3-headline {
+        color: $primary;
+        font-weight: 300;
+        font-size: 2.8rem;
+        line-height: 1.4;
+
+        strong {
+            font-weight: 700;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 2rem;
+        }
+    }
+
+    .pd-hero-3-subHeadline {
+        color: $gray-600;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-hero-3-form-outer {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        form {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    @media (min-width: 576px) {
+        .pd-hero-3-form-outer {
+            align-items: center;
+
+            form {
+                width: 320px;
+                display: block;
+            }
+        }
+    }
+
+    div.pd-hero-image-3-outer {
+        width: 100%;
+
+        img.pd-hero-image-3 {
+            opacity: 0;
+            transition: opacity .4s;
+            width: 100%;
+            background: rgba(0,0,0,.70);
+            border-radius: 15px;
+            padding: 15px;
+            box-shadow: rgba(0,0,0,.1) 0 10px 15px -3px,rgba(0,0,0,.05) 0 4px 6px -2px;
+            border: 2px solid rgba(254,254,254,.25);
+
+            @media (min-width: 768px) {
+                width: 700px;
+            }
+        }
+
+        img.pd-hero-image-3.pd-hero-image-3-loaded {
+            opacity: 1;
+        }
+    }
+
+    .pd-hero-3-loader {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        left: 0;
+    }
+
+    .pd-hero-3-loader.pd-hero-3-remove-loader {
+        display: none;
+    }
+
+    button.btn-info {
+        color: $white;
+
+        &:focus {
+            outline: 2px dotted $primary;
+            outline-offset: 2px;
+        }
+    }
+
+    input {
+        &:focus {
+            outline: 2px dotted $primary;
+            outline-offset: 5px;
+        }
+    }
+}
+
+.pd-hero-4 {
+    // border-top: 1px solid $gray-100;
+    // border-bottom: 1px solid $gray-100;
+    // background: linear-gradient($gray-100 0%, $white 10%, $white 90%, $gray-100 100%);
+    border-top: 1px solid $gray-200;
+    border-bottom: 1px solid $gray-200;
+    background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
+
+    h1 {
+        font-weight: 700;
+        font-size: 0.7rem;
+        color: $white;
+        display: inline-block;
+        background: $info;
+        padding: 8px 14px;
+        border-radius: 50em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-hero-4-headline {
+        color: $primary;
+        font-weight: 300;
+        font-size: 2rem;
+        line-height: 1.5;
+
+        strong {
+            font-weight: 700;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 2rem;
+        }
+    }
+
+    .pd-hero-4-subHeadline {
+        color: $gray-600;
+        font-size: 1rem;
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-hero-4-image {
+        opacity: 0;
+        transition: opacity 0.4s;
+    }
+
+    .pd-hero-4-image.pd-hero-image-4-loaded {
+        opacity: 1;
+    }
+
+    .pd-hero-4-cta {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        .btn {
+            margin-top: 10px;
+        }
+
+        .btn.btn-info {
+            color: $white;
+        }
+    }
+
+    @media (min-width: 576px) {
+        .pd-hero-4-cta {
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            .btn {
+                margin-left: 20px;
+                margin-top: 0px;
+
+                &:focus {
+                    outline: 2px dotted $primary;
+                    outline-offset: 2px;
+                }
+            }
+        }
+    }
+
+    input {
+        &:focus {
+            outline: 2px dotted $primary;
+            outline-offset: 5px;
+        }
+    }
+}
+
+.pd-hero-5 {
+    background: linear-gradient(180deg, $primary, darken($primary, 10%));
+
+    h1 {
+        font-weight: 700;
+        font-size: 0.7rem;
+        color: $white;
+        display: inline-block;
+
+        // background: rgba(255, 255, 255, 1);
+        background: $info;
+        padding: 8px 14px;
+        border-radius: 50em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-hero-5-headline {
+        color: white;
+        font-weight: 300;
+        font-size: 2rem;
+        line-height: 1.5;
+
+        strong {
+            font-weight: 700;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 2rem;
+        }
+    }
+
+    .pd-hero-5-subHeadline {
+        color: white;
+        font-size: 1rem;
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-hero-5-image {
+        opacity: 0;
+        transition: opacity 0.4s;
+    }
+
+    .pd-hero-5-image.pd-hero-image-5-loaded {
+        opacity: 1;
+    }
+
+    .pd-hero-5-cta {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        .btn {
+            margin-top: 10px;
+        }
+
+        .btn.btn-info {
+            color: $white;
+        }
+    }
+
+    @media (min-width: 576px) {
+        .pd-hero-5-cta {
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            .btn {
+                margin-left: 20px;
+                margin-top: 0px;
+
+                &:focus {
+                    outline: 2px dotted $white;
+                    outline-offset: 2px;
+                }
+            }
+        }
+    }
+
+    input {
+        &:focus {
+            outline: 2px dotted $white;
+            outline-offset: 5px;
+        }
+    }
+}
+
+.pd-hero-6 {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    min-height: 640px;
+
+    .container {
+        padding-top: 9rem;
+        padding-bottom: 9rem;
+        position: relative;
+    }
+
+    h1 {
+        font-weight: 700;
+        font-size: 0.7rem;
+        color: $white;
+        display: inline-block;
+
+        // background: rgba(255, 255, 255, 1);
+        background: $info;
+        padding: 8px 14px;
+        border-radius: 50em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-hero-6-headline {
+        color: white;
+        font-weight: 300;
+        font-size: 2rem;
+        line-height: 1.5;
+
+        strong {
+            font-weight: 700;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 2rem;
+        }
+    }
+
+    .pd-hero-6-subHeadline {
+        color: white;
+        font-size: 1rem;
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-hero-6-image {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-position: center center;
+        opacity: 0;
+        transition: opacity 0.4s;
+    }
+
+    .pd-hero-6-image.pd-hero-image-6-loaded {
+        opacity: 1;
+    }
+
+    .pd-hero-6-image-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient($black 0%, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0.8) 60%, $black 100%);
+        opacity: 0.7;
+    }
+
+    .pd-hero-6-cta {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        .btn {
+            margin-top: 10px;
+        }
+
+        .btn.btn-info {
+            color: $white;
+        }
+    }
+
+    @media (min-width: 576px) {
+        .pd-hero-6-cta {
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            .btn {
+                margin-left: 20px;
+                margin-top: 0px;
+
+                &:focus {
+                    outline: 2px dotted $white;
+                    outline-offset: 5px;
+                }
+            }
+        }
+    }
+
+    input {
+        &:focus {
+            outline: 2px dotted $white;
+            outline-offset: 5px;
+        }
+    }
+}
+
+.pd-hero-7 {
+    background: linear-gradient(180deg, $primary, darken($primary, 10%));
+
+    h1 {
+        font-weight: 700;
+        font-size: 0.7rem;
+        color: $white;
+        display: inline-block;
+
+        // background: rgba(255, 255, 255, 1);
+        background: $info;
+        padding: 8px 14px;
+        border-radius: 50em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-hero-7-headline {
+        color: white;
+        font-weight: 300;
+        font-size: 2rem;
+        line-height: 1.5;
+
+        strong {
+            font-weight: 700;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 2rem;
+        }
+    }
+
+    .pd-hero-7-subHeadline {
+        color: white;
+        font-size: 1rem;
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-hero-7-cta {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        .btn {
+            margin-top: 10px;
+        }
+
+        .btn.btn-info {
+            color: $white;
+        }
+    }
+
+    @media (min-width: 576px) {
+        .pd-hero-7-cta {
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            .btn {
+                margin-left: 20px;
+                margin-top: 0px;
+            }
+
+            .btn.btn-info {
+                color: $white;
+
+                &:focus {
+                    outline: 2px dotted $white;
+                    outline-offset: 2px;
+                }
+            }
+        }
+    }
+
+    input {
+        &:focus {
+            outline: 2px dotted $white;
+            outline-offset: 5px;
+        }
+    }
+
+    .pd-hero-7-image-outer {
+        width: 70%;
+    }
+}
+
+// end of pd-hero-7
+// start pd-hero-8
+.pd-hero-8 {
+    border-top: 1px solid $gray-200;
+    border-bottom: 1px solid $gray-200;
+    background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
+
+    h1 {
+        font-weight: 700;
+        font-size: 0.7rem;
+        color: $white;
+        display: inline-block;
+
+        // background: rgba(255, 255, 255, 1);
+        background: $info;
+        padding: 8px 14px;
+        border-radius: 50em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-hero-8-headline {
+        color: $primary;
+        font-weight: 300;
+        font-size: 2rem;
+        line-height: 1.5;
+
+        strong {
+            font-weight: 700;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 2rem;
+        }
+    }
+
+    .pd-hero-8-subHeadline {
+        color: $gray-600;
+        font-size: 1rem;
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-hero-8-cta {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        .btn {
+            margin-top: 10px;
+        }
+
+        .btn.btn-info {
+            color: $white;
+        }
+    }
+
+    @media (min-width: 576px) {
+        .pd-hero-8-cta {
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            .btn {
+                margin-left: 20px;
+                margin-top: 0px;
+
+                &:focus {
+                    outline: 2px dotted $primary;
+                    outline-offset: 2px;
+                }
+            }
+        }
+    }
+
+    input {
+        &:focus {
+            outline: 2px dotted $primary;
+            outline-offset: 5px;
+        }
+    }
+
+    .pd-hero-8-image-outer {
+        width: 70%;
+    }
+}
+
+
+
+
+
+
+
+
+
+	
+

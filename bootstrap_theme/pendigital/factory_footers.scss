@@ -1,0 +1,114 @@
+.pd-footer-1 {
+    background: linear-gradient(180deg, $primary, darken($primary, 10%));
+    color: $white;
+    border-bottom: 1px solid darken($primary, 30%);
+
+    h2 {
+        font-weight: 700;
+        font-size: 1rem;
+        color: $white;
+        text-transform: uppercase;
+        padding-bottom: 16px;
+        border-bottom: 1px solid $white;
+    }
+
+    .btn.btn-info {
+        color: $white;
+    }
+
+    a {
+        color: $white;
+        text-decoration: none;
+        display: inline-block;
+
+        &:focus {
+            outline: 2px dotted $white;
+            outline-offset: 2px;
+        }
+    }
+
+    a.pd-footer-1-tel {
+        font-weight: 700;
+        font-size: 1rem;
+
+        @media (min-width: 321px) and (max-width: 767px) {
+            font-size: 1.6rem;
+        }
+
+        @media (max-width: 320px) {
+            font-size: 1rem;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-weight: 400;
+        font-size: 0.8rem;
+
+        li {
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+    }
+
+    .pd-footer-1-social-icon {
+        transition: transform 0.4s;
+        display: inline-block;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        img {
+            width: 36px;
+            height: 36px;
+        }
+
+        @media (min-width: 321px) and (max-width: 767px) {
+            img {
+                width: 52px;
+                height: 52px;
+                margin-right: 10px;
+            }
+        }
+
+        @media (max-width: 320px) {
+            img {
+                width: 42px;
+                height: 42px;
+            }
+        }
+
+        &:first-child {
+            @media (max-width: 575px) {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+.pd-footer-1-endBlock {
+    background: darken($primary, 20%);
+
+    p {
+        margin-bottom: 0px;
+        color: $white;
+        font-weight: 700;
+        font-size: 0.8rem;
+    }
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 700!important;
+        color: $white;
+        font-size: 0.8rem;
+
+        &:focus {
+            outline: 2px dotted $white;
+            outline-offset: 2px;
+        }
+    }
+}
