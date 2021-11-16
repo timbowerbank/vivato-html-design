@@ -1,16 +1,16 @@
 // start pd-specials-1
-.pd-specials-1 {
-    .pd-specials-1-card-col {
+.pd-specials-multiBox {
+    .pd-specials-multiBox-card-col {
         position: relative;
     }
 
-    .pd-specials-1-nav-col {
+    .pd-specials-multiBox-nav-col {
         @media (max-width: 991px) {
             display: none;
         }
     }
 
-    .pd-specials-1-buttons-outer {
+    .pd-specials-multiBox-buttons-outer {
         min-height: 460px;
         display: flex;
         flex-direction: column;
@@ -18,7 +18,7 @@
         align-items: flex-start;
 
         // outer link
-        .pd-specials-1-button {
+        .pd-specials-multiBox-button {
             width: 100%;
             display: flex;
             flex-direction: row;
@@ -83,13 +83,13 @@
             }
         }
 
-        .pd-specials-1-button.show {
+        .pd-specials-multiBox-button.show {
             background: none;
             border-left: none;
         }
     }
 
-    .pd-specials-1-card {
+    .pd-specials-multiBox-card {
         position: absolute;
         visibility: hidden;
         opacity: 0;
@@ -131,7 +131,7 @@
                 }
             }
 
-            .pd-specials-1-headline {
+            .pd-specials-multiBox-headline {
                 font-size: 1.4rem;
                 color: $black;
                 line-height: 1.5;
@@ -143,13 +143,13 @@
             }
         }
 
-        .pd-specials-1-card-body {
+        .pd-specials-multiBox-card-body {
             line-height: 2;
             font-weight: 300;
             color: $gray-600;
         }
 
-        .pd-specials-1-bullet-outer {
+        .pd-specials-multiBox-bullet-outer {
             ul {
                 list-style-type: none;
                 margin: 0;
@@ -188,7 +188,7 @@
         }
     }
 
-    .pd-specials-1-card.show {
+    .pd-specials-multiBox-card.show {
         visibility: visible;
         opacity: 1;
 
@@ -199,14 +199,14 @@
         }
     }
 
-    .pd-specials-1-nav-mobile-col {
+    .pd-specials-multiBox-nav-mobile-col {
         @media (min-width: 992px) {
             display: none;
         }
     }
 
     // outer link for nav
-    .pd-specials-1-button-mobile {
+    .pd-specials-multiBox-button-mobile {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
@@ -244,7 +244,7 @@
         }
     }
 
-    .pd-specials-1-button-mobile.show {
+    .pd-specials-multiBox-button-mobile.show {
         background: linear-gradient($gray-200 0%, #ffffff 40%, #ffffff 60%, $gray-200 100%);
 
         div {

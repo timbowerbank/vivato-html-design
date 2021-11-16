@@ -1,7 +1,7 @@
 // window load
 window.addEventListener("load", () => {
     
-    initPdSpecial1();
+    initPdSpecialMultibox();
 
 
 });
@@ -15,66 +15,66 @@ function resizeListener(e) {
  clearTimeout(resizeTimer);
 
  resizeTimer = setTimeout(()=> {
-    initPdSpecial1();
+    initPdSpecialMultibox();
  }, 250);
 
 }
 
 // window orientation
 window.addEventListener("orientationchange", ()=> {
-    initPdSpecial1();
+    initPdSpecialMultibox();
 });
 
 
-// ************************
-// *** initPdSpecial1() ***
-// ************************
-var pdSpecial1MaxCardHeight = 0;
-var pdSpecial1MaxButtonHeight = 0;
+// *******************************
+// *** initPdSpecialMultibox() ***
+// *******************************
+var pdSpecialMultiboxCardHeight = 0;
+var pdSpecialMultiboxMaxButtonHeight = 0;
 
-function initPdSpecial1() {
+function initPdSpecialMultibox() {
 
-    pdSpecial1MaxCardHeight = 0;
-    pdSpecial1MaxButtonHeight = 0;
+    pdSpecialMultiboxCardHeight = 0;
+    pdSpecialMultiboxMaxButtonHeight = 0;
 
-    const pdSpecials1 = document.getElementsByClassName("pd-specials-1");
+    const pdSpecialsMultibox = document.getElementsByClassName("pd-specials-multiBox");
 
     // *** loop through each parent
-    for(const pdSpecial of pdSpecials1) {
+    for(const pdSpecial of pdSpecialsMultibox) {
 
         const pdSpecialParentId = pdSpecial.id;
 
         // *** loop through their desktop buttons
-        const pdSpecialButtons = pdSpecial.getElementsByClassName("pd-specials-1-button");
+        const pdSpecialButtons = pdSpecial.getElementsByClassName("pd-specials-multiBox-button");
         for(const pdSpecialBtn of pdSpecialButtons) {
             // add parent id
-            pdSpecialBtn.setAttribute('data-pd-special-one-id', pdSpecialParentId);
+            pdSpecialBtn.setAttribute('data-pd-special-multibox-id', pdSpecialParentId); // data-pd-special-one-id
 
             // add the event listener
             pdSpecialBtn.addEventListener("click", pdSpecial1BtnListener);
 
             // calc total height
-            pdSpecial1MaxButtonHeight += pdSpecialBtn.offsetHeight;
+            pdSpecialMultiboxMaxButtonHeight += pdSpecialBtn.offsetHeight;
             
         }
 
         // *** loop through their mobile buttons
-        const pdMobileButtons = pdSpecial.getElementsByClassName("pd-specials-1-button-mobile");
+        const pdMobileButtons = pdSpecial.getElementsByClassName("pd-specials-multiBox-button-mobile");
         for (const pdMobileBtn of pdMobileButtons) {
             // set the reference of the parent
-            pdMobileBtn.setAttribute('data-pd-special-one-id', pdSpecialParentId);
+            pdMobileBtn.setAttribute('data-pd-special-multibox-id', pdSpecialParentId);
 
             // add the event listener
             pdMobileBtn.addEventListener("click", pdSpecial1BtnListener);
         }
 
         // *** loop through their cards to find the max height, sort the aria-hidden attribute at the same time
-        const pdSpecialCards = pdSpecial.getElementsByClassName("pd-specials-1-card");
+        const pdSpecialCards = pdSpecial.getElementsByClassName("pd-specials-multiBox-card");
         // set a firstCard variable to manage the aria-hidden value
         let firstCard = true;
         for(const card of pdSpecialCards) {
-            if(card.offsetHeight > pdSpecial1MaxCardHeight) {
-                pdSpecial1MaxCardHeight = card.offsetHeight;
+            if(card.offsetHeight > pdSpecialMultiboxCardHeight) {
+                pdSpecialMultiboxCardHeight = card.offsetHeight;
             }
             if(firstCard) {
                 card.setAttribute("aria-hidden", "false");
@@ -86,23 +86,23 @@ function initPdSpecial1() {
 
         let finalHeight = 0;
         // calc which is greater
-        if(pdSpecial1MaxCardHeight > pdSpecial1MaxButtonHeight) {
-            finalHeight = pdSpecial1MaxCardHeight;
+        if(pdSpecialMultiboxCardHeight > pdSpecialMultiboxMaxButtonHeight) {
+            finalHeight = pdSpecialMultiboxCardHeight;
         } else {
-            finalHeight = pdSpecial1MaxButtonHeight;
+            finalHeight = pdSpecialMultiboxMaxButtonHeight;
         }
 
         // get the col that is the container for the cards
-        const pdCardCol = pdSpecial.getElementsByClassName("pd-specials-1-card-col")[0];
+        const pdCardCol = pdSpecial.getElementsByClassName("pd-specials-multiBox-card-col")[0];
 
         // only set the heights if the width of the screen is greater than 991
         if(window.innerWidth > 991) {
-            // set the height of each card and the pd-specials-button-1-outer
+            // set the height of each card and the pd-specials-button-multiBox-outer
             for(const card of pdSpecialCards) {
                 card.setAttribute("style", `height: ${finalHeight}px;`);
             }
 
-            const btnOuter = pdSpecial.getElementsByClassName("pd-specials-1-buttons-outer")[0];
+            const btnOuter = pdSpecial.getElementsByClassName("pd-specials-multiBox-buttons-outer")[0];
             btnOuter.setAttribute("style", `height: ${finalHeight}px;`);
 
             // also set the height of the outer col otherwise the content below collapses into it
@@ -126,16 +126,16 @@ function initPdSpecial1() {
 function pdSpecial1BtnListener(e) {
     e.preventDefault();
     const pdBtn = e.currentTarget;
-    const pdBtnCardId = pdBtn.dataset.pdSpecialOne;
-    const pdParentId = pdBtn.dataset.pdSpecialOneId;
+    const pdBtnCardId = pdBtn.dataset.pdMultibox; //pd-multibox
+    const pdParentId = pdBtn.dataset.pdSpecialMultiboxId; //data-pd-special-multibox-id
 
     // loop through all buttons to add or remove 'show' class
     const pdParent = document.getElementById(pdParentId);
     // if(window.innerWidth > 991) {
 
-        const pdBtns = pdParent.getElementsByClassName("pd-specials-1-button");
+        const pdBtns = pdParent.getElementsByClassName("pd-specials-multiBox-button");
         for(const btn of pdBtns) {
-            if(btn.dataset.pdSpecialOne === pdBtnCardId) {
+            if(btn.dataset.pdMultibox === pdBtnCardId) {
                 // add show
                 btn.classList.add("show");
             } else {
@@ -148,9 +148,9 @@ function pdSpecial1BtnListener(e) {
 
     // } else {
 
-        const pdBtnsMob = pdParent.getElementsByClassName("pd-specials-1-button-mobile");
+        const pdBtnsMob = pdParent.getElementsByClassName("pd-specials-multiBox-button-mobile");
         for(const btn of pdBtnsMob) {
-            if(btn.dataset.pdSpecialOne === pdBtnCardId) {
+            if(btn.dataset.pdMultibox === pdBtnCardId) {
                 // add show
                 btn.classList.add("show");
             } else {
@@ -164,7 +164,7 @@ function pdSpecial1BtnListener(e) {
     
 
     // add show to the correct slide
-    const pdCards = pdParent.getElementsByClassName("pd-specials-1-card");
+    const pdCards = pdParent.getElementsByClassName("pd-specials-multiBox-card");
     for(const card of pdCards) {
         if(card.id === pdBtnCardId) {
             card.classList.add("show");

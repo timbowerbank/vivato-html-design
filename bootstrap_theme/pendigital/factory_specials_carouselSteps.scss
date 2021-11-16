@@ -1,0 +1,217 @@
+.pd-specials-carouselSteps {
+    border-top: 1px solid $gray-300;
+    border-bottom: 1px solid $gray-300;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
+
+    h2 {
+        background: $info;
+        font-weight: 700;
+        font-size: 0.9rem;
+        color: $white;
+        border-radius: 50em;
+        padding: 8px 14px;
+        display: inline-block;
+    }
+
+    .pd-specials-carouselSteps-headline {
+        font-size: 2rem;
+        color: $black;
+        line-height: 1.5;
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-specials-carouselSteps-subHeadline {
+        font-size: 1rem;
+        color: $black;
+        line-height: 1.5;
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    // start carouselSteps - cards
+    .pd-specials-carouselSteps-slide {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: flex-start;
+
+        // background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
+        @media (max-width: 991px) {
+            display: block;
+        }
+
+        .pd-specials-carouselSteps-slide-left {
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            min-height: 650px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            @media (max-width: 991px) {
+                min-height: auto;
+            }
+
+            @media (min-width: 1200px) {
+                img {
+                    max-width: 700px;
+                }
+            }
+        }
+
+        .pd-specials-carouselSteps-slide-right {
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 50%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+
+            .pd-specials-carouselSteps-right-inner {
+                background-color: rgba(255, 255, 255, 0.9);
+                padding: 40px;
+                border: 1px solid $gray-300;
+                border-radius: 15px;
+                flex-basis: 100%;
+                position: relative;
+                left: -60px;
+                box-shadow: 8px 8px 18px rgba(0, 0, 0, 0.4);
+
+                @media (max-width: 991px) {
+                    left: 0px;
+                    top: -120px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+
+                @media (min-width: 1200px ) {
+                    flex-basis: 90%;
+                }
+
+                h3 {
+                    position: relative;
+                    font-weight: 700;
+                    font-size: 0.7rem;
+                    color: $white;
+                    display: inline-block;
+                    background: $info;
+                    padding: 8px 14px;
+                    border-radius: 50em;
+                    text-transform: uppercase;
+                    letter-spacing: 0.1em;
+                }
+
+                .pd-specials-carouselSteps-inner-headline {
+                    color: $black;
+                    font-weight: 700;
+                    font-size: 1.4rem;
+                    margin-bottom: 0px;
+                    line-height: 1.4;
+
+                    strong {
+                        font-weight: 700;
+                    }
+                }
+
+                .pd-specials-carouselSteps-inner-para {
+                    color: $gray-600;
+                    font-weight: 300;
+                    line-height: 2;
+
+                    strong {
+                        font-weight: 700;
+                    }
+                }
+
+                ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    color: $black;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    font-size: 0.8rem;
+
+                    li {
+                        padding-top: 4px;
+                        padding-bottom: 4px;
+                        padding-left: 32px;
+                        position: relative;
+
+                        &:before {
+                            content: url(/images/design-assets/icon-checkmark.svg);
+                            width: 12px;
+                            height: 12px;
+                            position: absolute;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // end carouselSteps - cards
+    .pd-specials-carouselSteps-arrowWrapper {
+        border: none;
+        background: none;
+        position: absolute;
+        top: 50%;
+
+        &:focus {
+            outline: 2px dotted $primary;
+            outline-offset: 2px;
+        }
+    }
+
+    .pd-specials-carouselSteps-arrowWrapper.glide__arrow--right {
+        right: -40px;
+    }
+
+    .pd-specials-carouselSteps-arrowWrapper.glide__arrow--left {
+        left: -40px;
+    }
+
+    @media (max-width: 639px) {
+        .pd-specials-carouselSteps-arrowWrapper {
+            top: -60px;
+            background: $gray-200;
+            padding: 10px;
+            border: 1px solid $gray-300;
+            border-radius: 5px;
+            width: 52px;
+        }
+
+        .pd-specials-carouselSteps-arrowWrapper.glide__arrow--left {
+            left: 10px;
+        }
+
+        .pd-specials-carouselSteps-arrowWrapper.glide__arrow--right {
+            left: 67px;
+        }
+    }
+}
+
+
+
+
+
+
+
