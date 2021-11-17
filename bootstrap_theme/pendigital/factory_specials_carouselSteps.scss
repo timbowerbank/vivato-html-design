@@ -13,6 +13,8 @@
         border-radius: 50em;
         padding: 8px 14px;
         display: inline-block;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
     }
 
     .pd-specials-carouselSteps-headline {
@@ -37,130 +39,139 @@
         }
     }
 
-    // start carouselSteps - cards
-    .pd-specials-carouselSteps-slide {
-        display: flex;
-        flex-direction: row;
-        align-items: stretch;
-        justify-content: flex-start;
-
-        // background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
-        @media (max-width: 991px) {
-            display: block;
-        }
-
-        .pd-specials-carouselSteps-slide-left {
-            flex-grow: 1;
-            flex-shrink: 0;
-            flex-basis: 50%;
+    .glide__slide {
+        // start carouselSteps - cards
+        .pd-specials-carouselSteps-slide {
             display: flex;
             flex-direction: row;
-            justify-content: flex-end;
-            align-items: center;
-            min-height: 650px;
-
-            img {
-                width: 100%;
-                height: auto;
-            }
-
-            @media (max-width: 991px) {
-                min-height: auto;
-            }
-
-            @media (min-width: 1200px) {
-                img {
-                    max-width: 700px;
-                }
-            }
-        }
-
-        .pd-specials-carouselSteps-slide-right {
-            flex-grow: 1;
-            flex-shrink: 0;
-            flex-basis: 50%;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
+            align-items: stretch;
             justify-content: flex-start;
+            overflow: hidden;
 
-            .pd-specials-carouselSteps-right-inner {
-                background-color: rgba(255, 255, 255, 0.9);
-                padding: 40px;
-                border: 1px solid $gray-300;
-                border-radius: 15px;
-                flex-basis: 100%;
-                position: relative;
-                left: -60px;
-                box-shadow: 8px 8px 18px rgba(0, 0, 0, 0.4);
+            // background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
+            @media (max-width: 991px) {
+                display: block;
+            }
+
+            .pd-specials-carouselSteps-slide-left {
+                flex-grow: 1;
+                flex-shrink: 0;
+                flex-basis: 50%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+                min-height: 650px;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    opacity: 0.4;
+                    transform: scale(0.6);
+                    transition: transform 0.4s, opacity 0.4s;
+                }
 
                 @media (max-width: 991px) {
-                    left: 0px;
-                    top: -120px;
-                    margin-left: 20px;
-                    margin-right: 20px;
+                    min-height: auto;
                 }
 
-                @media (min-width: 1200px ) {
-                    flex-basis: 90%;
+                @media (min-width: 1200px) {
+                    img {
+                        max-width: 700px;
+                    }
                 }
+            }
 
-                h3 {
+            .pd-specials-carouselSteps-slide-right {
+                flex-grow: 1;
+                flex-shrink: 0;
+                flex-basis: 50%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+
+                .pd-specials-carouselSteps-right-inner {
+                    background-color: rgba(255, 255, 255, 0.9);
+                    padding: 40px;
+                    border: 1px solid $gray-300;
+                    border-radius: 15px;
+                    flex-basis: 100%;
                     position: relative;
-                    font-weight: 700;
-                    font-size: 0.7rem;
-                    color: $white;
-                    display: inline-block;
-                    background: $info;
-                    padding: 8px 14px;
-                    border-radius: 50em;
-                    text-transform: uppercase;
-                    letter-spacing: 0.1em;
-                }
+                    left: -60px;
+                    box-shadow: 8px 8px 18px rgba(0, 0, 0, 0.4);
+                    transform: translateX(200px);
+                    opacity: 0;
+                    transition: transform 0.4s ease 0.2s, opacity 0.4s ease 0.2s;
 
-                .pd-specials-carouselSteps-inner-headline {
-                    color: $black;
-                    font-weight: 700;
-                    font-size: 1.4rem;
-                    margin-bottom: 0px;
-                    line-height: 1.4;
-
-                    strong {
-                        font-weight: 700;
+                    @media (max-width: 991px) {
+                        left: 0px;
+                        top: -120px;
+                        margin-left: 20px;
+                        margin-right: 20px;
                     }
-                }
 
-                .pd-specials-carouselSteps-inner-para {
-                    color: $gray-600;
-                    font-weight: 300;
-                    line-height: 2;
-
-                    strong {
-                        font-weight: 700;
+                    @media (min-width: 1200px ) {
+                        flex-basis: 90%;
                     }
-                }
 
-                ul {
-                    list-style-type: none;
-                    margin: 0;
-                    padding: 0;
-                    color: $black;
-                    font-weight: 700;
-                    text-transform: uppercase;
-                    font-size: 0.8rem;
-
-                    li {
-                        padding-top: 4px;
-                        padding-bottom: 4px;
-                        padding-left: 32px;
+                    h3 {
                         position: relative;
+                        font-weight: 700;
+                        font-size: 0.7rem;
+                        color: $white;
+                        display: inline-block;
+                        background: $info;
+                        padding: 8px 14px;
+                        border-radius: 50em;
+                        text-transform: uppercase;
+                        letter-spacing: 0.1em;
+                    }
 
-                        &:before {
-                            content: url(/images/design-assets/icon-checkmark.svg);
-                            width: 12px;
-                            height: 12px;
-                            position: absolute;
-                            left: 0;
+                    .pd-specials-carouselSteps-inner-headline {
+                        color: $black;
+                        font-weight: 700;
+                        font-size: 1.4rem;
+                        margin-bottom: 0px;
+                        line-height: 1.4;
+
+                        strong {
+                            font-weight: 700;
+                        }
+                    }
+
+                    .pd-specials-carouselSteps-inner-para {
+                        color: $gray-600;
+                        font-weight: 300;
+                        line-height: 2;
+
+                        strong {
+                            font-weight: 700;
+                        }
+                    }
+
+                    ul {
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+                        color: $black;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        font-size: 0.8rem;
+
+                        li {
+                            padding-top: 4px;
+                            padding-bottom: 4px;
+                            padding-left: 32px;
+                            position: relative;
+
+                            &:before {
+                                content: url(/images/design-assets/icon-checkmark.svg);
+                                width: 12px;
+                                height: 12px;
+                                position: absolute;
+                                left: 0;
+                            }
                         }
                     }
                 }
@@ -168,6 +179,25 @@
         }
     }
 
+    // end of glide__slide
+    // animation for glide__slide active slide
+    .glide__slide.glide__slide--active {
+        .pd-specials-carouselSteps-slide-left {
+            img {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .pd-specials-carouselSteps-slide-right {
+            .pd-specials-carouselSteps-right-inner {
+                transform: translateX(0px);
+                opacity: 1;
+            }
+        }
+    }
+
+    // end for animation of glide__slide active slide
     // end carouselSteps - cards
     .pd-specials-carouselSteps-arrowWrapper {
         border: none;
