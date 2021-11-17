@@ -14918,5 +14918,108 @@ progress {
       left: 10px; }
     .pd-specials-carouselSteps .pd-specials-carouselSteps-arrowWrapper.glide__arrow--right {
       left: 67px; } }
+  .pd-specials-stats-1 .pd-specials-stats-1-icon-outer {
+    width: 152px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 152px;
+    border-radius: 50%;
+    padding: 12px;
+    position: relative;
+    z-index: 1; }
+    .pd-specials-stats-1 .pd-specials-stats-1-icon-outer .pd-specials-stats-1-icon-container {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 auto;
+              flex: 0 0 auto;
+      padding: 26px;
+      background: #fff;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      border: 4px solid #00CC66;
+      -webkit-box-shadow: 4px 3px 8px -1px rgba(0, 0, 0, 0.4);
+              box-shadow: 4px 3px 8px -1px rgba(0, 0, 0, 0.4);
+      z-index: 1;
+      position: relative; }
+      .pd-specials-stats-1 .pd-specials-stats-1-icon-outer .pd-specials-stats-1-icon-container img {
+        width: 54px;
+        height: 54px; }
+  .pd-specials-stats-1 .pd-specials-stats-1-icon-outer.right {
+    margin-right: 0;
+    margin-left: auto; }
+  .pd-specials-stats-1 .pd-specials-stats-1-text-outer {
+    background: -webkit-gradient(linear, left top, left bottom, from(#00CC66), to(#00bd5e));
+    background: -webkit-linear-gradient(#00CC66 0%, #00bd5e 100%);
+    background: -o-linear-gradient(#00CC66 0%, #00bd5e 100%);
+    background: linear-gradient(#00CC66 0%, #00bd5e 100%);
+    min-height: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    top: -40px;
+    z-index: 0;
+    max-width: 70%;
+    -webkit-box-shadow: 4px 3px 8px -1px rgba(0, 0, 0, 0.4);
+            box-shadow: 4px 3px 8px -1px rgba(0, 0, 0, 0.4); }
+    .pd-specials-stats-1 .pd-specials-stats-1-text-outer p {
+      font-weight: 300;
+      font-size: 0.9em;
+      line-height: 1.6;
+      letter-spacing: 0.05em;
+      margin-bottom: 0px;
+      color: #fff; }
+      .pd-specials-stats-1 .pd-specials-stats-1-text-outer p span {
+        font-size: 1.4rem;
+        font-weight: 700; }
+  .pd-specials-stats-1 .pd-specials-stats-1-text-outer.left {
+    left: 90px;
+    border-bottom-right-radius: 10px;
+    padding-left: 55px;
+    padding-right: 20px; }
+  .pd-specials-stats-1 .pd-specials-stats-1-text-outer.right {
+    margin-right: 90px;
+    margin-left: auto;
+    border-bottom-left-radius: 10px;
+    padding-right: 55px;
+    padding-left: 20px;
+    text-align: right; }
 
 /* Custom CSS rules come here */
