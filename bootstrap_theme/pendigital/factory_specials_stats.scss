@@ -13,6 +13,11 @@
         position: relative;
         z-index: 1;
 
+        @media (max-width: 575px) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         .pd-specials-stats-1-icon-container {
             flex: 0 0 auto;
             padding: 26px;
@@ -37,8 +42,10 @@
     }
 
     .pd-specials-stats-1-icon-outer.right {
-        margin-right: 0;
-        margin-left: auto;
+        @media (min-width: 576px) {
+            margin-right: 0;
+            margin-left: auto;
+        }
     }
 
     .pd-specials-stats-1-text-outer {
@@ -56,10 +63,23 @@
         max-width: 70%;
         box-shadow: 4px 3px 8px -1px rgba(0, 0, 0, 0.4);
 
+        @media (max-width: 575px) {
+            padding-top: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+            max-width: 100%;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+
+            p {
+                text-align: center;
+            }
+        }
+
         p {
             font-weight: 300;
             font-size: 0.9em;
-            line-height: 1.6;
+            line-height: 1.8;
             letter-spacing: 0.05em;
             margin-bottom: 0px;
             color: $white;
@@ -72,19 +92,23 @@
     }
 
     .pd-specials-stats-1-text-outer.left {
-        left: 90px;
-        border-bottom-right-radius: 10px;
-        padding-left: 55px;
-        padding-right: 20px;
+        @media (min-width: 576px) {
+            left: 90px;
+            border-bottom-right-radius: 10px;
+            padding-left: 55px;
+            padding-right: 20px;
+        }
     }
 
     .pd-specials-stats-1-text-outer.right {
-        margin-right: 90px;
-        margin-left: auto;
-        border-bottom-left-radius: 10px;
-        padding-right: 55px;
-        padding-left: 20px;
-        text-align: right;
+        @media (min-width: 576px) {
+            margin-right: 90px;
+            margin-left: auto;
+            border-bottom-left-radius: 10px;
+            padding-right: 55px;
+            padding-left: 20px;
+            text-align: right;
+        }
     }
 }
 
