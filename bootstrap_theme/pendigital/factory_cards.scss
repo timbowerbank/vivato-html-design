@@ -8,11 +8,13 @@
     h2 {
         background: $info;
         font-weight: 700;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         color: $white;
         border-radius: 50em;
         padding: 8px 14px;
         display: inline-block;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
     }
 
     .pd-cards-1-headline {
@@ -134,11 +136,13 @@
     h2 {
         background: $info;
         font-weight: 700;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         color: $white;
         border-radius: 50em;
         padding: 8px 14px;
         display: inline-block;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
     }
 
     .pd-cards-2-headline {

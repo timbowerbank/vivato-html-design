@@ -11676,11 +11676,13 @@ progress {
   .pd-cards-1 h2, .pd-cards-1 .h2 {
     background: #00CC66;
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     color: #fff;
     border-radius: 50em;
     padding: 8px 14px;
-    display: inline-block; }
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
   .pd-cards-1 .pd-cards-1-headline {
     font-size: 2rem;
     color: #000;
@@ -11764,11 +11766,13 @@ progress {
   .pd-cards-2 h2, .pd-cards-2 .h2 {
     background: #00CC66;
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     color: #fff;
     border-radius: 50em;
     padding: 8px 14px;
-    display: inline-block; }
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
   .pd-cards-2 .pd-cards-2-headline {
     font-size: 2rem;
     color: #000;
@@ -14918,6 +14922,40 @@ progress {
       left: 10px; }
     .pd-specials-carouselSteps .pd-specials-carouselSteps-arrowWrapper.glide__arrow--right {
       left: 67px; } }
+
+.pd-specials-stats-1 {
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .pd-specials-stats-1 h2, .pd-specials-stats-1 .h2 {
+    background: #00CC66;
+    font-weight: 700;
+    font-size: 0.7rem;
+    color: #fff;
+    border-radius: 50em;
+    padding: 8px 14px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
+  .pd-specials-stats-1 .pd-specials-stats-1-headline {
+    font-size: 2rem;
+    color: #000;
+    line-height: 1.5;
+    font-weight: 300; }
+    .pd-specials-stats-1 .pd-specials-stats-1-headline strong {
+      font-weight: 700; }
+  .pd-specials-stats-1 .pd-specials-stats-1-subHeadline {
+    font-size: 1rem;
+    color: #000;
+    line-height: 1.5;
+    font-weight: 300; }
+    .pd-specials-stats-1 .pd-specials-stats-1-subHeadline strong {
+      font-weight: 700; }
+  .pd-specials-stats-1 .pd-specials-stats-1-statIntro {
+    font-size: 1.6rem; }
+    .pd-specials-stats-1 .pd-specials-stats-1-statIntro strong {
+      font-weight: 700; }
     .pd-specials-stats-1 .pd-specials-stats-1-stat-wrapper .pd-specials-stats-1-icon-outer {
       width: 152px;
       background: #fff;

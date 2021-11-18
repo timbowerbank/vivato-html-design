@@ -1,5 +1,52 @@
 // start pd-specials-stats-1
 .pd-specials-stats-1 {
+    border-top: 1px solid $gray-300;
+    border-bottom: 1px solid $gray-300;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    h2 {
+        background: $info;
+        font-weight: 700;
+        font-size: 0.7rem;
+        color: $white;
+        border-radius: 50em;
+        padding: 8px 14px;
+        display: inline-block;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-specials-stats-1-headline {
+        font-size: 2rem;
+        color: $black;
+        line-height: 1.5;
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-specials-stats-1-subHeadline {
+        font-size: 1rem;
+        color: $black;
+        line-height: 1.5;
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-specials-stats-1-statIntro {
+        font-size: 1.6rem;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
     .pd-specials-stats-1-stat-wrapper {
         .pd-specials-stats-1-icon-outer {
             width: 152px;
