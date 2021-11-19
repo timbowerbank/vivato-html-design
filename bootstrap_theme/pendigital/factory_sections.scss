@@ -788,6 +788,16 @@
         }
     }
 
+    .pd-section-12-col.pd-left {
+        @media (min-width: 1024px) {
+            left: 50px;
+        }
+
+        @media (min-width: 1200px) {
+            left: 250px;
+        }
+    }
+
     .pd-section-12-col.pd-right {
         align-items: flex-end;
 
@@ -795,14 +805,12 @@
             align-items: center;
         }
 
-        @media (min-width: 1400px) {
-            padding-right: 200px;
+        @media (min-width: 1024px) {
+            right: 50px;
         }
-    }
 
-    .pd-section-12-col.pd-left {
-        @media (min-width: 1400px) {
-            padding-left: 200px;
+        @media (min-width: 1200px) {
+            right: 250px;
         }
     }
 

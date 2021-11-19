@@ -12817,6 +12817,12 @@ progress {
       @media (max-width: 991px) {
         .pd-section-12 .pd-section-12-col h3, .pd-section-12 .pd-section-12-col .h3 {
           text-align: center; } }
+    @media (min-width: 1024px) {
+      .pd-section-12 .pd-section-12-col.pd-left {
+        left: 50px; } }
+    @media (min-width: 1200px) {
+      .pd-section-12 .pd-section-12-col.pd-left {
+        left: 250px; } }
   .pd-section-12 .pd-section-12-col.pd-right {
     -webkit-box-align: end;
         -ms-flex-align: end;
@@ -12826,12 +12832,12 @@ progress {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; } }
-    @media (min-width: 1400px) {
+    @media (min-width: 1024px) {
       .pd-section-12 .pd-section-12-col.pd-right {
-        padding-right: 200px; } }
-    @media (min-width: 1400px) {
-      .pd-section-12 .pd-section-12-col.pd-left {
-        padding-left: 200px; } }
+        right: 50px; } }
+    @media (min-width: 1200px) {
+      .pd-section-12 .pd-section-12-col.pd-right {
+        right: 250px; } }
   .pd-section-12 ul {
     list-style-type: none;
     margin: 0;
@@ -15199,5 +15205,30 @@ progress {
   100% {
     -webkit-transform: scale(1);
             transform: scale(1); } }
+
+.pd-list-1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));
+  background: -webkit-linear-gradient(top, #17A9E6, #1287b8);
+  background: -o-linear-gradient(top, #17A9E6, #1287b8);
+  background: linear-gradient(180deg, #17A9E6, #1287b8); }
+  .pd-list-1 .pd-list-1-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+    .pd-list-1 .pd-list-1-grid .pd-list-1-grid-item {
+      color: #fff;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .pd-list-1 .pd-list-1-grid .pd-list-1-grid-item p {
+        margin-bottom: 0px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 0.8rem; }
+      .pd-list-1 .pd-list-1-grid .pd-list-1-grid-item img {
+        margin-right: 8px; }
 
 /* Custom CSS rules come here */

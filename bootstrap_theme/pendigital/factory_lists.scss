@@ -1,0 +1,29 @@
+// start pd-list-1
+.pd-list-1 {
+    background: linear-gradient(180deg, $primary, darken($primary, 10%));
+
+    .pd-list-1-grid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+        .pd-list-1-grid-item {
+            color: $white;
+            display: flex;
+            align-items: center;
+
+            p {
+                margin-bottom: 0px;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 0.8rem;
+            }
+
+            img {
+                margin-right: 8px;
+            }
+        }
+    }
+}
+
+// end pd-list-1
