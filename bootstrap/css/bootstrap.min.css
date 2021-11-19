@@ -12783,6 +12783,99 @@ progress {
     @media (max-width: 991px) {
       .pd-section-11 .pd-section-11-image-outer img {
         height: 400px; } }
+  .pd-section-12 .pd-section-12-col {
+    position: relative;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    @media (max-width: 991px) {
+      .pd-section-12 .pd-section-12-col {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
+    .pd-section-12 .pd-section-12-col h3, .pd-section-12 .pd-section-12-col .h3 {
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 700; }
+      @media (max-width: 991px) {
+        .pd-section-12 .pd-section-12-col h3, .pd-section-12 .pd-section-12-col .h3 {
+          text-align: center; } }
+  .pd-section-12 .pd-section-12-col.pd-right {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+    @media (max-width: 991px) {
+      .pd-section-12 .pd-section-12-col.pd-right {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
+    @media (min-width: 1400px) {
+      .pd-section-12 .pd-section-12-col.pd-right {
+        padding-right: 200px; } }
+    @media (min-width: 1400px) {
+      .pd-section-12 .pd-section-12-col.pd-left {
+        padding-left: 200px; } }
+  .pd-section-12 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1rem; }
+    .pd-section-12 ul li {
+      padding-top: 4px;
+      padding-bottom: 4px;
+      padding-left: 32px;
+      position: relative; }
+      .pd-section-12 ul li:before {
+        content: url(/images/design-assets/icon-checkmark.svg);
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        left: 0; }
+      .pd-section-12 ul.pd-section-12-ul-negative li:before {
+        content: url(/images/design-assets/icon-checkmark-no.svg); }
+  .pd-section-12 .pd-section-12-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(23, 169, 230, 0.95); }
+  .pd-section-12 .pd-section-12-background-image-outer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: red;
+    opacity: 1;
+    overflow: hidden; }
+    .pd-section-12 .pd-section-12-background-image-outer img {
+      -o-object-fit: cover;
+         object-fit: cover;
+      -o-object-position: center center;
+         object-position: center center;
+      width: 100%;
+      height: 100%; }
 
 .pd-footer-1 {
   background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));
