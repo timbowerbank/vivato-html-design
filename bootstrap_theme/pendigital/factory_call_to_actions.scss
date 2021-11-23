@@ -1,0 +1,187 @@
+.pd-CTA-1 {
+    background: linear-gradient(180deg, $primary, darken($primary, 10%));
+
+    .pd-CTA-1-img-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        .btn.btn-info {
+            color: $white;
+
+            &:focus {
+                outline: 2px dotted $white;
+                outline-offset: 2px;
+            }
+        }
+    }
+
+    .pd-CTA-1-text-col {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        @media (max-width: 991px) {
+            align-items: center;
+            text-align: center;
+        }
+
+        h2 {
+            color: $white;
+            font-weight: 300;
+            line-height: 1.4;
+            font-size: 2rem;
+        }
+
+        p {
+            font-weight: 300;
+            color: $white;
+            font-size: 1.2rem;
+            line-height: 1.4;
+        }
+
+        strong {
+            font-weight: 700;
+        }
+    }
+}
+
+// end pd-CTA-1
+// start pd-CTA-2
+.pd-CTA-2 {
+    background: linear-gradient(180deg, $primary, darken($primary, 10%));
+
+    .pd-CTA-2-text-col {
+        h2 {
+            font-weight: 300;
+            color: $white;
+            font-size: 1.2rem;
+        }
+
+        .pd-CTA-2-headline {
+            font-size: 2.4rem;
+            color: $white;
+            margin-bottom: 0px;
+            font-weight: 300;
+
+            p {
+                margin-bottom: 0px;
+            }
+        }
+
+        .pd-CTA-2-subHeadline {
+            font-size: 1rem;
+            color: $white;
+            font-weight: 300;
+        }
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .btn.btn-info {
+        color: $white;
+
+        &:focus {
+            outline: 2px dotted $white;
+            outline-offset: 2px;
+        }
+    }
+}
+
+// end pd-CTA-2
+// start pd-CTA-3
+.pd-CTA-3 {
+    background: linear-gradient(180deg, $primary, darken($primary, 10%));
+
+    .pd-CTA-3-icon-outer {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pd-CTA-3-text-outer {
+        h2 {
+            color: $white;
+            font-weight: 300;
+            font-size: 1.2rem;
+        }
+
+        .pd-CTA-3-headline {
+            font-size: 2.4rem;
+            color: $white;
+            margin-bottom: 0px;
+            font-weight: 300;
+        }
+
+        .pd-CTA-3-subHeadline {
+            font-size: 1rem;
+            color: $white;
+            margin-bottom: 0px;
+            font-weight: 300;
+        }
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .btn.btn-info {
+        color: $white;
+
+        &:focus {
+            outline: 2px dotted $white;
+            outline-offset: 2px;
+        }
+    }
+}
+
+// end pd-CTA-3
+// pd-CTA-4
+.pd-CTA-4 {
+    // background: linear-gradient(180deg, $primary, darken($primary, 10%));
+    background: $primary;
+
+    .pd-CTA-4-text-outer {
+        h2,
+        h3 {
+            font-weight: 300;
+            font-size: 1.4rem;
+            color: $white;
+            margin-bottom: 5px;
+        }
+
+        .pd-CTA-4-subHeadline {
+            font-weight: 300;
+            color: $white;
+            font-size: 1rem;
+
+            p {
+                margin-bottom: 0px;
+            }
+        }
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .btn.btn-info {
+        color: $white;
+
+        &:focus {
+            outline: 2px dotted $white;
+            outline-offset: 2px;
+        }
+    }
+}
+
+
+
