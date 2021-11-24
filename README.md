@@ -19,7 +19,7 @@ Here's how to fork your own GitHub repo as using the forking option in Github do
 5. JS - copy the assets/js folder to assets/name-of-client-js
 6. JS - only edit the name-of-client js files, again to avoid conflicts.
 7. JS - if you do need an edited js file then remember to repoint the source src at the bottom of the page.
-
+8. Pinegrow - PG didn't recognise all my sass stylesheets after this. I had to go to page > manage stylesheets and then select use SCSS for the bootstrap.min.css option. Select the file using the file picker and then click use. After this the stylesheets should refresh OK.
 
 **Whenever the pendigital-theme is updated remember to run git pull upstream master, or git fetch upstream master - in order to get the latest components through.**
 
