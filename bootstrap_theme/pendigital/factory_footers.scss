@@ -140,7 +140,7 @@
         display: inline-block;
 
         &:focus {
-            outline: 2px dotted $white;
+            outline: 2px dotted $primary;
             outline-offset: 2px;
         }
     }
