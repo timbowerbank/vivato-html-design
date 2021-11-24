@@ -26,7 +26,7 @@ Here's how to fork your own GitHub repo as using the forking option in Github do
 **The custom.scss file won't merge well, you might need to fix conflicts in there to ensure that this file imports the name-of-client.scss files instead of the default pendigital ones.**
 
 
-You might find these git commands useful for the forked theme:
+You might find these git commands useful for the forked theme, it's important to fetch changes from upstream and then check them out to avoid merge conflicts:
 * git fetch upstream
 * git checkout upstream/master
 * git log upstream/master ^master
