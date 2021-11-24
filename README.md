@@ -24,3 +24,9 @@ Here's how to fork your own GitHub repo as using the forking option in Github do
 **Whenever the pendigital-theme is updated remember to run git pull upstream master, or git fetch upstream master - in order to get the latest components through.**
 
 **The custom.scss file won't merge well, you might need to fix conflicts in there to ensure that this file imports the name-of-client.scss files instead of the default pendigital ones.**
+
+
+You might find these git commands useful for the forked theme:
+* git fetch upstream
+* git log upstream/master ^master
+* git merge upstream/master master
