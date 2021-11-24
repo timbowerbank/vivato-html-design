@@ -28,5 +28,6 @@ Here's how to fork your own GitHub repo as using the forking option in Github do
 
 You might find these git commands useful for the forked theme:
 * git fetch upstream
+* git checkout upstream/master
 * git log upstream/master ^master
 * git merge upstream/master master
