@@ -1,0 +1,201 @@
+// start pd-cards-posts-1
+.pd-cards-posts-1 {
+    border-top: 1px solid $gray-300;
+    border-bottom: 1px solid $gray-300;
+
+    .pd-cards-posts-1-card-outer {
+        border: 1px solid $gray-200;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-grow: 1;
+
+        .pd-cards-posts-1-image-outer {
+            position: relative;
+            overflow: hidden;
+            height: 280px;
+
+            .pd-cards-posts-1-image {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                object-fit: cover;
+                object-position: center center;
+            }
+
+            .pd-cards-posts-1-categories-outer {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                min-height: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-end;
+
+                .pd-cards-posts-1-category {
+                    background: $info;
+                    padding: 6px 12px;
+                    border-radius: 50rem;
+                    text-decoration: none;
+                    color: #ffffff;
+                    font-weight: 300;
+                    font-size: 0.7rem;
+                    margin-bottom: 4px;
+                    letter-spacing: 0.1em;
+                    transition: background 0.4s;
+
+                    &:hover {
+                        background: lighten($info, 2%);
+                    }
+
+                    &:focus {
+                        outline: 2px dotted $white;
+                        outline-offset: 4px;
+                    }
+                }
+            }
+        }
+
+        .pd-cards-posts-1-text {
+            padding: 20px;
+            flex-grow: 1;
+
+            .pd-cards-posts-1-date {
+                margin-bottom: 0px;
+                color: $gray-400;
+                padding-top: 10px;
+                font-size: 0.8rem;
+                padding-bottom: 10px;
+            }
+
+            // anchor
+            .pd-posts-cards-1-headline {
+                text-decoration: none;
+
+                h2,
+                h3 {
+                    font-size: 1.4rem;
+                    font-weight: 700;
+                    line-height: 1.4;
+                    color: $gray-800;
+                    transition: color 0.4s;
+                }
+
+                &:hover {
+                    h2,
+                    h3 {
+                        color: $primary;
+                    }
+                }
+
+                &:focus {
+                    outline: none;
+
+                    h2,
+                    h3 {
+                        outline: 2px dotted $primary;
+                        outline-offset: 4px;
+                    }
+                }
+            }
+
+            .pd-cards-posts-1-body-text {
+                color: $gray-600;
+                font-size: 0.9em;
+                line-height: 1.8;
+            }
+
+            .pd-cards-posts-1-tags-outer {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                img {
+                    margin-right: 10px;
+                    margin-top: 10px;
+                    margin-bottom: 6px;
+                }
+
+                ul {
+                    li {
+                        margin-top: 6px;
+
+                        .pd-cards-posts-1-tag {
+                            color: $gray-600;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            font-weight: 300;
+                            font-size: 0.7rem;
+                            border: 1px solid $gray-600;
+                            border-radius: 4px;
+                            padding: 4px 8px;
+                            letter-spacing: 0.1em;
+                            transition: background 0.4s, border 0.4s;
+
+                            &:hover {
+                                border: 1px solid $info;
+                                background: $info;
+                                color: $white;
+                            }
+
+                            &:focus {
+                                outline: 2px dotted $primary;
+                                outline-offset: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .pd-cards-posts-1-link {
+                font-weight: 300;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $gray-800;
+                display: inline-block;
+                margin-bottom: 10px;
+                margin-top: 10px;
+                letter-spacing: 0.1em;
+                transition: color 0.4s;
+
+                &:after {
+                    content: ">";
+                    padding-left: 10px;
+                }
+
+                &:hover {
+                    color: $primary;
+                }
+
+                &:focus {
+                    outline: 2px dotted $primary;
+                    outline-offset: 4px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
