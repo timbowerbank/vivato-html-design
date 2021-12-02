@@ -881,6 +881,63 @@
 }
 
 // end pd-section-12
+// start pd-section-13
+.pd-section-13 {
+    background: linear-gradient($gray-100 0%, $white 20%, $white 80%, $gray-100 100%);
+    border-top: 1px solid $gray-300;
+    border-bottom: 1px solid $gray-300;
+
+    h2 {
+        font-weight: 700;
+        font-size: 0.7rem;
+        color: $white;
+        display: inline-block;
+        background: $info;
+        padding: 8px 14px;
+        border-radius: 50em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-section-13-headline {
+        color: $black;
+        font-weight: 300;
+        line-height: 1.4;
+        font-size: 2rem;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-section-13-para {
+        color: $gray-600;
+        line-height: 2;
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-section-13-link {
+        font-weight: 700;
+        text-decoration: none;
+        transition: color 0.4s;
+
+        &:hover {
+            text-decoration: none;
+            color: lighten($primary, 10%);
+        }
+
+        &:focus {
+            outline: 2px dotted $primary;
+            outline-offset: 2px;
+        }
+    }
+}
+
+// end pd-section-13
 
 
 
