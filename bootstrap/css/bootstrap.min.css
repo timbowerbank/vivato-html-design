@@ -14278,7 +14278,8 @@ progress {
               transform: scale(1);
       -webkit-animation: pd-hero-video-6-pulse 2s infinite;
               animation: pd-hero-video-6-pulse 2s infinite;
-      z-index: 0; }
+      z-index: 0;
+      pointer-events: none; }
 
 @-webkit-keyframes pd-hero-video-6-pulse {
   0% {
@@ -14346,7 +14347,8 @@ progress {
       color: #fff;
       border: none;
       background: none;
-      padding: none; }
+      padding: none;
+      cursor: pointer; }
       .pd-hero-video-6-modal span .pd-hero-video-6-close img {
         margin-left: 4px; }
       .pd-hero-video-6-modal span .pd-hero-video-6-close:hover {

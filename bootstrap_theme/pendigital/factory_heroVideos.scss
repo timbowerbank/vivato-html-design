@@ -550,6 +550,7 @@
             transform: scale(1);
             animation: pd-hero-video-6-pulse 2s infinite;
             z-index: 0;
+            pointer-events: none;
         }
 
         @keyframes pd-hero-video-6-pulse {
