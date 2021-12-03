@@ -90,6 +90,8 @@ function toggleHeroVideo6ModalListener(e) {
 
     // prevent the page navigating
     // e.preventDefault();
+    console.log("button toggleHeroVideo6ModalListener is firing");
+    console.log(e.currentTarget);
     
     // get the current target and from there work out the modal window name
     const modalLink = e.currentTarget;
