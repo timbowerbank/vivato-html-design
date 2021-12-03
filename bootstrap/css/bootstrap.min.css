@@ -14244,19 +14244,23 @@ progress {
   .pd-hero-video-6 .pd-hero-video-6-play-outer {
     position: relative;
     display: inline-block; }
-    .pd-hero-video-6 .pd-hero-video-6-play-outer a.pd-hero-video-6-modal-link {
+    .pd-hero-video-6 .pd-hero-video-6-play-outer .pd-hero-video-6-modal-link {
       position: relative;
       display: inline-block;
       z-index: 1;
       -webkit-transition: 0.3s;
       -o-transition: 0.3s;
       transition: 0.3s;
-      opacity: 0.9; }
-      .pd-hero-video-6 .pd-hero-video-6-play-outer a.pd-hero-video-6-modal-link:hover {
+      opacity: 0.9;
+      cursor: pointer;
+      border: none;
+      background: none;
+      padding: 0px; }
+      .pd-hero-video-6 .pd-hero-video-6-play-outer .pd-hero-video-6-modal-link:hover {
         -webkit-transform: scale(1.1);
             -ms-transform: scale(1.1);
                 transform: scale(1.1); }
-      .pd-hero-video-6 .pd-hero-video-6-play-outer a.pd-hero-video-6-modal-link:focus {
+      .pd-hero-video-6 .pd-hero-video-6-play-outer .pd-hero-video-6-modal-link:focus {
         outline: 2px dotted #fff;
         outline-offset: 6px; }
     .pd-hero-video-6 .pd-hero-video-6-play-outer:after {
@@ -14331,7 +14335,7 @@ progress {
     top: 10px;
     right: 10px;
     z-index: 1; }
-    .pd-hero-video-6-modal span a.pd-hero-video-6-close {
+    .pd-hero-video-6-modal span .pd-hero-video-6-close {
       display: inline-block;
       -webkit-transition: -webkit-transform 0.4s;
       transition: -webkit-transform 0.4s;
@@ -14339,15 +14343,18 @@ progress {
       transition: transform 0.4s;
       transition: transform 0.4s, -webkit-transform 0.4s;
       text-decoration: none;
-      color: #fff; }
-      .pd-hero-video-6-modal span a.pd-hero-video-6-close img {
+      color: #fff;
+      border: none;
+      background: none;
+      padding: none; }
+      .pd-hero-video-6-modal span .pd-hero-video-6-close img {
         margin-left: 4px; }
-      .pd-hero-video-6-modal span a.pd-hero-video-6-close:hover {
+      .pd-hero-video-6-modal span .pd-hero-video-6-close:hover {
         -webkit-transform: scale(1.1);
             -ms-transform: scale(1.1);
                 transform: scale(1.1);
         color: #fff !important; }
-      .pd-hero-video-6-modal span a.pd-hero-video-6-close:focus {
+      .pd-hero-video-6-modal span .pd-hero-video-6-close:focus {
         outline: 2px dotted #fff;
         outline-offset: 6px; }
   .pd-hero-video-6-modal .pd-hero-video-6-modal-video-outer {

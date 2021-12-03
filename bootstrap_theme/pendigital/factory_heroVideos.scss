@@ -515,12 +515,16 @@
         position: relative;
         display: inline-block;
 
-        a.pd-hero-video-6-modal-link {
+        .pd-hero-video-6-modal-link {
             position: relative;
             display: inline-block;
             z-index: 1;
             transition: 0.3s;
             opacity: 0.9;
+            cursor: pointer;
+            border: none;
+            background: none;
+            padding: 0px;
 
             &:hover {
                 transform: scale(1.1);
@@ -589,11 +593,14 @@
         right: 10px;
         z-index: 1;
 
-        a.pd-hero-video-6-close {
+        .pd-hero-video-6-close {
             display: inline-block;
             transition: transform 0.4s;
             text-decoration: none;
             color: $white;
+            border: none;
+            background: none;
+            padding: none;
 
             img {
                 margin-left: 4px;
