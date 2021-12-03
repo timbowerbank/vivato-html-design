@@ -526,6 +526,10 @@
             background: none;
             padding: 0px;
 
+            img {
+                pointer-events: none;
+            }
+
             &:hover {
                 transform: scale(1.1);
             }
@@ -606,6 +610,7 @@
 
             img {
                 margin-left: 4px;
+                pointer-events: none;
             }
 
             &:hover {
