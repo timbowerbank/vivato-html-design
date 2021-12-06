@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>Blank Template for Bootstrap</title>
+        <title>Half heroes</title>
         <!-- Bootstrap core CSS -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <!-- Custom styles for this template -->
@@ -18,19 +18,36 @@
                 <p style="font-weight: 700; padding-bottom: 5px; padding-left: 10px; margin-bottom: 0px;">pd-heroesHalf-1</p>
             </div>
         </section>
-        <section class="pb-5 pt-5" style="position: relative;">
-            <div style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: pink; overflow: hidden;">
-                <img src="http://pinegrow.com/placeholders/img20.jpg" style="width: 100%; height: 100%; object-fit: cover; object-position: center center;">
+        <section class="pd-heroesHalf-1" style="position: relative;">
+            <div class="pd-heroesHalf-1-image-outer">
+                <script>
+                function imageLoadedListener6(e) {
+                    const heroImage6 = document.querySelector(".pd-hero-6-image");
+                    heroImage6.classList.add("pd-hero-image-6-loaded");
+                }
+            </script>
+                <picture>
+                    <source srcset="/images/uploads/hero-half-scissors-people-working.webp 1800w, 
+                                /images/uploads/hero-scissors-people-working-mob.webp 820w" sizes="(max-width: 600px) 100vw, 1800px" type="image/webp">
+                    <img srcset="/images/uploads/hero-half-scissors-people-working.jpg 1800w,
+                            /images/uploads/hero-scissors-people-working-mob.jpg 820w" sizes="(max-width: 600px) 100vw, 1800px" src="/images/uploads/hero-half--scissors-people-working.jpg" class="pd-hero-6-image" onload="imageLoadedListener6()"/>
+                </picture>
             </div>
-            <div class="pg-empty-placeholder" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.4);"></div>
+            <div class="pd-heroesHalf-1-overlay"></div>
             <div class="container" style="position: relative;">
                 <div class="row">
                     <div class="col-lg-8 pb-4 pt-4">
-                        <div style="min-height: 200px; background: red; display: flex; flex-direction: column; justify-content: center; align-items: flex-start;" class="p-2">
-                            <h2>Heading 2</h2>
-                            <p>Paragraph</p>
-                            <p>Paragraph</p>
-                        </div>                                                  
+                        <div class="p-2 pd-heroesHalf-1-text-outer">
+                            <header>
+                                <h1>Blog</h1>
+                                <div class="pd-heroesHalf-1-headline">
+                                    <p><strong>Latest Posts</strong></p>
+                                </div>
+                            </header>
+                            <div class="pd-heroesHalf-1-subHeadline">
+                                <p>Read our latest posts about the world of recruitment software</p>
+                            </div>
+                        </div>                         
                     </div>
                 </div>
             </div>
