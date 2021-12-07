@@ -15979,5 +15979,32 @@ progress {
           opacity: 1;
           outline: 2px dotted #fff;
           outline-offset: -4px; }
+  .pd-headlines-1 h1, .pd-headlines-1 .h1, .pd-headlines-1 h2, .pd-headlines-1 .h2 {
+    font-weight: 700;
+    font-size: 0.7rem;
+    color: #fff;
+    display: inline-block;
+    background: #00CC66;
+    padding: 8px 14px;
+    border-radius: 50em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
+  .pd-headlines-1 .pd-headlines-1-headline {
+    color: #17A9E6;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 1.4; }
+    .pd-headlines-1 .pd-headlines-1-headline strong {
+      font-weight: 700; }
+    @media (max-width: 575px) {
+      .pd-headlines-1 .pd-headlines-1-headline {
+        font-size: 2rem; } }
+  .pd-headlines-1 .pd-headlines-1-subHeadline {
+    color: #6c757d;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 2; }
+    .pd-headlines-1 .pd-headlines-1-subHeadline strong {
+      font-weight: 700; }
 
 /* Custom CSS rules come here */

@@ -1,0 +1,43 @@
+// start pd-headlines-1
+.pd-headlines-1 {
+    h1,
+    h2 {
+        font-weight: 700;
+        font-size: 0.7rem;
+        color: $white;
+        display: inline-block;
+        background: $info;
+        padding: 8px 14px;
+        border-radius: 50em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-headlines-1-headline {
+        color: $primary;
+        font-weight: 300;
+        font-size: 2rem;
+        line-height: 1.4;
+
+        strong {
+            font-weight: 700;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 2rem;
+        }
+    }
+
+    .pd-headlines-1-subHeadline {
+        color: $gray-600;
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 2;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+}
+
+// end pd-headlines-1
