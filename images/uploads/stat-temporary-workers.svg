@@ -201,8 +201,8 @@
                 <g transform="matrix(0,-1,-1,0,223.043,115.262)">
                     <circle cx="-37.515" cy="0" r="37.515" style="fill:none;stroke:rgb(1,51,25);stroke-width:2.01px;"/>
                 </g>
-                <g transform="matrix(1.00428,0,0,1.00428,5.11618,-1.32326)">
-                    <text x="198.129px" y="158.502px" style="font-family:'Montserrat-ExtraBold', 'Montserrat';font-weight:800;font-size:17.941px;fill:rgb(1,51,25);">2<tspan x="208.373px 218.796px " y="158.502px 158.502px ">2%</tspan></text>
+                <g transform="matrix(1.00428,0,0,1.00428,-0.0259339,-1.20453)">
+                    <text x="198.129px" y="158.502px" style="font-family:'Montserrat-ExtraBold', 'Montserrat';font-weight:800;font-size:17.941px;fill:rgb(1,51,25);">2<tspan x="208.373px 215.136px 219.711px 229.919px " y="158.502px 158.502px 158.502px 158.502px ">1.5%</tspan></text>
                 </g>
             </g>
         </g>
