@@ -16107,7 +16107,8 @@ progress {
         margin-bottom: 8px; }
 
 .pd-social-media-share-3 {
-  z-index: 30; }
+  z-index: 30;
+  position: relative; }
   .pd-social-media-share-3 .pd-social-media-share-3-outer {
     position: absolute;
     top: 0;
@@ -16133,18 +16134,35 @@ progress {
             align-items: center; }
     @media (max-width: 575px) {
       .pd-social-media-share-3 .pd-social-media-share-3-outer {
+        position: fixed;
+        left: 0;
+        top: 100px;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        width: 280px; } }
+        width: 80px;
+        border-left: none;
+        border-bottom-left-radius: 0px;
+        border-top: 1px solid #e9ecef;
+        border-top-right-radius: 10px; } }
     @media (min-width: 576px) {
       .pd-social-media-share-3 .pd-social-media-share-3-outer {
         right: 0; } }
+    .pd-social-media-share-3 .pd-social-media-share-3-outer .pd-social-media-share-3-icons-outer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+      @media (max-width: 575px) {
+        .pd-social-media-share-3 .pd-social-media-share-3-outer .pd-social-media-share-3-icons-outer {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; } }
       .pd-social-media-share-3 .pd-social-media-share-3-outer .pd-social-media-share-3-icons-outer a {
         display: inline-block;
         height: 100%;
@@ -16169,10 +16187,11 @@ progress {
         margin-bottom: 8px; }
 
 .pd-social-media-share-4 {
+  position: relative;
   border-top: 1px solid #dee2e6;
   border-bottom: 1px solid #dee2e6;
   height: 60px;
-  z-index: 30; }
+  z-index: 3000; }
   .pd-social-media-share-4 .pd-social-media-share-4-outer {
     position: absolute;
     top: 0;
@@ -16201,11 +16220,10 @@ progress {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
+        position: fixed;
         left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        width: 280px; } }
+        top: 100px;
+        width: 80px; } }
     @media (min-width: 576px) {
       .pd-social-media-share-4 .pd-social-media-share-4-outer {
         right: 0; } }

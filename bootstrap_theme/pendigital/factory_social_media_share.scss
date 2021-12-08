@@ -103,6 +103,7 @@
     // border-top: 1px solid $gray-300;
     // border-bottom: 1px solid $gray-300;
     z-index: 30;
+    position: relative;
 
     .pd-social-media-share-3-outer {
         position: absolute;
@@ -120,12 +121,15 @@
         align-items: center;
 
         @media (max-width: 575px) {
-            flex-direction: column;
+            position: fixed;
             left: 0;
-            right: 0;
-            margin-left: auto;
-            margin-right: auto;
-            width: 280px;
+            top: 100px;
+            flex-direction: column;
+            width: 80px;
+            border-left: none;
+            border-bottom-left-radius: 0px;
+            border-top: 1px solid $gray-200;
+            border-top-right-radius: 10px;
         }
 
         @media (min-width: 576px) {
@@ -133,6 +137,13 @@
         }
 
         .pd-social-media-share-3-icons-outer {
+            display: flex;
+            flex-direction: row;
+
+            @media (max-width: 575px) {
+                flex-direction: column;
+            }
+
             a {
                 display: inline-block;
                 height: 100%;
@@ -166,10 +177,11 @@
 // end pd-social-media-share-3
 // start pd-social-media-share-4
 .pd-social-media-share-4 {
+    position: relative;
     border-top: 1px solid $gray-300;
     border-bottom: 1px solid $gray-300;
     height: 60px;
-    z-index: 30;
+    z-index: 3000;
 
     .pd-social-media-share-4-outer {
         position: absolute;
@@ -186,11 +198,10 @@
 
         @media (max-width: 575px) {
             flex-direction: column;
+            position: fixed;
             left: 0;
-            right: 0;
-            margin-left: auto;
-            margin-right: auto;
-            width: 280px;
+            top: 100px;
+            width: 80px;
         }
 
         @media (min-width: 576px) {
