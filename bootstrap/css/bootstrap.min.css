@@ -15979,7 +15979,9 @@ progress {
           opacity: 1;
           outline: 2px dotted #fff;
           outline-offset: -4px; }
-  .pd-headlines-1 h1, .pd-headlines-1 .h1, .pd-headlines-1 h2, .pd-headlines-1 .h2 {
+  .pd-headlines-1 h1, .pd-headlines-1 .h1,
+  .pd-headlines-1 h2,
+  .pd-headlines-1 .h2 {
     font-weight: 700;
     font-size: 0.7rem;
     color: #fff;
@@ -16006,5 +16008,207 @@ progress {
     line-height: 2; }
     .pd-headlines-1 .pd-headlines-1-subHeadline strong {
       font-weight: 700; }
+  .pd-social-media-share-1 .pd-social-media-share-1-outer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media (max-width: 575px) {
+      .pd-social-media-share-1 .pd-social-media-share-1-outer {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
+    @media (max-width: 767px) {
+      .pd-social-media-share-1 .pd-social-media-share-1-outer {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
+      .pd-social-media-share-1 .pd-social-media-share-1-outer .pd-social-media-share-1-icons-outer a {
+        display: inline-block;
+        height: 100%;
+        -webkit-transition: -webkit-transform 0.4s;
+        transition: -webkit-transform 0.4s;
+        -o-transition: transform 0.4s;
+        transition: transform 0.4s;
+        transition: transform 0.4s, -webkit-transform 0.4s; }
+        .pd-social-media-share-1 .pd-social-media-share-1-outer .pd-social-media-share-1-icons-outer a:hover {
+          -webkit-transform: scale(1.1);
+              -ms-transform: scale(1.1);
+                  transform: scale(1.1); }
+        @media (max-width: 575px) {
+          .pd-social-media-share-1 .pd-social-media-share-1-outer .pd-social-media-share-1-icons-outer a img {
+            width: 50px;
+            height: 50px; } }
+      .pd-social-media-share-1 .pd-social-media-share-1-outer .pd-social-media-share-1-icons-outer a:not(:last-child) {
+        margin: 8px; }
+      .pd-social-media-share-1 .pd-social-media-share-1-outer .pd-social-media-share-1-icons-outer a:last-child {
+        margin-left: 8px;
+        margin-top: 8px;
+        margin-bottom: 8px; }
+
+.pd-social-media-share-2 {
+  background: #17A9E6; }
+  .pd-social-media-share-2 .pd-social-media-share-2-outer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media (max-width: 575px) {
+      .pd-social-media-share-2 .pd-social-media-share-2-outer {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
+    @media (max-width: 767px) {
+      .pd-social-media-share-2 .pd-social-media-share-2-outer {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
+      .pd-social-media-share-2 .pd-social-media-share-2-outer .pd-social-media-share-2-icons-outer a {
+        display: inline-block;
+        height: 100%;
+        -webkit-transition: -webkit-transform 0.4s;
+        transition: -webkit-transform 0.4s;
+        -o-transition: transform 0.4s;
+        transition: transform 0.4s;
+        transition: transform 0.4s, -webkit-transform 0.4s; }
+        .pd-social-media-share-2 .pd-social-media-share-2-outer .pd-social-media-share-2-icons-outer a:hover {
+          -webkit-transform: scale(1.1);
+              -ms-transform: scale(1.1);
+                  transform: scale(1.1); }
+        @media (max-width: 575px) {
+          .pd-social-media-share-2 .pd-social-media-share-2-outer .pd-social-media-share-2-icons-outer a img {
+            width: 50px;
+            height: 50px; } }
+      .pd-social-media-share-2 .pd-social-media-share-2-outer .pd-social-media-share-2-icons-outer a:not(:last-child) {
+        margin: 8px; }
+      .pd-social-media-share-2 .pd-social-media-share-2-outer .pd-social-media-share-2-icons-outer a:last-child {
+        margin-left: 8px;
+        margin-top: 8px;
+        margin-bottom: 8px; }
+
+.pd-social-media-share-3 {
+  border-bottom: 1px solid #dee2e6; }
+  .pd-social-media-share-3 .pd-social-media-share-3-outer {
+    background: #f8f9fa;
+    padding: 8px;
+    border-left: 1px solid #e9ecef;
+    border-right: 1px solid #e9ecef;
+    border-bottom: 1px solid #e9ecef;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media (max-width: 575px) {
+      .pd-social-media-share-3 .pd-social-media-share-3-outer {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
+      .pd-social-media-share-3 .pd-social-media-share-3-outer .pd-social-media-share-3-icons-outer a {
+        display: inline-block;
+        height: 100%;
+        -webkit-transition: -webkit-transform 0.4s;
+        transition: -webkit-transform 0.4s;
+        -o-transition: transform 0.4s;
+        transition: transform 0.4s;
+        transition: transform 0.4s, -webkit-transform 0.4s; }
+        .pd-social-media-share-3 .pd-social-media-share-3-outer .pd-social-media-share-3-icons-outer a:hover {
+          -webkit-transform: scale(1.1);
+              -ms-transform: scale(1.1);
+                  transform: scale(1.1); }
+        @media (max-width: 575px) {
+          .pd-social-media-share-3 .pd-social-media-share-3-outer .pd-social-media-share-3-icons-outer a img {
+            width: 45px;
+            height: 45px; } }
+      .pd-social-media-share-3 .pd-social-media-share-3-outer .pd-social-media-share-3-icons-outer a:not(:last-child) {
+        margin: 8px; }
+      .pd-social-media-share-3 .pd-social-media-share-3-outer .pd-social-media-share-3-icons-outer a:last-child {
+        margin-left: 8px;
+        margin-top: 8px;
+        margin-bottom: 8px; }
+
+.pd-social-media-share-4 {
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  height: 60px; }
+  .pd-social-media-share-4 .pd-social-media-share-4-outer {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 8px;
+    border: 1px solid #f8f9fa;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: -40px;
+    -webkit-box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2); }
+    @media (max-width: 575px) {
+      .pd-social-media-share-4 .pd-social-media-share-4-outer {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
+      .pd-social-media-share-4 .pd-social-media-share-4-outer .pd-social-media-share-4-icons-outer a {
+        display: inline-block;
+        height: 100%;
+        -webkit-transition: -webkit-transform 0.4s;
+        transition: -webkit-transform 0.4s;
+        -o-transition: transform 0.4s;
+        transition: transform 0.4s;
+        transition: transform 0.4s, -webkit-transform 0.4s; }
+        .pd-social-media-share-4 .pd-social-media-share-4-outer .pd-social-media-share-4-icons-outer a:hover {
+          -webkit-transform: scale(1.1);
+              -ms-transform: scale(1.1);
+                  transform: scale(1.1); }
+        @media (max-width: 575px) {
+          .pd-social-media-share-4 .pd-social-media-share-4-outer .pd-social-media-share-4-icons-outer a img {
+            width: 45px;
+            height: 45px; } }
+      .pd-social-media-share-4 .pd-social-media-share-4-outer .pd-social-media-share-4-icons-outer a:not(:last-child) {
+        margin: 8px; }
+      .pd-social-media-share-4 .pd-social-media-share-4-outer .pd-social-media-share-4-icons-outer a:last-child {
+        margin-left: 8px;
+        margin-top: 8px;
+        margin-bottom: 8px; }
 
 /* Custom CSS rules come here */
