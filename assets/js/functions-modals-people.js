@@ -2,6 +2,28 @@ window.addEventListener("load", () => {
     initPeople1Modals();
 });
 
+// const deviceType = () => {
+//     const ua = navigator.userAgent;
+//     if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
+//         return "tablet";
+//     }
+//     else if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(ua)) {
+//         return "mobile";
+//     }
+//     return "desktop";
+// };
+
+// function deviceType() {
+//     const ua = navigator.userAgent;
+//     if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
+//         return "tablet";
+//     }
+//     else if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(ua)) {
+//         return "mobile";
+//     }
+//     return "desktop";
+// }
+
 var people1ModalOuterBody;
 function initPeople1Modals() {
     // get all elements by class name: pd-people-1-card-outer and add event listener togglePeople1ModalListener
@@ -32,8 +54,19 @@ function initPeople1Modals() {
 var peopleModalId = "";
 function openPeople1ModalListener(e) {
 
+    // find the scroll postion
+    const windowScrollY = window.scrollY;
+
+    // and fix the body
+    document.body.style.position = 'fixed';
+    document.body.style.width = "100%";
+    document.body.style.top = `-${windowScrollY}px`;
+
+    // force the scroll bar to avoid layout shifts
+    document.documentElement.style.overflowY = "scroll";
+
     // set the body to no scroll
-    people1ModalOuterBody.classList.add("pd-people-1-modal-body-no-scroll");
+    // people1ModalOuterBody.classList.add("pd-people-1-modal-body-no-scroll");
 
     // get the target
     const modalLink = e.currentTarget;
@@ -56,13 +89,28 @@ function openPeople1ModalListener(e) {
     // store a reference to the open modal
     peopleModalId = modalId;
 
+    // check for scroll bar present
+    // if(deviceType() === "desktop") {
+        // people1ModalOuterBody.style.paddingRight = "20px";
+    // }
+
+    // set the height on the html to 101%
+    // document.documentElement.style.height = "101%";
+
+    
+
 }
 
 
 function closePeople1ModalListener(e) {
 
+    
+
+    // remove the style on the html
+    document.documentElement.removeAttribute("style");
+
     // set the body to  scroll
-    people1ModalOuterBody.classList.remove("pd-people-1-modal-body-no-scroll");
+    // people1ModalOuterBody.classList.remove("pd-people-1-modal-body-no-scroll");
 
     // get a reference to the open modal
     const modal = document.getElementById(peopleModalId);
@@ -73,4 +121,16 @@ function closePeople1ModalListener(e) {
     // remove the style attr
     modal.removeAttribute("style");
 
+    // allow body to scroll again but make sure window is in the same scroll position as it was before
+    const scrollY = document.body.style.top;
+    document.body.style.position = '';
+    document.body.style.top = '';
+    document.body.style.width = '';
+    window.scrollTo({
+        left: 0,
+        top: parseInt(scrollY || '0') * -1,
+        behavior: 'instant'
+    });
+
 }
+

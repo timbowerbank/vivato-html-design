@@ -122,6 +122,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 5000;
 
     .pd-people-1-modal-card {
         max-width: 800px;
@@ -251,15 +252,14 @@
 
 .pd-people-1-modal.pd-open {
     display: flex;
-    opacity: 1;
 
     // set this in the style attribute via JS
 }
 
-.pd-people-1-modal-body-no-scroll {
-    overflow: hidden;
-    height: 100vh;
-}
+// .pd-people-1-modal-body-no-scroll {
+// overflow: hidden;
+// // height: 100vh;
+// }
 
 
 

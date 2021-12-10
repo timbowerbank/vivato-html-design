@@ -14828,7 +14828,8 @@ progress {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  z-index: 5000; }
   .pd-people-1-modal .pd-people-1-modal-card {
     max-width: 800px;
     height: 600px;
@@ -14936,12 +14937,7 @@ progress {
 .pd-people-1-modal.pd-open {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  opacity: 1; }
-
-.pd-people-1-modal-body-no-scroll {
-  overflow: hidden;
-  height: 100vh; }
+  display: flex; }
   .pd-specials-multiBox .pd-specials-multiBox-card-col {
     position: relative; }
     @media (max-width: 991px) {
