@@ -103,3 +103,170 @@
 
     // end of anchor
 }
+
+// end pd-people-1
+// start pd-people-1-modal
+.pd-people-1-modal {
+    transition: opacity 0.4s;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+
+    // background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .pd-people-1-modal-card {
+        max-width: 800px;
+        height: 600px;
+        background: rgba(255, 255, 255, 1);
+        box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        position: relative;
+        border: 1px solid $gray-700;
+
+        .pd-people-1-modal-close-outer {
+            position: absolute;
+            z-index: 1;
+            right: 0;
+            top: 0;
+
+            button {
+                padding: 10px;
+                border: none;
+                background: none;
+            }
+        }
+
+        .pd-people-1-modal-left-col {
+            flex-basis: 50%;
+            position: relative;
+
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center center;
+            }
+        }
+
+        .pd-people-1-modal-right-col {
+            flex-basis: 50%;
+            padding: 40px;
+
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: flex-start;
+            // align-items: stretch;
+            h3 {
+                font-size: 2rem;
+                color: $black;
+                line-height: 1.5;
+                font-weight: 700;
+                margin-bottom: 2px;
+            }
+
+            .pd-people-1-modal-subHeadline {
+                margin-bottom: 20px;
+                font-size: 1.2rem;
+                color: $primary;
+                font-weight: 700;
+                line-height: 1.4;
+            }
+
+            .pd-people-1-modal-body {
+                flex-grow: 1;
+                height: 100%;
+                overflow-y: scroll;
+
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6 {
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                }
+
+                p {
+                    font-weight: 300;
+                    line-height: 2;
+                    color: $gray-700;
+                }
+            }
+        }
+
+        @media (max-width: 991px) {
+            width: 90vw;
+            height: 80vh;
+        }
+
+        @media (max-width: 767px) {
+            display: block;
+            overflow-y: scroll;
+
+            .pd-people-1-modal-close-outer {
+                position: fixed;
+                top: 0;
+                right: 0;
+            }
+
+            .pd-people-1-modal-left-col {
+                height: 50vh;
+
+                img {
+                    object-position: center -20px;
+                }
+            }
+
+            .pd-people-1-modal-right-col {
+                padding: 20px;
+
+                .pd-people-1-modal-body {
+                    overflow-y: visible;
+                }
+            }
+        }
+    }
+
+    .pd-people-1-modal-overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.4);
+    }
+}
+
+.pd-people-1-modal.pd-open {
+    display: flex;
+    opacity: 1;
+
+    // set this in the style attribute via JS
+}
+
+.pd-people-1-modal-body-no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
