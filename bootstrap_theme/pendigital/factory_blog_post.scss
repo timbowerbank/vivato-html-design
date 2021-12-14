@@ -218,6 +218,14 @@
                 }
             }
 
+            img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 36px;
+                margin-top: 20px;
+            }
+
             blockquote {
                 background: $gray-100;
                 padding-left: 40px;
