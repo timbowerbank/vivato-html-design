@@ -14742,7 +14742,9 @@ progress {
     color: #fff;
     border-radius: 50em;
     padding: 8px 14px;
-    display: inline-block; }
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
   .pd-people-1 .pd-people-1-headline {
     font-size: 2rem;
     color: #000;
@@ -14937,6 +14939,178 @@ progress {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  .pd-people-2 h2, .pd-people-2 .h2 {
+    background: #00CC66;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #fff;
+    border-radius: 50em;
+    padding: 8px 14px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
+  .pd-people-2 .pd-people-2-headline {
+    font-size: 2rem;
+    color: #000;
+    line-height: 1.5;
+    font-weight: 300; }
+    .pd-people-2 .pd-people-2-headline strong {
+      font-weight: 700; }
+  .pd-people-2 .pd-people-2-subHeadline {
+    font-size: 1rem;
+    color: #000;
+    line-height: 1.5;
+    font-weight: 300; }
+    .pd-people-2 .pd-people-2-subHeadline strong {
+      font-weight: 700; }
+  .pd-people-2 .pd-people-2-card-outer {
+    width: 100%;
+    min-height: 640px;
+    position: relative;
+    cursor: pointer; }
+    .pd-people-2 .pd-people-2-card-outer .pd-people-2-card-image-outer {
+      position: absolute;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0; }
+      .pd-people-2 .pd-people-2-card-outer .pd-people-2-card-image-outer img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: center center;
+           object-position: center center; }
+    .pd-people-2 .pd-people-2-card-outer .pd-people-2-card-video-outer {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      overflow: hidden;
+      z-index: 1;
+      opacity: 0;
+      -webkit-transition: opacity 0.2s;
+      -o-transition: opacity 0.2s;
+      transition: opacity 0.2s; }
+      .pd-people-2 .pd-people-2-card-outer .pd-people-2-card-video-outer video {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: center center;
+           object-position: center center; }
+    .pd-people-2 .pd-people-2-card-outer .pd-people-2-card-profile-text {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      padding: 20px;
+      padding-bottom: 20px;
+      background: rgba(255, 255, 255, 0.9);
+      z-index: 2;
+      -webkit-transition: padding-bottom 0.4s;
+      -o-transition: padding-bottom 0.4s;
+      transition: padding-bottom 0.4s; }
+      .pd-people-2 .pd-people-2-card-outer .pd-people-2-card-profile-text p {
+        font-weight: 300;
+        font-size: 0.9rem;
+        line-height: 2; }
+        .pd-people-2 .pd-people-2-card-outer .pd-people-2-card-profile-text p strong {
+          font-weight: 700; }
+      .pd-people-2 .pd-people-2-card-outer .pd-people-2-card-profile-text a {
+        text-decoration: none;
+        color: blue;
+        font-weight: 700;
+        -webkit-transition: color 0.4s;
+        -o-transition: color 0.4s;
+        transition: color 0.4s; }
+        .pd-people-2 .pd-people-2-card-outer .pd-people-2-card-profile-text a:hover {
+          color: #3333ff; }
+      .pd-people-2 .pd-people-2-card-outer:hover .pd-people-2-card-video-outer {
+        opacity: 1; }
+      .pd-people-2 .pd-people-2-card-outer:hover .pd-people-2-card-profile-text {
+        padding-bottom: 40px; }
+  .pd-people-3 .pd-people-3-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 460px 460px;
+    grid-auto-rows: 460px;
+    grid-gap: 40px; }
+  @media (max-width: 767px) {
+    .pd-people-3 .pd-people-3-grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: 550px;
+      grid-auto-rows: 550px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .pd-people-3 .pd-people-3-grid {
+      grid-template-columns: 1fr 1fr; } }
+  .pd-people-3 .pd-people-3-card-outer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer; }
+    .pd-people-3 .pd-people-3-card-outer .pd-people-3-card-image-outer {
+      position: absolute;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0; }
+      .pd-people-3 .pd-people-3-card-outer .pd-people-3-card-image-outer img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: center center;
+           object-position: center center; }
+    .pd-people-3 .pd-people-3-card-outer .pd-people-3-card-video-outer {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      overflow: hidden;
+      z-index: 1;
+      opacity: 0;
+      -webkit-transition: opacity 0.2s;
+      -o-transition: opacity 0.2s;
+      transition: opacity 0.2s; }
+      .pd-people-3 .pd-people-3-card-outer .pd-people-3-card-video-outer video {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: center center;
+           object-position: center center; }
+    .pd-people-3 .pd-people-3-card-outer .pd-people-3-card-profile-text {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      padding: 20px;
+      padding-bottom: 20px;
+      background: rgba(255, 255, 255, 0.9);
+      z-index: 2;
+      -webkit-transition: padding-bottom 0.4s;
+      -o-transition: padding-bottom 0.4s;
+      transition: padding-bottom 0.4s; }
+      .pd-people-3 .pd-people-3-card-outer .pd-people-3-card-profile-text p {
+        font-weight: 300;
+        font-size: 0.9rem;
+        line-height: 2; }
+        .pd-people-3 .pd-people-3-card-outer .pd-people-3-card-profile-text p strong {
+          font-weight: 700; }
+      .pd-people-3 .pd-people-3-card-outer .pd-people-3-card-profile-text a {
+        text-decoration: none;
+        color: blue;
+        font-weight: 700;
+        -webkit-transition: color 0.4s;
+        -o-transition: color 0.4s;
+        transition: color 0.4s; }
+        .pd-people-3 .pd-people-3-card-outer .pd-people-3-card-profile-text a:hover {
+          color: #3333ff; }
+      .pd-people-3 .pd-people-3-card-outer:hover .pd-people-3-card-video-outer {
+        opacity: 1; }
+      .pd-people-3 .pd-people-3-card-outer:hover .pd-people-3-card-profile-text {
+        padding-bottom: 40px; }
   .pd-specials-multiBox .pd-specials-multiBox-card-col {
     position: relative; }
     @media (max-width: 991px) {

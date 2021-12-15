@@ -8,6 +8,8 @@
         border-radius: 50em;
         padding: 8px 14px;
         display: inline-block;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
     }
 
     .pd-people-1-headline {
@@ -260,6 +262,244 @@
 // overflow: hidden;
 // // height: 100vh;
 // }
+// start pd-people-2
+.pd-people-2 {
+    h2 {
+        background: $info;
+        font-weight: 700;
+        font-size: 0.9rem;
+        color: $white;
+        border-radius: 50em;
+        padding: 8px 14px;
+        display: inline-block;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-people-2-headline {
+        font-size: 2rem;
+        color: $black;
+        line-height: 1.5;
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-people-2-subHeadline {
+        font-size: 1rem;
+        color: $black;
+        line-height: 1.5;
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-people-2-card-outer {
+        width: 100%;
+        min-height: 640px;
+        position: relative;
+        cursor: pointer;
+
+        .pd-people-2-card-image-outer {
+            position: absolute;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center center;
+            }
+        }
+
+        .pd-people-2-card-video-outer {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            overflow: hidden;
+            z-index: 1;
+            opacity: 0;
+            transition: opacity 0.2s;
+
+            video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center center;
+            }
+        }
+
+        .pd-people-2-card-profile-text {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            padding: 20px;
+            padding-bottom: 20px;
+            background: rgba(255,255,255,0.9);
+            z-index: 2;
+            transition: padding-bottom 0.4s;
+
+            p {
+                font-weight: 300;
+                font-size: 0.9rem;
+                line-height: 2;
+
+                strong {
+                    font-weight: 700;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: blue;
+                font-weight: 700;
+                transition: color 0.4s;
+
+                &:hover {
+                    color: lighten(blue, 10%);
+                }
+            }
+        }
+
+        &:hover {
+            .pd-people-2-card-video-outer {
+                opacity: 1;
+            }
+
+            .pd-people-2-card-profile-text {
+                padding-bottom: 40px;
+            }
+        }
+    }
+}
+
+// end pd-people-2
+// start pd-people-3
+.pd-people-3 {
+    .pd-people-3-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 460px 460px;
+        grid-auto-rows: 460px;
+        grid-gap: 40px;
+    }
+
+    @media (max-width: 767px) {
+        .pd-people-3-grid {
+            grid-template-columns: 1fr;
+            grid-template-rows: 550px;
+            grid-auto-rows: 550px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        .pd-people-3-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .pd-people-3-card-outer {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        cursor: pointer;
+
+        .pd-people-3-card-image-outer {
+            position: absolute;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center center;
+            }
+        }
+
+        .pd-people-3-card-video-outer {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            overflow: hidden;
+            z-index: 1;
+            opacity: 0;
+            transition: opacity 0.2s;
+
+            video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center center;
+            }
+        }
+
+        .pd-people-3-card-profile-text {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            padding: 20px;
+            padding-bottom: 20px;
+            background: rgba(255,255,255,0.9);
+            z-index: 2;
+            transition: padding-bottom 0.4s;
+
+            p {
+                font-weight: 300;
+                font-size: 0.9rem;
+                line-height: 2;
+
+                strong {
+                    font-weight: 700;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: blue;
+                font-weight: 700;
+                transition: color 0.4s;
+
+                &:hover {
+                    color: lighten(blue, 10%);
+                }
+            }
+        }
+
+        &:hover {
+            .pd-people-3-card-video-outer {
+                opacity: 1;
+            }
+
+            .pd-people-3-card-profile-text {
+                padding-bottom: 40px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
