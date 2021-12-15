@@ -385,6 +385,40 @@
 // end pd-people-2
 // start pd-people-3
 .pd-people-3 {
+    h2 {
+        background: $info;
+        font-weight: 700;
+        font-size: 0.9rem;
+        color: $white;
+        border-radius: 50em;
+        padding: 8px 14px;
+        display: inline-block;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-people-3-headline {
+        font-size: 2rem;
+        color: $black;
+        line-height: 1.5;
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-people-3-subHeadline {
+        font-size: 1rem;
+        color: $black;
+        line-height: 1.5;
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
     .pd-people-3-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

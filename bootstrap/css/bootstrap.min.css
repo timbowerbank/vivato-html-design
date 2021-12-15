@@ -15030,6 +15030,30 @@ progress {
         opacity: 1; }
       .pd-people-2 .pd-people-2-card-outer:hover .pd-people-2-card-profile-text {
         padding-bottom: 40px; }
+  .pd-people-3 h2, .pd-people-3 .h2 {
+    background: #00CC66;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #fff;
+    border-radius: 50em;
+    padding: 8px 14px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
+  .pd-people-3 .pd-people-3-headline {
+    font-size: 2rem;
+    color: #000;
+    line-height: 1.5;
+    font-weight: 300; }
+    .pd-people-3 .pd-people-3-headline strong {
+      font-weight: 700; }
+  .pd-people-3 .pd-people-3-subHeadline {
+    font-size: 1rem;
+    color: #000;
+    line-height: 1.5;
+    font-weight: 300; }
+    .pd-people-3 .pd-people-3-subHeadline strong {
+      font-weight: 700; }
   .pd-people-3 .pd-people-3-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
