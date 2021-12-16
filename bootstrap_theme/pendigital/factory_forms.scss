@@ -1,0 +1,168 @@
+// start pd-forms-1
+.pd-forms-1 {
+    background: linear-gradient(180deg, $primary, darken($primary, 10%));
+
+    h1 {
+        font-weight: 700;
+        font-size: 0.7rem;
+        color: $white;
+        display: inline-block;
+
+        // background: rgba(255, 255, 255, 1);
+        background: $info;
+        padding: 8px 14px;
+        border-radius: 50em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-forms-1-headline {
+        color: white;
+        font-weight: 300;
+        font-size: 2rem;
+        line-height: 1.5;
+
+        strong {
+            font-weight: 700;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 2rem;
+        }
+    }
+
+    .pd-forms-1-subHeadline {
+        color: white;
+        font-size: 1.4rem;
+        font-weight: 300;
+        line-height: 1.4;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-forms-1-para {
+        color: $white;
+        font-size: 1rem;
+        line-height: 2;
+        font-weight: 300;
+    }
+
+    .pd-forms-1-contact-block-outer {
+        position: relative;
+
+        .pd-forms-1-button-outer {
+            position: relative;
+            top: 1px;
+
+            .pd-forms-1-button {
+                background: none;
+                border-style: none;
+                color: $white;
+                font-weight: 700;
+                font-size: 1.4rem;
+                text-decoration: underline;
+                padding: 8px 18px;
+                transition: background 0.4s;
+
+                &:focus {
+                    outline: 2px dotted $white;
+                    outline-offset: -4px;
+                }
+            }
+
+            .pd-forms-1-button.pd-active {
+                border-left: 1px solid darken($info, 10%);
+                border-top: 1px solid darken($info, 10%);
+                border-right: 1px solid darken($info, 10%);
+                border-bottom: $info;
+                background: $info;
+                text-decoration: none;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+
+                &:hover {
+                    background: #26d47d;
+                }
+
+                &:focus {
+                    outline: 2px dotted $white;
+                    outline-offset: -4px;
+                }
+            }
+        }
+
+        .pd-forms-1-contact-panel {
+            display: none;
+            flex-direction: column;
+            padding: 40px 20px;
+            background: $white;
+            border: 1px solid darken($info, 10%);
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            transition: opacity 0.4s;
+            opacity: 0;
+
+            a {
+                display: inline-block;
+                text-decoration: none;
+                font-size: 1.4rem;
+                font-weight: 700;
+                margin-bottom: 20px;
+
+                span img {
+                    transition: transform 0.2s;
+                }
+
+                &:hover {
+                    span img {
+                        transform: scale(1.15);
+                    }
+                }
+
+                &:focus {
+                    outline: 2px dotted $primary;
+                    outline-offset: 4px;
+                }
+            }
+
+            .pd-forms-1-contact-panel-para {
+                font-weight: 300;
+                color: $gray-700;
+                line-height: 2;
+
+                strong {
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .pd-forms-1-contact-panel.pd-active {
+            // opacity: 1; // set via js
+            display: flex;
+        }
+    }
+
+    .pd-forms-1-form {
+        padding: 30px;
+        background: #f7f7f7;
+        box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+
+        label {
+            color: $gray-700;
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .btn.btn-info {
+            color: $white;
+        }
+    }
+}
+
+
