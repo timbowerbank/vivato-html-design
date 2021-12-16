@@ -15113,9 +15113,9 @@ progress {
       padding-bottom: 20px;
       background: rgba(255, 255, 255, 0.9);
       z-index: 2;
-      -webkit-transition: padding-bottom 0.4s;
-      -o-transition: padding-bottom 0.4s;
-      transition: padding-bottom 0.4s; }
+      -webkit-transition: height 0.4s;
+      -o-transition: height 0.4s;
+      transition: height 0.4s; }
       .pd-people-3 .pd-people-3-card-outer .pd-people-3-card-profile-text p {
         font-weight: 300;
         font-size: 0.9rem;

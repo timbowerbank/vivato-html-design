@@ -1,6 +1,27 @@
 window.addEventListener("load", () => {
     initPeople1Modals();
+
+    resizePeople3Cards();
+    initPeople3Cards();
 });
+
+window.addEventListener("orientationchange", () => {
+
+    resizePeople3Cards();
+
+});
+
+var resizeTimerPeople;
+window.addEventListener("resize", resizeListenerPeople);
+function resizeListenerPeople(e) {
+    clearTimeout(resizeTimerPeople);
+
+    resizeTimerPeople = setTimeout(function() {
+        resizePeople3Cards();
+
+    }, 250);
+
+}
 
 // const deviceType = () => {
 //     const ua = navigator.userAgent;
@@ -132,5 +153,66 @@ function closePeople1ModalListener(e) {
         behavior: 'instant'
     });
 
+}
+
+// **************************
+// *** initPeople3Cards() ***
+// **************************
+
+function initPeople3Cards() {
+    // loop through all elements with the class name pd-people-3-card-profile-text
+    const peopleCards3 = document.getElementsByClassName("pd-people-3-card-outer");
+    for(const card of peopleCards3) {
+        card.addEventListener("mouseover", people3CardsMouseOverListener);
+        card.addEventListener("mouseout", people3CardsMouseOutListener);
+    }
+}
+
+function people3CardsMouseOverListener(e) {
+    // get the current height from the data object
+    const card = e.currentTarget;
+    const cardTextBox = card.getElementsByClassName("pd-people-3-card-profile-text")[0];
+    const cardHeight = cardTextBox.dataset.cardHeight;
+    const newCardHeight = parseInt(cardHeight) + 30;
+
+    cardTextBox.style.height = newCardHeight.toString() + "px";
+
+
+
+}
+
+function people3CardsMouseOutListener(e) {
+
+    const card = e.currentTarget;
+    const cardTextBox = card.getElementsByClassName("pd-people-3-card-profile-text")[0];
+    const cardHeight = cardTextBox.dataset.cardHeight;
+    cardTextBox.style.height = cardHeight + "px";
+
+}
+
+function resizePeople3Cards() {
+    
+    // get a reference to all elements with the pd-people-3-card-profile-text
+    const peopleCards = document.getElementsByClassName("pd-people-3-card-profile-text");
+
+    // remove style object
+    for(const card of peopleCards) {
+        card.removeAttribute("style");
+    }
+
+    let peopleCardsHeight = 0;
+    for(const card of peopleCards) {
+        const cardHeight = card.offsetHeight;
+        peopleCardsHeight = cardHeight > peopleCardsHeight ? cardHeight : peopleCardsHeight;
+    }
+
+    // now set the height on the style object
+    for(const card of peopleCards) {
+        const heightAsStr = peopleCardsHeight.toString() + "px";
+        card.style.height = heightAsStr;
+
+        // set the height in a data attribute
+        card.setAttribute("data-card-height", peopleCardsHeight);
+    }
 }
 
