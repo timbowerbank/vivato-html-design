@@ -17413,4 +17413,68 @@ progress {
     .pd-forms-1 .pd-forms-1-form .btn.btn-info {
       color: #fff; }
 
+.pd-text-1 {
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6; }
+  .pd-text-1 h1, .pd-text-1 .h1, .pd-text-1 h2, .pd-text-1 .h2, .pd-text-1 h3, .pd-text-1 .h3, .pd-text-1 h4, .pd-text-1 .h4, .pd-text-1 h5, .pd-text-1 .h5, .pd-text-1 h6, .pd-text-1 .h6 {
+    font-weight: 700;
+    color: #000; }
+    .pd-text-1 h1:not(:first-child), .pd-text-1 .h1:not(:first-child), .pd-text-1 h2:not(:first-child), .pd-text-1 .h2:not(:first-child), .pd-text-1 h3:not(:first-child), .pd-text-1 .h3:not(:first-child), .pd-text-1 h4:not(:first-child), .pd-text-1 .h4:not(:first-child), .pd-text-1 h5:not(:first-child), .pd-text-1 .h5:not(:first-child), .pd-text-1 h6:not(:first-child), .pd-text-1 .h6:not(:first-child) {
+      margin-top: 30px; }
+  .pd-text-1 strong {
+    font-weight: 700; }
+  .pd-text-1 p {
+    color: #495057;
+    line-height: 1.9;
+    font-size: 1.1rem; }
+  .pd-text-1 ul {
+    color: #495057;
+    line-height: 1.9;
+    font-size: 1rem; }
+    .pd-text-1 ul ul li {
+      font-size: 0.9rem; }
+      .pd-text-1 ul ul li ul li {
+        color: #000;
+        font-size: 0.8rem; }
+    .pd-text-1 ol li {
+      color: #495057;
+      line-height: 1.9;
+      font-size: 1rem; }
+        .pd-text-1 ol li ol li {
+          list-style-type: lower-alpha;
+          font-size: 0.9rem; }
+            .pd-text-1 ol li ol li ol li {
+              list-style-type: lower-roman;
+              color: #000;
+              font-size: 0.8rem; }
+  .pd-text-1 a {
+    color: blue;
+    -webkit-transition: color 0.4s;
+    -o-transition: color 0.4s;
+    transition: color 0.4s;
+    text-decoration: none;
+    font-weight: 700; }
+    .pd-text-1 a:hover {
+      color: #3333ff; }
+    .pd-text-1 a:focus {
+      outline: 2px dotted #17A9E6; }
+  .pd-text-1 img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 36px; }
+  .pd-text-1 blockquote {
+    background: #f8f9fa;
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-left: 6px solid #17A9E6;
+    margin-top: 20px;
+    margin-bottom: 30px; }
+
 /* Custom CSS rules come here */

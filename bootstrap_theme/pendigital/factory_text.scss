@@ -1,0 +1,103 @@
+.pd-text-1 {
+    border-top: 1px solid $gray-300;
+    border-bottom: 1px solid $gray-300;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 700;
+        color: $black;
+
+        &:not(:first-child) {
+            margin-top: 30px;
+        }
+    }
+
+    strong {
+        font-weight: 700;
+    }
+
+    p {
+        color: $gray-700;
+        line-height: 1.9;
+        font-size: 1.1rem;
+    }
+
+    ul {
+        color: $gray-700;
+        line-height: 1.9;
+        font-size: 1rem;
+
+        ul li {
+            font-size: 0.9rem;
+
+            ul li {
+                color: $black;
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    ol {
+        li {
+            color: $gray-700;
+            line-height: 1.9;
+            font-size: 1rem;
+
+            ol {
+                li {
+                    list-style-type: lower-alpha;
+                    font-size: 0.9rem;
+
+                    ol {
+                        li {
+                            list-style-type: lower-roman;
+                            color: $black;
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    a {
+        color: blue;
+        transition: color 0.4s;
+        text-decoration: none;
+        font-weight: 700;
+
+        &:hover {
+            color: lighten(blue, 10%);
+        }
+
+        &:focus {
+            outline: 2px dotted $primary;
+        }
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+        padding-bottom: 36px;
+    }
+
+    blockquote {
+        background: $gray-100;
+        padding-left: 40px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-left: 6px solid $primary;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
