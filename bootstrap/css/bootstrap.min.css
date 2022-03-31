@@ -17416,10 +17416,30 @@ progress {
 .pd-text-1 {
   border-top: 1px solid #dee2e6;
   border-bottom: 1px solid #dee2e6; }
-  .pd-text-1 h1, .pd-text-1 .h1, .pd-text-1 h2, .pd-text-1 .h2, .pd-text-1 h3, .pd-text-1 .h3, .pd-text-1 h4, .pd-text-1 .h4, .pd-text-1 h5, .pd-text-1 .h5, .pd-text-1 h6, .pd-text-1 .h6 {
+  .pd-text-1 h1, .pd-text-1 .h1,
+  .pd-text-1 h2,
+  .pd-text-1 .h2,
+  .pd-text-1 h3,
+  .pd-text-1 .h3,
+  .pd-text-1 h4,
+  .pd-text-1 .h4,
+  .pd-text-1 h5,
+  .pd-text-1 .h5,
+  .pd-text-1 h6,
+  .pd-text-1 .h6 {
     font-weight: 700;
     color: #000; }
-    .pd-text-1 h1:not(:first-child), .pd-text-1 .h1:not(:first-child), .pd-text-1 h2:not(:first-child), .pd-text-1 .h2:not(:first-child), .pd-text-1 h3:not(:first-child), .pd-text-1 .h3:not(:first-child), .pd-text-1 h4:not(:first-child), .pd-text-1 .h4:not(:first-child), .pd-text-1 h5:not(:first-child), .pd-text-1 .h5:not(:first-child), .pd-text-1 h6:not(:first-child), .pd-text-1 .h6:not(:first-child) {
+    .pd-text-1 h1:not(:first-child), .pd-text-1 .h1:not(:first-child),
+    .pd-text-1 h2:not(:first-child),
+    .pd-text-1 .h2:not(:first-child),
+    .pd-text-1 h3:not(:first-child),
+    .pd-text-1 .h3:not(:first-child),
+    .pd-text-1 h4:not(:first-child),
+    .pd-text-1 .h4:not(:first-child),
+    .pd-text-1 h5:not(:first-child),
+    .pd-text-1 .h5:not(:first-child),
+    .pd-text-1 h6:not(:first-child),
+    .pd-text-1 .h6:not(:first-child) {
       margin-top: 30px; }
   .pd-text-1 strong {
     font-weight: 700; }
