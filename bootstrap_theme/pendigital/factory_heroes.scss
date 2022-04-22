@@ -862,7 +862,7 @@
     }
 
     .pd-hero-9-text-outer {
-        border-left: 10px solid #5b3bf3;
+        border-left: 10px solid $secondary;
         padding-left: 30px;
 
         .pd-hero-9-headline {
@@ -903,10 +903,33 @@
             transition: opacity 0.6s;
             background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.15) 40%, rgba(0, 0, 0, 0.15) 60%, rgba(0, 0, 0, 0.4) 100%);
         }
+
         .pd-hero-9-image-overlay.pd-hero-9-image-overlay-loaded {
             opacity: 1;
         }
+    }
 
+    .btn {
+        img {
+            content: url(/images/design-assets/icon-arrow-primary.svg);
+            width: 16px;
+            height: 16px;
+            margin-right: 4px;
+        }
+
+        &:hover {
+            img {
+                content: url(/images/design-assets/icon-arrow-01.svg);
+            }
+        }
+    }
+
+    .btn.btn-outline-secondary {
+        &:focus {
+            box-shadow: none;
+            outline: 2px dotted $primary;
+            outline-offset: 2px;
+        }
     }
 }
 

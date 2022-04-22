@@ -11211,7 +11211,7 @@ progress {
     font-size: 0.8rem;
     letter-spacing: 0.1em; }
   .pd-hero-9 .pd-hero-9-text-outer {
-    border-left: 10px solid #5b3bf3;
+    border-left: 10px solid #493bb3;
     padding-left: 30px; }
     .pd-hero-9 .pd-hero-9-text-outer .pd-hero-9-headline {
       font-weight: 700;
@@ -11251,6 +11251,18 @@ progress {
       background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.15) 40%, rgba(0, 0, 0, 0.15) 60%, rgba(0, 0, 0, 0.4) 100%); }
     .pd-hero-9 .pd-hero-9-col-image .pd-hero-9-image-overlay.pd-hero-9-image-overlay-loaded {
       opacity: 1; }
+    .pd-hero-9 .btn img {
+      content: url(/images/design-assets/icon-arrow-primary.svg);
+      width: 16px;
+      height: 16px;
+      margin-right: 4px; }
+      .pd-hero-9 .btn:hover img {
+        content: url(/images/design-assets/icon-arrow-01.svg); }
+    .pd-hero-9 .btn.btn-outline-secondary:focus {
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      outline: 2px dotted #17A9E6;
+      outline-offset: 2px; }
   .pd-heroesHalf-1 .pd-heroesHalf-1-text-outer {
     display: -webkit-box;
     display: -ms-flexbox;
