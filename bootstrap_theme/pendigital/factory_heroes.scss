@@ -933,6 +933,119 @@
     }
 }
 
+// start .pd-hero-10
+.pd-hero-10 {
+    position: relative;
+    overflow: hidden;
+    min-height: 80vh;
+
+    h1 {
+        font-size: 0.7rem;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: 700;
+        border-bottom: 2px solid white;
+        display: inline-block;
+        padding-bottom: 4px;
+    }
+
+    .pd-hero-10-headline {
+        font-size: 4.4rem;
+        font-weight: 300;
+        color: white;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-hero-10-subheadline {
+        color: white;
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 1.8;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-hero-10-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+
+    .pd-hero-10-overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.8) 100%);
+    }
+
+    .pd-hero-10-btn {
+        padding: 14px 30px;
+        color: white;
+        text-transform: uppercase;
+        background: $info;
+        transition: background 0.4s;
+        margin: 20px;
+        display: inline-block;
+        border-radius: 50em;
+        text-decoration: none;
+        letter-spacing: 0.15em;
+        font-weight: 700;
+        font-size: 0.8rem;
+        box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.4);
+
+        &:hover {
+            background: darken($info, 10%);
+        }
+
+        &:focus {
+            outline: 2px dotted $white;
+            outline-offset: 4px;
+        }
+    }
+
+    .pd-hero-10-btn-light {
+        color: white;
+        font-weight: 700;
+        display: inline-block;
+        transition: color 0.4s;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 0.8rem;
+        letter-spacing: 0.15em;
+
+        &:hover {
+            color: $gray-200;
+        }
+
+        &:focus {
+            outline: 2px dotted $white;
+            outline-offset: 4px;
+        }
+    }
+}
+
+// end .pd-hero-10
+
+
+
+
+
+
+
+
 
 
 

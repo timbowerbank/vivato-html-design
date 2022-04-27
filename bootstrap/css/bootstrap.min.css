@@ -11263,6 +11263,92 @@ progress {
               box-shadow: none;
       outline: 2px dotted #17A9E6;
       outline-offset: 2px; }
+
+.pd-hero-10 {
+  position: relative;
+  overflow: hidden;
+  min-height: 80vh; }
+  .pd-hero-10 h1, .pd-hero-10 .h1 {
+    font-size: 0.7rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 4px; }
+  .pd-hero-10 .pd-hero-10-headline {
+    font-size: 4.4rem;
+    font-weight: 300;
+    color: white; }
+    .pd-hero-10 .pd-hero-10-headline strong {
+      font-weight: 700; }
+  .pd-hero-10 .pd-hero-10-subheadline {
+    color: white;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.8; }
+    .pd-hero-10 .pd-hero-10-subheadline strong {
+      font-weight: 700; }
+  .pd-hero-10 .pd-hero-10-img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center center;
+       object-position: center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; }
+  .pd-hero-10 .pd-hero-10-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), color-stop(40%, rgba(0, 0, 0, 0.6)), color-stop(60%, rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.8)));
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.8) 100%);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.8) 100%);
+    background: linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.8) 100%); }
+  .pd-hero-10 .pd-hero-10-btn {
+    padding: 14px 30px;
+    color: white;
+    text-transform: uppercase;
+    background: #00CC66;
+    -webkit-transition: background 0.4s;
+    -o-transition: background 0.4s;
+    transition: background 0.4s;
+    margin: 20px;
+    display: inline-block;
+    border-radius: 50em;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    font-weight: 700;
+    font-size: 0.8rem;
+    -webkit-box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.4);
+            box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.4); }
+    .pd-hero-10 .pd-hero-10-btn:hover {
+      background: #00994d; }
+    .pd-hero-10 .pd-hero-10-btn:focus {
+      outline: 2px dotted #fff;
+      outline-offset: 4px; }
+  .pd-hero-10 .pd-hero-10-btn-light {
+    color: white;
+    font-weight: 700;
+    display: inline-block;
+    -webkit-transition: color 0.4s;
+    -o-transition: color 0.4s;
+    transition: color 0.4s;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 0.15em; }
+    .pd-hero-10 .pd-hero-10-btn-light:hover {
+      color: #e9ecef; }
+    .pd-hero-10 .pd-hero-10-btn-light:focus {
+      outline: 2px dotted #fff;
+      outline-offset: 4px; }
   .pd-heroesHalf-1 .pd-heroesHalf-1-text-outer {
     display: -webkit-box;
     display: -ms-flexbox;
