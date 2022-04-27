@@ -431,7 +431,18 @@ Focus on retaining candidates and clients.</strong></p>
             </div>
         </section>
         <section class="d-flex flex-column justify-content-center pb-5 pd-hero-10 pt-5">
-            <img src="images/uploads/hero-people-at-work.jpg" class="pd-hero-10-img"/>
+            <script>
+                function imageLoadedListener10(e) {
+                    const heroImage10 = document.querySelector(".pd-hero-10-img");
+                    heroImage10.classList.add("pd-hero-img-10-loaded");
+                }
+            </script>
+            <picture>
+                <source srcset="/images/uploads/hero-people-at-work.webp 1800w, 
+                                /images/uploads/hero-people-at-work-mob.webp 820w" sizes="(max-width: 600px) 100vw, 1800px" type="image/webp"/>
+                <img srcset="/images/uploads/hero-people-at-work.jpg 1800w,
+                            /images/uploads/hero-people-at-work-mob.jpg 820w" sizes="(max-width: 600px) 100vw, 1800px" src="/images/uploads/hero-people-at-work.jpg" class="pd-hero-10-img" onload="imageLoadedListener10()"/>
+            </picture>
             <div class="pd-hero-10-overlay"></div>
             <div class="container" style="position: relative;">
                 <div class="row">
