@@ -958,6 +958,10 @@
         strong {
             font-weight: 700;
         }
+
+        @media (max-width: 575px) {
+            font-size: 3.2rem;
+        }
     }
 
     .pd-hero-10-subheadline {
@@ -980,6 +984,12 @@
         top: 0;
         left: 0;
         z-index: 0;
+        opacity: 0;
+        transition: opacity 0.4s;
+    }
+
+    .pd-hero-10-img.pd-hero-10-img-loaded {
+        opacity: 1;
     }
 
     .pd-hero-10-overlay {

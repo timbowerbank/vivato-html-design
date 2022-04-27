@@ -11283,6 +11283,9 @@ progress {
     color: white; }
     .pd-hero-10 .pd-hero-10-headline strong {
       font-weight: 700; }
+    @media (max-width: 575px) {
+      .pd-hero-10 .pd-hero-10-headline {
+        font-size: 3.2rem; } }
   .pd-hero-10 .pd-hero-10-subheadline {
     color: white;
     font-weight: 300;
@@ -11300,7 +11303,13 @@ progress {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 0; }
+    z-index: 0;
+    opacity: 0;
+    -webkit-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+    transition: opacity 0.4s; }
+  .pd-hero-10 .pd-hero-10-img.pd-hero-10-img-loaded {
+    opacity: 1; }
   .pd-hero-10 .pd-hero-10-overlay {
     width: 100%;
     height: 100%;
