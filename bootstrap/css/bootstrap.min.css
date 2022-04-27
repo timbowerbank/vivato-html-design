@@ -11358,6 +11358,71 @@ progress {
     .pd-hero-10 .pd-hero-10-btn-light:focus {
       outline: 2px dotted #fff;
       outline-offset: 4px; }
+
+.pd-hero-11 {
+  background: -webkit-linear-gradient(22deg, #5433FF 0%, #20BDFF 50%, #A5FECB 100%);
+  background: -o-linear-gradient(22deg, #5433FF 0%, #20BDFF 50%, #A5FECB 100%);
+  background: linear-gradient(68deg, #5433FF 0%, #20BDFF 50%, #A5FECB 100%); }
+  @media (max-width: 767px) {
+    .pd-hero-11 {
+      background: -webkit-linear-gradient(225deg, #5433FF 0%, #20BDFF 50%, #A5FECB 100%);
+      background: -o-linear-gradient(225deg, #5433FF 0%, #20BDFF 50%, #A5FECB 100%);
+      background: linear-gradient(225deg, #5433FF 0%, #20BDFF 50%, #A5FECB 100%); } }
+  .pd-hero-11 h1, .pd-hero-11 .h1 {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    color: white; }
+  .pd-hero-11 .pd-hero-11-headline {
+    font-size: 2.8rem;
+    font-weight: 300;
+    color: white; }
+    .pd-hero-11 .pd-hero-11-headline strong {
+      font-weight: 700; }
+  .pd-hero-11 .pd-hero-11-subHeadline {
+    line-height: 1.8;
+    font-weight: 300;
+    font-size: 1rem;
+    color: white; }
+    .pd-hero-11 .pd-hero-11-subHeadline strong {
+      font-weight: 700; }
+  .pd-hero-11 .pd-hero-11-btn {
+    background: #00CC66;
+    padding: 10px 20px;
+    border-radius: 50rem;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 700;
+    -webkit-transition: background 0.4s;
+    -o-transition: background 0.4s;
+    transition: background 0.4s; }
+    .pd-hero-11 .pd-hero-11-btn:hover {
+      background: #00994d; }
+  .pd-hero-11 .pd-hero-11-btn-light {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.8rem;
+    padding-left: 20px;
+    font-weight: 400;
+    -webkit-transition: color 0.4s;
+    -o-transition: color 0.4s;
+    transition: color 0.4s; }
+    @media (max-width: 767px) {
+      .pd-hero-11 .pd-hero-11-btn-light {
+        padding-left: 0px; } }
+    .pd-hero-11 .pd-hero-11-btn-light:hover {
+      color: #e9ecef; }
+  .pd-hero-11 .pd-hero-11-img-outer {
+    min-height: 500px; }
+    @media (max-width: 767px) {
+      .pd-hero-11 .pd-hero-11-img-outer {
+        min-height: auto; } }
   .pd-heroesHalf-1 .pd-heroesHalf-1-text-outer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -13262,6 +13327,50 @@ progress {
     .pd-section-13 .pd-section-13-link:focus {
       outline: 2px dotted #17A9E6;
       outline-offset: 2px; }
+  .pd-section-14 .pd-section-14-intro {
+    font-size: 0.8em;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase; }
+  .pd-section-14 .pd-section-14-headline {
+    font-size: 2rem;
+    line-height: 1.6;
+    font-weight: 700; }
+  .pd-section-14 .pd-section-14-img-thumbnail {
+    border-radius: 50%; }
+  .pd-section-14 .pd-section-14-img-thumbnail.pd-section-14-img-thumbnail-right {
+    margin-left: -20px; }
+  .pd-section-14 .pd-section-14-leading-para {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    font-weight: 300; }
+  .pd-section-14 .pd-section-14-btn {
+    border: 1px solid #00CC66;
+    padding: 10px 20px;
+    border-radius: 50rem;
+    margin-top: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    color: #00CC66;
+    font-size: 0.8rem;
+    -webkit-transition: background 0.4s;
+    -o-transition: background 0.4s;
+    transition: background 0.4s; }
+    .pd-section-14 .pd-section-14-btn:hover {
+      border: 1px solid #00994d;
+      background: #00994d;
+      color: #fff; }
+    .pd-section-14 .pd-section-14-btn:focus {
+      outline: 2px dotted #17A9E6;
+      outline-offset: 4px; }
+  .pd-section-14 .pd-section-14-subHeadlines {
+    font-size: 1rem;
+    font-weight: 700; }
+  .pd-section-14 .pd-section-14-block-para {
+    font-size: 0.9rem;
+    line-height: 1.8; }
 
 .pd-footer-1 {
   background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));
