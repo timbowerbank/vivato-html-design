@@ -90,13 +90,14 @@
             .pd-grid-1-item-tag {
                 background: $info;
                 display: inline-block;
-                padding: 8px 16px;
+                padding: 8px 14px;
                 border-radius: 50rem;
                 color: white;
                 letter-spacing: 0.2em;
-                font-size: 0.8rem;
+                font-size: 0.6rem;
                 box-shadow: -1px 4px 6px rgba(0, 0, 0, 0.4);
-                font-weight: 300;
+                font-weight: 700;
+                text-transform: uppercase;
             }
 
             .pd-grid-1-item-headline {

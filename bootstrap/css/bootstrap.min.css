@@ -17831,14 +17831,15 @@ progress {
       .pd-grid-1 .pd-grid-1-item .pd-grid-1-item-content .pd-grid-1-item-tag {
         background: #00CC66;
         display: inline-block;
-        padding: 8px 16px;
+        padding: 8px 14px;
         border-radius: 50rem;
         color: white;
         letter-spacing: 0.2em;
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         -webkit-box-shadow: -1px 4px 6px rgba(0, 0, 0, 0.4);
                 box-shadow: -1px 4px 6px rgba(0, 0, 0, 0.4);
-        font-weight: 300; }
+        font-weight: 700;
+        text-transform: uppercase; }
       .pd-grid-1 .pd-grid-1-item .pd-grid-1-item-content .pd-grid-1-item-headline {
         font-size: 1.2rem;
         font-weight: 700; }
