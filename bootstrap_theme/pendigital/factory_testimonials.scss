@@ -559,6 +559,142 @@
     }
 }
 
+// end pd-testimonial-7
+// start pd-testimonial-8
+.pd-testimonial-8 {
+    .pd-testimonial-8-label {
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: 700;
+    }
+
+    .pd-testimonial-8-headline {
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+
+    .pd-testimonial-8-subPara {
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1.8;
+    }
+
+    .pd-testimonial-8-text {
+        font-size: 1.8rem;
+        line-height: 2;
+        color: $gray-600;
+    }
+
+    .pd-testimonial-8-author {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .pd-testimonial-8-business {
+        font-weight: 300;
+    }
+
+    .pd-testimonial-8-btn {
+        border: 1px solid $info;
+        padding: 10px 20px;
+        border-radius: 50rem;
+        margin-top: 10px;
+        display: inline-block;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 700;
+        color: $info;
+        font-size: 0.8rem;
+        transition: background 0.4s;
+
+        &:hover {
+            border: 1px solid darken($info, 10%);
+            background: darken($info, 10%);
+            color: $white;
+        }
+
+        &:focus {
+            outline: 2px dotted $primary;
+            outline-offset: 4px;
+        }
+    }
+}
+
+// end pd-testimonial-8
+// start pd-testimonial-9
+.pd-testimonial-9 {
+    background: linear-gradient(rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0,0,0,0.9) 100%);
+    color: $white;
+
+    .pd-testimonial-9-label {
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: 700;
+    }
+
+    .pd-testimonial-9-headline {
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+
+    .pd-testimonial-9-subPara {
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1.8;
+    }
+
+    .pd-testimonial-9-text {
+        font-size: 1.8rem;
+        line-height: 2;
+        color: $gray-500;
+    }
+
+    .pd-testimonial-9-author {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .pd-testimonial-9-business {
+        font-weight: 300;
+    }
+
+    .pd-testimonial-9-btn {
+        border: 1px solid $white;
+        padding: 10px 20px;
+        border-radius: 50rem;
+        margin-top: 10px;
+        display: inline-block;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 700;
+        color: $white;
+        font-size: 0.8rem;
+        transition: background 0.4s;
+
+        &:hover {
+            border: 1px solid darken($info, 10%);
+            background: darken($info, 10%);
+            color: $white;
+        }
+
+        &:focus {
+            outline: 2px dotted $primary;
+            outline-offset: 4px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
