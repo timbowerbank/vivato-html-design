@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
         <meta name="description" content=""/>
         <meta name="author" content=""/>
-        <title>Blank Template for Bootstrap</title>
+        <title>Grid components</title>
         <!-- Bootstrap core CSS -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
         <!-- Custom styles for this template -->
@@ -22,44 +22,123 @@
             <div class="container-xxl">
                 <div class="row">
                     <div class="col-12 pb-4 text-center">
-                        <h2 style="font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;">Featured web, app and game projects</h2> 
-                        <p style="font-size: 2.4rem; font-weight: 700;"><strong>Quality websites, apps and games</strong></p>
-                        <p style="font-weight: 300;">View a snapshot of some of our work. We&apos;ve created performant, quality websites and apps.</p> 
+                        <h2 class="pd-grid-1-label">Featured web, app and game projects</h2> 
+                        <p class="pd-grid-1-headline"><strong>Quality websites, apps and games</strong></p>
+                        <p class="pd-grid-1-subHeadline">View a snapshot of some of our work. We&apos;ve created performant, quality websites and apps.</p> 
                     </div>
                     <div class="col-12 pe-0 pe-xl-2 ps-0 ps-xl-2">
-                        <div class="pd-grid-1-grid-outer"><a href="#" class="pd-grid-1-item pd-grid-1-item-1"> <img src="images/uploads/blog-post-1.jpg" class="pd-grid-1-image"/><div class="pd-grid-1-image-overlay pg-empty-placeholder"></div><div class="pd-grid-1-item-content">
+                        <div class="pd-grid-1-grid-outer">
+                            <a href="#" class="pd-grid-1-item pd-grid-1-item-1"> 
+                                <picture>
+                                    <source srcset="/images/uploads/blog-post-1.webp" type="image/webp">
+                                    <img src="/images/uploads/blog-post-1.jpg" class="pd-grid-1-image" alt="image of beach app" loading="lazy"/>
+                                </picture>
+                                
+                                <div class="pd-grid-1-image-overlay"></div>
+                                <div class="pd-grid-1-item-content">
                                     <p class="pd-grid-1-item-tag">Apps</p>
                                     <h3 class="pd-grid-1-item-headline">Cornwall&apos;s beaches in your pocket</h3>
                                     <p class="pd-grid-1-item-subPara">We&apos;re just about to launch an exciting app for iOS and Android</p>
-                                </div> </a><a href="#" class="pd-grid-1-item pd-grid-1-item-2"> <img src="images/uploads/hero-coast-1000x1000.jpg" class="pd-grid-1-image"/><div class="pd-grid-1-image-overlay pg-empty-placeholder"></div><div class="pd-grid-1-item-content">
+                                </div> 
+                            </a>
+                                
+                            <a href="#" class="pd-grid-1-item pd-grid-1-item-2"> 
+                                <picture>
+                                    <source srcset="/images/uploads/hero-coast-1000x1000.webp" type="image/webp">
+                                    <img src="/images/uploads/hero-coast-1000x1000.jpg" class="pd-grid-1-image" alt="image of coastline" loading="lazy"/>
+                                </picture>
+                                
+                                <div class="pd-grid-1-image-overlay"></div>
+                                <div class="pd-grid-1-item-content">
                                     <p class="pd-grid-1-item-tag">Web</p>
                                     <h3 class="pd-grid-1-item-headline">High search rankings in a competitive market</h3>
                                     <p class="pd-grid-1-item-subPara">We built a new perfomant website for international artist Naomi Jenkin.</p>
-                                </div> </a><a href="#" class="pd-grid-1-item pd-grid-1-item-3"> <img src="images/uploads/hero-sample-1.jpg" class="pd-grid-1-image"/><div class="pd-grid-1-image-overlay pg-empty-placeholder"></div><div class="pd-grid-1-item-content">
+                                </div> 
+                            </a>
+                                
+                            <a href="#" class="pd-grid-1-item pd-grid-1-item-3"> 
+                                <picture>
+                                    <source srcset="/images/uploads/hero-sample-1.webp" type="image/webp">
+                                    <img src="/images/uploads/hero-sample-1.jpg" class="pd-grid-1-image" alt="image for hero" loading="lazy"/>
+                                </picture>
+                                
+                                <div class="pd-grid-1-image-overlay"></div>
+                                <div class="pd-grid-1-item-content">
                                     <p class="pd-grid-1-item-tag">Web</p>
                                     <h3 class="pd-grid-1-item-headline">Helping Scientific Services grow their business</h3>
                                     <p class="pd-grid-1-item-subPara">Scientific Services needed a new website to support its ambitious growth objectives.</p>
-                                </div> </a><a href="#" class="pd-grid-1-item pd-grid-1-item-4"> <img src="images/uploads/hero-testimonials.jpg" class="pd-grid-1-image"/><div class="pd-grid-1-image-overlay pg-empty-placeholder"></div><div class="pd-grid-1-item-content">
+                                </div> 
+                            </a>
+                                
+                            <a href="#" class="pd-grid-1-item pd-grid-1-item-4"> 
+                                <picture>
+                                    <source srcset="/images/uploads/hero-testimonials.webp" type="image/webp">
+                                    <img src="/images/uploads/hero-testimonials.jpg" class="pd-grid-1-image" alt="image for hero" loading="lazy"/>
+                                </picture>
+                                
+                                <div class="pd-grid-1-image-overlay"></div>
+                                <div class="pd-grid-1-item-content">
                                     <p class="pd-grid-1-item-tag">Web</p>
                                     <h3 class="pd-grid-1-item-headline">Showcasing Quality</h3>
                                     <p class="pd-grid-1-item-subPara">Pendigital built Jewell Construction&apos;s new website...</p>
-                                </div> </a><a href="#" class="pd-grid-1-item pd-grid-1-item-5"> <img src="images/uploads/sections-sample-healthcare.jpg" class="pd-grid-1-image"/><div class="pd-grid-1-image-overlay pg-empty-placeholder"></div><div class="pd-grid-1-item-content">
-                                    <p class="pd-grid-1-item-tag">Web</p>
-                                    <h3 class="pd-grid-1-item-headline">Training web app to help clinicians recycling</h3>
-                                    <p class="pd-grid-1-item-subPara">Our cost simulator and game helps clinicians save money and recycle more...</p>
-                                </div> </a><a href="#" class="pd-grid-1-item pd-grid-1-item-6"> <img src="images/uploads/cards-sample-1.jpg" class="pd-grid-1-image"/><div class="pd-grid-1-image-overlay pg-empty-placeholder"></div><div class="pd-grid-1-item-content">
-                                    <p class="pd-grid-1-item-tag">Web</p>
-                                    <h3 class="pd-grid-1-item-headline">Membership website</h3>
-                                    <p class="pd-grid-1-item-subPara">A new subscription based website for Club Roy</p>
-                                </div> </a><a href="#" class="pd-grid-1-item pd-grid-1-item-7"> <img src="images/uploads/cards-sample-3.jpg" class="pd-grid-1-image"/><div class="pd-grid-1-image-overlay pg-empty-placeholder"></div><div class="pd-grid-1-item-content">
-                                    <p class="pd-grid-1-item-tag">Games</p>
-                                    <h3 class="pd-grid-1-item-headline">HTML5 spelling game</h3>
-                                    <p class="pd-grid-1-item-subPara">Fun and simple to use, helping children to learn their phonics.</p>
-                                </div> </a><a href="#" class="pd-grid-1-item pd-grid-1-item-8"> <img src="images/uploads/cards-sample-2.jpg" class="pd-grid-1-image"/><div class="pd-grid-1-image-overlay pg-empty-placeholder"></div><div class="pd-grid-1-item-content">
-                                    <p class="pd-grid-1-item-tag">Games</p>
-                                    <h3 class="pd-grid-1-item-headline">Animated parrots and CreateJS</h3>
-                                    <p class="pd-grid-1-item-subPara">Another new game to support the teaching of reading and writing.</p>
-                                </div> </a>
+                                </div> 
+                            </a>
+                                
+                                <a href="#" class="pd-grid-1-item pd-grid-1-item-5"> 
+                                    <picture>
+                                        <source srcset="/images/uploads/sections-sample-healthcare.webp" type="image/webp">
+                                        <img src="/images/uploads/sections-sample-healthcare.jpg" class="pd-grid-1-image" alt="image for healthcare" loading="lazy"/>
+                                    </picture>
+                                    
+                                    <div class="pd-grid-1-image-overlay"></div>
+                                    <div class="pd-grid-1-item-content">
+                                        <p class="pd-grid-1-item-tag">Web</p>
+                                        <h3 class="pd-grid-1-item-headline">Training web app to help clinicians recycling</h3>
+                                        <p class="pd-grid-1-item-subPara">Our cost simulator and game helps clinicians save money and recycle more...</p>
+                                    </div> 
+                                </a>
+                                
+                                <a href="#" class="pd-grid-1-item pd-grid-1-item-6">
+                                    <picture>
+                                        <source srcset="/images/uploads/cards-sample-1.webp" type="image/webp">
+                                        <img src="/images/uploads/cards-sample-1.jpg" class="pd-grid-1-image" alt="image for membership website" loading="lazy"/>
+                                    </picture> 
+                                    
+                                    <div class="pd-grid-1-image-overlay"></div>
+                                    <div class="pd-grid-1-item-content">
+                                        <p class="pd-grid-1-item-tag">Web</p>
+                                        <h3 class="pd-grid-1-item-headline">Membership website</h3>
+                                        <p class="pd-grid-1-item-subPara">A new subscription based website for Club Roy</p>
+                                    </div> 
+                                </a>
+                                
+                                <a href="#" class="pd-grid-1-item pd-grid-1-item-7"> 
+                                    <picture>
+                                        <source srcset="/images/uploads/cards-sample-3.webp" type="image/webp">
+                                        <img src="/images/uploads/cards-sample-3.jpg" class="pd-grid-1-image" alt="image for games case study" loading="lazy"/>
+                                    </picture>
+                                    
+                                    <div class="pd-grid-1-image-overlay"></div>
+                                    <div class="pd-grid-1-item-content">
+                                        <p class="pd-grid-1-item-tag">Games</p>
+                                        <h3 class="pd-grid-1-item-headline">HTML5 spelling game</h3>
+                                        <p class="pd-grid-1-item-subPara">Fun and simple to use, helping children to learn their phonics.</p>
+                                    </div> 
+                                </a>
+                                
+                                <a href="#" class="pd-grid-1-item pd-grid-1-item-8"> 
+                                    <picture>
+                                        <source srcset="/images/uploads/cards-sample-2.webp" type="image/webp">
+                                        <img src="/images/uploads/cards-sample-2.jpg" class="pd-grid-1-image" alt="image for html5 game" loading="lazy"/>
+                                    </picture>
+                                    
+                                    <div class="pd-grid-1-image-overlay"></div>
+                                    <div class="pd-grid-1-item-content">
+                                        <p class="pd-grid-1-item-tag">Games</p>
+                                        <h3 class="pd-grid-1-item-headline">Animated parrots and CreateJS</h3>
+                                        <p class="pd-grid-1-item-subPara">Another new game to support the teaching of reading and writing.</p>
+                                    </div> 
+                                </a>
                         </div>                         
                     </div>
                     <div class="col-12 pt-4 text-center">
