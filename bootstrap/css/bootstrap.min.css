@@ -17758,24 +17758,38 @@ progress {
     border-left: 6px solid #17A9E6;
     margin-top: 20px;
     margin-bottom: 30px; }
+  .pd-grid-1 .pd-grid-1-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase; }
+  .pd-grid-1 .pd-grid-1-headline {
+    font-size: 2.4rem;
+    font-weight: 300; }
+    .pd-grid-1 .pd-grid-1-headline strong {
+      font-weight: 700; }
+  .pd-grid-1 .pd-grid-1-subHeadline {
+    font-weight: 300; }
+    .pd-grid-1 .pd-grid-1-subHeadline strong {
+      font-weight: 700; }
   @media (min-width: 768px) {
     .pd-grid-1 .pd-grid-1-grid-outer {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 340px 340px 340px;
-      grid-gap: 4px; } }
+      grid-gap: 1px; } }
   @media (min-width: 576px) and (max-width: 767px) {
     .pd-grid-1 .pd-grid-1-grid-outer {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 340px 340px 340px 340px;
-      grid-gap: 4px; } }
+      grid-gap: 1px; } }
   @media (max-width: 575px) {
     .pd-grid-1 .pd-grid-1-grid-outer {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 360px 360px 360px 360px 360px 360px 360px 360px;
-      grid-gap: 4px; } }
+      grid-gap: 1px; } }
   .pd-grid-1 .pd-grid-1-item {
     position: relative;
     overflow: hidden;
@@ -17809,13 +17823,13 @@ progress {
       padding: 14px;
       left: 0;
       width: 100%;
-      background: rgba(255, 255, 255, 0.4);
+      background: rgba(0, 0, 0, 0.5);
       bottom: 0;
       -webkit-transition: background 0.4s, padding-bottom 0.4s, color 0.2s;
       -o-transition: background 0.4s, padding-bottom 0.4s, color 0.2s;
       transition: background 0.4s, padding-bottom 0.4s, color 0.2s; }
       .pd-grid-1 .pd-grid-1-item .pd-grid-1-item-content .pd-grid-1-item-tag {
-        background: green;
+        background: #00CC66;
         display: inline-block;
         padding: 8px 16px;
         border-radius: 50rem;
@@ -17918,5 +17932,26 @@ progress {
   @media (max-width: 575px) {
     .pd-grid-1 .pd-grid-1-item-8 {
       grid-area: 8 / 1 / 8 / 1; } }
+  .pd-grid-1 .pd-grid-1-btn {
+    border: 1px solid #00CC66;
+    padding: 10px 20px;
+    border-radius: 50rem;
+    margin-top: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    color: #00CC66;
+    font-size: 0.8rem;
+    -webkit-transition: background 0.4s;
+    -o-transition: background 0.4s;
+    transition: background 0.4s; }
+    .pd-grid-1 .pd-grid-1-btn:hover {
+      border: 1px solid #00994d;
+      background: #00994d;
+      color: #fff; }
+    .pd-grid-1 .pd-grid-1-btn:focus {
+      outline: 2px dotted #17A9E6;
+      outline-offset: 4px; }
 
 /* Custom CSS rules come here */

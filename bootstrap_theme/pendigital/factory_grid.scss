@@ -1,11 +1,36 @@
 // start pd-grid-1
 .pd-grid-1 {
+    .pd-grid-1-label {
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+
+    .pd-grid-1-headline {
+        font-size: 2.4rem;
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-grid-1-subHeadline {
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    // grid
     @media (min-width:768px) {
         .pd-grid-1-grid-outer {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 340px 340px 340px;
-            grid-gap: 4px;
+            grid-gap: 1px;
         }
     }
 
@@ -14,7 +39,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 340px 340px 340px 340px;
-            grid-gap: 4px;
+            grid-gap: 1px;
         }
     }
 
@@ -23,7 +48,7 @@
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 360px 360px 360px 360px 360px 360px 360px 360px;
-            grid-gap: 4px;
+            grid-gap: 1px;
         }
     }
 
@@ -58,12 +83,12 @@
             padding: 14px;
             left: 0;
             width: 100%;
-            background: rgba(255, 255, 255, 0.4);
+            background: rgba(0, 0, 0, 0.5);
             bottom: 0;
             transition: background 0.4s, padding-bottom 0.4s, color 0.2s;
 
             .pd-grid-1-item-tag {
-                background: green;
+                background: $info;
                 display: inline-block;
                 padding: 8px 16px;
                 border-radius: 50rem;
@@ -254,7 +279,36 @@
             grid-area: 8 / 1 / 8 / 1;
         }
     }
+
+    .pd-grid-1-btn {
+        border: 1px solid $info;
+        padding: 10px 20px;
+        border-radius: 50rem;
+        margin-top: 10px;
+        display: inline-block;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 700;
+        color: $info;
+        font-size: 0.8rem;
+        transition: background 0.4s;
+
+        &:hover {
+            border: 1px solid darken($info, 10%);
+            background: darken($info, 10%);
+            color: $white;
+        }
+
+        &:focus {
+            outline: 2px dotted $primary;
+            outline-offset: 4px;
+        }
+    }
 }
+
+
+
+
 
 
 
