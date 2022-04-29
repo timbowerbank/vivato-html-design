@@ -13487,6 +13487,10 @@ progress {
   .pd-section-15 .pd-section-15-block-para {
     font-size: 0.9rem;
     line-height: 1.8; }
+    .pd-section-15 .pd-section-15-block-para a {
+      text-decoration: none;
+      color: #17A9E6;
+      font-weight: 700; }
   .pd-section-15 .pd-section-15-btn {
     border: 1px solid #00CC66;
     padding: 10px 20px;
@@ -13506,6 +13510,63 @@ progress {
       background: #00994d;
       color: #fff; }
     .pd-section-15 .pd-section-15-btn:focus {
+      outline: 2px dotted #17A9E6;
+      outline-offset: 4px; }
+
+.pd-section-16 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), color-stop(50%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.9)));
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.9) 100%);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.9) 100%);
+  background: linear-gradient(rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.9) 100%);
+  color: #fff; }
+  .pd-section-16 .pd-section-16-intro {
+    font-size: 0.8em;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase; }
+  .pd-section-16 .pd-section-16-headline {
+    font-size: 2rem;
+    line-height: 1.6;
+    font-weight: 700; }
+  .pd-section-16 .pd-section-16-img-thumbnail {
+    border-radius: 50%; }
+  .pd-section-16 .pd-section-16-img-thumbnail.pd-section-16-img-thumbnail-right {
+    margin-left: -20px; }
+  .pd-section-16 .pd-section-16-leading-para {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    font-weight: 300; }
+    .pd-section-16 .pd-section-16-leading-para strong {
+      font-weight: 700; }
+  .pd-section-16 .pd-section-16-subHeadlines {
+    font-size: 1.4rem;
+    font-weight: 700; }
+  .pd-section-16 .pd-section-16-block-para {
+    font-size: 0.9rem;
+    line-height: 1.8; }
+    .pd-section-16 .pd-section-16-block-para a {
+      text-decoration: none;
+      color: #dee2e6;
+      font-weight: 700; }
+  .pd-section-16 .pd-section-16-btn {
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 50rem;
+    margin-top: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff;
+    font-size: 0.8rem;
+    -webkit-transition: background 0.4s;
+    -o-transition: background 0.4s;
+    transition: background 0.4s; }
+    .pd-section-16 .pd-section-16-btn:hover {
+      border: 1px solid #00994d;
+      background: #00994d;
+      color: #fff; }
+    .pd-section-16 .pd-section-16-btn:focus {
       outline: 2px dotted #17A9E6;
       outline-offset: 4px; }
 
