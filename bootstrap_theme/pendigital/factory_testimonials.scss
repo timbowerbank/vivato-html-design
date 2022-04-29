@@ -686,6 +686,37 @@
     }
 }
 
+// end pd-testimonial-9
+// start pd-testimonial-10
+.pd-testimonial-10 {
+    background: linear-gradient(rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0,0,0,0.9) 100%);
+    color: $white;
+
+    .pd-testimonial-10-label {
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: 700;
+    }
+
+    .pd-testimonial-10-text {
+        font-size: 1.8rem;
+        line-height: 2;
+        color: $gray-500;
+    }
+
+    .pd-testimonial-10-author {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .pd-testimonial-10-business {
+        font-weight: 300;
+    }
+}
+
+// end pd-testimonial-10
+
 
 
 
