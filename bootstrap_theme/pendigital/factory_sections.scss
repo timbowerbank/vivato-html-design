@@ -1004,6 +1004,76 @@
 }
 
 // end .pd-section-14
+// start pd-section-15
+.pd-section-15 {
+    .pd-section-15-intro {
+        font-size: 0.8em;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+    }
+
+    .pd-section-15-headline {
+        font-size: 2rem;
+        line-height: 1.6;
+        font-weight: 700;
+    }
+
+    .pd-section-15-img-thumbnail {
+        border-radius: 50%;
+    }
+
+    .pd-section-15-img-thumbnail.pd-section-15-img-thumbnail-right {
+        margin-left: -20px;
+    }
+
+    .pd-section-15-leading-para {
+        font-size: 1.3rem;
+        line-height: 1.8;
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-section-15-subHeadlines {
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+
+    .pd-section-15-block-para {
+        font-size: 0.9rem;
+        line-height: 1.8;
+    }
+
+    .pd-section-15-btn {
+        border: 1px solid $info;
+        padding: 10px 20px;
+        border-radius: 50rem;
+        margin-top: 10px;
+        display: inline-block;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 700;
+        color: $info;
+        font-size: 0.8rem;
+        transition: background 0.4s;
+
+        &:hover {
+            border: 1px solid darken($info, 10%);
+            background: darken($info, 10%);
+            color: $white;
+        }
+
+        &:focus {
+            outline: 2px dotted $primary;
+            outline-offset: 4px;
+        }
+    }
+}
+
+// end pd-section-15
 
 
 
