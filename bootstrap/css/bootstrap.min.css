@@ -13590,6 +13590,58 @@ progress {
     .pd-section-16 .pd-section-16-btn:focus {
       outline: 2px dotted #17A9E6;
       outline-offset: 4px; }
+  .pd-section-17 .pd-section-17-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
+  .pd-section-17 .pd-section-17-headline {
+    font-size: 2.4rem;
+    font-weight: 700; }
+  .pd-section-17 .pd-section-17-subPara {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    font-weight: 300; }
+  .pd-section-17 .pd-list-1-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+    .pd-section-17 .pd-list-1-grid .pd-list-1-grid-item {
+      color: #000;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .pd-section-17 .pd-list-1-grid .pd-list-1-grid-item p {
+        margin-bottom: 0px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 0.8rem; }
+      .pd-section-17 .pd-list-1-grid .pd-list-1-grid-item img {
+        margin-right: 8px; }
+  .pd-section-17 .pd-section-17-btn {
+    border: 1px solid #00CC66;
+    padding: 10px 20px;
+    border-radius: 50rem;
+    margin-top: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    color: #00CC66;
+    font-size: 0.8rem;
+    -webkit-transition: background 0.4s;
+    -o-transition: background 0.4s;
+    transition: background 0.4s; }
+    .pd-section-17 .pd-section-17-btn:hover {
+      border: 1px solid #00994d;
+      background: #00994d;
+      color: #fff; }
+    .pd-section-17 .pd-section-17-btn:focus {
+      outline: 2px dotted #17A9E6;
+      outline-offset: 4px; }
 
 .pd-footer-1 {
   background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));

@@ -1159,6 +1159,79 @@
 }
 
 // end pd-section-16
+// start pd-section-17
+.pd-section-17 {
+    .pd-section-17-label {
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-section-17-headline {
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+
+    .pd-section-17-subPara {
+        font-size: 1.3rem;
+        line-height: 1.8;
+        font-weight: 300;
+    }
+
+    .pd-list-1-grid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+        .pd-list-1-grid-item {
+            color: $black;
+            display: flex;
+            align-items: center;
+
+            p {
+                margin-bottom: 0px;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 0.8rem;
+            }
+
+            img {
+                margin-right: 8px;
+            }
+        }
+    }
+
+    .pd-section-17-btn {
+        border: 1px solid $info;
+        padding: 10px 20px;
+        border-radius: 50rem;
+        margin-top: 10px;
+        display: inline-block;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 700;
+        color: $info;
+        font-size: 0.8rem;
+        transition: background 0.4s;
+
+        &:hover {
+            border: 1px solid darken($info, 10%);
+            background: darken($info, 10%);
+            color: $white;
+        }
+
+        &:focus {
+            outline: 2px dotted $primary;
+            outline-offset: 4px;
+        }
+    }
+}
+
+// end pd-section-17
+
+
+
 
 
 
