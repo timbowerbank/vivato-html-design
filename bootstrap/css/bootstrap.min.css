@@ -18225,5 +18225,106 @@ progress {
     .pd-grid-1 .pd-grid-1-btn:focus {
       outline: 2px dotted #17A9E6;
       outline-offset: 4px; }
+  .pd-widget-1 .pd-widget-1-label {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    border-bottom: 1px solid #000; }
+  .pd-widget-1 .pd-widget-1-article-outer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .pd-widget-1 .pd-widget-1-article-outer .pd-widget-1-image-outer {
+      -ms-flex-preferred-size: 25%;
+          flex-basis: 25%;
+      -webkit-box-flex: 0;
+          -ms-flex-positive: 0;
+              flex-grow: 0;
+      -ms-flex-negative: 1;
+          flex-shrink: 1; }
+      .pd-widget-1 .pd-widget-1-article-outer .pd-widget-1-image-outer img {
+        border-radius: 5px; }
+    .pd-widget-1 .pd-widget-1-article-outer .pd-widget-1-text-outer {
+      -ms-flex-preferred-size: 75%;
+          flex-basis: 75%;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+      padding: 0px 10px 10px; }
+      .pd-widget-1 .pd-widget-1-article-outer .pd-widget-1-text-outer .pd-widget-1-link {
+        font-size: 1rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        line-height: 1.4;
+        -webkit-transition: color 0.4s;
+        -o-transition: color 0.4s;
+        transition: color 0.4s;
+        margin-bottom: 0px; }
+        .pd-widget-1 .pd-widget-1-article-outer .pd-widget-1-text-outer .pd-widget-1-link:hover {
+          color: #6c757d; }
+        .pd-widget-1 .pd-widget-1-article-outer .pd-widget-1-text-outer .pd-widget-1-link:focus {
+          outline: 2px dotted #17A9E6;
+          outline-offset: 1px; }
+      .pd-widget-1 .pd-widget-1-article-outer .pd-widget-1-text-outer .pd-widget-1-date-outer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        padding-top: 4px; }
+        .pd-widget-1 .pd-widget-1-article-outer .pd-widget-1-text-outer .pd-widget-1-date-outer img {
+          margin-bottom: 4px; }
+        .pd-widget-1 .pd-widget-1-article-outer .pd-widget-1-text-outer .pd-widget-1-date-outer .pd-widget-1-date {
+          margin-bottom: 0px;
+          font-size: 0.7rem;
+          padding: 4px;
+          color: gray; }
+  .pd-widget-1 .pd-widget-1-border-bottom {
+    border-bottom: 1px solid #f8f9fa;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .pd-widget-1 .pd-widget-1-btn {
+    border: 1px solid #00CC66;
+    padding: 10px 20px;
+    border-radius: 50rem;
+    margin-top: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    color: #00CC66;
+    font-size: 0.8rem;
+    -webkit-transition: background 0.4s;
+    -o-transition: background 0.4s;
+    transition: background 0.4s; }
+    .pd-widget-1 .pd-widget-1-btn:hover {
+      border: 1px solid #00994d;
+      background: #00994d;
+      color: #fff; }
+    .pd-widget-1 .pd-widget-1-btn:focus {
+      outline: 2px dotted #17A9E6;
+      outline-offset: 4px; }
 
 /* Custom CSS rules come here */

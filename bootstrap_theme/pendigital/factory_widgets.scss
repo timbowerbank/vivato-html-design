@@ -1,0 +1,112 @@
+// start .pd-widget-1
+.pd-widget-1 {
+    .pd-widget-1-label {
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        border-bottom: 1px solid $black;
+    }
+
+    .pd-widget-1-article-outer {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        .pd-widget-1-image-outer {
+            flex-basis: 25%;
+            flex-grow: 0;
+            flex-shrink: 1;
+
+            img {
+                border-radius: 5px;
+            }
+        }
+
+        .pd-widget-1-text-outer {
+            flex-basis: 75%;
+            flex-grow: 1;
+            flex-shrink: 0;
+            padding: 0px 10px 10px;
+
+            .pd-widget-1-link {
+                font-size: 1rem;
+                font-weight: 700;
+                text-decoration: none;
+                color: black;
+                display: inline-block;
+                line-height: 1.4;
+                transition: color 0.4s;
+                margin-bottom: 0px;
+
+                &:hover {
+                    color: $gray-600;
+                }
+
+                &:focus {
+                    outline: 2px dotted $primary;
+                    outline-offset: 1px;
+                }
+            }
+
+            .pd-widget-1-date-outer {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                padding-top: 4px;
+
+                img {
+                    margin-bottom: 4px;
+                }
+
+                .pd-widget-1-date {
+                    margin-bottom: 0px;
+                    font-size: 0.7rem;
+                    padding: 4px;
+                    color: gray;
+                }
+            }
+        }
+    }
+
+    .pd-widget-1-border-bottom {
+        border-bottom: 1px solid $gray-100;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .pd-widget-1-btn {
+        border: 1px solid $info;
+        padding: 10px 20px;
+        border-radius: 50rem;
+        margin-top: 10px;
+        display: inline-block;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 700;
+        color: $info;
+        font-size: 0.8rem;
+        transition: background 0.4s;
+
+        &:hover {
+            border: 1px solid darken($info, 10%);
+            background: darken($info, 10%);
+            color: $white;
+        }
+
+        &:focus {
+            outline: 2px dotted $primary;
+            outline-offset: 4px;
+        }
+    }
+}
+
+// end .pd-widget-1
+
+
+
+
+
+
+
