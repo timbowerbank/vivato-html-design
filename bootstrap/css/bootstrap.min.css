@@ -18581,5 +18581,23 @@ progress {
         .pd-widget-5 .pd-widget-5-outer .pd-widget-5-content-outer .pd-widget-5-btn:focus {
           outline: 2px dotted #17A9E6;
           outline-offset: 4px; }
+  .pd-page-menu-1 .pd-menu-1-label {
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    font-size: 0.7rem;
+    text-transform: uppercase; }
+    .pd-page-menu-1 ol li {
+      padding: 8px 2px;
+      font-size: 0.8rem;
+      font-weight: 400; }
+      .pd-page-menu-1 ol li a {
+        text-decoration: none;
+        -webkit-transition: color 0.4s;
+        -o-transition: color 0.4s;
+        transition: color 0.4s; }
+        .pd-page-menu-1 ol li a:hover {
+          color: #6c757d; }
+  .pd-page-menu-1 hr {
+    border-top: 1px solid #6c757d; }
 
 /* Custom CSS rules come here */
