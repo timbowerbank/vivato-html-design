@@ -14,7 +14,7 @@
         align-items: flex-start;
 
         .pd-widget-1-image-outer {
-            flex-basis: 25%;
+            flex-basis: auto;
             flex-grow: 0;
             flex-shrink: 1;
 
@@ -28,6 +28,10 @@
             flex-grow: 1;
             flex-shrink: 0;
             padding: 0px 10px 10px;
+
+            @media (max-width: 991px) {
+                flex-basis: 85%;
+            }
 
             .pd-widget-1-link {
                 font-size: 1rem;
@@ -46,6 +50,10 @@
                 &:focus {
                     outline: 2px dotted $primary;
                     outline-offset: 1px;
+                }
+
+                @media (max-width: 991px) {
+                    font-size: 1.2rem;
                 }
             }
 
@@ -103,6 +111,314 @@
 }
 
 // end .pd-widget-1
+// start .pd-widget-2
+.pd-widget-2 {
+    .pd-widget-2-outer {
+        border: 1px solid $gray-200;
+        border-radius: 10px;
+        min-height: 400px;
+        padding: 30px 30px;
+        background: $white;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+        .pd-widget-2-label {
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-align: center;
+        }
+
+        // is the inner list
+        .pd-widget-2-list-item {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid $gray-200;
+
+            &:last-of-type {
+                border-bottom: none;
+            }
+
+            a {
+                text-decoration: none;
+                line-height: 1.8;
+                font-size: 0.9rem;
+                color: $gray-800;
+                transition: color 0.4s;
+
+                &:hover {
+                    color: $gray-600;
+                }
+
+                &:focus {
+                    outline: 2px dotted $primary;
+                    outline-offset: 4px;
+                }
+            }
+        }
+
+        .pd-widget-2-btn {
+            border: 1px solid $info;
+            padding: 10px 20px;
+            border-radius: 50rem;
+            margin-top: 10px;
+            display: inline-block;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: 700;
+            color: $info;
+            font-size: 0.8rem;
+            transition: background 0.4s;
+
+            &:hover {
+                border: 1px solid darken($info, 10%);
+                background: darken($info, 10%);
+                color: $white;
+            }
+
+            &:focus {
+                outline: 2px dotted $primary;
+                outline-offset: 4px;
+            }
+        }
+    }
+}
+
+// end .pd-widget-2
+// start pd-widget-3
+.pd-widget-3 {
+    .pd-widget-3-label {
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        border-bottom: 1px solid $black;
+    }
+
+    .pd-widget-3-article-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        @media (max-width: 991px) {
+            align-items: center;
+        }
+
+        .pd-widget-3-image-outer {
+            flex-basis: auto;
+            flex-grow: 0;
+            flex-shrink: 1;
+
+            img {
+                border-radius: 5px;
+            }
+        }
+
+        .pd-widget-3-text-outer {
+            flex-basis: 75%;
+            flex-grow: 1;
+            flex-shrink: 0;
+            padding: 0px 10px;
+
+            @media (max-width: 991px) {
+                flex-basis: 85%;
+            }
+
+            .pd-widget-3-link {
+                font-size: 1rem;
+                font-weight: 700;
+                text-decoration: none;
+                color: black;
+                display: inline-block;
+                line-height: 1.4;
+                transition: color 0.4s;
+                margin-bottom: 0px;
+
+                @media (max-width: 991px) {
+                    font-size: 1.2rem;
+                }
+
+                &:hover {
+                    color: $gray-600;
+                }
+
+                &:focus {
+                    outline: 2px dotted $primary;
+                    outline-offset: 1px;
+                }
+            }
+        }
+    }
+
+    .pd-widget-3-text {
+        line-height: 1.8;
+        font-size: 0.8rem;
+        padding-top: 10px;
+    }
+
+    .pd-widget-3-border-bottom {
+        border-bottom: 1px solid $gray-200;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .pd-widget-3-btn {
+        border: 1px solid $info;
+        padding: 10px 20px;
+        border-radius: 50rem;
+        margin-top: 10px;
+        display: inline-block;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 700;
+        color: $info;
+        font-size: 0.8rem;
+        transition: background 0.4s;
+
+        &:hover {
+            border: 1px solid darken($info, 10%);
+            background: darken($info, 10%);
+            color: $white;
+        }
+
+        &:focus {
+            outline: 2px dotted $primary;
+            outline-offset: 4px;
+        }
+    }
+}
+
+// end pd-widget-3
+// start .pd-widget-4
+.pd-widget-4 {
+    .pd-widget-4-outer {
+        padding: 60px 30px;
+        background: linear-gradient($primary 0%, lighten($primary, 5%) 50%, $primary 100%);
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+        .pd-widget-4-headline {
+            color: white;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .pd-widget-4-subHeadline {
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        .pd-widget-4-btn {
+            border: 1px solid $white;
+            padding: 10px 20px;
+            border-radius: 50rem;
+            margin-top: 10px;
+            display: inline-block;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: 700;
+            color: $white;
+            font-size: 0.8rem;
+            transition: background 0.4s;
+
+            &:hover {
+                border: 1px solid darken($info, 10%);
+                background: darken($info, 10%);
+                color: $white;
+            }
+
+            &:focus {
+                outline: 2px dotted $primary;
+                outline-offset: 4px;
+            }
+        }
+    }
+}
+
+// end .pd-widget-4
+// start .pd-widget-5
+.pd-widget-5 {
+    .pd-widget-5-outer {
+        position: relative;
+        overflow: hidden;
+        min-height: 400px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+        .pd-widget-5-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+            position: absolute;
+            z-index: 0;
+        }
+
+        .pd-widget-5-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.9) 100%);
+        }
+
+        .pd-widget-5-content-outer {
+            position: relative;
+            padding: 100px 50px;
+
+            @media (min-width: 992px) and (max-width: 1199px) {
+                padding: 80px 10px;
+            }
+
+            .pd-widget-5-headline {
+                color: white;
+                font-size: 2.2rem;
+                font-weight: 700;
+                line-height: 1.6;
+            }
+
+            .pd-widget-5-subHeadline {
+                color: white;
+                font-size: 1.2rem;
+                font-weight: 300;
+            }
+
+            .pd-widget-5-btn {
+                border: 1px solid $white;
+                padding: 10px 20px;
+                border-radius: 50rem;
+                margin-top: 10px;
+                display: inline-block;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-weight: 700;
+                color: $white;
+                font-size: 0.8rem;
+                transition: background 0.4s;
+
+                &:hover {
+                    border: 1px solid darken($info, 10%);
+                    background: darken($info, 10%);
+                    color: $white;
+                }
+
+                &:focus {
+                    outline: 2px dotted $primary;
+                    outline-offset: 4px;
+                }
+            }
+        }
+    }
+}
+
+// end .pd-widget-5
+
+
+
+
+
+
 
 
 
