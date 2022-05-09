@@ -9,6 +9,7 @@ Here's how to fork your own GitHub repo as using the forking option in Github do
 3. CD into the new local repo and add this theme's repo as an upstream remote - git remote add upstream https://github.com/timbowerbank/pendigital-theme.git
 4. Update your new local repo with the theme - git pull upstream master
 5. Update your remote repo (the one you just created above) - git push origin master
+6. Note: that the default branch in your new repo will be called main rather than master - so there are no references to the slave trade
 
 
 ## Setting up the new forked theme
