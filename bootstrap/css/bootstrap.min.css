@@ -18000,6 +18000,9 @@ progress {
       .pd-forms-2 .pd-forms-2-address a:focus {
         outline: 2px dotted #17A9E6;
         outline-offset: 4px; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .pd-forms-2 .pd-forms-2-address a {
+          font-size: 1.6rem; } }
 
 .pd-text-1 {
   border-top: 1px solid #dee2e6;

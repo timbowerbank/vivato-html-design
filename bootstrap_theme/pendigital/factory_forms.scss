@@ -242,6 +242,10 @@
                 outline: 2px dotted $primary;
                 outline-offset: 4px;
             }
+
+            @media (min-width: 992px) and (max-width: 1199px) {
+                font-size: 1.6rem;
+            }
         }
     }
 }
