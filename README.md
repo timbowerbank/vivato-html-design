@@ -1,16 +1,6 @@
 # Pendigital Theme
 This is our growing pendigital-theme, **or a fork of the theme**. The idea is to **fork** the original theme to start new web projects.
 
-## Forking the 'pendigital-theme' theme for new web projects
-Here's how to fork your own GitHub repo as using the forking option in Github doesn't work for your own repos. More info here: https://deanmalone.net/post/how-to-fork-your-own-repo-on-github/
-
-1. Create a new repo in GitHub
-2. Clone your new repo to your local machine - git clone https://github.com/timbowerbank/my-new-repo.git (when cloning you may be asked for a personal access token)
-3. CD into the new local repo and add this theme's repo as an upstream remote - git remote add upstream https://github.com/timbowerbank/pendigital-theme.git
-4. Update your new local repo with the theme - git pull upstream master
-5. Update your remote repo (the one you just created above) - git push origin master
-6. Note: that the default branch in your new repo will be called main rather than master - so there are no references to the slave trade
-
 ## Forking the 'pendigital-theme' for new web projects 2022
 I had some issues following the above commands. Please see these new commands.
 1. Using terminal create new directory - ```mkdir my-new-directory```
@@ -25,6 +15,30 @@ I had some issues following the above commands. Please see these new commands.
 10. Sort any merge conflicts
 11. Change buffer size to allow bigger files - ```git config --global http.postBuffer 157286400``` 
 12. Now push to origin - ```git push origin master```
+
+## Git config file
+Your git config file should look something like this in the new local repo.
+
+```
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[remote "origin"]
+	url = https://github.com/timbowerbank/pendigital-2022-design.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[remote "upstream"]
+	url = https://github.com/timbowerbank/pendigital-theme.git
+	fetch = +refs/heads/*:refs/remotes/upstream/*
+
+```
+
 
 ## Setting up the new forked theme
 1. Don't ever update the _factory pages (otherwise you'll end up with merge conflicts), just use them as a source of html to copy from.
@@ -48,3 +62,16 @@ You might find these git commands useful for the forked theme, it's important to
 * git checkout upstream/master
 * git log upstream/master ^master
 * git merge upstream/master master
+
+
+## Archived methodology
+
+## Forking the 'pendigital-theme' theme for new web projects
+Here's how to fork your own GitHub repo as using the forking option in Github doesn't work for your own repos. More info here: https://deanmalone.net/post/how-to-fork-your-own-repo-on-github/
+
+1. Create a new repo in GitHub
+2. Clone your new repo to your local machine - git clone https://github.com/timbowerbank/my-new-repo.git (when cloning you may be asked for a personal access token)
+3. CD into the new local repo and add this theme's repo as an upstream remote - git remote add upstream https://github.com/timbowerbank/pendigital-theme.git
+4. Update your new local repo with the theme - git pull upstream master
+5. Update your remote repo (the one you just created above) - git push origin master
+6. Note: that the default branch in your new repo will be called main rather than master - so there are no references to the slave trade
