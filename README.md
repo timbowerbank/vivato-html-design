@@ -11,6 +11,20 @@ Here's how to fork your own GitHub repo as using the forking option in Github do
 5. Update your remote repo (the one you just created above) - git push origin master
 6. Note: that the default branch in your new repo will be called main rather than master - so there are no references to the slave trade
 
+## Forking the 'pendigital-theme' for new web projects 2022
+I had some issues following the above commands. Please see these new commands.
+1. Using terminal create new directory - ```mkdir my-new-directory```
+2. Invoke ```git init``` in the folder
+3. Create a readme file and add it as a first commit
+4. Create a new empty repo on GitHub
+5. Copy the repo address from Github and add it to your new local repo: ```git remote add origin https://github.com/timbowerbank/my-new-repo.git```
+6. Push to it with the -u. ```git push -u origin master```
+7. Add the Pendigital theme upstream - ```git remote add upstream https://github.com/timbowerbank/pendigital-theme.git```
+8. Fetch it - ```git fetch upstream```
+9. Merge it - ```git merge upstream/master master  --allow-unrelated-histories```
+10. Sort any merge conflicts
+11. Change buffer size to allow bigger files - ```git config --global http.postBuffer 157286400``` 
+12. Now push to origin - ```git push origin master```
 
 ## Setting up the new forked theme
 1. Don't ever update the _factory pages (otherwise you'll end up with merge conflicts), just use them as a source of html to copy from.
