@@ -18713,9 +18713,15 @@ progress {
       background: #00CC66;
       padding: 8px;
       border: none; }
+      .pd-carousel-1 .glide__arrows .glide__arrow:focus {
+        outline: 2px dotted #00CC66;
+        outline-offset: 4px; }
     .pd-carousel-1 .glide__arrows .glide__arrow--right {
       right: 0; }
   .pd-carousel-1 .btn.btn-lg, .pd-carousel-1 .btn-group-lg > .btn {
     color: #fff; }
+    .pd-carousel-1 .btn.btn-lg:focus, .pd-carousel-1 .btn-group-lg > .btn:focus {
+      outline: 2px dotted #00CC66;
+      outline-offset: 4px; }
 
 /* Custom CSS rules come here */

@@ -61,6 +61,11 @@
             background: $info;
             padding: 8px;
             border: none;
+
+            &:focus {
+                outline: 2px dotted $info;
+                outline-offset: 4px;
+            }
         }
 
         .glide__arrow--right {
@@ -70,6 +75,11 @@
 
     .btn.btn-lg {
         color: $white;
+
+        &:focus {
+            outline: 2px dotted $info;
+            outline-offset: 4px;
+        }
     }
 }
 
