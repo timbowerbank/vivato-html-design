@@ -1,1 +1,75 @@
 // start pd-carousel-1
+.pd-carousel-1 {
+    .pd-carousel-1-label {
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-carousel-1-headline {
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+
+    .pd-carousel-1-subHeadline {
+        font-size: 1.3rem;
+        line-height: 1.8;
+        font-weight: 300;
+    }
+
+    .pd-carousel-1-grid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+        .pd-carousel-1-grid-item {
+            color: $black;
+            display: flex;
+            align-items: center;
+
+            p {
+                margin-bottom: 0px;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 0.8rem;
+            }
+
+            img {
+                margin-right: 8px;
+            }
+        }
+    }
+
+    .pd-carousel-1-slide-outer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .glide__arrows {
+        position: absolute;
+        height: 46px;
+        width: 100%;
+        top: 50%;
+
+        // left: 10;
+        .glide__arrow {
+            position: absolute;
+            top: -23px;
+            background: $info;
+            padding: 8px;
+            border: none;
+        }
+
+        .glide__arrow--right {
+            right: 0;
+        }
+    }
+
+    .btn.btn-lg {
+        color: $white;
+    }
+}
+

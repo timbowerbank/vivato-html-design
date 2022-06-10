@@ -18657,5 +18657,65 @@ progress {
           color: #6c757d; }
   .pd-page-menu-1 hr {
     border-top: 1px solid #6c757d; }
+  .pd-carousel-1 .pd-carousel-1-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
+  .pd-carousel-1 .pd-carousel-1-headline {
+    font-size: 2.4rem;
+    font-weight: 700; }
+  .pd-carousel-1 .pd-carousel-1-subHeadline {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    font-weight: 300; }
+  .pd-carousel-1 .pd-carousel-1-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+    .pd-carousel-1 .pd-carousel-1-grid .pd-carousel-1-grid-item {
+      color: #000;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .pd-carousel-1 .pd-carousel-1-grid .pd-carousel-1-grid-item p {
+        margin-bottom: 0px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 0.8rem; }
+      .pd-carousel-1 .pd-carousel-1-grid .pd-carousel-1-grid-item img {
+        margin-right: 8px; }
+  .pd-carousel-1 .pd-carousel-1-slide-outer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .pd-carousel-1 .glide__arrows {
+    position: absolute;
+    height: 46px;
+    width: 100%;
+    top: 50%; }
+    .pd-carousel-1 .glide__arrows .glide__arrow {
+      position: absolute;
+      top: -23px;
+      background: #00CC66;
+      padding: 8px;
+      border: none; }
+    .pd-carousel-1 .glide__arrows .glide__arrow--right {
+      right: 0; }
+  .pd-carousel-1 .btn.btn-lg, .pd-carousel-1 .btn-group-lg > .btn {
+    color: #fff; }
 
 /* Custom CSS rules come here */
