@@ -16380,6 +16380,22 @@ progress {
         font-size: 0.8rem; }
       .pd-list-1 .pd-list-1-grid .pd-list-1-grid-item img {
         margin-right: 8px; }
+  .pd-list-2 .pd-list-2-image {
+    width: 100%;
+    height: auto; }
+  .pd-list-2 .pd-list-2-outer {
+    border-bottom: 1px solid #e9ecef; }
+  .pd-list-2 h2, .pd-list-2 .h2 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 0px;
+    padding-left: 10px; }
+  .pd-list-2 p {
+    font-weight: 300;
+    line-height: 1.8;
+    font-size: 1.2rem; }
+    .pd-list-2 p strong {
+      font-weight: 700; }
 
 .pd-CTA-1 {
   background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));
