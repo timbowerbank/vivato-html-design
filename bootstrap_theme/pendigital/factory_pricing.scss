@@ -1,0 +1,146 @@
+// start .pd-pricing-1
+.pd-pricing-1 {
+    border-top: 1px solid $gray-300;
+    border-bottom: 1px solid $gray-300;
+    background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
+
+    h2 {
+        font-weight: 700;
+        font-size: 0.7rem;
+        color: $white;
+        display: inline-block;
+        background: $info;
+        padding: 8px 14px;
+        border-radius: 50em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-pricing-1-headline {
+        font-size: 2rem;
+        line-height: 1.8;
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-pricing-1-subHeadline {
+        font-weight: 300;
+        line-height: 2;
+        font-size: 1rem;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-pricing-1-card-outer {
+        box-shadow: 0 20px 15px rgba(0,0,0,.1);
+        flex: 1 0;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid $gray-300;
+        border-radius: 15px;
+        position: relative;
+        padding: 30px;
+        background: $white;
+
+        @media (min-width: 1200px) {
+            width: 400px;
+        }
+
+        h3 {
+            font-weight: 700;
+            font-size: 2rem;
+            color: $black;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: $gray-600;
+            line-height: 2;
+        }
+
+        .pd-pricing-1-price-outer {
+            p {
+                font-weight: 700;
+                color: #000;
+                text-transform: uppercase;
+                font-size: 0.7rem;
+                letter-spacing: 0.1rem;
+                margin-bottom: 2px;
+            }
+
+            .pd-pricing-1-price {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-end;
+
+                .pd-pricing-1-price-label {
+                    font-weight: 700;
+                    padding-bottom: 12px;
+                }
+
+                .pd-pricing-1-price-num {
+                    font-size: 3rem;
+                    font-weight: 700;
+                    padding-right: 8px;
+                    padding-left: 8px;
+                }
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            color: $black;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+
+            li {
+                padding-top: 4px;
+                padding-bottom: 4px;
+                padding-left: 32px;
+                position: relative;
+
+                &:before {
+                    content: url(/images/design-assets/icon-checkmark.svg);
+                    width: 12px;
+                    height: 12px;
+                    position: absolute;
+                    left: 0;
+                }
+            }
+        }
+
+        footer {
+            flex: 1 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            // align-items: flex-start;
+            .btn.btn-info {
+                color: $white;
+
+                &:focus {
+                    outline: 2px dotted $primary;
+                    outline-offset: 4px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
