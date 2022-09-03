@@ -18919,17 +18919,21 @@ progress {
       font-weight: 700; }
   .pd-pricing-2 .pd-pricing-2-grid-outer {
     display: grid;
-    grid-template-columns: 450px 450px;
-    grid-template-areas: 'pricing-1 pricing-2';
     border: 1px solid #dee2e6;
     border-radius: 0.5rem;
     background: #fff;
     -webkit-box-shadow: 0 20px 15px rgba(0, 0, 0, 0.1);
-            box-shadow: 0 20px 15px rgba(0, 0, 0, 0.1);
-    grid-template-rows: 1fr; }
+            box-shadow: 0 20px 15px rgba(0, 0, 0, 0.1); }
+    @media (max-width: 991px) {
+      .pd-pricing-2 .pd-pricing-2-grid-outer {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto; } }
+    @media (min-width: 992px) {
+      .pd-pricing-2 .pd-pricing-2-grid-outer {
+        grid-template-columns: 450px 450px;
+        grid-template-rows: 1fr; } }
     .pd-pricing-2 .pd-pricing-2-grid-outer .pd-pricing-2-price-1 {
       padding: 50px;
-      border-right: 1px solid #dee2e6;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -18937,6 +18941,13 @@ progress {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; }
+      @media (max-width: 991px) {
+        .pd-pricing-2 .pd-pricing-2-grid-outer .pd-pricing-2-price-1 {
+          border-bottom: 1px solid #dee2e6;
+          border-right: none; } }
+      @media (min-width: 992px) {
+        .pd-pricing-2 .pd-pricing-2-grid-outer .pd-pricing-2-price-1 {
+          border-right: 1px solid #dee2e6; } }
     .pd-pricing-2 .pd-pricing-2-grid-outer .pd-pricing-2-price-2 {
       padding: 50px;
       display: -webkit-box;
@@ -18947,10 +18958,8 @@ progress {
           -ms-flex-direction: column;
               flex-direction: column; }
     .pd-pricing-2 .pd-pricing-2-grid-outer .pd-pricing-2-card-headline {
-      font-size: 1rem;
-      text-transform: uppercase;
-      font-weight: 700;
-      letter-spacing: 0.1em; }
+      font-size: 1.8rem;
+      font-weight: 700; }
     .pd-pricing-2 .pd-pricing-2-grid-outer .pd-pricing-2-price-label {
       font-weight: 700;
       padding-bottom: 8px; }
@@ -18959,6 +18968,10 @@ progress {
       font-size: 2.6rem;
       padding-left: 4px;
       padding-right: 4px; }
+    .pd-pricing-2 .pd-pricing-2-grid-outer .pd-pricing-2-subHeadline {
+      min-height: 80px;
+      font-weight: 300;
+      line-height: 2; }
     .pd-pricing-2 .pd-pricing-2-grid-outer ul {
       list-style-type: none;
       margin: 0;
