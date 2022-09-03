@@ -18888,4 +18888,100 @@ progress {
           outline: 2px dotted #17A9E6;
           outline-offset: 4px; }
 
+.pd-pricing-2 {
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), color-stop(20%, #f9f9f9), color-stop(90%, #f9f9f9), to(#f7f7f7));
+  background: -webkit-linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
+  background: -o-linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
+  background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%); }
+  .pd-pricing-2 h2, .pd-pricing-2 .h2 {
+    font-weight: 700;
+    font-size: 0.7rem;
+    color: #fff;
+    display: inline-block;
+    background: #00CC66;
+    padding: 8px 14px;
+    border-radius: 50em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
+  .pd-pricing-2 .pd-pricing-2-headline {
+    font-size: 2rem;
+    line-height: 1.8;
+    font-weight: 300; }
+    .pd-pricing-2 .pd-pricing-2-headline strong {
+      font-weight: 700; }
+  .pd-pricing-2 .pd-pricing-2-subHeadline {
+    font-weight: 300;
+    line-height: 2;
+    font-size: 1rem; }
+    .pd-pricing-2 .pd-pricing-2-subHeadline strong {
+      font-weight: 700; }
+  .pd-pricing-2 .pd-pricing-2-grid-outer {
+    display: grid;
+    grid-template-columns: 450px 450px;
+    grid-template-areas: 'pricing-1 pricing-2';
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    background: #fff;
+    -webkit-box-shadow: 0 20px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 20px 15px rgba(0, 0, 0, 0.1);
+    grid-template-rows: 1fr; }
+    .pd-pricing-2 .pd-pricing-2-grid-outer .pd-pricing-2-price-1 {
+      padding: 50px;
+      border-right: 1px solid #dee2e6;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .pd-pricing-2 .pd-pricing-2-grid-outer .pd-pricing-2-price-2 {
+      padding: 50px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .pd-pricing-2 .pd-pricing-2-grid-outer .pd-pricing-2-card-headline {
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.1em; }
+    .pd-pricing-2 .pd-pricing-2-grid-outer .pd-pricing-2-price-label {
+      font-weight: 700;
+      padding-bottom: 8px; }
+    .pd-pricing-2 .pd-pricing-2-grid-outer .pd-pricing-2-price {
+      font-weight: 700;
+      font-size: 2.6rem;
+      padding-left: 4px;
+      padding-right: 4px; }
+    .pd-pricing-2 .pd-pricing-2-grid-outer ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      color: #000;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.8rem; }
+      .pd-pricing-2 .pd-pricing-2-grid-outer ul li {
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 32px;
+        position: relative; }
+        .pd-pricing-2 .pd-pricing-2-grid-outer ul li:before {
+          content: url(/images/design-assets/icon-checkmark.svg);
+          width: 12px;
+          height: 12px;
+          position: absolute;
+          left: 0; }
+    .pd-pricing-2 .pd-pricing-2-grid-outer .btn.btn-info {
+      color: #fff; }
+      .pd-pricing-2 .pd-pricing-2-grid-outer .btn.btn-info:focus {
+        outline: 2px dotted #17A9E6;
+        outline-offset: 4px; }
+
 /* Custom CSS rules come here */
