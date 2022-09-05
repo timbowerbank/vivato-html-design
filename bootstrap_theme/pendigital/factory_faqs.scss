@@ -1,0 +1,227 @@
+// start .pd-faqs-1
+.pd-faqs-1 {
+    border-top: 1px solid $gray-300;
+    border-bottom: 1px solid $gray-300;
+
+    h2 {
+        font-weight: 700;
+        font-size: 0.7rem;
+        color: $white;
+        display: inline-block;
+
+        // background: rgba(255, 255, 255, 1);
+        background: $info;
+        padding: 8px 14px;
+        border-radius: 50em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-faqs-1-headline {
+        font-size: 2rem;
+        color: $black;
+        line-height: 1.5;
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-faqs-1-subHeadline {
+        font-size: 1rem;
+        color: $black;
+        line-height: 1.5;
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-faqs-1-card-outer {
+        flex: 1 0;
+        padding: 20px;
+        background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
+        margin-bottom: 20px;
+        border: 1px solid $gray-200;
+        border-radius: 5px;
+
+        // box-shadow: 5px 5px 12px -1px rgba(0,0,0,.2);
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            line-height: 2;
+        }
+
+        p {
+            line-height: 2;
+            color: $gray-600;
+
+            strong {
+                font-weight: 700;
+            }
+        }
+
+        a {
+            color: $blue;
+            font-weight: 700;
+            text-decoration: none;
+            transition: color 0.4s;
+
+            &:hover {
+                color: lighten(blue, 10%);
+            }
+
+            &:focus {
+                outline: 2px dotted $primary;
+            }
+        }
+    }
+}
+
+// end .pd-faqs-1
+// start .pd-faqs-2
+.pd-faqs-2 {
+    border-top: 1px solid $gray-300;
+    border-bottom: 1px solid $gray-300;
+
+    h2 {
+        font-weight: 700;
+        font-size: 0.7rem;
+        color: $white;
+        display: inline-block;
+
+        // background: rgba(255, 255, 255, 1);
+        background: $info;
+        padding: 8px 14px;
+        border-radius: 50em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-faqs-2-headline {
+        font-size: 2rem;
+        color: $black;
+        line-height: 1.5;
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-faqs-2-subHeadline {
+        font-size: 1rem;
+        color: $black;
+        line-height: 1.5;
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-faqs-2-card-outer {
+        padding: 20px;
+        background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
+        margin-bottom: 20px;
+        border: 1px solid $gray-200;
+        border-radius: 5px;
+
+        .pd-faqs-2-card-header {
+            display: flex;
+            padding-bottom: 20px;
+        }
+
+        .pd-faqs-2-card-body {
+            padding-right: 40px;
+            display: none;
+
+            p {
+                line-height: 1.8;
+                color: $gray-600;
+
+                strong {
+                    font-weight: 700;
+                }
+            }
+
+            a {
+                color: $blue;
+                font-weight: 700;
+                text-decoration: none;
+                transition: color 0.4s;
+
+                &:hover {
+                    color: lighten(blue, 10%);
+                }
+
+                &:focus {
+                    outline: 2px dotted $primary;
+                }
+            }
+        }
+
+        .pd-faqs-2-open-close-outer {
+            // background: red;
+            width: 20px;
+            height: 20px;
+            position: relative;
+            display: inline-block;
+            margin-left: 20px;
+
+            .pd-faqs-2-open-close-horizontal {
+                position: absolute;
+                width: 20px;
+                background: white;
+                height: 2px;
+                left: 0px;
+                top: 9px;
+                transform: rotate(0deg);
+                border-radius: 2px;
+                background: $primary;
+                transition: transform 0.4s;
+                pointer-events: none;
+            }
+
+            .pd-faqs2-open-close-vertical {
+                position: absolute;
+                width: 20px;
+                background: white;
+                height: 2px;
+                left: 0px;
+                top: 9px;
+                transform: rotate(90deg);
+                border-radius: 2px;
+                background: $primary;
+                transition: transform 0.4s;
+                pointer-events: none;
+            }
+        }
+    }
+
+    .pd-faqs-2-card-outer.pd-show-content {
+        .pd-faqs-2-card-body {
+            display: block;
+        }
+
+        .pd-faqs-2-card-body.pd-collapsing {
+            overflow: hidden;
+            transition: height .35s;
+            height: 0px;
+        }
+
+        .pd-faqs-2-open-close-horizontal {
+            transform: rotate(45deg);
+        }
+
+        .pd-faqs2-open-close-vertical {
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+// end .pd-faqs-2
+
+

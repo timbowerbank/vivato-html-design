@@ -18997,4 +18997,183 @@ progress {
         outline: 2px dotted #17A9E6;
         outline-offset: 4px; }
 
+.pd-faqs-1 {
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6; }
+  .pd-faqs-1 h2, .pd-faqs-1 .h2 {
+    font-weight: 700;
+    font-size: 0.7rem;
+    color: #fff;
+    display: inline-block;
+    background: #00CC66;
+    padding: 8px 14px;
+    border-radius: 50em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
+  .pd-faqs-1 .pd-faqs-1-headline {
+    font-size: 2rem;
+    color: #000;
+    line-height: 1.5;
+    font-weight: 300; }
+    .pd-faqs-1 .pd-faqs-1-headline strong {
+      font-weight: 700; }
+  .pd-faqs-1 .pd-faqs-1-subHeadline {
+    font-size: 1rem;
+    color: #000;
+    line-height: 1.5;
+    font-weight: 300; }
+    .pd-faqs-1 .pd-faqs-1-subHeadline strong {
+      font-weight: 700; }
+  .pd-faqs-1 .pd-faqs-1-card-outer {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0;
+            flex: 1 0;
+    padding: 20px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), color-stop(20%, #f9f9f9), color-stop(90%, #f9f9f9), to(#f7f7f7));
+    background: -webkit-linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
+    background: -o-linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
+    background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
+    margin-bottom: 20px;
+    border: 1px solid #e9ecef;
+    border-radius: 5px; }
+    .pd-faqs-1 .pd-faqs-1-card-outer h3, .pd-faqs-1 .pd-faqs-1-card-outer .h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      line-height: 2; }
+    .pd-faqs-1 .pd-faqs-1-card-outer p {
+      line-height: 2;
+      color: #6c757d; }
+      .pd-faqs-1 .pd-faqs-1-card-outer p strong {
+        font-weight: 700; }
+    .pd-faqs-1 .pd-faqs-1-card-outer a {
+      color: #0d6efd;
+      font-weight: 700;
+      text-decoration: none;
+      -webkit-transition: color 0.4s;
+      -o-transition: color 0.4s;
+      transition: color 0.4s; }
+      .pd-faqs-1 .pd-faqs-1-card-outer a:hover {
+        color: #3333ff; }
+      .pd-faqs-1 .pd-faqs-1-card-outer a:focus {
+        outline: 2px dotted #17A9E6; }
+
+.pd-faqs-2 {
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6; }
+  .pd-faqs-2 h2, .pd-faqs-2 .h2 {
+    font-weight: 700;
+    font-size: 0.7rem;
+    color: #fff;
+    display: inline-block;
+    background: #00CC66;
+    padding: 8px 14px;
+    border-radius: 50em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
+  .pd-faqs-2 .pd-faqs-2-headline {
+    font-size: 2rem;
+    color: #000;
+    line-height: 1.5;
+    font-weight: 300; }
+    .pd-faqs-2 .pd-faqs-2-headline strong {
+      font-weight: 700; }
+  .pd-faqs-2 .pd-faqs-2-subHeadline {
+    font-size: 1rem;
+    color: #000;
+    line-height: 1.5;
+    font-weight: 300; }
+    .pd-faqs-2 .pd-faqs-2-subHeadline strong {
+      font-weight: 700; }
+  .pd-faqs-2 .pd-faqs-2-card-outer {
+    padding: 20px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), color-stop(20%, #f9f9f9), color-stop(90%, #f9f9f9), to(#f7f7f7));
+    background: -webkit-linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
+    background: -o-linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
+    background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
+    margin-bottom: 20px;
+    border: 1px solid #e9ecef;
+    border-radius: 5px; }
+    .pd-faqs-2 .pd-faqs-2-card-outer .pd-faqs-2-card-header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding-bottom: 20px; }
+    .pd-faqs-2 .pd-faqs-2-card-outer .pd-faqs-2-card-body {
+      padding-right: 40px;
+      display: none; }
+      .pd-faqs-2 .pd-faqs-2-card-outer .pd-faqs-2-card-body p {
+        line-height: 1.8;
+        color: #6c757d; }
+        .pd-faqs-2 .pd-faqs-2-card-outer .pd-faqs-2-card-body p strong {
+          font-weight: 700; }
+      .pd-faqs-2 .pd-faqs-2-card-outer .pd-faqs-2-card-body a {
+        color: #0d6efd;
+        font-weight: 700;
+        text-decoration: none;
+        -webkit-transition: color 0.4s;
+        -o-transition: color 0.4s;
+        transition: color 0.4s; }
+        .pd-faqs-2 .pd-faqs-2-card-outer .pd-faqs-2-card-body a:hover {
+          color: #3333ff; }
+        .pd-faqs-2 .pd-faqs-2-card-outer .pd-faqs-2-card-body a:focus {
+          outline: 2px dotted #17A9E6; }
+    .pd-faqs-2 .pd-faqs-2-card-outer .pd-faqs-2-open-close-outer {
+      width: 20px;
+      height: 20px;
+      position: relative;
+      display: inline-block;
+      margin-left: 20px; }
+      .pd-faqs-2 .pd-faqs-2-card-outer .pd-faqs-2-open-close-outer .pd-faqs-2-open-close-horizontal {
+        position: absolute;
+        width: 20px;
+        background: white;
+        height: 2px;
+        left: 0px;
+        top: 9px;
+        -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+                transform: rotate(0deg);
+        border-radius: 2px;
+        background: #17A9E6;
+        -webkit-transition: -webkit-transform 0.4s;
+        transition: -webkit-transform 0.4s;
+        -o-transition: transform 0.4s;
+        transition: transform 0.4s;
+        transition: transform 0.4s, -webkit-transform 0.4s;
+        pointer-events: none; }
+      .pd-faqs-2 .pd-faqs-2-card-outer .pd-faqs-2-open-close-outer .pd-faqs2-open-close-vertical {
+        position: absolute;
+        width: 20px;
+        background: white;
+        height: 2px;
+        left: 0px;
+        top: 9px;
+        -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+                transform: rotate(90deg);
+        border-radius: 2px;
+        background: #17A9E6;
+        -webkit-transition: -webkit-transform 0.4s;
+        transition: -webkit-transform 0.4s;
+        -o-transition: transform 0.4s;
+        transition: transform 0.4s;
+        transition: transform 0.4s, -webkit-transform 0.4s;
+        pointer-events: none; }
+    .pd-faqs-2 .pd-faqs-2-card-outer.pd-show-content .pd-faqs-2-card-body {
+      display: block; }
+    .pd-faqs-2 .pd-faqs-2-card-outer.pd-show-content .pd-faqs-2-card-body.pd-collapsing {
+      overflow: hidden;
+      -webkit-transition: height .35s;
+      -o-transition: height .35s;
+      transition: height .35s;
+      height: 0px; }
+    .pd-faqs-2 .pd-faqs-2-card-outer.pd-show-content .pd-faqs-2-open-close-horizontal {
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    .pd-faqs-2 .pd-faqs-2-card-outer.pd-show-content .pd-faqs2-open-close-vertical {
+      -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
+
 /* Custom CSS rules come here */
