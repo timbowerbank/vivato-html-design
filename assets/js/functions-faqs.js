@@ -36,21 +36,27 @@ function initPdFaqs2() {
 
 // *** toggleFaqs2Listener() ***
 function toggleFaqs2Listener(e) {
+
+    // prevent the default behaviour
     e.preventDefault();
     
     // assign the button to a variable
-    const faqBtn = e.target;
+    const faqTarget = e.target;
+    let faqBtn;
 
     // check whether button or link
     let faqOuter;
-    if(faqBtn.classList.contains("pd-faqs-2-open-close-outer")) {
-        faqOuter = faqBtn.parentElement.parentElement.parentElement;
-    } else {
-        faqOuter = faqBtn.parentElement.parentElement;
-    }
+    if(faqTarget.classList.contains("pd-faqs-2-open-close-outer")) {
 
-    // identify the state of the dropdown - two levels up to parent
-    
+        faqOuter = faqTarget.parentElement.parentElement.parentElement;
+        faqBtn = faqTarget;
+
+    } else {
+
+        faqOuter = faqTarget.parentElement.parentElement;
+        faqBtn = faqOuter.querySelector(".pd-faqs-2-open-close-outer");
+        
+    }    
 
     // check state
     if(faqOuter.classList.contains("pd-show-content")) {
@@ -61,14 +67,18 @@ function toggleFaqs2Listener(e) {
         faqBody.removeAttribute("style");
         faqBody.classList.add("pd-collapsing");
 
+        // remove class .pd-show-content class to btn
+        faqBtn.classList.remove("pd-show-content");
 
-
+        // aria-expanded to false on faqOuter
+        faqOuter.setAttribute("aria-expanded", "false");
 
     } else {
         // element is CLOSED and needs to OPEN
 
-        // add pd-show-content to outer
+        // add pd-show-content to outer and btn
         faqOuter.classList.add("pd-show-content");
+        faqBtn.classList.add("pd-show-content");
 
         // get a ref to the faqBody and its height
         const faqBody = faqOuter.querySelector(".pd-faqs-2-card-body");
@@ -81,7 +91,8 @@ function toggleFaqs2Listener(e) {
         // set the height on the style attribute
         faqBody.setAttribute("style", faqBodyHeight);
 
-
+        // aria-expanded to true on faqOuter
+        faqOuter.setAttribute("aria-expanded", "true");
     }
 
 }

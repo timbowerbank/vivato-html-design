@@ -131,10 +131,23 @@
 
         .pd-faqs-2-card-header {
             display: flex;
-            padding-bottom: 20px;
+            padding-bottom: 4px;
+            justify-content: space-between;
+            flex-direction: row;
+
+            a {
+                text-decoration: none;
+                font-weight: 700;
+
+                &:focus {
+                    outline: 2px dotted $primary;
+                    outline-offset: 4px;
+                }
+            }
         }
 
         .pd-faqs-2-card-body {
+            padding-top: 10px;
             padding-right: 40px;
             display: none;
 
@@ -170,6 +183,11 @@
             position: relative;
             display: inline-block;
             margin-left: 20px;
+
+            &:focus {
+                outline: 2px dotted $primary;
+                outline-offset: 4px;
+            }
 
             .pd-faqs-2-open-close-horizontal {
                 position: absolute;
@@ -211,7 +229,9 @@
             transition: height .35s;
             height: 0px;
         }
+    }
 
+    .pd-faqs-2-open-close-outer.pd-show-content {
         .pd-faqs-2-open-close-horizontal {
             transform: rotate(45deg);
         }
