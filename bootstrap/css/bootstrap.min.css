@@ -13030,7 +13030,8 @@ progress {
       .pd-cards-7 .pd-cards-7-outer header h3, .pd-cards-7 .pd-cards-7-outer header .h3 {
         font-size: 1.4rem;
         font-weight: 700;
-        color: #000; }
+        color: #000;
+        line-height: 1.4; }
       .pd-cards-7 .pd-cards-7-outer header img {
         margin: 20px;
         width: 120px;
@@ -13075,6 +13076,70 @@ progress {
         -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
                 box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); }
     .pd-cards-7 .pd-cards-7-outer:focus {
+      outline: 2px dotted #17A9E6;
+      outline-offset: 4px; }
+  .pd-cards-8 h2, .pd-cards-8 .h2 {
+    font-size: 2rem;
+    color: #000;
+    line-height: 1.5;
+    font-weight: 700; }
+  .pd-cards-8 .pd-cards-8-outer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    -webkit-transition: background-color 0.4s;
+    -o-transition: background-color 0.4s;
+    transition: background-color 0.4s;
+    border: 1px solid #fff; }
+    .pd-cards-8 .pd-cards-8-outer header {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 0;
+              flex: 1 0; }
+      .pd-cards-8 .pd-cards-8-outer header h3, .pd-cards-8 .pd-cards-8-outer header .h3 {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #000;
+        line-height: 1.4; }
+    .pd-cards-8 .pd-cards-8-outer .pd-cards-8-body {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 0;
+              flex: 1 0;
+      color: #6c757d;
+      line-height: 1.8; }
+      .pd-cards-8 .pd-cards-8-outer footer p {
+        color: #6c757d;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-bottom: 0px;
+        padding: 6px 12px;
+        -webkit-transition: -webkit-transform 0.4s;
+        transition: -webkit-transform 0.4s;
+        -o-transition: transform 0.4s;
+        transition: transform 0.4s;
+        transition: transform 0.4s, -webkit-transform 0.4s; }
+        .pd-cards-8 .pd-cards-8-outer footer p::before {
+          content: ">";
+          padding-right: 12px;
+          -webkit-transition: padding-right 0.2s;
+          -o-transition: padding-right 0.2s;
+          transition: padding-right 0.2s; }
+    .pd-cards-8 .pd-cards-8-outer:hover {
+      background-color: rgba(248, 249, 250, 0.8);
+      border: 1px solid #e9ecef;
+      border-radius: 15px; }
+          .pd-cards-8 .pd-cards-8-outer:hover footer p:before {
+            padding-right: 3px; }
+    .pd-cards-8 .pd-cards-8-outer:focus {
       outline: 2px dotted #17A9E6;
       outline-offset: 4px; }
 
