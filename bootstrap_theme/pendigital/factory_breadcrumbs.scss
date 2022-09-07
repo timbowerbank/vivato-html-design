@@ -1,0 +1,43 @@
+// start .pd-breadcrumbs-1
+.pd-breadcrumbs-1 {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        list-style: none;
+
+        li {
+            flex: none;
+            font-weight: 300;
+            font-size: 0.9rem;
+
+            a {
+                text-decoration: none;
+                color: $gray-600;
+                transition: color 0.2s;
+
+                &:hover {
+                    color: $gray-500;
+                }
+            }
+
+            span {
+                color: $gray-600;
+            }
+
+            &:not(:first-child):before {
+                display: inline-flex;
+                content: "";
+                background-image: url(/images/design-assets/icon-breadcrumb-gray.svg);
+                background-size: contain;
+                width: 6px;
+                height: 10px;
+                margin: 0 10px 0 16px;
+                color: $black;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+
+// end .pd-breadcrumbs-1
