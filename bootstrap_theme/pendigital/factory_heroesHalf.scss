@@ -339,7 +339,217 @@
 }
 
 // end pd-heroesHalf-4
+// start pd-heroesHalf-4
+.pd-heroesHalf-5 {
+    .pd-heroesHalf-5-text-outer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
 
+        @media (max-width: 575px) {
+            min-height: 300px;
+        }
+
+        h1 {
+            display: inline-block;
+            font-weight: 700;
+            font-size: 0.7rem;
+            color: $white;
+
+            // display: inline-block;
+            // background: rgba(255, 255, 255, 1);
+            background: $info;
+            padding: 8px 14px;
+            border-radius: 50em;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .pd-heroesHalf-5-headline {
+            color: white;
+            font-weight: 300;
+            font-size: 2rem;
+            line-height: 1.5;
+
+            p {
+                margin-bottom: 0px;
+            }
+
+            strong {
+                font-weight: 700;
+            }
+
+            @media (max-width: 575px) {
+                font-size: 2rem;
+            }
+        }
+
+        .pd-heroesHalf-5-subHeadline {
+            color: white;
+            font-size: 1rem;
+            font-weight: 300;
+
+            p {
+                margin-bottom: 0px;
+            }
+
+            strong {
+                font-weight: 700;
+            }
+        }
+    }
+
+    footer {
+        width: 100%;
+
+        .btn.btn-info {
+            color: $white;
+
+            &:focus {
+                outline: 2px dotted $white;
+                outline-offset: 4px;
+            }
+        }
+
+        .form-control {
+            max-width: 260px;
+
+            &:focus {
+                outline: 2px dotted $white;
+                outline-offset: 4px;
+            }
+        }
+    }
+
+    .pd-heroesHalf-5-image-outer {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+
+        .pd-heroesHalf-5-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+            position: absolute;
+            transition: opacity 0.4s;
+            opacity: 0;
+        }
+
+        .pd-heroesHalf-5-image.pd-heroesHalf-5-image-loaded {
+            opacity: 1;
+        }
+    }
+
+    .pd-heroesHalf-5-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient($black 0%, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0.8) 60%, $black 100%);
+        opacity: 0.7;
+    }
+}
+
+// end pd-heroesHalf-5
+// start pd-heroesHalf-6
+.pd-heroesHalf-6 {
+    background: linear-gradient(180deg, $primary, darken($primary, 10%));
+
+    .pd-heroesHalf-6-text-outer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100%;
+
+        // @media (max-width: 575px) {
+        // min-height: 300px;
+        // }
+        h1 {
+            font-weight: 700;
+            font-size: 0.7rem;
+            color: $white;
+            display: inline-block;
+
+            // background: rgba(255, 255, 255, 1);
+            background: $info;
+            padding: 8px 14px;
+            border-radius: 50em;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .pd-heroesHalf-6-headline {
+            color: white;
+            font-weight: 300;
+            font-size: 2rem;
+            line-height: 1.5;
+
+            p {
+                margin-bottom: 0px;
+            }
+
+            strong {
+                font-weight: 700;
+            }
+
+            @media (max-width: 575px) {
+                font-size: 2rem;
+            }
+        }
+
+        .pd-heroesHalf-6-subHeadline {
+            color: white;
+            font-size: 1rem;
+            font-weight: 300;
+
+            p {
+                margin-bottom: 0px;
+            }
+
+            strong {
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.pd-heroesHalf-6-search {
+    background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
+
+    form {
+        position: relative;
+
+        i {
+            padding: 10px;
+            position: absolute;
+            top: -2px;
+        }
+
+        input {
+            height: 43px;
+            width: 100%;
+            border: 1px solid $gray-200;
+            border-radius: 10px;
+            padding-left: 42px;
+            background-color: $white;
+        }
+
+        input::placeholder {
+            color: $gray-400;
+            font-weight: 700;
+        }
+    }
+}
+
+// end pd-heroesHalf-6
 
 
 
