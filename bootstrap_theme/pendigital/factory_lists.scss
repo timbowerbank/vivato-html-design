@@ -55,3 +55,55 @@
         }
     }
 }
+
+// start .pd-list-3
+.pd-list-3 {
+    .pd-list-3-headline {
+        color: $black;
+        font-weight: 700;
+        line-height: 1.4;
+        font-size: 2rem;
+    }
+
+    // .pd-list-3-para {
+    // color: $gray-600;
+    // line-height: 2;
+    // font-weight: 300;
+    // strong {
+    // font-weight: 700;
+    // }
+    // }
+    .pd-list-3-item {
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: $gray-600;
+            transition: color 0.3s;
+            font-weight: 300;
+
+            &:hover {
+                color: $gray-500;
+            }
+
+            &:focus {
+                outline: 2px dotted $primary;
+                outline-offset: 4px;
+            }
+        }
+
+        hr {
+            border: 0;
+            background-color: $gray-600;
+
+            // background-color: $primary;
+            width: 100%;
+            height: 1px;
+            padding: 0;
+        }
+    }
+}
+
+// end .pd-list-3
