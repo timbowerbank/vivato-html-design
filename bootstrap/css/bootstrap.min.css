@@ -18948,6 +18948,31 @@ progress {
         .pd-widget-5 .pd-widget-5-outer .pd-widget-5-content-outer .pd-widget-5-btn:focus {
           outline: 2px dotted #17A9E6;
           outline-offset: 4px; }
+  .pd-widget-6 .pd-widget-6-header {
+    text-transform: uppercase;
+    font-weight: 700; }
+  .pd-widget-6 .pd-widget-6-list-item {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    .pd-widget-6 .pd-widget-6-list-item a {
+      display: inline-block;
+      text-decoration: none;
+      color: #6c757d;
+      -webkit-transition: color 0.3s;
+      -o-transition: color 0.3s;
+      transition: color 0.3s;
+      font-weight: 300; }
+      .pd-widget-6 .pd-widget-6-list-item a:hover {
+        color: #adb5bd; }
+      .pd-widget-6 .pd-widget-6-list-item a:focus {
+        outline: 2px dotted #17A9E6;
+        outline-offset: 4px; }
+    .pd-widget-6 .pd-widget-6-list-item hr {
+      border: 0;
+      background-color: #6c757d;
+      width: 100%;
+      height: 1px;
+      padding: 0; }
   .pd-page-menu-1 .pd-menu-1-label {
     font-weight: 700;
     letter-spacing: 0.1em;
@@ -19485,85 +19510,5 @@ progress {
       -webkit-transform: rotate(-45deg);
           -ms-transform: rotate(-45deg);
               transform: rotate(-45deg); }
-    @media (min-width: 768px) {
-      .pd-breadcrumbs-1 .pd-breadcrumbs-1-sm {
-        display: none; } }
-    @media (max-width: 767px) {
-      .pd-breadcrumbs-1 .pd-breadcrumbs-1-sm {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        font-weight: 300;
-        font-size: 0.9rem; }
-        .pd-breadcrumbs-1 .pd-breadcrumbs-1-sm p {
-          margin-bottom: 0px;
-          color: #6c757d; }
-        .pd-breadcrumbs-1 .pd-breadcrumbs-1-sm img {
-          margin-left: 8px;
-          margin-right: 10px; }
-        .pd-breadcrumbs-1 .pd-breadcrumbs-1-sm a {
-          display: inline-block;
-          text-decoration: none;
-          color: #6c757d;
-          -webkit-transition: color 0.2s;
-          -o-transition: color 0.2s;
-          transition: color 0.2s; }
-          .pd-breadcrumbs-1 .pd-breadcrumbs-1-sm a:hover {
-            color: #adb5bd; }
-          .pd-breadcrumbs-1 .pd-breadcrumbs-1-sm a:focus {
-            outline: 2px dotted #17A9E6;
-            outline-offset: 4px; } }
-    @media (max-width: 767px) {
-      .pd-breadcrumbs-1 .pd-breadcrumbs-1-md {
-        display: none; } }
-    @media (min-width: 768px) {
-      .pd-breadcrumbs-1 .pd-breadcrumbs-1-md {
-        display: block; }
-        .pd-breadcrumbs-1 .pd-breadcrumbs-1-md ul {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap;
-          padding: 0;
-          list-style: none; }
-          .pd-breadcrumbs-1 .pd-breadcrumbs-1-md ul li {
-            -webkit-box-flex: 0;
-                -ms-flex: none;
-                    flex: none;
-            font-weight: 300;
-            font-size: 0.9rem; }
-            .pd-breadcrumbs-1 .pd-breadcrumbs-1-md ul li a {
-              text-decoration: none;
-              color: #6c757d;
-              -webkit-transition: color 0.2s;
-              -o-transition: color 0.2s;
-              transition: color 0.2s; }
-              .pd-breadcrumbs-1 .pd-breadcrumbs-1-md ul li a:hover {
-                color: #adb5bd; }
-              .pd-breadcrumbs-1 .pd-breadcrumbs-1-md ul li a:focus {
-                outline: 2px dotted #17A9E6;
-                outline-offset: 4px; }
-            .pd-breadcrumbs-1 .pd-breadcrumbs-1-md ul li span {
-              color: #6c757d; }
-            .pd-breadcrumbs-1 .pd-breadcrumbs-1-md ul li:not(:first-child):before {
-              display: -webkit-inline-box;
-              display: -ms-inline-flexbox;
-              display: inline-flex;
-              content: "";
-              background-image: url(/images/design-assets/icon-breadcrumb-gray.svg);
-              background-size: contain;
-              width: 6px;
-              height: 10px;
-              margin: 0 10px 0 16px;
-              color: #000;
-              background-repeat: no-repeat; } }
 
 /* Custom CSS rules come here */

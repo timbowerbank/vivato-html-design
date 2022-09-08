@@ -413,6 +413,49 @@
 }
 
 // end .pd-widget-5
+// start .pd-widget-6
+.pd-widget-6 {
+    .pd-widget-6-header {
+        text-transform: uppercase;
+
+        // letter-spacing: 0.1em;
+        font-weight: 700;
+    }
+
+    .pd-widget-6-list-item {
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: $gray-600;
+            transition: color 0.3s;
+            font-weight: 300;
+
+            &:hover {
+                color: $gray-500;
+            }
+
+            &:focus {
+                outline: 2px dotted $primary;
+                outline-offset: 4px;
+            }
+        }
+
+        hr {
+            border: 0;
+            background-color: $gray-600;
+
+            // background-color: $primary;
+            width: 100%;
+            height: 1px;
+            padding: 0;
+        }
+    }
+}
+
+// end .pd-widget-6
 
 
 
