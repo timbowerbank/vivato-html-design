@@ -120,7 +120,7 @@ function manageMobMenuListener6(e) {
     if(navToggle6) {
 
         // fix the body
-        document.body.style.position = 'fixed';
+        // document.body.style.position = 'fixed'; // removed as creating error with Safari 15 mobile
         document.body.style.top = `-${windowScrollY}px`;
   
         // check state of hamburger menu
@@ -148,7 +148,7 @@ function manageMobMenuListener6(e) {
 
         // allow body to scroll again but make sure window is in the same scroll position as it was before
         const scrollY = document.body.style.top;
-        document.body.style.position = '';
+        // document.body.style.position = ''; // removed as creating error with Safari 15 mobile
         document.body.style.top = '';
         window.scrollTo({
             left: 0,
