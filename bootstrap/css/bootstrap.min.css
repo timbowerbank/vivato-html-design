@@ -24252,5 +24252,10 @@ textarea.form-control-lg {
     background-repeat: no-repeat;
   }
 }
+@media (min-width: 992px) {
+  .pd-admin-page-menu-1 .nav-link {
+    padding-left: 40px !important;
+  }
+}
 
 /* Custom CSS rules come here */
