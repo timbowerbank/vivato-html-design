@@ -24257,5 +24257,49 @@ textarea.form-control-lg {
     padding-left: 40px !important;
   }
 }
+.pd-admin-login-2 .pd-admin-login-2-outer {
+  border: 1px solid #ced4da;
+  border-radius: 10px;
+  overflow: hidden;
+}
+@media (min-width: 992px) {
+  .pd-admin-login-2 .pd-admin-login-2-outer {
+    width: 80%;
+    max-width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .pd-admin-login-2 .pd-admin-login-2-outer .pd-admin-login-2-img-outer {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+  }
+}
+@media (max-width: 991px) {
+  .pd-admin-login-2 .pd-admin-login-2-outer .pd-admin-login-2-img-outer {
+    height: 120px;
+  }
+}
+.pd-admin-login-2 .pd-admin-login-2-outer .pd-admin-login-2-img-outer img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  top: 0;
+}
+.pd-admin-login-2 .pd-admin-login-2-outer .pd-admin-login-2-form-outer header h1, .pd-admin-login-2 .pd-admin-login-2-outer .pd-admin-login-2-form-outer header .h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.pd-admin-login-2 .pd-admin-login-2-outer .pd-admin-login-2-form-outer header p {
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+.pd-admin-login-2 .pd-admin-login-2-outer .pd-admin-login-2-form-outer form .input-group-text {
+  width: 100px;
+}
 
 /* Custom CSS rules come here */
