@@ -24271,9 +24271,9 @@ textarea.form-control-lg {
   overflow-y: auto;
   height: 100vh;
   width: 220px;
-  background: -o-linear-gradient(left, #010014 0%, #07070a 35%, #010014 100%);
-  background: -webkit-gradient(linear, left top, right top, from(#010014), color-stop(35%, #07070a), to(#010014));
-  background: linear-gradient(90deg, #010014 0%, #07070a 35%, #010014 100%);
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.86) 35%, rgba(0, 0, 0, 0.92));
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.92)), color-stop(35%, rgba(0, 0, 0, 0.86)), to(rgba(0, 0, 0, 0.92)));
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.86) 35%, rgba(0, 0, 0, 0.92));
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
   -o-transition: transform 0.4s;
@@ -24328,17 +24328,9 @@ textarea.form-control-lg {
   padding-bottom: 10px;
   font-size: 0.9rem;
   font-weight: 400;
-  -webkit-transition: color 0.2s, -webkit-transform 0.2s;
-  transition: color 0.2s, -webkit-transform 0.2s;
-  -o-transition: color 0.2s, transform 0.2s;
-  transition: color 0.2s, transform 0.2s;
-  transition: color 0.2s, transform 0.2s, -webkit-transform 0.2s;
 }
 .pd-admin-page-menu-2 .pd-admin-page-menu-2-outer .pd-admin-page-menu-2-inner .pd-admin-page-menu-2-wrapper-links a:hover {
   color: white;
-  -webkit-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-          transform: scale(1.05);
 }
 .pd-admin-page-menu-2 .pd-admin-page-menu-2-outer .pd-admin-page-menu-2-inner .pd-admin-page-menu-2-wrapper-links a.pd-active:before {
   content: "> ";
@@ -24415,17 +24407,6 @@ textarea.form-control-lg {
   color: #f9f1f1;
   font-size: 0.8rem;
   font-weight: 700;
-  -webkit-transition: color 0.2s, -webkit-transform 0.2s;
-  transition: color 0.2s, -webkit-transform 0.2s;
-  -o-transition: transform 0.2s, color 0.2s;
-  transition: transform 0.2s, color 0.2s;
-  transition: transform 0.2s, color 0.2s, -webkit-transform 0.2s;
-}
-.pd-admin-page-menu-2 .pd-admin-page-menu-2-outer .pd-admin-page-menu-2-inner .pd-admin-page-menu-2-user-widget .pd-admin-page-menu-2-user-name a:hover {
-  color: white;
-  -webkit-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-          transform: scale(1.05);
 }
 .pd-admin-page-menu-2 .pd-admin-page-menu-2-outer .pd-admin-page-2-open-close-outer {
   width: 20px;
@@ -24502,6 +24483,40 @@ textarea.form-control-lg {
   .pd-admin-main-content-2 {
     padding-left: 232px;
   }
+}
+
+.pd-admin-page-menu-2-nav-btn-outer {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  position: absolute;
+  padding: 10px 6px;
+  right: 10px;
+  top: 10px;
+  background-color: #fff;
+  z-index: 3;
+  -webkit-box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+@media (max-width: 991px) {
+  .pd-admin-page-menu-2-nav-btn-outer {
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  .pd-admin-page-menu-2-nav-btn-outer {
+    display: none;
+  }
+}
+.pd-admin-page-menu-2-nav-btn-outer .pd-admin-page-menu-2-hamburger-bar {
+  width: 28px;
+  height: 4px;
+  border-radius: 2px;
+  margin-bottom: 4px;
+  background-color: #6c757d;
+}
+.pd-admin-page-menu-2-nav-btn-outer .pd-admin-page-menu-2-hamburger-bar:last-child {
+  margin-bottom: 0px;
 }
 .pd-admin-login-2 .pd-admin-login-2-outer {
   border: 1px solid #ced4da;

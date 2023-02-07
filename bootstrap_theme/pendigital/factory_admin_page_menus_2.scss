@@ -13,7 +13,7 @@
         overflow-y: auto;
         height: 100vh;
         width: 220px;
-        background: linear-gradient(90deg, #010014 0%, #07070a 35%, #010014 100%);
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.86) 35%, rgba(0, 0, 0, 0.92));
         transition: transform 0.4s;
 
         // transform: translate(-100%);
@@ -65,11 +65,12 @@
                     padding-bottom: 10px;
                     font-size: 0.9rem;
                     font-weight: 400;
-                    transition: color 0.2s, transform 0.2s;
 
+                    // transition: transform 0.2s;
                     &:hover {
                         color: white;
-                        transform: scale(1.05);
+
+                        // transform: scale(1.05);
                     }
                 }
 
@@ -143,12 +144,6 @@
                         color: #f9f1f1;
                         font-size: 0.8rem;
                         font-weight: 700;
-                        transition: transform 0.2s, color 0.2s;
-
-                        &:hover {
-                            color: white;
-                            transform: scale(1.05);
-                        }
                     }
                 }
             }
@@ -219,5 +214,38 @@
 
     @media (min-width: 992px) {
         padding-left: 232px;
+    }
+}
+
+.pd-admin-page-menu-2-nav-btn-outer {
+    border: 1px solid $gray-400;
+    border-radius: 5px;
+    position: absolute;
+    padding: 10px 6px;
+    right: 10px;
+    top: 10px;
+    background-color: $white;
+    z-index: 3;
+    box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.10);
+    cursor: pointer;
+
+    @media (max-width: 991px) {
+        display: block;
+    }
+
+    @media (min-width: 992px) {
+        display: none;
+    }
+
+    .pd-admin-page-menu-2-hamburger-bar {
+        width: 28px;
+        height: 4px;
+        border-radius: 2px;
+        margin-bottom: 4px;
+        background-color: $gray-600;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
     }
 }
