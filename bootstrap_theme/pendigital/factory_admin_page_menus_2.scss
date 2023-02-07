@@ -1,39 +1,32 @@
 .pd-admin-page-menu-2 {
     position: fixed;
-    left: 0;
+    left: 0px;
     top: 0px;
-    width: 220px;
+    width: 0px;
     height: 100vh;
+    z-index: 2;
+    overflow-x: visible;
 
-    @media (min-width: 992px) {
-        display: block;
-    }
-
-    @media (max-width: 991px) {
-        display: none;
-    }
-
+    // this is what slides in and out!
+    // it has the close button
     .pd-admin-page-menu-2-outer {
         overflow-y: auto;
         height: 100vh;
-        width: auto;
+        width: 220px;
         background: linear-gradient(90deg, #010014 0%, #07070a 35%, #010014 100%);
+        transition: transform 0.4s;
 
+        // transform: translate(-100%);
         @media (max-width: 991px) {
-            display: none;
-            position: absolute;
-            width: 300px;
-            top: 0;
-            left: 0;
+            transform: translate(-100%);
         }
 
         @media (min-width: 992px) {
             position: relative;
         }
 
-        // this is what slides in and out!
         .pd-admin-page-menu-2-inner {
-            padding: 5px;
+            padding: 10px;
 
             @media (max-width: 991px) {
             }
@@ -56,7 +49,7 @@
                 flex-direction: column;
 
                 h3 {
-                    color: white;
+                    color: #f9f1f1;
                     margin-bottom: 5px;
 
                     // padding-bottom: 5px;
@@ -66,12 +59,24 @@
 
                 a {
                     text-decoration: none;
-                    color: white;
+                    color: #f9f1f1;
                     border-bottom: 1px solid white;
                     margin-bottom: 10px;
                     padding-bottom: 10px;
                     font-size: 0.9rem;
                     font-weight: 400;
+                    transition: color 0.2s, transform 0.2s;
+
+                    &:hover {
+                        color: white;
+                        transform: scale(1.05);
+                    }
+                }
+
+                a.pd-active {
+                    &:before {
+                        content: "> ";
+                    }
                 }
 
                 div {
@@ -89,6 +94,12 @@
                         font-size: 0.8rem;
                         font-weight: 300;
                     }
+
+                    a.pd-active {
+                        &:before {
+                            content: "> ";
+                        }
+                    }
                 }
             }
 
@@ -104,10 +115,13 @@
                 }
 
                 .pd-admin-page-menu-2-user-name {
-                    padding: 4px;
+                    padding-top: 4px;
+                    padding-bottom: 4px;
+                    padding-right: 4px;
+                    padding-left: 10px;
                     display: flex;
                     flex-direction: column;
-                    color: white;
+                    color: #f9f1f1;
 
                     h4 {
                         font-size: 0.6rem;
@@ -126,17 +140,83 @@
                         text-decoration: none;
                         margin-bottom: 0px;
                         padding-bottom: 0px;
-                        color: white;
+                        color: #f9f1f1;
                         font-size: 0.8rem;
                         font-weight: 700;
+                        transition: transform 0.2s, color 0.2s;
+
+                        &:hover {
+                            color: white;
+                            transform: scale(1.05);
+                        }
                     }
                 }
+            }
+        }
+
+        .pd-admin-page-2-open-close-outer {
+            // background: red;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            display: inline-block;
+
+            @media (max-width: 991px) {
+                display: block;
+            }
+
+            @media (min-width: 992px) {
+                display: none;
+            }
+
+            // margin-left: 20px;
+            &:focus {
+                outline: 2px dotted white;
+                outline-offset: 4px;
+            }
+
+            .pd-admin-page-2-open-close-horizontal {
+                position: absolute;
+                width: 20px;
+                height: 2px;
+                left: 0px;
+                top: 9px;
+                transform: rotate(45deg);
+                border-radius: 2px;
+                background: white;
+                transition: transform 0.4s;
+                pointer-events: none;
+            }
+
+            .pd-admin-page-2-open-close-vertical {
+                position: absolute;
+                width: 20px;
+                height: 2px;
+                left: 0px;
+                top: 9px;
+                transform: rotate(-45deg);
+                border-radius: 2px;
+                background: white;
+                transition: transform 0.4s;
+                pointer-events: none;
             }
         }
     }
 }
 
+.pd-admin-page-menu-2.pd-open {
+    width: 220px;
+
+    .pd-admin-page-menu-2-outer {
+        transform: translate(0);
+    }
+}
+
 .pd-admin-main-content-2 {
+    z-index: 1;
+
     @media (min-width: 992px) {
         padding-left: 232px;
     }

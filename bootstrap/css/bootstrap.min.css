@@ -24260,36 +24260,31 @@ textarea.form-control-lg {
 
 .pd-admin-page-menu-2 {
   position: fixed;
-  left: 0;
+  left: 0px;
   top: 0px;
-  width: 220px;
+  width: 0px;
   height: 100vh;
-}
-@media (min-width: 992px) {
-  .pd-admin-page-menu-2 {
-    display: block;
-  }
-}
-@media (max-width: 991px) {
-  .pd-admin-page-menu-2 {
-    display: none;
-  }
+  z-index: 2;
+  overflow-x: visible;
 }
 .pd-admin-page-menu-2 .pd-admin-page-menu-2-outer {
   overflow-y: auto;
   height: 100vh;
-  width: auto;
+  width: 220px;
   background: -o-linear-gradient(left, #010014 0%, #07070a 35%, #010014 100%);
   background: -webkit-gradient(linear, left top, right top, from(#010014), color-stop(35%, #07070a), to(#010014));
   background: linear-gradient(90deg, #010014 0%, #07070a 35%, #010014 100%);
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  -o-transition: transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
 }
 @media (max-width: 991px) {
   .pd-admin-page-menu-2 .pd-admin-page-menu-2-outer {
-    display: none;
-    position: absolute;
-    width: 300px;
-    top: 0;
-    left: 0;
+    -webkit-transform: translate(-100%);
+        -ms-transform: translate(-100%);
+            transform: translate(-100%);
   }
 }
 @media (min-width: 992px) {
@@ -24298,9 +24293,11 @@ textarea.form-control-lg {
   }
 }
 .pd-admin-page-menu-2 .pd-admin-page-menu-2-outer .pd-admin-page-menu-2-inner {
-  padding: 5px;
+  padding: 10px;
 }
-.pd-admin-page-menu-2 .pd-admin-page-menu-2-outer .pd-admin-page-menu-2-inner h1, .pd-admin-page-menu-2 .pd-admin-page-menu-2-outer .pd-admin-page-menu-2-inner .h1, .pd-admin-page-menu-2 .pd-admin-page-menu-2-outer .pd-admin-page-menu-2-inner h2, .pd-admin-page-menu-2 .pd-admin-page-menu-2-outer .pd-admin-page-menu-2-inner .h2 {
+.pd-admin-page-menu-2 .pd-admin-page-menu-2-outer .pd-admin-page-menu-2-inner h1, .pd-admin-page-menu-2 .pd-admin-page-menu-2-outer .pd-admin-page-menu-2-inner .h1,
+.pd-admin-page-menu-2 .pd-admin-page-menu-2-outer .pd-admin-page-menu-2-inner h2,
+.pd-admin-page-menu-2 .pd-admin-page-menu-2-outer .pd-admin-page-menu-2-inner .h2 {
   margin-top: 20px;
   margin-bottom: 20px;
   color: white;
@@ -24318,19 +24315,33 @@ textarea.form-control-lg {
           flex-direction: column;
 }
 .pd-admin-page-menu-2 .pd-admin-page-menu-2-outer .pd-admin-page-menu-2-inner .pd-admin-page-menu-2-wrapper-links h3, .pd-admin-page-menu-2 .pd-admin-page-menu-2-outer .pd-admin-page-menu-2-inner .pd-admin-page-menu-2-wrapper-links .h3 {
-  color: white;
+  color: #f9f1f1;
   margin-bottom: 5px;
   font-size: 0.9rem;
   font-weight: 700;
 }
 .pd-admin-page-menu-2 .pd-admin-page-menu-2-outer .pd-admin-page-menu-2-inner .pd-admin-page-menu-2-wrapper-links a {
   text-decoration: none;
-  color: white;
+  color: #f9f1f1;
   border-bottom: 1px solid white;
   margin-bottom: 10px;
   padding-bottom: 10px;
   font-size: 0.9rem;
   font-weight: 400;
+  -webkit-transition: color 0.2s, -webkit-transform 0.2s;
+  transition: color 0.2s, -webkit-transform 0.2s;
+  -o-transition: color 0.2s, transform 0.2s;
+  transition: color 0.2s, transform 0.2s;
+  transition: color 0.2s, transform 0.2s, -webkit-transform 0.2s;
+}
+.pd-admin-page-menu-2 .pd-admin-page-menu-2-outer .pd-admin-page-menu-2-inner .pd-admin-page-menu-2-wrapper-links a:hover {
+  color: white;
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.pd-admin-page-menu-2 .pd-admin-page-menu-2-outer .pd-admin-page-menu-2-inner .pd-admin-page-menu-2-wrapper-links a.pd-active:before {
+  content: "> ";
 }
 .pd-admin-page-menu-2 .pd-admin-page-menu-2-outer .pd-admin-page-menu-2-inner .pd-admin-page-menu-2-wrapper-links div {
   display: -webkit-box;
@@ -24352,6 +24363,9 @@ textarea.form-control-lg {
   font-size: 0.8rem;
   font-weight: 300;
 }
+.pd-admin-page-menu-2 .pd-admin-page-menu-2-outer .pd-admin-page-menu-2-inner .pd-admin-page-menu-2-wrapper-links div a.pd-active:before {
+  content: "> ";
+}
 .pd-admin-page-menu-2 .pd-admin-page-menu-2-outer .pd-admin-page-menu-2-inner .pd-admin-page-menu-2-user-widget {
   margin-top: 20px;
   display: -webkit-box;
@@ -24370,7 +24384,10 @@ textarea.form-control-lg {
   border-radius: 50%;
 }
 .pd-admin-page-menu-2 .pd-admin-page-menu-2-outer .pd-admin-page-menu-2-inner .pd-admin-page-menu-2-user-widget .pd-admin-page-menu-2-user-name {
-  padding: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 4px;
+  padding-left: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24378,7 +24395,7 @@ textarea.form-control-lg {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: white;
+  color: #f9f1f1;
 }
 .pd-admin-page-menu-2 .pd-admin-page-menu-2-outer .pd-admin-page-menu-2-inner .pd-admin-page-menu-2-user-widget .pd-admin-page-menu-2-user-name h4, .pd-admin-page-menu-2 .pd-admin-page-menu-2-outer .pd-admin-page-menu-2-inner .pd-admin-page-menu-2-user-widget .pd-admin-page-menu-2-user-name .h4 {
   font-size: 0.6rem;
@@ -24395,9 +24412,91 @@ textarea.form-control-lg {
   text-decoration: none;
   margin-bottom: 0px;
   padding-bottom: 0px;
-  color: white;
+  color: #f9f1f1;
   font-size: 0.8rem;
   font-weight: 700;
+  -webkit-transition: color 0.2s, -webkit-transform 0.2s;
+  transition: color 0.2s, -webkit-transform 0.2s;
+  -o-transition: transform 0.2s, color 0.2s;
+  transition: transform 0.2s, color 0.2s;
+  transition: transform 0.2s, color 0.2s, -webkit-transform 0.2s;
+}
+.pd-admin-page-menu-2 .pd-admin-page-menu-2-outer .pd-admin-page-menu-2-inner .pd-admin-page-menu-2-user-widget .pd-admin-page-menu-2-user-name a:hover {
+  color: white;
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.pd-admin-page-menu-2 .pd-admin-page-menu-2-outer .pd-admin-page-2-open-close-outer {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: inline-block;
+}
+@media (max-width: 991px) {
+  .pd-admin-page-menu-2 .pd-admin-page-menu-2-outer .pd-admin-page-2-open-close-outer {
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  .pd-admin-page-menu-2 .pd-admin-page-menu-2-outer .pd-admin-page-2-open-close-outer {
+    display: none;
+  }
+}
+.pd-admin-page-menu-2 .pd-admin-page-menu-2-outer .pd-admin-page-2-open-close-outer:focus {
+  outline: 2px dotted white;
+  outline-offset: 4px;
+}
+.pd-admin-page-menu-2 .pd-admin-page-menu-2-outer .pd-admin-page-2-open-close-outer .pd-admin-page-2-open-close-horizontal {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  left: 0px;
+  top: 9px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-radius: 2px;
+  background: white;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  -o-transition: transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  pointer-events: none;
+}
+.pd-admin-page-menu-2 .pd-admin-page-menu-2-outer .pd-admin-page-2-open-close-outer .pd-admin-page-2-open-close-vertical {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  left: 0px;
+  top: 9px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border-radius: 2px;
+  background: white;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  -o-transition: transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  pointer-events: none;
+}
+
+.pd-admin-page-menu-2.pd-open {
+  width: 220px;
+}
+.pd-admin-page-menu-2.pd-open .pd-admin-page-menu-2-outer {
+  -webkit-transform: translate(0);
+      -ms-transform: translate(0);
+          transform: translate(0);
+}
+
+.pd-admin-main-content-2 {
+  z-index: 1;
 }
 @media (min-width: 992px) {
   .pd-admin-main-content-2 {
