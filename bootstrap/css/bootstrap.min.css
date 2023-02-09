@@ -24604,5 +24604,50 @@ textarea.form-control-lg {
 .pd-admin-table-1 .pd-admin-table-1-outer .pd-admin-table-1-inner tr {
   cursor: pointer;
 }
+.pd-admin-card-1 header a {
+  display: inline-block;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.pd-admin-card-1 header a:before {
+  content: "< ";
+}
+.pd-admin-card-1 header h1, .pd-admin-card-1 header .h1 {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.pd-admin-card-1 header p {
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+.pd-admin-card-1 .pd-admin-card-1-body {
+  background: white;
+  border-radius: 15px;
+  border: 1px solid #e9ecef;
+  padding: 18px;
+  max-width: 1200px;
+}
+.pd-admin-card-1 .pd-admin-card-1-body a {
+  text-decoration: none;
+}
+.pd-admin-card-1 .pd-admin-card-1-body img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 400px;
+  height: 400px;
+}
+.pd-admin-card-1 .pd-admin-card-1-body .pd-admin-card-1-post-text {
+  max-width: 400px;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 16px 16px;
+}
+.pd-admin-card-1 .pd-admin-card-1-body .pd-admin-card-1-post-text p {
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 0px;
+}
 
 /* Custom CSS rules come here */
