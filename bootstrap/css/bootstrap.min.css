@@ -24562,5 +24562,47 @@ textarea.form-control-lg {
 .pd-admin-login-2 .pd-admin-login-2-outer .pd-admin-login-2-form-outer form .input-group-text {
   width: 100px;
 }
+.pd-admin-table-1 header a {
+  display: inline-block;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.pd-admin-table-1 header a:before {
+  content: "< ";
+}
+.pd-admin-table-1 header h1, .pd-admin-table-1 header .h1 {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.pd-admin-table-1 header p {
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+.pd-admin-table-1 .pd-admin-table-1-outer {
+  background: white;
+  border-radius: 15px;
+  border: 1px solid #e9ecef;
+  padding: 18px;
+  max-width: 1200px;
+}
+.pd-admin-table-1 .pd-admin-table-1-outer .pd-admin-table-1-search {
+  max-width: 400px;
+}
+@media (max-width: 991px) {
+  .pd-admin-table-1 .pd-admin-table-1-outer .pd-admin-table-1-search {
+    width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  .pd-admin-table-1 .pd-admin-table-1-outer .pd-admin-table-1-search {
+    width: 50%;
+  }
+}
+.pd-admin-table-1 .pd-admin-table-1-outer .pd-admin-table-1-inner {
+  overflow-x: scroll;
+}
+.pd-admin-table-1 .pd-admin-table-1-outer .pd-admin-table-1-inner tr {
+  cursor: pointer;
+}
 
 /* Custom CSS rules come here */
