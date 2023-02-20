@@ -1,0 +1,110 @@
+// start pd-admin-dashboard-1
+.pd-admin-dashboard-1 {
+    header {
+        a {
+            display: inline-block;
+            margin-bottom: 10px;
+            text-decoration: none;
+
+            &:before {
+                content: "< ";
+            }
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 1.8rem;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 0.9rem;
+        }
+    }
+
+    .pd-admin-dashboard-1-body {
+        @media (min-width: 992px) {
+            max-width: 1200px;
+        }
+
+        .pd-admin-dashboard-1-card {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid $gray-600;
+            border-radius: 10px;
+            background-color: white;
+            margin: 5px;
+            height: 350px;
+            overflow: hidden;
+
+            @media (max-width: 991px) {
+                flex: 0 0 96%;
+            }
+
+            @media (min-width: 992px) {
+                flex: 0 0 48%;
+            }
+
+            header {
+                flex: 0 0 18%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border-bottom: 1px solid $gray-600;
+                padding: 10px;
+                background-color: $gray-200;
+
+                h2 {
+                    font-weight: 700;
+                    font-size: 1.1rem;
+                    margin-bottom: 0px;
+                }
+            }
+
+            .pd-admin-dashboard-1-card-body {
+                margin-bottom: 10px;
+                padding: 16px;
+                flex: 1 0 55%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .pd-admin-dashboard-1-card-body-big-stat {
+                    text-align: center;
+
+                    span p {
+                        font-size: 5rem;
+                        font-weight: 700;
+                        margin-bottom: 0px;
+                    }
+
+                    p {
+                        font-weight: 700;
+                        font-size: 1.4rem;
+                        margin-bottom: 0px;
+                    }
+
+                    hr {
+                        margin-bottom: 8px;
+                        margin-top: 2px;
+                    }
+                }
+
+                .pd-admin-dashboard-1-card-body-table {
+                    width: 100%;
+                    height: 180px;
+                    overflow-y: scroll;
+                }
+            }
+
+            footer {
+                padding: 10px;
+
+                .btn {
+                    color: white;
+                }
+            }
+        }
+    }
+}

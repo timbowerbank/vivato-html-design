@@ -24731,7 +24731,7 @@ textarea.form-control-lg {
 }
 @media (max-width: 575px) {
   .pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-image-drop-zone.pd-admin-form-1-image-drop-zone-small {
-    min-height: 400px;
+    min-height: 300px;
     width: 100%;
   }
 }
@@ -24756,6 +24756,127 @@ textarea.form-control-lg {
 .pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested h2, .pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested .h2 {
   font-size: 1.2rem;
   font-weight: 700;
+}
+.pd-admin-dashboard-1 header a {
+  display: inline-block;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.pd-admin-dashboard-1 header a:before {
+  content: "< ";
+}
+.pd-admin-dashboard-1 header h1, .pd-admin-dashboard-1 header .h1 {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.pd-admin-dashboard-1 header p {
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+@media (min-width: 992px) {
+  .pd-admin-dashboard-1 .pd-admin-dashboard-1-body {
+    max-width: 1200px;
+  }
+}
+.pd-admin-dashboard-1 .pd-admin-dashboard-1-body .pd-admin-dashboard-1-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #6c757d;
+  border-radius: 10px;
+  background-color: white;
+  margin: 5px;
+  height: 350px;
+  overflow: hidden;
+}
+@media (max-width: 991px) {
+  .pd-admin-dashboard-1 .pd-admin-dashboard-1-body .pd-admin-dashboard-1-card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 96%;
+            flex: 0 0 96%;
+  }
+}
+@media (min-width: 992px) {
+  .pd-admin-dashboard-1 .pd-admin-dashboard-1-body .pd-admin-dashboard-1-card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 48%;
+            flex: 0 0 48%;
+  }
+}
+.pd-admin-dashboard-1 .pd-admin-dashboard-1-body .pd-admin-dashboard-1-card header {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 18%;
+          flex: 0 0 18%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #6c757d;
+  padding: 10px;
+  background-color: #e9ecef;
+}
+.pd-admin-dashboard-1 .pd-admin-dashboard-1-body .pd-admin-dashboard-1-card header h2, .pd-admin-dashboard-1 .pd-admin-dashboard-1-body .pd-admin-dashboard-1-card header .h2 {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 0px;
+}
+.pd-admin-dashboard-1 .pd-admin-dashboard-1-body .pd-admin-dashboard-1-card .pd-admin-dashboard-1-card-body {
+  margin-bottom: 10px;
+  padding: 16px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 55%;
+          flex: 1 0 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pd-admin-dashboard-1 .pd-admin-dashboard-1-body .pd-admin-dashboard-1-card .pd-admin-dashboard-1-card-body .pd-admin-dashboard-1-card-body-big-stat {
+  text-align: center;
+}
+.pd-admin-dashboard-1 .pd-admin-dashboard-1-body .pd-admin-dashboard-1-card .pd-admin-dashboard-1-card-body .pd-admin-dashboard-1-card-body-big-stat span p {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+.pd-admin-dashboard-1 .pd-admin-dashboard-1-body .pd-admin-dashboard-1-card .pd-admin-dashboard-1-card-body .pd-admin-dashboard-1-card-body-big-stat p {
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 0px;
+}
+.pd-admin-dashboard-1 .pd-admin-dashboard-1-body .pd-admin-dashboard-1-card .pd-admin-dashboard-1-card-body .pd-admin-dashboard-1-card-body-big-stat hr {
+  margin-bottom: 8px;
+  margin-top: 2px;
+}
+.pd-admin-dashboard-1 .pd-admin-dashboard-1-body .pd-admin-dashboard-1-card .pd-admin-dashboard-1-card-body .pd-admin-dashboard-1-card-body-table {
+  width: 100%;
+  height: 180px;
+  overflow-y: scroll;
+}
+.pd-admin-dashboard-1 .pd-admin-dashboard-1-body .pd-admin-dashboard-1-card footer {
+  padding: 10px;
+}
+.pd-admin-dashboard-1 .pd-admin-dashboard-1-body .pd-admin-dashboard-1-card footer .btn {
+  color: white;
 }
 
 /* Custom CSS rules come here */
