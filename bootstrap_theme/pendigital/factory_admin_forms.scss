@@ -54,12 +54,17 @@
             .pd-admin-form-1-image-drop-zone {
                 border: 2px dashed $gray-600;
                 border-radius: 10px;
-                height: 400px;
-                width: 400px;
                 background: $gray-200;
 
-                @media (min-width: 992px) {
+                @media (max-width: 575px) {
+                    min-height: 400px;
+                    width: 100%;
+                }
+
+                @media (min-width: 576px) {
                     max-width: 400px;
+                    height: 400px;
+                    width: 400px;
                 }
 
                 display: flex;
@@ -70,12 +75,24 @@
                 p {
                     font-size: 0.8rem;
                     margin-bottom: 10px;
+
+                    @media (max-width: 575px) {
+                        display: none;
+                    }
                 }
             }
 
             .pd-admin-form-1-image-drop-zone.pd-admin-form-1-image-drop-zone-small {
-                width: 200px;
-                height: 200px;
+                @media (max-width: 575px) {
+                    min-height: 300px;
+                    width: 100%;
+                }
+
+                @media (min-width: 576px) {
+                    max-width: 200px;
+                    width: 200px;
+                    height: 200px;
+                }
             }
 
             .pd-admin-form-1-nested {

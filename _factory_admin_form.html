@@ -26,8 +26,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="pd-admin-form-1">
-                            <header class="pb-2">
-                                <a href="#" name="anchor">Back</a>
+                            <header class="pb-2"><a href="#" name="anchor">Back</a>
                                 <h1>New Daily Challenge</h1>
                                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                             </header>
@@ -45,7 +44,10 @@
                                         <label for="heroImage" class="form-label">Hero Image</label>
                                         <div class="pd-admin-form-1-image-drop-zone">
                                             <p>Drop image into this zone, or</p>
-                                            <button type="button" class="btn btn-outline-dark">Upload Image</button>
+                                            <div>
+                                                <button type="button" class="btn btn-outline-dark">Upload File</button>
+                                                <button type="button" class="btn btn-outline-dark ms-2">Library</button>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="mb-3">
@@ -71,19 +73,20 @@
                                         </select>
                                     </div>
                                     <div class="mb-3 pd-admin-form-1-nested">
-                                        <h2>Credit Artist</h2>
+                                        <h2>Credit Challenge Image</h2>
                                         <div class="mb-3">
-                                            <label for="heroImage" class="form-label">Artist Logo</label>
+                                            <label for="heroImage" class="form-label">Source Logo</label>
                                             <div class="pd-admin-form-1-image-drop-zone pd-admin-form-1-image-drop-zone-small">
-                                                <button type="button" class="btn btn-outline-dark">Upload Image</button>
+                                                <button type="button" class="btn btn-outline-dark">Upload File</button>
+                                                <button type="button" class="btn btn-outline-dark mt-2">Library</button>
                                             </div>
                                         </div>
                                         <div class="mb-3">
-                                            <label for="artistCreditText" class="form-label">Artist credit text</label>
+                                            <label for="artistCreditText" class="form-label">Source Credit Text</label>
                                             <input type="text" placeHolder="Add text for the artist link" name="challengeSubTitle" class="form-control" id="artistCreditText">
                                         </div>
                                         <div class="mb-3">
-                                            <label for="artistWebsiteLink" class="form-label">Artist credit text</label>
+                                            <label for="artistWebsiteLink" class="form-label">Source Website</label>
                                             <input type="url" placeHolder="Add artist website link" name="artistWebsiteLink" class="form-control" id="artistWebsiteLink">
                                         </div>
                                     </div>

@@ -24692,8 +24692,6 @@ textarea.form-control-lg {
 .pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-image-drop-zone {
   border: 2px dashed #6c757d;
   border-radius: 10px;
-  height: 400px;
-  width: 400px;
   background: #e9ecef;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24709,18 +24707,40 @@ textarea.form-control-lg {
       -ms-flex-align: center;
           align-items: center;
 }
-@media (min-width: 992px) {
+@media (max-width: 575px) {
+  .pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-image-drop-zone {
+    min-height: 400px;
+    width: 100%;
+  }
+}
+@media (min-width: 576px) {
   .pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-image-drop-zone {
     max-width: 400px;
+    height: 400px;
+    width: 400px;
   }
 }
 .pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-image-drop-zone p {
   font-size: 0.8rem;
   margin-bottom: 10px;
 }
-.pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-image-drop-zone.pd-admin-form-1-image-drop-zone-small {
-  width: 200px;
-  height: 200px;
+@media (max-width: 575px) {
+  .pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-image-drop-zone p {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-image-drop-zone.pd-admin-form-1-image-drop-zone-small {
+    min-height: 400px;
+    width: 100%;
+  }
+}
+@media (min-width: 576px) {
+  .pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-image-drop-zone.pd-admin-form-1-image-drop-zone-small {
+    max-width: 200px;
+    width: 200px;
+    height: 200px;
+  }
 }
 .pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested {
   border-radius: 10px;
