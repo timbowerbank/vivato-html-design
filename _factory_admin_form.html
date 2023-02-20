@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>Admin Cards</title>
+        <title>Form</title>
         <!-- Bootstrap core CSS -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <!-- Custom styles for this template -->
@@ -18,42 +18,82 @@
         <!-- Placed at the end of the document so the pages load faster -->
         <section class="pb-5 pt-5" style="position: relative;">
             <div style="position: absolute; bottom: 1px;">
-                <p style="font-weight: 700; padding-bottom: 5px; padding-left: 10px; margin-bottom: 0px;">pd-admin-card-1 - add this class to the div in the main column, not to the outer section.</p>
+                <p style="font-weight: 700; padding-bottom: 5px; padding-left: 10px; margin-bottom: 0px;">pd-admin-form-1 - add this class to the div in the main column, not to the outer section.</p>
             </div>
         </section>
         <section class="bg-light pb-5 pt-5">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="pd-admin-card-1">
+                        <div class="pd-admin-form-1">
                             <header class="pb-2">
                                 <a href="#" name="anchor">Back</a>
-                                <h1>Reported Post</h1>
+                                <h1>New Daily Challenge</h1>
                                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                             </header>
-                            <div class="pd-admin-card-1-body">
-                                <p><strong>Post Status:&nbsp;</strong>&nbsp;Live</p>
-                                <p><strong>Date and time:</strong> 01 Jul 2023: 1230 GMT</p>
-                                <p><strong>Challenge Title:</strong>&nbsp;Find an Oak Tree</p>
-                                <p><strong>Offender User Name:</strong>&nbsp<a href="#">sam_23</a></p>
-                                <p><strong>User&apos;s Current Offense Count:</strong>&nbsp;1</p>
-                                <p><strong>Offense Type:</strong>&nbsp;Advertising</p>
-                                <p><strong>Reported by:&nbsp;</strong>&nbsp;lucy_1965, joe_224, sian_winters</p>
-                                <p><strong>Post Content:&nbsp;</strong>&nbsp;</p>
-                                <img class="img-fluid" src="images/uploads/card-car-lambo.jpg" alt="image from post" width="400" height="400">
-                                <div class="pd-admin-card-1-post-text">
-                                    <p>Buy this Lambo for &pound;10k. Buy hot cars at #FastCarPlaza! We stock an amazing range of fast cars at prices you won&apos;t believe.</p>
-                                </div>
-                                <div class="pb-3 pt-3">
-                                    <button type="button" class="btn btn-outline-primary me-2">Block Post</button>
-                                    <button type="button" class="btn btn-outline-primary me-2">Update Offense Count</button>
-                                </div>
-                                <div>
-                                    <button type="button" class="btn btn-info me-2">Resolve and Exit</button>
-                                    <button type="button" class="btn btn-info me-2">Cancel</button>
-                                </div>
+                            <div class="pd-admin-form-1-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="publishDate" class="form-label">Publish Date</label>
+                                        <input id="publishDate" class="form-control pd-admin-form-1-short-field" type="date"/>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="challengeTitle" class="form-label">Challenge Title</label>
+                                        <input type="text" placeHolder="Add Challenge Title" name="challengeTitle" class="form-control" id="challengeTitle">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="heroImage" class="form-label">Hero Image</label>
+                                        <div class="pd-admin-form-1-image-drop-zone">
+                                            <p>Drop image into this zone, or</p>
+                                            <button type="button" class="btn btn-outline-dark">Upload Image</button>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="challengeSubTitle" class="form-label">Challenge Sub Title</label>
+                                        <input type="text" placeHolder="Add a sub title" name="challengeSubTitle" class="form-control" id="challengeSubTitle">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="challengeInstructions" class="form-label">Challenge Instructions</label>
+                                        <textarea type="text" rows="8" placeHolder="Add instructions for the challenge" name="challengeInstructions" class="form-control" id="challengeInstructions"></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="superCharge" class="form-label">Supercharge Instructions</label>
+                                        <textarea type="text" rows="8" placeHolder="Add instructions for the challenge" name="superCharge" class="form-control" id="superCharge"></textarea>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <label class="input-group-text" for="palleteSelection">Palette ID</label>
+                                        <select class="form-select" id="palleteSelection">
+                                            <option selected>Select palette</option>
+                                            <option value="1">Spring</option>
+                                            <option value="2">Summer</option>
+                                            <option value="3">Autumn</option>
+                                            <option value="4">Winter</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3 pd-admin-form-1-nested">
+                                        <h2>Credit Artist</h2>
+                                        <div class="mb-3">
+                                            <label for="heroImage" class="form-label">Artist Logo</label>
+                                            <div class="pd-admin-form-1-image-drop-zone pd-admin-form-1-image-drop-zone-small">
+                                                <button type="button" class="btn btn-outline-dark">Upload Image</button>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="artistCreditText" class="form-label">Artist credit text</label>
+                                            <input type="text" placeHolder="Add text for the artist link" name="challengeSubTitle" class="form-control" id="artistCreditText">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="artistWebsiteLink" class="form-label">Artist credit text</label>
+                                            <input type="url" placeHolder="Add artist website link" name="artistWebsiteLink" class="form-control" id="artistWebsiteLink">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <button type="button" class="btn btn-info me-2">Save</button>
+                                        <button type="button" class="btn btn-outline-dark me-2">Cancel</button>
+                                    </div>
+                                </form>
                             </div>
-                        </div>                                                  
+                        </div>                         
                     </div>
                 </div>
             </div>

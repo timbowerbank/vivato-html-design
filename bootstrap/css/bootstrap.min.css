@@ -24649,5 +24649,93 @@ textarea.form-control-lg {
   line-height: 1.5;
   margin-bottom: 0px;
 }
+.pd-admin-form-1 header a {
+  display: inline-block;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.pd-admin-form-1 header a:before {
+  content: "< ";
+}
+.pd-admin-form-1 header h1, .pd-admin-form-1 header .h1 {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.pd-admin-form-1 header p {
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+.pd-admin-form-1 .pd-admin-form-1-body {
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #e9ecef;
+  padding: 18px;
+  max-width: 1200px;
+}
+.pd-admin-form-1 .pd-admin-form-1-body form label {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-short-field {
+  max-width: 240px !important;
+}
+@media (min-width: 992px) {
+  .pd-admin-form-1 .pd-admin-form-1-body form .form-control {
+    max-width: 500px;
+  }
+}
+@media (min-width: 992px) {
+  .pd-admin-form-1 .pd-admin-form-1-body form .form-select {
+    max-width: 400px;
+  }
+}
+.pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-image-drop-zone {
+  border: 2px dashed #6c757d;
+  border-radius: 10px;
+  height: 400px;
+  width: 400px;
+  background: #e9ecef;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (min-width: 992px) {
+  .pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-image-drop-zone {
+    max-width: 400px;
+  }
+}
+.pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-image-drop-zone p {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+.pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-image-drop-zone.pd-admin-form-1-image-drop-zone-small {
+  width: 200px;
+  height: 200px;
+}
+.pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested {
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #e9ecef;
+  background: #f8f9fa;
+}
+@media (min-width: 992px) {
+  .pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested {
+    max-width: 500px;
+  }
+}
+.pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested h2, .pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested .h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
 
 /* Custom CSS rules come here */

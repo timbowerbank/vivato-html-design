@@ -1,0 +1,98 @@
+// start .pd-admin-form-1
+.pd-admin-form-1 {
+    header {
+        a {
+            display: inline-block;
+            margin-bottom: 10px;
+            text-decoration: none;
+
+            &:before {
+                content: "< ";
+            }
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 1.8rem;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 0.9rem;
+        }
+    }
+
+    .pd-admin-form-1-body {
+        background: white;
+        border-radius: 10px;
+        border: 1px solid $gray-200;
+        padding: 18px;
+        max-width: 1200px;
+
+        form {
+            label {
+                font-weight: 700;
+                font-size: 0.9rem;
+            }
+
+            .pd-admin-form-1-short-field {
+                max-width: 240px!important;
+            }
+
+            .form-control {
+                @media (min-width: 992px) {
+                    max-width: 500px;
+                }
+            }
+
+            .form-select {
+                @media (min-width: 992px) {
+                    max-width: 400px;
+                }
+            }
+
+            .pd-admin-form-1-image-drop-zone {
+                border: 2px dashed $gray-600;
+                border-radius: 10px;
+                height: 400px;
+                width: 400px;
+                background: $gray-200;
+
+                @media (min-width: 992px) {
+                    max-width: 400px;
+                }
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                p {
+                    font-size: 0.8rem;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .pd-admin-form-1-image-drop-zone.pd-admin-form-1-image-drop-zone-small {
+                width: 200px;
+                height: 200px;
+            }
+
+            .pd-admin-form-1-nested {
+                border-radius: 10px;
+                padding: 20px;
+                border: 1px solid $gray-200;
+                background: $gray-100;
+
+                @media (min-width: 992px) {
+                    max-width: 500px;
+                }
+
+                h2 {
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
