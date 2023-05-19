@@ -20200,7 +20200,7 @@ textarea.form-control-lg {
           flex-direction: column;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: start;
+          justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -24756,6 +24756,172 @@ textarea.form-control-lg {
 .pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested h2, .pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested .h2 {
   font-size: 1.2rem;
   font-weight: 700;
+}
+.pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list {
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #e9ecef;
+  background: #f8f9fa;
+}
+@media (min-width: 992px) {
+  .pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list {
+    max-width: 500px;
+  }
+}
+.pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list h2, .pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list .h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list .pd-form-1-nested-list-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list .pd-form-1-nested-list-inner .pd-form-1-nested-list-item {
+  min-height: 60px;
+  border-radius: 10px;
+  border: 1px solid #e9ecef;
+  overflow: hidden;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list .pd-form-1-nested-list-inner .pd-form-1-nested-list-item .pd-form-1-nested-list-item-img-outer {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  position: relative;
+}
+@media (max-width: 575px) {
+  .pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list .pd-form-1-nested-list-inner .pd-form-1-nested-list-item .pd-form-1-nested-list-item-img-outer {
+    display: none;
+  }
+}
+.pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list .pd-form-1-nested-list-inner .pd-form-1-nested-list-item .pd-form-1-nested-list-item-img-outer img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+.pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list .pd-form-1-nested-list-inner .pd-form-1-nested-list-item .pd-form-1-nested-list-item-body {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  overflow-x: hidden;
+}
+.pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list .pd-form-1-nested-list-inner .pd-form-1-nested-list-item .pd-form-1-nested-list-item-body h3, .pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list .pd-form-1-nested-list-inner .pd-form-1-nested-list-item .pd-form-1-nested-list-item-body .h3 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+.pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list .pd-form-1-nested-list-inner .pd-form-1-nested-list-item .pd-form-1-nested-list-item-body p {
+  margin-bottom: 0px;
+  font-size: 0.8rem;
+}
+@media (max-width: 575px) {
+  .pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list .pd-form-1-nested-list-inner .pd-form-1-nested-list-item .pd-form-1-nested-list-item-body p {
+    display: none;
+  }
+}
+.pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list .pd-form-1-nested-list-inner .pd-form-1-nested-list-item .pd-form-1-nested-list-item-buttons {
+  width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 7px;
+}
+.pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list .pd-form-1-nested-list-inner .pd-form-1-nested-list-item .pd-form-1-nested-list-item-buttons .pd-form-1-nested-list-item-view-outer {
+  width: 40px;
+  padding: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list .pd-form-1-nested-list-inner .pd-form-1-nested-list-item .pd-form-1-nested-list-item-buttons .pd-form-1-nested-list-item-btn-outer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list .pd-form-1-nested-list-inner .pd-form-1-nested-list-item .pd-form-1-nested-list-item-buttons .pd-form-1-nested-list-item-btn-outer .pd-form-1-nested-list-item-btn {
+  width: 30px;
+  height: 30px;
+  padding: 4px;
+  margin: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #6c757d;
+  border-radius: 3px;
+}
+.pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list footer {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .pd-admin-dashboard-1 header a {
   display: inline-block;
