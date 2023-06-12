@@ -24649,19 +24649,19 @@ textarea.form-control-lg {
   line-height: 1.5;
   margin-bottom: 0px;
 }
-.pd-admin-form-1 header a {
+.pd-admin-form-1 > header a {
   display: inline-block;
   margin-bottom: 10px;
   text-decoration: none;
 }
-.pd-admin-form-1 header a:before {
+.pd-admin-form-1 > header a:before {
   content: "< ";
 }
-.pd-admin-form-1 header h1, .pd-admin-form-1 header .h1 {
+.pd-admin-form-1 > header h1, .pd-admin-form-1 > header .h1 {
   font-weight: 700;
   font-size: 1.8rem;
 }
-.pd-admin-form-1 header p {
+.pd-admin-form-1 > header p {
   font-weight: 300;
   font-size: 0.9rem;
 }
@@ -24780,6 +24780,14 @@ textarea.form-control-lg {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+.pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list .pd-form-1-nested-list-inner h2, .pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list .pd-form-1-nested-list-inner .h2 {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list .pd-form-1-nested-list-inner p {
+  font-weight: 300;
+  font-size: 0.9rem;
 }
 .pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list .pd-form-1-nested-list-inner .pd-form-1-nested-list-item {
   min-height: 60px;
@@ -24910,7 +24918,104 @@ textarea.form-control-lg {
   background-color: #6c757d;
   border-radius: 3px;
 }
+.pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list .pd-form-1-nested-list-inner .pd-form-1-nested-list-item .pd-form-1-nested-list-item-buttons.alternative-card {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
 .pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list footer {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list-img-loader {
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #e9ecef;
+  background: #f8f9fa;
+}
+@media (min-width: 992px) {
+  .pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list-img-loader {
+    max-width: 500px;
+  }
+}
+.pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list-img-loader h2, .pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list-img-loader .h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list-img-loader .pd-form-1-nested-list-img-loader-list-body .pd-form-1-nested-list-img-loader-list-item {
+  padding: 20px;
+  padding-top: 48px;
+  background-color: #fff;
+  border-radius: 10px;
+  min-height: 40px;
+  border: 1px solid #e9ecef;
+  position: relative;
+}
+.pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list-img-loader .pd-form-1-nested-list-img-loader-list-body .pd-form-1-nested-list-img-loader-list-item .pd-form-1-nested-list-img-loader-list-item-header {
+  position: absolute;
+  height: 36px;
+  width: 120px;
+  top: 20px;
+  right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list-img-loader .pd-form-1-nested-list-img-loader-list-body .pd-form-1-nested-list-img-loader-list-item .pd-form-1-nested-list-img-loader-list-item-header a {
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 3px;
+}
+.pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list-img-loader .pd-form-1-nested-list-img-loader-list-body .pd-form-1-nested-list-img-loader-list-item .pd-form-1-nested-list-img-loader-list-item-header .pd-form-1-nested-list-img-loader-item-btn-outer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list-img-loader .pd-form-1-nested-list-img-loader-list-body .pd-form-1-nested-list-img-loader-list-item .pd-form-1-nested-list-img-loader-list-item-header .pd-form-1-nested-list-img-loader-item-btn-outer .pd-form-1-nested-list-item-btn {
+  width: 30px;
+  height: 30px;
+  padding: 4px;
+  margin: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #6c757d;
+  border-radius: 3px;
+}
+.pd-admin-form-1 .pd-admin-form-1-body form .pd-admin-form-1-nested-list-img-loader footer {
   padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;

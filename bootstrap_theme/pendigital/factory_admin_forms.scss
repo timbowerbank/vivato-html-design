@@ -1,6 +1,6 @@
 // start .pd-admin-form-1
 .pd-admin-form-1 {
-    header {
+    & > header {
         a {
             display: inline-block;
             margin-bottom: 10px;
@@ -130,6 +130,16 @@
                     display: flex;
                     flex-direction: column;
 
+                    h2 {
+                        font-weight: 700;
+                        font-size: 1.2rem;
+                    }
+
+                    p {
+                        font-weight: 300;
+                        font-size: 0.9rem;
+                    }
+
                     .pd-form-1-nested-list-item {
                         min-height: 60px;
                         border-radius: 10px;
@@ -204,6 +214,81 @@
                             }
 
                             .pd-form-1-nested-list-item-btn-outer {
+                                display: flex;
+                                flex-direction: row;
+
+                                .pd-form-1-nested-list-item-btn {
+                                    width: 30px;
+                                    height: 30px;
+                                    padding: 4px;
+                                    margin: 3px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    background-color: $gray-600;
+                                    border-radius: 3px;
+                                }
+                            }
+                        }
+
+                        .pd-form-1-nested-list-item-buttons.alternative-card {
+                            justify-content: end;
+                        }
+                    }
+                }
+
+                footer {
+                    padding-top: 20px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                }
+            }
+
+            .pd-admin-form-1-nested-list-img-loader {
+                border-radius: 10px;
+                padding: 20px;
+                border: 1px solid $gray-200;
+                background: $gray-100;
+
+                @media (min-width: 992px) {
+                    max-width: 500px;
+                }
+
+                h2 {
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                }
+
+                .pd-form-1-nested-list-img-loader-list-body {
+                    .pd-form-1-nested-list-img-loader-list-item {
+                        padding: 20px;
+                        padding-top: 48px;
+                        background-color: $white;
+                        border-radius: 10px;
+                        min-height: 40px;
+                        border: 1px solid $gray-200;
+                        position: relative;
+
+                        .pd-form-1-nested-list-img-loader-list-item-header {
+                            position: absolute;
+                            height: 36px;
+                            width: 120px;
+                            top: 20px;
+                            right: 20px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-end;
+                            align-items: center;
+
+                            a {
+                                display: inline-block;
+                                cursor: pointer;
+                                margin-left: 3px;
+                            }
+
+                            .pd-form-1-nested-list-img-loader-item-btn-outer {
                                 display: flex;
                                 flex-direction: row;
 
