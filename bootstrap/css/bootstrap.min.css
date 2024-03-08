@@ -16373,6 +16373,12 @@ textarea.form-control-lg {
   background: linear-gradient(rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.9) 100%);
   color: #fff;
 }
+.pd-cards-9 .pd-cards-9-img {
+  width: 100%;
+  max-width: 280px;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
 .pd-cards-9 .pd-cards-9-label {
   font-size: 0.7rem;
   font-weight: 700;
@@ -16446,6 +16452,9 @@ textarea.form-control-lg {
   border-color: #ffffff;
   padding: 24px;
 }
+.pd-cards-9 .pd-cards-9-sub-card .pd-cards-9-sub-card-header {
+  max-width: 240px;
+}
 .pd-cards-9 .pd-cards-9-sub-card .pd-cards-9-sub-card-header h3, .pd-cards-9 .pd-cards-9-sub-card .pd-cards-9-sub-card-header .h3 {
   margin-top: 20px;
   color: #000;
@@ -16456,9 +16465,10 @@ textarea.form-control-lg {
   display: inline-block;
 }
 .pd-cards-9 .pd-cards-9-sub-card .pd-cards-9-sub-card-header a img {
+  height: 70px;
   margin-right: 12px;
-  min-width: 40px;
-  max-height: 60px;
+  max-width: 240px;
+  margin-bottom: 6px;
 }
 .pd-cards-9 .pd-cards-9-sub-card .pd-cards-9-sub-card-header a:focus {
   outline: 2px dotted #17A9E6;
@@ -16483,7 +16493,7 @@ textarea.form-control-lg {
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
-  margin-bottom: 4px;
+  margin-bottom: 10px;
   font-weight: 700;
   color: #17A9E6;
   font-size: 0.8rem;
