@@ -1122,3 +1122,146 @@
         }
     }
 }
+
+.pd-cards-11 {
+    .pd-cards-11-svg-outer {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        img {
+            width: 100%
+        }
+    }
+
+    .pd-cards-11-label {
+        font-size: 0.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-cards-11-headline {
+        font-size: 2.4rem;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-cards-11-leading-para {
+        font-size: 1.4rem;
+        line-height: 1.8;
+        font-weight: 300;
+        padding-bottom: 10px;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-cards-11-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        @media (max-width: 767px) {
+            align-items: center;
+        }
+
+        @media (min-width: 768px) {
+            align-items: flex-start;
+        }
+
+        .pd-cards-11-sub-cards-outer {
+            width: 100%;
+            display: flex;
+
+            @media (max-width: 991px) {
+                flex-direction: column;
+            }
+
+            @media (min-width: 992px) {
+                flex-direction: row;
+            }
+
+            .pd-cards-11-card {
+                border: 1px solid $gray-400;
+                padding: 16px;
+
+                @media (max-width: 991px) {
+                    flex: 1 0 100%;
+                }
+
+                @media (min-width: 992px) {
+                    flex: 1 1 50%;
+
+                    &:first-child {
+                        margin-right: 16px;
+                    }
+                }
+
+                .pd-cards-11-card-svg-link {
+                    display: inline-block;
+
+                    img {
+                        width: 100%;
+                        height: 40px
+                    }
+                }
+
+                h3 {
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                    margin-bottom: 0px;
+                    line-height: 1.8
+                }
+
+                p {
+                    font-size: 0.9rem;
+                    font-weight: 300;
+                    color: $gray-800;
+                    line-height: 1.8;
+                }
+            }
+        }
+    }
+
+    .pd-cards-11-link {
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-weight: 700;
+        color: $primary;
+        font-size: 0.8rem;
+
+        span {
+            &:before {
+                content: ">";
+                padding-right: 4px;
+                color: $primary;
+            }
+        }
+    }
+
+    .pd-cards-11-btn {
+        background: $info;
+        padding: 10px 20px;
+        border-radius: 50rem;
+        color: $white;
+        text-decoration: none;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        font-weight: 700;
+        transition: background 0.4s;
+
+        &:hover {
+            background: darken($info, 10%);
+        }
+    }
+}
