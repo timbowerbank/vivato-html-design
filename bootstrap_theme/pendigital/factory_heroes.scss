@@ -1238,6 +1238,12 @@
         object-fit: cover;
         object-position: center center;
         z-index: 0;
+        opacity: 0;
+        transition: opacity 0.4s;
+    }
+
+    .pd-hero-13-img.pd-hero-13-img-loaded {
+        opacity: 1;
     }
 
     .pd-hero-13-img-overlay {

@@ -14436,6 +14436,13 @@ textarea.form-control-lg {
   -o-object-position: center center;
      object-position: center center;
   z-index: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+.pd-hero-13 .pd-hero-13-img.pd-hero-13-img-loaded {
+  opacity: 1;
 }
 .pd-hero-13 .pd-hero-13-img-overlay {
   position: absolute;
@@ -14456,7 +14463,7 @@ textarea.form-control-lg {
 .pd-hero-13 .pd-hero-13-content-outer {
   margin-top: 100px;
   margin-bottom: 100px;
-  padding: 60px 30px;
+  padding: 70px 30px;
   background-color: rgba(255, 255, 255, 0.7);
 }
 .pd-hero-13 .pd-hero-13-content-outer h1, .pd-hero-13 .pd-hero-13-content-outer .h1 {
