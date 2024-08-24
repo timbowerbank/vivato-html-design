@@ -2296,14 +2296,12 @@ progress {
   border-radius: 0.25rem;
   -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .form-control {
     -webkit-transition: none;
-    -o-transition: none;
     transition: none;
   }
 }
@@ -2363,14 +2361,12 @@ progress {
   border-radius: 0;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .form-control::file-selector-button {
     -webkit-transition: none;
-    -o-transition: none;
     transition: none;
   }
 }
@@ -2614,13 +2610,11 @@ textarea.form-control-lg {
   background-position: left center;
   border-radius: 2em;
   -webkit-transition: background-position 0.15s ease-in-out;
-  -o-transition: background-position 0.15s ease-in-out;
   transition: background-position 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .form-switch .form-check-input {
     -webkit-transition: none;
-    -o-transition: none;
     transition: none;
   }
 }
@@ -2763,14 +2757,12 @@ textarea.form-control-lg {
           transform-origin: 0 0;
   -webkit-transition: opacity 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
   transition: opacity 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
-  -o-transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
   transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
   transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .form-floating > label {
     -webkit-transition: none;
-    -o-transition: none;
     transition: none;
   }
 }
@@ -3112,14 +3104,12 @@ textarea.form-control-lg {
   border-radius: 0.25rem;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .btn {
     -webkit-transition: none;
-    -o-transition: none;
     transition: none;
   }
 }
@@ -3634,13 +3624,11 @@ textarea.form-control-lg {
 
 .fade {
   -webkit-transition: opacity 0.15s linear;
-  -o-transition: opacity 0.15s linear;
   transition: opacity 0.15s linear;
 }
 @media (prefers-reduced-motion: reduce) {
   .fade {
     -webkit-transition: none;
-    -o-transition: none;
     transition: none;
   }
 }
@@ -3655,13 +3643,11 @@ textarea.form-control-lg {
   height: 0;
   overflow: hidden;
   -webkit-transition: height 0.35s ease;
-  -o-transition: height 0.35s ease;
   transition: height 0.35s ease;
 }
 @media (prefers-reduced-motion: reduce) {
   .collapsing {
     -webkit-transition: none;
-    -o-transition: none;
     transition: none;
   }
 }
@@ -4093,13 +4079,11 @@ textarea.form-control-lg {
   color: #17A9E6;
   text-decoration: none;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
     -webkit-transition: none;
-    -o-transition: none;
     transition: none;
   }
 }
@@ -4269,14 +4253,12 @@ textarea.form-control-lg {
   border-radius: 0.25rem;
   -webkit-transition: -webkit-box-shadow 0.15s ease-in-out;
   transition: -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition: box-shadow 0.15s ease-in-out;
   transition: box-shadow 0.15s ease-in-out;
   transition: box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
     -webkit-transition: none;
-    -o-transition: none;
     transition: none;
   }
 }
@@ -4772,14 +4754,12 @@ textarea.form-control-lg {
   overflow-anchor: none;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, border-radius 0.15s ease, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, border-radius 0.15s ease, -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease, -webkit-box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .accordion-button {
     -webkit-transition: none;
-    -o-transition: none;
     transition: none;
   }
 }
@@ -4807,14 +4787,12 @@ textarea.form-control-lg {
   background-size: 1.25rem;
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
   transition: -webkit-transform 0.2s ease-in-out;
-  -o-transition: transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .accordion-button::after {
     -webkit-transition: none;
-    -o-transition: none;
     transition: none;
   }
 }
@@ -4922,14 +4900,12 @@ textarea.form-control-lg {
   border: 1px solid #dee2e6;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .page-link {
     -webkit-transition: none;
-    -o-transition: none;
     transition: none;
   }
 }
@@ -5158,19 +5134,16 @@ textarea.form-control-lg {
   white-space: nowrap;
   background-color: #17A9E6;
   -webkit-transition: width 0.6s ease;
-  -o-transition: width 0.6s ease;
   transition: width 0.6s ease;
 }
 @media (prefers-reduced-motion: reduce) {
   .progress-bar {
     -webkit-transition: none;
-    -o-transition: none;
     transition: none;
   }
 }
 
 .progress-bar-striped {
-  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-size: 1rem 1rem;
 }
@@ -5667,7 +5640,6 @@ textarea.form-control-lg {
 .modal.fade .modal-dialog {
   -webkit-transition: -webkit-transform 0.3s ease-out;
   transition: -webkit-transform 0.3s ease-out;
-  -o-transition: transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
   -webkit-transform: translate(0, -50px);
@@ -5677,7 +5649,6 @@ textarea.form-control-lg {
 @media (prefers-reduced-motion: reduce) {
   .modal.fade .modal-dialog {
     -webkit-transition: none;
-    -o-transition: none;
     transition: none;
   }
 }
@@ -6220,14 +6191,12 @@ textarea.form-control-lg {
           backface-visibility: hidden;
   -webkit-transition: -webkit-transform 0.6s ease-in-out;
   transition: -webkit-transform 0.6s ease-in-out;
-  -o-transition: transform 0.6s ease-in-out;
   transition: transform 0.6s ease-in-out;
   transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
     -webkit-transition: none;
-    -o-transition: none;
     transition: none;
   }
 }
@@ -6257,7 +6226,6 @@ textarea.form-control-lg {
 .carousel-fade .carousel-item {
   opacity: 0;
   -webkit-transition-property: opacity;
-  -o-transition-property: opacity;
   transition-property: opacity;
   -webkit-transform: none;
       -ms-transform: none;
@@ -6274,14 +6242,12 @@ textarea.form-control-lg {
   z-index: 0;
   opacity: 0;
   -webkit-transition: opacity 0s 0.6s;
-  -o-transition: opacity 0s 0.6s;
   transition: opacity 0s 0.6s;
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-fade .active.carousel-item-start,
 .carousel-fade .active.carousel-item-end {
     -webkit-transition: none;
-    -o-transition: none;
     transition: none;
   }
 }
@@ -6309,14 +6275,12 @@ textarea.form-control-lg {
   border: 0;
   opacity: 0.5;
   -webkit-transition: opacity 0.15s ease;
-  -o-transition: opacity 0.15s ease;
   transition: opacity 0.15s ease;
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-control-prev,
 .carousel-control-next {
     -webkit-transition: none;
-    -o-transition: none;
     transition: none;
   }
 }
@@ -6401,13 +6365,11 @@ textarea.form-control-lg {
   border-bottom: 10px solid transparent;
   opacity: 0.5;
   -webkit-transition: opacity 0.6s ease;
-  -o-transition: opacity 0.6s ease;
   transition: opacity 0.6s ease;
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-indicators [data-bs-target] {
     -webkit-transition: none;
-    -o-transition: none;
     transition: none;
   }
 }
@@ -6533,14 +6495,12 @@ textarea.form-control-lg {
   outline: 0;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   transition: -webkit-transform 0.3s ease-in-out;
-  -o-transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .offcanvas {
     -webkit-transition: none;
-    -o-transition: none;
     transition: none;
   }
 }
@@ -6799,8 +6759,7 @@ textarea.form-control-lg {
 
 .text-truncate {
   overflow: hidden;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
@@ -11055,7 +11014,6 @@ textarea.form-control-lg {
   text-decoration: none;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -11071,7 +11029,6 @@ textarea.form-control-lg {
 .pd-topBar-1 .pd-topBar-1-social-icon {
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -11093,7 +11050,6 @@ textarea.form-control-lg {
   text-decoration: none;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -11109,7 +11065,6 @@ textarea.form-control-lg {
 .pd-topBar-2 .pd-topBar-1-social-icon {
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -11125,7 +11080,6 @@ textarea.form-control-lg {
   }
 }
 .pd-topBar-3 {
-  background: -o-linear-gradient(bottom, rgb(67, 58, 108) 0%, rgb(67, 58, 108) 84%, rgba(67, 58, 108, 0.8995973389) 100%);
   background: -webkit-gradient(linear, left bottom, left top, from(rgb(67, 58, 108)), color-stop(84%, rgb(67, 58, 108)), to(rgba(67, 58, 108, 0.8995973389)));
   background: linear-gradient(0deg, rgb(67, 58, 108) 0%, rgb(67, 58, 108) 84%, rgba(67, 58, 108, 0.8995973389) 100%);
 }
@@ -11136,7 +11090,6 @@ textarea.form-control-lg {
   text-decoration: none;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -11152,7 +11105,6 @@ textarea.form-control-lg {
 .pd-topBar-3 .pd-topBar-1-social-icon {
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -11177,7 +11129,6 @@ textarea.form-control-lg {
   text-decoration: none;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -11188,7 +11139,6 @@ textarea.form-control-lg {
 .pd-topBar-4 .pd-topBar-4-social-icon {
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -11218,14 +11168,12 @@ textarea.form-control-lg {
   font-weight: 700;
   background-color: #00CC66;
   -webkit-transition: background-color 0.4;
-  -o-transition: background-color 0.4;
   transition: background-color 0.4;
   cursor: pointer;
 }
 .pd-topBar-4 .pd-topBar-4-btn span {
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -11253,7 +11201,6 @@ textarea.form-control-lg {
   text-decoration: none;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
   color: #fff;
@@ -11265,7 +11212,6 @@ textarea.form-control-lg {
 .pd-topBar-5 .pd-topBar-5-social-icon {
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -11295,14 +11241,12 @@ textarea.form-control-lg {
   font-weight: 700;
   background-color: #00CC66;
   -webkit-transition: background-color 0.4;
-  -o-transition: background-color 0.4;
   transition: background-color 0.4;
   cursor: pointer;
 }
 .pd-topBar-5 .pd-topBar-5-btn span {
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -11335,7 +11279,6 @@ textarea.form-control-lg {
   text-decoration: none;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -11346,7 +11289,6 @@ textarea.form-control-lg {
 .pd-topBar-6 .pd-topBar-6-social-icon {
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -11373,7 +11315,6 @@ textarea.form-control-lg {
           align-items: center;
   font-weight: 700;
   -webkit-transition: background-color 0.4;
-  -o-transition: background-color 0.4;
   transition: background-color 0.4;
   cursor: pointer;
   border-left: 1px solid #dee2e6;
@@ -11382,7 +11323,6 @@ textarea.form-control-lg {
 .pd-topBar-6 .pd-topBar-6-btn span {
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -11415,7 +11355,6 @@ textarea.form-control-lg {
   text-decoration: none;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -11431,7 +11370,6 @@ textarea.form-control-lg {
 .pd-topBar-7 .pd-topBar-7-social-icon {
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -11536,7 +11474,6 @@ textarea.form-control-lg {
   font-size: 0.9rem;
   color: #17A9E6;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-mainNav-1 .pd-mainNav-inner-1 a:hover {
@@ -11589,7 +11526,6 @@ textarea.form-control-lg {
   padding-bottom: 10px;
   background-color: #493bb3;
   -webkit-transition: background-color 0.4s !important;
-  -o-transition: background-color 0.4s !important;
   transition: background-color 0.4s !important;
 }
 .pd-mainNav-1 .dropdown-item:hover {
@@ -11662,7 +11598,6 @@ textarea.form-control-lg {
   font-size: 0.8rem;
   color: #17A9E6;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -11720,7 +11655,6 @@ textarea.form-control-lg {
   padding-bottom: 10px;
   background-color: #493bb3;
   -webkit-transition: background-color 0.4s !important;
-  -o-transition: background-color 0.4s !important;
   transition: background-color 0.4s !important;
 }
 .pd-mainNav-2 .dropdown-item:hover {
@@ -11810,7 +11744,6 @@ textarea.form-control-lg {
   font-size: 0.9rem;
   color: #17A9E6;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-mainNav-3 .pd-mainNav-inner-3 a:hover {
@@ -11863,7 +11796,6 @@ textarea.form-control-lg {
   padding-bottom: 10px;
   background-color: #493bb3;
   -webkit-transition: background-color 0.4s !important;
-  -o-transition: background-color 0.4s !important;
   transition: background-color 0.4s !important;
 }
 .pd-mainNav-3 .dropdown-item:hover {
@@ -11937,7 +11869,6 @@ textarea.form-control-lg {
   font-size: 0.8rem;
   color: #fff;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -11995,7 +11926,6 @@ textarea.form-control-lg {
   padding-bottom: 10px;
   background-color: #493bb3;
   -webkit-transition: background-color 0.4s !important;
-  -o-transition: background-color 0.4s !important;
   transition: background-color 0.4s !important;
 }
 .pd-mainNav-4 .dropdown-item:hover {
@@ -12028,7 +11958,6 @@ textarea.form-control-lg {
   padding-top: 2px;
   padding-bottom: 2px;
   -webkit-transition: all 0.2s;
-  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 .pd-mainNav-5 a:focus {
@@ -12070,7 +11999,6 @@ textarea.form-control-lg {
   font-size: 0.8rem;
   color: #f7f7f7;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-mainNav-5 .pd-mainNav-inner-5 a:hover {
@@ -12123,7 +12051,6 @@ textarea.form-control-lg {
   padding-bottom: 10px;
   background-color: #493bb3;
   -webkit-transition: background-color 0.4s !important;
-  -o-transition: background-color 0.4s !important;
   transition: background-color 0.4s !important;
 }
 .pd-mainNav-5 .dropdown-item:hover {
@@ -12155,7 +12082,6 @@ textarea.form-control-lg {
   border: 1px solid #ebebeb !important;
   -webkit-transition: background 0.2s, border 0.2s, color 0.2s, -webkit-box-shadow 0.2s !important;
   transition: background 0.2s, border 0.2s, color 0.2s, -webkit-box-shadow 0.2s !important;
-  -o-transition: background 0.2s, border 0.2s, color 0.2s, box-shadow 0.2s !important;
   transition: background 0.2s, border 0.2s, color 0.2s, box-shadow 0.2s !important;
   transition: background 0.2s, border 0.2s, color 0.2s, box-shadow 0.2s, -webkit-box-shadow 0.2s !important;
 }
@@ -12203,7 +12129,6 @@ textarea.form-control-lg {
   position: relative;
   z-index: 1000;
   -webkit-transition: all 0.2s;
-  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 .pd-mainNav-6 a:focus {
@@ -12263,7 +12188,6 @@ textarea.form-control-lg {
   font-size: 0.8rem;
   color: #f7f7f7;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-mainNav-6 .pd-mainNav-inner-6 ul li a:hover {
@@ -12279,7 +12203,6 @@ textarea.form-control-lg {
   padding: 10px;
   color: #fff;
   -webkit-transition: background 0.4s;
-  -o-transition: background 0.4s;
   transition: background 0.4s;
 }
 .pd-mainNav-6 .pd-mainNav-inner-6 ul li a.pd-pageActive-6:hover {
@@ -12337,7 +12260,6 @@ textarea.form-control-lg {
   padding-bottom: 10px;
   background-color: #fff;
   -webkit-transition: background-color 0.4s !important;
-  -o-transition: background-color 0.4s !important;
   transition: background-color 0.4s !important;
 }
 .pd-mainNav-6 .pd-mainNav-inner-6 ul li ul li a.pd-dropdown-item:hover {
@@ -12378,7 +12300,6 @@ textarea.form-control-lg {
   margin-right: 10px;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -12487,7 +12408,6 @@ textarea.form-control-lg {
 .pd-mainNav-6 .pd-mainNav-inner-6.open ul li ul.pd-dropdown-menu.pd-show.pd-collapsing {
   overflow: hidden;
   -webkit-transition: height 0.35s;
-  -o-transition: height 0.35s;
   transition: height 0.35s;
   height: 0px;
 }
@@ -12538,7 +12458,6 @@ textarea.form-control-lg {
   border: 1px solid #ebebeb !important;
   -webkit-transition: background 0.2s, border 0.2s, color 0.2s, -webkit-box-shadow 0.2s !important;
   transition: background 0.2s, border 0.2s, color 0.2s, -webkit-box-shadow 0.2s !important;
-  -o-transition: background 0.2s, border 0.2s, color 0.2s, box-shadow 0.2s !important;
   transition: background 0.2s, border 0.2s, color 0.2s, box-shadow 0.2s !important;
   transition: background 0.2s, border 0.2s, color 0.2s, box-shadow 0.2s, -webkit-box-shadow 0.2s !important;
 }
@@ -12611,7 +12530,6 @@ textarea.form-control-lg {
   border: 1px solid #ebebeb !important;
   -webkit-transition: background 0.2s, border 0.2s, color 0.2s, -webkit-box-shadow 0.2s !important;
   transition: background 0.2s, border 0.2s, color 0.2s, -webkit-box-shadow 0.2s !important;
-  -o-transition: background 0.2s, border 0.2s, color 0.2s, box-shadow 0.2s !important;
   transition: background 0.2s, border 0.2s, color 0.2s, box-shadow 0.2s !important;
   transition: background 0.2s, border 0.2s, color 0.2s, box-shadow 0.2s, -webkit-box-shadow 0.2s !important;
 }
@@ -12628,7 +12546,6 @@ textarea.form-control-lg {
   position: relative;
   z-index: 1000;
   -webkit-transition: all 0.2s;
-  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 .pd-mainNav-7 a:focus {
@@ -12688,7 +12605,6 @@ textarea.form-control-lg {
   font-size: 0.8rem;
   color: #222222;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-mainNav-7 .pd-mainNav-inner-7 ul li a:hover {
@@ -12704,7 +12620,6 @@ textarea.form-control-lg {
   padding: 10px;
   color: #fff;
   -webkit-transition: background 0.4s;
-  -o-transition: background 0.4s;
   transition: background 0.4s;
 }
 .pd-mainNav-7 .pd-mainNav-inner-7 ul li a.pd-pageActive-7:hover {
@@ -12762,7 +12677,6 @@ textarea.form-control-lg {
   padding-bottom: 10px;
   background-color: #17A9E6;
   -webkit-transition: background-color 0.4s !important;
-  -o-transition: background-color 0.4s !important;
   transition: background-color 0.4s !important;
 }
 .pd-mainNav-7 .pd-mainNav-inner-7 ul li ul li a.pd-dropdown-item:hover {
@@ -12803,7 +12717,6 @@ textarea.form-control-lg {
   margin-right: 10px;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -12914,7 +12827,6 @@ textarea.form-control-lg {
 .pd-mainNav-7 .pd-mainNav-inner-7.open ul li ul.pd-dropdown-menu.pd-show.pd-collapsing {
   overflow: hidden;
   -webkit-transition: height 0.35s;
-  -o-transition: height 0.35s;
   transition: height 0.35s;
   height: 0px;
 }
@@ -12965,7 +12877,6 @@ textarea.form-control-lg {
   border: 1px solid #17A9E6 !important;
   -webkit-transition: background 0.2s, border 0.2s, color 0.2s, -webkit-box-shadow 0.2s !important;
   transition: background 0.2s, border 0.2s, color 0.2s, -webkit-box-shadow 0.2s !important;
-  -o-transition: background 0.2s, border 0.2s, color 0.2s, box-shadow 0.2s !important;
   transition: background 0.2s, border 0.2s, color 0.2s, box-shadow 0.2s !important;
   transition: background 0.2s, border 0.2s, color 0.2s, box-shadow 0.2s, -webkit-box-shadow 0.2s !important;
 }
@@ -13037,7 +12948,6 @@ textarea.form-control-lg {
   border: 1px solid #ebebeb !important;
   -webkit-transition: background 0.2s, border 0.2s, color 0.2s, -webkit-box-shadow 0.2s !important;
   transition: background 0.2s, border 0.2s, color 0.2s, -webkit-box-shadow 0.2s !important;
-  -o-transition: background 0.2s, border 0.2s, color 0.2s, box-shadow 0.2s !important;
   transition: background 0.2s, border 0.2s, color 0.2s, box-shadow 0.2s !important;
   transition: background 0.2s, border 0.2s, color 0.2s, box-shadow 0.2s, -webkit-box-shadow 0.2s !important;
 }
@@ -13055,14 +12965,11 @@ textarea.form-control-lg {
   cursor: pointer;
   -webkit-transition-property: opacity, -webkit-filter;
   transition-property: opacity, -webkit-filter;
-  -o-transition-property: opacity, filter;
   transition-property: opacity, filter;
   transition-property: opacity, filter, -webkit-filter;
   -webkit-transition-duration: 0.15s;
-       -o-transition-duration: 0.15s;
           transition-duration: 0.15s;
   -webkit-transition-timing-function: linear;
-       -o-transition-timing-function: linear;
           transition-timing-function: linear;
   font: inherit;
   color: inherit;
@@ -13125,14 +13032,11 @@ textarea.form-control-lg {
   position: absolute;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
-  -o-transition-property: transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
   -webkit-transition-duration: 0.15s;
-       -o-transition-duration: 0.15s;
           transition-duration: 0.15s;
   -webkit-transition-timing-function: ease;
-       -o-transition-timing-function: ease;
           transition-timing-function: ease;
 }
 
@@ -13163,7 +13067,6 @@ textarea.form-control-lg {
 .hamburger--arrowalt .hamburger-inner::before {
   -webkit-transition: top 0.1s 0.1s ease, -webkit-transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: top 0.1s 0.1s ease, -webkit-transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
-  -o-transition: top 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: top 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: top 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -13171,7 +13074,6 @@ textarea.form-control-lg {
 .hamburger--arrowalt .hamburger-inner::after {
   -webkit-transition: bottom 0.1s 0.1s ease, -webkit-transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: bottom 0.1s 0.1s ease, -webkit-transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
-  -o-transition: bottom 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: bottom 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: bottom 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -13182,7 +13084,6 @@ textarea.form-control-lg {
           transform: translate3d(-8px, -10px, 0) rotate(-45deg) scale(0.7, 1);
   -webkit-transition: top 0.1s ease, -webkit-transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
   transition: top 0.1s ease, -webkit-transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
-  -o-transition: top 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
   transition: top 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
   transition: top 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22), -webkit-transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
@@ -13193,14 +13094,12 @@ textarea.form-control-lg {
           transform: translate3d(-8px, 10px, 0) rotate(45deg) scale(0.7, 1);
   -webkit-transition: bottom 0.1s ease, -webkit-transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
   transition: bottom 0.1s ease, -webkit-transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
-  -o-transition: bottom 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
   transition: bottom 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
   transition: bottom 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22), -webkit-transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 
 /* purgecss end ignore */
 .pd-hero-1 {
-  background: -o-linear-gradient(top, #17A9E6, #1287b8);
   background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));
   background: linear-gradient(180deg, #17A9E6, #1287b8);
 }
@@ -13243,7 +13142,6 @@ textarea.form-control-lg {
 .pd-hero-1 div.pd-hero-image-1-outer img.pd-hero-image-1 {
   opacity: 0;
   -webkit-transition: opacity 0.4s;
-  -o-transition: opacity 0.4s;
   transition: opacity 0.4s;
   width: 100%;
   background: rgba(255, 255, 255, 0.176);
@@ -13300,7 +13198,6 @@ textarea.form-control-lg {
 }
 
 .pd-hero-2 {
-  background: -o-linear-gradient(top, #17A9E6, #1287b8);
   background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));
   background: linear-gradient(180deg, #17A9E6, #1287b8);
   min-height: 80vh;
@@ -13384,7 +13281,6 @@ textarea.form-control-lg {
 .pd-hero-2 div.pd-hero-image-2-outer img.pd-hero-image-2 {
   opacity: 0;
   -webkit-transition: opacity 0.4s;
-  -o-transition: opacity 0.4s;
   transition: opacity 0.4s;
   width: 100%;
   background: rgba(255, 255, 255, 0.176);
@@ -13440,7 +13336,6 @@ textarea.form-control-lg {
 .pd-hero-3 {
   border-top: 1px solid #dee2e6;
   border-bottom: 1px solid #dee2e6;
-  background: -o-linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), color-stop(20%, #f9f9f9), color-stop(90%, #f9f9f9), to(#f7f7f7));
   background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
   min-height: 80vh;
@@ -13530,7 +13425,6 @@ textarea.form-control-lg {
 .pd-hero-3 div.pd-hero-image-3-outer img.pd-hero-image-3 {
   opacity: 0;
   -webkit-transition: opacity 0.4s;
-  -o-transition: opacity 0.4s;
   transition: opacity 0.4s;
   width: 100%;
   background: rgba(0, 0, 0, 0.7);
@@ -13586,7 +13480,6 @@ textarea.form-control-lg {
 .pd-hero-4 {
   border-top: 1px solid #e9ecef;
   border-bottom: 1px solid #e9ecef;
-  background: -o-linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), color-stop(20%, #f9f9f9), color-stop(90%, #f9f9f9), to(#f7f7f7));
   background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
 }
@@ -13626,7 +13519,6 @@ textarea.form-control-lg {
 .pd-hero-4 .pd-hero-4-image {
   opacity: 0;
   -webkit-transition: opacity 0.4s;
-  -o-transition: opacity 0.4s;
   transition: opacity 0.4s;
 }
 .pd-hero-4 .pd-hero-4-image.pd-hero-image-4-loaded {
@@ -13678,7 +13570,6 @@ textarea.form-control-lg {
 }
 
 .pd-hero-5 {
-  background: -o-linear-gradient(top, #17A9E6, #1287b8);
   background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));
   background: linear-gradient(180deg, #17A9E6, #1287b8);
 }
@@ -13718,7 +13609,6 @@ textarea.form-control-lg {
 .pd-hero-5 .pd-hero-5-image {
   opacity: 0;
   -webkit-transition: opacity 0.4s;
-  -o-transition: opacity 0.4s;
   transition: opacity 0.4s;
 }
 .pd-hero-5 .pd-hero-5-image.pd-hero-image-5-loaded {
@@ -13835,7 +13725,6 @@ textarea.form-control-lg {
      object-position: center center;
   opacity: 0;
   -webkit-transition: opacity 0.4s;
-  -o-transition: opacity 0.4s;
   transition: opacity 0.4s;
 }
 .pd-hero-6 .pd-hero-6-image.pd-hero-image-6-loaded {
@@ -13845,7 +13734,6 @@ textarea.form-control-lg {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: -o-linear-gradient(#000 0%, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0.8) 60%, #000 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(40%, rgba(0, 0, 0, 0.8)), color-stop(60%, rgba(0, 0, 0, 0.8)), to(#000));
   background: linear-gradient(#000 0%, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0.8) 60%, #000 100%);
   opacity: 0.7;
@@ -13896,7 +13784,6 @@ textarea.form-control-lg {
 }
 
 .pd-hero-7 {
-  background: -o-linear-gradient(top, #17A9E6, #1287b8);
   background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));
   background: linear-gradient(180deg, #17A9E6, #1287b8);
 }
@@ -13987,7 +13874,6 @@ textarea.form-control-lg {
 .pd-hero-8 {
   border-top: 1px solid #e9ecef;
   border-bottom: 1px solid #e9ecef;
-  background: -o-linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), color-stop(20%, #f9f9f9), color-stop(90%, #f9f9f9), to(#f7f7f7));
   background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
 }
@@ -14104,7 +13990,6 @@ textarea.form-control-lg {
   width: 100%;
   opacity: 0;
   -webkit-transition: opacity 0.6s;
-  -o-transition: opacity 0.6s;
   transition: opacity 0.6s;
 }
 .pd-hero-9 .pd-hero-9-col-image .pd-hero-9-image-loaded {
@@ -14116,9 +14001,7 @@ textarea.form-control-lg {
   position: absolute;
   opacity: 0;
   -webkit-transition: opacity 0.6s;
-  -o-transition: opacity 0.6s;
   transition: opacity 0.6s;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.15) 40%, rgba(0, 0, 0, 0.15) 60%, rgba(0, 0, 0, 0.4) 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), color-stop(40%, rgba(0, 0, 0, 0.15)), color-stop(60%, rgba(0, 0, 0, 0.15)), to(rgba(0, 0, 0, 0.4)));
   background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.15) 40%, rgba(0, 0, 0, 0.15) 60%, rgba(0, 0, 0, 0.4) 100%);
 }
@@ -14191,7 +14074,6 @@ textarea.form-control-lg {
   z-index: 0;
   opacity: 0;
   -webkit-transition: opacity 0.4s;
-  -o-transition: opacity 0.4s;
   transition: opacity 0.4s;
 }
 .pd-hero-10 .pd-hero-10-img.pd-hero-10-img-loaded {
@@ -14203,7 +14085,6 @@ textarea.form-control-lg {
   position: absolute;
   top: 0;
   left: 0;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.8) 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), color-stop(40%, rgba(0, 0, 0, 0.6)), color-stop(60%, rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.8)));
   background: linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.8) 100%);
 }
@@ -14213,7 +14094,6 @@ textarea.form-control-lg {
   text-transform: uppercase;
   background: #00CC66;
   -webkit-transition: background 0.4s;
-  -o-transition: background 0.4s;
   transition: background 0.4s;
   margin: 20px;
   display: inline-block;
@@ -14237,7 +14117,6 @@ textarea.form-control-lg {
   font-weight: 700;
   display: inline-block;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
   text-transform: uppercase;
   text-decoration: none;
@@ -14253,12 +14132,10 @@ textarea.form-control-lg {
 }
 
 .pd-hero-11 {
-  background: -o-linear-gradient(22deg, #5433FF 0%, #20BDFF 50%, #A5FECB 100%);
   background: linear-gradient(68deg, #5433FF 0%, #20BDFF 50%, #A5FECB 100%);
 }
 @media (max-width: 767px) {
   .pd-hero-11 {
-    background: -o-linear-gradient(225deg, #5433FF 0%, #20BDFF 50%, #A5FECB 100%);
     background: linear-gradient(225deg, #5433FF 0%, #20BDFF 50%, #A5FECB 100%);
   }
 }
@@ -14298,7 +14175,6 @@ textarea.form-control-lg {
   font-size: 0.7rem;
   font-weight: 700;
   -webkit-transition: background 0.4s;
-  -o-transition: background 0.4s;
   transition: background 0.4s;
 }
 .pd-hero-11 .pd-hero-11-btn:hover {
@@ -14312,7 +14188,6 @@ textarea.form-control-lg {
   padding-left: 20px;
   font-weight: 400;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 @media (max-width: 767px) {
@@ -14364,7 +14239,6 @@ textarea.form-control-lg {
   font-size: 0.7rem;
   font-weight: 700;
   -webkit-transition: background 0.4s;
-  -o-transition: background 0.4s;
   transition: background 0.4s;
 }
 .pd-hero-12 .pd-hero-12-btn:hover {
@@ -14377,7 +14251,6 @@ textarea.form-control-lg {
   padding-left: 20px;
   font-weight: 400;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 @media (max-width: 767px) {
@@ -14414,7 +14287,6 @@ textarea.form-control-lg {
   height: 100%;
   left: 0;
   top: 0;
-  background: -o-linear-gradient(#000 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.6) 80%, #000 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(40%, rgba(0, 0, 0, 0.6)), color-stop(80%, rgba(0, 0, 0, 0.6)), to(#000));
   background: linear-gradient(#000 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.6) 80%, #000 100%);
   opacity: 0.1;
@@ -14438,7 +14310,6 @@ textarea.form-control-lg {
   z-index: 0;
   opacity: 0;
   -webkit-transition: opacity 0.4s;
-  -o-transition: opacity 0.4s;
   transition: opacity 0.4s;
 }
 .pd-hero-13 .pd-hero-13-img.pd-hero-13-img-loaded {
@@ -14451,7 +14322,6 @@ textarea.form-control-lg {
   z-index: 1;
   width: 100%;
   height: 100%;
-  background: -o-linear-gradient(#000 0%, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0.8) 80%, #000 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(40%, rgba(0, 0, 0, 0.8)), color-stop(80%, rgba(0, 0, 0, 0.8)), to(#000));
   background: linear-gradient(#000 0%, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0.8) 80%, #000 100%);
   opacity: 0.3;
@@ -14499,7 +14369,6 @@ textarea.form-control-lg {
   font-size: 0.7rem;
   font-weight: 700;
   -webkit-transition: background 0.4s;
-  -o-transition: background 0.4s;
   transition: background 0.4s;
 }
 .pd-hero-13 .pd-hero-13-content-outer .pd-hero-13-btn:hover {
@@ -14512,7 +14381,6 @@ textarea.form-control-lg {
   padding-left: 20px;
   font-weight: 400;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 @media (max-width: 767px) {
@@ -14528,6 +14396,63 @@ textarea.form-control-lg {
 }
 .pd-hero-13 .pd-hero-13-content-outer .pd-hero-13-img-thumbnail.pd-hero-13-img-thumbnail-right {
   margin-left: -20px;
+}
+
+.pd-hero-14 {
+  border-top: 2px solid #44687E;
+  border-bottom: 2px solid #44687E;
+}
+.pd-hero-14 .pd-hero-14-img-outer {
+  position: relative;
+  min-height: 400px;
+  height: 100%;
+  overflow: hidden;
+}
+.pd-hero-14 .pd-hero-14-img-outer img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+.pd-hero-14 h2, .pd-hero-14 .h2 {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.pd-hero-14 .pd-hero-14-card .pd-hero-14-card-icon {
+  font-size: 1.4rem;
+  color: #44687E;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30px;
+          flex: 0 0 30px;
+  line-height: 0.9;
+}
+.pd-hero-14 .pd-hero-14-card .pd-hero-14-card-label {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 40%;
+          flex: 1 0 40%;
+  max-width: 160px;
+  font-size: 0.85rem;
+}
+.pd-hero-14 .pd-hero-14-card .pd-hero-14-card-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 60%;
+          flex: 1 1 60%;
+  color: #44687E;
+  font-size: 1rem;
+  font-weight: 700;
+  font-style: italic;
+}
+.pd-hero-14 .pd-hero-14-card-divider {
+  margin-left: auto;
+  margin-right: auto;
+  height: 1px;
+  background-color: #44687E;
+  width: 65%;
+  margin-top: 18px;
+  margin-bottom: 18px;
 }
 .pd-heroesHalf-1 .pd-heroesHalf-1-text-outer {
   display: -webkit-box;
@@ -14605,7 +14530,6 @@ textarea.form-control-lg {
      object-position: center center;
   position: absolute;
   -webkit-transition: opacity 0.4s;
-  -o-transition: opacity 0.4s;
   transition: opacity 0.4s;
   opacity: 0;
 }
@@ -14618,14 +14542,12 @@ textarea.form-control-lg {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -o-linear-gradient(#000 0%, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0.8) 60%, #000 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(40%, rgba(0, 0, 0, 0.8)), color-stop(60%, rgba(0, 0, 0, 0.8)), to(#000));
   background: linear-gradient(#000 0%, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0.8) 60%, #000 100%);
   opacity: 0.7;
 }
 
 .pd-heroesHalf-2 {
-  background: -o-linear-gradient(top, #17A9E6, #1287b8);
   background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));
   background: linear-gradient(180deg, #17A9E6, #1287b8);
 }
@@ -14690,7 +14612,6 @@ textarea.form-control-lg {
 }
 
 .pd-heroesHalf-3 {
-  background: -o-linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), color-stop(20%, #f9f9f9), color-stop(90%, #f9f9f9), to(#f7f7f7));
   background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
 }
@@ -14846,7 +14767,6 @@ textarea.form-control-lg {
      object-position: center center;
   position: absolute;
   -webkit-transition: opacity 0.4s;
-  -o-transition: opacity 0.4s;
   transition: opacity 0.4s;
   opacity: 0;
 }
@@ -14859,7 +14779,6 @@ textarea.form-control-lg {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -o-linear-gradient(#000 0%, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0.8) 60%, #000 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(40%, rgba(0, 0, 0, 0.8)), color-stop(60%, rgba(0, 0, 0, 0.8)), to(#000));
   background: linear-gradient(#000 0%, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0.8) 60%, #000 100%);
   opacity: 0.7;
@@ -14958,7 +14877,6 @@ textarea.form-control-lg {
      object-position: center center;
   position: absolute;
   -webkit-transition: opacity 0.4s;
-  -o-transition: opacity 0.4s;
   transition: opacity 0.4s;
   opacity: 0;
 }
@@ -14971,14 +14889,12 @@ textarea.form-control-lg {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -o-linear-gradient(#000 0%, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0.8) 60%, #000 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(40%, rgba(0, 0, 0, 0.8)), color-stop(60%, rgba(0, 0, 0, 0.8)), to(#000));
   background: linear-gradient(#000 0%, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0.8) 60%, #000 100%);
   opacity: 0.7;
 }
 
 .pd-heroesHalf-6 {
-  background: -o-linear-gradient(top, #17A9E6, #1287b8);
   background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));
   background: linear-gradient(180deg, #17A9E6, #1287b8);
 }
@@ -15039,7 +14955,6 @@ textarea.form-control-lg {
 }
 
 .pd-heroesHalf-6-search {
-  background: -o-linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), color-stop(20%, #f9f9f9), color-stop(90%, #f9f9f9), to(#f7f7f7));
   background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
 }
@@ -15122,7 +15037,6 @@ textarea.form-control-lg {
   font-weight: 700;
   text-decoration: none;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-testimonial-1 .pd-testimonial-1-link:hover {
@@ -15135,7 +15049,6 @@ textarea.form-control-lg {
 }
 
 .pd-testimonial-2 {
-  background: -o-linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), color-stop(20%, #f9f9f9), color-stop(90%, #f9f9f9), to(#f7f7f7));
   background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
   border-top: 1px solid #dee2e6;
@@ -15188,7 +15101,6 @@ textarea.form-control-lg {
 }
 
 .pd-testimonial-3 {
-  background: -o-linear-gradient(top, #17A9E6, #1287b8);
   background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));
   background: linear-gradient(180deg, #17A9E6, #1287b8);
   border-top: 1px solid #dee2e6;
@@ -15270,7 +15182,6 @@ textarea.form-control-lg {
   color: #fff;
   text-decoration: none;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-testimonial-3 .pd-testimonial-3-link:hover {
@@ -15283,7 +15194,6 @@ textarea.form-control-lg {
 }
 
 .pd-testimonial-4 {
-  background: -o-linear-gradient(top, #17A9E6, #1287b8);
   background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));
   background: linear-gradient(180deg, #17A9E6, #1287b8);
   border-top: 1px solid #dee2e6;
@@ -15366,7 +15276,6 @@ textarea.form-control-lg {
   color: #fff;
   text-decoration: none;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-testimonial-4 .pd-testimonial-4-link:hover {
@@ -15400,7 +15309,6 @@ textarea.form-control-lg {
   left: 0px;
   height: 100%;
   width: 100%;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.7) 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), color-stop(30%, rgba(0, 0, 0, 0.6)), color-stop(70%, rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.7)));
   background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.7) 100%);
 }
@@ -15408,7 +15316,6 @@ textarea.form-control-lg {
 .pd-testimonial-5 {
   border-top: 1px solid #dee2e6;
   border-bottom: 1px solid #dee2e6;
-  background: -o-linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), color-stop(20%, #f9f9f9), color-stop(90%, #f9f9f9), to(#f7f7f7));
   background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
 }
@@ -15451,7 +15358,6 @@ textarea.form-control-lg {
   color: #17A9E6;
   text-decoration: none;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-testimonial-5 .pd-testimonial-5-link:hover {
@@ -15466,7 +15372,6 @@ textarea.form-control-lg {
 .pd-testimonial-6 {
   border-top: 1px solid #dee2e6;
   border-bottom: 1px solid #dee2e6;
-  background: -o-linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), color-stop(20%, #f9f9f9), color-stop(90%, #f9f9f9), to(#f7f7f7));
   background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
 }
@@ -15482,7 +15387,6 @@ textarea.form-control-lg {
   letter-spacing: 0.1em;
 }
 .pd-testimonial-6 .pd-testimonial-6-bubble {
-  background: -o-linear-gradient(#44bbec 0%, #17A9E6 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#44bbec), to(#17A9E6));
   background: linear-gradient(#44bbec 0%, #17A9E6 100%);
   border-radius: 5px;
@@ -15512,7 +15416,6 @@ textarea.form-control-lg {
   color: #17A9E6;
   text-decoration: none;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-testimonial-6 .pd-testimonial-6-link:hover {
@@ -15525,7 +15428,6 @@ textarea.form-control-lg {
 }
 
 .pd-testimonial-7 {
-  background: -o-linear-gradient(top, #17A9E6, #1287b8);
   background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));
   background: linear-gradient(180deg, #17A9E6, #1287b8);
   border-top: 1px solid #dee2e6;
@@ -15576,7 +15478,6 @@ textarea.form-control-lg {
   color: #fff;
   text-decoration: none;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-testimonial-7 .pd-testimonial-7-link:hover {
@@ -15610,7 +15511,6 @@ textarea.form-control-lg {
   left: 0px;
   height: 100%;
   width: 100%;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.8) 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), color-stop(30%, rgba(0, 0, 0, 0.6)), color-stop(70%, rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.8)));
   background: linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.8) 100%);
 }
@@ -15653,7 +15553,6 @@ textarea.form-control-lg {
   color: #00CC66;
   font-size: 0.8rem;
   -webkit-transition: background 0.4s;
-  -o-transition: background 0.4s;
   transition: background 0.4s;
 }
 .pd-testimonial-8 .pd-testimonial-8-btn:hover {
@@ -15667,7 +15566,6 @@ textarea.form-control-lg {
 }
 
 .pd-testimonial-9 {
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.9) 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), color-stop(50%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.9)));
   background: linear-gradient(rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.9) 100%);
   color: #fff;
@@ -15711,7 +15609,6 @@ textarea.form-control-lg {
   color: #fff;
   font-size: 0.8rem;
   -webkit-transition: background 0.4s;
-  -o-transition: background 0.4s;
   transition: background 0.4s;
 }
 .pd-testimonial-9 .pd-testimonial-9-btn:hover {
@@ -15725,7 +15622,6 @@ textarea.form-control-lg {
 }
 
 .pd-testimonial-10 {
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.9) 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), color-stop(50%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.9)));
   background: linear-gradient(rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.9) 100%);
   color: #fff;
@@ -15802,7 +15698,6 @@ textarea.form-control-lg {
   height: 100%;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -15824,7 +15719,6 @@ textarea.form-control-lg {
   color: #17A9E6;
   font-weight: 700;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-cards-1 .pd-cards-1-card-outer .pd-cards-1-footer p:after {
@@ -15848,7 +15742,6 @@ textarea.form-control-lg {
   text-decoration: none;
   color: #17A9E6;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-cards-1 .pd-cards-1-link:hover {
@@ -15929,7 +15822,6 @@ textarea.form-control-lg {
   text-decoration: none;
   color: #17A9E6;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-cards-2 .pd-cards-2-link:hover {
@@ -15994,7 +15886,6 @@ textarea.form-control-lg {
   height: 100%;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -16004,11 +15895,9 @@ textarea.form-control-lg {
   z-index: 1;
   width: 100%;
   height: 100%;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.7) 90%);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), color-stop(90%, rgba(0, 0, 0, 0.7)));
   background: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.7) 90%);
   -webkit-transition: background 0.4s;
-  -o-transition: background 0.4s;
   transition: background 0.4s;
 }
 .pd-cards-3 .pd-cards-3-outer .pd-cards-4-body {
@@ -16021,7 +15910,6 @@ textarea.form-control-lg {
   z-index: 2;
   -webkit-transition: margin-left 0.4s, -webkit-transform 0.4s;
   transition: margin-left 0.4s, -webkit-transform 0.4s;
-  -o-transition: transform 0.4s, margin-left 0.4s;
   transition: transform 0.4s, margin-left 0.4s;
   transition: transform 0.4s, margin-left 0.4s, -webkit-transform 0.4s;
 }
@@ -16041,7 +15929,6 @@ textarea.form-control-lg {
           transform: scale(1.1);
 }
 .pd-cards-3 .pd-cards-3-outer:hover .pd-cards-4-image-overlay {
-  background: -o-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.9)));
   background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
 }
@@ -16054,7 +15941,6 @@ textarea.form-control-lg {
   text-decoration: none;
   color: #17A9E6;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-cards-3 .pd-cards-3-link:hover {
@@ -16070,7 +15956,6 @@ textarea.form-control-lg {
   border-bottom: 1px solid #dee2e6;
   padding-top: 100px;
   padding-bottom: 100px;
-  background: -o-linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), color-stop(20%, #f9f9f9), color-stop(90%, #f9f9f9), to(#f7f7f7));
   background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
 }
@@ -16149,7 +16034,6 @@ textarea.form-control-lg {
   text-decoration: none;
   color: #17A9E6;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-cards-4 .pd-cards-4-link:hover {
@@ -16205,7 +16089,6 @@ textarea.form-control-lg {
   text-decoration: none;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -16248,7 +16131,6 @@ textarea.form-control-lg {
   text-transform: uppercase;
   margin-bottom: 0px;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-cards-5 .pd-cards-5-card-outer:hover {
@@ -16270,7 +16152,6 @@ textarea.form-control-lg {
   text-decoration: none;
   color: #17A9E6;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-cards-5 .pd-cards-5-link:hover {
@@ -16286,7 +16167,6 @@ textarea.form-control-lg {
   border-bottom: 1px solid #dee2e6;
   padding-top: 100px;
   padding-bottom: 100px;
-  background: -o-linear-gradient(top, #17A9E6, #1287b8);
   background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));
   background: linear-gradient(180deg, #17A9E6, #1287b8);
 }
@@ -16329,7 +16209,6 @@ textarea.form-control-lg {
   text-decoration: none;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -16372,7 +16251,6 @@ textarea.form-control-lg {
   text-transform: uppercase;
   margin-bottom: 0px;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-cards-6 .pd-cards-6-card-outer:hover {
@@ -16394,7 +16272,6 @@ textarea.form-control-lg {
   text-decoration: none;
   color: #fff;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-cards-6 .pd-cards-6-link:hover {
@@ -16425,7 +16302,6 @@ textarea.form-control-lg {
   text-align: center;
   padding: 20px;
   -webkit-transition: background-color 0.4s;
-  -o-transition: background-color 0.4s;
   transition: background-color 0.4s;
   border: 1px solid #fff;
 }
@@ -16444,7 +16320,6 @@ textarea.form-control-lg {
   width: 120px;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -16460,7 +16335,6 @@ textarea.form-control-lg {
   border-radius: 50rem;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -16511,7 +16385,6 @@ textarea.form-control-lg {
   text-align: center;
   padding: 20px;
   -webkit-transition: background-color 0.4s;
-  -o-transition: background-color 0.4s;
   transition: background-color 0.4s;
   border: 1px solid #fff;
 }
@@ -16541,7 +16414,6 @@ textarea.form-control-lg {
   padding: 6px 12px;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -16549,7 +16421,6 @@ textarea.form-control-lg {
   content: ">";
   padding-right: 12px;
   -webkit-transition: padding-right 0.2s;
-  -o-transition: padding-right 0.2s;
   transition: padding-right 0.2s;
 }
 .pd-cards-8 .pd-cards-8-outer:hover {
@@ -16566,7 +16437,6 @@ textarea.form-control-lg {
 }
 
 .pd-cards-9 {
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.9) 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), color-stop(50%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.9)));
   background: linear-gradient(rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.9) 100%);
   color: #fff;
@@ -16610,7 +16480,6 @@ textarea.form-control-lg {
   color: #fff;
   font-size: 0.8rem;
   -webkit-transition: background 0.4s;
-  -o-transition: background 0.4s;
   transition: background 0.4s;
 }
 .pd-cards-9 .pd-cards-9-btn:hover {
@@ -16753,7 +16622,6 @@ textarea.form-control-lg {
   font-size: 0.7rem;
   font-weight: 700;
   -webkit-transition: background 0.4s;
-  -o-transition: background 0.4s;
   transition: background 0.4s;
 }
 .pd-cards-10 .pd-cards-10-btn:hover {
@@ -16939,7 +16807,6 @@ textarea.form-control-lg {
   font-size: 0.7rem;
   font-weight: 700;
   -webkit-transition: background 0.4s;
-  -o-transition: background 0.4s;
   transition: background 0.4s;
 }
 .pd-cards-11 .pd-cards-11-btn:hover {
@@ -17000,7 +16867,6 @@ textarea.form-control-lg {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background: -o-linear-gradient(#000 0%, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.6) 80%, #000 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(30%, rgba(0, 0, 0, 0.4)), color-stop(80%, rgba(0, 0, 0, 0.6)), to(#000));
   background: linear-gradient(#000 0%, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.6) 80%, #000 100%);
   opacity: 0.6;
@@ -17054,7 +16920,6 @@ textarea.form-control-lg {
   position: absolute;
   width: 100%;
   min-height: 540px;
-  background: -o-linear-gradient(#000 0%, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.6) 80%, #000 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(30%, rgba(0, 0, 0, 0.4)), color-stop(80%, rgba(0, 0, 0, 0.6)), to(#000));
   background: linear-gradient(#000 0%, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.6) 80%, #000 100%);
   opacity: 0.6;
@@ -17065,7 +16930,6 @@ textarea.form-control-lg {
 .pd-section-3 {
   border-top: 1px solid #dee2e6;
   border-bottom: 1px solid #dee2e6;
-  background: -o-linear-gradient(#f8f9fa 0%, #fff 20%, #fff 80%, #f8f9fa 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#f8f9fa), color-stop(20%, #fff), color-stop(80%, #fff), to(#f8f9fa));
   background: linear-gradient(#f8f9fa 0%, #fff 20%, #fff 80%, #f8f9fa 100%);
 }
@@ -17174,7 +17038,6 @@ textarea.form-control-lg {
 .pd-section-5 {
   border-top: 1px solid #dee2e6;
   border-bottom: 1px solid #dee2e6;
-  background: -o-linear-gradient(top, #17A9E6, #1287b8);
   background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));
   background: linear-gradient(180deg, #17A9E6, #1287b8);
 }
@@ -17229,7 +17092,6 @@ textarea.form-control-lg {
 .pd-section-6 {
   border-top: 1px solid #dee2e6;
   border-bottom: 1px solid #dee2e6;
-  background: -o-linear-gradient(rgba(18, 18, 18, 0.85) 0%, rgb(18, 18, 18) 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(18, 18, 18, 0.85)), to(rgb(18, 18, 18)));
   background: linear-gradient(rgba(18, 18, 18, 0.85) 0%, rgb(18, 18, 18) 100%);
 }
@@ -17284,7 +17146,6 @@ textarea.form-control-lg {
 .pd-section-7 {
   border-top: 1px solid #dee2e6;
   border-bottom: 1px solid #dee2e6;
-  background: -o-linear-gradient(rgba(18, 18, 18, 0.85) 0%, rgb(18, 18, 18) 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(18, 18, 18, 0.85)), to(rgb(18, 18, 18)));
   background: linear-gradient(rgba(18, 18, 18, 0.85) 0%, rgb(18, 18, 18) 100%);
 }
@@ -17340,7 +17201,6 @@ textarea.form-control-lg {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.35) 70%, rgba(0, 0, 0, 0.8) 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(30%, rgba(0, 0, 0, 0.2)), color-stop(70%, rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.8)));
   background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.35) 70%, rgba(0, 0, 0, 0.8) 100%);
 }
@@ -17406,7 +17266,6 @@ textarea.form-control-lg {
   font-weight: 700;
   text-decoration: none;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-section-8 .pd-section-8-link:hover {
@@ -17531,7 +17390,6 @@ textarea.form-control-lg {
 .pd-section-11 {
   border-top: 1px solid #dee2e6;
   border-bottom: 1px solid #dee2e6;
-  background: -o-linear-gradient(#f8f9fa 0%, #fff 20%, #fff 80%, #f8f9fa 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#f8f9fa), color-stop(20%, #fff), color-stop(80%, #fff), to(#f8f9fa));
   background: linear-gradient(#f8f9fa 0%, #fff 20%, #fff 80%, #f8f9fa 100%);
 }
@@ -17736,7 +17594,6 @@ textarea.form-control-lg {
 }
 
 .pd-section-13 {
-  background: -o-linear-gradient(#f8f9fa 0%, #fff 20%, #fff 80%, #f8f9fa 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#f8f9fa), color-stop(20%, #fff), color-stop(80%, #fff), to(#f8f9fa));
   background: linear-gradient(#f8f9fa 0%, #fff 20%, #fff 80%, #f8f9fa 100%);
   border-top: 1px solid #dee2e6;
@@ -17774,7 +17631,6 @@ textarea.form-control-lg {
   font-weight: 700;
   text-decoration: none;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-section-13 .pd-section-13-link:hover {
@@ -17819,7 +17675,6 @@ textarea.form-control-lg {
   color: #00CC66;
   font-size: 0.8rem;
   -webkit-transition: background 0.4s;
-  -o-transition: background 0.4s;
   transition: background 0.4s;
 }
 .pd-section-14 .pd-section-14-btn:hover {
@@ -17889,7 +17744,6 @@ textarea.form-control-lg {
   color: #00CC66;
   font-size: 0.8rem;
   -webkit-transition: background 0.4s;
-  -o-transition: background 0.4s;
   transition: background 0.4s;
 }
 .pd-section-15 .pd-section-15-btn:hover {
@@ -17903,7 +17757,6 @@ textarea.form-control-lg {
 }
 
 .pd-section-16 {
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.9) 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), color-stop(50%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.9)));
   background: linear-gradient(rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.9) 100%);
   color: #fff;
@@ -17958,7 +17811,6 @@ textarea.form-control-lg {
   color: #fff;
   font-size: 0.8rem;
   -webkit-transition: background 0.4s;
-  -o-transition: background 0.4s;
   transition: background 0.4s;
 }
 .pd-section-16 .pd-section-16-btn:hover {
@@ -18020,7 +17872,6 @@ textarea.form-control-lg {
   color: #00CC66;
   font-size: 0.8rem;
   -webkit-transition: background 0.4s;
-  -o-transition: background 0.4s;
   transition: background 0.4s;
 }
 .pd-section-17 .pd-section-17-btn:hover {
@@ -18034,7 +17885,6 @@ textarea.form-control-lg {
 }
 
 .pd-footer-1 {
-  background: -o-linear-gradient(top, #17A9E6, #1287b8);
   background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));
   background: linear-gradient(180deg, #17A9E6, #1287b8);
   color: #fff;
@@ -18088,7 +17938,6 @@ textarea.form-control-lg {
 .pd-footer-1 .pd-footer-1-social-icon {
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
   display: inline-block;
@@ -18143,7 +17992,6 @@ textarea.form-control-lg {
 }
 
 .pd-footer-2 {
-  background: -o-linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), color-stop(20%, #f9f9f9), color-stop(90%, #f9f9f9), to(#f7f7f7));
   background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
   color: #6c757d;
@@ -18197,7 +18045,6 @@ textarea.form-control-lg {
 .pd-footer-2 .pd-footer-2-social-icon {
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
   display: inline-block;
@@ -18310,7 +18157,6 @@ textarea.form-control-lg {
   font-weight: 700;
   text-decoration: none;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-testimonial-slider-1 .pd-testimonial-slider-1-link:hover {
@@ -18333,7 +18179,6 @@ textarea.form-control-lg {
   background: #17A9E6;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -18348,7 +18193,6 @@ textarea.form-control-lg {
 }
 
 .pd-testimonial-slider-2 {
-  background: -o-linear-gradient(top, #17A9E6, #1287b8);
   background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));
   background: linear-gradient(180deg, #17A9E6, #1287b8);
   border-top: 1px solid #dee2e6;
@@ -18440,7 +18284,6 @@ textarea.form-control-lg {
   font-weight: 700;
   text-decoration: none;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
   color: #fff;
 }
@@ -18464,7 +18307,6 @@ textarea.form-control-lg {
   background: #fff;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -18569,7 +18411,6 @@ textarea.form-control-lg {
   font-weight: 700;
   text-decoration: none;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
   color: #fff;
 }
@@ -18593,7 +18434,6 @@ textarea.form-control-lg {
   background: #fff;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -18629,7 +18469,6 @@ textarea.form-control-lg {
   left: 0px;
   height: 100%;
   width: 100%;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.7) 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), color-stop(30%, rgba(0, 0, 0, 0.6)), color-stop(70%, rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.7)));
   background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.7) 100%);
 }
@@ -18637,7 +18476,6 @@ textarea.form-control-lg {
 .pd-testimonial-slider-4 {
   border-top: 1px solid #dee2e6;
   border-bottom: 1px solid #dee2e6;
-  background: -o-linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), color-stop(20%, #f9f9f9), color-stop(90%, #f9f9f9), to(#f7f7f7));
   background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
   padding-top: 100px;
@@ -18714,7 +18552,6 @@ textarea.form-control-lg {
   font-weight: 700;
   text-decoration: none;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
   color: #17A9E6;
 }
@@ -18741,7 +18578,6 @@ textarea.form-control-lg {
   background: #17A9E6;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -18758,7 +18594,6 @@ textarea.form-control-lg {
 .pd-testimonial-slider-5 {
   border-top: 1px solid #dee2e6;
   border-bottom: 1px solid #dee2e6;
-  background: -o-linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), color-stop(20%, #f9f9f9), color-stop(90%, #f9f9f9), to(#f7f7f7));
   background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
   padding-top: 100px;
@@ -18836,7 +18671,6 @@ textarea.form-control-lg {
   font-weight: 700;
   text-decoration: none;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
   color: #17A9E6;
 }
@@ -18863,7 +18697,6 @@ textarea.form-control-lg {
   background: #17A9E6;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -18880,7 +18713,6 @@ textarea.form-control-lg {
 .pd-testimonial-slider-6 {
   border-top: 1px solid #dee2e6;
   border-bottom: 1px solid #dee2e6;
-  background: -o-linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), color-stop(20%, #f9f9f9), color-stop(90%, #f9f9f9), to(#f7f7f7));
   background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
   padding-top: 100px;
@@ -18958,7 +18790,6 @@ textarea.form-control-lg {
   font-weight: 700;
   text-decoration: none;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
   color: #17A9E6;
 }
@@ -18985,7 +18816,6 @@ textarea.form-control-lg {
   background: #fff;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -19021,7 +18851,6 @@ textarea.form-control-lg {
   left: 0px;
   height: 100%;
   width: 100%;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.7) 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), color-stop(30%, rgba(0, 0, 0, 0.6)), color-stop(70%, rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.7)));
   background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.7) 100%);
 }
@@ -19058,7 +18887,6 @@ textarea.form-control-lg {
   background: #17A9E6;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -19075,7 +18903,6 @@ textarea.form-control-lg {
 .pd-hero-video-1 {
   border-top: 1px solid #dee2e6;
   border-bottom: 1px solid #dee2e6;
-  background: -o-linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), color-stop(20%, #f9f9f9), color-stop(90%, #f9f9f9), to(#f7f7f7));
   background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
 }
@@ -19118,7 +18945,6 @@ textarea.form-control-lg {
 }
 
 .pd-hero-video-2 {
-  background: -o-linear-gradient(top, #17A9E6, #1287b8);
   background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));
   background: linear-gradient(180deg, #17A9E6, #1287b8);
 }
@@ -19163,7 +18989,6 @@ textarea.form-control-lg {
 .pd-hero-video-3 {
   border-top: 1px solid #e9ecef;
   border-bottom: 1px solid #e9ecef;
-  background: -o-linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), color-stop(20%, #f9f9f9), color-stop(90%, #f9f9f9), to(#f7f7f7));
   background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
 }
@@ -19241,7 +19066,6 @@ textarea.form-control-lg {
 }
 
 .pd-hero-video-4 {
-  background: -o-linear-gradient(top, #17A9E6, #1287b8);
   background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));
   background: linear-gradient(180deg, #17A9E6, #1287b8);
 }
@@ -19319,7 +19143,6 @@ textarea.form-control-lg {
 }
 
 .pd-hero-video-5 {
-  background: -o-linear-gradient(top, #17A9E6, #1287b8);
   background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));
   background: linear-gradient(180deg, #17A9E6, #1287b8);
 }
@@ -19366,7 +19189,6 @@ textarea.form-control-lg {
   position: relative;
   z-index: 1;
   -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
   transition: 0.3s;
 }
 .pd-hero-video-5 .pd-hero-video-5-play-outer a.pd-hero-video-5-modal-link:hover {
@@ -19451,7 +19273,6 @@ textarea.form-control-lg {
   z-index: 1;
   overflow: auto;
   -webkit-transition: background 0.4s;
-  -o-transition: background 0.4s;
   transition: background 0.4s;
 }
 .pd-hero-video-5-modal span {
@@ -19464,7 +19285,6 @@ textarea.form-control-lg {
   display: inline-block;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
   text-decoration: none;
@@ -19604,7 +19424,6 @@ textarea.form-control-lg {
      object-position: center center;
   opacity: 0;
   -webkit-transition: opacity 0.4s;
-  -o-transition: opacity 0.4s;
   transition: opacity 0.4s;
 }
 .pd-hero-video-6 .pd-hero-video-6-image.pd-hero-video-image-6-loaded {
@@ -19614,7 +19433,6 @@ textarea.form-control-lg {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: -o-linear-gradient(#000 0%, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0.8) 60%, #000 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(40%, rgba(0, 0, 0, 0.8)), color-stop(60%, rgba(0, 0, 0, 0.8)), to(#000));
   background: linear-gradient(#000 0%, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0.8) 60%, #000 100%);
   opacity: 0.7;
@@ -19628,7 +19446,6 @@ textarea.form-control-lg {
   display: inline-block;
   z-index: 1;
   -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
   transition: 0.3s;
   opacity: 0.9;
   cursor: pointer;
@@ -19722,7 +19539,6 @@ textarea.form-control-lg {
   z-index: 1;
   overflow: auto;
   -webkit-transition: background 0.4s;
-  -o-transition: background 0.4s;
   transition: background 0.4s;
 }
 .pd-hero-video-6-modal span {
@@ -19735,7 +19551,6 @@ textarea.form-control-lg {
   display: inline-block;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
   text-decoration: none;
@@ -19804,7 +19619,6 @@ textarea.form-control-lg {
 .pd-mission-1 {
   border-top: 1px solid #dee2e6;
   border-bottom: 1px solid #dee2e6;
-  background: -o-linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), color-stop(20%, #f9f9f9), color-stop(90%, #f9f9f9), to(#f7f7f7));
   background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
 }
@@ -19878,7 +19692,6 @@ textarea.form-control-lg {
 }
 
 .pd-mission-3 {
-  background: -o-linear-gradient(top, #17A9E6, #1287b8);
   background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));
   background: linear-gradient(180deg, #17A9E6, #1287b8);
 }
@@ -20027,7 +19840,6 @@ textarea.form-control-lg {
   padding: 20px;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -20056,7 +19868,6 @@ textarea.form-control-lg {
   color: #17A9E6;
   font-weight: 700;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-people-1 .pd-people-1-card-outer footer p:after {
@@ -20078,7 +19889,6 @@ textarea.form-control-lg {
 
 .pd-people-1-modal {
   -webkit-transition: opacity 0.4s;
-  -o-transition: opacity 0.4s;
   transition: opacity 0.4s;
   opacity: 0;
   width: 100%;
@@ -20291,7 +20101,6 @@ textarea.form-control-lg {
   z-index: 1;
   opacity: 0;
   -webkit-transition: opacity 0.2s;
-  -o-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 .pd-people-2 .pd-people-2-card-outer .pd-people-2-card-video-outer video {
@@ -20311,7 +20120,6 @@ textarea.form-control-lg {
   background: rgba(255, 255, 255, 0.9);
   z-index: 2;
   -webkit-transition: padding-bottom 0.4s;
-  -o-transition: padding-bottom 0.4s;
   transition: padding-bottom 0.4s;
 }
 .pd-people-2 .pd-people-2-card-outer .pd-people-2-card-profile-text p {
@@ -20327,7 +20135,6 @@ textarea.form-control-lg {
   color: blue;
   font-weight: 700;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-people-2 .pd-people-2-card-outer .pd-people-2-card-profile-text a:hover {
@@ -20418,7 +20225,6 @@ textarea.form-control-lg {
   z-index: 1;
   opacity: 0;
   -webkit-transition: opacity 0.2s;
-  -o-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 .pd-people-3 .pd-people-3-card-outer .pd-people-3-card-video-outer video {
@@ -20438,7 +20244,6 @@ textarea.form-control-lg {
   background: rgba(255, 255, 255, 0.9);
   z-index: 2;
   -webkit-transition: height 0.4s;
-  -o-transition: height 0.4s;
   transition: height 0.4s;
 }
 .pd-people-3 .pd-people-3-card-outer .pd-people-3-card-profile-text p {
@@ -20454,7 +20259,6 @@ textarea.form-control-lg {
   color: blue;
   font-weight: 700;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-people-3 .pd-people-3-card-outer .pd-people-3-card-profile-text a:hover {
@@ -20510,11 +20314,9 @@ textarea.form-control-lg {
           flex-grow: 1;
   min-height: 80px;
   padding: 4px;
-  background: -o-linear-gradient(#f8f9fa 0%, #ffffff 20%, #ffffff 80%, #f8f9fa 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#f8f9fa), color-stop(20%, #ffffff), color-stop(80%, #ffffff), to(#f8f9fa));
   background: linear-gradient(#f8f9fa 0%, #ffffff 20%, #ffffff 80%, #f8f9fa 100%);
   -webkit-transition: background 0.4s;
-  -o-transition: background 0.4s;
   transition: background 0.4s;
   border-top: 1px solid #dee2e6;
   border-right: 1px solid #dee2e6;
@@ -20533,7 +20335,6 @@ textarea.form-control-lg {
   margin-left: 10px;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
   display: -webkit-box;
@@ -20549,11 +20350,9 @@ textarea.form-control-lg {
   width: 0px;
   border-bottom: 2px solid #17A9E6;
   -webkit-transition: width 0.4s;
-  -o-transition: width 0.4s;
   transition: width 0.4s;
 }
 .pd-specials-multiBox .pd-specials-multiBox-buttons-outer .pd-specials-multiBox-button:hover {
-  background: -o-linear-gradient(#e9ecef 0%, #ffffff 40%, #ffffff 60%, #e9ecef 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#e9ecef), color-stop(40%, #ffffff), color-stop(60%, #ffffff), to(#e9ecef));
   background: linear-gradient(#e9ecef 0%, #ffffff 40%, #ffffff 60%, #e9ecef 100%);
 }
@@ -20567,7 +20366,6 @@ textarea.form-control-lg {
 }
 .pd-specials-multiBox .pd-specials-multiBox-buttons-outer .pd-specials-multiBox-button:focus {
   outline: none;
-  background: -o-linear-gradient(#e9ecef 0%, #ffffff 40%, #ffffff 60%, #e9ecef 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#e9ecef), color-stop(40%, #ffffff), color-stop(60%, #ffffff), to(#e9ecef));
   background: linear-gradient(#e9ecef 0%, #ffffff 40%, #ffffff 60%, #e9ecef 100%);
 }
@@ -20588,7 +20386,6 @@ textarea.form-control-lg {
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity 0.4s;
-  -o-transition: opacity 0.4s;
   transition: opacity 0.4s;
   z-index: 1;
   background: #fff;
@@ -20724,7 +20521,6 @@ textarea.form-control-lg {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
-  background: -o-linear-gradient(#f8f9fa 0%, #ffffff 20%, #ffffff 80%, #f8f9fa 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#f8f9fa), color-stop(20%, #ffffff), color-stop(80%, #ffffff), to(#f8f9fa));
   background: linear-gradient(#f8f9fa 0%, #ffffff 20%, #ffffff 80%, #f8f9fa 100%);
   border: 1px solid #dee2e6;
@@ -20749,7 +20545,6 @@ textarea.form-control-lg {
   white-space: normal;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -20758,11 +20553,9 @@ textarea.form-control-lg {
   width: 0px;
   border-bottom: 2px solid #17A9E6;
   -webkit-transition: width 0.4s;
-  -o-transition: width 0.4s;
   transition: width 0.4s;
 }
 .pd-specials-multiBox .pd-specials-multiBox-button-mobile.show {
-  background: -o-linear-gradient(#e9ecef 0%, #ffffff 40%, #ffffff 60%, #e9ecef 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#e9ecef), color-stop(40%, #ffffff), color-stop(60%, #ffffff), to(#e9ecef));
   background: linear-gradient(#e9ecef 0%, #ffffff 40%, #ffffff 60%, #e9ecef 100%);
 }
@@ -20793,7 +20586,6 @@ textarea.form-control-lg {
   border-bottom: 1px solid #dee2e6;
   padding-top: 100px;
   padding-bottom: 100px;
-  background: -o-linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), color-stop(20%, #f9f9f9), color-stop(90%, #f9f9f9), to(#f7f7f7));
   background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
 }
@@ -20879,7 +20671,6 @@ textarea.form-control-lg {
           transform: scale(0.6);
   -webkit-transition: opacity 0.4s, -webkit-transform 0.4s;
   transition: opacity 0.4s, -webkit-transform 0.4s;
-  -o-transition: transform 0.4s, opacity 0.4s;
   transition: transform 0.4s, opacity 0.4s;
   transition: transform 0.4s, opacity 0.4s, -webkit-transform 0.4s;
 }
@@ -20932,7 +20723,6 @@ textarea.form-control-lg {
   opacity: 0;
   -webkit-transition: opacity 0.4s ease 0.2s, -webkit-transform 0.4s ease 0.2s;
   transition: opacity 0.4s ease 0.2s, -webkit-transform 0.4s ease 0.2s;
-  -o-transition: transform 0.4s ease 0.2s, opacity 0.4s ease 0.2s;
   transition: transform 0.4s ease 0.2s, opacity 0.4s ease 0.2s;
   transition: transform 0.4s ease 0.2s, opacity 0.4s ease 0.2s, -webkit-transform 0.4s ease 0.2s;
 }
@@ -21158,7 +20948,6 @@ textarea.form-control-lg {
   }
 }
 .pd-specials-stats-1 .pd-specials-stats-1-stat-wrapper .pd-specials-stats-1-text-outer {
-  background: -o-linear-gradient(#00CC66 0%, #00bd5e 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#00CC66), to(#00bd5e));
   background: linear-gradient(#00CC66 0%, #00bd5e 100%);
   min-height: 80px;
@@ -21263,7 +21052,6 @@ textarea.form-control-lg {
 }
 
 .pd-list-1 {
-  background: -o-linear-gradient(top, #17A9E6, #1287b8);
   background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));
   background: linear-gradient(180deg, #17A9E6, #1287b8);
 }
@@ -21326,7 +21114,6 @@ textarea.form-control-lg {
   text-decoration: none;
   color: #6c757d;
   -webkit-transition: color 0.3s;
-  -o-transition: color 0.3s;
   transition: color 0.3s;
   font-weight: 300;
 }
@@ -21346,7 +21133,6 @@ textarea.form-control-lg {
 }
 
 .pd-CTA-1 {
-  background: -o-linear-gradient(top, #17A9E6, #1287b8);
   background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));
   background: linear-gradient(180deg, #17A9E6, #1287b8);
 }
@@ -21414,7 +21200,6 @@ textarea.form-control-lg {
 }
 
 .pd-CTA-2 {
-  background: -o-linear-gradient(top, #17A9E6, #1287b8);
   background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));
   background: linear-gradient(180deg, #17A9E6, #1287b8);
 }
@@ -21449,7 +21234,6 @@ textarea.form-control-lg {
 }
 
 .pd-CTA-3 {
-  background: -o-linear-gradient(top, #17A9E6, #1287b8);
   background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));
   background: linear-gradient(180deg, #17A9E6, #1287b8);
 }
@@ -21528,7 +21312,6 @@ textarea.form-control-lg {
 }
 
 .pd-CTA-5 {
-  background: -o-linear-gradient(top, #17A9E6, #1287b8);
   background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));
   background: linear-gradient(180deg, #17A9E6, #1287b8);
 }
@@ -21567,7 +21350,6 @@ textarea.form-control-lg {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.7) 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), color-stop(30%, rgba(0, 0, 0, 0.6)), color-stop(70%, rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.7)));
   background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.7) 100%);
 }
@@ -21623,7 +21405,6 @@ textarea.form-control-lg {
      object-position: center center;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -21666,7 +21447,6 @@ textarea.form-control-lg {
   margin-bottom: 4px;
   letter-spacing: 0.1em;
   -webkit-transition: background 0.4s;
-  -o-transition: background 0.4s;
   transition: background 0.4s;
 }
 .pd-cards-posts-1 .pd-cards-posts-1-card-outer .pd-cards-posts-1-image-outer .pd-cards-posts-1-categories-outer .pd-cards-posts-1-category:hover {
@@ -21700,7 +21480,6 @@ textarea.form-control-lg {
   line-height: 1.4;
   color: #343a40;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-cards-posts-1 .pd-cards-posts-1-card-outer .pd-cards-posts-1-text .pd-posts-cards-1-headline:hover h2, .pd-cards-posts-1 .pd-cards-posts-1-card-outer .pd-cards-posts-1-text .pd-posts-cards-1-headline:hover .h2,
@@ -21752,7 +21531,6 @@ textarea.form-control-lg {
   padding: 4px 8px;
   letter-spacing: 0.1em;
   -webkit-transition: background 0.4s, border 0.4s;
-  -o-transition: background 0.4s, border 0.4s;
   transition: background 0.4s, border 0.4s;
 }
 .pd-cards-posts-1 .pd-cards-posts-1-card-outer .pd-cards-posts-1-text .pd-cards-posts-1-tags-outer ul li .pd-cards-posts-1-tag:hover {
@@ -21774,7 +21552,6 @@ textarea.form-control-lg {
   margin-top: 10px;
   letter-spacing: 0.1em;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-cards-posts-1 .pd-cards-posts-1-card-outer .pd-cards-posts-1-text .pd-cards-posts-1-link:after {
@@ -21820,21 +21597,18 @@ textarea.form-control-lg {
   position: absolute;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
 .pd-cards-posts-2 .pd-cards-posts-2-outer .pd-cards-posts-2-overlay {
   width: 100%;
   height: 100%;
-  background: -o-linear-gradient(rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.6) 70%, rgb(0, 0, 0) 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), color-stop(30%, rgba(0, 0, 0, 0.4)), color-stop(70%, rgba(0, 0, 0, 0.6)), to(rgb(0, 0, 0)));
   background: linear-gradient(rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.6) 70%, rgb(0, 0, 0) 100%);
   position: absolute;
   left: 0;
   top: 0;
   -webkit-transition: opacity 0.3s;
-  -o-transition: opacity 0.3s;
   transition: opacity 0.3s;
   opacity: 0.7;
 }
@@ -21932,7 +21706,6 @@ textarea.form-control-lg {
      object-position: center center;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -21975,7 +21748,6 @@ textarea.form-control-lg {
   margin-bottom: 4px;
   letter-spacing: 0.1em;
   -webkit-transition: background 0.4s;
-  -o-transition: background 0.4s;
   transition: background 0.4s;
 }
 .pd-cards-posts-3 .pd-cards-posts-3-card-outer .pd-cards-posts-3-image-outer .pd-cards-posts-3-categories-outer .pd-cards-posts-3-category:hover {
@@ -22009,7 +21781,6 @@ textarea.form-control-lg {
   line-height: 1.4;
   color: #343a40;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-cards-posts-3 .pd-cards-posts-3-card-outer .pd-cards-posts-3-text .pd-posts-cards-3-headline:hover h2, .pd-cards-posts-3 .pd-cards-posts-3-card-outer .pd-cards-posts-3-text .pd-posts-cards-3-headline:hover .h2,
@@ -22061,7 +21832,6 @@ textarea.form-control-lg {
   padding: 4px 8px;
   letter-spacing: 0.1em;
   -webkit-transition: background 0.4s, border 0.4s;
-  -o-transition: background 0.4s, border 0.4s;
   transition: background 0.4s, border 0.4s;
 }
 .pd-cards-posts-3 .pd-cards-posts-3-card-outer .pd-cards-posts-3-text .pd-cards-posts-3-tags-outer ul li .pd-cards-posts-3-tag:hover {
@@ -22083,7 +21853,6 @@ textarea.form-control-lg {
   margin-top: 10px;
   letter-spacing: 0.1em;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-cards-posts-3 .pd-cards-posts-3-card-outer .pd-cards-posts-3-text .pd-cards-posts-3-link:after {
@@ -22121,7 +21890,6 @@ textarea.form-control-lg {
   text-decoration: none;
   color: #495057;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
   letter-spacing: 0.1em;
   font-weight: 300;
@@ -22149,7 +21917,6 @@ textarea.form-control-lg {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   -webkit-transition: background 0.4s, color 0.4s, border 0.4s;
-  -o-transition: background 0.4s, color 0.4s, border 0.4s;
   transition: background 0.4s, color 0.4s, border 0.4s;
 }
 .pd-cards-posts-3 .pd-cards-posts-3-cats-col .pd-cards-posts-3-tag-list a:hover {
@@ -22162,7 +21929,6 @@ textarea.form-control-lg {
   outline-offset: 4px;
 }
 .pd-cards-posts-3 .pd-cards-posts-3-cats-col .pd-cards-posts-3-banner {
-  background: -o-linear-gradient(top, #17A9E6, #1287b8);
   background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));
   background: linear-gradient(180deg, #17A9E6, #1287b8);
   padding: 40px 20px;
@@ -22237,21 +22003,18 @@ textarea.form-control-lg {
   position: absolute;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
 .pd-cards-posts-4 .pd-cards-posts-4-outer .pd-cards-posts-4-overlay {
   width: 100%;
   height: 100%;
-  background: -o-linear-gradient(rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.6) 70%, rgb(0, 0, 0) 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), color-stop(30%, rgba(0, 0, 0, 0.4)), color-stop(70%, rgba(0, 0, 0, 0.6)), to(rgb(0, 0, 0)));
   background: linear-gradient(rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.6) 70%, rgb(0, 0, 0) 100%);
   position: absolute;
   left: 0;
   top: 0;
   -webkit-transition: opacity 0.3s;
-  -o-transition: opacity 0.3s;
   transition: opacity 0.3s;
   opacity: 0.7;
 }
@@ -22337,7 +22100,6 @@ textarea.form-control-lg {
   text-decoration: none;
   color: #495057;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
   letter-spacing: 0.1em;
   font-weight: 300;
@@ -22365,7 +22127,6 @@ textarea.form-control-lg {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   -webkit-transition: background 0.4s, color 0.4s, border 0.4s;
-  -o-transition: background 0.4s, color 0.4s, border 0.4s;
   transition: background 0.4s, color 0.4s, border 0.4s;
 }
 .pd-cards-posts-4 .pd-cards-posts-4-cats-col .pd-cards-posts-4-tag-list a:hover {
@@ -22378,7 +22139,6 @@ textarea.form-control-lg {
   outline-offset: 4px;
 }
 .pd-cards-posts-4 .pd-cards-posts-4-cats-col .pd-cards-posts-4-banner {
-  background: -o-linear-gradient(top, #17A9E6, #1287b8);
   background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));
   background: linear-gradient(180deg, #17A9E6, #1287b8);
   padding: 40px 20px;
@@ -22492,7 +22252,6 @@ textarea.form-control-lg {
   height: 100%;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -22554,7 +22313,6 @@ textarea.form-control-lg {
   height: 100%;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -22649,7 +22407,6 @@ textarea.form-control-lg {
   height: 100%;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -22725,7 +22482,6 @@ textarea.form-control-lg {
   height: 100%;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -22877,7 +22633,6 @@ textarea.form-control-lg {
   display: inline-block;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -22970,7 +22725,6 @@ textarea.form-control-lg {
   font-weight: 700;
   text-decoration: none;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-blog-post-1 .pd-blog-post-1-content-outer .pd-blog-post-1-main a:hover {
@@ -23023,7 +22777,6 @@ textarea.form-control-lg {
   display: inline-block;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -23046,7 +22799,6 @@ textarea.form-control-lg {
 }
 
 .pd-forms-1 {
-  background: -o-linear-gradient(top, #17A9E6, #1287b8);
   background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));
   background: linear-gradient(180deg, #17A9E6, #1287b8);
 }
@@ -23106,7 +22858,6 @@ textarea.form-control-lg {
   text-decoration: underline;
   padding: 8px 18px;
   -webkit-transition: background 0.4s;
-  -o-transition: background 0.4s;
   transition: background 0.4s;
 }
 .pd-forms-1 .pd-forms-1-contact-block-outer .pd-forms-1-button-outer .pd-forms-1-button:focus {
@@ -23143,7 +22894,6 @@ textarea.form-control-lg {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   -webkit-transition: opacity 0.4s;
-  -o-transition: opacity 0.4s;
   transition: opacity 0.4s;
   opacity: 0;
 }
@@ -23157,7 +22907,6 @@ textarea.form-control-lg {
 .pd-forms-1 .pd-forms-1-contact-block-outer .pd-forms-1-contact-panel a span img {
   -webkit-transition: -webkit-transform 0.2s;
   transition: -webkit-transform 0.2s;
-  -o-transition: transform 0.2s;
   transition: transform 0.2s;
   transition: transform 0.2s, -webkit-transform 0.2s;
 }
@@ -23226,7 +22975,6 @@ textarea.form-control-lg {
   color: #00CC66;
   font-size: 0.8rem;
   -webkit-transition: background 0.4s;
-  -o-transition: background 0.4s;
   transition: background 0.4s;
 }
 .pd-forms-2 form .pd-forms-2-submit:hover {
@@ -23257,7 +23005,6 @@ textarea.form-control-lg {
   font-weight: 700;
   font-size: 2rem;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-forms-2 .pd-forms-2-address a:hover {
@@ -23341,7 +23088,6 @@ textarea.form-control-lg {
 .pd-text-1 a {
   color: blue;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
   text-decoration: none;
   font-weight: 700;
@@ -23431,7 +23177,6 @@ textarea.form-control-lg {
      object-position: center center;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -23443,7 +23188,6 @@ textarea.form-control-lg {
   left: 0;
   background: rgba(0, 0, 0, 0.3);
   -webkit-transition: background 0.4s;
-  -o-transition: background 0.4s;
   transition: background 0.4s;
 }
 .pd-grid-1 .pd-grid-1-item .pd-grid-1-item-content {
@@ -23454,7 +23198,6 @@ textarea.form-control-lg {
   background: rgba(0, 0, 0, 0.5);
   bottom: 0;
   -webkit-transition: background 0.4s, padding-bottom 0.4s, color 0.2s;
-  -o-transition: background 0.4s, padding-bottom 0.4s, color 0.2s;
   transition: background 0.4s, padding-bottom 0.4s, color 0.2s;
 }
 .pd-grid-1 .pd-grid-1-item .pd-grid-1-item-content .pd-grid-1-item-tag {
@@ -23629,7 +23372,6 @@ textarea.form-control-lg {
   color: #00CC66;
   font-size: 0.8rem;
   -webkit-transition: background 0.4s;
-  -o-transition: background 0.4s;
   transition: background 0.4s;
 }
 .pd-grid-1 .pd-grid-1-btn:hover {
@@ -23736,7 +23478,6 @@ textarea.form-control-lg {
   display: inline-block;
   line-height: 1.4;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
   margin-bottom: 0px;
 }
@@ -23794,7 +23535,6 @@ textarea.form-control-lg {
   color: #00CC66;
   font-size: 0.8rem;
   -webkit-transition: background 0.4s;
-  -o-transition: background 0.4s;
   transition: background 0.4s;
 }
 .pd-widget-1 .pd-widget-1-btn:hover {
@@ -23835,7 +23575,6 @@ textarea.form-control-lg {
   font-size: 0.9rem;
   color: #343a40;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-widget-2 .pd-widget-2-outer .pd-widget-2-list-item a:hover {
@@ -23857,7 +23596,6 @@ textarea.form-control-lg {
   color: #00CC66;
   font-size: 0.8rem;
   -webkit-transition: background 0.4s;
-  -o-transition: background 0.4s;
   transition: background 0.4s;
 }
 .pd-widget-2 .pd-widget-2-outer .pd-widget-2-btn:hover {
@@ -23933,7 +23671,6 @@ textarea.form-control-lg {
   display: inline-block;
   line-height: 1.4;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
   margin-bottom: 0px;
 }
@@ -23971,7 +23708,6 @@ textarea.form-control-lg {
   color: #00CC66;
   font-size: 0.8rem;
   -webkit-transition: background 0.4s;
-  -o-transition: background 0.4s;
   transition: background 0.4s;
 }
 .pd-widget-3 .pd-widget-3-btn:hover {
@@ -23985,7 +23721,6 @@ textarea.form-control-lg {
 }
 .pd-widget-4 .pd-widget-4-outer {
   padding: 60px 30px;
-  background: -o-linear-gradient(#17A9E6 0%, #2db2ea 50%, #17A9E6 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), color-stop(50%, #2db2ea), to(#17A9E6));
   background: linear-gradient(#17A9E6 0%, #2db2ea 50%, #17A9E6 100%);
   border-radius: 10px;
@@ -24014,7 +23749,6 @@ textarea.form-control-lg {
   color: #fff;
   font-size: 0.8rem;
   -webkit-transition: background 0.4s;
-  -o-transition: background 0.4s;
   transition: background 0.4s;
 }
 .pd-widget-4 .pd-widget-4-outer .pd-widget-4-btn:hover {
@@ -24050,7 +23784,6 @@ textarea.form-control-lg {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.9) 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), color-stop(30%, rgba(0, 0, 0, 0.6)), color-stop(70%, rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9)));
   background: linear-gradient(rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.9) 100%);
 }
@@ -24086,7 +23819,6 @@ textarea.form-control-lg {
   color: #fff;
   font-size: 0.8rem;
   -webkit-transition: background 0.4s;
-  -o-transition: background 0.4s;
   transition: background 0.4s;
 }
 .pd-widget-5 .pd-widget-5-outer .pd-widget-5-content-outer .pd-widget-5-btn:hover {
@@ -24111,7 +23843,6 @@ textarea.form-control-lg {
   text-decoration: none;
   color: #6c757d;
   -webkit-transition: color 0.3s;
-  -o-transition: color 0.3s;
   transition: color 0.3s;
   font-weight: 300;
 }
@@ -24143,7 +23874,6 @@ textarea.form-control-lg {
 .pd-page-menu-1 ol li a {
   text-decoration: none;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-page-menu-1 ol li a:hover {
@@ -24244,7 +23974,6 @@ textarea.form-control-lg {
   background: #00CC66;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -24261,7 +23990,6 @@ textarea.form-control-lg {
 .pd-pricing-1 {
   border-top: 1px solid #dee2e6;
   border-bottom: 1px solid #dee2e6;
-  background: -o-linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), color-stop(20%, #f9f9f9), color-stop(90%, #f9f9f9), to(#f7f7f7));
   background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
 }
@@ -24408,7 +24136,6 @@ textarea.form-control-lg {
 .pd-pricing-2 {
   border-top: 1px solid #dee2e6;
   border-bottom: 1px solid #dee2e6;
-  background: -o-linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), color-stop(20%, #f9f9f9), color-stop(90%, #f9f9f9), to(#f7f7f7));
   background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
 }
@@ -24577,7 +24304,6 @@ textarea.form-control-lg {
       -ms-flex: 1 0;
           flex: 1 0;
   padding: 20px;
-  background: -o-linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), color-stop(20%, #f9f9f9), color-stop(90%, #f9f9f9), to(#f7f7f7));
   background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
   margin-bottom: 20px;
@@ -24601,7 +24327,6 @@ textarea.form-control-lg {
   font-weight: 700;
   text-decoration: none;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-faqs-1 .pd-faqs-1-card-outer a:hover {
@@ -24646,7 +24371,6 @@ textarea.form-control-lg {
 }
 .pd-faqs-2 .pd-faqs-2-card-outer {
   padding: 20px;
-  background: -o-linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), color-stop(20%, #f9f9f9), color-stop(90%, #f9f9f9), to(#f7f7f7));
   background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
   margin-bottom: 20px;
@@ -24691,7 +24415,6 @@ textarea.form-control-lg {
   font-weight: 700;
   text-decoration: none;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 .pd-faqs-2 .pd-faqs-2-card-outer .pd-faqs-2-card-body a:hover {
@@ -24725,7 +24448,6 @@ textarea.form-control-lg {
   background: #17A9E6;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
   pointer-events: none;
@@ -24744,7 +24466,6 @@ textarea.form-control-lg {
   background: #17A9E6;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
   pointer-events: none;
@@ -24755,7 +24476,6 @@ textarea.form-control-lg {
 .pd-faqs-2 .pd-faqs-2-card-outer.pd-show-content .pd-faqs-2-card-body.pd-collapsing {
   overflow: hidden;
   -webkit-transition: height 0.35s;
-  -o-transition: height 0.35s;
   transition: height 0.35s;
   height: 0px;
 }
@@ -24802,7 +24522,6 @@ textarea.form-control-lg {
     text-decoration: none;
     color: #6c757d;
     -webkit-transition: color 0.2s;
-    -o-transition: color 0.2s;
     transition: color 0.2s;
   }
   .pd-breadcrumbs-1 .pd-breadcrumbs-1-sm a:hover {
@@ -24842,7 +24561,6 @@ textarea.form-control-lg {
     text-decoration: none;
     color: #6c757d;
     -webkit-transition: color 0.2s;
-    -o-transition: color 0.2s;
     transition: color 0.2s;
   }
   .pd-breadcrumbs-1 .pd-breadcrumbs-1-md ul li a:hover {
@@ -24888,12 +24606,10 @@ textarea.form-control-lg {
   overflow-y: auto;
   height: 100vh;
   width: 220px;
-  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.86) 35%, rgba(0, 0, 0, 0.92));
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.92)), color-stop(35%, rgba(0, 0, 0, 0.86)), to(rgba(0, 0, 0, 0.92)));
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.86) 35%, rgba(0, 0, 0, 0.92));
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
@@ -25060,7 +24776,6 @@ textarea.form-control-lg {
   background: white;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
   pointer-events: none;
@@ -25078,7 +24793,6 @@ textarea.form-control-lg {
   background: white;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
   pointer-events: none;
@@ -25151,7 +24865,6 @@ textarea.form-control-lg {
   width: 0px;
   height: 100vh;
   -webkit-transition: width 0.4s;
-  -o-transition: width 0.4s;
   transition: width 0.4s;
   z-index: 3;
 }
@@ -25176,7 +24889,6 @@ textarea.form-control-lg {
   padding: 10px;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
   -webkit-transform: translate(-100%);
@@ -25229,7 +24941,6 @@ textarea.form-control-lg {
   pointer-events: none;
   background-color: rgba(0, 0, 0, 0);
   -webkit-transition: background-color 0.4s;
-  -o-transition: background-color 0.4s;
   transition: background-color 0.4s;
   z-index: 2;
 }
@@ -25888,6 +25599,66 @@ textarea.form-control-lg {
 }
 .pd-admin-dashboard-1 .pd-admin-dashboard-1-body .pd-admin-dashboard-1-card footer .btn {
   color: white;
+}
+.pd-tabs-1 .pd-tabs-1-outer {
+  background-color: #e9ecef;
+}
+@media screen and (max-width: 767px) {
+  .pd-tabs-1 .pd-tabs-1-outer {
+    display: none;
+  }
+}
+.pd-tabs-1 .pd-tabs-1-outer .nav-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  border-right: 1px solid #44687E;
+}
+.pd-tabs-1 .pd-tabs-1-outer .nav-item:last-child {
+  border-right: none;
+}
+.pd-tabs-1 .pd-tabs-1-outer .nav-item .nav-link {
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  position: relative;
+  background: none;
+  color: #6c757d;
+  letter-spacing: 0.08em;
+  padding: 12px 16px;
+}
+.pd-tabs-1 .pd-tabs-1-outer .nav-item .nav-link span.pd-tabs-1-tri {
+  display: none;
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-top: 16px solid #44687E;
+}
+.pd-tabs-1 .pd-tabs-1-outer .nav-item .nav-link.active {
+  -webkit-box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+  background-color: #44687E;
+  color: #fff;
+}
+.pd-tabs-1 .pd-tabs-1-outer .nav-item .nav-link.active span.pd-tabs-1-tri {
+  display: block;
+}
+@media (min-width: 768px) {
+  .pd-tabs-1 .pd-tabs-1-btn-mob {
+    display: none;
+  }
 }
 
 /* Custom CSS rules come here */

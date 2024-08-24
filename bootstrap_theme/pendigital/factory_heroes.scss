@@ -1338,3 +1338,61 @@
 
     }
 }
+
+.pd-hero-14 {
+
+    border-top: 2px solid #44687E;
+    border-bottom: 2px solid #44687E;
+
+    .pd-hero-14-img-outer {
+        position: relative;
+        min-height: 400px;
+        height: 100%;
+        overflow: hidden;
+         img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+         }
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+
+    .pd-hero-14-card {
+        .pd-hero-14-card-icon {
+            font-size: 1.4rem;
+            color: #44687E;
+            flex: 0 0 30px;
+            line-height: 0.9;
+        }
+        .pd-hero-14-card-label {
+            flex: 1 0 40%; 
+            max-width: 160px;
+            font-size: 0.85rem;
+
+        }
+        .pd-hero-14-card-content {
+            flex: 1 1 60%;
+            color: #44687E;
+            font-size: 1rem;
+            font-weight: 700;
+            font-style: italic;
+        }
+
+    }
+
+    .pd-hero-14-card-divider {
+        margin-left: auto;
+        margin-right: auto;
+        height: 1px;
+        background-color: #44687E;
+        width: 65%;
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+}
