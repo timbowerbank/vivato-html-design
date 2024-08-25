@@ -1,13 +1,22 @@
 .pd-tabs-1 {
     .pd-tabs-1-outer {
         background-color: $gray-200;
+
         @media screen and (max-width: 767px) {
-            display: none;
+            padding: 20px;
         }
 
         .nav-item {
-            flex: 1 0 auto;
-            border-right: 1px solid #44687E;
+            @media screen and (max-width: 767px) {
+                border-right: none;
+                flex: 0 0 auto;
+                margin-bottom: 10px;
+            }
+
+            @media (min-width: 768px) {
+                flex: 1 0 auto;
+                border-right: 1px solid #44687E;
+            }
 
             &:last-child {
                 border-right: none;
@@ -20,8 +29,14 @@
                 background: none;
                 color: $gray-600;
                 letter-spacing: 0.08em;
-                padding: 12px 16px;
-                
+
+                @media screen and (max-width: 767px) {
+                    padding: 12px 26px;
+                }
+
+                @media (min-width: 768px) {
+                    padding: 12px 16px;
+                }
 
                 span.pd-tabs-1-tri {
                     display: none;
@@ -46,17 +61,91 @@
 
                 span.pd-tabs-1-tri {
                     display: block;
-                    
                 }
             }
         }
     }
-    .pd-tabs-1-btn-mob {
-        @media (min-width: 768px) {
-            display: none;
-        }
+}
 
-        .
+.pd-tabs-1-panels-timeline {
+    display: flex;
+    flex-direction: row;
+
+    .pd-tabs-1-timeline-outer {
+        min-height: 300px;
+        width: 40px;
+        background: $gray-100;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .pd-tabs-1-timeline {
+            width: 2px;
+            height: auto;
+            background: $gray-400;
+        }
     }
 
+    .pd-tabs-1-panels-outer {
+        flex: 1 0 auto;
+        min-height: 300px;
+        background: #f2f2f2;
+    }
+
+    .pd-tabs-1-panels-card {
+        padding-left: 10px;
+
+        header {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            a {
+                text-decoration: none;
+                color: $gray-800;
+
+                h2,
+                h3,
+                h4 {
+                    font-size: 1.4rem;
+                }
+            }
+
+            .pd-tabs-1-panels-card-icon {
+                position: absolute;
+                left: -50px;
+                top: -14px;
+            }
+
+            button {
+                border: none;
+                margin-right: 10px;
+            }
+        }
+
+        .pd-tabs-1-panels-card-body {
+            padding-top: 20px;
+            display: flex;
+            flex-flow: wrap;
+            flex-direction: row;
+
+            .pd-tabs-1-panels-card-txt {
+                flex: 0 0 50%;
+                div {
+                    display: flex;
+                }
+            }
+
+            .pd-tabs-1-panels-card-img-outer {
+                max-width: 50%;
+                flex: 0 0 50%;
+                padding: 10px;
+                img {
+                    width: 100%;
+
+                }
+            }
+        }
+    }
 }

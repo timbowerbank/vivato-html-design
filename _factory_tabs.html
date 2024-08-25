@@ -26,7 +26,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="mb-4 pd-tabs-1-outer">
-                            <ul class="justify-content-around nav nav-pills" id="pills-tab" role="tablist">
+                            <ul class="justify-content-md-around nav nav-pills" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="active nav-link" id="pills-overview-tab" data-bs-toggle="pill" data-bs-target="#pills-overview" type="button" role="tab" aria-controls="pills-overview" aria-selected="true">
                                         Overview<span class="pd-tabs-1-tri"></span>
@@ -54,22 +54,38 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="dropdown mb-4">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown button
-</button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="margin: 0px;">
-                                <li><a class="dropdown-item" href="#">Action</a>
-                                </li>
-                                <li><a class="dropdown-item" href="#">Another action</a>
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a>
-                                </li>
-                            </ul>
-                        </div>
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-overview" role="tabpanel" aria-labelledby="pills-home-tab">Overview Tab content</div>
-                            <div class="tab-pane fade" id="pills-itinerary" role="tabpanel" aria-labelledby="pills-profile-tab">Itinerary tab content</div>
+                            <div class="fade tab-pane" id="pills-itinerary" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                <div class="pd-tabs-1-panels-timeline">
+                                    <div class="pd-tabs-1-timeline-outer">
+                                        <div class="pd-tabs-1-timeline"></div>
+                                    </div>
+                                    <div class="pd-tabs-1-panels-outer">
+                                        <article class="pd-tabs-1-panels-card">
+                                            <header>
+                                                <a href="#"><h3>Day 1: Arrival in Munich</h3></a>
+                                                <button type="button" data-bs-toggle="collapse" data-bs-target="#panel-1" aria-expanded="true" aria-controls="panel-1">
+                                                    <img src="/images/design-assets/expand_circle_down_24dp_44687E_FILL0_wght400_GRAD0_opsz24.svg">
+                                                </button>
+                                                <img src="images/design-assets/location_on_24dp_44687E_FILL0_wght400_GRAD0_opsz24.svg" alt="location icon" width="40" height="40" loading="lazy" class="pd-tabs-1-panels-card-icon">
+                                            </header>
+                                            <div class="collapse" id="panel-1">
+                                                <div class="pd-tabs-1-panels-card-body">
+                                                    <div class="pd-tabs-1-panels-card-txt">
+                                                        <div>
+                                                            <p>This is going to take up too much room - why isn&apos;t this text wrapping?</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pd-tabs-1-panels-card-img-outer">
+                                                        <img class="img-fluid" src="images/uploads/hero-alpine-820.jpg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="tab-pane fade" id="pills-price" role="tabpanel" aria-labelledby="pills-contact-tab">Price tab content</div>
                             <div class="tab-pane fade" id="pills-includes" role="tabpanel" aria-labelledby="pills-contact-tab">Includes tab content</div>
                             <div class="tab-pane fade" id="pills-faq" role="tabpanel" aria-labelledby="pills-contact-tab">FAQ tab content</div>
