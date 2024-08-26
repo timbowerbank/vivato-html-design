@@ -25759,16 +25759,25 @@ textarea.form-control-lg {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  max-width: 100%;
 }
 .pd-tabs-1-panels-timeline .pd-tabs-1-panels-card .pd-tabs-1-panels-card-body .pd-tabs-1-panels-card-txt {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
+  max-width: 50%;
+  display: block;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
-.pd-tabs-1-panels-timeline .pd-tabs-1-panels-card .pd-tabs-1-panels-card-body .pd-tabs-1-panels-card-txt div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.pd-tabs-1-panels-timeline .pd-tabs-1-panels-card .pd-tabs-1-panels-card-body .pd-tabs-1-panels-card-txt p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  white-space: normal !important;
 }
 .pd-tabs-1-panels-timeline .pd-tabs-1-panels-card .pd-tabs-1-panels-card-body .pd-tabs-1-panels-card-img-outer {
   max-width: 50%;
