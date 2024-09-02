@@ -25755,7 +25755,7 @@ textarea.form-control-lg {
 .pd-tabs-1-panels-timeline .pd-tabs-1-panels-card header .pd-tabs-1-panels-card-icon {
   position: absolute;
   left: -38px;
-  top: -16px;
+  top: -4px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25781,7 +25781,6 @@ textarea.form-control-lg {
   height: 10px;
   background: #44687E;
   border-radius: 50%;
-  opacity: 20%;
 }
 .pd-tabs-1-panels-timeline .pd-tabs-1-panels-card header button {
   border: none;
