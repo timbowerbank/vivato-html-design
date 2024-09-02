@@ -25866,5 +25866,34 @@ textarea.form-control-lg {
 .pd-tabs-1-panels-timeline .pd-tabs-1-panels-card hr {
   margin-bottom: 40px;
 }
+.pd-tabs-1-style h2, .pd-tabs-1-style .h2, .pd-tabs-1-style h3, .pd-tabs-1-style .h3 {
+  font-weight: 700;
+  color: #6c757d;
+  padding-bottom: 10px;
+  position: relative;
+  font-size: 1.2rem;
+  margin-bottom: 24px;
+}
+.pd-tabs-1-style h2:after, .pd-tabs-1-style .h2:after, .pd-tabs-1-style h3:after, .pd-tabs-1-style .h3:after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 60px;
+  height: 3px;
+  border-bottom: 3px solid #44687E;
+}
+.pd-tabs-1-style h4, .pd-tabs-1-style .h4 {
+  text-decoration: underline;
+}
+.pd-tabs-1-style h4, .pd-tabs-1-style .h4, .pd-tabs-1-style h5, .pd-tabs-1-style .h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #6c757d;
+}
+.pd-tabs-1-style p {
+  color: #6c757d;
+  line-height: 2;
+}
 
 /* Custom CSS rules come here */
