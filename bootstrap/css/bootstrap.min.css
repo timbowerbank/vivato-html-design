@@ -25725,6 +25725,7 @@ textarea.form-control-lg {
 }
 .pd-tabs-1-panels-timeline .pd-tabs-1-panels-card {
   margin-bottom: 16px;
+  background: #e9ecef;
 }
 .pd-tabs-1-panels-timeline .pd-tabs-1-panels-card header {
   position: relative;
@@ -25755,7 +25756,7 @@ textarea.form-control-lg {
 .pd-tabs-1-panels-timeline .pd-tabs-1-panels-card header .pd-tabs-1-panels-card-icon {
   position: absolute;
   left: -38px;
-  top: -4px;
+  top: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25772,15 +25773,17 @@ textarea.form-control-lg {
   padding: 6px;
   border-radius: 50%;
   background: #44687E;
+  opacity: 40%;
 }
 .pd-tabs-1-panels-timeline .pd-tabs-1-panels-card header .pd-tabs-1-panels-card-circle {
   position: absolute;
   left: -25px;
-  top: 10px;
+  top: 0px;
   width: 10px;
   height: 10px;
   background: #44687E;
   border-radius: 50%;
+  opacity: 40%;
 }
 .pd-tabs-1-panels-timeline .pd-tabs-1-panels-card header button {
   border: none;
@@ -25866,7 +25869,9 @@ textarea.form-control-lg {
 .pd-tabs-1-panels-timeline .pd-tabs-1-panels-card hr {
   margin-bottom: 40px;
 }
-.pd-tabs-1-style h2, .pd-tabs-1-style .h2, .pd-tabs-1-style h3, .pd-tabs-1-style .h3 {
+.pd-tabs-1-style h2, .pd-tabs-1-style .h2,
+.pd-tabs-1-style h3,
+.pd-tabs-1-style .h3 {
   font-weight: 700;
   color: #6c757d;
   padding-bottom: 10px;
@@ -25874,7 +25879,9 @@ textarea.form-control-lg {
   font-size: 1.2rem;
   margin-bottom: 24px;
 }
-.pd-tabs-1-style h2:after, .pd-tabs-1-style .h2:after, .pd-tabs-1-style h3:after, .pd-tabs-1-style .h3:after {
+.pd-tabs-1-style h2:after, .pd-tabs-1-style .h2:after,
+.pd-tabs-1-style h3:after,
+.pd-tabs-1-style .h3:after {
   content: "";
   position: absolute;
   bottom: 0px;
@@ -25886,7 +25893,9 @@ textarea.form-control-lg {
 .pd-tabs-1-style h4, .pd-tabs-1-style .h4 {
   text-decoration: underline;
 }
-.pd-tabs-1-style h4, .pd-tabs-1-style .h4, .pd-tabs-1-style h5, .pd-tabs-1-style .h5 {
+.pd-tabs-1-style h4, .pd-tabs-1-style .h4,
+.pd-tabs-1-style h5,
+.pd-tabs-1-style .h5 {
   font-size: 1rem;
   font-weight: 700;
   color: #6c757d;
