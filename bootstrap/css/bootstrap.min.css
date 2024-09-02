@@ -25686,13 +25686,12 @@ textarea.form-control-lg {
           flex-direction: row;
 }
 .pd-tabs-1-panels-timeline .pd-tabs-1-timeline-outer {
-  min-height: 300px;
+  min-height: 100px;
   width: 40px;
   max-width: 40px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 40px;
           flex: 0 0 40px;
-  background: #f8f9fa;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25713,8 +25712,6 @@ textarea.form-control-lg {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
-  min-height: 300px;
-  background: #f2f2f2;
 }
 @media screen and (max-width: 767px) {
   .pd-tabs-1-panels-timeline .pd-tabs-1-panels-outer {
@@ -25725,6 +25722,9 @@ textarea.form-control-lg {
   .pd-tabs-1-panels-timeline .pd-tabs-1-panels-outer {
     max-width: 93%;
   }
+}
+.pd-tabs-1-panels-timeline .pd-tabs-1-panels-card {
+  margin-bottom: 16px;
 }
 .pd-tabs-1-panels-timeline .pd-tabs-1-panels-card header {
   position: relative;
@@ -25750,10 +25750,11 @@ textarea.form-control-lg {
 .pd-tabs-1-panels-timeline .pd-tabs-1-panels-card header a h4,
 .pd-tabs-1-panels-timeline .pd-tabs-1-panels-card header a .h4 {
   font-size: 1.2rem;
+  line-height: 1.8;
 }
 .pd-tabs-1-panels-timeline .pd-tabs-1-panels-card header .pd-tabs-1-panels-card-icon {
   position: absolute;
-  left: -41px;
+  left: -38px;
   top: -16px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25772,9 +25773,20 @@ textarea.form-control-lg {
   border-radius: 50%;
   background: #44687E;
 }
+.pd-tabs-1-panels-timeline .pd-tabs-1-panels-card header .pd-tabs-1-panels-card-circle {
+  position: absolute;
+  left: -25px;
+  top: 10px;
+  width: 10px;
+  height: 10px;
+  background: #44687E;
+  border-radius: 50%;
+  opacity: 20%;
+}
 .pd-tabs-1-panels-timeline .pd-tabs-1-panels-card header button {
   border: none;
   margin-right: 10px;
+  background: transparent;
 }
 .pd-tabs-1-panels-timeline .pd-tabs-1-panels-card .pd-tabs-1-panels-card-body {
   padding-top: 20px;
@@ -25851,6 +25863,9 @@ textarea.form-control-lg {
 .pd-tabs-1-panels-timeline .pd-tabs-1-panels-card .pd-tabs-1-panels-card-footnote .pd-tabs-1-panels-card-footnote-label p {
   border-bottom: 3px solid #44687E;
   padding-bottom: 6px;
+}
+.pd-tabs-1-panels-timeline .pd-tabs-1-panels-card hr {
+  margin-bottom: 40px;
 }
 
 /* Custom CSS rules come here */
