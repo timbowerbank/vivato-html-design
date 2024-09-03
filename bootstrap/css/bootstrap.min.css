@@ -25901,5 +25901,29 @@ textarea.form-control-lg {
   color: #6c757d;
   line-height: 2;
 }
+.pd-tabs-1-style ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: #6c757d;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.pd-tabs-1-style ul li {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 32px;
+  position: relative;
+}
+.pd-tabs-1-style ul li:before {
+  content: url(/images/design-assets/icon-checkmark.svg);
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 0;
+}
+.pd-tabs-1-style ul.pd-tabs-1-list-negative li:before {
+  content: url(/images/design-assets/icon-checkmark-no.svg);
+}
 
 /* Custom CSS rules come here */

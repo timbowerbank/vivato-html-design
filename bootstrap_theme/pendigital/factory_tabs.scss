@@ -273,4 +273,37 @@
         color: $gray-600;
         line-height: 2;
     }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        color: $gray-600;
+        font-weight: 400;
+
+        // text-transform: uppercase;
+        font-size: 1rem;
+
+        li {
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-left: 32px;
+            position: relative;
+
+            &:before {
+                content: url(/images/design-assets/icon-checkmark.svg);
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                left: 0;
+            }
+        }
+    }
+    ul.pd-tabs-1-list-negative {
+        li {
+            &:before {
+                content: url(/images/design-assets/icon-checkmark-no.svg);
+            }
+        }
+    }
 }
