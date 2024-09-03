@@ -25925,5 +25925,46 @@ textarea.form-control-lg {
 .pd-tabs-1-style ul.pd-tabs-1-list-negative li:before {
   content: url(/images/design-assets/icon-checkmark-no.svg);
 }
+.pd-tabs-1-accordion .accordion-item h2 .accordion-button, .pd-tabs-1-accordion .accordion-item .h2 .accordion-button {
+  color: #343a40;
+}
+.pd-tabs-1-accordion .accordion-item h2 .accordion-button:not(.collapsed), .pd-tabs-1-accordion .accordion-item .h2 .accordion-button:not(.collapsed) {
+  background-color: #e9ecef;
+}
+.pd-tabs-1-accordion .accordion-body h2, .pd-tabs-1-accordion .accordion-body .h2,
+.pd-tabs-1-accordion .accordion-body h3,
+.pd-tabs-1-accordion .accordion-body .h3 {
+  font-weight: 700;
+  color: #6c757d;
+  padding-bottom: 10px;
+  position: relative;
+  font-size: 1.2rem;
+  margin-bottom: 24px;
+}
+.pd-tabs-1-accordion .accordion-body h2:after, .pd-tabs-1-accordion .accordion-body .h2:after,
+.pd-tabs-1-accordion .accordion-body h3:after,
+.pd-tabs-1-accordion .accordion-body .h3:after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 60px;
+  height: 3px;
+  border-bottom: 3px solid #44687E;
+}
+.pd-tabs-1-accordion .accordion-body h4, .pd-tabs-1-accordion .accordion-body .h4 {
+  text-decoration: underline;
+}
+.pd-tabs-1-accordion .accordion-body h4, .pd-tabs-1-accordion .accordion-body .h4,
+.pd-tabs-1-accordion .accordion-body h5,
+.pd-tabs-1-accordion .accordion-body .h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #6c757d;
+}
+.pd-tabs-1-accordion .accordion-body p {
+  color: #6c757d;
+  line-height: 2;
+}
 
 /* Custom CSS rules come here */
