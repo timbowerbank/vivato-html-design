@@ -162,8 +162,9 @@
                                                 <button type="button" data-bs-toggle="collapse" data-bs-target="#panel-3" aria-expanded="true" aria-controls="panel-3" class="timelineBtn">
                                                     <img src="/images/design-assets/expand_circle_down_24dp_44687E_FILL0_wght400_GRAD0_opsz24.svg">
                                                 </button>
-                                                <div class="pd-tabs-1-panels-card-circle">
-</div>
+                                                <div class="pd-tabs-1-panels-card-icon">
+                                                    <img alt="location icon" width="24" height="24" loading="lazy" src="images/design-assets/location_on_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg">
+                                                </div>
                                             </header>
                                             <div class="collapse timelineCollapse" id="panel-3">
                                                 <div class="pd-tabs-1-panels-card-body">
@@ -215,21 +216,29 @@
             <script>
                 let timelineOuter;
                 let panelChildren;
+                let firstPanelChild;
                 let lastPanelChild;
                 let lastPanelChildHeader;
                 let timelineCollapsibles;
+                let itineraryTab;
                 window.addEventListener("load", initTimeline);
                 function initTimeline() {
                     timelineOuter = document.querySelector(".pd-tabs-1-timeline-outer");
                     panelChildren = document.getElementsByClassName("pd-tabs-1-panels-card");
+                    firstPanelChild = panelChildren[0];
                     lastPanelChild = panelChildren[panelChildren.length -1];
-                    lastPanelChildHeader = lastPanelChild.getElementsByTagName("header")[0];
                     timelineCollapsibles = document.getElementsByClassName("timelineCollapse");
+                    itineraryTab = document.getElementById("pills-itinerary-tab");
                     for(const panel of timelineCollapsibles) {
                         panel.addEventListener("shown.bs.collapse", resizeTimelineListener);
                         panel.addEventListener("hidden.bs.collapse", resizeTimelineListener);
                     }
+                    itineraryTab.addEventListener("shown.bs.tab", navToItineraryListener);
                     setTimelineHeight();
+                }
+
+                function navToItineraryListener() {
+                    setTimelineHeight();                    
                 }
 
                 function resizeTimelineListener(e) {
@@ -239,22 +248,15 @@
                 }
 
                 function setTimelineHeight() {
-                    let cumulativeHeight = 0;
-                    for(let i = 0; i < panelChildren.length; i++) {
-                        if(i !== panelChildren.length-1 || i < panelChildren.length-1) {
-                            let panelRect = panelChildren[i].getBoundingClientRect();
-                            cumulativeHeight += panelRect.height;
-                        }
-                    
-                    }
 
-                    
-                    // let calculatedHeight = cumulativeHeight + lastPanelChildHeader.offsetHeight;
-                    let calculatedHeight = cumulativeHeight;
+                    let firstChildRect = firstPanelChild.getBoundingClientRect();
+                    let lastChildRect = lastPanelChild.getBoundingClientRect();
+                    let firstY = firstChildRect.top;
+                    let lastY = lastChildRect.top;
+                    let calculatedHeight = (lastY - firstY)+10;
                     timelineOuter.style.height = `${calculatedHeight}px`;
-                
+                    
                 }
-
             </script>
         </section>
         <script src="/assets/js/popper.min.js"></script>

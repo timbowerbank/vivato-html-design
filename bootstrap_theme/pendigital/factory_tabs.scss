@@ -108,7 +108,6 @@
 
     .pd-tabs-1-panels-card {
         margin-bottom: 16px;
-        background: $gray-200;
 
         header {
             position: relative;
@@ -132,8 +131,8 @@
             .pd-tabs-1-panels-card-icon {
                 position: absolute;
                 left: -38px;
-                // top: -4px;
-                top: 0px;
+                top: -4px;
+                // top: 0px;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
@@ -141,19 +140,17 @@
                 padding: 6px;
                 border-radius: 50%;
                 background: #44687E;
-                opacity: 40%;
             }
 
             .pd-tabs-1-panels-card-circle {
                 position: absolute;
                 left: -25px;
-                // top: 10px;
-                top: 0px;
+                top: 10px;
+                // top: 0px;
                 width: 10px;
                 height: 10px;
                 background: #44687E;
                 border-radius: 50%;
-                opacity: 40%;
             }
 
             button {
