@@ -1265,3 +1265,167 @@
         }
     }
 }
+
+// start pd-cards-12
+.pd-cards-12 {
+
+    color: $gray-800;
+
+    .pd-intro-heading-sm {
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: 300;
+        display: inline-block;
+        padding-bottom: 4px;
+        color: $pd-oxford-blue;
+    }
+
+    .pd-headline {
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: $pd-oxford-blue;
+    }
+
+    .pd-subHeadline {
+        font-size: 1.3rem;
+        line-height: 1.8;
+        font-weight: 300;
+        color: $pd-oxford-blue;
+    }
+
+    .pd-border-left {
+        padding: 20px;
+        border-left: 2px solid $pd-ochre;
+    }
+
+
+    // anchor is pd-cards-12-outer
+    @media screen and (max-width: 575px) {
+        padding-top: 140px;
+    }
+
+    @media (min-width: 576px) {
+        padding-top: 40px;
+    }
+
+
+    .pd-cards-12-outer {
+        flex: 0 1 auto;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid $pd-bone;
+        text-decoration: none;
+        background-color: $pd-isaballine;
+        transition: background-color 0.4s;
+        box-shadow: 4px 4px 16px 2px rgba(0,0,0,0.2);
+
+        .pd-cards-12-mask {
+            position: relative;
+            height: 100px;
+            width: 100px;
+            overflow: hidden;
+
+            .pd-cards-12-circle-outer {
+                transition: transform 0.4s;
+                position: absolute;
+                left: -29px;
+                top: -28px;
+                width: 100px;
+                height: 100px;
+                background-color: $pd-bone;
+                border-radius: 50em;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                .pd-cards-12-circle-inner {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50em;
+                    background-color: $pd-ochre;
+                    border: 2px solid $pd-ochre;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+
+                    .pd-icon {
+                        width: 34px;
+                        height: 34px;
+                        fill: $white;
+                    }
+                }
+            }
+        }
+
+        header {
+            flex: 0 1 auto;
+
+            h3 {
+                color: $pd-oxford-blue;
+                font-weight: 700;
+            }
+        }
+
+        .pd-cards-12-body {
+            flex: 0 1 auto;
+
+            // margin-left: 20px;
+            // margin-bottom: 20px;
+            // border-left: 2px solid $pd-ochre;
+            p {
+                font-weight: 300;
+                color: $pd-oxford-blue;
+                line-height: 1.8;
+            }
+        }
+
+        footer {
+            margin-top: auto;
+
+            p {
+                color: $pd-oxford-blue;
+                font-weight: 700;
+                font-size: 0.9rem;
+                transition: color 0.4s;
+
+                &:before {
+                    content: ">";
+                    margin-right: 8px;
+                }
+            }
+        }
+
+        &:hover {
+            background-color: lighten($pd-isaballine, 10%);
+
+            footer p {
+                color: darken($pd-ochre, 10%);
+            }
+
+            .pd-cards-12-mask {
+                .pd-cards-12-circle-outer {
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        &:focus {
+            outline: 2px dotted $pd-ochre;
+            outline-offset: 4px;
+            background-color: lighten($pd-isaballine, 10%);
+
+            footer p {
+                color: darken($pd-ochre, 10%);
+            }
+
+            .pd-cards-12-mask {
+                .pd-cards-12-circle-outer {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}

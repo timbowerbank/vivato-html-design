@@ -17048,6 +17048,177 @@ textarea.form-control-lg {
   background: #00994d;
 }
 
+.pd-cards-12 {
+  color: #343a40;
+}
+.pd-cards-12 .pd-intro-heading-sm {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 300;
+  display: inline-block;
+  padding-bottom: 4px;
+  color: #00182E;
+}
+.pd-cards-12 .pd-headline {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #00182E;
+}
+.pd-cards-12 .pd-subHeadline {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  font-weight: 300;
+  color: #00182E;
+}
+.pd-cards-12 .pd-border-left {
+  padding: 20px;
+  border-left: 2px solid #D17A22;
+}
+@media screen and (max-width: 575px) {
+  .pd-cards-12 {
+    padding-top: 140px;
+  }
+}
+@media (min-width: 576px) {
+  .pd-cards-12 {
+    padding-top: 40px;
+  }
+}
+.pd-cards-12 .pd-cards-12-outer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #E0DDCF;
+  text-decoration: none;
+  background-color: #F1F0EA;
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+  -webkit-box-shadow: 4px 4px 16px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 4px 16px 2px rgba(0, 0, 0, 0.2);
+}
+.pd-cards-12 .pd-cards-12-outer .pd-cards-12-mask {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+}
+.pd-cards-12 .pd-cards-12-outer .pd-cards-12-mask .pd-cards-12-circle-outer {
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  position: absolute;
+  left: -29px;
+  top: -28px;
+  width: 100px;
+  height: 100px;
+  background-color: #E0DDCF;
+  border-radius: 50em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pd-cards-12 .pd-cards-12-outer .pd-cards-12-mask .pd-cards-12-circle-outer .pd-cards-12-circle-inner {
+  width: 60px;
+  height: 60px;
+  border-radius: 50em;
+  background-color: #D17A22;
+  border: 2px solid #D17A22;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pd-cards-12 .pd-cards-12-outer .pd-cards-12-mask .pd-cards-12-circle-outer .pd-cards-12-circle-inner .pd-icon {
+  width: 34px;
+  height: 34px;
+  fill: #fff;
+}
+.pd-cards-12 .pd-cards-12-outer header {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+}
+.pd-cards-12 .pd-cards-12-outer header h3, .pd-cards-12 .pd-cards-12-outer header .h3 {
+  color: #00182E;
+  font-weight: 700;
+}
+.pd-cards-12 .pd-cards-12-outer .pd-cards-12-body {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+}
+.pd-cards-12 .pd-cards-12-outer .pd-cards-12-body p {
+  font-weight: 300;
+  color: #00182E;
+  line-height: 1.8;
+}
+.pd-cards-12 .pd-cards-12-outer footer {
+  margin-top: auto;
+}
+.pd-cards-12 .pd-cards-12-outer footer p {
+  color: #00182E;
+  font-weight: 700;
+  font-size: 0.9rem;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+}
+.pd-cards-12 .pd-cards-12-outer footer p:before {
+  content: ">";
+  margin-right: 8px;
+}
+.pd-cards-12 .pd-cards-12-outer:hover {
+  background-color: white;
+}
+.pd-cards-12 .pd-cards-12-outer:hover footer p {
+  color: #a5601b;
+}
+.pd-cards-12 .pd-cards-12-outer:hover .pd-cards-12-mask .pd-cards-12-circle-outer {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.pd-cards-12 .pd-cards-12-outer:focus {
+  outline: 2px dotted #D17A22;
+  outline-offset: 4px;
+  background-color: white;
+}
+.pd-cards-12 .pd-cards-12-outer:focus footer p {
+  color: #a5601b;
+}
+.pd-cards-12 .pd-cards-12-outer:focus .pd-cards-12-mask .pd-cards-12-circle-outer {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .pd-section-1 {
   border-top: 1px solid #dee2e6;
   border-bottom: 1px solid #dee2e6;
