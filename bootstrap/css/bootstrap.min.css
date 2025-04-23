@@ -14454,6 +14454,241 @@ textarea.form-control-lg {
   margin-top: 18px;
   margin-bottom: 18px;
 }
+
+.pd-hero-15 {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  min-height: 720px;
+  max-height: 940px;
+}
+.pd-hero-15 h1, .pd-hero-15 .h1 {
+  font-size: 1.1rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 300;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+@media screen and (max-width: 420px) {
+  .pd-hero-15 h1, .pd-hero-15 .h1 {
+    padding-top: 30px;
+  }
+}
+.pd-hero-15 .pd-hero-15-headline {
+  font-size: 3.6rem;
+  font-weight: 400;
+  color: white;
+}
+.pd-hero-15 .pd-hero-15-headline strong {
+  font-weight: 700;
+}
+@media screen and (max-width: 420px) {
+  .pd-hero-15 .pd-hero-15-headline {
+    font-size: 2.4rem;
+  }
+}
+@media (min-width: 421px) and (max-width: 575px) {
+  .pd-hero-15 .pd-hero-15-headline {
+    font-size: 3.2rem;
+  }
+}
+.pd-hero-15 .pd-hero-15-subheadline {
+  color: white;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 2;
+}
+.pd-hero-15 .pd-hero-15-subheadline strong {
+  font-weight: 700;
+}
+.pd-hero-15 .pd-hero-15-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+.pd-hero-15 .pd-hero-15-img.pd-hero-15-img-loaded {
+  opacity: 1;
+}
+.pd-hero-15 .pd-hero-15-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 24, 46, 0.95)), color-stop(40%, rgba(0, 24, 46, 0.7)), color-stop(60%, rgba(0, 24, 46, 0.7)), to(rgba(0, 24, 46, 0.95)));
+  background: linear-gradient(rgba(0, 24, 46, 0.95) 0%, rgba(0, 24, 46, 0.7) 40%, rgba(0, 24, 46, 0.7) 60%, rgba(0, 24, 46, 0.95) 100%);
+}
+.pd-hero-15 .pd-hero-15-btn {
+  padding: 14px 30px;
+  color: white;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #00CC66;
+  -webkit-transition: background 0.4s;
+  transition: background 0.4s;
+  margin: 20px;
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+.pd-hero-15 .pd-hero-15-btn:hover {
+  background: #00994d;
+}
+.pd-hero-15 .pd-hero-15-btn:focus {
+  outline: 2px dotted #fff;
+  outline-offset: 4px;
+}
+.pd-hero-15 .pd-hero-15-btn span .pd-icon {
+  fill: #fff;
+}
+.pd-hero-15 .pd-hero-15-btn-light {
+  padding: 14px 30px;
+  color: white;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #00CC66;
+  -webkit-transition: background 0.4s;
+  transition: background 0.4s;
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.pd-hero-15 .pd-hero-15-btn-light .pd-icon {
+  fill: #fff;
+}
+.pd-hero-15 .pd-hero-15-btn-light:hover {
+  background: #00CC66;
+  color: #fff;
+}
+.pd-hero-15 .pd-hero-15-btn-light:hover .pd-icon {
+  fill: #fff;
+}
+.pd-hero-15 .pd-hero-15-btn-light:focus {
+  outline: 2px dotted #fff;
+  outline-offset: 4px;
+}
+.pd-hero-15 .pd-hero-15-btn-light span .pd-icon {
+  fill: #fff;
+}
+
+.pd-hero-15-overlap {
+  border-top-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  min-height: 140px;
+  background: #F1F0EA;
+  z-index: 10;
+  position: relative;
+  width: 90%;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+  opacity: 0.98;
+  -webkit-box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.2);
+  border: 1px solid #E0DDCF;
+}
+@media (max-width: 575px) {
+  .pd-hero-15-overlap {
+    top: 20px;
+  }
+}
+@media (min-width: 576px) {
+  .pd-hero-15-overlap {
+    top: -100px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .pd-hero-15-overlap .pd-hero-15-overlap-start img {
+    width: 180px;
+  }
+}
+@media (min-width: 991px) and (max-width: 991px) {
+  .pd-hero-15-overlap .pd-hero-15-overlap-start img {
+    width: 220px;
+  }
+}
+@media (min-width: 992px) {
+  .pd-hero-15-overlap .pd-hero-15-overlap-start img {
+    width: 180px;
+  }
+}
+.pd-hero-15-overlap .pd-hero-15-content-inner {
+  padding: 20px;
+  border-left: 2px solid #D17A22;
+  color: #00182E;
+}
+.pd-hero-15-overlap .pd-hero-15-content-inner header img {
+  border-radius: 50em;
+  margin-bottom: 20px;
+  -webkit-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+          transform: scaleX(-1);
+  width: 100px;
+}
+.pd-hero-15-overlap .pd-hero-15-content-inner header h2, .pd-hero-15-overlap .pd-hero-15-content-inner header .h2 {
+  font-weight: 700;
+}
+.pd-hero-15-overlap .pd-hero-15-content-inner .pd-hero-15-content-inner-body {
+  background: #F1F0EA;
+  padding: 12px;
+}
+.pd-hero-15-overlap .pd-hero-15-content-inner .pd-hero-15-content-inner-body p {
+  line-height: 1.8;
+  font-weight: 300;
+  font-size: 1rem;
+}
+.pd-hero-15-overlap .pd-hero-15-content-inner .pd-hero-15-content-inner-body p strong {
+  font-weight: 700;
+}
+.pd-hero-15-overlap .pd-btn {
+  padding: 14px 14px;
+  color: #00182E;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #00182E;
+  -webkit-transition: background 0.4s;
+  transition: background 0.4s;
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.pd-hero-15-overlap .pd-btn .pd-icon {
+  fill: #00182E;
+}
+.pd-hero-15-overlap .pd-btn:hover {
+  background: #00CC66;
+  color: #fff;
+  border: 2px solid #00CC66;
+}
+.pd-hero-15-overlap .pd-btn:hover .pd-icon {
+  fill: #fff;
+}
+.pd-hero-15-overlap .pd-btn:focus {
+  outline: 2px dotted #fff;
+  outline-offset: 4px;
+}
+.pd-hero-15-overlap .pd-btn span .pd-icon {
+  fill: #00182E;
+}
 .pd-heroesHalf-1 .pd-heroesHalf-1-text-outer {
   display: -webkit-box;
   display: -ms-flexbox;
