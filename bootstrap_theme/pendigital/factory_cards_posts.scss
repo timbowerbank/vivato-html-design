@@ -823,7 +823,337 @@
         }
     }
 }
+// end pd-cards-posts-4
+// start pd-cardsposts-5
+.pd-cards-posts-5 {
+    padding-top: 60px;
+    padding-bottom: 100px;
 
+    .pd-cards-posts-5-card {
+        background-color: $pd-isaballine;
+        border: 1px solid $pd-bone;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        .pd-cards-posts-5-left-col {
+            // padding: 20px;
+            a {
+                .pd-cards-posts-5-img-outer {
+                    min-height: 240px;
+                    height: 100%;
+                    width: 100%;
+                    position: relative;
+                    overflow: hidden;
+
+                    img {
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        object-position: center center;
+                        transition: transform 0.4s;
+                    }
+                }
+
+                &:hover {
+                    .pd-cards-posts-5-img-outer {
+                        img {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+
+                &:focus {
+                    .pd-cards-posts-5-img-outer {
+                        outline: 2px dotted $pd-oxford-blue;
+                        outline-offset: 4px;
+                    }
+                }
+            }
+        }
+
+        .pd-cards-posts-5-right-col {
+            flex-grow: 1;
+            padding: 20px;
+            color: $pd-oxford-blue;
+
+            @media screen and (max-width: 575px) {
+                display: block;
+            }
+
+            @media (min-width: 576px) {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    .pd-cards-posts-5-card.pd-leading-card {
+        @media (min-width: 768px) {
+            flex-direction: row;
+        }
+
+        .pd-cards-posts-5-left-col {
+            flex: 0 0 50%;
+
+            a {
+                .pd-cards-posts-5-img-outer {
+                    min-height: 360px;
+                }
+            }
+        }
+    }
+
+    .pd-cards-posts-5-tag-list {
+        width: 100%;
+        margin-left: -4px;
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 0.7rem;
+            border: 1px solid $pd-ochre;
+            padding: 3px 6px;
+            margin: 4px;
+            color: $pd-oxford-blue;
+
+            // border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            transition: background 0.4s, color 0.4s, border 0.4s;
+
+            &:hover {
+                border: 1px solid $info;
+                background: $info;
+                color: $white;
+            }
+
+            &:focus {
+                outline: 2px dotted $primary;
+                outline-offset: 4px;
+            }
+        }
+    }
+
+    .pd-cards-posts-5-category {
+        text-decoration: none;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: 300;
+        display: block;
+        margin-bottom: 4px;
+        color: $pd-oxford-blue;
+
+        &:focus {
+            outline: 2px dotted $pd-oxford-blue;
+            outline-offset: 4px;
+        }
+    }
+
+    .pd-cards-posts-5-date {
+        font-size: 0.7;
+        font-weight: 700;
+        display: flex;
+        flex-direction: row;
+
+        span {
+            .pd-icon {
+                fill: $pd-ochre;
+            }
+        }
+    }
+
+    .pd-cards-posts-5-headline {
+        display: block;
+        text-decoration: none;
+        color: $pd-oxford-blue;
+
+        h2 {
+            font-size: 1.4rem;
+            line-height: 1.4;
+            font-weight: 700;
+        }
+
+        &:focus {
+            outline: 2px dotted $pd-oxford-blue;
+            outline-offset: 4px;
+        }
+    }
+
+    .pd-cards-posts-5-headline.pd-leading-card {
+        h2 {
+            @media (min-width: 576px) {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .pd-cards-posts-5-body {
+        line-height: 1.8;
+        font-weight: 300;
+    }
+
+    .pd-cards-posts-5-footer {
+        margin-top: auto;
+
+        a.pd-cards-posts-5-link {
+            font-weight: 700;
+            text-decoration: none;
+            color: $pd-oxford-blue;
+            font-size: 0.9rem;
+
+            &:before {
+                content: ">";
+                margin-right: 8px;
+            }
+
+            &:focus {
+                outline: 2px dotted $pd-oxford-blue;
+                outline-offset: 4px;
+            }
+        }
+    }
+
+    .pd-cards-posts-5-cats-col {
+        h2,
+        h3 {
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 40px;
+
+            li {
+                padding-bottom: 8px;
+                padding-top: 4px;
+                border-bottom: 1px solid $pd-ochre;
+
+                a {
+                    text-transform: uppercase;
+                    font-size: 0.7rem;
+                    text-decoration: none;
+                    color: $pd-oxford-blue;
+                    transition: color 0.4s;
+                    letter-spacing: 0.1em;
+                    font-weight: 300;
+
+                    &:hover {
+                        color: lighten($pd-oxford-blue, 10%);
+                    }
+
+                    &:focus {
+                        outline: 2px dotted $pd-oxford-blue;
+                        outline-offset: 4px;
+                    }
+                }
+            }
+        }
+
+        .pd-cards-posts-5-banner {
+            // background: linear-gradient(180deg, $pd-isaballine, darken($pd-isaballine, 10%));
+            background-color: $pd-oxford-blue;
+            padding-top: 90px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 40px;
+            position: relative;
+
+            .pd-cards-posts-5-banner-headline {
+                font-weight: 300;
+                font-size: 1.4rem;
+                line-height: 1.4;
+
+                strong {
+                    font-weight: 700;
+                }
+
+                @media (max-width: 991px) {
+                    font-size: 1.4rem;
+                }
+            }
+
+            .pd-cards-posts-5-banner-subHeadline {
+                font-weight: 300;
+                font-size: 1rem;
+            }
+
+            .pd-cards-posts-5-banner-mask {
+                position: absolute;
+                top: 0;
+                height: 100px;
+                width: 100px;
+                overflow: hidden;
+
+                .pd-cards-posts-5-banner-circle-outer {
+                    transition: transform 0.4s;
+                    position: absolute;
+                    top: -28px;
+                    width: 100px;
+                    height: 100px;
+                    background-color: $pd-bone;
+                    border-radius: 50em;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+
+                    .pd-cards-posts-5-banner-circle-inner {
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50em;
+                        background-color: $pd-ochre;
+                        border: 2px solid $pd-ochre;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+
+                        .pd-icon {
+                            width: 34px;
+                            height: 34px;
+                            fill: $white;
+                        }
+                    }
+                }
+            }
+
+            .pd-cards-posts-5-banner-mask.pd-left {
+                left: 0;
+
+                .pd-cards-posts-5-banner-circle-outer {
+                    left: -29px;
+                }
+            }
+
+            .pd-cards-posts-5-banner-mask.pd-right {
+                right: 0;
+
+                .pd-cards-posts-5-banner-circle-outer {
+                    right: -29px;
+                }
+            }
+        }
+    }
+
+    .page-link {
+        border: 1px solid $pd-ochre;
+
+        &:hover {
+            color: $white;
+            background-color: $pd-ochre;
+        }
+    }
+}
+
+
+// start pd-cards-posts-6
 .pd-cards-posts-6 {
     padding-top: 100px;
     padding-bottom: 100px;

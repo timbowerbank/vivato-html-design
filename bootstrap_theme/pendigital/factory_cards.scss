@@ -1598,3 +1598,158 @@
     }
 
 }
+
+// start pd-section 18
+.pd-cards-14 {
+    position: relative;
+    padding-top: 100px;
+
+    .pd-intro-heading-sm {
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: 300;
+        display: inline-block;
+        padding-bottom: 4px;
+        color: $pd-oxford-blue;
+    }
+
+    .pd-headline {
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: $pd-oxford-blue;
+    }
+
+    .pd-subHeadline {
+        font-size: 1.3rem;
+        line-height: 1.8;
+        font-weight: 300;
+        color: $pd-oxford-blue;
+    }
+
+    .pd-border-left {
+        padding: 20px;
+        border-left: 2px solid $pd-ochre;
+    }
+
+    // padding-bottom: 100px;
+    .pd-cards-14-mask {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100px;
+        width: 100px;
+        overflow: hidden;
+
+        .pd-cards-14-circle-outer {
+            transition: transform 0.4s;
+            position: absolute;
+            right: -29px;
+            top: -28px;
+            width: 100px;
+            height: 100px;
+            background-color: $pd-bone;
+            border-radius: 50em;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .pd-cards-14-circle-inner {
+                width: 60px;
+                height: 60px;
+                border-radius: 50em;
+                background-color: $pd-ochre;
+                border: 2px solid $pd-ochre;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                .pd-icon {
+                    width: 34px;
+                    height: 34px;
+                    fill: $white;
+                }
+            }
+        }
+    }
+
+    .pd-cards-14-card-outer {
+        flex: 0 1 auto;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px; 
+
+        header {
+            flex: 0 1 auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-bottom: 10px;
+            
+
+            h3 {
+                font-size: 1.4rem;
+                margin-bottom: 0px;
+                color: $pd-oxford-blue;
+                font-weight: 700;
+            }
+
+            .pd-cards-14-icon-outer {
+                margin-right: 10px;
+                background: $pd-ochre;
+                width: 30px;
+                height: 30px;
+                border-radius: 50em;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .pd-icon {
+                    fill: $white;
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+
+        .pd-cards-14-card-body {
+            flex: 0 1 auto;
+
+            p {
+                line-height: 1.8;
+                font-weight: 300;
+                color: $pd-oxford-blue;
+            }
+        }
+
+        .pd-cards-14-card-footer {
+            margin-top: auto;
+
+            a {
+                font-weight: 700;
+                font-size: 0.9rem;
+                transition: color 0.4s;
+                text-decoration: none;
+                transform: color 0.4s;
+                color: $pd-oxford-blue;
+
+                &:before {
+                    content: ">";
+                    margin-right: 8px;
+                }
+
+                &:hover {
+                    color: $pd-ochre;
+                }
+
+                &:focus {
+                    outline: 2px dotted $pd-oxford-blue;
+                    outline-offset: 4px;
+                }
+            }
+        }
+    }
+}
