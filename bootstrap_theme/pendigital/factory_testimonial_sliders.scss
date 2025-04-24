@@ -843,3 +843,277 @@
 
 // end pd-testimonial-slider-6
 
+.pd-testimonial-slider-7 {
+    position: relative;
+    color: $pd-oxford-blue;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .pd-intro-heading-sm {
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: 300;
+        display: inline-block;
+        padding-bottom: 4px;
+        color: $pd-oxford-blue;
+    }
+
+    .pd-headline {
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: $pd-oxford-blue;
+    }
+
+    .pd-subHeadline {
+        font-size: 1.3rem;
+        line-height: 1.8;
+        font-weight: 300;
+    }
+
+    .pd-border-left {
+        padding: 20px;
+        border-left: 2px solid $pd-ochre;
+    }
+
+    .pd-btn {
+        padding: 14px 30px;
+        color: white;
+        text-transform: uppercase;
+        background: transparent;
+        border: 2px solid $info;
+        transition: background 0.4s;
+        display: inline-block;
+        text-decoration: none;
+        letter-spacing: 0.15em;
+        font-weight: 700;
+        font-size: 0.9rem;
+    
+        .pd-icon {
+            fill: $white;
+        }
+    
+        // box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.4);
+        &:hover {
+            // background: darken($info, 10%);
+            background: $info;
+            color: $white;
+    
+            .pd-icon {
+                fill: $white;
+            }
+        }
+    
+        &:focus {
+            outline: 2px dotted $white;
+            outline-offset: 4px;
+        }
+    
+        span {
+            .pd-icon {
+                fill: $white;
+            }
+        }
+    }
+    
+    .pd-btn.pd-inverted {
+        color: $pd-oxford-blue;
+        background: transparent;
+        border: 2px solid $pd-oxford-blue;
+    
+        .pd-icon {
+            fill: $pd-oxford-blue;
+        }
+    
+        &:hover {
+            background: $info;
+            border: 2px solid $pd-ochre;
+            color: $white;
+    
+            .pd-icon {
+                fill: $white;
+            }
+        }
+    
+        &:focus {
+            outline: 2px dotted $pd-ochre;
+            outline-offset: 4px;
+        }
+    }
+
+    .pd-testimonial-slider-7-mask {
+        position: absolute;
+        top: 0;
+        height: 100px;
+        width: 100px;
+        overflow: hidden;
+
+        .pd-testimonial-slider-7-circle-outer {
+            transition: transform 0.4s;
+            position: absolute;
+            top: -28px;
+            width: 100px;
+            height: 100px;
+            background-color: $pd-bone;
+            border-radius: 50em;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .pd-testimonial-slider-7-circle-inner {
+                width: 60px;
+                height: 60px;
+                border-radius: 50em;
+                background-color: $pd-ochre;
+                border: 2px solid $pd-ochre;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                .pd-icon {
+                    width: 34px;
+                    height: 34px;
+                    fill: $white;
+                }
+            }
+        }
+    }
+
+    .pd-testimonial-slider-7-mask.pd-left {
+        left: 0;
+
+        .pd-testimonial-slider-7-circle-outer {
+            left: -29px;
+        }
+    }
+
+    .pd-testimonial-slider-7-mask.pd-right {
+        right: 0;
+
+        .pd-testimonial-slider-7-circle-outer {
+            right: -29px;
+        }
+    }
+
+    .pd-section-3-image-outer {
+        @media screen and (max-width: 420px) {
+            min-height: 400px;
+        }
+
+        @media (min-width: 421px) {
+            min-height: 500px;
+        }
+
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: contain;
+            object-position: center center;
+            transform: scaleX(-1);
+        }
+    }
+
+    .pd-testimonial-slider-7-card-outer {
+        color: $pd-oxford-blue;
+        background-color: $pd-isaballine;
+        border: 1px solid $pd-bone;
+        box-shadow: 4px 4px 16px 2px rgba(0,0,0,0.2);
+        margin: 16px;
+
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+
+            .pd-testimonial-slider-7-card-img-outer {
+                position: relative;
+                width: 90px;
+                height: 90px;
+                overflow: hidden;
+                border-radius: 50em;
+                flex: 0 0 90px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    object-fit: cover;
+                    object-position: center center;
+                }
+            }
+
+            .pd-testimonial-slider-7-card-author {
+                flex-grow: 1;
+
+                h3 {
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    color: $pd-oxford-blue;
+                    margin-bottom: 4px;
+                }
+
+                p {
+                    text-transform: uppercase;
+                    font-size: 0.8rem;
+                    font-weight: 700;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+
+        .pd-testimonial-slider-7-card-body {
+            p {
+                line-height: 2;
+                font-weight: 300;
+            }
+        }
+    }
+
+    .pd-testimonial-slider-7-controls-outer {
+        @media screen and (max-width: 991px) {
+            text-align: left;
+            padding-left: 16px;
+        }
+
+        @media (min-width: 992px) {
+            text-align: right;
+            padding-right: 16px;
+        }
+
+        button {
+            background-color: $pd-ochre;
+            border: 1px solid $pd-bone;
+            transition: background-color 0.4s;
+
+            .pd-icon {
+                fill: $white;
+                width: 40px;
+                height: 40px;
+            }
+
+            &:hover {
+                background-color: darken($pd-ochre, 10%);
+            }
+
+            &:focus {
+                outline: 2px dotted $pd-oxford-blue;
+                outline-offset: 4px;
+            }
+        }
+    }
+}
+
+
+

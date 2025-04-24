@@ -19621,6 +19621,280 @@ textarea.form-control-lg {
   background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.7) 100%);
 }
 
+.pd-testimonial-slider-7 {
+  position: relative;
+  color: #00182E;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.pd-testimonial-slider-7 .pd-intro-heading-sm {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 300;
+  display: inline-block;
+  padding-bottom: 4px;
+  color: #00182E;
+}
+.pd-testimonial-slider-7 .pd-headline {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #00182E;
+}
+.pd-testimonial-slider-7 .pd-subHeadline {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  font-weight: 300;
+}
+.pd-testimonial-slider-7 .pd-border-left {
+  padding: 20px;
+  border-left: 2px solid #D17A22;
+}
+.pd-testimonial-slider-7 .pd-btn {
+  padding: 14px 30px;
+  color: white;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #00CC66;
+  -webkit-transition: background 0.4s;
+  transition: background 0.4s;
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.pd-testimonial-slider-7 .pd-btn .pd-icon {
+  fill: #fff;
+}
+.pd-testimonial-slider-7 .pd-btn:hover {
+  background: #00CC66;
+  color: #fff;
+}
+.pd-testimonial-slider-7 .pd-btn:hover .pd-icon {
+  fill: #fff;
+}
+.pd-testimonial-slider-7 .pd-btn:focus {
+  outline: 2px dotted #fff;
+  outline-offset: 4px;
+}
+.pd-testimonial-slider-7 .pd-btn span .pd-icon {
+  fill: #fff;
+}
+.pd-testimonial-slider-7 .pd-btn.pd-inverted {
+  color: #00182E;
+  background: transparent;
+  border: 2px solid #00182E;
+}
+.pd-testimonial-slider-7 .pd-btn.pd-inverted .pd-icon {
+  fill: #00182E;
+}
+.pd-testimonial-slider-7 .pd-btn.pd-inverted:hover {
+  background: #00CC66;
+  border: 2px solid #D17A22;
+  color: #fff;
+}
+.pd-testimonial-slider-7 .pd-btn.pd-inverted:hover .pd-icon {
+  fill: #fff;
+}
+.pd-testimonial-slider-7 .pd-btn.pd-inverted:focus {
+  outline: 2px dotted #D17A22;
+  outline-offset: 4px;
+}
+.pd-testimonial-slider-7 .pd-testimonial-slider-7-mask {
+  position: absolute;
+  top: 0;
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+}
+.pd-testimonial-slider-7 .pd-testimonial-slider-7-mask .pd-testimonial-slider-7-circle-outer {
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  position: absolute;
+  top: -28px;
+  width: 100px;
+  height: 100px;
+  background-color: #E0DDCF;
+  border-radius: 50em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pd-testimonial-slider-7 .pd-testimonial-slider-7-mask .pd-testimonial-slider-7-circle-outer .pd-testimonial-slider-7-circle-inner {
+  width: 60px;
+  height: 60px;
+  border-radius: 50em;
+  background-color: #D17A22;
+  border: 2px solid #D17A22;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pd-testimonial-slider-7 .pd-testimonial-slider-7-mask .pd-testimonial-slider-7-circle-outer .pd-testimonial-slider-7-circle-inner .pd-icon {
+  width: 34px;
+  height: 34px;
+  fill: #fff;
+}
+.pd-testimonial-slider-7 .pd-testimonial-slider-7-mask.pd-left {
+  left: 0;
+}
+.pd-testimonial-slider-7 .pd-testimonial-slider-7-mask.pd-left .pd-testimonial-slider-7-circle-outer {
+  left: -29px;
+}
+.pd-testimonial-slider-7 .pd-testimonial-slider-7-mask.pd-right {
+  right: 0;
+}
+.pd-testimonial-slider-7 .pd-testimonial-slider-7-mask.pd-right .pd-testimonial-slider-7-circle-outer {
+  right: -29px;
+}
+.pd-testimonial-slider-7 .pd-section-3-image-outer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+@media screen and (max-width: 420px) {
+  .pd-testimonial-slider-7 .pd-section-3-image-outer {
+    min-height: 400px;
+  }
+}
+@media (min-width: 421px) {
+  .pd-testimonial-slider-7 .pd-section-3-image-outer {
+    min-height: 500px;
+  }
+}
+.pd-testimonial-slider-7 .pd-section-3-image-outer img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center center;
+     object-position: center center;
+  -webkit-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+.pd-testimonial-slider-7 .pd-testimonial-slider-7-card-outer {
+  color: #00182E;
+  background-color: #F1F0EA;
+  border: 1px solid #E0DDCF;
+  -webkit-box-shadow: 4px 4px 16px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 4px 16px 2px rgba(0, 0, 0, 0.2);
+  margin: 16px;
+}
+.pd-testimonial-slider-7 .pd-testimonial-slider-7-card-outer header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pd-testimonial-slider-7 .pd-testimonial-slider-7-card-outer header .pd-testimonial-slider-7-card-img-outer {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  border-radius: 50em;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 90px;
+          flex: 0 0 90px;
+}
+.pd-testimonial-slider-7 .pd-testimonial-slider-7-card-outer header .pd-testimonial-slider-7-card-img-outer img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+.pd-testimonial-slider-7 .pd-testimonial-slider-7-card-outer header .pd-testimonial-slider-7-card-author {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.pd-testimonial-slider-7 .pd-testimonial-slider-7-card-outer header .pd-testimonial-slider-7-card-author h3, .pd-testimonial-slider-7 .pd-testimonial-slider-7-card-outer header .pd-testimonial-slider-7-card-author .h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #00182E;
+  margin-bottom: 4px;
+}
+.pd-testimonial-slider-7 .pd-testimonial-slider-7-card-outer header .pd-testimonial-slider-7-card-author p {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+.pd-testimonial-slider-7 .pd-testimonial-slider-7-card-outer .pd-testimonial-slider-7-card-body p {
+  line-height: 2;
+  font-weight: 300;
+}
+@media screen and (max-width: 991px) {
+  .pd-testimonial-slider-7 .pd-testimonial-slider-7-controls-outer {
+    text-align: left;
+    padding-left: 16px;
+  }
+}
+@media (min-width: 992px) {
+  .pd-testimonial-slider-7 .pd-testimonial-slider-7-controls-outer {
+    text-align: right;
+    padding-right: 16px;
+  }
+}
+.pd-testimonial-slider-7 .pd-testimonial-slider-7-controls-outer button {
+  background-color: #D17A22;
+  border: 1px solid #E0DDCF;
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+}
+.pd-testimonial-slider-7 .pd-testimonial-slider-7-controls-outer button .pd-icon {
+  fill: #fff;
+  width: 40px;
+  height: 40px;
+}
+.pd-testimonial-slider-7 .pd-testimonial-slider-7-controls-outer button:hover {
+  background-color: #a5601b;
+}
+.pd-testimonial-slider-7 .pd-testimonial-slider-7-controls-outer button:focus {
+  outline: 2px dotted #00182E;
+  outline-offset: 4px;
+}
+
 .pd-logo-strip-1 {
   border-top: 1px solid #dee2e6;
   border-bottom: 1px solid #dee2e6;
