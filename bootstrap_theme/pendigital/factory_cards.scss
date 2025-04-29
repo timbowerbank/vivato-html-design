@@ -1268,7 +1268,6 @@
 
 // start pd-cards-12
 .pd-cards-12 {
-
     color: $gray-800;
 
     .pd-intro-heading-sm {
@@ -1299,7 +1298,6 @@
         border-left: 2px solid $pd-ochre;
     }
 
-
     // anchor is pd-cards-12-outer
     @media screen and (max-width: 575px) {
         padding-top: 140px;
@@ -1308,7 +1306,6 @@
     @media (min-width: 576px) {
         padding-top: 40px;
     }
-
 
     .pd-cards-12-outer {
         flex: 0 1 auto;
@@ -1430,8 +1427,6 @@
     }
 }
 
-
-
 .pd-cards-13 {
     min-height: 800px;
     padding-top: 100px;
@@ -1445,7 +1440,7 @@
         display: inline-block;
         padding-bottom: 4px;
     }
-    
+
     .pd-intro-heading-sm.pd-inverted {
         color: $white;
     }
@@ -1535,6 +1530,7 @@
             flex-direction: row;
             justify-content: start;
             align-items: center;
+
             .pd-cards-13-image-outer {
                 position: relative;
                 overflow: hidden;
@@ -1543,7 +1539,7 @@
                 height: 120px;
                 box-shadow: 4px 4px 16px 2px rgba(0,0,0,0.3);
                 border: 2px solid $pd-ochre;
-    
+
                 img {
                     position: absolute;
                     width: 100%;
@@ -1555,7 +1551,7 @@
                     transition: transform 0.4s;
                 }
             }
-    
+
             .pd-cards-13-card-body {
                 display: flex;
                 flex-direction: column;
@@ -1566,11 +1562,12 @@
                 h3 {
                     font-weight: 700;
                 }
-    
+
                 p {
                     font-weight: 400;
                     color: $white;
                     font-size: 1rem;
+
                     &:before {
                         content: ">";
                         margin-right: 8px;
@@ -1580,23 +1577,20 @@
         }
 
         &:hover {
-            .pd-cards-13-card-inner { 
+            .pd-cards-13-card-inner {
                 .pd-cards-13-image-outer {
                     img {
                         transform: scale(1.1);
                     }
                 }
             }
-
         }
 
         &:focus {
             outline: 2px dotted $white;
             outline-offset: 4px;
         }
-
     }
-
 }
 
 // start pd-section 18
@@ -1679,7 +1673,7 @@
         flex: 0 1 auto;
         display: flex;
         flex-direction: column;
-        margin-bottom: 100px; 
+        margin-bottom: 100px;
 
         header {
             flex: 0 1 auto;
@@ -1687,7 +1681,6 @@
             flex-direction: row;
             align-items: center;
             padding-bottom: 10px;
-            
 
             h3 {
                 font-size: 1.4rem;
@@ -1752,4 +1745,216 @@
             }
         }
     }
+}
+
+// end pd-cards-14
+// start pd-cards-15
+.pd-cards-15 {
+    .pd-intro-heading-sm {
+        display: inline-block;
+        font-size: 0.8rem;
+        padding: 10px 20px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        border: 1px solid $info;
+        border-radius: 0px 0px 20px 0px;
+    }
+
+    .pd-headline {
+        font-weight: 700;
+        font-size: 2.6rem;
+
+        em {
+            font-style: normal;
+            color: $info;
+        }
+    }
+
+    .pd-subHeadline {
+        line-height: 1.8;
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+
+    .pd-btn {
+        padding: 14px 30px;
+        color: white;
+        text-transform: uppercase;
+        background: $info;
+        border: 2px solid $info;
+        transition: background 0.4s;
+        display: inline-block;
+        text-decoration: none;
+        letter-spacing: 0.15em;
+        font-weight: 700;
+        font-size: 0.9rem;
+
+        .pd-icon {
+            fill: $white;
+        }
+
+        // box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.4);
+        &:hover {
+            // background: darken($info, 10%);
+            background: $info;
+            color: $white;
+
+            .pd-icon {
+                fill: $white;
+            }
+        }
+
+        &:focus {
+            outline: 2px dotted $white;
+            outline-offset: 4px;
+        }
+
+        span {
+            margin-right: 6px;
+
+            .pd-icon {
+                fill: $white;
+            }
+        }
+    }
+
+    .pd-cards-15-grid {
+        @media screen and (max-width: 991px) {
+            display: block;
+        }
+
+        @media (min-width: 992px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 200px 200px;
+            gap: 14px;
+        }
+
+        .pd-cards-15-grid-card {
+            background-color: $white;
+            border: 2px solid $info;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 8px 8px 19px -1px rgba(0,0,0,0.2);
+
+            @media screen and (max-width: 991px) {
+                height: 200px;
+                margin-bottom: 10px;
+            }
+
+            .pd-cards-15-card-img-outer {
+                position: absolute;
+                width: 70%;
+                height: auto;
+                left: -60px;
+                top: 20px;
+            }
+
+            .pd-cards-15-card-content {
+                position: absolute;
+                right: 0;
+                padding: 14px;
+                text-align: right;
+                width: 70%;
+
+                .pd-card-headline {
+                    font-weight: 700;
+                    font-size: 2rem;
+                    margin-bottom: 4px;
+                    color: $info;
+                    line-height: 1.2;
+                }
+
+                .pd-card-subHeadline {
+                    font-size: 0.8rem;
+                    font-weight: 400;
+                    margin-bottom: 4px;
+                    padding: 6px;
+                    background-color: rgba(255,255,255,0.8);
+
+                    @media screen and (max-width: 991px) {
+                        font-size: 1rem;
+                    }
+                }
+
+                .pd-card-btn {
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: $info;
+
+                    &:before {
+                        content: ">";
+                        margin-right: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+// end pd-cards-15
+
+// start pd-cards-16
+.pd-cards-16 {
+    position: relative;
+
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: $pd-isaballine;
+        height: 100%;
+
+        @media screen and (max-width: 991px) {
+            left: 0;
+            width: 100%;
+        }
+
+        @media (min-width: 992px) {
+            transform: translateX(-50%);
+            left: 50%;
+            width: 70%;
+            max-width: 1200px;
+        }
+        
+    }
+
+    .pd-cards-16-header-outer {
+        background-color: yellow;
+        position: relative;
+        margin-top: 60px;
+        @media screen and (max-width: 991px) {
+
+        }
+
+        @media (min-width: 992px) {
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        text-align: center;
+    }
+
+    .pd-intro-heading-sm {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+    }
+
+    .pd-headline {
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin-bottom: 0px;
+    }
+
+    .pd-subHeadline {
+        font-size: 1.4rem;
+        font-weight: 300;
+        line-height: 1.5;
+    }
+    
 }

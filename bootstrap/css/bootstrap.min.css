@@ -17591,6 +17591,190 @@ textarea.form-control-lg {
   outline: 2px dotted #00182E;
   outline-offset: 4px;
 }
+.pd-cards-15 .pd-intro-heading-sm {
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 10px 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  border: 1px solid #00CC66;
+  border-radius: 0px 0px 20px 0px;
+}
+.pd-cards-15 .pd-headline {
+  font-weight: 700;
+  font-size: 2.6rem;
+}
+.pd-cards-15 .pd-headline em {
+  font-style: normal;
+  color: #00CC66;
+}
+.pd-cards-15 .pd-subHeadline {
+  line-height: 1.8;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+.pd-cards-15 .pd-btn {
+  padding: 14px 30px;
+  color: white;
+  text-transform: uppercase;
+  background: #00CC66;
+  border: 2px solid #00CC66;
+  -webkit-transition: background 0.4s;
+  transition: background 0.4s;
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.pd-cards-15 .pd-btn .pd-icon {
+  fill: #fff;
+}
+.pd-cards-15 .pd-btn:hover {
+  background: #00CC66;
+  color: #fff;
+}
+.pd-cards-15 .pd-btn:hover .pd-icon {
+  fill: #fff;
+}
+.pd-cards-15 .pd-btn:focus {
+  outline: 2px dotted #fff;
+  outline-offset: 4px;
+}
+.pd-cards-15 .pd-btn span {
+  margin-right: 6px;
+}
+.pd-cards-15 .pd-btn span .pd-icon {
+  fill: #fff;
+}
+@media screen and (max-width: 991px) {
+  .pd-cards-15 .pd-cards-15-grid {
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  .pd-cards-15 .pd-cards-15-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    gap: 14px;
+  }
+}
+.pd-cards-15 .pd-cards-15-grid .pd-cards-15-grid-card {
+  background-color: #fff;
+  border: 2px solid #00CC66;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-shadow: 8px 8px 19px -1px rgba(0, 0, 0, 0.2);
+          box-shadow: 8px 8px 19px -1px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 991px) {
+  .pd-cards-15 .pd-cards-15-grid .pd-cards-15-grid-card {
+    height: 200px;
+    margin-bottom: 10px;
+  }
+}
+.pd-cards-15 .pd-cards-15-grid .pd-cards-15-grid-card .pd-cards-15-card-img-outer {
+  position: absolute;
+  width: 70%;
+  height: auto;
+  left: -60px;
+  top: 20px;
+}
+.pd-cards-15 .pd-cards-15-grid .pd-cards-15-grid-card .pd-cards-15-card-content {
+  position: absolute;
+  right: 0;
+  padding: 14px;
+  text-align: right;
+  width: 70%;
+}
+.pd-cards-15 .pd-cards-15-grid .pd-cards-15-grid-card .pd-cards-15-card-content .pd-card-headline {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 4px;
+  color: #00CC66;
+  line-height: 1.2;
+}
+.pd-cards-15 .pd-cards-15-grid .pd-cards-15-grid-card .pd-cards-15-card-content .pd-card-subHeadline {
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-bottom: 4px;
+  padding: 6px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+@media screen and (max-width: 991px) {
+  .pd-cards-15 .pd-cards-15-grid .pd-cards-15-grid-card .pd-cards-15-card-content .pd-card-subHeadline {
+    font-size: 1rem;
+  }
+}
+.pd-cards-15 .pd-cards-15-grid .pd-cards-15-grid-card .pd-cards-15-card-content .pd-card-btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #00CC66;
+}
+.pd-cards-15 .pd-cards-15-grid .pd-cards-15-grid-card .pd-cards-15-card-content .pd-card-btn:before {
+  content: ">";
+  margin-right: 4px;
+}
+
+.pd-cards-16 {
+  position: relative;
+}
+.pd-cards-16:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #F1F0EA;
+  height: 100%;
+}
+@media screen and (max-width: 991px) {
+  .pd-cards-16:before {
+    left: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .pd-cards-16:before {
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    left: 50%;
+    width: 70%;
+    max-width: 1200px;
+  }
+}
+.pd-cards-16 .pd-cards-16-header-outer {
+  background-color: yellow;
+  position: relative;
+  margin-top: 60px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .pd-cards-16 .pd-cards-16-header-outer {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.pd-cards-16 .pd-intro-heading-sm {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+.pd-cards-16 .pd-headline {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+.pd-cards-16 .pd-subHeadline {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
 
 .pd-section-1 {
   border-top: 1px solid #dee2e6;
@@ -19060,7 +19244,7 @@ textarea.form-control-lg {
   font-size: 1rem;
 }
 .pd-footer-3 p {
-  margin-bottom: 4px;
+  margin-bottom: 3px;
   font-size: 0.9rem;
 }
 .pd-footer-3 .pd-icon-card-link {
