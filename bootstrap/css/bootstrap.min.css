@@ -19047,6 +19047,90 @@ textarea.form-control-lg {
   outline-offset: 2px;
 }
 
+.pd-footer-3 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), color-stop(30%, rgba(0, 0, 0, 0.85)), color-stop(60%, rgba(0, 0, 0, 0.85)), to(rgb(0, 0, 0)));
+  background: linear-gradient(rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 30%, rgba(0, 0, 0, 0.85) 60%, rgb(0, 0, 0) 100%);
+}
+.pd-footer-3 h3, .pd-footer-3 .h3 {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.pd-footer-3 h4, .pd-footer-3 .h4 {
+  font-weight: 700;
+  font-size: 1rem;
+}
+.pd-footer-3 p {
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+}
+.pd-footer-3 .pd-icon-card-link {
+  text-decoration: none;
+}
+.pd-footer-3 .pd-icon-card-link img {
+  margin-right: 6px;
+}
+.pd-footer-3 .pd-icon-card-link span {
+  color: #fff;
+  font-weight: 700;
+}
+.pd-footer-3 .pd-footer-link {
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+.pd-footer-3 .pd-divider {
+  background-color: #495057;
+  height: 2px;
+  width: 100%;
+}
+.pd-footer-3 .pd-accred-row h3, .pd-footer-3 .pd-accred-row .h3 {
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 767px) {
+  .pd-footer-3 .pd-accred-logo {
+    width: auto;
+    height: 60px;
+  }
+}
+@media (min-width: 768px) {
+  .pd-footer-3 .pd-accred-logo {
+    width: auto;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pd-footer-3 .pd-social-logo {
+    margin-right: 14px;
+  }
+  .pd-footer-3 .pd-social-logo img {
+    width: auto;
+    height: 60px;
+  }
+  .pd-footer-3 .pd-social-logo:last-child {
+    margin-right: 0px;
+  }
+}
+@media (min-width: 768px) {
+  .pd-footer-3 .pd-social-logo {
+    margin-right: 14px;
+  }
+  .pd-footer-3 .pd-social-logo img {
+    width: auto;
+    height: 40px;
+  }
+}
+.pd-footer-3 .pd-review-card {
+  text-decoration: none;
+}
+.pd-footer-3 .pd-review-card .pd-rating span {
+  color: #fff;
+}
+.pd-footer-3 .pd-review-card .pd-rating img {
+  margin-bottom: 4px;
+  margin-right: 2px;
+}
+
 .pd-testimonial-slider-1 {
   border-top: 1px solid #dee2e6;
   border-bottom: 1px solid #dee2e6;

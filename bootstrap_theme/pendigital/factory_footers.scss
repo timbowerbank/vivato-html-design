@@ -233,3 +233,117 @@
 }
 
 // end pd-footer-2
+// start pd-footer-3
+
+.pd-footer-3 {
+
+    background: linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.85) 30%, rgba(0, 0, 0, 0.85) 60%, rgba(0,0,0,1) 100%);
+
+    h3 {
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+
+    h4 {
+        font-weight: 700;
+        font-size: 1rem;
+    }
+
+    p {
+        margin-bottom: 4px;
+        font-size: 0.9rem;
+    }
+
+    // this is an anchor
+    .pd-icon-card-link {
+        text-decoration: none;
+        img {
+            margin-right: 6px;
+        }
+
+        span {
+            
+            color: $white;
+            font-weight: 700;
+        }
+
+    }
+
+    .pd-footer-link {
+        text-decoration: none;
+        color: $white;
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+    }
+
+    .pd-divider {
+        background-color: $gray-700;
+        height: 2px;
+        width: 100%;
+    }
+
+    .pd-accred-row {
+        h3 {
+            font-size: 1.2rem;
+        }
+    }
+
+    .pd-accred-logo {
+        @media screen and (max-width: 767px) {
+            width: auto;
+            height: 60px;
+        }
+
+        @media (min-width: 768px) {
+            width: auto;
+            height: 50px;
+        }
+    }
+
+    .pd-social-logo {
+
+        @media screen and (max-width: 767px) {
+            margin-right: 14px;
+            img {
+                width: auto;
+                height: 60px;
+
+            }
+
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            margin-right: 14px;
+            img {
+                width: auto;
+                height: 40px;  
+
+            }
+        }
+    }
+
+    .pd-review-card {
+        text-decoration: none;
+
+        .pd-rating {
+            
+            
+            span {
+                
+                color: $white;
+            }
+            img {
+                margin-bottom: 4px;
+                margin-right: 2px;
+            }
+
+        }
+    }
+
+
+
+
+}
