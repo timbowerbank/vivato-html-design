@@ -17946,7 +17946,7 @@ textarea.form-control-lg {
   fill: #fff;
 }
 .pd-cards-16 .pd-btn:focus {
-  outline: 2px dotted #fff;
+  outline: 1px dotted #fff;
   outline-offset: 4px;
 }
 .pd-cards-16 .pd-btn span {
@@ -17965,7 +17965,7 @@ textarea.form-control-lg {
 }
 .pd-cards-16 .pd-btn.pd-inverted:hover {
   background: #00CC66;
-  border: 2px solid #D17A22;
+  border: 1px solid #e9ecef;
   color: #fff;
 }
 .pd-cards-16 .pd-btn.pd-inverted:hover .pd-icon {
@@ -19215,6 +19215,144 @@ textarea.form-control-lg {
   -webkit-transform: scaleX(-1);
       -ms-transform: scaleX(-1);
           transform: scaleX(-1);
+}
+.pd-section-19 .pd-intro-heading-sm {
+  font-weight: 300;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.pd-section-19 .pd-section-19-logo-img {
+  margin: 16px 0px;
+}
+.pd-section-19 .pd-headline {
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+.pd-section-19 .pd-headline em {
+  font-style: normal;
+  color: #00CC66;
+}
+.pd-section-19 .pd-subHeadline {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+.pd-section-19 .pd-section-19-grid-outer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.pd-section-19 .pd-section-19-grid-outer .pd-section-19-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 150px 150px;
+  grid-gap: 12px;
+  position: relative;
+}
+.pd-section-19 .pd-section-19-grid-outer .pd-section-19-grid::before, .pd-section-19 .pd-section-19-grid-outer .pd-section-19-grid::after {
+  content: "";
+  position: absolute;
+  background-color: #00CC66;
+  z-index: 1;
+}
+.pd-section-19 .pd-section-19-grid-outer .pd-section-19-grid::before {
+  width: 1px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.pd-section-19 .pd-section-19-grid-outer .pd-section-19-grid::after {
+  height: 1px;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.pd-section-19 .pd-section-19-grid-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+.pd-section-19 .pd-section-19-grid-card .pd-section-19-grid-card-headline {
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #00CC66;
+}
+.pd-section-19 .pd-section-19-grid-card .pd-section-19-grid-card-headline p {
+  margin-bottom: 0px;
+}
+.pd-section-19 .pd-section-19-grid-card .pd-section-19-grid-card-subHeadline {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #00CC66;
+}
+.pd-section-19 .pd-section-19-grid-card .pd-section-19-grid-card-subHeadline p {
+  margin-bottom: 0px;
+}
+.pd-section-19 .pd-btn {
+  padding: 20px 30px;
+  color: #00CC66;
+  text-transform: normal;
+  background: transparent;
+  border: 2px solid #00CC66;
+  -webkit-transition: background 0.4s;
+  transition: background 0.4s;
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: 0em;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.pd-section-19 .pd-btn span {
+  margin-right: 8px;
+}
+.pd-section-19 .pd-btn span .pd-icon {
+  fill: #00CC66;
+}
+.pd-section-19 .pd-btn:hover {
+  background: #00CC66;
+  color: #fff;
+}
+.pd-section-19 .pd-btn:hover span .pd-icon {
+  fill: #fff;
+}
+.pd-section-19 .pd-btn:focus {
+  outline: 2px dotted #fff;
+  outline-offset: 4px;
+}
+.pd-section-19 .pd-btn span .pd-icon {
+  fill: #00CC66;
+}
+.pd-section-19 .pd-section-19-hero-img-outer {
+  height: 100%;
+  position: relative;
+}
+.pd-section-19 .pd-section-19-hero-img-outer img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  top: 0;
+  left: 0;
 }
 
 .pd-footer-1 {
