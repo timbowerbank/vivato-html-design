@@ -1894,8 +1894,8 @@
         }
     }
 }
-// end pd-cards-15
 
+// end pd-cards-15
 // start pd-cards-16
 .pd-cards-16 {
     position: relative;
@@ -1904,8 +1904,9 @@
         content: "";
         display: block;
         position: absolute;
-        background-color: $pd-isaballine;
+        background: linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.85) 30%, rgba(0, 0, 0, 0.85) 60%, rgba(0,0,0,1) 100%);
         height: 100%;
+        border-radius: 6px;
 
         @media screen and (max-width: 991px) {
             left: 0;
@@ -1918,15 +1919,15 @@
             width: 70%;
             max-width: 1200px;
         }
-        
     }
 
     .pd-cards-16-header-outer {
-        background-color: yellow;
         position: relative;
-        margin-top: 60px;
-        @media screen and (max-width: 991px) {
+        margin-top: 80px;
+        margin-bottom: 50px;
+        color: $white;
 
+        @media screen and (max-width: 991px) {
         }
 
         @media (min-width: 992px) {
@@ -1941,20 +1942,200 @@
     .pd-intro-heading-sm {
         font-weight: 700;
         text-transform: uppercase;
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin-bottom: 12px;
     }
 
     .pd-headline {
-        font-size: 2.4rem;
+        font-size: 2.8rem;
         font-weight: 700;
         margin-bottom: 0px;
     }
 
     .pd-subHeadline {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         font-weight: 300;
         line-height: 1.5;
     }
-    
+
+    .pd-cards-16-cards-outer {
+        position: relative;
+
+        @media screen and (max-width: 991px) {
+            display: block;
+        }
+
+        @media (min-width: 992px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: stretch;
+            gap: 30px;
+        }
+
+        .pd-cards-16-card {
+            border: 1px solid rgba(0, 0, 0, 0.4);
+            flex: 1 1 33%;
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 8px 8px 19px -1px rgba(0,0,0,0.2);
+
+            @media screen and (max-width: 991px) {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            @media (min-width: 992px) {
+                max-width: 33%;
+            }
+
+            .pd-cards-16-img-link {
+                display: block;
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+
+                @media screen and (max-width: 991px) {
+                    min-height: 300px;
+                }
+
+                @media (min-width: 992px) {
+                    min-height: 250px;
+                    height: 250px;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    object-fit: cover;
+                    object-position: center center;
+                }
+            }
+
+            .pd-cards-16-card-content {
+                font-weight: 300;
+                font-size: 1rem;
+                background-color: rgba(255,255,255,0.95);
+                padding: 20px;
+                line-height: 1.8;
+                width: 100%;
+                flex: 1;
+            }
+
+            .pd-cards-16-card-footer {
+                margin-top: auto;
+                background-color: rgba(255,255,255,0.95);
+                padding: 20px;
+                width: 100%;
+
+                a {
+                    text-transform: uppercase;
+                    text-decoration: none;
+
+                    &:before {
+                        content: ">";
+                        margin-right: 4px;
+                    }
+                }
+            }
+
+            .pd-cards-16-logo-outer {
+                padding: 14px;
+                background: rgba(255,255,255,0.8);
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                border-radius: 0px 0px 40px 0px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid rgba(255, 255, 255, 0.9);
+
+                img {
+                    max-width: 150px;
+                }
+            }
+        }
+    }
+
+    .pd-cards-16-footer {
+        position: relative;
+        padding: 50px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .pd-btn {
+        padding: 14px 30px;
+        color: white;
+        text-transform: uppercase;
+        background: $info;
+        border: 1px solid $info;
+        transition: background 0.4s;
+        display: inline-block;
+        text-decoration: none;
+        letter-spacing: 0.15em;
+        font-weight: 700;
+        font-size: 0.9rem;
+
+        .pd-icon {
+            fill: $white;
+        }
+
+        // box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.4);
+        &:hover {
+            // background: darken($info, 10%);
+            background: $info;
+            color: $white;
+
+            .pd-icon {
+                fill: $white;
+            }
+        }
+
+        &:focus {
+            outline: 1px dotted $white;
+            outline-offset: 4px;
+        }
+
+        span {
+            margin-right: 6px;
+
+            .pd-icon {
+                fill: $white;
+            }
+        }
+    }
+
+    .pd-btn.pd-inverted {
+        color: $white;
+        background: transparent;
+        border: 1px solid $white;
+
+        .pd-icon {
+            fill: $white;
+        }
+
+        &:hover {
+            background: $info;
+            border: 1px solid $pd-gray-200;
+            color: $white;
+
+            .pd-icon {
+                fill: $white;
+            }
+        }
+
+        &:focus {
+            outline: 2px dotted $pd-ochre;
+            outline-offset: 4px;
+        }
+    }
 }
