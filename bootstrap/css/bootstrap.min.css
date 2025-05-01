@@ -19371,7 +19371,7 @@ textarea.form-control-lg {
 .pd-section-20 .pd-intro-heading-sm {
   font-size: 0.9rem;
   font-weight: 700;
-  color: #00CC66;
+  color: #17A9E6;
   margin-bottom: 30px;
 }
 .pd-section-20 .pd-headline {
@@ -19381,7 +19381,7 @@ textarea.form-control-lg {
   margin-bottom: 30px;
 }
 .pd-section-20 .pd-subHeadline {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 300;
   color: #fff;
   margin-bottom: 30px;
@@ -19444,6 +19444,7 @@ textarea.form-control-lg {
   text-transform: uppercase;
   font-weight: 700;
   color: #fff;
+  font-size: 0.9rem;
 }
 .pd-section-20 .pd-btn {
   padding: 18px 36px;
@@ -19458,7 +19459,7 @@ textarea.form-control-lg {
   text-decoration: none;
   letter-spacing: 0em;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .pd-section-20 .pd-btn span {
   margin-right: 8px;
@@ -19503,6 +19504,66 @@ textarea.form-control-lg {
      object-position: center center;
   top: 0;
   left: 0;
+}
+.pd-section-21 .pd-intro-heading-sm {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #17A9E6;
+}
+.pd-section-21 .pd-headline {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.pd-section-21 .pd-headline em {
+  font-style: normal;
+  color: #17A9E6;
+}
+.pd-section-21 .pd-subHeadline {
+  line-height: 2;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+.pd-section-21 .pd-subHeadline em {
+  font-weight: 700;
+  color: #000;
+  font-style: normal;
+}
+.pd-section-21 .pd-btn {
+  padding: 18px 36px;
+  border-radius: 50em;
+  color: #17A9E6;
+  text-transform: normal;
+  background: transparent;
+  border: 2px solid #17A9E6;
+  -webkit-transition: background 0.4s;
+  transition: background 0.4s;
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: 0em;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.pd-section-21 .pd-btn span {
+  margin-right: 8px;
+}
+.pd-section-21 .pd-btn span .pd-icon {
+  fill: #fff;
+}
+.pd-section-21 .pd-btn:hover {
+  background: #00CC66;
+  color: #fff;
+}
+.pd-section-21 .pd-btn:hover span .pd-icon {
+  fill: #fff;
+}
+.pd-section-21 .pd-btn:focus {
+  outline: 2px dotted #fff;
+  outline-offset: 4px;
+}
+.pd-section-21 .pd-btn span .pd-icon {
+  fill: #00CC66;
 }
 
 .pd-footer-1 {

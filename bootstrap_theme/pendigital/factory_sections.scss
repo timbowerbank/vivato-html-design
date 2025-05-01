@@ -1577,7 +1577,7 @@
     .pd-intro-heading-sm {
         font-size: 0.9rem;
         font-weight: 700;
-        color: $info;
+        color: $primary;
         margin-bottom: 30px;
     }
 
@@ -1590,7 +1590,7 @@
     }
 
     .pd-subHeadline {
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 300;
         color: $white;
         margin-bottom: 30px;
@@ -1598,7 +1598,7 @@
         em {
             font-style: normal;
             font-weight: 700;
-            
+
         }
     }
 
@@ -1653,6 +1653,7 @@
                         text-transform: uppercase;
                         font-weight: 700;
                         color: $white;
+                        font-size: 0.9rem;
                     }
                 }
             }
@@ -1674,7 +1675,7 @@
         text-decoration: none;
         letter-spacing: 0em;
         font-weight: 700;
-        font-size: 1.2rem;
+        font-size: 1rem;
 
         span {
             margin-right: 8px;
@@ -1729,6 +1730,90 @@
             left: 0;
         }
     }
+}
+// end pd-section-20
+
+// start pd-section-21
+.pd-section-21 {
+
+    .pd-intro-heading-sm {
+        font-size: 0.9rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: $primary;
+    }
+
+    .pd-headline {
+        font-size: 2.8rem;
+        font-weight: 700;
+        em {
+            font-style: normal;
+            color: $primary;
+        }
+    }
+
+    .pd-subHeadline {
+        line-height: 2;
+        font-weight: 400;
+        font-size: 1.4rem;
+
+        em {
+            font-weight: 700;
+            color: $black;
+            font-style: normal;
+        }
+
+
+    }
+
+    .pd-btn {
+        padding: 18px 36px;
+        border-radius: 50em;
+        color: $primary;
+        text-transform: normal;
+        background: transparent;
+        border: 2px solid $primary;
+        transition: background 0.4s;
+        display: inline-block;
+        text-decoration: none;
+        letter-spacing: 0em;
+        font-weight: 700;
+        font-size: 1.2rem;
+
+        span {
+            margin-right: 8px;
+
+            .pd-icon {
+                fill: $white;
+            }
+        }
+
+        // box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.4);
+        &:hover {
+            // background: darken($info, 10%);
+            background: $info;
+            color: $white;
+
+            span {
+                .pd-icon {
+                    fill: $white;
+                }
+            }
+        }
+
+        &:focus {
+            outline: 2px dotted $white;
+            outline-offset: 4px;
+        }
+
+        span {
+            .pd-icon {
+                fill: $info;
+            }
+        }
+    }
+
 
 
 }
