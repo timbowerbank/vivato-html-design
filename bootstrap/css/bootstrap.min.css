@@ -19340,10 +19340,160 @@ textarea.form-control-lg {
   fill: #00CC66;
 }
 .pd-section-19 .pd-section-19-hero-img-outer {
-  height: 100%;
   position: relative;
 }
+@media screen and (max-width: 991px) {
+  .pd-section-19 .pd-section-19-hero-img-outer {
+    height: 350px;
+  }
+}
+@media (min-width: 992px) {
+  .pd-section-19 .pd-section-19-hero-img-outer {
+    height: 100%;
+  }
+}
 .pd-section-19 .pd-section-19-hero-img-outer img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  top: 0;
+  left: 0;
+}
+
+.pd-section-20 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), color-stop(30%, rgba(0, 0, 0, 0.85)), color-stop(60%, rgba(0, 0, 0, 0.85)), to(rgb(0, 0, 0)));
+  background: linear-gradient(rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 30%, rgba(0, 0, 0, 0.85) 60%, rgb(0, 0, 0) 100%);
+}
+.pd-section-20 .pd-intro-heading-sm {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #00CC66;
+  margin-bottom: 30px;
+}
+.pd-section-20 .pd-headline {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.pd-section-20 .pd-subHeadline {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.pd-section-20 .pd-subHeadline em {
+  font-style: normal;
+  font-weight: 700;
+}
+.pd-section-20 .pd-section-20-results-txt {
+  font-weight: 700;
+  color: #00CC66;
+  font-size: 0.9rem;
+  color: #fff;
+}
+.pd-section-20 .pd-section-20-grid-outer {
+  padding: 0px 0px;
+  margin-bottom: 30px;
+}
+.pd-section-20 .pd-section-20-grid-outer .pd-section-20-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px;
+}
+.pd-section-20 .pd-section-20-grid-outer .pd-section-20-grid:before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.pd-section-20 .pd-section-20-grid-outer .pd-section-20-grid .pd-section-20-grid-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pd-section-20 .pd-section-20-grid-outer .pd-section-20-grid .pd-section-20-grid-card .pd-section-20-card-headline p {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #fff;
+}
+.pd-section-20 .pd-section-20-grid-outer .pd-section-20-grid .pd-section-20-grid-card .pd-section-20-card-subHeadline p {
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+}
+.pd-section-20 .pd-btn {
+  padding: 18px 36px;
+  border-radius: 50em;
+  color: #fff;
+  text-transform: normal;
+  background: transparent;
+  border: 2px solid #fff;
+  -webkit-transition: background 0.4s;
+  transition: background 0.4s;
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: 0em;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.pd-section-20 .pd-btn span {
+  margin-right: 8px;
+}
+.pd-section-20 .pd-btn span .pd-icon {
+  fill: #fff;
+}
+.pd-section-20 .pd-btn:hover {
+  background: #00CC66;
+  color: #fff;
+}
+.pd-section-20 .pd-btn:hover span .pd-icon {
+  fill: #fff;
+}
+.pd-section-20 .pd-btn:focus {
+  outline: 2px dotted #fff;
+  outline-offset: 4px;
+}
+.pd-section-20 .pd-btn span .pd-icon {
+  fill: #00CC66;
+}
+.pd-section-20 .pd-section-20-hero-img-outer {
+  position: relative;
+}
+@media screen and (max-width: 991px) {
+  .pd-section-20 .pd-section-20-hero-img-outer {
+    height: 350px;
+  }
+}
+@media (min-width: 992px) {
+  .pd-section-20 .pd-section-20-hero-img-outer {
+    height: 100%;
+  }
+}
+.pd-section-20 .pd-section-20-hero-img-outer img {
   position: absolute;
   width: 100%;
   height: 100%;
