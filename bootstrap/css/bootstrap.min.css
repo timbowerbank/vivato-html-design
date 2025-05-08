@@ -19565,6 +19565,129 @@ textarea.form-control-lg {
 .pd-section-21 .pd-btn span .pd-icon {
   fill: #00CC66;
 }
+.pd-section-21 .pd-section-21-list-outer .pd-section-21-card {
+  border-bottom: 1px solid #ced4da;
+}
+.pd-section-21 .pd-section-21-list-outer .pd-section-21-card .pd-section-21-card-btn {
+  background: yellow;
+  text-decoration: none;
+  color: #000;
+  width: 100%;
+  padding: 20px 10px;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pd-section-21 .pd-section-21-list-outer .pd-section-21-card .pd-section-21-card-btn .pd-section-21-card-label {
+  max-width: 80%;
+  background: pink;
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.pd-section-21 .pd-section-21-list-outer .pd-section-21-card .pd-section-21-card-btn .pd-section-21-card-label span {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+.pd-section-21 .pd-section-21-list-outer .pd-section-21-card .pd-section-21-card-btn .pd-section-21-card-toggle {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+}
+.pd-section-21 .pd-section-21-list-outer .pd-section-21-card .pd-section-21-card-btn .pd-section-21-card-toggle .pd-section-21-open-close-horizontal {
+  position: absolute;
+  width: 20px;
+  background: white;
+  height: 2px;
+  left: 0px;
+  top: 9px;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  border-radius: 2px;
+  background: #17A9E6;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  pointer-events: none;
+}
+.pd-section-21 .pd-section-21-list-outer .pd-section-21-card .pd-section-21-card-btn .pd-section-21-card-toggle .pd-section-21-open-close-vertical {
+  position: absolute;
+  width: 20px;
+  background: white;
+  height: 2px;
+  left: 0px;
+  top: 9px;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  border-radius: 2px;
+  background: #17A9E6;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  pointer-events: none;
+}
+.pd-section-21 .pd-section-21-list-outer .pd-section-21-card .pd-section-21-card-btn .pd-section-21-card-toggle.pd-show-content .pd-section-21-open-close-horizontal {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.pd-section-21 .pd-section-21-list-outer .pd-section-21-card .pd-section-21-card-btn .pd-section-21-card-toggle.pd-show-content .pd-section-21-open-close-vertical {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.pd-section-21 .pd-section-21-list-outer .pd-section-21-card .pd-section-21-card-body {
+  padding-left: 30px;
+  background: #f8f9fa;
+}
+.pd-section-21 .pd-section-21-list-outer .pd-section-21-card .pd-section-21-card-body .pd-section-21-sub-card {
+  padding: 16px;
+  border-bottom: 1px solid #ced4da;
+  background: #f8f9fa;
+}
+.pd-section-21 .pd-section-21-list-outer .pd-section-21-card .pd-section-21-card-body .pd-section-21-sub-card:last-child {
+  border-bottom: none;
+}
+.pd-section-21 .pd-section-21-list-outer .pd-section-21-card .pd-section-21-card-body .pd-section-21-sub-card h3, .pd-section-21 .pd-section-21-list-outer .pd-section-21-card .pd-section-21-card-body .pd-section-21-sub-card .h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.pd-section-21 .pd-section-21-list-outer .pd-section-21-card .pd-section-21-card-body .pd-section-21-sub-card p {
+  margin-bottom: 4px;
+}
+.pd-section-21 .pd-section-21-list-outer .pd-section-21-card .pd-section-21-card-body .pd-section-21-sub-card a {
+  display: inline-block;
+  text-decoration: none;
+  color: #0d6efd;
+}
+.pd-section-21 .pd-section-21-list-outer .pd-section-21-card .pd-section-21-card-body .pd-section-21-sub-card a:before {
+  content: ">";
+  margin-right: 6px;
+}
 
 .pd-footer-1 {
   background: -webkit-gradient(linear, left top, left bottom, from(#17A9E6), to(#1287b8));

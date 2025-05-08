@@ -1814,6 +1814,129 @@
         }
     }
 
+    .pd-section-21-list-outer {
+        
+        .pd-section-21-card {
+
+            border-bottom: 1px solid $gray-400;
+
+            .pd-section-21-card-btn {
+                background: yellow;
+                text-decoration: none;
+                color: $black;
+                width: 100%;
+                padding: 20px 10px;
+                text-align: left;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                
+
+                .pd-section-21-card-label {
+                    max-width: 80%;
+                    background: pink;
+                    font-size: 1.3rem;
+                    font-weight: 700;
+                    display: flex;
+                    flex-direction: column;
+                    span {
+                        font-size: 0.9rem;
+                        font-weight: 300;
+                    }
+                }
+
+                .pd-section-21-card-toggle {
+                    // background: red;
+                    width: 20px;
+                    height: 20px;
+                    position: relative;
+                    display: inline-block;
+                    margin-left: 20px;
+        
+                    .pd-section-21-open-close-horizontal {
+                        position: absolute;
+                        width: 20px;
+                        background: white;
+                        height: 2px;
+                        left: 0px;
+                        top: 9px;
+                        transform: rotate(0deg);
+                        border-radius: 2px;
+                        background: $primary;
+                        transition: transform 0.4s;
+                        pointer-events: none;
+                    }
+        
+                    .pd-section-21-open-close-vertical {
+                        position: absolute;
+                        width: 20px;
+                        background: white;
+                        height: 2px;
+                        left: 0px;
+                        top: 9px;
+                        transform: rotate(90deg);
+                        border-radius: 2px;
+                        background: $primary;
+                        transition: transform 0.4s;
+                        pointer-events: none;
+                    }
+                }
+
+                .pd-section-21-card-toggle.pd-show-content {
+                    .pd-section-21-open-close-horizontal {
+                        transform: rotate(45deg);
+                    }
+            
+                    .pd-section-21-open-close-vertical {
+                        transform: rotate(-45deg);
+                    }
+                }
+
+            }
+
+            .pd-section-21-card-body {
+                padding-left: 30px;
+                background: $gray-100;
+
+                .pd-section-21-sub-card {
+                    padding: 16px;
+                    border-bottom: 1px solid $gray-400;
+                    background: $gray-100;
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+
+                    h3 {
+                        font-size: 1rem;
+                        font-weight: 700;
+                        margin-bottom: 4px;
+                    }
+
+                    p {
+                        margin-bottom: 4px;
+                    }
+
+                    a {
+                        display: inline-block;
+                        text-decoration: none;
+                        color: $blue;
+                        &:before {
+                            content: ">";
+                            margin-right: 6px;
+                        }
+                    }
+                }
+            }
+
+
+    
+        }
+
+    }
+
+
 
 
 }
