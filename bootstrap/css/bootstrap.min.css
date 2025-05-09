@@ -19566,14 +19566,18 @@ textarea.form-control-lg {
   fill: #00CC66;
 }
 .pd-section-21 .pd-section-21-list-outer .pd-section-21-card {
+  cursor: pointer;
   border-bottom: 1px solid #ced4da;
 }
+.pd-section-21 .pd-section-21-list-outer .pd-section-21-card:last-child {
+  border-bottom: none;
+}
 .pd-section-21 .pd-section-21-list-outer .pd-section-21-card .pd-section-21-card-btn {
-  background: yellow;
+  background: #fff;
   text-decoration: none;
   color: #000;
   width: 100%;
-  padding: 20px 10px;
+  padding: 30px 10px;
   text-align: left;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19591,7 +19595,6 @@ textarea.form-control-lg {
 }
 .pd-section-21 .pd-section-21-list-outer .pd-section-21-card .pd-section-21-card-btn .pd-section-21-card-label {
   max-width: 80%;
-  background: pink;
   font-size: 1.3rem;
   font-weight: 700;
   display: -webkit-box;
@@ -19662,6 +19665,7 @@ textarea.form-control-lg {
 .pd-section-21 .pd-section-21-list-outer .pd-section-21-card .pd-section-21-card-body {
   padding-left: 30px;
   background: #f8f9fa;
+  display: none;
 }
 .pd-section-21 .pd-section-21-list-outer .pd-section-21-card .pd-section-21-card-body .pd-section-21-sub-card {
   padding: 16px;
@@ -19687,6 +19691,15 @@ textarea.form-control-lg {
 .pd-section-21 .pd-section-21-list-outer .pd-section-21-card .pd-section-21-card-body .pd-section-21-sub-card a:before {
   content: ">";
   margin-right: 6px;
+}
+.pd-section-21 .pd-section-21-list-outer .pd-section-21-card .pd-section-21-card-body.pd-show-content {
+  display: block;
+}
+.pd-section-21 .pd-section-21-list-outer .pd-section-21-card .pd-section-21-card-body.pd-collapsing {
+  height: 0px;
+  -webkit-transition: height 0.35s;
+  transition: height 0.35s;
+  overflow: hidden;
 }
 
 .pd-footer-1 {

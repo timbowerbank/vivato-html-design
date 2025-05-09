@@ -1817,15 +1817,18 @@
     .pd-section-21-list-outer {
         
         .pd-section-21-card {
-
+            cursor: pointer;
             border-bottom: 1px solid $gray-400;
+            &:last-child {
+                border-bottom: none;
+            }
 
             .pd-section-21-card-btn {
-                background: yellow;
+                background: $white;
                 text-decoration: none;
                 color: $black;
                 width: 100%;
-                padding: 20px 10px;
+                padding: 30px 10px;
                 text-align: left;
                 display: flex;
                 flex-direction: row;
@@ -1835,7 +1838,6 @@
 
                 .pd-section-21-card-label {
                     max-width: 80%;
-                    background: pink;
                     font-size: 1.3rem;
                     font-weight: 700;
                     display: flex;
@@ -1898,6 +1900,7 @@
             .pd-section-21-card-body {
                 padding-left: 30px;
                 background: $gray-100;
+                display: none;
 
                 .pd-section-21-sub-card {
                     padding: 16px;
@@ -1928,6 +1931,16 @@
                         }
                     }
                 }
+            }
+
+            .pd-section-21-card-body.pd-show-content {
+                display: block;
+            }
+
+            .pd-section-21-card-body.pd-collapsing {
+                height: 0px;
+                transition: height 0.35s;
+                overflow: hidden;
             }
 
 
