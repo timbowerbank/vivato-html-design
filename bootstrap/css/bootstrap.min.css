@@ -27496,7 +27496,7 @@ textarea.form-control-lg {
   line-height: 1.5;
 }
 .pd-grid-3 .pd-icon {
-  fill: #2a2a2a;
+  fill: #c5247f;
   margin-right: 6px;
 }
 @media screen and (max-width: 991px) {
@@ -30510,6 +30510,37 @@ textarea.form-control-lg {
 .pd-search-results-1 .pd-search-results-1-outer .pd-search-results-1-card .pd-search-results-1-card-body p {
   font-weight: 300;
   margin-bottom: 0px;
+}
+
+.pd-gallery-1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(42, 42, 42)), color-stop(40%, rgba(42, 42, 42, 0.85)), color-stop(60%, rgba(42, 42, 42, 0.85)), to(rgba(42, 42, 42, 0.9)));
+  background: linear-gradient(rgb(42, 42, 42) 0%, rgba(42, 42, 42, 0.85) 40%, rgba(42, 42, 42, 0.85) 60%, rgba(42, 42, 42, 0.9) 100%);
+  color: #fff;
+  position: relative;
+}
+.pd-gallery-1 .pd-intro-heading-sm {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0px;
+}
+.pd-gallery-1 .pd-headline {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #fff;
+}
+.pd-gallery-1 .pd-subHeadline {
+  color: #fff;
+  line-height: 1.5;
+}
+.pd-gallery-1 .pd-icon {
+  fill: #fff;
+  margin-right: 6px;
+}
+.pd-gallery-1 .pd-brand-side {
+  position: absolute;
+  right: 20px;
+  top: 20px;
 }
 
 /* Custom CSS rules come here */

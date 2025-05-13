@@ -1,0 +1,39 @@
+.pd-gallery-1 {
+
+    background: linear-gradient(rgba(42, 42, 42, 1) 0%, rgba(42, 42, 42, 0.85) 40%, rgba(42, 42, 42, 0.85) 60%, rgba(42, 42, 42, 0.9) 100%);
+    color: $white;
+    position: relative;
+
+    .pd-intro-heading-sm {
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: $white;
+        margin-bottom: 0px;
+    }
+
+    .pd-headline {
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: $white;
+    }
+
+    .pd-subHeadline {
+        color: $white;
+        line-height: 1.5;
+    }
+
+    .pd-icon {
+        fill: $white;
+        margin-right: 6px;
+    }
+
+    .pd-brand-side {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .pd-gallery-1-card {
+        
+    }
+}
