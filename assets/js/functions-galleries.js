@@ -2,6 +2,7 @@ window.addEventListener('load', ()=> {
 
     if(document.getElementsByClassName('pd-gallery-1').length > 0) {
         initGalleries();
+        initGlightBox();
     }
 
 });
@@ -28,4 +29,24 @@ function initGalleries() {
         glide.mount();
     }
 
+}
+
+// *** glightbox() ***
+function initGlightBox() {
+
+    
+    // check t see if there is a lightbox
+    // glightbox
+    if(document.getElementsByClassName('glightbox').length <= 0) {
+        // terminate
+        return;
+    }
+    
+    const lightbox = GLightbox({
+        touchNavigation: true,
+        loop: true,
+        autoplayVideos: true
+    });
+
+    console.log(lightbox);
 }
