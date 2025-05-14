@@ -30513,8 +30513,8 @@ textarea.form-control-lg {
 }
 
 .pd-gallery-1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgb(42, 42, 42)), color-stop(40%, rgba(42, 42, 42, 0.85)), color-stop(60%, rgba(42, 42, 42, 0.85)), to(rgba(42, 42, 42, 0.9)));
-  background: linear-gradient(rgb(42, 42, 42) 0%, rgba(42, 42, 42, 0.85) 40%, rgba(42, 42, 42, 0.85) 60%, rgba(42, 42, 42, 0.9) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(42, 42, 42)), color-stop(40%, rgba(42, 42, 42, 0.95)), color-stop(60%, rgba(42, 42, 42, 0.95)), to(rgba(42, 42, 42, 0.9)));
+  background: linear-gradient(rgb(42, 42, 42) 0%, rgba(42, 42, 42, 0.95) 40%, rgba(42, 42, 42, 0.95) 60%, rgba(42, 42, 42, 0.9) 100%);
   color: #fff;
   position: relative;
 }
@@ -30547,9 +30547,10 @@ textarea.form-control-lg {
 }
 .pd-gallery-1 .pd-gallery-1-card .pd-gallery-1-img-outer {
   position: relative;
-  min-height: 200px;
+  min-height: 300px;
   overflow: hidden;
   z-index: 1;
+  border-radius: 10px;
 }
 .pd-gallery-1 .pd-gallery-1-card .pd-gallery-1-img-outer img {
   position: absolute;
@@ -30567,7 +30568,7 @@ textarea.form-control-lg {
   width: 100%;
   height: auto;
   background: rgba(255, 255, 255, 0.6);
-  padding: 6px;
+  padding: 6px 10px;
   font-weight: 700;
   font-size: 0.8rem;
 }
@@ -30599,9 +30600,75 @@ textarea.form-control-lg {
   z-index: 2;
 }
 .pd-gallery-1 .pd-gallery-1-card .pd-gallery-1-btn .pd-icon {
+  width: 30px;
+  height: 30px;
+  fill: white;
+}
+.pd-gallery-1 .glide__bullets {
+  text-align: center;
+}
+.pd-gallery-1 .glide__bullets .glide__bullet {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  margin-top: 20px;
+  margin-right: 6px;
+  border-radius: 50%;
+  border: 2px solid #e6e6e6;
+  background: #fff;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+.pd-gallery-1 .glide__bullets .glide__bullet:focus {
+  outline: 2px dotted #fff;
+  outline-offset: 2px;
+}
+.pd-gallery-1 .glide__bullets .glide__bullet.glide__bullet--active {
+  -webkit-transform: scale(1.4);
+      -ms-transform: scale(1.4);
+          transform: scale(1.4);
+}
+.pd-gallery-1 .pd-gallery-1-arrowWrapper {
+  border: none;
+  background: none;
+  position: absolute;
+  top: 135px;
+}
+.pd-gallery-1 .pd-gallery-1-arrowWrapper:focus {
+  outline: 2px dotted #fff;
+  outline-offset: 2px;
+}
+.pd-gallery-1 .pd-gallery-1-arrowWrapper.glide__arrow--right {
+  right: 0;
+}
+.pd-gallery-1 .pd-btn {
+  border: 2px solid #c5247f;
+  background: transparent;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+  border-radius: 50em;
+  padding: 16px 30px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  font-weight: 700;
+}
+.pd-gallery-1 .pd-btn .pd-icon {
   width: 40px;
   height: 40px;
+  margin-right: 6px;
   fill: white;
+}
+.pd-gallery-1 .pd-btn:hover {
+  background: #c5247f;
+  color: #fff;
+}
+.pd-gallery-1 .pd-btn:hover .pd-icon {
+  fill: #fff;
 }
 
 /* Custom CSS rules come here */
