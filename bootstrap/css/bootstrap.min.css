@@ -18182,6 +18182,163 @@ textarea.form-control-lg {
   outline-offset: 4px;
 }
 
+.pd-cards-17 {
+  position: relative;
+}
+.pd-cards-17 .pd-intro-heading-sm {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0px;
+}
+.pd-cards-17 .pd-headline {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #fff;
+}
+.pd-cards-17 .pd-subHeadline {
+  color: #fff;
+  line-height: 1.5;
+}
+.pd-cards-17 .pd-icon {
+  fill: #fff;
+  margin-right: 6px;
+}
+.pd-cards-17 .pd-brand-side {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 1;
+}
+.pd-cards-17 .pd-cards-17-background-img-outer {
+  height: 100%;
+  min-height: 450px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.pd-cards-17 .pd-cards-17-background-img-outer img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  -webkit-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+.pd-cards-17 .pd-cards-17-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(42, 42, 42, 0.6)), color-stop(40%, rgba(42, 42, 42, 0.4)), color-stop(60%, rgba(42, 42, 42, 0.4)), to(rgba(42, 42, 42, 0.6)));
+  background: linear-gradient(rgba(42, 42, 42, 0.6) 0%, rgba(42, 42, 42, 0.4) 40%, rgba(42, 42, 42, 0.4) 60%, rgba(42, 42, 42, 0.6) 100%);
+}
+.pd-cards-17 .pd-cards-17-content-outer {
+  position: relative;
+  z-index: 2;
+}
+.pd-cards-17 .pd-cards-17-card-outer {
+  position: relative;
+  background: rgb(42, 42, 42);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-shadow: 6px 7px 14px rgba(0, 0, 0, 0.1);
+          box-shadow: 6px 7px 14px rgba(0, 0, 0, 0.1);
+}
+.pd-cards-17 .pd-cards-17-card-outer .pd-cards-17-card-img-outer {
+  position: relative;
+  min-height: 200px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px 10px 0px 0px;
+}
+.pd-cards-17 .pd-cards-17-card-outer .pd-cards-17-card-img-outer img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+.pd-cards-17 .pd-cards-17-card-outer .pd-cards-17-card-body-outer {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 20px;
+  color: white;
+}
+.pd-cards-17 .pd-cards-17-card-outer .pd-cards-17-card-body-outer header {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.pd-cards-17 .pd-cards-17-card-outer .pd-cards-17-card-body-outer header h3, .pd-cards-17 .pd-cards-17-card-outer .pd-cards-17-card-body-outer header .h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.pd-cards-17 .pd-cards-17-card-outer .pd-cards-17-card-body-outer .pd-cards-17-card-text-outer {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.pd-cards-17 .pd-cards-17-card-outer .pd-cards-17-card-body-outer .pd-cards-17-card-text-outer p {
+  font-size: 0.9rem;
+}
+.pd-cards-17 .pd-cards-17-card-outer .pd-cards-17-card-body-outer footer {
+  margin-top: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.pd-cards-17 .pd-cards-17-card-outer .pd-cards-17-card-body-outer footer a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.pd-cards-17 .pd-cards-17-card-outer .pd-cards-17-card-body-outer footer a:before {
+  content: ">";
+  margin-right: 4px;
+}
+
 .pd-section-1 {
   border-top: 1px solid #dee2e6;
   border-bottom: 1px solid #dee2e6;
