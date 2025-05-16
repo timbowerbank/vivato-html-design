@@ -34,7 +34,6 @@ function initGalleries() {
 // *** glightbox() ***
 function initGlightBox() {
 
-    
     // check t see if there is a lightbox
     // glightbox
     if(document.getElementsByClassName('glightbox').length <= 0) {
@@ -48,5 +47,18 @@ function initGlightBox() {
         autoplayVideos: true
     });
 
-    console.log(lightbox);
+    initLightboxButtons();
+
 }
+
+function initLightboxButtons() {
+    const buttons = document.getElementsByClassName('pd-gallery-1-btn');
+    for(btn of buttons) {
+        btn.addEventListener("click", (e) => {
+            const button = e.currentTarget;
+            button.blur();
+        });
+    }
+}
+
+
