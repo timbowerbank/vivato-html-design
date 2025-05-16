@@ -53,7 +53,7 @@ function initGlightBox() {
 
 function initLightboxButtons() {
     const buttons = document.getElementsByClassName('pd-gallery-1-btn');
-    for(btn of buttons) {
+    for(const btn of buttons) {
         btn.addEventListener("click", (e) => {
             const button = e.currentTarget;
             button.blur();
