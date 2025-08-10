@@ -23807,6 +23807,242 @@ textarea.form-control-lg {
       -ms-transform: scale(1.3);
           transform: scale(1.3);
 }
+.pd-logo-strip-2 .pd-intro-heading-sm {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #c5247f;
+  margin-bottom: 0px;
+}
+.pd-logo-strip-2 .pd-headline {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #2a2a2a;
+}
+.pd-logo-strip-2 .pd-subHeadline {
+  color: #2a2a2a;
+  line-height: 1.5;
+}
+.pd-logo-strip-2 .pd-icon {
+  fill: #c5247f;
+  margin-right: 6px;
+}
+.pd-logo-strip-2 .pd-logo-strip-2-grid-outer {
+  display: grid;
+  gap: 20px;
+}
+@media screen and (max-width: 991px) {
+  .pd-logo-strip-2 .pd-logo-strip-2-grid-outer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 992px) {
+  .pd-logo-strip-2 .pd-logo-strip-2-grid-outer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+}
+.pd-logo-strip-2 .pd-logo-strip-2-grid-outer .pd-logo-strip-2-card-lg {
+  border: 1px solid #e7e7e7;
+  border-radius: 10px;
+  background: white;
+  -webkit-box-shadow: 6px 7px 14px rgba(0, 0, 0, 0.1);
+          box-shadow: 6px 7px 14px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 991px) {
+  .pd-logo-strip-2 .pd-logo-strip-2-grid-outer .pd-logo-strip-2-card-lg {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    grid-column: 1/span 2;
+  }
+}
+@media (min-width: 992px) {
+  .pd-logo-strip-2 .pd-logo-strip-2-grid-outer .pd-logo-strip-2-card-lg {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
+  }
+}
+.pd-logo-strip-2 .pd-logo-strip-2-grid-outer .pd-logo-strip-2-card-lg .pd-logo-strip-2-card-lg-col-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.pd-logo-strip-2 .pd-logo-strip-2-grid-outer .pd-logo-strip-2-card-lg .pd-logo-strip-2-card-lg-col-left h3, .pd-logo-strip-2 .pd-logo-strip-2-grid-outer .pd-logo-strip-2-card-lg .pd-logo-strip-2-card-lg-col-left .h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.pd-logo-strip-2 .pd-logo-strip-2-grid-outer .pd-logo-strip-2-card-lg .pd-logo-strip-2-card-lg-col-left p {
+  line-height: 1.5;
+  font-weight: 300;
+}
+@media screen and (max-width: 991px) {
+  .pd-logo-strip-2 .pd-logo-strip-2-grid-outer .pd-logo-strip-2-card-lg .pd-logo-strip-2-card-lg-col-left {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding: 10px 20px;
+  }
+}
+@media (min-width: 992px) {
+  .pd-logo-strip-2 .pd-logo-strip-2-grid-outer .pd-logo-strip-2-card-lg .pd-logo-strip-2-card-lg-col-left {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    width: 50%;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    padding: 20px 15px 20px 20px;
+  }
+}
+.pd-logo-strip-2 .pd-logo-strip-2-grid-outer .pd-logo-strip-2-card-lg .pd-logo-strip-2-card-lg-col-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.pd-logo-strip-2 .pd-logo-strip-2-grid-outer .pd-logo-strip-2-card-lg .pd-logo-strip-2-card-lg-col-right img {
+  height: auto;
+  width: 100%;
+  max-width: 280px;
+}
+@media screen and (max-width: 991px) {
+  .pd-logo-strip-2 .pd-logo-strip-2-grid-outer .pd-logo-strip-2-card-lg .pd-logo-strip-2-card-lg-col-right {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .pd-logo-strip-2 .pd-logo-strip-2-grid-outer .pd-logo-strip-2-card-lg .pd-logo-strip-2-card-lg-col-right {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    width: 50%;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 20px 20px 15px;
+  }
+}
+.pd-logo-strip-2 .pd-logo-strip-2-grid-outer .pd-logo-strip-2-card-sm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+.pd-logo-strip-2 .pd-logo-strip-2-grid-outer .pd-logo-strip-2-card-sm img {
+  width: 120px;
+}
+.pd-logo-strip-2 .pd-brand-side {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+.pd-logo-strip-2 .pd-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+  border-radius: 50em;
+  padding: 16px 30px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.pd-logo-strip-2 .pd-btn .pd-icon {
+  display: block;
+}
+.pd-logo-strip-2 .pd-btn .pd-icon img {
+  width: 40px;
+  height: 40px;
+  margin-right: 6px;
+}
+.pd-logo-strip-2 .pd-btn .pd-icon.pd-icon-rollover {
+  display: none;
+}
+.pd-logo-strip-2 .pd-btn:hover {
+  text-decoration: none;
+}
+.pd-logo-strip-2 .pd-btn:hover .pd-icon {
+  display: none;
+}
+.pd-logo-strip-2 .pd-btn:hover .pd-icon.pd-icon-rollover {
+  display: block;
+}
+.pd-logo-strip-2 .pd-btn.pd-btn-light {
+  border: 2px solid #c5247f;
+  background: transparent;
+  color: #c5247f;
+}
+.pd-logo-strip-2 .pd-btn.pd-btn-light:hover {
+  background: #c5247f;
+  color: #fff;
+}
+.pd-logo-strip-2 .pd-btn.pd-btn-light:focus-visible {
+  outline: 2px dotted #c5247f;
+  outline-offset: 4px;
+}
 
 .pd-hero-video-1 {
   border-top: 1px solid #dee2e6;
