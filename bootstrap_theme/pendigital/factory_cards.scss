@@ -2346,3 +2346,701 @@
  
     }
 }
+// end pd-cards-17
+
+// start pd-cards-18
+.pd-cards-18 {
+    background: linear-gradient(rgba(42, 42, 42, 1) 0%, rgba(42, 42, 42, 0.95) 40%, rgba(42, 42, 42, 0.95) 60%, rgba(42, 42, 42, 1) 100%);
+    color: white;
+    position: relative;
+
+    .pd-intro-heading-sm {
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: white;
+        margin-bottom: 0px;
+    }
+
+    .pd-headline {
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+
+    .pd-subHeadline {
+        line-height: 1.5;
+    }
+
+    .pd-icon {
+        fill: white;
+        margin-right: 6px;
+    }
+
+    .pd-cards-18-card-lg-outer {
+        display: flex;
+        border-radius: 10px;
+        min-height: 200px;
+        background: #222222;
+        border: 1px solid #e7e7e7;
+        box-shadow: 6px 7px 14px rgba(0, 0, 0, 0.1);
+        flex: 1 0 100%;
+
+        @media screen and (max-width: 991px) {
+        }
+
+        @media (min-width: 992px) {
+            flex-direction: row;
+            align-items: stretch;
+        }
+
+        // anchor tag wraps image
+        .pd-cards-18-card-img-outer {
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px 0px 0px 10px;
+            min-width: 35%;
+            flex: 1 0 35%;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center center;
+            }
+        }
+
+        .pd-cards-18-card-content-outer {
+            flex: 1 0 50%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+
+            p {
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: white;
+                margin-bottom: 6px;
+            }
+
+            h3 {
+                font-size: 1.4rem;
+                font-weight: 700;
+            }
+
+            footer {
+                margin-top: auto;
+
+                a {
+                    text-decoration: none;
+                    font-weight: 700;
+                    color: white;
+
+                    &:before {
+                        content: ">";
+                        margin-right: 6px;
+                    }
+                }
+            }
+        }
+    }
+
+    .pd-brand-side {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+
+    .pd-btn {
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        transition: background 0.3s;
+        border-radius: 50em;
+        padding: 16px 30px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        white-space: nowrap;
+        cursor: pointer;
+
+        .pd-icon {
+            display: block;
+
+            img {
+                width: 40px;
+                height: 40px;
+                margin-right: 6px;
+            }
+        }
+
+        .pd-icon.pd-icon-rollover {
+            display: none;
+        }
+
+        &:hover {
+            text-decoration: none;
+
+            .pd-icon {
+                display: none;
+            }
+
+            .pd-icon.pd-icon-rollover {
+                display: block;
+            }
+        }
+    }
+
+    .pd-btn.pd-btn-dark {
+        border: 2px solid #C5247F;
+        background: transparent;
+        color: white;
+
+        &:hover {
+            background: #C5247F;
+        }
+
+        &:focus-visible {
+            outline: 2px dotted $white;
+            outline-offset: 4px;
+        }
+    }
+}
+
+// end pd-cards-18
+// start pd-cards-19
+.pd-cards-19 {
+    position: relative;
+
+    .pd-intro-heading-sm {
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: #c5247f;
+        margin-bottom: 0px;
+    }
+
+    .pd-headline {
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: #2a2a2a;
+    }
+
+    .pd-subHeadline {
+        color: #2a2a2a;
+        line-height: 1.5;
+        font-weight: 300;
+    }
+
+    .pd-icon {
+        fill: #c5247f;
+        margin-right: 6px;
+    }
+
+    .pd-brand-side {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+
+
+
+    .pd-cards-19-grid-outer {
+        @media screen and (max-width: 991px) {
+            display: block;
+        }
+
+        @media (min-width: 992px){
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+
+        .pd-grid-card-sm {
+            @media screen and (max-width: 767px) {
+                margin-bottom: 20px;
+            }
+
+            @media (min-width: 768px) and (max-width: 991px) {
+                margin-bottom: 20px;
+            }
+
+            @media (min-width: 992px) {
+                margin-bottom: 0px;
+            }
+
+            .pd-grid-card-sm-outer {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                border: 1px solid #e7e7e7;
+                background: $white;
+                border-radius: 10px;
+                padding: 20px;
+                height: 100%;
+                box-shadow: 6px 7px 14px rgba(0, 0, 0, 0.1);
+
+                header {
+                    display: flex;
+
+                    @media screen and (max-width: 991px) {
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: center;
+                    }
+
+                    @media (min-width: 992px) {
+                        flex-direction: column;
+                    }
+                }
+
+                .pd-icon-outer {
+                    @media screen and (max-width: 991px) {
+                        width: 30px;
+                        height: 30px;
+                    }
+
+                    @media (min-width: 992px) {
+                        width: 60px;
+                        height: 60px;
+                        border: 3px solid #c5247f;
+                    }
+
+                    border-radius: 50em;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .pd-icon {
+                        fill: #c5247f;
+
+                        @media screen and (max-width: 991px) {
+                            height: 20px;
+                            width: 20px;
+                            margin-right: 8px;
+                        }
+
+                        @media (min-width: 992px) {
+                            height: 30px;
+                            width: 30px;
+                        }
+
+                        margin-right: 0px;
+                    }
+                }
+
+                h3 {
+                    font-size: 1.4rem;
+                    font-weight: 700;
+                    color: #c5247f;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                }
+
+                footer {
+                    margin-top: auto;
+                }
+
+                a {
+                    text-decoration: none;
+                    font-weight: 700;
+                    color: #c5247f;
+
+                    &:before {
+                        content: ">";
+                        margin-right: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// end pd-cards-19
+// start pd-cards-20
+.pd-cards-20 {
+
+    .pd-headline {
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: #2a2a2a;
+    }
+
+    .pd-cards-20-grid-outer {
+        @media screen and (max-width: 575px) {
+            display: block;
+        }
+
+        @media (min-width: 576px) and (max-width: 991px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        @media (min-width: 992px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        .pd-cards-20-card-outer {
+            border-bottom: 2px solid #c5247f;
+            padding-bottom: 12px;
+
+            @media screen and (max-width: 991px) {
+                margin-bottom: 40px;
+            }
+
+            @media (min-width: 992px) {
+                margin-bottom: 0px;
+            }
+
+            .pd-cards-20-card-img-outer {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+                border-radius: 10px;
+
+                @media screen and (max-width: 575px) {
+                    min-height: 340px;
+                }
+
+                @media (min-width: 576px) and (max-width: 991px) {
+                    min-height: 240px;
+                }
+
+                @media (min-width: 992px) {
+                    min-height: 280px;
+                }
+
+                img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center center;
+                }
+            }
+
+            .pd-cards-20-card-body {
+                padding-top: 10px;
+                color: #2a2a2a;
+
+                h2,
+                h3 {
+                    font-weight: 700;
+                    font-size: 1.2rem;
+                    margin-bottom: 6px;
+                }
+
+                p {
+                    font-weight: 300;
+                    margin-bottom: 6px;
+                }
+            }
+
+            footer {
+                a.pd-text-link {
+                    text-decoration: none;
+                    font-weight: 700;
+                    color: #c5247f;
+
+                    &:before {
+                        content: ">";
+                        margin-right: 4px;
+                    }
+                }
+
+                a.pd-icon-link {
+                    @media screen and (max-width: 991px) {
+                        img {
+                            width: 45px;
+                            height: auto;
+                        }
+                    }
+
+                    @media (min-width: 992px) {
+                        img {
+                            width: 28px;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// end pd-cards-20
+
+// start pd-cards-21
+.pd-cards-21 {
+
+    .pd-intro-heading-sm {
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: #c5247f;
+        margin-bottom: 0px;
+    }
+
+    .pd-headline {
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: #2a2a2a;
+    }
+
+    .pd-subHeadline {
+        color: #2a2a2a;
+        line-height: 1.5;
+    }
+
+    .pd-icon {
+        fill: #c5247f;
+        margin-right: 6px;
+    }
+
+    .pd-cards-21-grid-outer {
+        @media screen and (max-width: 575px) {
+            display: block;
+        }
+
+        @media (min-width: 576px) and (max-width: 991px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        @media (min-width: 992px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .pd-cards-21-card-outer {
+            border-bottom: 2px solid #c5247f;
+            padding-bottom: 12px;
+
+            @media screen and (max-width: 991px) {
+                margin-bottom: 40px;
+            }
+
+            @media (min-width: 992px) {
+                margin-bottom: 0px;
+            }
+
+            .pd-cards-21-card-img-outer {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+                border-radius: 10px;
+
+                @media screen and (max-width: 575px) {
+                    min-height: 340px;
+                }
+
+                @media (min-width: 576px) and (max-width: 991px) {
+                    min-height: 280px;
+                }
+
+                @media (min-width: 992px) {
+                    min-height: 400px;
+                }
+
+                img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center center;
+                }
+            }
+
+            .pd-cards-21-card-body {
+                padding-top: 10px;
+                color: #2a2a2a;
+
+                h2,
+                h3 {
+                    font-weight: 700;
+                    font-size: 1.2rem;
+                    margin-bottom: 6px;
+                }
+
+                p {
+                    font-weight: 300;
+                    margin-bottom: 6px;
+                }
+            }
+
+            footer {
+                a.pd-text-link {
+                    text-decoration: none;
+                    font-weight: 700;
+                    color: #c5247f;
+
+                    &:before {
+                        content: ">";
+                        margin-right: 4px;
+                    }
+                }
+
+                a.pd-icon-link {
+                    @media screen and (max-width: 991px) {
+                        img {
+                            width: 45px;
+                            height: auto;
+                        }
+                    }
+
+                    @media (min-width: 992px) {
+                        img {
+                            width: 28px;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// end pd-cards-21
+
+// start pd-cards-22
+.pd-cards-22 {
+
+    .pd-intro-heading-sm {
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: #c5247f;
+        margin-bottom: 0px;
+    }
+
+    .pd-headline {
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: #2a2a2a;
+    }
+
+    .pd-subHeadline {
+        color: #2a2a2a;
+        line-height: 1.5;
+    }
+
+    .pd-icon {
+        fill: #c5247f;
+        margin-right: 6px;
+    }
+
+    .pd-cards-22-grid-outer {
+        @media screen and (max-width: 575px) {
+            display: block;
+        }
+
+        @media (min-width: 576px) and (max-width: 991px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        @media (min-width: 992px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 30px;
+        }
+
+        .pd-cards-22-card-outer {
+            border-bottom: 2px solid #c5247f;
+            padding-bottom: 12px;
+
+            @media screen and (max-width: 991px) {
+                margin-bottom: 40px;
+            }
+
+            @media (min-width: 992px) {
+                margin-bottom: 0px;
+            }
+
+            .pd-cards-22-card-img-outer {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+                border-radius: 10px;
+
+                @media screen and (max-width: 575px) {
+                    min-height: 340px;
+                }
+
+                @media (min-width: 576px) and (max-width: 991px) {
+                    min-height: 250px;
+                }
+
+                @media (min-width: 992px) {
+                    min-height: 230px;
+                }
+
+                img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center center;
+                }
+            }
+
+            .pd-cards-22-card-body {
+                padding-top: 10px;
+                color: #2a2a2a;
+
+                h2,
+                h3 {
+                    font-weight: 700;
+                    font-size: 1.2rem;
+                    margin-bottom: 6px;
+                }
+
+                p {
+                    font-weight: 300;
+                    margin-bottom: 6px;
+                }
+            }
+
+            footer {
+                // replace pd-link-light
+                // a.pd-text-link {
+                //     text-decoration: none;
+                //     font-weight: 700;
+                //     color: #c5247f;
+
+                //     &:before {
+                //         content: ">";
+                //         margin-right: 4px;
+                //     }
+                // }
+
+                a.pd-icon-link {
+                    @media screen and (max-width: 991px) {
+                        img {
+                            width: 45px;
+                            height: auto;
+                        }
+                    }
+
+                    @media (min-width: 992px) {
+                        img {
+                            width: 28px;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
