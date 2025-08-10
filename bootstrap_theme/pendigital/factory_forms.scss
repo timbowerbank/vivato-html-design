@@ -446,6 +446,165 @@
     }
 }
 
+// end pd-forms-3
+
+.pd-forms-4 {
+    // background: #F2F7F2;
+    .pd-intro-heading-sm {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 10px;
+
+        h2 {
+            font-weight: 400;
+            color: #161B33;
+            font-size: 1rem;
+
+            // letter-spacing: 0.07em;
+            margin-bottom: 0px;
+        }
+
+        span {
+            img {
+                margin-right: 3px;
+                margin-top: -3px;
+            }
+        }
+    }
+
+    .pd-headline {
+        font-weight: 800;
+        color: #161B33;
+        line-height: 1.3;
+
+        @media screen and (max-width: 991px) {
+            font-size: 1.8rem;
+            margin-botom: 20px;
+        }
+
+        @media (min-width: 992px) {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+    }
+
+    .pd-subHeadline {
+        line-height: 1.5;
+        font-weight: 300;
+        color: #161B33;
+        margin-bottom: 10px;
+
+        strong,
+        em {
+            font-weight: 800;
+        }
+
+        @media screen and (max-width: 991px) {
+            font-size: 0.9rem;
+        }
+
+        @media (min-width: 992px) {
+            font-size: 1rem;
+        }
+    }
+
+    .pd-forms-4-form-outer {
+        background: white;
+        border: 1px solid #D8D8D7;
+
+        @media screen and (max-width: 991px) {
+            padding: 20px;
+        }
+
+        @media (min-width: 992px) {
+            padding: 20px 130px 20px 20px;
+        }
+    }
+
+    label {
+        color: #161B33;
+        font-size: 0.9rem;
+    }
+
+    .form-control {
+        border: 1px solid #D8D8D7;
+    }
+
+    .pd-btn {
+        display: inline-block;
+        text-decoration: none;
+        color: #161B33;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        padding: 12px 30px;
+        border-radius: 50em;
+        border: 2px solid #DE541E;
+        background: transparent;
+
+        @media screen and (max-width: 991px) {
+            margin-bottom: 16px;
+        }
+
+        img, svg {
+            margin-right: 4px;
+            width: 24px;
+            height: 24px;
+            fill: #DE541E;
+        }
+    }
+
+    .pd-forms-4-card-outer {
+        border: 1px solid #D8D8D7;
+        padding: 30px;
+        background: #F2F7F2;
+        color: #161B33;
+
+        @media screen and (max-width: 991px) {
+            position: relative;
+        }
+
+        @media (min-width: 992px) {
+            position: absolute;
+            top: 40%;
+            transform: translateX(-35%) translateY(-40%);
+            box-shadow: 6px 6px 10px rgba(0,0,0,0.2);
+        }
+
+        h3 {
+            font-weight: 800;
+            font-size: 1.2rem;
+        }
+
+        h4 {
+            font-weight: 800;
+            font-size: 1rem;
+        }
+
+        p {
+            margin-bottom: 3px;
+            font-size: 0.9rem;
+            font-weight: 300;
+        }
+
+        .pd-icon-card-link {
+            text-decoration: none;
+
+            img, svg {
+                margin-right: 6px;
+                fill: #DE541E;
+                width: 24px;
+                height: 24px;
+            }
+
+            span {
+                color: #161B33;
+                font-weight: 700;
+            }
+        }
+    }
+}
 
 
 
