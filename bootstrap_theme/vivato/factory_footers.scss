@@ -237,7 +237,7 @@
 
 .pd-footer-3 {
 
-    background: linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.85) 30%, rgba(0, 0, 0, 0.85) 60%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(rgba($primary, 1) 0%, rgba($primary, 0.9) 30%, rgba($primary, 0.9) 60%, rgba($primary,1) 100%);
 
     h3 {
         font-weight: 700;
@@ -256,7 +256,9 @@
 
     // this is an anchor
     .pd-icon-card-link {
+        display: block;
         text-decoration: none;
+        margin-bottom: 10px;
         img {
             margin-right: 6px;
         }
@@ -277,7 +279,7 @@
     }
 
     .pd-divider {
-        background-color: $gray-700;
+        background-color: $info;
         height: 2px;
         width: 100%;
     }
@@ -291,12 +293,12 @@
     .pd-accred-logo {
         @media screen and (max-width: 767px) {
             width: auto;
-            height: 60px;
+            min-height: 65px;
         }
 
         @media (min-width: 768px) {
             width: auto;
-            height: 50px;
+            min-height: 60px;
         }
     }
 

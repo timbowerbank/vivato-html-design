@@ -1,5 +1,32 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+@font-face {
+  font-family: "DMSans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/DMSans-Regular-subset.woff2") format("woff2"), url("/fonts/DMSans-Regular-subset.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "DMSans";
+  font-style: normal;
+  font-weight: 200;
+  src: url("/fonts/DMSans-ExtraLight-subset.woff2") format("woff2"), url("/fonts/DMSans-ExtraLight-subset.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "DMSans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/DMSans-Light-subset.woff2") format("woff2"), url("/fonts/DMSans-Light-subset.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "DMSans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/DMSans-Medium-subset.woff2") format("woff2"), url("/fonts/DMSans-Medium-subset.woff2") format("woff");
+  font-display: swap;
+}
 /*!
  * Bootstrap v5.0.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -28,7 +55,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #343a40;
-  --bs-font-sans-serif: "Montserrat", sans-serif;
+  --bs-font-sans-serif: "DMSans", system-ui, -apple-system, sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
@@ -22467,8 +22494,8 @@ textarea.form-control-lg {
 }
 
 .pd-footer-3 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), color-stop(30%, rgba(0, 0, 0, 0.85)), color-stop(60%, rgba(0, 0, 0, 0.85)), to(rgb(0, 0, 0)));
-  background: linear-gradient(rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 30%, rgba(0, 0, 0, 0.85) 60%, rgb(0, 0, 0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#25215f), color-stop(30%, rgba(37, 33, 95, 0.9)), color-stop(60%, rgba(37, 33, 95, 0.9)), to(#25215f));
+  background: linear-gradient(#25215f 0%, rgba(37, 33, 95, 0.9) 30%, rgba(37, 33, 95, 0.9) 60%, #25215f 100%);
 }
 .pd-footer-3 h3, .pd-footer-3 .h3 {
   font-weight: 700;
@@ -22483,7 +22510,9 @@ textarea.form-control-lg {
   font-size: 0.9rem;
 }
 .pd-footer-3 .pd-icon-card-link {
+  display: block;
   text-decoration: none;
+  margin-bottom: 10px;
 }
 .pd-footer-3 .pd-icon-card-link img {
   margin-right: 6px;
@@ -22499,7 +22528,7 @@ textarea.form-control-lg {
   font-size: 0.9rem;
 }
 .pd-footer-3 .pd-divider {
-  background-color: #495057;
+  background-color: #E84F49;
   height: 2px;
   width: 100%;
 }
@@ -22509,13 +22538,13 @@ textarea.form-control-lg {
 @media screen and (max-width: 767px) {
   .pd-footer-3 .pd-accred-logo {
     width: auto;
-    height: 60px;
+    min-height: 65px;
   }
 }
 @media (min-width: 768px) {
   .pd-footer-3 .pd-accred-logo {
     width: auto;
-    height: 50px;
+    min-height: 60px;
   }
 }
 @media screen and (max-width: 767px) {
