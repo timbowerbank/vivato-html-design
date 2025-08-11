@@ -1,0 +1,8 @@
+.pd-gradient {
+    background: radial-gradient(
+        circle 1000px at 115% 90%, 
+        $secondary 30%, 
+        $info 70%, 
+        $primary 100%
+    );
+}

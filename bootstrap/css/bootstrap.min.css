@@ -33381,6 +33381,10 @@ textarea.form-control-lg {
     background-repeat: no-repeat;
   }
 }
+
+.pd-gradient {
+  background: radial-gradient(circle 1000px at 115% 90%, #C895FA 30%, #E84F49 70%, #25215F 100%);
+}
 .pd-tabs-1 .pd-tabs-1-outer {
   background-color: #e9ecef;
 }
