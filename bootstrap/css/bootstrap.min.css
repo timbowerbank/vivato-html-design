@@ -99,7 +99,7 @@ hr:not([size]) {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.75rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.2;
 }
 
@@ -22496,14 +22496,6 @@ textarea.form-control-lg {
 .pd-footer-3 {
   background: -webkit-gradient(linear, left top, left bottom, from(#25215f), color-stop(30%, rgba(37, 33, 95, 0.9)), color-stop(60%, rgba(37, 33, 95, 0.9)), to(#25215f));
   background: linear-gradient(#25215f 0%, rgba(37, 33, 95, 0.9) 30%, rgba(37, 33, 95, 0.9) 60%, #25215f 100%);
-}
-.pd-footer-3 h3, .pd-footer-3 .h3 {
-  font-weight: 700;
-  font-size: 1.2rem;
-}
-.pd-footer-3 h4, .pd-footer-3 .h4 {
-  font-weight: 700;
-  font-size: 1rem;
 }
 .pd-footer-3 p {
   margin-bottom: 3px;

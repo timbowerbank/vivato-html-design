@@ -6,6 +6,9 @@ $black: #231F20;
 $light: #f8f9fa;
 $dark: #343a40;
 
+// heading font weights and sizes
+$headings-font-weight: 400;
+
 // $info: #b53027;
 $pd-oxford-blue: #00182E;
 $pd-bone: #E0DDCF;
@@ -16,7 +19,7 @@ $pd-ochre: #D17A22;
     font-family: 'DMSans';
     font-style: normal;
     font-weight: 400;
-    src:    url('/fonts/DMSans-Regular-subset.woff2') format('woff2'), 
+    src: url('/fonts/DMSans-Regular-subset.woff2') format('woff2'), 
             url('/fonts/DMSans-Regular-subset.woff') format('woff');
     font-display: swap;
 }
@@ -25,7 +28,7 @@ $pd-ochre: #D17A22;
     font-family: 'DMSans';
     font-style: normal;
     font-weight: 200;
-    src:    url('/fonts/DMSans-ExtraLight-subset.woff2') format('woff2'),
+    src: url('/fonts/DMSans-ExtraLight-subset.woff2') format('woff2'),
             url('/fonts/DMSans-ExtraLight-subset.woff') format('woff');
     font-display: swap;
 }
@@ -34,7 +37,7 @@ $pd-ochre: #D17A22;
     font-family: 'DMSans';
     font-style: normal;
     font-weight: 300;
-    src:    url('/fonts/DMSans-Light-subset.woff2') format('woff2'), 
+    src: url('/fonts/DMSans-Light-subset.woff2') format('woff2'), 
             url('/fonts/DMSans-Light-subset.woff') format('woff');
     font-display: swap;
 }
@@ -43,7 +46,7 @@ $pd-ochre: #D17A22;
     font-family: 'DMSans';
     font-style: normal;
     font-weight: 500;
-    src:    url('/fonts/DMSans-Medium-subset.woff2') format('woff2'),
+    src: url('/fonts/DMSans-Medium-subset.woff2') format('woff2'),
             url('/fonts/DMSans-Medium-subset.woff2') format('woff');
     font-display: swap;
 }
