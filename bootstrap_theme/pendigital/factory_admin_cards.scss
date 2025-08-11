@@ -1,0 +1,60 @@
+// start pd-admin card 1
+.pd-admin-card-1 {
+    header {
+        a {
+            display: inline-block;
+            margin-bottom: 10px;
+            text-decoration: none;
+
+            &:before {
+                content: "< ";
+            }
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 1.8rem;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 0.9rem;
+        }
+    }
+
+    .pd-admin-card-1-body {
+        background: white;
+        border-radius: 15px;
+        border: 1px solid $gray-200;
+        padding: 18px;
+        max-width: 1200px;
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            width: 400px;
+            height: 400px;
+        }
+
+        .pd-admin-card-1-post-text {
+            max-width: 400px;
+            background-color: $gray-100;
+            border: 1px solid $gray-200;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            padding: 16px 16px;
+
+            p {
+                font-weight: 700;
+                line-height: 1.5;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+// end pd-card-admin-1

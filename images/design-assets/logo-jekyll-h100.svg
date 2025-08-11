@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(0.195312,0,0,0.195312,0,0)">
+        <rect id="bg" x="0" y="0" width="512" height="512" style="fill:rgb(51,51,51);"/>
+        <g id="test-tube">
+            <path id="shadow_2_" d="M269.02,59.151C268.836,59.888 268.832,60.68 268.987,61.516C268.987,61.516 271.494,78.158 268.648,85.564L147.643,400.197L147.652,400.201C139.016,423.311 150.589,449.112 173.666,457.988C196.743,466.863 222.621,455.464 231.696,432.524L231.707,432.529L352.712,117.895C355.078,111.74 368.572,99.816 368.572,99.816C369.249,99.3 369.774,98.708 370.132,98.038L370.191,97.916C370.256,97.784 370.332,97.658 370.384,97.521C373.504,89.408 353.379,74.116 325.432,63.369C297.484,52.621 272.299,50.485 269.179,58.598C269.126,58.735 269.096,58.879 269.057,59.02L269.02,59.151Z" style="fill-opacity:0.3;fill-rule:nonzero;"/>
+            <path id="tube_2_" d="M265.523,56.477C265.338,57.214 265.333,58.006 265.49,58.842C265.49,58.842 267.998,75.484 265.15,82.89L144.144,397.522L144.155,397.526C135.52,420.636 147.092,446.437 170.169,455.313C193.244,464.188 219.124,452.789 228.199,429.849L228.21,429.854L349.215,115.22C351.58,109.065 365.075,97.141 365.075,97.141C365.752,96.625 366.277,96.034 366.635,95.363L366.693,95.241C366.758,95.11 366.834,94.983 366.886,94.846C370.006,86.733 349.881,71.442 321.935,60.694C293.987,49.946 268.802,47.81 265.682,55.923C265.629,56.06 265.599,56.204 265.56,56.345L265.523,56.477Z" style="fill:url(#_Linear1);fill-rule:nonzero;"/>
+            <path id="liquid" d="M303.48,198.814L216.218,425.71L216.275,425.731C209.839,441.993 191.109,450.454 174.494,444.064C157.879,437.674 148.886,418.552 155.006,402.167L210.764,257.185C210.764,257.185 217.728,245.952 231.401,237.96C245.074,229.969 256.35,231.655 271.533,224.907C286.715,218.159 303.48,198.814 303.48,198.814Z" style="fill:url(#_Linear2);fill-rule:nonzero;"/>
+            <g id="top" transform="matrix(0.9334,0.359,-0.359,0.9334,48.4129,-108.344)">
+                <ellipse cx="315.97" cy="76.201" rx="33.648" ry="8.85" style="fill:rgb(51,51,51);"/>
+            </g>
+            <path id="side-reflection" d="M265.489,58.841C265.489,58.841 267.96,75.578 265.149,82.889L144.144,397.522L144.155,397.526C135.52,420.636 147.092,446.437 170.169,455.313C174.174,456.853 178.261,457.768 182.333,458.135C166.777,446.433 160.103,425.503 167.24,406.405L167.229,406.401L285.833,98.009C285.833,98.009 269.689,82.85 265.489,58.841Z" style="fill:white;fill-opacity:0.3;fill-rule:nonzero;"/>
+            <g id="bubbles">
+                <circle cx="226.531" cy="261.806" r="3.506" style="fill:white;fill-opacity:0.5;"/>
+                <circle cx="249.514" cy="287.227" r="5.285" style="fill:white;fill-opacity:0.5;"/>
+                <circle cx="214.429" cy="317.459" r="9.915" style="fill:white;fill-opacity:0.5;"/>
+                <circle cx="198.375" cy="335.795" r="5.286" style="fill:white;fill-opacity:0.5;"/>
+                <circle cx="219.43" cy="375.008" r="3.506" style="fill:white;fill-opacity:0.5;"/>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(101.206,38.9182,-38.9182,101.206,195.456,238.547)"><stop offset="0" style="stop-color:rgb(145,145,145);stop-opacity:1"/><stop offset="1" style="stop-color:white;stop-opacity:1"/></linearGradient>
+        <linearGradient id="_Linear2" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(61.27,23.561,-23.561,61.27,192.87,303.705)"><stop offset="0" style="stop-color:rgb(153,0,0);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(232,0,0);stop-opacity:1"/></linearGradient>
+    </defs>
+</svg>

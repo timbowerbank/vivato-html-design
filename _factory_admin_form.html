@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Form</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <section class="pb-5 pt-5" style="position: relative;">
+            <div style="position: absolute; bottom: 1px;">
+                <p style="font-weight: 700; padding-bottom: 5px; padding-left: 10px; margin-bottom: 0px;">pd-admin-form-1 - add this class to the div in the main column, not to the outer section.</p>
+            </div>
+        </section>
+        <section class="bg-light pb-5 pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="pd-admin-form-1">
+                            <header class="pb-2"><a href="#" name="anchor">Back</a>
+                                <h1>New Daily Challenge</h1>
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            </header>
+                            <div class="pd-admin-form-1-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="publishDate" class="form-label">Publish Date</label>
+                                        <input id="publishDate" class="form-control pd-admin-form-1-short-field" type="date"/>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="challengeTitle" class="form-label">Challenge Title</label>
+                                        <input type="text" placeHolder="Add Challenge Title" name="challengeTitle" class="form-control" id="challengeTitle">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="heroImage" class="form-label">Hero Image</label>
+                                        <div class="pd-admin-form-1-image-drop-zone">
+                                            <p>Drop image into this zone, or</p>
+                                            <div>
+                                                <button type="button" class="btn btn-outline-dark">Upload File</button>
+                                                <button type="button" class="btn btn-outline-dark ms-2">Library</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="challengeSubTitle" class="form-label">Challenge Sub Title</label>
+                                        <input type="text" placeHolder="Add a sub title" name="challengeSubTitle" class="form-control" id="challengeSubTitle">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="challengeInstructions" class="form-label">Challenge Instructions</label>
+                                        <textarea type="text" rows="8" placeHolder="Add instructions for the challenge" name="challengeInstructions" class="form-control" id="challengeInstructions"></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="superCharge" class="form-label">Supercharge Instructions</label>
+                                        <textarea type="text" rows="8" placeHolder="Add instructions for the challenge" name="superCharge" class="form-control" id="superCharge"></textarea>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <label class="input-group-text" for="palleteSelection">Palette ID</label>
+                                        <select class="form-select" id="palleteSelection">
+                                            <option selected>Select palette</option>
+                                            <option value="1">Spring</option>
+                                            <option value="2">Summer</option>
+                                            <option value="3">Autumn</option>
+                                            <option value="4">Winter</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3 pd-admin-form-1-nested">
+                                        <h2>Credit Challenge Image</h2>
+                                        <div class="mb-3">
+                                            <label for="heroImage" class="form-label">Source Logo</label>
+                                            <div class="pd-admin-form-1-image-drop-zone pd-admin-form-1-image-drop-zone-small">
+                                                <button type="button" class="btn btn-outline-dark">Upload File</button>
+                                                <button type="button" class="btn btn-outline-dark mt-2">Library</button>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="artistCreditText" class="form-label">Source Credit Text</label>
+                                            <input type="text" placeHolder="Add text for the artist link" name="challengeSubTitle" class="form-control" id="artistCreditText">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="artistWebsiteLink" class="form-label">Source Website</label>
+                                            <input type="url" placeHolder="Add artist website link" name="artistWebsiteLink" class="form-control" id="artistWebsiteLink">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 pd-admin-form-1-nested-list">
+                                        <header>
+                                            <h2>Challenges</h2>
+                                            <p>Manage challenges for this challenge bank below.</p>
+                                        </header>
+                                        <div class="pd-form-1-nested-list-inner">
+                                            <div class="mb-1 pd-form-1-nested-list-item">
+                                                <a href="#" class="pd-form-1-nested-list-item-img-outer"> <img src="https://pinegrow.com/placeholders/img20.jpg"> </a>
+                                                <div class="pd-form-1-nested-list-item-body">
+                                                    <h3>Life in the cracks</h3>
+                                                    <p>Find nature that has found its way...</p>
+                                                </div>
+                                                <div class="pd-form-1-nested-list-item-buttons">
+                                                    <a href="#" class="pd-form-1-nested-list-item-view-outer"><img src="images/design-assets/icon-magnifying-glass-gray-600.svg" alt="view icon" width="20" height="20"></a>
+                                                    <div class="pd-form-1-nested-list-item-btn-outer"><a href="#" name="anchor" class="pd-form-1-nested-list-item-btn"><img alt="re-order downwards icon" width="16" height="16" src="images/design-assets/icon-caret-white-up.svg"></a><a href="#" name="anchor" class="pd-form-1-nested-list-item-btn"><img src="images/design-assets/icon-caret-white.svg" alt="re-order downwards icon" width="16" height="16"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-1 pd-form-1-nested-list-item">
+                                                <a href="#" class="pd-form-1-nested-list-item-img-outer"> <img src="images/uploads/hero-coast.jpg"> </a>
+                                                <div class="pd-form-1-nested-list-item-body">
+                                                    <h3>Coast Walk</h3>
+                                                    <p>Find nature that has found its way...</p>
+                                                </div>
+                                                <div class="pd-form-1-nested-list-item-buttons">
+                                                    <a href="#" class="pd-form-1-nested-list-item-view-outer"><img src="images/design-assets/icon-magnifying-glass-gray-600.svg" alt="view icon" width="20" height="20"></a>
+                                                    <div class="pd-form-1-nested-list-item-btn-outer"><a href="#" name="anchor" class="pd-form-1-nested-list-item-btn"><img alt="re-order downwards icon" width="16" height="16" src="images/design-assets/icon-caret-white-up.svg"></a><a href="#" name="anchor" class="pd-form-1-nested-list-item-btn"><img src="images/design-assets/icon-caret-white.svg" alt="re-order downwards icon" width="16" height="16"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-1 pd-form-1-nested-list-item">
+                                                <a href="#" class="pd-form-1-nested-list-item-img-outer"> <img src="images/uploads/login-flower.jpg"> </a>
+                                                <div class="pd-form-1-nested-list-item-body">
+                                                    <h3>Pollinators</h3>
+                                                    <p>Find nature that has found its way...</p>
+                                                </div>
+                                                <div class="pd-form-1-nested-list-item-buttons">
+                                                    <a href="#" class="pd-form-1-nested-list-item-view-outer"><img src="images/design-assets/icon-magnifying-glass-gray-600.svg" alt="view icon" width="20" height="20"></a>
+                                                    <div class="pd-form-1-nested-list-item-btn-outer"><a href="#" name="anchor" class="pd-form-1-nested-list-item-btn"><img alt="re-order downwards icon" width="16" height="16" src="images/design-assets/icon-caret-white-up.svg"></a><a href="#" name="anchor" class="pd-form-1-nested-list-item-btn"><img src="images/design-assets/icon-caret-white.svg" alt="re-order downwards icon" width="16" height="16"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <h2>Alternative challenges</h2>
+                                            <p>Manage alternative challenges for this challenge bank below.</p>
+                                            <div class="mb-1 pd-form-1-nested-list-item"><a href="#" class="pd-form-1-nested-list-item-img-outer"> <img src="images/uploads/login-flower.jpg"> </a>
+                                                <div class="pd-form-1-nested-list-item-body">
+                                                    <h3>Be happy</h3>
+                                                    <p>Find something that makes you smile</p>
+                                                </div>
+                                                <div class="alternative-card pd-form-1-nested-list-item-buttons"><a href="#" class="pd-form-1-nested-list-item-view-outer"><img src="images/design-assets/icon-magnifying-glass-gray-600.svg" alt="view icon" width="20" height="20"></a>
+                                                </div>
+                                            </div>
+                                            <div class="mb-1 pd-form-1-nested-list-item"><a href="#" class="pd-form-1-nested-list-item-img-outer"> <img src="images/uploads/login-flower.jpg"> </a>
+                                                <div class="pd-form-1-nested-list-item-body">
+                                                    <h3>Take a photo</h3>
+                                                    <p>Take a happy photo!</p>
+                                                </div>
+                                                <div class="alternative-card pd-form-1-nested-list-item-buttons"><a href="#" class="pd-form-1-nested-list-item-view-outer"><img src="images/design-assets/icon-magnifying-glass-gray-600.svg" alt="view icon" width="20" height="20"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <footer><a name="anchor" class="btn btn-outline-dark">Create Challenge</a>
+                                        </footer>
+                                    </div>
+                                    <div class="mb-3 pd-admin-form-1-nested-list-img-loader">
+                                        <header>
+                                            <h2>List</h2>
+                                            <p>Manage list items for the challenge below</p>
+                                        </header>
+                                        <div class="pd-form-1-nested-list-img-loader-list-body">
+                                            <div class="mb-3 pd-form-1-nested-list-img-loader-list-item">
+                                                <header class="pd-form-1-nested-list-img-loader-list-item-header">
+                                                    <div class="pd-form-1-nested-list-img-loader-item-btn-outer">
+                                                        <a href="#" name="anchor" class="pd-form-1-nested-list-item-btn"><img alt="re-order downwards icon" width="16" height="16" src="images/design-assets/icon-caret-white-up.svg"></a>
+                                                        <a href="#" name="anchor" class="pd-form-1-nested-list-item-btn"><img src="images/design-assets/icon-caret-white.svg" alt="re-order downwards icon" width="16" height="16"></a>
+                                                    </div><a name="anchor"> <img src="images/design-assets/icon-trash-bin.svg" alt="delete icon" width="30" height="30"> </a>
+                                                </header>
+                                                <div class="mb-3">
+                                                    <label for="listTitle" class="form-label">Item Title</label>
+                                                    <input type="text" placeholder="Add a title for the list item" name="listTitle" class="form-control" id="listTitle">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="superCharge" class="form-label">Item Paragraph</label>
+                                                    <textarea type="text" rows="8" placeholder="Add text content for the list item" name="listPara" class="form-control" id="listPara"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3 pd-form-1-nested-list-img-loader-list-item">
+                                                <header class="pd-form-1-nested-list-img-loader-list-item-header">
+                                                    <div class="pd-form-1-nested-list-img-loader-item-btn-outer">
+                                                        <a href="#" name="anchor" class="pd-form-1-nested-list-item-btn"><img alt="re-order downwards icon" width="16" height="16" src="images/design-assets/icon-caret-white-up.svg"></a>
+                                                        <a href="#" name="anchor" class="pd-form-1-nested-list-item-btn"><img src="images/design-assets/icon-caret-white.svg" alt="re-order downwards icon" width="16" height="16"></a>
+                                                    </div><a name="anchor"> <img src="images/design-assets/icon-trash-bin.svg" alt="delete icon" width="30" height="30"> </a>
+                                                </header>
+                                                <div class="mb-3">
+                                                    <label for="listTitle" class="form-label">Item Title</label>
+                                                    <input type="text" placeholder="Add a title for the list item" name="listTitle" class="form-control" id="listTitle">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="superCharge" class="form-label">Item Paragraph</label>
+                                                    <textarea type="text" rows="8" placeholder="Add text content for the list item" name="listPara" class="form-control" id="listPara"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <footer><a name="anchor" class="btn btn-outline-dark">Add List Item</a>
+                                        </footer>
+                                    </div>
+                                    <div class="mb-3">
+                                        <button type="button" class="btn btn-info me-2">Save</button>
+                                        <button type="button" class="btn btn-outline-dark me-2">Cancel</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>                         
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>

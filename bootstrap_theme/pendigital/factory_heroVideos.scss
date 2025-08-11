@@ -1,0 +1,663 @@
+// start pd-hero-video-1
+.pd-hero-video-1 {
+    border-top: 1px solid $gray-300;
+    border-bottom: 1px solid $gray-300;
+    background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
+
+    h1 {
+        font-weight: 700;
+        font-size: 0.7rem;
+        color: $white;
+        display: inline-block;
+
+        // background: rgba(255, 255, 255, 1);
+        background: $info;
+        padding: 8px 14px;
+        border-radius: 50em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-hero-video-1-headline {
+        color: $primary;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 1.5;
+
+        @media (max-width: 575px) {
+            font-size: 2rem;
+        }
+    }
+
+    .pd-hero-video-1-subHeadline {
+        color: $gray-600;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .pd-hero-video-1-videoWrapper {
+        width: 100%;
+
+        @media (min-width: 1200px) {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+// end pd-hero-video-1
+// start pd-hero-video-2
+.pd-hero-video-2 {
+    background: linear-gradient(180deg, $primary, darken($primary, 10%));
+
+    h1 {
+        font-weight: 700;
+        font-size: 0.7rem;
+        color: $white;
+        display: inline-block;
+
+        // background: rgba(255, 255, 255, 1);
+        background: $info;
+        padding: 8px 14px;
+        border-radius: 50em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-hero-video-2-headline {
+        color: $white;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 1.5;
+
+        @media (max-width: 575px) {
+            font-size: 2rem;
+        }
+    }
+
+    .pd-hero-video-2-subHeadline {
+        color: $white;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .pd-hero-video-2-videoWrapper {
+        width: 100%;
+
+        @media (min-width: 1200px) {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+// end pd-hero-video-2
+// start pd-hero-video-3
+.pd-hero-video-3 {
+    border-top: 1px solid $gray-200;
+    border-bottom: 1px solid $gray-200;
+    background: linear-gradient(#f7f7f7 0%, #f9f9f9 20%, #f9f9f9 90%, #f7f7f7 100%);
+
+    h1 {
+        font-weight: 700;
+        font-size: 0.7rem;
+        color: $white;
+        display: inline-block;
+
+        // background: rgba(255, 255, 255, 1);
+        background: $info;
+        padding: 8px 14px;
+        border-radius: 50em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-hero-video-3-headline {
+        color: $primary;
+        font-weight: 300;
+        font-size: 2rem;
+        line-height: 1.5;
+
+        strong {
+            font-weight: 700;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 2rem;
+        }
+    }
+
+    .pd-hero-video-3-subHeadline {
+        color: $gray-600;
+        font-size: 1rem;
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-hero-video-3-cta {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        .btn {
+            margin-top: 10px;
+        }
+
+        .btn.btn-info {
+            color: $white;
+        }
+    }
+
+    @media (min-width: 576px) {
+        .pd-hero-video-3-cta {
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            .btn {
+                // margin-left: 20px;
+                margin-top: 0px;
+
+                &:focus {
+                    outline: 2px dotted $primary;
+                    outline-offset: 2px;
+                }
+            }
+        }
+    }
+}
+
+// end pd-video-hero-3
+// start pd-hero-video-3
+.pd-hero-video-4 {
+    background: linear-gradient(180deg, $primary, darken($primary, 10%));
+
+    h1 {
+        font-weight: 700;
+        font-size: 0.7rem;
+        color: $white;
+        display: inline-block;
+
+        // background: rgba(255, 255, 255, 1);
+        background: $info;
+        padding: 8px 14px;
+        border-radius: 50em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-hero-video-4-headline {
+        color: $white;
+        font-weight: 300;
+        font-size: 2rem;
+        line-height: 1.5;
+
+        strong {
+            font-weight: 700;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 2rem;
+        }
+    }
+
+    .pd-hero-video-4-subHeadline {
+        color: $white;
+        font-size: 1rem;
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-hero-video-4-cta {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        .btn {
+            margin-top: 10px;
+        }
+
+        .btn.btn-info {
+            color: $white;
+        }
+    }
+
+    @media (min-width: 576px) {
+        .pd-hero-video-4-cta {
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            .btn {
+                // margin-left: 20px;
+                margin-top: 0px;
+
+                &:focus {
+                    outline: 2px dotted $white;
+                    outline-offset: 2px;
+                }
+            }
+        }
+    }
+}
+
+// end pd-video-hero-4
+// start pd-hero-video-5
+.pd-hero-video-5 {
+    background: linear-gradient(180deg, $primary, darken($primary, 10%));
+
+    h1 {
+        font-weight: 700;
+        font-size: 0.7rem;
+        color: $white;
+        display: inline-block;
+
+        // background: rgba(255, 255, 255, 1);
+        background: $info;
+        padding: 8px 14px;
+        border-radius: 50em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-hero-video-5-headline {
+        color: white;
+        font-weight: 300;
+        font-size: 2rem;
+        line-height: 1.5;
+
+        strong {
+            font-weight: 700;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 2rem;
+        }
+    }
+
+    .pd-hero-video-5-subHeadline {
+        color: white;
+        font-size: 1rem;
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-hero-video-5-image-outer {
+        width: 70%;
+    }
+
+    .pd-hero-video-5-play-outer {
+        position: relative;
+
+        a.pd-hero-video-5-modal-link {
+            position: relative;
+            z-index: 1;
+            transition: 0.3s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            &:focus {
+                outline: 3px dotted $black;
+                outline-offset: 6px;
+            }
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 20px;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+
+            // background: $white;
+            border-radius: 50%;
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+            transform: scale(1);
+            animation: pd-hero-video-5-pulse 2s infinite;
+            z-index: 0;
+        }
+
+        @keyframes pd-hero-video-5-pulse {
+            0% {
+                transform: scale(0.85);
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.8);
+            }
+
+            70% {
+                transform: scale(1.4);
+                box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+            }
+
+            100% {
+                transform: scale(0.85);
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            }
+        }
+
+        svg {
+            filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.4));
+        }
+    }
+}
+
+.pd-hero-video-5-modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    z-index: 1;
+    overflow: auto;
+    transition: background 0.4s;
+
+    span {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 1;
+
+        a.pd-hero-video-5-close {
+            display: inline-block;
+            transition: transform 0.4s;
+            text-decoration: none;
+            color: $white;
+
+            img {
+                margin-left: 4px;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+                color: $white!important;
+            }
+
+            &:focus {
+                outline: 2px dotted $white;
+                outline-offset: 2px;
+            }
+        }
+    }
+
+    .pd-hero-video-5-modal-video-outer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 0;
+
+        @media (max-width: 575px) {
+            padding: 10px;
+        }
+
+        @media (min-width: 576px) {
+            padding: 30px;
+        }
+
+        .pd-hero-video-5-modal-video-inner {
+            width: 100%;
+
+            @media (min-width: 1200px) {
+                width: 80%;
+
+                // margin-left: auto;
+                // margin-right: auto;
+            }
+        }
+    }
+}
+
+.pd-hero-video-5-modal.open {
+    display: block;
+}
+
+// end of pd-hero-video-5
+// start pd-hero-video-6
+.pd-hero-video-6 {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    min-height: 640px;
+
+    .container {
+        padding-top: 9rem;
+        padding-bottom: 9rem;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    h1 {
+        font-weight: 700;
+        font-size: 0.7rem;
+        color: $white;
+        display: inline-block;
+
+        // background: rgba(255, 255, 255, 1);
+        background: $info;
+        padding: 8px 14px;
+        border-radius: 50em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-hero-video-6-headline {
+        color: white;
+        font-weight: 300;
+        font-size: 2rem;
+        line-height: 1.5;
+
+        strong {
+            font-weight: 700;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 2rem;
+        }
+    }
+
+    .pd-hero-video-6-subHeadline {
+        color: white;
+        font-size: 1rem;
+        font-weight: 300;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-hero-video-6-image {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-position: center center;
+        opacity: 0;
+        transition: opacity 0.4s;
+    }
+
+    .pd-hero-video-6-image.pd-hero-video-image-6-loaded {
+        opacity: 1;
+    }
+
+    .pd-hero-video-6-image-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient($black 0%, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0.8) 60%, $black 100%);
+        opacity: 0.7;
+    }
+
+    .pd-hero-video-6-play-outer {
+        position: relative;
+        display: inline-block;
+
+        .pd-hero-video-6-modal-link {
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+            transition: 0.3s;
+            opacity: 0.9;
+            cursor: pointer;
+            border: none;
+            background: none;
+            padding: 0px;
+
+            img {
+                pointer-events: none;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            &:focus {
+                outline: 2px dotted $white;
+                outline-offset: 6px;
+            }
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 20px;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+
+            // background: $white;
+            border-radius: 50%;
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
+            transform: scale(1);
+            animation: pd-hero-video-6-pulse 2s infinite;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        @keyframes pd-hero-video-6-pulse {
+            0% {
+                transform: scale(0.85);
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8);
+            }
+
+            70% {
+                transform: scale(1.4);
+                box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+            }
+
+            100% {
+                transform: scale(0.85);
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+            }
+        }
+
+        svg {
+            filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.4));
+        }
+    }
+}
+
+.pd-hero-video-6-modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    z-index: 1;
+    overflow: auto;
+    transition: background 0.4s;
+
+    span {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 1;
+
+        .pd-hero-video-6-close {
+            display: inline-block;
+            transition: transform 0.4s;
+            text-decoration: none;
+            color: $white;
+            border: none;
+            background: none;
+            padding: none;
+            cursor: pointer;
+
+            img {
+                margin-left: 4px;
+                pointer-events: none;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+                color: $white!important;
+            }
+
+            &:focus {
+                outline: 2px dotted $white;
+                outline-offset: 6px;
+            }
+        }
+    }
+
+    .pd-hero-video-6-modal-video-outer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 0;
+
+        @media (max-width: 575px) {
+            padding: 10px;
+        }
+
+        @media (min-width: 576px) {
+            padding: 30px;
+        }
+
+        .pd-hero-video-6-modal-video-inner {
+            width: 100%;
+
+            @media (min-width: 1200px) {
+                width: 80%;
+
+                // margin-left: auto;
+                // margin-right: auto;
+            }
+        }
+    }
+}
+
+.pd-hero-video-6-modal.open {
+    display: block;
+}
+
+// end pd-hero-video-6

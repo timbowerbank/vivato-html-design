@@ -1,0 +1,95 @@
+/* Bootstrap theme customized with Pinegrow Web Editor */
+/* Vars go before the @import */
+/* Click on the Uncomment icon in the Style panel to uncomment and customize the variables: */
+// $primary: #007bff;
+// $secondary: #6c757d;
+// $success: #28a745;
+// $info: #17a2b8;
+// $warning: #ffc107;
+// $danger: #dc3545;
+// $light: #f8f9fa;
+// $dark: #343a40;
+// $body-bg: #ffffff;
+// $body-color: #212529;
+/* Import web fonts - Must come before any CSS rules. Refresh the Page view after making changes to import statements. */
+// @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Playfair+Display:wght@400;700;900&display=swap');
+// $font-family-sans-serif: 'Lato', sans-serif;
+// $headings-font-family: 'Playfair Display', serif;
+$spacer: 1.5rem;
+
+// $primary: #433a6c; Fort Marketing
+// $primary: #007aff; old scissors blue
+// $primary: #493bb3; Or is this old scissors blue?
+$primary: #17A9E6;
+$primary-darker: #433a6c;
+
+// $secondary: #3fa9f5;
+$secondary: #493bb3;
+
+// $info: #b53027;
+$info: #00CC66;
+$pd-oxford-blue: #00182E;
+$pd-bone: #E0DDCF;
+$pd-isaballine: #F1F0EA;
+
+// original
+$pd-ochre: #D17A22;
+
+// @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+// $font-family-sans-serif: 'Raleway', sans-serif;
+$font-family-sans-serif: 'Montserrat', sans-serif;
+
+@import "bootstrap/bootstrap";
+
+// import Pendigital sass
+@import "pendigital/factory_topBar";
+@import "pendigital/factory_mainNavs";
+@import "pendigital/factory_hamburgers";
+@import "pendigital/factory_heroes";
+@import "pendigital/factory_heroesHalf";
+@import "pendigital/factory_testimonials";
+@import "pendigital/factory_cards";
+@import "pendigital/factory_sections";
+@import "pendigital/factory_footers";
+@import "pendigital/factory_testimonial_sliders";
+@import "pendigital/factory_logo_strips";
+@import "pendigital/factory_heroVideos";
+@import "pendigital/factory_mission_statements";
+@import "pendigital/factory_ribbons";
+@import "pendigital/factory_people";
+@import "pendigital/factory_specials_multiBox";
+@import "pendigital/factory_specials_carouselSteps";
+@import "pendigital/factory_specials_stats";
+@import "pendigital/factory_lists";
+@import "pendigital/factory_call_to_actions";
+@import "pendigital/factory_cards_posts";
+@import "pendigital/factory_headlines";
+@import "pendigital/factory_social_media_share";
+@import "pendigital/factory_blog_post";
+@import "pendigital/factory_forms";
+@import "pendigital/factory_text";
+@import "pendigital/factory_grid";
+@import "pendigital/factory_widgets";
+@import "pendigital/factory_page_menus";
+@import "pendigital/factory_carousels";
+@import "pendigital/factory_pricing";
+@import "pendigital/factory_faqs";
+@import "pendigital/factory_breadcrumbs";
+@import "pendigital/factory_admin_page_menus";
+@import "pendigital/factory_admin_page_menus_2";
+@import "pendigital/factory_admin_page_menus_3";
+@import "pendigital/factory_admin_logins";
+@import "pendigital/factory_admin_tables";
+@import "pendigital/factory_admin_cards";
+@import "pendigital/factory_admin_forms";
+@import "pendigital/factory_admin_dashboard.scss";
+@import "pendigital/factory_tabs.scss";
+@import "pendigital/factory_modals.scss";
+@import "pendigital/factory_search.scss";
+@import "pendigital/factory_galleries.scss";
+@import "pendigital/factory_sliders.scss";
+
+/* Custom CSS rules come here */
