@@ -78,18 +78,21 @@ $font-family-sans-serif: 'Montserrat', sans-serif;
 @import "vivato/factory_pricing";
 @import "vivato/factory_faqs";
 @import "vivato/factory_breadcrumbs";
-@import "vivato/factory_admin_page_menus";
-@import "vivato/factory_admin_page_menus_2";
-@import "vivato/factory_admin_page_menus_3";
-@import "vivato/factory_admin_logins";
-@import "vivato/factory_admin_tables";
-@import "vivato/factory_admin_cards";
-@import "vivato/factory_admin_forms";
-@import "vivato/factory_admin_dashboard.scss";
-@import "vivato/factory_tabs.scss";
-@import "vivato/factory_modals.scss";
-@import "vivato/factory_search.scss";
-@import "vivato/factory_galleries.scss";
-@import "vivato/factory_sliders.scss";
+// @import "vivato/factory_admin_page_menus";
+// @import "vivato/factory_admin_page_menus_2";
+// @import "vivato/factory_admin_page_menus_3";
+// @import "vivato/factory_admin_logins";
+// @import "vivato/factory_admin_tables";
+// @import "vivato/factory_admin_cards";
+// @import "vivato/factory_admin_forms";
+// @import "vivato/factory_admin_dashboard";
+@import "vivato/factory_tabs";
+@import "vivato/factory_modals";
+@import "vivato/factory_search";
+@import "vivato/factory_galleries";
+@import "vivato/factory_sliders";
+@import "vivato/factory_mega_menu_nav";
+
+@import "hamburgers/hamburgers"; // import the hamburgers
 
 /* Custom CSS rules come here */

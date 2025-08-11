@@ -1,0 +1,586 @@
+// mega menu variables
+$pd-mega-mobile-breakpoint: 1049px;
+$pd-mega-desktop-breakpoint: 1050px;
+$pd-mega-color: #2a2a2a;
+$pd-mega-font-weight: 400;
+$pd-mega-dropdown-color: #c5247f;
+$pd-mega-drawer-width: 90vw;
+$pd-mega-drawer-max-width: 400px;
+$pd-mega-drawer-top: 94px;
+$pd-mega-drawer-padding: 20px;
+$pd-mega-btn-padding: 12px 30px;
+$pd-mega-btn-border: 2px solid #c5247f;
+$pd-mega-btn-border-sec: 2px solid #c5247f;
+$pd-mega-btn-background-color: #c5247f;
+$pd-mega-btn-background-color-sec: #ffffff;
+$pd-mega-btn-border-radius: 50em;
+$pd-mega-btn-color: white;
+$pd-mega-btn-color-sec: #c5247f;
+$pd-mega-btn-text-transform: Capitalize;
+$pd-mega-btn-font-weight: 700;
+$pd-mega-dropdown-top: 50px;
+
+// **********************
+// *** PD NO SCROLL *****
+// **********************
+
+// body no scroll
+.pd-no-scroll {
+    @media screen and (max-width: $pd-mega-mobile-breakpoint) {
+        overflow: hidden;
+        height: 100vh;
+    }
+}
+
+// **********************
+// *** MEGA MENU LOGO ***
+// **********************
+
+.pd-mega-menu-logo {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    &:focus-visible {
+        outline: 2px dotted $info!important;
+        outline-offset: 6px;
+        border-radius: 50em;
+    }
+
+}
+
+
+// *********************
+// *** OUTER NAV DIV ***
+// *********************
+// the outer container, home to button and the drawer
+// also a col
+.pd-mega-menu-outer {
+    position: relative;
+    flex: 1 1 auto;
+    background: white;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    @media screen and (max-width: $pd-mega-mobile-breakpoint) {
+        position: relative;
+    }
+
+    @media (min-width: $pd-mega-desktop-breakpoint) {
+        position: initial;
+    }
+}
+
+// *****************
+// *** HAMBURGER ***
+// *****************
+// button
+.pd-mega-menu-hamburger {
+    position: relative;
+    z-index: 1001;
+
+    @media screen and (max-width: $pd-mega-mobile-breakpoint) {
+        display: block;
+    }
+
+    @media (min-width: $pd-mega-desktop-breakpoint) {
+        display: none;
+    }
+}
+
+// **************
+// *** DRAWER ***
+// **************
+// for sliding on and off screen
+.pd-mega-menu-drawer {
+    background: white;
+
+    @media screen and (max-width: $pd-mega-mobile-breakpoint) {
+        position: fixed;
+        top: $pd-mega-drawer-top;
+        right: 0;
+        height: 100vh;
+        width: $pd-mega-drawer-width;
+        max-width: $pd-mega-drawer-max-width;
+        padding: $pd-mega-drawer-padding;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        transform: translateX(100%);
+        z-index: 1000;
+        overflow-y: auto;
+
+        &.pd-transition-enabled {
+            transition: transform 0.3s ease;
+        }
+
+        &.pd-transition-enabled.pd-is-active {
+            transform: translateX(0);
+        }
+    }
+
+    @media (min-width: $pd-mega-desktop-breakpoint) {
+        position: static;
+    }
+
+    // ************
+    // *** MENU ***
+    // ************
+    // the outer ul
+    .pd-mega-menu-menu {
+        display: flex;
+        list-style-type: none;
+        padding-left: 0;
+        margin: 0;
+
+        @media screen and (max-width: $pd-mega-mobile-breakpoint) {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        @media (min-width: $pd-mega-desktop-breakpoint) {
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    }
+}
+
+// ****************
+// *** NAV ITEM ***
+// ****************
+// this is a top level li
+.pd-mega-menu-nav-item {
+    position: static;
+
+    @media screen and (max-width: $pd-mega-mobile-breakpoint) {
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    @media (min-width: $pd-mega-desktop-breakpoint) {
+        margin-right: 30px;
+    }
+
+    &:last-child {
+        margin-right: 0;
+
+        // Remove margin from last item
+    }
+
+    a {
+        text-decoration: none;
+        color: $pd-mega-color;
+        font-weight: $pd-mega-font-weight;
+        text-transform: capitalize;
+
+        svg {
+            fill: #c5247F;
+        }
+    }
+}
+
+// ********************
+// *** NAV ITEM BTN ***
+// ********************
+// for any button required in the nav but not for sub menus (see class: pd-mega-menu-sub-toggle for sub menu button)
+.pd-mega-menu-nav-item-btn {
+    a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: $pd-mega-btn-padding;
+        border: $pd-mega-btn-border;
+        text-transform: $pd-mega-btn-text-transform;
+        font-weight: $pd-mega-btn-font-weight;
+        border-radius: $pd-mega-btn-border-radius;
+        background-color: $pd-mega-btn-background-color;
+        color: $pd-mega-btn-color;
+        transition: background .3s;
+
+        .pd-icon {
+            fill: white;
+            margin-right: 6px;
+        }
+
+        &:hover {
+            background: white;
+            color: $info;
+            .pd-icon {
+                fill: $info;
+            }
+        }
+
+        &:focus-visible {
+            outline: 2px dotted $info;
+            outline-offset: 4px;
+        }
+
+        @media screen and (max-width: $pd-mega-mobile-breakpoint) {
+            min-width: 200px;
+            max-width: 200px;
+            flex-shrink: 0;
+            text-align: center;
+        }
+
+        @media (min-width: $pd-mega-desktop-breakpoint) {
+            min-width: auto;
+            text-align: initial;
+        }
+    }
+
+    @media screen and (max-width: $pd-mega-mobile-breakpoint) {
+        margin-top: 12px;
+    }
+
+    @media (min-width: $pd-mega-desktop-breakpoint) {
+        margin-top: 0px;
+    }
+}
+
+.pd-mega-menu-nav-item-btn-sec {
+    a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: $pd-mega-btn-padding;
+        border: $pd-mega-btn-border-sec;
+        text-transform: $pd-mega-btn-text-transform;
+        font-weight: $pd-mega-btn-font-weight;
+        border-radius: $pd-mega-btn-border-radius;
+        background-color: $pd-mega-btn-background-color-sec;
+        color: $pd-mega-btn-color-sec;
+        transition: background .3s;
+
+        .pd-icon {
+            fill: #c5247f;
+            margin-right: 6px;
+        }
+
+        &:hover {
+            background: #c5247f;
+            color: white;
+
+            .pd-icon {
+                fill: #ffffff;
+            }
+        }
+
+        &:focus-visible {
+            outline: 2px dotted $info;
+            outline-offset: 4px;
+        }
+
+        @media screen and (max-width: $pd-mega-mobile-breakpoint) {
+            min-width: 200px;
+            max-width: 200px;
+            flex-shrink: 0;
+            text-align: center;
+        }
+
+        @media (min-width: $pd-mega-desktop-breakpoint) {
+            min-width: auto;
+            text-align: initial;
+        }
+    }
+
+    @media screen and (max-width: $pd-mega-mobile-breakpoint) {
+        margin-top: 12px;
+    }
+
+    @media (min-width: $pd-mega-desktop-breakpoint) {
+        margin-top: 0px;
+    }
+}
+
+// ******************************
+// *** MEGA SUB MENU NAV ITEM ***
+// ******************************
+// this is an anchor card nested in the column
+.pd-mega-menu-sub-menu-nav-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 20px;
+
+    .pd-mega-menu-sub-menu-icon-outer {
+        margin-right: 4px;
+
+        img, svg {
+            width: 20px;
+            height: 20px;
+            fill: $info;
+        }
+    }
+
+    .pd-mega-menu-sub-menu-label-outer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        color: #2a2a2a;
+        transition: color .2s;
+
+        strong {
+            font-weight: 700;
+            padding-right: 20px;
+        }
+
+        p {
+            font-weight: 300;
+            margin-bottom: 0;
+            font-size: 0.8rem;
+        }
+    }
+
+    &:hover,
+    &:focus {
+        .pd-mega-menu-sub-menu-label-outer {
+            color: #000000;
+
+            strong {
+                position: relative;
+                &:after {
+                    position: absolute;
+                    top: 0px;
+                    right: -6px;
+                    display: inline-block;
+                    content: url('/images/design-assets/_openflexure/arrow_left_alt_24dp_C5247F_FILL0_wght300_GRAD0_opsz24.svg');
+                    width: 20px;
+                    height: 20px;
+                    // transform: translateY(7px);
+                }
+            }
+        }
+    }
+}
+
+// goes on the li with a sub menu
+// .pd-mega-menu-has-sub {
+// }
+
+// ****************************
+// *** MEGA MENU SUB TOGGLE ***
+// ****************************
+// is the button nested in the li that will toggle the sub menu
+.pd-mega-menu-sub-toggle {
+    border: none;
+    background: none;
+    color: $pd-mega-color;
+    transition: color .2s;
+    font-weight: $pd-mega-font-weight;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    // span for arrow
+    span {
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.2s;
+        margin-bottom: 4px;
+        margin-left: 4px;
+
+        svg {
+            width: 12px;
+            height: 12px;
+            stroke: $pd-mega-dropdown-color;
+        }
+    }
+
+    &:hover {
+        color: #000000;
+    }
+
+    &:focus-visible {
+        outline: 2px dotted $info!important;
+        outline-offset: 8px;
+        border-radius: 50em;
+    }
+}
+
+.pd-mega-menu-sub-toggle.pd-is-active {
+    span {
+        transform: rotate(90deg);
+    }
+}
+
+// *********************
+// *** MEGA SUB MENU ***
+// *********************
+// the outer container for the sub menu
+.pd-mega-menu-sub-menu {
+    display: none;
+    z-index: 1000;
+    box-shadow: 6px 7px 14px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #c5247F;
+    background-color: white;
+    @media (min-width: $pd-mega-desktop-breakpoint) {
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    @media screen and (max-width: $pd-mega-mobile-breakpoint) {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    @media (min-width: $pd-mega-desktop-breakpoint) {
+        position: absolute;
+        top: 100%;
+
+        // $pd-mega-drawer-top
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        padding-right: calc(var(--bs-gutter-x) * 0.5);
+        padding-left: calc(var(--bs-gutter-x) * 0.5);
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 1140px;
+    }
+
+    @media (min-width: 1400px) {
+        max-width: 1320px;
+    }
+
+    // the inner sub menu container for the columns
+    .pd-mega-menu-sub-menu-row {
+        display: flex;
+        width: 100%;
+        min-width: 100%;
+
+        @media screen and (max-width: $pd-mega-mobile-breakpoint) {
+            flex-direction: column;
+        }
+
+        @media (min-width: $pd-mega-desktop-breakpoint) {
+            flex-direction: row;
+        }
+    }
+}
+
+// *************************
+// *** MEGA SUB MENU COL ***
+// *************************
+// the column inside the sub menu
+.pd-mega-menu-sub-menu-col {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    @media screen and (max-width: $pd-mega-mobile-breakpoint) {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    @media (min-width: $pd-mega-desktop-breakpoint) {
+        // width: 20%;
+        min-width: 0;
+        flex: 0 0 25%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    // heading of each sub col
+    header {
+        width: 100%;
+        flex: 0 0 auto;
+
+        strong {
+            // text-transform: uppercase;
+            font-weight: 700;
+            color: #c5247F;
+            font-size: 0.75rem;
+        }
+    }
+}
+
+.pd-mega-menu-sub-menu.pd-is-active {
+    display: flex;
+}
+
+// **********************************************************************
+// *** STANDARD DROP DOWN ***********************************************
+// **********************************************************************
+// ***********************************
+// *** SIMPLE DROP DOWN / NOT MEGA ***
+// ***********************************
+// this is the dropdown ul
+.pd-mega-dropdown {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    z-index: 1000;
+    border-top: 1px solid #c5247f;
+    display: none;
+    background-color: white;
+    padding: 10px;
+    @media (min-width: $pd-mega-desktop-breakpoint) {
+        border-radius: 0px 0px 10px 10px;
+
+    }
+
+    @media screen and (max-width: $pd-mega-mobile-breakpoint) {
+        position: relative;
+    }
+
+    @media (min-width: $pd-mega-desktop-breakpoint) {
+        position: absolute;
+
+        // top: $pd-mega-dropdown-top;
+        top: 100%;
+        min-width: 140px;
+    }
+}
+
+.pd-mega-dropdown.pd-is-active {
+    display: block;
+}
+
+// *************************
+// *** DROPDOWN NAV ITEM ***
+// *************************
+// this is the dropdown's li
+.pd-mega-dropdown-nav-item {
+    margin-bottom: 20px;
+    a {
+        font-weight: 700;
+        color: #2a2a2a;
+    }
+
+    &:last-child {
+        margin-bottom: 10px;
+    }
+}
+
+// ****************************
+// *** SCREEN CONTENT COVER ***
+// ****************************
+.pd-content-cover {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: calc(100vh - $pd-mega-drawer-top);
+    background-color: rgba(0,0,0,0.5);
+    top: $pd-mega-drawer-top;
+    left: 0px;
+    right: 0px;
+    z-index: 999;
+}
+
+.pd-content-cover.pd-is-active {
+    display: block;
+}
