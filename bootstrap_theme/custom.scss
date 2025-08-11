@@ -1,38 +1,15 @@
-/* Bootstrap theme customized with Pinegrow Web Editor */
-/* Vars go before the @import */
-/* Click on the Uncomment icon in the Style panel to uncomment and customize the variables: */
-// $primary: #007bff;
-// $secondary: #6c757d;
-// $success: #28a745;
-// $info: #17a2b8;
-// $warning: #ffc107;
-// $danger: #dc3545;
-// $light: #f8f9fa;
-// $dark: #343a40;
-// $body-bg: #ffffff;
-// $body-color: #212529;
-/* Import web fonts - Must come before any CSS rules. Refresh the Page view after making changes to import statements. */
-// @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Playfair+Display:wght@400;700;900&display=swap');
-// $font-family-sans-serif: 'Lato', sans-serif;
-// $headings-font-family: 'Playfair Display', serif;
 $spacer: 1.5rem;
-
-// $primary: #433a6c; Fort Marketing
-// $primary: #007aff; old scissors blue
-// $primary: #493bb3; Or is this old scissors blue?
-$primary: #17A9E6;
-$primary-darker: #433a6c;
-
-// $secondary: #3fa9f5;
-$secondary: #493bb3;
+$primary: #25215F;
+$secondary: #C895FA;
+$info: #E84F49;
+$black: #231F20;
+$light: #f8f9fa;
+$dark: #343a40;
 
 // $info: #b53027;
-$info: #00CC66;
 $pd-oxford-blue: #00182E;
 $pd-bone: #E0DDCF;
 $pd-isaballine: #F1F0EA;
-
-// original
 $pd-ochre: #D17A22;
 
 // @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;1,300&display=swap');
@@ -78,6 +55,7 @@ $font-family-sans-serif: 'Montserrat', sans-serif;
 @import "vivato/factory_pricing";
 @import "vivato/factory_faqs";
 @import "vivato/factory_breadcrumbs";
+
 // @import "vivato/factory_admin_page_menus";
 // @import "vivato/factory_admin_page_menus_2";
 // @import "vivato/factory_admin_page_menus_3";
@@ -92,7 +70,7 @@ $font-family-sans-serif: 'Montserrat', sans-serif;
 @import "vivato/factory_galleries";
 @import "vivato/factory_sliders";
 @import "vivato/factory_mega_menu_nav";
+@import "hamburgers/hamburgers";
 
-@import "hamburgers/hamburgers"; // import the hamburgers
-
+// import the hamburgers
 /* Custom CSS rules come here */
