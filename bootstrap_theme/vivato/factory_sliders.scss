@@ -1,0 +1,677 @@
+.pd-slider-1 {
+    .pd-intro-heading-sm {
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: $white;
+        margin-bottom: 0px;
+    }
+
+    .pd-headline {
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: $white;
+    }
+
+    .pd-subHeadline {
+        color: $white;
+        line-height: 1.5;
+    }
+
+    .pd-icon {
+        fill: $white;
+        margin-right: 6px;
+    }
+
+    
+
+    .pd-btn {
+        border: 2px solid white;
+        background: transparent;
+        transition: background 0.3s;
+        border-radius: 50em;
+        padding: 16px 30px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        font-weight: 700;
+
+        .pd-icon {
+            width: 40px;
+            height: 40px;
+            margin-right: 6px;
+            fill: white;
+
+            
+        }
+
+        &:hover {
+            background: #c5247f;
+            color: $white;
+
+            .pd-icon {
+                fill: $white;
+            }
+        }
+    }
+
+    .pd-slider-1-slider-outer {
+        background: rgba(255,255,255,0.95);
+        border-radius: 10px;
+        padding: 40px 6px;
+        border: 1px solid white;
+    }
+
+    .pd-slider-1-card-outer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border: 1px solid #e7e7e7;
+        border-radius: 10px;
+
+        .pd-slider-1-img-outer {
+            position: relative;
+            min-height: 260px;
+            overflow: hidden;
+            border-radius: 10px 10px 0px 0px;
+            width: 100%;
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+                object-position: center center;
+
+            }
+        }
+
+        .pd-slider-1-text-content-outer {
+            padding: 10px;
+            background-color: #e7e7e7;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            border-radius: 0px 0px 10px 10px;
+
+            header {
+                padding-top: 15px;
+                padding-bottom: 30px;
+                h3 {
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    margin-bottom: 0px;
+                }
+            }
+            footer {
+                margin-bottom: 20px;
+                .pd-card-btn {
+                    color: #c5247f;
+                    font-weight: 700;
+                    font-size: 1rem;
+                    text-decoration: none;
+                    border: 2px solid #c5247F;
+                    padding: 10px 20px;
+                    border-radius: 50em;
+
+                }
+            }
+        }
+        
+    }
+
+    .pd-gallery-1-arrowWrapper {
+        border: none;
+        background: none;
+        position: absolute;
+        // top: 135px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        &:focus {
+            outline: 2px dotted $white;
+            outline-offset: 2px;
+        }
+    }
+
+    .pd-gallery-1-arrowWrapper.glide__arrow--right {
+        right: 0;
+    }
+
+}
+
+.pd-pink-background {
+    background: linear-gradient(rgba(197, 36, 127, 1) 0%, rgba(197, 36, 127, 0.95) 40%, rgba(197, 36, 127, 0.95) 60%, rgba(197, 36, 127, 0.9) 100%);
+}
+
+.pd-slider-2 {
+    // background: linear-gradient(color('primary', 1) 0%, color('primary, 0.95') 40%, color('primary, 0.95') 60%, color('primary, 1') 100%);
+    background: #F2F7F2;
+
+    .pd-intro-heading-sm {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 10px;
+
+        h2 {
+            font-weight: 400;
+            color: #161B33;
+            font-size: 1rem;
+
+            // letter-spacing: 0.07em;
+            margin-bottom: 0px;
+        }
+
+        span {
+            img {
+                margin-right: 3px;
+                margin-top: -3px;
+            }
+        }
+    }
+
+    .pd-headline {
+        font-weight: 800;
+        color: #161B33;
+        line-height: 1.3;
+
+        @media screen and (max-width: 991px) {
+            font-size: 1.8rem;
+            margin-botom: 20px;
+        }
+
+        @media (min-width: 992px) {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+    }
+
+    .pd-subHeadline {
+        line-height: 1.5;
+        font-weight: 300;
+        color: #161B33;
+        margin-bottom: 10px;
+
+        strong,
+        em {
+            font-weight: 800;
+        }
+
+        @media screen and (max-width: 991px) {
+            font-size: 0.9rem;
+        }
+
+        @media (min-width: 992px) {
+            font-size: 1rem;
+        }
+    }
+
+    .pd-btn {
+        display: inline-block;
+        text-decoration: none;
+        color: #161B33;
+        margin-right: 20px;
+        padding: 12px 30px;
+        border-radius: 50em;
+        border: 2px solid #DE541E;
+
+        @media screen and (max-width: 991px) {
+            margin-bottom: 16px;
+        }
+
+        img, svg {
+            margin-right: 4px;
+            width: 24px;
+            height: 24px;
+            fill: #DE541E;
+        }
+    }
+
+    .pd-btn.pd-inverted {
+        border: 2px solid white;
+        color: white;
+    }
+
+    .pd-slider-2-cards-col {
+        .pd-slider-2-cards-outer {
+            .pd-slider-2-card {
+                position: relative;
+
+                @media screen and (max-width: 991px) {
+                }
+
+                @media (min-width: 992px) {
+                    min-width: 500px;
+                    min-height: 400px;
+                }
+
+                .pd-slider-2-card-img-outer {
+                    position: relative;
+                    background: gray;
+                    overflow: hidden;
+
+                    @media screen and (max-width: 991px) {
+                        height: 350px;
+                    }
+
+                    @media (min-width: 992px) {
+                        height: 400px;
+                    }
+
+                    img {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center center;
+                    }
+
+                    .pd-slider-2-card-label-outer {
+                        position: absolute;
+                        top: 10px;
+                        left: -20px;
+
+                        .pd-slider-2-card-label {
+                            background: rgba(255,255,255,0.8);
+                            padding: 8px 20px 8px 40px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-start;
+                            align-items: center;
+                            margin-bottom: 10px;
+                            border: 1px solid white;
+                            border-radius: 4px;
+                            box-shadow: 3px 4px 8px rgba(0,0,0,0.2);
+
+                            p {
+                                margin-bottom: 0px;
+                                color: #161B33;
+                                text-transform: uppercase;
+                                font-weight: 800;
+                                font-size: 0.8rem;
+                            }
+
+                            span {
+                                display: inline-block;
+                                width: 28px;
+                                height: 24px;
+
+                                img {
+                                    width: 24px;
+                                    height: 24px;
+                                    margin-right: 4px;
+                                }
+                            }
+                        }
+                    }
+
+                    // .pd-badge {
+                    //     display: inline-block;
+                    //     position: absolute;
+                    //     width: 90px;
+                    //     height: 90px;
+                    //     top: 30px;
+                    //     right: 30px;
+                    // }
+                }
+
+                .pd-slider-2-card-content {
+                    padding: 10px 0px;
+                    border-bottom: 4px solid #161B33;
+                    color: #161B33;
+
+                    header {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: baseline;
+                        padding-top: 10px;
+                        h3 {
+                            font-size: 1.6rem;
+                            font-weight: 800;
+                            margin-bottom: 10px;
+                        }
+
+                        p {
+                            font-weight: 800;
+                            font-size: 1.2rem;
+                            margin-bottom: 10px;
+                        }
+                    }
+
+
+                    p {
+                        font-weight: 300;
+                        margin-bottom: 10px;
+
+                        em,
+                        strong {
+                            font-weight: 800;
+                            font-style: normal;
+                        }
+                    }
+
+                    // a {
+                    //     text-decoration: none;
+                    //     color: #161B33;
+                    //     font-weight: 800;
+
+                    //     &:before {
+                    //         content: ">";
+                    //         color: #DE541E;
+                    //         margin-right: 4px;
+                    //     }
+                    // }
+                }
+            }
+        }
+    }
+
+    .glide__arrows {
+        position: absolute;
+        height: 46px;
+        width: 100%;
+
+        @media screen and (max-width: 991px) {
+            top: 175px;
+        }
+
+        @media (min-width: 992px) {
+            top: 200px;
+        }
+
+        // left: 10;
+        .glide__arrow {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: -23px;
+            width: 46px;
+            height: 46px;
+            background: rgba(255, 255, 255, 0.8);
+            border: 2px solid #DE541E;
+            border-radius: 50%;
+
+            // border:none;
+            // &:focus {
+            // outline: 2px dotted $info;
+            // outline-offset: 4px;
+            // }
+        }
+
+        .glide__arrow--right {
+            right: 0;
+        }
+    }
+
+    .glide__bullets {
+        text-align: center;
+
+        .glide__bullet {
+            width: 16px;
+            height: 16px;
+            padding: 0;
+            margin-top: 20px;
+            margin-right: 10px;
+            border-radius: 50%;
+            border: 2px solid #DE541E;
+            background: #f2f7f2;
+            transition: transform 0.4s;
+
+            // &:focus {
+            //     outline: 2px dotted $white;
+            //     outline-offset: 2px;
+            // }
+        }
+
+
+
+        .glide__bullet.glide__bullet--active {
+            transform: scale(1.4);
+
+            // box-shadow: 2px 2px 6px 3px rgba(0,0,0,0.4);
+        }
+    }
+}
+
+// start .pd-slider-3
+.pd-slider-3 {
+    background: #F2F7F2;
+
+    .pd-intro-heading-sm {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 10px;
+
+        h2 {
+            font-weight: 400;
+            color: #161B33;
+            font-size: 1rem;
+
+            // letter-spacing: 0.07em;
+            margin-bottom: 0px;
+        }
+
+        span {
+            img {
+                margin-right: 3px;
+                margin-top: -3px;
+            }
+        }
+    }
+
+    .pd-headline {
+        font-weight: 800;
+        color: #161B33;
+        line-height: 1.3;
+
+        @media screen and (max-width: 991px) {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        @media (min-width: 992px) {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+    }
+
+    .pd-subHeadline {
+        line-height: 1.5;
+        font-weight: 300;
+        color: #161B33;
+        margin-bottom: 10px;
+
+        strong,
+        em {
+            font-weight: 800;
+        }
+
+        @media screen and (max-width: 991px) {
+            font-size: 0.9rem;
+        }
+
+        @media (min-width: 992px) {
+            font-size: 1rem;
+        }
+    }
+
+    .pd-slider-3-cards-outer {
+        .pd-slider-3-cards-inner {
+            // Force all slides to have the same height
+            display: flex !important;
+            align-items: stretch !important;
+        }
+
+        .pd-slider-3-card-wrapper {
+            // Override Glide's default styling
+            display: flex !important;
+            flex-direction: column !important;
+            height: auto !important;
+        }
+
+        .pd-slider-3-card {
+            position: relative;
+
+            // Make the card fill the slide height
+            display: flex !important;
+            flex-direction: column !important;
+            height: 100% !important;
+
+            // Take full height of the slide
+            .pd-slider-3-card-outer {
+                background: white;
+                border: 1px solid #D8D8D7;
+                padding: 40px;
+                flex: 1 1 auto;
+                display: flex;
+                flex-direction: column;
+
+                .pd-card-headline {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin-bottom: 10px;
+
+                    h3 {
+                        font-size: 1.2rem;
+                        margin-bottom: 10px;
+                        font-weight: 800;
+                        font-style: normal;
+                    }
+
+                    span {
+                        img {
+                            margin-left: -2px;
+                            margin-right: 4px;
+                            margin-top: -10px;
+                        }
+                    }
+                }
+
+                p {
+                    font-weight: 300;
+                    margin-bottom: 10px;
+
+                    em,
+                    strong {
+                        font-weight: 800;
+                        font-style: normal;
+                    }
+                }
+
+                .pd-card-content {
+                    color: #161B33;
+                    flex: 1 0 auto;
+
+                    @media (max-width:575px) {
+                        padding: 10px 0px;
+                    }
+
+                    h3 {
+                        font-size: 1.2rem;
+                        font-weight: 800;
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        font-weight: 300;
+                        margin-bottom: 10px;
+
+                        em,
+                        strong {
+                            font-weight: 800;
+                            font-style: normal;
+                        }
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: #161B33;
+                        font-weight: 800;
+
+                        &:before {
+                            content: ">";
+                            color: #DE541E;
+                            margin-right: 4px;
+                        }
+                    }
+
+                    .pd-item-row {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: center;
+
+                        img {
+                            margin-top: -14px;
+                            margin-right: 20px;
+                            width: 24px;
+                            height: 24px;
+                        }
+
+                        p {
+                            font-weight: 800;
+                        }
+                    }
+                }
+
+                footer {
+                    a {
+                        text-decoration: none;
+                        color: #161B33;
+                        font-weight: 800;
+
+                        &:before {
+                            content: ">";
+                            color: #DE541E;
+                            margin-right: 4px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .glide__arrows {
+            position: absolute;
+            height: 46px;
+            width: 100%;
+            top: 50%;
+
+            // left: 10;
+            .glide__arrow {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                top: -23px;
+                width: 46px;
+                height: 46px;
+                background: rgba(255, 255, 255, 0.8);
+                border: 2px solid #DE541E;
+                border-radius: 50%;
+
+                // border:none;
+                &:focus {
+                    outline: 2px dotted $info;
+                    outline-offset: 4px;
+                }
+            }
+
+            .glide__arrow--right {
+                right: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,108 @@
+.pd-modal-1 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+    overflow-y: auto;
+
+    .pd-modal-1-background {
+        background: rgba(0,0,0,0.65);
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .pd-modal-1-content-outer {
+        position: relative;
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        pointer-events: none;
+
+        @media screen and (max-width: 767px) {
+            padding: 12px;
+        }
+
+        @media (min-width: 768px) {
+            padding: 30px;
+        }
+
+        .pd-modal-1-content-inner {
+            pointer-events: all;
+            border: 1px solid $pd-bone;
+            padding: 10px;
+            background: rgba(255,255,255, 0.95);
+            overflow: auto;
+            @media screen and (max-width: 767px) {
+                max-height: 95vh;
+                width: 95%;
+                padding-top: 70px;
+            }
+            @media (min-width: 768px) and (max-width: 991px) {
+                max-height: 95vh;
+                width: 95%;
+                padding-top: 35px;
+            }
+
+            @media (min-width: 992px) and (max-width: 1199px) {
+                width: 900px;
+                max-height: 95vh;
+                padding-top: 35px;
+            }
+
+            @media (min-width: 1200px) and (max-width: 1399px) {
+                width: 1200px;
+                max-height: 95vh;
+                padding-top: 35px;
+            }
+
+            @media (min-width: 1400px) {
+               width: 1200px;
+               max-height: 95vh;
+               padding-top: 35px; 
+            }
+
+            border-radius: 10px;
+            position: relative;
+            box-shadow: 6px 6px 12px 5px rgba(0,0,0,0.2);
+
+            .pd-modal-1-close-btn {
+                border: none;
+                background: none;
+                position: absolute;
+                
+                z-index: 2;
+
+                @media screen and (max-width: 767px) {
+                    top: 20px;
+                    right: 20px;
+                }
+
+                @media (min-width: 768px) {
+                    top: 20px;
+                    right: 30px;
+                }
+            }
+
+            .pd-modal-1-loading-outer {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+            }
+        }
+    }
+}
+
+.pd-modal-1.pd-show {
+    display: block;
+}

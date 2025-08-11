@@ -1,0 +1,610 @@
+// start pd-forms-1
+.pd-forms-1 {
+    background: linear-gradient(180deg, $primary, darken($primary, 10%));
+
+    h1 {
+        font-weight: 700;
+        font-size: 0.7rem;
+        color: $white;
+        display: inline-block;
+
+        // background: rgba(255, 255, 255, 1);
+        background: $info;
+        padding: 8px 14px;
+        border-radius: 50em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-forms-1-headline {
+        color: white;
+        font-weight: 300;
+        font-size: 2rem;
+        line-height: 1.5;
+
+        strong {
+            font-weight: 700;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 2rem;
+        }
+    }
+
+    .pd-forms-1-subHeadline {
+        color: white;
+        font-size: 1.4rem;
+        font-weight: 300;
+        line-height: 1.4;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .pd-forms-1-para {
+        color: $white;
+        font-size: 1rem;
+        line-height: 2;
+        font-weight: 300;
+    }
+
+    .pd-forms-1-contact-block-outer {
+        position: relative;
+
+        .pd-forms-1-button-outer {
+            position: relative;
+            top: 1px;
+
+            .pd-forms-1-button {
+                background: none;
+                border-style: none;
+                color: $white;
+                font-weight: 700;
+                font-size: 1.4rem;
+                text-decoration: underline;
+                padding: 8px 18px;
+                transition: background 0.4s;
+
+                &:focus {
+                    outline: 2px dotted $white;
+                    outline-offset: -4px;
+                }
+            }
+
+            .pd-forms-1-button.pd-active {
+                border-left: 1px solid darken($info, 10%);
+                border-top: 1px solid darken($info, 10%);
+                border-right: 1px solid darken($info, 10%);
+                border-bottom: $info;
+                background: $info;
+                text-decoration: none;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+
+                &:hover {
+                    background: #26d47d;
+                }
+
+                &:focus {
+                    outline: 2px dotted $white;
+                    outline-offset: -4px;
+                }
+            }
+        }
+
+        .pd-forms-1-contact-panel {
+            display: none;
+            flex-direction: column;
+            padding: 40px 20px;
+            background: $white;
+            border: 1px solid darken($info, 10%);
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            transition: opacity 0.4s;
+            opacity: 0;
+
+            a {
+                display: inline-block;
+                text-decoration: none;
+                font-size: 1.4rem;
+                font-weight: 700;
+                margin-bottom: 20px;
+
+                span img {
+                    transition: transform 0.2s;
+                }
+
+                &:hover {
+                    span img {
+                        transform: scale(1.15);
+                    }
+                }
+
+                &:focus {
+                    outline: 2px dotted $primary;
+                    outline-offset: 4px;
+                }
+            }
+
+            .pd-forms-1-contact-panel-para {
+                font-weight: 300;
+                color: $gray-700;
+                line-height: 2;
+
+                strong {
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .pd-forms-1-contact-panel.pd-active {
+            // opacity: 1; // set via js
+            display: flex;
+        }
+    }
+
+    .pd-forms-1-form {
+        padding: 30px;
+        background: #f7f7f7;
+        box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+
+        label {
+            color: $gray-700;
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .btn.btn-info {
+            color: $white;
+        }
+    }
+}
+
+// end .pd-forms-1
+// start .pd-forms-2
+.pd-forms-2 {
+    h2 {
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .pd-forms-2-para {
+        line-height: 1.8;
+        font-weight: 300;
+        font-size: 1.4rem;
+    }
+
+    form {
+        margin-top: 40px;
+
+        .pd-forms-2-submit {
+            background: none;
+            border: 1px solid $info;
+            padding: 10px 20px;
+            border-radius: 50rem;
+            margin-top: 10px;
+            display: inline-block;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: 700;
+            color: $info;
+            font-size: 0.8rem;
+            transition: background 0.4s;
+
+            &:hover {
+                border: 1px solid darken($info, 10%);
+                background: darken($info, 10%);
+                color: $white;
+            }
+
+            &:focus {
+                outline: 2px dotted $primary;
+                outline-offset: 4px;
+            }
+        }
+    }
+
+    .pd-forms-2-label {
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    .pd-forms-2-address {
+        p {
+            margin-bottom: 6px;
+
+            strong {
+                font-weight: 700;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: $black;
+            font-weight: 700;
+            font-size: 2rem;
+            transition: color 0.4s;
+
+            &:hover {
+                color: $gray-600;
+            }
+
+            &:focus {
+                outline: 2px dotted $primary;
+                outline-offset: 4px;
+            }
+
+            @media (min-width: 992px) and (max-width: 1199px) {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+
+// start pd-forms-3
+.pd-forms-3 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+
+    .pd-intro-heading-sm {
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: 300;
+        display: inline-block;
+        padding-bottom: 4px;
+        color: $pd-oxford-blue;
+    }
+
+    .pd-headline {
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: $pd-oxford-blue;
+    }
+
+    .pd-btn {
+        padding: 14px 30px;
+        color: white;
+        text-transform: uppercase;
+        background: transparent;
+        border: 2px solid $info;
+        transition: background 0.4s;
+        display: inline-block;
+        text-decoration: none;
+        letter-spacing: 0.15em;
+        font-weight: 700;
+        font-size: 0.9rem;
+    
+        .pd-icon {
+            fill: $white;
+        }
+    
+        // box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.4);
+        &:hover {
+            // background: darken($info, 10%);
+            background: $info;
+            color: $white;
+    
+            .pd-icon {
+                fill: $white;
+            }
+        }
+    
+        &:focus {
+            outline: 2px dotted $white;
+            outline-offset: 4px;
+        }
+    
+        span {
+            .pd-icon {
+                fill: $white;
+            }
+        }
+    }
+    
+    .pd-btn.pd-inverted {
+        color: $pd-oxford-blue;
+        background: transparent;
+        border: 2px solid $pd-oxford-blue;
+    
+        .pd-icon {
+            fill: $pd-oxford-blue;
+        }
+    
+        &:hover {
+            background: $info;
+            border: 2px solid $pd-ochre;
+            color: $white;
+    
+            .pd-icon {
+                fill: $white;
+            }
+        }
+    
+        &:focus {
+            outline: 2px dotted $pd-ochre;
+            outline-offset: 4px;
+        }
+    }
+
+    .pd-forms-3-mask {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100px;
+        width: 100px;
+        overflow: hidden;
+
+        .pd-forms-3-circle-outer {
+            transition: transform 0.4s;
+            position: absolute;
+            right: -29px;
+            top: -28px;
+            width: 100px;
+            height: 100px;
+            background-color: $pd-bone;
+            border-radius: 50em;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .pd-forms-3-circle-inner {
+                width: 60px;
+                height: 60px;
+                border-radius: 50em;
+                background-color: $pd-ochre;
+                border: 2px solid $pd-ochre;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                .pd-icon {
+                    width: 34px;
+                    height: 34px;
+                    fill: $white;
+                }
+            }
+        }
+    }
+
+    .pd-forms-3-card-outer {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        padding-bottom: 40px;
+
+        .pd-forms-3-icon-outer {
+            margin-right: 20px;
+            background: $pd-ochre;
+            width: 33px;
+            height: 33px;
+            border-radius: 50em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .pd-icon {
+                fill: $white;
+                width: 22px;
+                height: 22px;
+            }
+        }
+
+        .pd-forms-3-card-body {
+            text-decoration: none;
+            font-weight: 700;
+            color: $pd-oxford-blue;
+
+            p {
+                font-weight: 700;
+            }
+        }
+    }
+
+    .pd-forms-3-form-outer {
+        background-color: $pd-isaballine;
+        border: 1px solid $pd-bone;
+        min-height: 640px;
+        border-top-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+        box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.2);
+        padding: 50px 40px;
+        color: $pd-oxford-blue;
+
+        header {
+            p {
+                font-weight: 700;
+
+            }
+        }
+
+        
+
+        label {
+            margin-bottom: 4px;
+        }
+        input {
+            border: 1px solid $pd-bone;
+        }
+
+        
+    }
+}
+
+// end pd-forms-3
+
+.pd-forms-4 {
+    // background: #F2F7F2;
+    .pd-intro-heading-sm {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 10px;
+
+        h2 {
+            font-weight: 400;
+            color: #161B33;
+            font-size: 1rem;
+
+            // letter-spacing: 0.07em;
+            margin-bottom: 0px;
+        }
+
+        span {
+            img {
+                margin-right: 3px;
+                margin-top: -3px;
+            }
+        }
+    }
+
+    .pd-headline {
+        font-weight: 800;
+        color: #161B33;
+        line-height: 1.3;
+
+        @media screen and (max-width: 991px) {
+            font-size: 1.8rem;
+            margin-botom: 20px;
+        }
+
+        @media (min-width: 992px) {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+    }
+
+    .pd-subHeadline {
+        line-height: 1.5;
+        font-weight: 300;
+        color: #161B33;
+        margin-bottom: 10px;
+
+        strong,
+        em {
+            font-weight: 800;
+        }
+
+        @media screen and (max-width: 991px) {
+            font-size: 0.9rem;
+        }
+
+        @media (min-width: 992px) {
+            font-size: 1rem;
+        }
+    }
+
+    .pd-forms-4-form-outer {
+        background: white;
+        border: 1px solid #D8D8D7;
+
+        @media screen and (max-width: 991px) {
+            padding: 20px;
+        }
+
+        @media (min-width: 992px) {
+            padding: 20px 130px 20px 20px;
+        }
+    }
+
+    label {
+        color: #161B33;
+        font-size: 0.9rem;
+    }
+
+    .form-control {
+        border: 1px solid #D8D8D7;
+    }
+
+    .pd-btn {
+        display: inline-block;
+        text-decoration: none;
+        color: #161B33;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        padding: 12px 30px;
+        border-radius: 50em;
+        border: 2px solid #DE541E;
+        background: transparent;
+
+        @media screen and (max-width: 991px) {
+            margin-bottom: 16px;
+        }
+
+        img, svg {
+            margin-right: 4px;
+            width: 24px;
+            height: 24px;
+            fill: #DE541E;
+        }
+    }
+
+    .pd-forms-4-card-outer {
+        border: 1px solid #D8D8D7;
+        padding: 30px;
+        background: #F2F7F2;
+        color: #161B33;
+
+        @media screen and (max-width: 991px) {
+            position: relative;
+        }
+
+        @media (min-width: 992px) {
+            position: absolute;
+            top: 40%;
+            transform: translateX(-35%) translateY(-40%);
+            box-shadow: 6px 6px 10px rgba(0,0,0,0.2);
+        }
+
+        h3 {
+            font-weight: 800;
+            font-size: 1.2rem;
+        }
+
+        h4 {
+            font-weight: 800;
+            font-size: 1rem;
+        }
+
+        p {
+            margin-bottom: 3px;
+            font-size: 0.9rem;
+            font-weight: 300;
+        }
+
+        .pd-icon-card-link {
+            text-decoration: none;
+
+            img, svg {
+                margin-right: 6px;
+                fill: #DE541E;
+                width: 24px;
+                height: 24px;
+            }
+
+            span {
+                color: #161B33;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+
+

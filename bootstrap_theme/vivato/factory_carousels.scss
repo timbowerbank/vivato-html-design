@@ -1,0 +1,110 @@
+// start pd-carousel-1
+.pd-carousel-1 {
+    .pd-carousel-1-label {
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-carousel-1-headline {
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+
+    .pd-carousel-1-subHeadline {
+        font-size: 1.3rem;
+        line-height: 1.8;
+        font-weight: 300;
+    }
+
+    .pd-carousel-1-grid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+        .pd-carousel-1-grid-item {
+            color: $black;
+            display: flex;
+            align-items: center;
+
+            p {
+                margin-bottom: 0px;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 0.8rem;
+            }
+
+            img {
+                margin-right: 8px;
+            }
+        }
+    }
+
+    .pd-carousel-1-slide-outer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .glide__arrows {
+        position: absolute;
+        height: 46px;
+        width: 100%;
+        top: 50%;
+
+        // left: 10;
+        .glide__arrow {
+            position: absolute;
+            top: -23px;
+            background: $info;
+            padding: 8px;
+            border: none;
+
+            &:focus {
+                outline: 2px dotted $info;
+                outline-offset: 4px;
+            }
+        }
+
+        .glide__arrow--right {
+            right: 0;
+        }
+    }
+
+    .btn.btn-lg {
+        color: $white;
+
+        &:focus {
+            outline: 2px dotted $info;
+            outline-offset: 4px;
+        }
+    }
+
+    .glide__bullets {
+        text-align: center;
+
+        .glide__bullet {
+            width: 9px;
+            height: 9px;
+            padding: 0;
+            border-radius: 50%;
+            border: 2px solid darken($info, 10%);
+            background: $info;
+            transition: transform 0.4s;
+
+            &:focus {
+                outline: 2px dotted $info;
+                outline-offset: 2px;
+            }
+        }
+
+        .glide__bullet.glide__bullet--active {
+            transform: scale(1.3);
+
+            // box-shadow: 2px 2px 6px 3px rgba(0,0,0,0.4);
+        }
+    }
+}
+

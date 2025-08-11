@@ -1,0 +1,249 @@
+.pd-logo-strip-1 {
+    border-top: 1px solid $gray-300;
+    border-bottom: 1px solid $gray-300;
+    background: $gray-100;
+
+    // background: linear-gradient($gray-100 0%, $white 30%, $white 70%, $gray-100 100%);
+    h2 {
+        font-weight: 700;
+        font-size: 0.7rem;
+        color: $white;
+        display: inline-block;
+        background: $info;
+        padding: 8px 14px;
+        border-radius: 50em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .pd-logo-strip-1-subHeadline {
+        font-weight: 300;
+        font-size: 0.8rem;
+    }
+
+    .glide__bullets {
+        text-align: center;
+
+        .glide__bullet {
+            width: 9px;
+            height: 9px;
+            padding: 0;
+            border-radius: 50%;
+            border: 2px solid darken($primary, 10%);
+            background: $primary;
+            transition: transform 0.4s;
+
+            &:focus {
+                outline: 2px dotted $primary;
+                outline-offset: 2px;
+            }
+        }
+
+        .glide__bullet.glide__bullet--active {
+            transform: scale(1.3);
+
+            // box-shadow: 2px 2px 6px 3px rgba(0,0,0,0.4);
+        }
+    }
+}
+// end pd-logo-strip-1
+
+// start pd-logo-strip-2
+.pd-logo-strip-2 {
+    .pd-intro-heading-sm {
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: #c5247f;
+        margin-bottom: 0px;
+    }
+
+    .pd-headline {
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: #2a2a2a;
+    }
+
+    .pd-subHeadline {
+        color: #2a2a2a;
+        line-height: 1.5;
+    }
+
+    .pd-icon {
+        fill: #c5247f;
+        margin-right: 6px;
+    }
+
+    .pd-logo-strip-2-grid-outer {
+        display: grid;
+
+        @media screen and (max-width: 991px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (min-width: 992px) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto auto auto;
+        }
+
+        gap: 20px;
+
+        .pd-logo-strip-2-card-lg {
+            border: 1px solid #e7e7e7;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 6px 7px 14px rgba(0, 0, 0, 0.1);
+            display: flex;
+
+            @media screen and (max-width: 991px) {
+                flex-direction: column;
+                grid-column: 1 / span 2;
+            }
+
+            @media (min-width: 992px) {
+                flex-direction: row;
+                grid-column: 1 / span 2;
+                grid-row: 1 / span 2;
+            }
+
+            .pd-logo-strip-2-card-lg-col-left {
+                display: flex;
+                flex-direction: column;
+
+                h3 {
+                    font-size: 1.4rem;
+                    font-weight: 700;
+                    line-height: 1.5;
+                }
+
+                p {
+                    line-height: 1.5;
+                    font-weight: 300;
+                }
+
+                @media screen and (max-width: 991px) {
+                    flex: none;
+                    order: 1;
+                    padding: 10px 20px;
+                }
+
+                @media (min-width: 992px) {
+                    flex: 0 0 50%;
+                    width: 50%;
+                    order: 0;
+                    padding: 20px 15px 20px 20px;
+                }
+            }
+
+            .pd-logo-strip-2-card-lg-col-right {
+                display: flex;
+                flex-direction: column;
+
+                img {
+                    height: auto;
+                    width: 100%;
+                    max-width: 280px;
+                }
+
+                @media screen and (max-width: 991px) {
+                    flex: none;
+                    order: 0;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    padding: 20px;
+                }
+
+                @media (min-width: 992px) {
+                    flex: 0 0 50%;
+                    width: 50%;
+                    order: 0;
+                    justify-content: flex-start;
+                    align-items: center;
+                    padding: 20px 20px 20px 15px;
+                }
+            }
+        }
+
+        .pd-logo-strip-2-card-sm {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+
+            img {
+                width: 120px;
+            }
+
+            @media screen and (max-width: 991px) {
+            }
+
+            @media (min-width: 992px) {
+            }
+        }
+    }
+
+    .pd-brand-side {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+
+    .pd-btn {
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        transition: background 0.3s;
+        border-radius: 50em;
+        padding: 16px 30px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        white-space: nowrap;
+        cursor: pointer;
+
+        .pd-icon {
+            display: block;
+
+            img {
+                width: 40px;
+                height: 40px;
+                margin-right: 6px;
+            }
+        }
+
+        .pd-icon.pd-icon-rollover {
+            display: none;
+        }
+
+        &:hover {
+            text-decoration: none;
+
+            .pd-icon {
+                display: none;
+            }
+
+            .pd-icon.pd-icon-rollover {
+                display: block;
+            }
+        }
+    }
+
+    .pd-btn.pd-btn-light {
+        border: 2px solid #c5247f;
+        background: transparent;
+        color: #c5247f;
+
+        &:hover {
+            background: #c5247f;
+            color: $white;
+        }
+
+        &:focus-visible {
+            outline: 2px dotted #c5247f;
+            outline-offset: 4px;
+        }
+    }
+}

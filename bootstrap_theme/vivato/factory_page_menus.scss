@@ -1,0 +1,32 @@
+// start pd-page-menu-1
+.pd-page-menu-1 {
+    .pd-menu-1-label {
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+    }
+
+    ol {
+        li {
+            padding: 8px 2px;
+            font-size: 0.8rem;
+            font-weight: 400;
+
+            a {
+                text-decoration: none;
+                transition: color 0.4s;
+
+                &:hover {
+                    color: $gray-600;
+                }
+            }
+        }
+    }
+
+    hr {
+        border-top: 1px solid $gray-600;
+    }
+}
+
+// end pd-page-menu-1

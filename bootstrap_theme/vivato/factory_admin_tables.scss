@@ -1,0 +1,55 @@
+// start pd-admin-table-1
+.pd-admin-table-1 {
+    header {
+        a {
+            display: inline-block;
+            margin-bottom: 10px;
+            text-decoration: none;
+
+            &:before {
+                content: "< ";
+            }
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 1.8rem;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 0.9rem;
+        }
+    }
+
+    .pd-admin-table-1-outer {
+        background: white;
+        border-radius: 15px;
+        border: 1px solid $gray-200;
+        padding: 18px;
+        max-width: 1200px;
+
+        // might need to amend this depending on table content.
+        .pd-admin-table-1-search {
+            max-width: 400px;
+
+            @media (max-width: 991px) {
+                width: 80%;
+            }
+
+            @media (min-width: 992px) {
+                width: 50%;
+            }
+        }
+
+        .pd-admin-table-1-inner {
+            overflow-x: scroll;
+
+            tr {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+// end pd-admin-table-1

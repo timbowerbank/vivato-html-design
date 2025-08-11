@@ -1,0 +1,109 @@
+// start pd-list-1
+.pd-list-1 {
+    background: linear-gradient(180deg, $primary, darken($primary, 10%));
+
+    .pd-list-1-grid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+        .pd-list-1-grid-item {
+            color: $white;
+            display: flex;
+            align-items: center;
+
+            p {
+                margin-bottom: 0px;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 0.8rem;
+            }
+
+            img {
+                margin-right: 8px;
+            }
+        }
+    }
+}
+
+// end pd-list-1
+// start .pd-list-2
+.pd-list-2 {
+    .pd-list-2-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .pd-list-2-outer {
+        border-bottom: 1px solid $gray-200;
+    }
+
+    h2 {
+        font-weight: 700;
+        font-size: 1.8rem;
+        margin-bottom: 0px;
+        padding-left: 10px;
+    }
+
+    p {
+        font-weight: 300;
+        line-height: 1.8;
+        font-size: 1.2rem;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+}
+
+// start .pd-list-3
+.pd-list-3 {
+    .pd-list-3-headline {
+        color: $black;
+        font-weight: 700;
+        line-height: 1.4;
+        font-size: 2rem;
+    }
+
+    // .pd-list-3-para {
+    // color: $gray-600;
+    // line-height: 2;
+    // font-weight: 300;
+    // strong {
+    // font-weight: 700;
+    // }
+    // }
+    .pd-list-3-item {
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: $gray-600;
+            transition: color 0.3s;
+            font-weight: 300;
+
+            &:hover {
+                color: $gray-500;
+            }
+
+            &:focus {
+                outline: 2px dotted $primary;
+                outline-offset: 4px;
+            }
+        }
+
+        hr {
+            border: 0;
+            background-color: $gray-600;
+
+            // background-color: $primary;
+            width: 100%;
+            height: 1px;
+            padding: 0;
+        }
+    }
+}
+
+// end .pd-list-3

@@ -1,0 +1,321 @@
+// start .pd-admin-form-1
+.pd-admin-form-1 {
+    & > header {
+        a {
+            display: inline-block;
+            margin-bottom: 10px;
+            text-decoration: none;
+
+            &:before {
+                content: "< ";
+            }
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 1.8rem;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 0.9rem;
+        }
+    }
+
+    .pd-admin-form-1-body {
+        background: white;
+        border-radius: 10px;
+        border: 1px solid $gray-200;
+        padding: 18px;
+        max-width: 1200px;
+
+        form {
+            label {
+                font-weight: 700;
+                font-size: 0.9rem;
+            }
+
+            .pd-admin-form-1-short-field {
+                max-width: 240px!important;
+            }
+
+            .form-control {
+                @media (min-width: 992px) {
+                    max-width: 500px;
+                }
+            }
+
+            .form-select {
+                @media (min-width: 992px) {
+                    max-width: 400px;
+                }
+            }
+
+            .pd-admin-form-1-image-drop-zone {
+                border: 2px dashed $gray-600;
+                border-radius: 10px;
+                background: $gray-200;
+
+                @media (max-width: 575px) {
+                    min-height: 400px;
+                    width: 100%;
+                }
+
+                @media (min-width: 576px) {
+                    max-width: 400px;
+                    height: 400px;
+                    width: 400px;
+                }
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                p {
+                    font-size: 0.8rem;
+                    margin-bottom: 10px;
+
+                    @media (max-width: 575px) {
+                        display: none;
+                    }
+                }
+            }
+
+            .pd-admin-form-1-image-drop-zone.pd-admin-form-1-image-drop-zone-small {
+                @media (max-width: 575px) {
+                    min-height: 300px;
+                    width: 100%;
+                }
+
+                @media (min-width: 576px) {
+                    max-width: 200px;
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+
+            .pd-admin-form-1-nested {
+                border-radius: 10px;
+                padding: 20px;
+                border: 1px solid $gray-200;
+                background: $gray-100;
+
+                @media (min-width: 992px) {
+                    max-width: 500px;
+                }
+
+                h2 {
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                }
+            }
+
+            .pd-admin-form-1-nested-list {
+                border-radius: 10px;
+                padding: 20px;
+                border: 1px solid $gray-200;
+                background: $gray-100;
+
+                @media (min-width: 992px) {
+                    max-width: 500px;
+                }
+
+                h2 {
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                }
+
+                .pd-form-1-nested-list-inner {
+                    display: flex;
+                    flex-direction: column;
+
+                    h2 {
+                        font-weight: 700;
+                        font-size: 1.2rem;
+                    }
+
+                    p {
+                        font-weight: 300;
+                        font-size: 0.9rem;
+                    }
+
+                    .pd-form-1-nested-list-item {
+                        min-height: 60px;
+                        border-radius: 10px;
+                        border: 1px solid $gray-200;
+                        overflow: hidden;
+                        background-color: $white;
+                        display: flex;
+                        flex-direction: row;
+
+                        // anchor
+                        .pd-form-1-nested-list-item-img-outer {
+                            width: 60px;
+                            height: 60px;
+                            overflow: hidden;
+                            position: relative;
+
+                            @media (max-width: 575px) {
+                                display: none;
+                            }
+
+                            img {
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                object-position: center center;
+                            }
+                        }
+
+                        .pd-form-1-nested-list-item-body {
+                            padding: 10px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            flex: 1 0;
+                            overflow-x: hidden;
+
+                            h3 {
+                                font-size: 0.9rem;
+                                font-weight: 700;
+                                margin-bottom: 0px;
+                            }
+
+                            p {
+                                margin-bottom: 0px;
+                                font-size: 0.8rem;
+                            }
+
+                            @media (max-width: 575px) {
+                                p {
+                                    display: none;
+                                }
+                            }
+                        }
+
+                        .pd-form-1-nested-list-item-buttons {
+                            width: 120px;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: space-between;
+                            padding-right: 7px;
+
+                            // anchor
+                            .pd-form-1-nested-list-item-view-outer {
+                                width: 40px;
+                                padding: 4px;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                align-items: center;
+                            }
+
+                            .pd-form-1-nested-list-item-btn-outer {
+                                display: flex;
+                                flex-direction: row;
+
+                                .pd-form-1-nested-list-item-btn {
+                                    width: 30px;
+                                    height: 30px;
+                                    padding: 4px;
+                                    margin: 3px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    background-color: $gray-600;
+                                    border-radius: 3px;
+                                }
+                            }
+                        }
+
+                        .pd-form-1-nested-list-item-buttons.alternative-card {
+                            justify-content: end;
+                        }
+                    }
+                }
+
+                footer {
+                    padding-top: 20px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                }
+            }
+
+            .pd-admin-form-1-nested-list-img-loader {
+                border-radius: 10px;
+                padding: 20px;
+                border: 1px solid $gray-200;
+                background: $gray-100;
+
+                @media (min-width: 992px) {
+                    max-width: 500px;
+                }
+
+                h2 {
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                }
+
+                .pd-form-1-nested-list-img-loader-list-body {
+                    .pd-form-1-nested-list-img-loader-list-item {
+                        padding: 20px;
+                        padding-top: 48px;
+                        background-color: $white;
+                        border-radius: 10px;
+                        min-height: 40px;
+                        border: 1px solid $gray-200;
+                        position: relative;
+
+                        .pd-form-1-nested-list-img-loader-list-item-header {
+                            position: absolute;
+                            height: 36px;
+                            width: 120px;
+                            top: 20px;
+                            right: 20px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-end;
+                            align-items: center;
+
+                            a {
+                                display: inline-block;
+                                cursor: pointer;
+                                margin-left: 3px;
+                            }
+
+                            .pd-form-1-nested-list-img-loader-item-btn-outer {
+                                display: flex;
+                                flex-direction: row;
+
+                                .pd-form-1-nested-list-item-btn {
+                                    width: 30px;
+                                    height: 30px;
+                                    padding: 4px;
+                                    margin: 3px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    background-color: $gray-600;
+                                    border-radius: 3px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                footer {
+                    padding-top: 20px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
