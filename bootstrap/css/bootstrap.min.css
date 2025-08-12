@@ -34987,7 +34987,7 @@ textarea.form-control-lg {
 @media screen and (max-width: 1049px) {
   .pd-mega-menu-drawer {
     position: fixed;
-    top: 94px;
+    top: 87px;
     right: 0;
     height: 100vh;
     width: 90vw;
@@ -35493,9 +35493,9 @@ textarea.form-control-lg {
   display: none;
   position: fixed;
   width: 100vw;
-  height: calc(100vh - 94px);
+  height: calc(100vh - 87px);
   background-color: rgba(0, 0, 0, 0.5);
-  top: 94px;
+  top: 87px;
   left: 0px;
   right: 0px;
   z-index: 999;
