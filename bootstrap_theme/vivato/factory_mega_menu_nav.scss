@@ -8,7 +8,7 @@ $pd-mega-drawer-width: 90vw;
 $pd-mega-drawer-max-width: 400px;
 $pd-mega-drawer-top: 87px;
 $pd-mega-drawer-padding: 20px;
-$pd-mega-btn-padding: 8px 26px;
+$pd-mega-btn-padding: 8px 18px 8px 16px;
 $pd-mega-btn-border: 2px solid $primary;
 $pd-mega-btn-border-sec: 2px solid #c5247f;
 $pd-mega-btn-background-color: $primary;
@@ -195,28 +195,36 @@ $pd-mega-menu-border-color: $secondary;
         padding: $pd-mega-btn-padding;
         border: $pd-mega-btn-border;
         text-transform: $pd-mega-btn-text-transform;
-        font-weight: $pd-mega-btn-font-weight;
+
+        // font-weight: $pd-mega-btn-font-weight;
         border-radius: $pd-mega-btn-border-radius;
         background-color: $pd-mega-btn-background-color;
         color: $pd-mega-btn-color;
         transition: background .3s;
+        font-weight: $pd-font-weight-heavy;
+        font-size: $pd-font-ex-sm;
+        letter-spacing: $pd-letter-spacing;
+        text-transform: uppercase;
 
         .pd-icon {
             fill: white;
-            margin-right: 6px;
+            margin-right: 8px;
+            width: 20px;
+            height: 20px;
         }
 
         &:hover {
-            background: white;
-            color: $info;
+            background: transparent;
+            color: $primary;
+            border: 2px solid $info;
 
             .pd-icon {
-                fill: $info;
+                fill: $primary;
             }
         }
 
         &:focus-visible {
-            outline: 2px dotted $info;
+            outline: 2px dotted $primary;
             outline-offset: 4px;
         }
 
@@ -350,15 +358,14 @@ $pd-mega-menu-border-color: $secondary;
                 position: relative;
 
                 // &:after {
-                //     position: absolute;
-                //     top: 0px;
-                //     right: -6px;
-                //     display: inline-block;
-                //     content: url('/images/design-assets/_vivato/arrow_left_alt_24dp_C895FA_FILL0_wght300_GRAD0_opsz24.svg');
-                //     width: 20px;
-                //     height: 20px;
-
-                //     // transform: translateY(7px);
+                // position: absolute;
+                // top: 0px;
+                // right: -6px;
+                // display: inline-block;
+                // content: url('/images/design-assets/_vivato/arrow_left_alt_24dp_C895FA_FILL0_wght300_GRAD0_opsz24.svg');
+                // width: 20px;
+                // height: 20px;
+                // // transform: translateY(7px);
                 // }
             }
         }
@@ -424,21 +431,20 @@ $pd-mega-menu-border-color: $secondary;
     display: none;
     z-index: 1000;
     background-color: white;
-    
-    
+
     @media screen and (max-width: $pd-mega-mobile-breakpoint) {
         position: relative;
         width: 100%;
         max-width: 100%;
     }
-    
+
     @media (min-width: $pd-mega-desktop-breakpoint) {
         position: absolute;
         top: 100%;
         border-radius: 0px 0px 10px 10px;
         border-top: 1px solid $pd-mega-menu-border-color;
         box-shadow: 6px 7px 14px rgba(0, 0, 0, 0.1);
-        
+
         // $pd-mega-drawer-top
         left: 50%;
         transform: translateX(-50%);
@@ -481,7 +487,6 @@ $pd-mega-menu-border-color: $secondary;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    
 
     @media screen and (max-width: $pd-mega-mobile-breakpoint) {
         width: 100%;
@@ -528,21 +533,19 @@ $pd-mega-menu-border-color: $secondary;
     z-index: 1000;
     display: none;
     background-color: white;
-    
-    
-    
+
     @media screen and (max-width: $pd-mega-mobile-breakpoint) {
         position: relative;
         padding: 10px 10px 10px 0px;
     }
-    
+
     @media (min-width: $pd-mega-desktop-breakpoint) {
         position: absolute;
         border-radius: 0px 0px 10px 10px;
         box-shadow: 6px 7px 14px rgba(0, 0, 0, 0.1);
         border-top: 1px solid $secondary;
         padding: 10px;
-        
+
         // top: $pd-mega-dropdown-top;
         top: 100%;
         min-width: 140px;

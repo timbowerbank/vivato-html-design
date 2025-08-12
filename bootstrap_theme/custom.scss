@@ -9,6 +9,26 @@ $dark: #343a40;
 // heading font weights and sizes
 $headings-font-weight: 400;
 
+// font sizes
+$pd-font-ex-sm: 0.8rem;
+$pd-font-sm: 1rem;
+$pd-font-md: 1.4rem;
+$pd-font-lg: 2rem;
+$pd-font-ex-lg: 3rem;
+
+// font weights
+$pd-font-weight-light: 300;
+$pd-font-weight-medium: 400;
+$pd-font-weight-heavy: 500;
+
+// used for buttons and SEO tags - i.e. intro headings
+$pd-letter-spacing: 0.15em;
+$pd-label-padding: 8px 16px;
+$pd-btn-padding: 8px 18px 8px 16px;
+$pd-btn-border: 2px solid $primary;
+$pd-btn-border-hover: 2px solid $info;
+$pd-line-height-lg: 1.4;
+
 // $info: #b53027;
 $pd-oxford-blue: #00182E;
 $pd-bone: #E0DDCF;

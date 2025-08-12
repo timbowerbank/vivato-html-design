@@ -15050,7 +15050,8 @@ textarea.form-control-lg {
   margin-bottom: 0px;
   font-weight: 300;
 }
-.pd-hero-17 .pd-hero-17-content-outer .pd-hero-17-notification-outer .pd-hero-17-mobile-outer p strong, .pd-hero-17 .pd-hero-17-content-outer .pd-hero-17-notification-outer .pd-hero-17-mobile-outer p em {
+.pd-hero-17 .pd-hero-17-content-outer .pd-hero-17-notification-outer .pd-hero-17-mobile-outer p strong,
+.pd-hero-17 .pd-hero-17-content-outer .pd-hero-17-notification-outer .pd-hero-17-mobile-outer p em {
   font-style: normal;
   font-weight: 800;
 }
@@ -15407,6 +15408,58 @@ textarea.form-control-lg {
 .pd-hero-17 .pd-badge-outer-link svg {
   -webkit-box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.1);
           box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.1);
+}
+.pd-hero-18 .pd-intro-heading-sm {
+  display: inline-block;
+  border: 2px solid #25215F;
+  border-radius: 50em;
+  color: #25215F;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  font-weight: 400;
+}
+.pd-hero-18 .pd-headline {
+  color: #25215F;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 1.4;
+}
+.pd-hero-18 .pd-btn {
+  color: #fff;
+  padding: 8px 18px 8px 16px;
+  border: 2px solid #25215F;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  border-radius: 50em;
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  background-color: #25215F;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+.pd-hero-18 .pd-btn img,
+.pd-hero-18 .pd-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  margin-right: 8px;
+}
+.pd-hero-18 .pd-btn:hover {
+  background-color: transparent;
+  border: 2px solid #E84F49;
+  color: #25215F;
+}
+.pd-hero-18 .pd-btn:hover img,
+.pd-hero-18 .pd-btn:hover svg {
+  fill: #25215F;
+}
+.pd-hero-18 .pd-btn:focus-visible {
+  outline: 1px dotted #25215F;
+  outline-offset: 4px;
 }
 .pd-heroesHalf-1 .pd-heroesHalf-1-text-outer {
   display: -webkit-box;
@@ -35101,29 +35154,35 @@ textarea.form-control-lg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 8px 26px;
+  padding: 8px 18px 8px 16px;
   border: 2px solid #25215F;
   text-transform: Capitalize;
-  font-weight: 700;
   border-radius: 50em;
   background-color: #25215F;
   color: white;
   -webkit-transition: background 0.3s;
   transition: background 0.3s;
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
 }
 .pd-mega-menu-nav-item-btn a .pd-icon {
   fill: white;
-  margin-right: 6px;
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
 }
 .pd-mega-menu-nav-item-btn a:hover {
-  background: white;
-  color: #E84F49;
+  background: transparent;
+  color: #25215F;
+  border: 2px solid #E84F49;
 }
 .pd-mega-menu-nav-item-btn a:hover .pd-icon {
-  fill: #E84F49;
+  fill: #25215F;
 }
 .pd-mega-menu-nav-item-btn a:focus-visible {
-  outline: 2px dotted #E84F49;
+  outline: 2px dotted #25215F;
   outline-offset: 4px;
 }
 @media screen and (max-width: 1049px) {
@@ -35165,7 +35224,7 @@ textarea.form-control-lg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 8px 26px;
+  padding: 8px 18px 8px 16px;
   border: 2px solid #c5247f;
   text-transform: Capitalize;
   font-weight: 700;

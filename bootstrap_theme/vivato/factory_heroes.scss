@@ -1715,10 +1715,9 @@
                 left: 50%;
                 transform: translateX(-50%);
             }
-            
+
             @media (min-width: 992px) {
                 left: 0;
-                
             }
         }
     }
@@ -1816,8 +1815,6 @@
         }
     }
 
-    
-
     .pd-intro-heading-sm {
         font-size: 1rem;
         color: $white;
@@ -1864,7 +1861,6 @@
 }
 
 // end pd-hero-16
-
 // start pd-hero-17
 .pd-hero-17 {
     min-height: 600px;
@@ -1979,12 +1975,12 @@
             }
 
             .pd-hero-17-mobile-outer {
-
                 p {
                     margin-bottom: 0px;
                     font-weight: 300;
 
-                    strong, em {
+                    strong,
+                    em {
                         font-style: normal;
                         font-weight: 800;
                     }
@@ -1993,7 +1989,6 @@
                 a {
                     color: white;
                 }
-
             }
 
             .pd-hero-17-notification-header-body-outer {
@@ -2270,6 +2265,68 @@
 
         svg {
             box-shadow: 10px 10px 12px rgba(0,0,0,0.1);
+        }
+    }
+}
+
+// end pd-hero-17
+// start pd-hero-18
+.pd-hero-18 {
+    .pd-intro-heading-sm {
+        display: inline-block;
+        border: 2px solid $primary;
+        border-radius: 50em;
+        color: $primary;
+        padding: $pd-label-padding;
+        text-transform: uppercase;
+        font-size: $pd-font-ex-sm;
+        letter-spacing: $pd-letter-spacing;
+        font-weight: $pd-font-weight-medium;
+    }
+
+    .pd-headline {
+        color: $primary;
+        font-weight: $pd-font-weight-medium;
+        font-size: $pd-font-ex-lg;
+        line-height: $pd-line-height-lg;
+    }
+
+    .pd-btn {
+        color: $white;
+        padding: $pd-btn-padding;
+        border: $pd-btn-border;
+        text-decoration: none;
+        display: inline-block;
+        text-transform: uppercase;
+        border-radius: 50em;
+        font-weight: $pd-font-weight-heavy;
+        font-size: $pd-font-ex-sm;
+        letter-spacing: $pd-letter-spacing;
+        background-color: $primary;
+        transition: background-color 0.3s ease;
+
+        img,
+        svg {
+            width: 20px;
+            height: 20px;
+            fill: $white;
+            margin-right: 8px;
+        }
+
+        &:hover {
+            background-color: transparent;
+            border: $pd-btn-border-hover;
+            color: $primary;
+
+            img,
+            svg {
+                fill: $primary;
+            }
+        }
+
+        &:focus-visible {
+            outline: 1px dotted $primary;
+            outline-offset: 4px;
         }
     }
 }
