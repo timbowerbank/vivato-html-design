@@ -33385,6 +33385,78 @@ textarea.form-control-lg {
 .pd-gradient {
   background: radial-gradient(circle 1000px at 115% 90%, #C895FA 30%, #E84F49 70%, #25215F 100%);
 }
+.pd-gradient-300w-500h {
+  background: radial-gradient(circle 300px at 120% 100%, #C895FA 2%, #E84F49 75%, #25215F 120%);
+}
+
+.pd-gradient-500w-500h {
+  background: radial-gradient(circle 500px at 100% 100%, #C895FA 5%, #E84F49 55%, #25215F 100%);
+}
+@media screen and (max-width: 575px) {
+  .pd-gradient-1000w-500h {
+    background: radial-gradient(circle 500px at 100% 100%, #C895FA 5%, #E84F49 55%, #25215F 100%);
+  }
+}
+@media (min-width: 576px) {
+  .pd-gradient-1000w-500h {
+    background: radial-gradient(circle 1000px at 100% 100%, #C895FA 5%, #E84F49 55%, #25215F 100%);
+  }
+}
+@media screen and (max-width: 575px) {
+  .pd-gradient-full-width-800h {
+    background: radial-gradient(circle 500px at 100% 100%, #C895FA 5%, #E84F49 55%, #25215F 100%);
+  }
+}
+@media (min-width: 576px) {
+  .pd-gradient-full-width-800h {
+    background: radial-gradient(circle 1000px at 100% 100%, #C895FA 5%, #E84F49 55%, #25215F 100%);
+  }
+}
+
+.pd-300w-500h {
+  height: 500px;
+}
+@media screen and (max-width: 767px) {
+  .pd-300w-500h {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .pd-300w-500h {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+.pd-500w-500h {
+  height: 500px;
+}
+@media screen and (max-width: 767px) {
+  .pd-500w-500h {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .pd-500w-500h {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+.pd-1000w-500h {
+  height: 500px;
+}
+@media screen and (max-width: 991px) {
+  .pd-1000w-500h {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .pd-1000w-500h {
+    width: 100%;
+    max-width: 1000px;
+  }
+}
 .pd-tabs-1 .pd-tabs-1-outer {
   background-color: #e9ecef;
 }
