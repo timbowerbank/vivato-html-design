@@ -26,12 +26,21 @@ $pd-letter-spacing: 0.15em;
 $pd-label-padding: 8px 16px;
 $pd-btn-padding: 8px 18px 8px 16px;
 $pd-btn-border: 2px solid $primary;
+$pd-btn-border-inverted: 2px solid $info;
 $pd-btn-border-hover: 2px solid $info;
+$pd-btn-border-hover-inverted: 2px solid $info;
 $pd-line-height-lg: 1.4;
+
+$pd-transition-speed: 0.3s;
 
 // border-radius
 $pd-border-radius-lg: 40px;
 $pd-border-radius-sm: 20px;
+
+// general padding
+$pd-block-padding-ex-sm: 20px;
+$pd-block-padding-sm: 40px;
+$pd-block-padding-lg: 60px;
 
 // $info: #b53027;
 $pd-oxford-blue: #00182E;

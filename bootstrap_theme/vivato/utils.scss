@@ -133,3 +133,134 @@
     object-fit: cover;
     object-position: center center;
 }
+
+
+// *******************
+// *** USEFUL ********
+// *******************
+
+
+// buttons
+.pd-btn {
+    color: $white;
+    padding: $pd-btn-padding;
+    border: $pd-btn-border;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 50em;
+    font-weight: $pd-font-weight-heavy;
+    font-size: $pd-font-ex-sm;
+    letter-spacing: $pd-letter-spacing;
+    background-color: $primary;
+    transition: background-color 0.3s ease;
+
+    img,
+    svg {
+        width: 20px;
+        height: 20px;
+        fill: $white;
+        margin-right: 8px;
+    }
+
+    &:hover {
+        background-color: transparent;
+        border: $pd-btn-border-hover;
+        color: $primary;
+
+        img,
+        svg {
+            fill: $primary;
+        }
+    }
+
+    &:focus-visible {
+        outline: 1px dotted $primary;
+        outline-offset: 4px;
+    }
+}
+
+.pd-btn.pd-inverted {
+    color: $white;
+    border: $pd-btn-border-inverted;
+    background-color: $primary;
+
+    img, svg {
+        fill: $white;
+    }
+
+    &:hover {
+        background-color: $white;
+        border: $pd-btn-border-hover-inverted;
+        color: $primary;
+
+        img, svg {
+            fill: $primary;
+        }
+    }
+
+    &:focus-visible {
+        outline: 1px dotted $white;
+        outline-offset: 4px;
+    }
+}
+
+
+// headline
+.pd-headline {
+    color: $primary;
+    font-weight: $pd-font-weight-medium;
+    font-size: $pd-font-ex-lg;
+    line-height: $pd-line-height-lg;
+}
+
+.pd-headline.pd-inverted {
+    color: $white;
+}
+
+// intro - heading tag
+.pd-intro-heading-sm {
+    display: inline-block;
+    border: 2px solid $primary;
+    border-radius: 50em;
+    color: $primary;
+    padding: $pd-label-padding;
+    text-transform: uppercase;
+    font-size: $pd-font-ex-sm;
+    letter-spacing: $pd-letter-spacing;
+    font-weight: $pd-font-weight-medium;
+}
+
+.pd-intro-heading-sm.pd-inverted {
+    border: 2px solid $white;
+    color: $white;
+}
+
+// block
+.pd-block-primary {
+    background: $primary;
+    border-radius: $pd-border-radius-lg;
+    color: $white;
+    
+    @media screen and (max-width: 575px) {
+        padding: $pd-block-padding-ex-sm;
+    }
+    
+    @media (min-width: 576px) {
+        padding: $pd-block-padding-lg;
+    }
+}
+
+.pd-block-transparent {
+    border-radius: $pd-border-radius-lg;
+    padding: $pd-block-padding-lg;
+    color: $white;
+
+    @media screen and (max-width: 575px) {
+        padding: $pd-block-padding-ex-sm;
+    }
+    
+    @media (min-width: 576px) {
+        padding: $pd-block-padding-lg;
+    }
+}
