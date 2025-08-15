@@ -9,7 +9,7 @@ $pd-mega-drawer-max-width: 400px;
 $pd-mega-drawer-top: 87px;
 $pd-mega-drawer-padding: 20px;
 $pd-mega-btn-padding: 8px 18px 8px 16px;
-$pd-mega-btn-border: 2px solid $primary;
+$pd-mega-btn-border: 1px solid $primary;
 $pd-mega-btn-border-sec: 2px solid #c5247f;
 $pd-mega-btn-background-color: $primary;
 $pd-mega-btn-background-color-sec: #ffffff;
@@ -216,7 +216,7 @@ $pd-mega-menu-border-color: $secondary;
         &:hover {
             background: transparent;
             color: $primary;
-            border: 2px solid $info;
+            border: 1px solid $info;
 
             .pd-icon {
                 fill: $primary;

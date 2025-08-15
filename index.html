@@ -268,7 +268,9 @@
                                 <picture>
                                     <source srcset="/images/uploads/_vivato/hero-dev-1_result.webp" type="image/webp">
                                     <img src="images/uploads/_vivato/hero-dev-1.jpg" class="pd-img-cover" width="300" height="400" loading="lazy" alt="developer at work">
-                                </picture>
+                                </picture><a href="#" data-video-id="gHCYm7P9pYM" class="pd-hero-18-play-icon pd-watch-youtube-video"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff">
+                                        <path d="M390-318.46 641.54-480 390-641.54v323.08ZM480.07-100q-78.84 0-148.21-29.92t-120.68-81.21q-51.31-51.29-81.25-120.63Q100-401.1 100-479.93q0-78.84 29.92-148.21t81.21-120.68q51.29-51.31 120.63-81.25Q401.1-860 479.93-860q78.84 0 148.21 29.92t120.68 81.21q51.31 51.29 81.25 120.63Q860-558.9 860-480.07q0 78.84-29.92 148.21t-81.21 120.68q-51.29 51.31-120.63 81.25Q558.9-100 480.07-100Zm-.07-60q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/>
+                                    </svg></a>
                             </div>
                             <div class="pd-hero-18-img-outer-1">
                                 <picture>
@@ -291,7 +293,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-7 mb-5 mb-lg-0">
-                        <div class="pd-block-transparent pd-gradient-500w-500h">
+                        <div class="pd-block-transparent pd-gradient-1000w-500h">
                             <header>
                                 <h2 class="mb-4 pd-intro-heading-sm pd-inverted">Trusted</h2>
                                 <p class="mb-4 pd-headline pd-inverted">What Our Clients Say</p>
@@ -454,6 +456,32 @@
                 </div>
             </div>
         </footer>
+        <div class="pd-modal-2" id="pdModal">
+            <button class="pd-modal-2-btn" id="pdModalClose">
+                <svg class="pd-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path d="M505.943,6.058c-8.077-8.077-21.172-8.077-29.249,0L6.058,476.693c-8.077,8.077-8.077,21.172,0,29.249C10.096,509.982,15.39,512,20.683,512c5.293,0,10.586-2.019,14.625-6.059L505.943,35.306C514.019,27.23,514.019,14.135,505.943,6.058z"></path>
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <path d="M505.942,476.694L35.306,6.059c-8.076-8.077-21.172-8.077-29.248,0c-8.077,8.076-8.077,21.171,0,29.248l470.636,470.636c4.038,4.039,9.332,6.058,14.625,6.058c5.293,0,10.587-2.019,14.624-6.057C514.018,497.866,514.018,484.771,505.942,476.694z"></path>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+            <div class="container">
+                <div class="justify-content-center row">
+                    <div class="col-12 col-md-8">
+                        <div id="player"></div>                         
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="images/design-assets/icon-loading-white.svg" alt="icon loading" width="140" height="140" loading="lazy" id="videoLoadingIcon" class="pd-loading-icon">
+            </div>
+        </div>
         <!-- Bootstrap core JavaScript
     ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
@@ -462,5 +490,6 @@
         <script src="assets/js-vivato/mega-menu.js"></script>
         <script src="assets/js-vivato/glide.min.js"></script>
         <script src="assets/js-vivato/functions-sliders.js"></script>
+        <script src="assets/js-vivato/functions-modals-video.js"></script>
     </body>
 </html>

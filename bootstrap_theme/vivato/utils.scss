@@ -221,7 +221,7 @@
 // intro - heading tag
 .pd-intro-heading-sm {
     display: inline-block;
-    border: 2px solid $primary;
+    border: 1px solid $primary;
     border-radius: 50em;
     color: $primary;
     padding: $pd-label-padding;
@@ -232,7 +232,7 @@
 }
 
 .pd-intro-heading-sm.pd-inverted {
-    border: 2px solid $white;
+    border: 1px solid $white;
     color: $white;
 }
 

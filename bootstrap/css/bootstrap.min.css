@@ -15409,58 +15409,6 @@ textarea.form-control-lg {
   -webkit-box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.1);
           box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.1);
 }
-.pd-hero-18 .pd-intro-heading-sm {
-  display: inline-block;
-  border: 2px solid #25215F;
-  border-radius: 50em;
-  color: #25215F;
-  padding: 8px 16px;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  letter-spacing: 0.15em;
-  font-weight: 400;
-}
-.pd-hero-18 .pd-headline {
-  color: #25215F;
-  font-weight: 400;
-  font-size: 3rem;
-  line-height: 1.4;
-}
-.pd-hero-18 .pd-btn {
-  color: #fff;
-  padding: 8px 18px 8px 16px;
-  border: 2px solid #25215F;
-  text-decoration: none;
-  display: inline-block;
-  text-transform: uppercase;
-  border-radius: 50em;
-  font-weight: 500;
-  font-size: 0.8rem;
-  letter-spacing: 0.15em;
-  background-color: #25215F;
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
-}
-.pd-hero-18 .pd-btn img,
-.pd-hero-18 .pd-btn svg {
-  width: 20px;
-  height: 20px;
-  fill: #fff;
-  margin-right: 8px;
-}
-.pd-hero-18 .pd-btn:hover {
-  background-color: transparent;
-  border: 2px solid #E84F49;
-  color: #25215F;
-}
-.pd-hero-18 .pd-btn:hover img,
-.pd-hero-18 .pd-btn:hover svg {
-  fill: #25215F;
-}
-.pd-hero-18 .pd-btn:focus-visible {
-  outline: 1px dotted #25215F;
-  outline-offset: 4px;
-}
 .pd-hero-18 .pd-hero-18-main-img-outer {
   position: relative;
   overflow: hidden;
@@ -15489,6 +15437,30 @@ textarea.form-control-lg {
     width: 376px;
     height: 500px;
   }
+}
+.pd-hero-18 .pd-hero-18-main-img-outer .pd-hero-18-play-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.pd-hero-18 .pd-hero-18-main-img-outer .pd-hero-18-play-icon img,
+.pd-hero-18 .pd-hero-18-main-img-outer .pd-hero-18-play-icon svg {
+  width: 120px;
+  height: 120px;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.pd-hero-18 .pd-hero-18-main-img-outer .pd-hero-18-play-icon:hover img,
+.pd-hero-18 .pd-hero-18-main-img-outer .pd-hero-18-play-icon:hover svg {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .pd-hero-18 .pd-hero-18-img-outer-1 {
   position: relative;
@@ -33698,7 +33670,7 @@ textarea.form-control-lg {
 .pd-btn {
   color: #fff;
   padding: 8px 18px 8px 16px;
-  border: 2px solid #25215F;
+  border: 1px solid #25215F;
   text-decoration: none;
   display: inline-block;
   text-transform: uppercase;
@@ -33719,7 +33691,7 @@ textarea.form-control-lg {
 }
 .pd-btn:hover {
   background-color: transparent;
-  border: 2px solid #E84F49;
+  border: 1px solid #E84F49;
   color: #25215F;
 }
 .pd-btn:hover img,
@@ -33733,20 +33705,18 @@ textarea.form-control-lg {
 
 .pd-btn.pd-inverted {
   color: #fff;
-  border: 2px solid #E84F49;
+  border: 1px solid #E84F49;
   background-color: #25215F;
 }
-.pd-btn.pd-inverted img,
-.pd-btn.pd-inverted svg {
+.pd-btn.pd-inverted img, .pd-btn.pd-inverted svg {
   fill: #fff;
 }
 .pd-btn.pd-inverted:hover {
   background-color: #fff;
-  border: 2px solid #E84F49;
+  border: 1px solid #E84F49;
   color: #25215F;
 }
-.pd-btn.pd-inverted:hover img,
-.pd-btn.pd-inverted:hover svg {
+.pd-btn.pd-inverted:hover img, .pd-btn.pd-inverted:hover svg {
   fill: #25215F;
 }
 .pd-btn.pd-inverted:focus-visible {
@@ -33767,7 +33737,7 @@ textarea.form-control-lg {
 
 .pd-intro-heading-sm {
   display: inline-block;
-  border: 2px solid #25215F;
+  border: 1px solid #25215F;
   border-radius: 50em;
   color: #25215F;
   padding: 8px 16px;
@@ -33778,7 +33748,7 @@ textarea.form-control-lg {
 }
 
 .pd-intro-heading-sm.pd-inverted {
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   color: #fff;
 }
 
@@ -33789,7 +33759,7 @@ textarea.form-control-lg {
 }
 @media screen and (max-width: 575px) {
   .pd-block-primary {
-    padding: 20px;
+    padding: 30px;
   }
 }
 @media (min-width: 576px) {
@@ -33805,7 +33775,7 @@ textarea.form-control-lg {
 }
 @media screen and (max-width: 575px) {
   .pd-block-transparent {
-    padding: 20px;
+    padding: 30px;
   }
 }
 @media (min-width: 576px) {
@@ -34302,6 +34272,62 @@ textarea.form-control-lg {
 
 .pd-modal-1.pd-show {
   display: block;
+}
+
+.pd-modal-2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2001;
+  background: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pd-modal-2 .pd-modal-2-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.pd-modal-2 .pd-modal-2-btn .pd-icon {
+  fill: #ffffff;
+  width: 18px;
+  height: auto;
+}
+.pd-modal-2 .pd-loading-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 140px;
+  height: 140px;
+}
+.pd-modal-2 .pd-loading-icon.pd-hide {
+  display: none;
+}
+
+.pd-modal-2.pd-show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .pd-search-bar-1 .pd-search-bar-1-outer {
   color: #00182E;
@@ -35458,7 +35484,7 @@ textarea.form-control-lg {
       -ms-flex-align: center;
           align-items: center;
   padding: 8px 18px 8px 16px;
-  border: 2px solid #25215F;
+  border: 1px solid #25215F;
   text-transform: Capitalize;
   border-radius: 50em;
   background-color: #25215F;
@@ -35479,7 +35505,7 @@ textarea.form-control-lg {
 .pd-mega-menu-nav-item-btn a:hover {
   background: transparent;
   color: #25215F;
-  border: 2px solid #E84F49;
+  border: 1px solid #E84F49;
 }
 .pd-mega-menu-nav-item-btn a:hover .pd-icon {
   fill: #25215F;

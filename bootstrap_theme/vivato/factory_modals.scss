@@ -106,3 +106,53 @@
 .pd-modal-1.pd-show {
     display: block;
 }
+
+
+.pd-modal-2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2001;
+    background: rgba(0,0,0,0.9);
+    opacity: 0;
+    transition: opacity .4s;
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .pd-modal-2-btn {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        .pd-icon {
+            fill: #ffffff;
+            width: 18px;
+            height: auto;
+
+        }
+    }
+
+    .pd-loading-icon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 140px;
+        height: 140px;
+    }
+
+    .pd-loading-icon.pd-hide {
+        display: none;
+    }
+}
+
+.pd-modal-2.pd-show {
+    display: flex;
+}

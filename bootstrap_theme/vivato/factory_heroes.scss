@@ -2272,64 +2272,57 @@
 // end pd-hero-17
 // start pd-hero-18
 .pd-hero-18 {
-    .pd-intro-heading-sm {
-        display: inline-block;
-        border: 2px solid $primary;
-        border-radius: 50em;
-        color: $primary;
-        padding: $pd-label-padding;
-        text-transform: uppercase;
-        font-size: $pd-font-ex-sm;
-        letter-spacing: $pd-letter-spacing;
-        font-weight: $pd-font-weight-medium;
-    }
-
-    .pd-headline {
-        color: $primary;
-        font-weight: $pd-font-weight-medium;
-        font-size: $pd-font-ex-lg;
-        line-height: $pd-line-height-lg;
-    }
-
-    .pd-btn {
-        color: $white;
-        padding: $pd-btn-padding;
-        border: $pd-btn-border;
-        text-decoration: none;
-        display: inline-block;
-        text-transform: uppercase;
-        border-radius: 50em;
-        font-weight: $pd-font-weight-heavy;
-        font-size: $pd-font-ex-sm;
-        letter-spacing: $pd-letter-spacing;
-        background-color: $primary;
-        transition: background-color 0.3s ease;
-
-        img,
-        svg {
-            width: 20px;
-            height: 20px;
-            fill: $white;
-            margin-right: 8px;
-        }
-
-        &:hover {
-            background-color: transparent;
-            border: $pd-btn-border-hover;
-            color: $primary;
-
-            img,
-            svg {
-                fill: $primary;
-            }
-        }
-
-        &:focus-visible {
-            outline: 1px dotted $primary;
-            outline-offset: 4px;
-        }
-    }
-
+    // .pd-intro-heading-sm {
+    // display: inline-block;
+    // border: 2px solid $primary;
+    // border-radius: 50em;
+    // color: $primary;
+    // padding: $pd-label-padding;
+    // text-transform: uppercase;
+    // font-size: $pd-font-ex-sm;
+    // letter-spacing: $pd-letter-spacing;
+    // font-weight: $pd-font-weight-medium;
+    // }
+    // .pd-headline {
+    // color: $primary;
+    // font-weight: $pd-font-weight-medium;
+    // font-size: $pd-font-ex-lg;
+    // line-height: $pd-line-height-lg;
+    // }
+    // .pd-btn {
+    // color: $white;
+    // padding: $pd-btn-padding;
+    // border: $pd-btn-border;
+    // text-decoration: none;
+    // display: inline-block;
+    // text-transform: uppercase;
+    // border-radius: 50em;
+    // font-weight: $pd-font-weight-heavy;
+    // font-size: $pd-font-ex-sm;
+    // letter-spacing: $pd-letter-spacing;
+    // background-color: $primary;
+    // transition: background-color 0.3s ease;
+    // img,
+    // svg {
+    // width: 20px;
+    // height: 20px;
+    // fill: $white;
+    // margin-right: 8px;
+    // }
+    // &:hover {
+    // background-color: transparent;
+    // border: $pd-btn-border-hover;
+    // color: $primary;
+    // img,
+    // svg {
+    // fill: $primary;
+    // }
+    // }
+    // &:focus-visible {
+    // outline: 1px dotted $primary;
+    // outline-offset: 4px;
+    // }
+    // }
     // main image
     .pd-hero-18-main-img-outer {
         position: relative;
@@ -2354,6 +2347,28 @@
         @media (min-width: 1200px) {
             width: 376px;
             height: 500px;
+        }
+
+        .pd-hero-18-play-icon {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+
+            img,
+            svg {
+                width: 120px;
+                height: 120px;
+                transition: transform $pd-transition-speed ease;
+            }
+
+            &:hover {
+                img,
+                svg {
+                    transform: scale(1.1);
+                }
+            }
         }
     }
 
