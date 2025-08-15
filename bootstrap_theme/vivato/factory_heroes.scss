@@ -2329,4 +2329,128 @@
             outline-offset: 4px;
         }
     }
+
+    // main image
+   .pd-hero-18-main-img-outer {
+        position: relative;
+        overflow: hidden;
+        border-radius: $pd-border-radius-lg;
+
+        @media screen and (max-width: 575px) {
+            width: 240px;
+            height: 320px;
+        }
+
+        @media (min-width: 576px) and (max-width: 991px) {
+            width: 424px;
+            height: 565px;
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            width: 312px;
+            height: 416px;
+        }
+
+        @media (min-width: 1200px) {
+            width: 376px;
+            height: 500px;
+        }
+   }
+
+   // nearest to main image
+   .pd-hero-18-img-outer-1 {
+        position: relative;
+        overflow: hidden;
+        border-top-right-radius: $pd-border-radius-sm;
+        border-bottom-right-radius: $pd-border-radius-sm;
+        // @media screen and (max-width: 991px) {
+        //     width: 40px;
+        //     height: 320px;
+
+        // }
+
+        // @media (min-width: 992px) {
+        //     width: 40px;
+        //     height: 320px;
+        // }
+
+        @media screen and (max-width: 575px) {
+            // width: 240px;
+            // height: 320px;
+            width: 31px;
+            height: 256px;
+        }
+
+        @media (min-width: 576px) and (max-width: 991px) {
+            // width: 424px;
+            // height: 565px;
+            width: 55px;
+            height: 452px;
+
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            // width: 312px;
+            // height: 416px;
+            width: 40px;
+            height: 332px;
+        }
+
+        @media (min-width: 1200px) {
+            // width: 376px;
+            // height: 500px;
+            width: 48px;
+            height: 400px;
+        }
+
+   }
+
+   // furthest from main image
+   .pd-hero-18-img-outer-2 {
+        position: relative;
+        overflow: hidden;
+        border-top-right-radius: $pd-border-radius-sm;
+        border-bottom-right-radius: $pd-border-radius-sm;
+        // @media screen and (max-width: 991px) {
+        //     width: 30px;
+        //     height: 240px;
+        // }
+
+        // @media (min-width: 992px) {
+        //     width: 30px;
+        //     height: 240px;
+        // }
+
+        @media screen and (max-width: 575px) {
+            // width: 240px;
+            // height: 320px;
+            width: 24px;
+            height: 192px;
+
+
+        }
+
+        @media (min-width: 576px) and (max-width: 991px) {
+            // width: 424px;
+            // height: 565px;
+            width: 42px;
+            height: 339px;
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            // width: 312px;
+            // height: 416px;
+            width: 31px;
+            height: 249px;
+
+        }
+
+        @media (min-width: 1200px) {
+            // width: 376px;
+            // height: 500px;
+            width: 37px;
+            height: 300px;
+        }
+   }
+
 }

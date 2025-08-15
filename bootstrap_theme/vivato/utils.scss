@@ -7,30 +7,24 @@
     );
 
     @media screen and (max-width: 575px) {
-
     }
 
     @media (min-width: 576px) and (max-width: 767px) {
-
     }
 
     @media (min-width: 768px) and (max-width: 991px) {
-
     }
 
     @media (min-width: 992px) and (max-width: 1199px) {
-
     }
 
     @media (min-width: 1200px) {
-
     }
-
 }
 
 // gradient for small cards
 .pd-gradient-300w-500h {
-        background: radial-gradient(
+    background: radial-gradient(
             circle 300px at 120% 100%, 
             $secondary 2%, 
             $info 75%, 
@@ -66,14 +60,11 @@
             $info 55%, 
             $primary 100%
         );
-
     }
 }
 
-
 // full screen gradients
 .pd-gradient-full-width-800h {
-    
     @media screen and (max-width: 575px) {
         background: radial-gradient(
             circle 500px at 100% 100%, 
@@ -81,10 +72,9 @@
             $info 55%, 
             $primary 100%
             );
-        }
-        
+    }
+
     @media (min-width: 576px) {
-            
         background: radial-gradient(
             circle 1000px at 100% 100%, 
             $secondary 5%, 
@@ -97,9 +87,9 @@
 // ***********************************
 // *** test width gradient classes ***
 // ***********************************
-
 .pd-300w-500h {
     height: 500px;
+
     @media screen and (max-width: 767px) {
         width: 100%;
     }
@@ -112,6 +102,7 @@
 
 .pd-500w-500h {
     height: 500px;
+
     @media screen and (max-width: 767px) {
         width: 100%;
     }
@@ -124,6 +115,7 @@
 
 .pd-1000w-500h {
     height: 500px;
+
     @media screen and (max-width: 991px) {
         width: 100%;
     }
@@ -132,4 +124,12 @@
         width: 100%;
         max-width: 1000px;
     }
+}
+
+.pd-img-cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
 }
