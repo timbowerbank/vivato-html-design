@@ -31757,7 +31757,8 @@ textarea.form-control-lg {
     margin-bottom: 16px;
   }
 }
-.pd-grid-7 .pd-btn img, .pd-grid-7 .pd-btn svg {
+.pd-grid-7 .pd-btn img,
+.pd-grid-7 .pd-btn svg {
   margin-right: 4px;
   width: 24px;
   height: 24px;
@@ -32412,6 +32413,90 @@ textarea.form-control-lg {
   }
   .pd-grid-9 .pd-grid-9-grid-outer .pd-grid-9-card-outer.pd-grid-9-last-card .pd-grid-9-card-img-outer {
     height: 300px;
+  }
+}
+
+.pd-grid-10 {
+  min-height: 400px;
+  position: relative;
+  background: var(--pd-grid-10-gradient);
+}
+@media screen and (max-width: 575px) {
+  .pd-grid-10 {
+    --pd-grid-10-gradient: radial-gradient(
+    circle 500px at 100% 100%,
+    #C895FA 5%,
+    #E84F49 55%,
+    #25215F 100%
+    );
+  }
+}
+@media (min-width: 576px) {
+  .pd-grid-10 {
+    --pd-grid-10-gradient: radial-gradient(
+    circle 1000px at 100% 100%,
+    #C895FA 5%,
+    #E84F49 55%,
+    #25215F 100%
+    );
+  }
+}
+.pd-grid-10 .pd-logo-gradient-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background: var(--pd-grid-10-gradient);
+  -webkit-mask-image: url(/images/design-assets/_vivato/logo-vivato-mask.svg);
+  mask-image: url(/images/design-assets/_vivato/logo-vivato-mask.svg);
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+@media screen and (max-width: 575px) {
+  .pd-grid-10 .pd-logo-gradient-background {
+    mask-size: 300px 72px;
+    -webkit-mask-size: 300px 72px;
+    mask-position: center top;
+    -webkit-mask-position: center top;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .pd-grid-10 .pd-logo-gradient-background {
+    mask-size: 500px 120px;
+    -webkit-mask-size: 500px 120px;
+    mask-position: center top;
+    -webkit-mask-position: center top;
+  }
+}
+@media (min-width: 992px) {
+  .pd-grid-10 .pd-logo-gradient-background {
+    mask-size: 600px 144px;
+    -webkit-mask-size: 600px 144px;
+    mask-position: center top;
+    -webkit-mask-position: center top;
+  }
+}
+.pd-grid-10 .pd-grid-10-spacer-white {
+  position: relative;
+  z-index: 0;
+  background: white;
+}
+@media screen and (max-width: 575px) {
+  .pd-grid-10 .pd-grid-10-spacer-white {
+    width: 100%;
+    height: 72px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .pd-grid-10 .pd-grid-10-spacer-white {
+    width: 100%;
+    height: 120px;
+  }
+}
+@media (min-width: 992px) {
+  .pd-grid-10 .pd-grid-10-spacer-white {
+    width: 100%;
+    height: 144px;
   }
 }
 .pd-widget-1 .pd-widget-1-label {
