@@ -1734,12 +1734,11 @@
     position: relative;
 
     // --pd-grid-10-gradient: radial-gradient(
-    //     circle 800px at 100% 100%, 
-    //     #{$secondary} 5%, 
-    //     #{$info} 55%, 
-    //     #{$primary} 100%
+    // circle 800px at 100% 100%,
+    // #{$secondary} 5%,
+    // #{$info} 55%,
+    // #{$primary} 100%
     // );
-
     @media screen and (max-width: 575px) {
         & {
             --pd-grid-10-gradient: radial-gradient(
@@ -1754,7 +1753,7 @@
     @media (min-width: 576px) {
         & {
             --pd-grid-10-gradient: radial-gradient(
-            circle 1000px at 100% 100%, 
+            circle 2000px at 100% 100%, 
             #{$secondary} 5%, 
             #{$info} 55%, 
             #{$primary} 100%
@@ -1779,7 +1778,6 @@
         @media screen and (max-width: 575px) {
             mask-size: 300px 72px;
             -webkit-mask-size: 300px 72px;
-
             mask-position: center top;
             -webkit-mask-position: center top;
         }
@@ -1787,15 +1785,13 @@
         @media (min-width: 576px) and (max-width: 991px) {
             mask-size: 500px 120px;
             -webkit-mask-size: 500px 120px;
-
             mask-position: center top;
             -webkit-mask-position: center top;
         }
 
         @media (min-width: 992px) {
-            mask-size: 600px 144px;
-            -webkit-mask-size: 600px 144px;
-
+            mask-size: 800px 192px;
+            -webkit-mask-size: 800px 192px;
             mask-position: center top;
             -webkit-mask-position: center top;
         }
@@ -1805,6 +1801,9 @@
         position: relative;
         z-index: 0;
         background: white;
+        top: -1px;
+
+        // on some screens there's a small bit of gradient showing through
         @media screen and (max-width: 575px) {
             width: 100%;
             height: 72px;
@@ -1817,8 +1816,19 @@
 
         @media (min-width: 992px) {
             width: 100%;
-            height: 144px;
+            height: 192px;
         }
+    }
+
+    .container {
+        z-index: 3;
+    }
+
+    .pd-grid-10-card-outer {
+        border-radius: $pd-border-radius-sm;
+        padding: $pd-block-padding-sm;
+        background: $pd-black-alpha;
+        width: 100%;
     }
 }
 

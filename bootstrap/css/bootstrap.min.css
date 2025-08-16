@@ -32434,7 +32434,7 @@ textarea.form-control-lg {
 @media (min-width: 576px) {
   .pd-grid-10 {
     --pd-grid-10-gradient: radial-gradient(
-    circle 1000px at 100% 100%,
+    circle 2000px at 100% 100%,
     #C895FA 5%,
     #E84F49 55%,
     #25215F 100%
@@ -32470,8 +32470,8 @@ textarea.form-control-lg {
 }
 @media (min-width: 992px) {
   .pd-grid-10 .pd-logo-gradient-background {
-    mask-size: 600px 144px;
-    -webkit-mask-size: 600px 144px;
+    mask-size: 800px 192px;
+    -webkit-mask-size: 800px 192px;
     mask-position: center top;
     -webkit-mask-position: center top;
   }
@@ -32480,6 +32480,7 @@ textarea.form-control-lg {
   position: relative;
   z-index: 0;
   background: white;
+  top: -1px;
 }
 @media screen and (max-width: 575px) {
   .pd-grid-10 .pd-grid-10-spacer-white {
@@ -32496,8 +32497,17 @@ textarea.form-control-lg {
 @media (min-width: 992px) {
   .pd-grid-10 .pd-grid-10-spacer-white {
     width: 100%;
-    height: 144px;
+    height: 192px;
   }
+}
+.pd-grid-10 .container {
+  z-index: 3;
+}
+.pd-grid-10 .pd-grid-10-card-outer {
+  border-radius: 20px;
+  padding: 40px;
+  background: rgba(35, 31, 32, 0.4);
+  width: 100%;
 }
 .pd-widget-1 .pd-widget-1-label {
   font-size: 1rem;
@@ -33793,7 +33803,8 @@ textarea.form-control-lg {
   border: 1px solid #E84F49;
   background-color: #25215F;
 }
-.pd-btn.pd-inverted img, .pd-btn.pd-inverted svg {
+.pd-btn.pd-inverted img,
+.pd-btn.pd-inverted svg {
   fill: #fff;
 }
 .pd-btn.pd-inverted:hover {
@@ -33801,7 +33812,8 @@ textarea.form-control-lg {
   border: 1px solid #E84F49;
   color: #25215F;
 }
-.pd-btn.pd-inverted:hover img, .pd-btn.pd-inverted:hover svg {
+.pd-btn.pd-inverted:hover img,
+.pd-btn.pd-inverted:hover svg {
   fill: #25215F;
 }
 .pd-btn.pd-inverted:focus-visible {
@@ -33835,6 +33847,61 @@ textarea.form-control-lg {
 .pd-intro-heading-sm.pd-inverted {
   border: 1px solid #fff;
   color: #fff;
+}
+
+.pd-sub-headline {
+  color: #25215F;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.pd-sub-headline.pd-inverted {
+  color: #fff;
+}
+
+.pd-card-headline {
+  color: #25215F;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.pd-card-headline.pd-inverted {
+  color: #fff;
+}
+
+.pd-card-body {
+  color: #25215F;
+  font-weight: 300;
+  line-height: 1.4;
+  font-size: 1rem;
+}
+
+.pd-card-body.pd-inverted {
+  color: #fff;
+}
+
+.pd-card-link {
+  text-decoration: none;
+  color: #25215F;
+  font-weight: 300;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.pd-card-link:before {
+  content: ">";
+  margin-right: 8px;
+}
+.pd-card-link:hover {
+  color: #342e85;
+}
+
+.pd-card-link.pd-inverted {
+  color: #fff;
+}
+.pd-card-link.pd-inverted:hover {
+  color: #e6e6e6;
 }
 
 .pd-block-primary {

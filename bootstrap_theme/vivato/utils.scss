@@ -134,12 +134,9 @@
     object-position: center center;
 }
 
-
 // *******************
 // *** USEFUL ********
 // *******************
-
-
 // buttons
 .pd-btn {
     color: $white;
@@ -185,7 +182,8 @@
     border: $pd-btn-border-inverted;
     background-color: $primary;
 
-    img, svg {
+    img,
+    svg {
         fill: $white;
     }
 
@@ -194,7 +192,8 @@
         border: $pd-btn-border-hover-inverted;
         color: $primary;
 
-        img, svg {
+        img,
+        svg {
             fill: $primary;
         }
     }
@@ -204,7 +203,6 @@
         outline-offset: 4px;
     }
 }
-
 
 // headline
 .pd-headline {
@@ -236,16 +234,74 @@
     color: $white;
 }
 
+.pd-sub-headline {
+    color: $primary;
+    font-size: $pd-font-md;
+    font-weight: $pd-font-weight-light;
+    line-height: $pd-line-height-ex-lg;
+}
+
+.pd-sub-headline.pd-inverted {
+    color: $white;
+}
+
+.pd-card-headline {
+    color: $primary;
+    font-weight: $pd-font-weight-heavy;
+    font-size: $pd-font-lg;
+    line-height: $pd-line-height-ex-lg;
+}
+
+.pd-card-headline.pd-inverted {
+    color: $white;
+}
+
+.pd-card-body {
+    color: $primary;
+    font-weight: $pd-font-weight-light;
+    line-height: $pd-line-height-lg;
+    font-size: $pd-font-sm;
+}
+
+.pd-card-body.pd-inverted {
+    color: $white;
+}
+
+// anchor
+.pd-card-link {
+    text-decoration: none;
+    color: $primary;
+    font-weight: $pd-font-weight-light;
+    transition: color $pd-transition-speed;
+
+    &:before {
+        content: ">";
+        margin-right: 8px;
+    }
+
+    &:hover {
+        color: lighten($primary, 10%);
+    }
+}
+
+.pd-card-link.pd-inverted {
+    color: $white;
+
+    &:hover {
+        color: darken($white, 10%);
+    }
+}
+
 // block
 .pd-block-primary {
     background: $primary;
     border-radius: $pd-border-radius-lg;
     color: $white;
-    
+
     @media screen and (max-width: 575px) {
         padding: $pd-block-padding-ex-sm;
     }
-    
+
     @media (min-width: 576px) {
         padding: $pd-block-padding-lg;
     }
@@ -259,7 +315,7 @@
     @media screen and (max-width: 575px) {
         padding: $pd-block-padding-ex-sm;
     }
-    
+
     @media (min-width: 576px) {
         padding: $pd-block-padding-lg;
     }
