@@ -1733,16 +1733,10 @@
     min-height: 400px;
     position: relative;
 
-    // --pd-grid-10-gradient: radial-gradient(
-    // circle 800px at 100% 100%,
-    // #{$secondary} 5%,
-    // #{$info} 55%,
-    // #{$primary} 100%
-    // );
     @media screen and (max-width: 575px) {
         & {
             --pd-grid-10-gradient: radial-gradient(
-            circle 500px at 100% 100%, 
+            circle 500px at 130% 0%, 
             #{$secondary} 5%, 
             #{$info} 55%, 
             #{$primary} 100%
@@ -1750,10 +1744,32 @@
         }
     }
 
-    @media (min-width: 576px) {
+    @media (min-width: 576px) and (max-width: 991px) {
         & {
             --pd-grid-10-gradient: radial-gradient(
-            circle 2000px at 100% 100%, 
+            circle 850px at 120% 30%, 
+            #{$secondary} 5%, 
+            #{$info} 55%, 
+            #{$primary} 100%
+            );
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+        & {
+            --pd-grid-10-gradient: radial-gradient(
+            circle 1000px at 120% 40%, 
+            #{$secondary} 5%, 
+            #{$info} 55%, 
+            #{$primary} 100%
+            );
+        }
+    }
+
+    @media (min-width: 1200px) {
+        & {
+            --pd-grid-10-gradient: radial-gradient(
+            circle 1200px at 110% 30%, 
             #{$secondary} 5%, 
             #{$info} 55%, 
             #{$primary} 100%

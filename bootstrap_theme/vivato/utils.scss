@@ -245,6 +245,29 @@
     color: $white;
 }
 
+.pd-card-icon {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $secondary;
+    border-radius: 50em;
+    width: 70px;
+    height: 70px;
+    svg {
+        width: 40px;
+        height: 40px;
+        fill: $secondary;
+    }
+}
+
+.pd-card-icon.pd-inverted {
+    border: 1px solid $white;
+    svg {
+        fill: $white;
+    }
+}
+
 .pd-card-headline {
     color: $primary;
     font-weight: $pd-font-weight-heavy;

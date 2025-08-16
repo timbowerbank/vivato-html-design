@@ -23910,7 +23910,7 @@ textarea.form-control-lg {
 }
 .pd-testimonial-slider-8 .glide__arrows button.glide__arrow {
   background-color: #25215F;
-  border: 2px solid #E84F49;
+  border: 1px solid #E84F49;
   border-radius: 50em;
   padding: 0px;
   position: relative;
@@ -32424,17 +32424,37 @@ textarea.form-control-lg {
 @media screen and (max-width: 575px) {
   .pd-grid-10 {
     --pd-grid-10-gradient: radial-gradient(
-    circle 500px at 100% 100%,
+    circle 500px at 130% 0%,
     #C895FA 5%,
     #E84F49 55%,
     #25215F 100%
     );
   }
 }
-@media (min-width: 576px) {
+@media (min-width: 576px) and (max-width: 991px) {
   .pd-grid-10 {
     --pd-grid-10-gradient: radial-gradient(
-    circle 2000px at 100% 100%,
+    circle 850px at 120% 30%,
+    #C895FA 5%,
+    #E84F49 55%,
+    #25215F 100%
+    );
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .pd-grid-10 {
+    --pd-grid-10-gradient: radial-gradient(
+    circle 1000px at 120% 40%,
+    #C895FA 5%,
+    #E84F49 55%,
+    #25215F 100%
+    );
+  }
+}
+@media (min-width: 1200px) {
+  .pd-grid-10 {
+    --pd-grid-10-gradient: radial-gradient(
+    circle 1200px at 110% 30%,
     #C895FA 5%,
     #E84F49 55%,
     #25215F 100%
@@ -33860,10 +33880,42 @@ textarea.form-control-lg {
   color: #fff;
 }
 
+.pd-card-icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #C895FA;
+  border-radius: 50em;
+  width: 70px;
+  height: 70px;
+}
+.pd-card-icon svg {
+  width: 40px;
+  height: 40px;
+  fill: #C895FA;
+}
+
+.pd-card-icon.pd-inverted {
+  border: 1px solid #fff;
+}
+.pd-card-icon.pd-inverted svg {
+  fill: #fff;
+}
+
 .pd-card-headline {
   color: #25215F;
   font-weight: 500;
-  font-size: 1.4rem;
+  font-size: 2rem;
   line-height: 1.5;
 }
 
