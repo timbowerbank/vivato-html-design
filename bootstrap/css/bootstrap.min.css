@@ -23978,23 +23978,6 @@ textarea.form-control-lg {
   height: auto;
   max-width: 160px;
 }
-
-.pd-logo-strip-1 {
-  border-top: 1px solid #dee2e6;
-  border-bottom: 1px solid #dee2e6;
-  background: #f8f9fa;
-}
-.pd-logo-strip-1 h2, .pd-logo-strip-1 .h2 {
-  font-weight: 700;
-  font-size: 0.7rem;
-  color: #fff;
-  display: inline-block;
-  background: #E84F49;
-  padding: 8px 14px;
-  border-radius: 50em;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
 .pd-logo-strip-1 .pd-logo-strip-1-subHeadline {
   font-weight: 300;
   font-size: 0.8rem;
@@ -33826,6 +33809,7 @@ textarea.form-control-lg {
   font-weight: 400;
   font-size: 3rem;
   line-height: 1.4;
+  margin-bottom: 0px;
 }
 
 .pd-headline.pd-inverted {
@@ -34111,6 +34095,10 @@ textarea.form-control-lg {
   border-bottom-left-radius: 20px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+}
+
+.pd-image-border-radius {
+  border-radius: 20px;
 }
 
 .pd-number-svg-lg {

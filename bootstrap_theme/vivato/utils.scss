@@ -235,6 +235,7 @@
     font-weight: $pd-font-weight-medium;
     font-size: $pd-font-ex-lg;
     line-height: $pd-line-height-lg;
+    margin-bottom: 0px;
 }
 
 .pd-headline.pd-inverted {
@@ -518,6 +519,12 @@
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
+
+// image border-radius
+.pd-image-border-radius {
+    border-radius: $pd-border-radius-sm;
+}
+
 
 // *******************
 // *** NUMBER SVGS ***
