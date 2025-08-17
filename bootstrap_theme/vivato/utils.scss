@@ -1,27 +1,3 @@
-.pd-gradient {
-    background: radial-gradient(
-        circle 1000px at 115% 90%, 
-        $secondary 30%, 
-        $info 70%, 
-        $primary 100%
-    );
-
-    @media screen and (max-width: 575px) {
-    }
-
-    @media (min-width: 576px) and (max-width: 767px) {
-    }
-
-    @media (min-width: 768px) and (max-width: 991px) {
-    }
-
-    @media (min-width: 992px) and (max-width: 1199px) {
-    }
-
-    @media (min-width: 1200px) {
-    }
-}
-
 // gradient for small cards
 .pd-gradient-300w-500h {
     background: radial-gradient(
@@ -32,10 +8,28 @@
         );
 }
 
+.pd-gradient-300w-500h.pd-left {
+    background: radial-gradient(
+            circle 300px at -20% 100%, 
+            $secondary 2%, 
+            $info 75%, 
+            $primary 120%
+        );
+}
+
 // gradient for medium cards
 .pd-gradient-500w-500h {
     background: radial-gradient(
         circle 500px at 100% 100%, 
+        $secondary 5%, 
+        $info 55%, 
+        $primary 100%
+    );
+}
+
+.pd-gradient-500w-500h.pd-left {
+    background: radial-gradient(
+        circle 500px at 0% 100%, 
         $secondary 5%, 
         $info 55%, 
         $primary 100%
@@ -56,6 +50,26 @@
     @media (min-width: 576px) {
         background: radial-gradient(
             circle 1000px at 100% 100%, 
+            $secondary 5%, 
+            $info 55%, 
+            $primary 100%
+        );
+    }
+}
+
+.pd-gradient-1000w-500h.pd-left {
+    @media screen and (max-width: 575px) {
+        background: radial-gradient(
+            circle 500px at 0% 100%, 
+            $secondary 5%, 
+            $info 55%, 
+            $primary 100%
+        );
+    }
+
+    @media (min-width: 576px) {
+        background: radial-gradient(
+            circle 1000px at 0% 100%, 
             $secondary 5%, 
             $info 55%, 
             $primary 100%
@@ -84,48 +98,59 @@
     }
 }
 
+.pd-gradient-full-width-800h.pd-left {
+    @media screen and (max-width: 575px) {
+        background: radial-gradient(
+            circle 500px at 0% 100%, 
+            $secondary 5%, 
+            $info 55%, 
+            $primary 100%
+            );
+    }
+
+    @media (min-width: 576px) {
+        background: radial-gradient(
+            circle 1000px at 0% 100%, 
+            $secondary 5%, 
+            $info 55%, 
+            $primary 100%
+        );
+    }
+}
+
 // ***********************************
 // *** test width gradient classes ***
 // ***********************************
-.pd-300w-500h {
-    height: 500px;
-
-    @media screen and (max-width: 767px) {
-        width: 100%;
-    }
-
-    @media (min-width: 768px) {
-        width: 100%;
-        max-width: 300px;
-    }
-}
-
-.pd-500w-500h {
-    height: 500px;
-
-    @media screen and (max-width: 767px) {
-        width: 100%;
-    }
-
-    @media (min-width: 768px) {
-        width: 100%;
-        max-width: 500px;
-    }
-}
-
-.pd-1000w-500h {
-    height: 500px;
-
-    @media screen and (max-width: 991px) {
-        width: 100%;
-    }
-
-    @media (min-width: 992px) {
-        width: 100%;
-        max-width: 1000px;
-    }
-}
-
+// .pd-300w-500h {
+// height: 500px;
+// @media screen and (max-width: 767px) {
+// width: 100%;
+// }
+// @media (min-width: 768px) {
+// width: 100%;
+// max-width: 300px;
+// }
+// }
+// .pd-500w-500h {
+// height: 500px;
+// @media screen and (max-width: 767px) {
+// width: 100%;
+// }
+// @media (min-width: 768px) {
+// width: 100%;
+// max-width: 500px;
+// }
+// }
+// .pd-1000w-500h {
+// height: 500px;
+// @media screen and (max-width: 991px) {
+// width: 100%;
+// }
+// @media (min-width: 992px) {
+// width: 100%;
+// max-width: 1000px;
+// }
+// }
 .pd-img-cover {
     position: absolute;
     width: 100%;
@@ -245,6 +270,9 @@
     color: $white;
 }
 
+// **************
+// *** CARDS ****
+// **************
 .pd-card-icon {
     display: inline-flex;
     flex-direction: column;
@@ -254,6 +282,7 @@
     border-radius: 50em;
     width: 70px;
     height: 70px;
+
     svg {
         width: 40px;
         height: 40px;
@@ -263,6 +292,7 @@
 
 .pd-card-icon.pd-inverted {
     border: 1px solid $white;
+
     svg {
         fill: $white;
     }
@@ -315,8 +345,29 @@
     }
 }
 
-// block
+.pd-card-bullet {
+    color: $primary;
+    font-weight: $pd-font-weight-light;
+    margin-bottom: 10px;
+
+    &:before {
+        content: ">";
+        margin-right: 8px;
+    }
+}
+
+.pd-card-bullet.pd-inverted {
+    color: $white;
+}
+
+// ******************
+// *** END CARDS ****
+// ******************
+// **************
+// *** BLOCKS ***
+// **************
 .pd-block-primary {
+    position: relative;
     background: $primary;
     border-radius: $pd-border-radius-lg;
     color: $white;
@@ -344,3 +395,150 @@
     }
 }
 
+// ******************
+// *** END BLOCKS ***
+// ******************
+// *********************
+// *** IMAGE EFFECTS ***
+// *********************
+.pd-special-img-outer {
+    position: relative;
+    overflow: hidden;
+    border-radius: $pd-border-radius-lg;
+
+    @media screen and (max-width: 575px) {
+        width: 240px;
+        height: 320px;
+    }
+
+    @media (min-width: 576px) and (max-width: 991px) {
+        width: 424px;
+        height: 565px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+        width: 312px;
+        height: 416px;
+    }
+
+    @media (min-width: 1200px) {
+        width: 376px;
+        height: 500px;
+    }
+
+    .pd-special-img-play-icon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+
+        img,
+        svg {
+            width: 120px;
+            height: 120px;
+            transition: transform $pd-transition-speed ease;
+        }
+
+        &:hover {
+            img,
+            svg {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+// nearest to main image
+.pd-special-img-outer-1 {
+    position: relative;
+    overflow: hidden;
+    border-top-right-radius: $pd-border-radius-sm;
+    border-bottom-right-radius: $pd-border-radius-sm;
+
+    @media screen and (max-width: 575px) {
+        width: 31px;
+        height: 256px;
+    }
+
+    @media (min-width: 576px) and (max-width: 991px) {
+        width: 55px;
+        height: 452px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+        width: 40px;
+        height: 332px;
+    }
+
+    @media (min-width: 1200px) {
+        width: 48px;
+        height: 400px;
+    }
+}
+
+.pd-special-img-outer-1.pd-left {
+    border-top-left-radius: $pd-border-radius-sm;
+    border-bottom-left-radius: $pd-border-radius-sm;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+// furthest from main image
+.pd-special-img-outer-2 {
+    position: relative;
+    overflow: hidden;
+    border-top-right-radius: $pd-border-radius-sm;
+    border-bottom-right-radius: $pd-border-radius-sm;
+
+    @media screen and (max-width: 575px) {
+        width: 24px;
+        height: 192px;
+    }
+
+    @media (min-width: 576px) and (max-width: 991px) {
+        width: 42px;
+        height: 339px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+        width: 31px;
+        height: 249px;
+    }
+
+    @media (min-width: 1200px) {
+        width: 37px;
+        height: 300px;
+    }
+}
+
+.pd-special-img-outer-2.pd-left {
+    border-top-left-radius: $pd-border-radius-sm;
+    border-bottom-left-radius: $pd-border-radius-sm;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+// *******************
+// *** NUMBER SVGS ***
+// *******************
+.pd-number-svg-lg {
+    position: absolute;
+    bottom: $pd-block-padding-lg;
+    right: 20px;
+    z-index: 0;
+
+    img,
+    svg {
+        width: 330px;
+        height: auto;
+
+        .svg-fill {
+            fill: rgba($white, 0.15);
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
