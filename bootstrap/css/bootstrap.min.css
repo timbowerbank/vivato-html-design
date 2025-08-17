@@ -33745,6 +33745,14 @@ textarea.form-control-lg {
      object-position: center center;
 }
 
+.pd-margin-top-lg {
+  margin-top: 80px;
+}
+
+.pd-margin-bottom-lg {
+  margin-bottom: 80px;
+}
+
 .pd-btn {
   color: #fff;
   padding: 8px 18px 8px 16px;
@@ -33784,7 +33792,7 @@ textarea.form-control-lg {
 .pd-btn.pd-inverted {
   color: #fff;
   border: 1px solid #E84F49;
-  background-color: #25215F;
+  background-color: transparent;
 }
 .pd-btn.pd-inverted img,
 .pd-btn.pd-inverted svg {
@@ -33842,6 +33850,60 @@ textarea.form-control-lg {
 
 .pd-sub-headline.pd-inverted {
   color: #fff;
+}
+
+.pd-icon-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-decoration: none;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.pd-icon-label p {
+  color: #25215F;
+  letter-spacing: 0.15em;
+  margin-bottom: 0px;
+  font-size: 0.8rem;
+  font-weight: 300;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.pd-icon-label svg {
+  width: 14px;
+  height: 14px;
+  fill: #25215F;
+  -webkit-transition: fill 0.3s ease;
+  transition: fill 0.3s ease;
+}
+.pd-icon-label:hover p {
+  color: #342e85;
+}
+.pd-icon-label:hover svg {
+  fill: #C895FA;
+}
+.pd-icon-label.pd-inverted p {
+  color: #fff;
+}
+.pd-icon-label.pd-inverted svg {
+  fill: #fff;
+}
+.pd-icon-label.pd-inverted:hover p {
+  color: #e6e6e6;
+}
+.pd-icon-label.pd-inverted:hover svg {
+  fill: #e6e6e6;
 }
 
 .pd-card-icon {

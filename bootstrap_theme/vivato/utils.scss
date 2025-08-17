@@ -118,45 +118,23 @@
     }
 }
 
-// ***********************************
-// *** test width gradient classes ***
-// ***********************************
-// .pd-300w-500h {
-// height: 500px;
-// @media screen and (max-width: 767px) {
-// width: 100%;
-// }
-// @media (min-width: 768px) {
-// width: 100%;
-// max-width: 300px;
-// }
-// }
-// .pd-500w-500h {
-// height: 500px;
-// @media screen and (max-width: 767px) {
-// width: 100%;
-// }
-// @media (min-width: 768px) {
-// width: 100%;
-// max-width: 500px;
-// }
-// }
-// .pd-1000w-500h {
-// height: 500px;
-// @media screen and (max-width: 991px) {
-// width: 100%;
-// }
-// @media (min-width: 992px) {
-// width: 100%;
-// max-width: 1000px;
-// }
-// }
 .pd-img-cover {
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center center;
+}
+
+// ***************
+// *** SPACING ***
+// ***************
+.pd-margin-top-lg {
+    margin-top: 80px;
+}
+
+.pd-margin-bottom-lg {
+    margin-bottom: 80px;
 }
 
 // *******************
@@ -205,7 +183,7 @@
 .pd-btn.pd-inverted {
     color: $white;
     border: $pd-btn-border-inverted;
-    background-color: $primary;
+    background-color: transparent;
 
     img,
     svg {
@@ -269,6 +247,62 @@
 
 .pd-sub-headline.pd-inverted {
     color: $white;
+}
+
+.pd-icon-label {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 10px;
+    flex-wrap: wrap;
+
+    p {
+        color: $primary;
+        letter-spacing: $pd-letter-spacing;
+        margin-bottom: 0px;
+        font-size: $pd-font-ex-sm;
+        font-weight: $pd-font-weight-light;
+        transition: color $pd-transition-speed ease;
+    }
+
+    svg {
+        width: 14px;
+        height: 14px;
+        fill: $primary;
+        transition: fill $pd-transition-speed ease;
+    }
+
+    &:hover {
+        p {
+            color: lighten($primary, 10%);
+        }
+
+        svg {
+            fill: $secondary;
+        }
+    }
+}
+
+.pd-icon-label.pd-inverted {
+    p {
+        color: $white;
+    }
+
+    svg {
+        fill: $white;
+    }
+
+    &:hover {
+        p {
+            color: darken($white, 10%);
+        }
+
+        svg {
+            fill: darken($white, 10%);
+        }
+    }
 }
 
 // **************
@@ -524,7 +558,6 @@
 .pd-image-border-radius {
     border-radius: $pd-border-radius-sm;
 }
-
 
 // *******************
 // *** NUMBER SVGS ***
