@@ -23978,6 +23978,76 @@ textarea.form-control-lg {
   height: auto;
   max-width: 160px;
 }
+.pd-testimonial-slider-9 .pd-testimonial-slider-9-card-outer p {
+  font-weight: 300;
+  font-size: 2rem;
+  color: #25215F;
+  line-height: 1.5;
+}
+.pd-testimonial-slider-9 .pd-testimonial-slider-9-card-outer footer p {
+  font-size: 1rem;
+}
+.pd-testimonial-slider-9 .glide__arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pd-testimonial-slider-9 .glide__arrows button.glide__arrow {
+  background-color: transparent;
+  border: 1px solid #E84F49;
+  border-radius: 50em;
+  padding: 0px;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pd-testimonial-slider-9 .glide__arrows button.glide__arrow img,
+.pd-testimonial-slider-9 .glide__arrows button.glide__arrow svg {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  fill: #25215F;
+}
+.pd-testimonial-slider-9 .glide__arrows button.glide__arrow:hover {
+  background-color: #25215F;
+}
+.pd-testimonial-slider-9 .glide__arrows button.glide__arrow:hover svg {
+  fill: #fff;
+}
+.pd-testimonial-slider-9 .glide__arrows button.glide__arrow--left {
+  margin-right: 16px;
+}
+.pd-testimonial-slider-9 .glide__arrows button.glide__arrow--left img, .pd-testimonial-slider-9 .glide__arrows button.glide__arrow--left svg {
+  margin-right: 5px;
+}
+.pd-testimonial-slider-9 .glide__arrows button.glide__arrow--right img, .pd-testimonial-slider-9 .glide__arrows button.glide__arrow--right svg {
+  margin-left: 5px;
+}
 .pd-logo-strip-1 .pd-logo-strip-1-subHeadline {
   font-weight: 300;
   font-size: 0.8rem;
@@ -33699,7 +33769,7 @@ textarea.form-control-lg {
   width: 20px;
   height: 20px;
   fill: #fff;
-  margin-right: 8px;
+  margin-left: 8px;
 }
 .pd-btn:hover {
   background-color: transparent;
@@ -34123,15 +34193,14 @@ textarea.form-control-lg {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.pd-watermark img,
-.pd-watermark svg {
+.pd-watermark img, .pd-watermark svg {
   width: 80vw;
   opacity: 0.1;
 }
 
 .pd-number-svg-lg {
   position: absolute;
-  bottom: 60px;
+  bottom: 20px;
   right: 20px;
   z-index: 0;
 }
