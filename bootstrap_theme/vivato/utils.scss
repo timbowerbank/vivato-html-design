@@ -559,6 +559,42 @@
     border-radius: $pd-border-radius-sm;
 }
 
+.pd-brand-top {
+    position: absolute;
+
+    img,
+    svg {
+        width: auto;
+        height: 50px;
+    }
+
+    top: -48px;
+
+    @media screen and (max-width: 991px) {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @media (min-width: 992px) {
+        left: 60px;
+
+        // transform: translateX(-50%);
+    }
+}
+
+.pd-watermark {
+    position: absolute;
+    bottom: -8px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    img, svg {
+        width: 80vw;
+        opacity: 0.1;
+        
+    }
+}
+
 // *******************
 // *** NUMBER SVGS ***
 // *******************
