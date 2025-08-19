@@ -961,9 +961,9 @@
 
     .pd-grid-6-list-outer {
         position: relative;
+
         // @media screen and (max-width: 991px) {
         // }
-
         @media (min-width: 992px) {
             display: grid;
             gap: 10px;
@@ -986,7 +986,7 @@
                 margin-right: 10px;
                 width: 16px;
                 height: 16px;
-                fill: $white;
+                fill: $secondary;
             }
 
             p {
@@ -1845,6 +1845,84 @@
         padding: $pd-block-padding-sm;
         background: $pd-black-alpha;
         width: 100%;
+    }
+}
+
+// end .pd-grid-10
+// start pd-grid-11
+.pd-grid-11 {
+    .pd-grid-11-outer {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: $pd-grid-gap-lg;
+
+        @media screen and (max-width: 991px) {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: $pd-grid-gap-sm;
+        }
+
+        // anchor tag
+        .pd-grid-11-card {
+            background: $light;
+            border-radius: $pd-border-radius-sm;
+
+            img {
+                max-width: 130px;
+                width: 100%;
+                height: auto;
+                margin: $pd-block-padding-sm;
+            }
+
+            @media screen and (max-width: 991px) {
+                img {
+                    max-width: 60px;
+                    margin: 15px;
+                }
+            }
+        }
+    }
+
+    h3 {
+        color: $white;
+        font-size: $pd-font-sm;
+        font-weight: $pd-font-weight-heavy;
+        text-transform: uppercase;
+        letter-spacing: $pd-letter-spacing;
+    }
+
+    // anchor tag
+    .pd-grid-11-chip {
+        background-color: transparent;
+        transition: background-color $pd-transition-speed ease;
+        margin-right: 10px;
+        margin-bottom: 12px;
+        display: inline-block;
+        text-decoration: none;
+        padding: 7px 24px 7px 20px;
+        border: 1px solid rgba($white, 0.3);
+        border-radius: 50em;
+        color: $white;
+        font-size: $pd-font-ex-sm;
+        text-transform: uppercase;
+        letter-spacing: $pd-letter-spacing;
+
+        img,
+        svg {
+            fill: $secondary;
+            width: 16px;
+            height: 16px;
+            margin-right: 8px;
+        }
+
+        &:hover {
+            background: $white;
+            color: $primary;
+            border: 1px solid $primary;
+
+            svg {
+                fill: $info;
+            }
+        }
     }
 }
 

@@ -430,6 +430,14 @@
     }
 }
 
+.pd-block-dark {
+    position: relative;
+    border-radius: $pd-border-radius-sm;
+    padding: $pd-block-padding-lg;
+    background: $pd-black-alpha;
+    width: 100%;
+}
+
 // ******************
 // *** END BLOCKS ***
 // ******************
@@ -588,17 +596,18 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    img, svg {
+
+    img,
+    svg {
         width: 80vw;
         opacity: 0.1;
-        
     }
 }
 
 // *******************
-// *** NUMBER SVGS ***
+// *** WATERMARKS ****
 // *******************
-.pd-number-svg-lg {
+.pd-watermark-sm {
     position: absolute;
     bottom: 20px;
     right: 20px;
