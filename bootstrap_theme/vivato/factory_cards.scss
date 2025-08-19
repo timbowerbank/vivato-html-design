@@ -2187,6 +2187,7 @@
         figure {
             width: 100%;
             height: 100%;
+
             img {
                 position: absolute;
                 width: 100%;
@@ -2195,6 +2196,7 @@
                 left: 0;
                 object-fit: cover;
                 object-position: center center;
+
                 // transform: scaleX(-1);
             }
 
@@ -2216,14 +2218,12 @@
                     left: 50%;
                     transform: translateX(-50%);
                 }
-                
+
                 @media (min-width: 992px) {
                     left: 0;
-                    
                 }
             }
         }
-
     }
 
     .pd-cards-17-img-overlay {
@@ -2258,7 +2258,6 @@
             overflow: hidden;
             border-radius: 10px 10px 0px 0px;
 
-
             img {
                 position: absolute;
                 width: 100%;
@@ -2279,7 +2278,7 @@
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
-            
+
             header {
                 h3 {
                     font-size: 1.4rem;
@@ -2298,6 +2297,7 @@
                 flex-direction: column;
                 justify-content: flex-start;
                 align-items: flex-start;
+
                 // flex-grow: 1;
                 margin-top: auto;
 
@@ -2313,8 +2313,6 @@
                         margin-right: 4px;
                     }
                 }
-
-
             }
         }
     }
@@ -2323,9 +2321,11 @@
         background: rgba(255,255,255,0.8);
         border-radius: 10px;
         padding: 20px;
+
         @media screen and (max-width: 991px) {
             display: block;
         }
+
         @media (min-width: 992px) {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -2337,69 +2337,77 @@
 
             a {
                 display: inline-block;
+
                 img {
                     width: 200px;
                     height: auto;
                 }
             }
-            }
- 
+        }
     }
 }
-// end pd-cards-17
 
+// end pd-cards-17
 // start pd-cards-18
 .pd-cards-18 {
-    background: linear-gradient(rgba(42, 42, 42, 1) 0%, rgba(42, 42, 42, 0.95) 40%, rgba(42, 42, 42, 0.95) 60%, rgba(42, 42, 42, 1) 100%);
+    // background: linear-gradient(rgba(42, 42, 42, 1) 0%, rgba(42, 42, 42, 0.95) 40%, rgba(42, 42, 42, 0.95) 60%, rgba(42, 42, 42, 1) 100%);
     color: white;
     position: relative;
 
-    .pd-intro-heading-sm {
-        font-size: 0.9rem;
-        font-weight: 700;
-        color: white;
-        margin-bottom: 0px;
-    }
-
-    .pd-headline {
-        font-size: 2.4rem;
-        font-weight: 700;
-    }
-
-    .pd-subHeadline {
-        line-height: 1.5;
-    }
-
-    .pd-icon {
-        fill: white;
-        margin-right: 6px;
-    }
-
+    // .pd-intro-heading-sm {
+    // font-size: 0.9rem;
+    // font-weight: 700;
+    // color: white;
+    // margin-bottom: 0px;
+    // }
+    // .pd-headline {
+    // font-size: 2.4rem;
+    // font-weight: 700;
+    // }
+    // .pd-subHeadline {
+    // line-height: 1.5;
+    // }
+    // .pd-icon {
+    // fill: white;
+    // margin-right: 6px;
+    // }
     .pd-cards-18-card-lg-outer {
-        display: flex;
-        border-radius: 10px;
-        min-height: 200px;
-        background: #222222;
-        border: 1px solid #e7e7e7;
+        border-radius: $pd-border-radius-sm;
+        min-height: 240px;
+        background: $primary;
+
+        // border: 1px solid #e7e7e7;
         box-shadow: 6px 7px 14px rgba(0, 0, 0, 0.1);
         flex: 1 0 100%;
 
         @media screen and (max-width: 991px) {
+            display: block;
         }
 
         @media (min-width: 992px) {
+            display: flex;
             flex-direction: row;
             align-items: stretch;
         }
 
         // anchor tag wraps image
         .pd-cards-18-card-img-outer {
+            @media screen and (max-width: 991px) {
+                width: 100%;
+                min-height: 300px;
+                border-radius: $pd-border-radius-sm $pd-border-radius-sm 0px 0px;
+            }
+
+            @media (min-width: 992px) {
+                min-width: 45%;
+                flex: 0 0 45%;
+                min-height: 240px;
+                border-radius: $pd-border-radius-sm 0px 0px $pd-border-radius-sm;
+            }
+
             display: inline-block;
             position: relative;
             overflow: hidden;
-            border-radius: 10px 0px 0px 10px;
-            min-width: 35%;
-            flex: 1 0 35%;
 
             img {
                 position: absolute;
@@ -2414,103 +2422,93 @@
 
         .pd-cards-18-card-content-outer {
             flex: 1 0 50%;
-            padding: 20px;
+            padding: $pd-block-padding-sm;
             display: flex;
             flex-direction: column;
 
             p {
                 text-transform: uppercase;
-                font-weight: 700;
-                font-size: 0.9rem;
-                color: white;
-                margin-bottom: 6px;
+                font-weight: $pd-font-weight-light;
+                letter-spacing: $pd-letter-spacing;
+                font-size: $pd-font-ex-sm;
+                color: $white;
             }
 
             h3 {
-                font-size: 1.4rem;
-                font-weight: 700;
+                font-size: $pd-font-md;
+                font-weight: $pd-font-weight-medium;
+                line-height: $pd-line-height-lg;
             }
 
             footer {
                 margin-top: auto;
 
-                a {
-                    text-decoration: none;
-                    font-weight: 700;
-                    color: white;
-
-                    &:before {
-                        content: ">";
-                        margin-right: 6px;
-                    }
-                }
+                // a {
+                // text-decoration: none;
+                // font-weight: $pd-font-weight-medium;
+                // color: $white;
+                // &:before {
+                // content: ">";
+                // margin-right: 6px;
+                // }
+                // }
             }
         }
     }
 
-    .pd-brand-side {
-        position: absolute;
-        right: 30px;
-        top: 30px;
-    }
-
-    .pd-btn {
-        display: inline-flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        transition: background 0.3s;
-        border-radius: 50em;
-        padding: 16px 30px;
-        margin-right: 20px;
-        margin-bottom: 30px;
-        text-decoration: none;
-        font-weight: 700;
-        text-align: center;
-        white-space: nowrap;
-        cursor: pointer;
-
-        .pd-icon {
-            display: block;
-
-            img {
-                width: 40px;
-                height: 40px;
-                margin-right: 6px;
-            }
-        }
-
-        .pd-icon.pd-icon-rollover {
-            display: none;
-        }
-
-        &:hover {
-            text-decoration: none;
-
-            .pd-icon {
-                display: none;
-            }
-
-            .pd-icon.pd-icon-rollover {
-                display: block;
-            }
-        }
-    }
-
-    .pd-btn.pd-btn-dark {
-        border: 2px solid #C5247F;
-        background: transparent;
-        color: white;
-
-        &:hover {
-            background: #C5247F;
-        }
-
-        &:focus-visible {
-            outline: 2px dotted $white;
-            outline-offset: 4px;
-        }
-    }
+    // .pd-brand-side {
+    // position: absolute;
+    // right: 30px;
+    // top: 30px;
+    // }
+    // .pd-btn {
+    // display: inline-flex;
+    // flex-direction: row;
+    // justify-content: center;
+    // align-items: center;
+    // transition: background 0.3s;
+    // border-radius: 50em;
+    // padding: 16px 30px;
+    // margin-right: 20px;
+    // margin-bottom: 30px;
+    // text-decoration: none;
+    // font-weight: 700;
+    // text-align: center;
+    // white-space: nowrap;
+    // cursor: pointer;
+    // .pd-icon {
+    // display: block;
+    // img {
+    // width: 40px;
+    // height: 40px;
+    // margin-right: 6px;
+    // }
+    // }
+    // .pd-icon.pd-icon-rollover {
+    // display: none;
+    // }
+    // &:hover {
+    // text-decoration: none;
+    // .pd-icon {
+    // display: none;
+    // }
+    // .pd-icon.pd-icon-rollover {
+    // display: block;
+    // }
+    // }
+    // }
+    // .pd-btn.pd-btn-dark {
+    // border: 2px solid #C5247F;
+    // background: transparent;
+    // color: white;
+    // &:hover {
+    // background: #C5247F;
+    // }
+    // &:focus-visible {
+    // outline: 2px dotted $white;
+    // outline-offset: 4px;
+    // }
+    // }
 }
 
 // end pd-cards-18
@@ -2547,8 +2545,6 @@
         right: 30px;
         top: 30px;
     }
-
-
 
     .pd-cards-19-grid-outer {
         @media screen and (max-width: 991px) {
@@ -2668,7 +2664,6 @@
 // end pd-cards-19
 // start pd-cards-20
 .pd-cards-20 {
-
     .pd-headline {
         font-size: 2.4rem;
         font-weight: 700;
@@ -2779,11 +2774,10 @@
         }
     }
 }
-// end pd-cards-20
 
+// end pd-cards-20
 // start pd-cards-21
 .pd-cards-21 {
-
     .pd-intro-heading-sm {
         font-size: 0.9rem;
         font-weight: 700;
@@ -2911,11 +2905,10 @@
         }
     }
 }
-// end pd-cards-21
 
+// end pd-cards-21
 // start pd-cards-22
 .pd-cards-22 {
-
     .pd-intro-heading-sm {
         font-size: 0.9rem;
         font-weight: 700;
@@ -3015,16 +3008,14 @@
             footer {
                 // replace pd-link-light
                 // a.pd-text-link {
-                //     text-decoration: none;
-                //     font-weight: 700;
-                //     color: #c5247f;
-
-                //     &:before {
-                //         content: ">";
-                //         margin-right: 4px;
-                //     }
+                // text-decoration: none;
+                // font-weight: 700;
+                // color: #c5247f;
+                // &:before {
+                // content: ">";
+                // margin-right: 4px;
                 // }
-
+                // }
                 a.pd-icon-link {
                     @media screen and (max-width: 991px) {
                         img {
