@@ -1548,11 +1548,12 @@
     .pd-section-19-hero-img-outer {
         @media screen and (max-width: 991px) {
             height: 350px;
-        }   
+        }
 
         @media (min-width: 992px) {
             height: 100%;
         }
+
         position: relative;
 
         img {
@@ -1564,14 +1565,12 @@
             top: 0;
             left: 0;
         }
-
     }
 }
-// end pd-section-19
 
+// end pd-section-19
 // start pd-section-20
 .pd-section-20 {
-
     background: linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.85) 30%, rgba(0, 0, 0, 0.85) 60%, rgba(0,0,0,1) 100%);
 
     .pd-intro-heading-sm {
@@ -1586,7 +1585,6 @@
         font-weight: 700;
         color: $white;
         margin-bottom: 30px;
-
     }
 
     .pd-subHeadline {
@@ -1598,7 +1596,6 @@
         em {
             font-style: normal;
             font-weight: 700;
-
         }
     }
 
@@ -1610,7 +1607,6 @@
     }
 
     .pd-section-20-grid-outer {
-
         padding: 0px 0px;
         margin-bottom: 30px;
 
@@ -1636,8 +1632,7 @@
                 flex-direction: column;
                 justify-content: flex-start;
                 align-items: center;
-                
-                
+
                 .pd-section-20-card-headline {
                     p {
                         margin-bottom: 4px;
@@ -1657,10 +1652,7 @@
                     }
                 }
             }
-
-
         }
-
     }
 
     .pd-btn {
@@ -1713,11 +1705,12 @@
     .pd-section-20-hero-img-outer {
         @media screen and (max-width: 991px) {
             height: 350px;
-        }   
+        }
 
         @media (min-width: 992px) {
             height: 100%;
         }
+
         position: relative;
 
         img {
@@ -1731,11 +1724,10 @@
         }
     }
 }
-// end pd-section-20
 
+// end pd-section-20
 // start pd-section-21
 .pd-section-21 {
-
     .pd-intro-heading-sm {
         font-size: 0.9rem;
         font-weight: 700;
@@ -1747,6 +1739,7 @@
     .pd-headline {
         font-size: 2.8rem;
         font-weight: 700;
+
         em {
             font-style: normal;
             color: $primary;
@@ -1763,8 +1756,6 @@
             color: $black;
             font-style: normal;
         }
-
-
     }
 
     .pd-btn {
@@ -1815,10 +1806,10 @@
     }
 
     .pd-section-21-list-outer {
-        
         .pd-section-21-card {
             cursor: pointer;
             border-bottom: 1px solid $gray-400;
+
             &:last-child {
                 border-bottom: none;
             }
@@ -1834,7 +1825,6 @@
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
-                
 
                 .pd-section-21-card-label {
                     max-width: 80%;
@@ -1842,6 +1832,7 @@
                     font-weight: 700;
                     display: flex;
                     flex-direction: column;
+
                     span {
                         font-size: 0.9rem;
                         font-weight: 300;
@@ -1855,7 +1846,7 @@
                     position: relative;
                     display: inline-block;
                     margin-left: 20px;
-        
+
                     .pd-section-21-open-close-horizontal {
                         position: absolute;
                         width: 20px;
@@ -1869,7 +1860,7 @@
                         transition: transform 0.4s;
                         pointer-events: none;
                     }
-        
+
                     .pd-section-21-open-close-vertical {
                         position: absolute;
                         width: 20px;
@@ -1889,12 +1880,11 @@
                     .pd-section-21-open-close-horizontal {
                         transform: rotate(45deg);
                     }
-            
+
                     .pd-section-21-open-close-vertical {
                         transform: rotate(-45deg);
                     }
                 }
-
             }
 
             .pd-section-21-card-body {
@@ -1925,6 +1915,7 @@
                         display: inline-block;
                         text-decoration: none;
                         color: $blue;
+
                         &:before {
                             content: ">";
                             margin-right: 6px;
@@ -1942,16 +1933,11 @@
                 transition: height 0.35s;
                 overflow: hidden;
             }
-
-
-    
         }
-
     }
-
 }
-// end pd-section-21
 
+// end pd-section-21
 // start pd-section-22
 .pd-section-22 {
     .pd-intro-heading-sm {
@@ -2247,12 +2233,10 @@
                 fill: white;
             }
         }
-
     }
 }
 
 // end pd-section-22
-
 // start .pd-section-23
 .pd-section-23 {
     .pd-intro-heading-sm {
@@ -2650,6 +2634,79 @@
             @media (min-width: 992px) {
                 padding: 40px;
             }
+        }
+    }
+}
+
+// end pd-section-24
+// start pd-section-25
+.pd-section-25 {
+    position: relative;
+
+    .pd-section-25-img-outer {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+
+        @media screen and (max-width: 575px) {
+            height: 310px;
+        }
+
+        @media (min-width: 576px) and (max-width: 767px) {
+            height: 500px;
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            height: 600px;
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            height: 700px;
+        }
+
+        @media (min-width: 1200px) {
+            height: 900px;
+        }
+
+        img {
+            z-index: 0;
+        }
+    }
+
+    .pd-section-25-img-overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        background: linear-gradient(rgba($black, 0.65) 0%, rgba($black, 0.4) 20%, rgba($black, 0.4) 80%, rgba($black, 0.65) 100%)
+    }
+
+    .pd-section-25-card {
+        padding: $pd-block-padding-sm;
+        border-radius: $pd-border-radius-lg;
+        z-index: 2;
+        max-width: 650px;
+
+        @media screen and (max-width: 767px) {
+            position: relative;
+            background-color: $primary;
+            margin-top: -40px;
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            position: absolute;
+            min-width: 650px;
+            bottom: $pd-block-padding-lg;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: $primary;
+        }
+
+        @media (min-width: 992px) {
+            position: absolute;
+            bottom: $pd-block-padding-lg;
+            right: $pd-block-padding-lg;
+            background-color: $primary;
         }
     }
 }

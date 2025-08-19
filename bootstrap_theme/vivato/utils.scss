@@ -433,9 +433,16 @@
 .pd-block-dark {
     position: relative;
     border-radius: $pd-border-radius-sm;
-    padding: $pd-block-padding-lg;
     background: $pd-black-alpha;
     width: 100%;
+
+    @media screen and (max-width: 575px) {
+        padding: $pd-block-padding-ex-sm;
+    }
+
+    @media (min-width: 576px) {
+        padding: $pd-block-padding-lg;
+    }
 }
 
 // ******************
@@ -609,7 +616,7 @@
 // *******************
 .pd-watermark-sm {
     position: absolute;
-    bottom: 20px;
+    bottom: -1px;
     right: 20px;
     z-index: 0;
 
@@ -619,7 +626,7 @@
         height: auto;
 
         .svg-fill {
-            fill: rgba($white, 0.15);
+            fill: rgba($white, 0.1);
         }
     }
 
