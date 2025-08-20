@@ -2436,13 +2436,21 @@
             p {
                 // text-transform: uppercase;
                 font-weight: $pd-font-weight-light;
+
                 // letter-spacing: $pd-letter-spacing;
                 font-size: $pd-font-sm;
                 color: $white;
             }
 
             h3 {
-                font-size: $pd-font-md;
+                @media screen and (max-width: 767px) {
+                    font-size: $pd-font-md;
+                }
+
+                @media (min-width: 768px) {
+                    font-size: $pd-font-md;
+                }
+
                 font-weight: $pd-font-weight-medium;
                 line-height: $pd-line-height-lg;
             }
@@ -2457,7 +2465,6 @@
                 padding: 7px 20px;
                 text-transform: uppercase;
                 letter-spacing: $pd-letter-spacing;
-                
             }
 
             footer {

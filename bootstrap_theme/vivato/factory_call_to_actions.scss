@@ -252,7 +252,6 @@
 }
 
 // end pd-CTA-5
-
 // start pd-CTA-6
 .pd-CTA-6 {
     // border-top: 1px solid $pd-bone;
@@ -298,64 +297,62 @@
         letter-spacing: 0.15em;
         font-weight: 700;
         font-size: 0.9rem;
-    
+
         .pd-icon {
             fill: $white;
         }
-    
+
         // box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.4);
         &:hover {
             // background: darken($info, 10%);
             background: $info;
             color: $white;
-    
+
             .pd-icon {
                 fill: $white;
             }
         }
-    
+
         &:focus {
             outline: 2px dotted $white;
             outline-offset: 4px;
         }
-    
+
         span {
             .pd-icon {
                 fill: $white;
             }
         }
     }
-    
+
     .pd-btn.pd-inverted {
         color: $pd-oxford-blue;
         background: transparent;
         border: 2px solid $pd-oxford-blue;
-    
+
         .pd-icon {
             fill: $pd-oxford-blue;
         }
-    
+
         &:hover {
             background: $info;
             border: 2px solid $pd-ochre;
             color: $white;
-    
+
             .pd-icon {
                 fill: $white;
             }
         }
-    
+
         &:focus {
             outline: 2px dotted $pd-ochre;
             outline-offset: 4px;
         }
     }
-    
 
     .pd-CTA-6-mask {
         position: absolute;
         top: 0;
-        
         height: 100px;
         width: 100px;
         overflow: hidden;
@@ -363,7 +360,6 @@
         .pd-CTA-6-circle-outer {
             transition: transform 0.4s;
             position: absolute;
-            
             top: -28px;
             width: 100px;
             height: 100px;
@@ -396,14 +392,15 @@
 
     .pd-CTA-6-mask.pd-left {
         left: 0;
+
         .pd-CTA-6-circle-outer {
             left: -29px;
         }
-
     }
 
     .pd-CTA-6-mask.pd-right {
         right: 0;
+
         .pd-CTA-6-circle-outer {
             right: -29px;
         }
@@ -413,7 +410,6 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
         height: 100%;
 
         @media screen and (max-width: 991px) {
@@ -426,15 +422,13 @@
 
         img {
             max-width: 160px;
+
             // margin: 20px;
         }
-
     }
 
     .pd-CTA-6-links-outer {
-
         a {
-
             @media screen and (max-width: 767px) {
                 display: block;
                 margin-bottom: 10px;
@@ -443,31 +437,26 @@
             @media (min-width: 768px) {
                 dispay: inline-block;
             }
-            
+
             text-decoration: none;
             font-weight: 700;
             color: $pd-oxford-blue;
 
-            @media(min-width: 768px) {
+            @media (min-width: 768px) {
                 &:not(:last-child):after {
                     content: "|";
                     padding-left: 20px;
                     padding-right: 20px;
                 }
-
             }
-
 
             &:focus {
                 outline: 2px dotted $pd-oxford-blue;
                 outline-offset: 4px;
             }
         }
-
     }
-
 }
-
 
 .pd-CTA-7 {
     padding-top: 100px;
@@ -514,53 +503,53 @@
         letter-spacing: 0.15em;
         font-weight: 700;
         font-size: 0.9rem;
-    
+
         .pd-icon {
             fill: $white;
         }
-    
+
         // box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.4);
         &:hover {
             // background: darken($info, 10%);
             background: $info;
             color: $white;
-    
+
             .pd-icon {
                 fill: $white;
             }
         }
-    
+
         &:focus {
             outline: 2px dotted $white;
             outline-offset: 4px;
         }
-    
+
         span {
             .pd-icon {
                 fill: $white;
             }
         }
     }
-    
+
     .pd-btn.pd-inverted {
         color: $pd-oxford-blue;
         background: transparent;
         border: 2px solid $pd-oxford-blue;
-    
+
         .pd-icon {
             fill: $pd-oxford-blue;
         }
-    
+
         &:hover {
             background: $info;
             border: 2px solid $pd-ochre;
             color: $white;
-    
+
             .pd-icon {
                 fill: $white;
             }
         }
-    
+
         &:focus {
             outline: 2px dotted $pd-ochre;
             outline-offset: 4px;
@@ -570,14 +559,11 @@
     .pd-CTA-7-img {
         border-radius: 50em;
         width: 100px;
-    } 
-
-    
+    }
 
     .pd-CTA-7-mask {
         position: absolute;
         top: 0;
-        
         height: 100px;
         width: 100px;
         overflow: hidden;
@@ -585,7 +571,6 @@
         .pd-CTA-7-circle-outer {
             transition: transform 0.4s;
             position: absolute;
-            
             top: -28px;
             width: 100px;
             height: 100px;
@@ -618,21 +603,22 @@
 
     .pd-CTA-7-mask.pd-left {
         left: 0;
+
         .pd-CTA-7-circle-outer {
             left: -29px;
         }
-
     }
 
     .pd-CTA-7-mask.pd-right {
         right: 0;
+
         .pd-CTA-7-circle-outer {
             right: -29px;
         }
     }
 }
-// end pd-CTA-7
 
+// end pd-CTA-7
 // start pd-CTA-8
 .pd-CTA-8 {
     position: relative;
@@ -770,7 +756,6 @@
             height: 100%;
             background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.05) 60%, rgba(0, 0, 0, 0.3) 100%);
         }
-        
 
         img {
             position: absolute;
@@ -778,8 +763,6 @@
             height: 100%;
             object-fit: cover;
             object-position: center center;
-
-            
         }
     }
 
@@ -793,17 +776,15 @@
             border-radius: 10px;
             background: rgba(255,255,255,0.9);
             padding: 20px;
-
             display: grid;
             gap: 20px;
-            
+
             @media screen and (max-width: 991px) {
                 grid-template-columns: 1fr 1fr;
             }
-            
+
             @media (min-width: 992px) {
                 grid-template-columns: 1fr 1fr 1fr 1fr;
-                
             }
 
             .pd-CTA-8-grid-card {
@@ -811,6 +792,7 @@
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
+
                 img {
                     width: 100%;
                     height: auto;
@@ -1087,6 +1069,49 @@
             height: 100%;
             object-fit: cover;
             object-position: center center;
+        }
+    }
+}
+
+// end pd-CTA-10
+// start pd-CTA-11
+.pd-CTA-11 {
+    p {
+        font-size: $pd-font-lg;
+    }
+
+    .pd-CTA-11-brand-v {
+        position: absolute;
+        // z-index: 1;
+        top: 0;
+        left: 0;
+        border-radius: $pd-border-radius-lg;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        img, svg {
+            position: absolute;
+            transform: translateY(-50%);
+            height: auto;
+            
+            @media screen and (max-width: 991px) {
+                width: 600px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            
+            @media(min-width: 992px) {
+                top: 50%;
+                width: 500px;
+                right: 40px;
+            }
+
+            .svg-fill {
+                fill: rgba($white, 0.1);
+            }
+
         }
     }
 }
