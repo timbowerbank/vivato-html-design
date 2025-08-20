@@ -2373,18 +2373,18 @@
     // }
     .pd-cards-18-card-lg-outer {
         border-radius: $pd-border-radius-sm;
-        min-height: 240px;
+        min-height: 340px;
         background: $primary;
 
         // border: 1px solid #e7e7e7;
         box-shadow: 6px 7px 14px rgba(0, 0, 0, 0.1);
         flex: 1 0 100%;
 
-        @media screen and (max-width: 991px) {
+        @media screen and (max-width: 767px) {
             display: block;
         }
 
-        @media (min-width: 992px) {
+        @media (min-width: 768px) {
             display: flex;
             flex-direction: row;
             align-items: stretch;
@@ -2392,13 +2392,13 @@
 
         // anchor tag wraps image
         .pd-cards-18-card-img-outer {
-            @media screen and (max-width: 991px) {
+            @media screen and (max-width: 767px) {
                 width: 100%;
                 min-height: 300px;
                 border-radius: $pd-border-radius-sm $pd-border-radius-sm 0px 0px;
             }
 
-            @media (min-width: 992px) {
+            @media (min-width: 768px) {
                 min-width: 45%;
                 flex: 0 0 45%;
                 min-height: 240px;
@@ -2417,20 +2417,27 @@
                 height: 100%;
                 object-fit: cover;
                 object-position: center center;
+                transition: transform $pd-transition-speed ease;
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.1);
+                }
             }
         }
 
         .pd-cards-18-card-content-outer {
             flex: 1 0 50%;
-            padding: $pd-block-padding-sm;
+            padding: $pd-block-padding-ex-sm;
             display: flex;
             flex-direction: column;
 
             p {
-                text-transform: uppercase;
+                // text-transform: uppercase;
                 font-weight: $pd-font-weight-light;
-                letter-spacing: $pd-letter-spacing;
-                font-size: $pd-font-ex-sm;
+                // letter-spacing: $pd-letter-spacing;
+                font-size: $pd-font-sm;
                 color: $white;
             }
 
@@ -2438,6 +2445,19 @@
                 font-size: $pd-font-md;
                 font-weight: $pd-font-weight-medium;
                 line-height: $pd-line-height-lg;
+            }
+
+            .pd-cards-18-card-chip {
+                margin-bottom: 12px;
+                margin-right: 10px;
+                display: inline-block;
+                font-size: $pd-font-ex-ex-sm;
+                border: 1px solid rgba($white, 0.3);
+                border-radius: 50em;
+                padding: 7px 20px;
+                text-transform: uppercase;
+                letter-spacing: $pd-letter-spacing;
+                
             }
 
             footer {

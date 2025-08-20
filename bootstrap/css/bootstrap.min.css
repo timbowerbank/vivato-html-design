@@ -19338,7 +19338,7 @@ textarea.form-control-lg {
 }
 .pd-cards-18 .pd-cards-18-card-lg-outer {
   border-radius: 20px;
-  min-height: 240px;
+  min-height: 340px;
   background: #25215F;
   -webkit-box-shadow: 6px 7px 14px rgba(0, 0, 0, 0.1);
           box-shadow: 6px 7px 14px rgba(0, 0, 0, 0.1);
@@ -19346,12 +19346,12 @@ textarea.form-control-lg {
       -ms-flex: 1 0 100%;
           flex: 1 0 100%;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   .pd-cards-18 .pd-cards-18-card-lg-outer {
     display: block;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .pd-cards-18 .pd-cards-18-card-lg-outer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -19370,14 +19370,14 @@ textarea.form-control-lg {
   position: relative;
   overflow: hidden;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   .pd-cards-18 .pd-cards-18-card-lg-outer .pd-cards-18-card-img-outer {
     width: 100%;
     min-height: 300px;
     border-radius: 20px 20px 0px 0px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .pd-cards-18 .pd-cards-18-card-lg-outer .pd-cards-18-card-img-outer {
     min-width: 45%;
     -webkit-box-flex: 0;
@@ -19397,12 +19397,21 @@ textarea.form-control-lg {
      object-fit: cover;
   -o-object-position: center center;
      object-position: center center;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.pd-cards-18 .pd-cards-18-card-lg-outer .pd-cards-18-card-img-outer:hover img {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .pd-cards-18 .pd-cards-18-card-lg-outer .pd-cards-18-card-content-outer {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 50%;
           flex: 1 0 50%;
-  padding: 40px;
+  padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19412,16 +19421,25 @@ textarea.form-control-lg {
           flex-direction: column;
 }
 .pd-cards-18 .pd-cards-18-card-lg-outer .pd-cards-18-card-content-outer p {
-  text-transform: uppercase;
   font-weight: 300;
-  letter-spacing: 0.15em;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #fff;
 }
 .pd-cards-18 .pd-cards-18-card-lg-outer .pd-cards-18-card-content-outer h3, .pd-cards-18 .pd-cards-18-card-lg-outer .pd-cards-18-card-content-outer .h3 {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.4;
+}
+.pd-cards-18 .pd-cards-18-card-lg-outer .pd-cards-18-card-content-outer .pd-cards-18-card-chip {
+  margin-bottom: 12px;
+  margin-right: 10px;
+  display: inline-block;
+  font-size: 0.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50em;
+  padding: 7px 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
 }
 .pd-cards-18 .pd-cards-18-card-lg-outer .pd-cards-18-card-content-outer footer {
   margin-top: auto;
