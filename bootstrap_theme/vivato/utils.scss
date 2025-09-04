@@ -207,13 +207,41 @@
     }
 }
 
+// links
+.pd-link {
+    color: $primary;
+    text-decoration: none;
+    transition: color $pd-transition-speed ease;
+
+    svg {
+        transition: fill $pd-transition-speed ease;
+        fill: $primary;
+        margin-left: 8px;
+    }
+
+    &:hover {
+        color: lighten($primary, 10%);
+
+        svg {
+            fill: lighten($primary, 10%);
+        }
+    }
+}
+
 // headline
 .pd-headline {
     color: $primary;
     font-weight: $pd-font-weight-medium;
-    font-size: $pd-font-ex-lg;
     line-height: $pd-line-height-lg;
     margin-bottom: 0px;
+
+    @media screen and (max-width: 575px) {
+        font-size: $pd-font-lg;
+    }
+
+    @media (min-width: 576px) {
+        font-size: $pd-font-ex-lg;
+    }
 }
 
 .pd-headline.pd-inverted {
@@ -635,8 +663,6 @@
     }
 }
 
-
-
 .pd-brand-v {
     position: absolute;
     top: 0;
@@ -646,19 +672,20 @@
     height: 100%;
     overflow: hidden;
 
-    img, svg {
+    // for V on banners
+    .pd-brand-v-banner-img {
         position: absolute;
         transform: translateY(-50%);
         height: auto;
-        
+
         @media screen and (max-width: 991px) {
             width: 600px;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
-        
-        @media(min-width: 992px) {
+
+        @media (min-width: 992px) {
             top: 50%;
             width: 500px;
             right: 40px;
@@ -666,7 +693,24 @@
 
         .svg-fill {
             fill: rgba($white, 0.1);
-        }
 
+            // $white, 0.1
+        }
+    }
+
+    // for V on cards
+    .pd-brand-v-card-img {
+        position: absolute;
+        top: 52%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        width: 600px;
+        height: auto;
+
+        .svg-fill {
+            fill: rgba($white, 0.4);
+
+            // $white, 0.1
+        }
     }
 }
