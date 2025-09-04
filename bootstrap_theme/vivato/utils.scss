@@ -224,12 +224,12 @@
     font-size: $pd-font-ex-sm;
     text-transform: uppercase;
     letter-spacing: $pd-letter-spacing;
-
     flex-shrink: 1;
     min-width: 0;
     max-width: 100%;
     word-wrap: break-word;
     hyphens: auto;
+
     img,
     svg {
         fill: $secondary;
@@ -669,16 +669,62 @@
 
 .pd-watermark {
     position: absolute;
-    bottom: -4px;
-    width: 100%;
     display: flex;
     justify-content: center;
+    bottom: -4px;
+    width: 100%;
 
-    img,
-    svg {
+    // div wrapping svg
+    .pd-vivato-img-outer {
         width: 80vw;
-        opacity: 0.1;
+        img, svg {
+            opacity: 0.1;
+        }
     }
+
+    // div wrapping svg
+    .pd-v-outer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 800px;
+        overflow: hidden;
+        img,
+        svg {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 600px;
+            height: auto;
+
+            .svg-fill {
+                fill: rgba(255,255,255,0.1);
+            }
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+        .pd-vivato-img-outer {
+            display: none;
+        }
+
+        .pd-v-outer {
+            display: block;
+        }
+    }
+
+    @media (min-width: 576px) {
+        .pd-vivato-img-outer {
+            display: block;
+        }
+
+        .pd-v-outer {
+            display: none;
+        }
+    }
+
 }
 
 // *******************

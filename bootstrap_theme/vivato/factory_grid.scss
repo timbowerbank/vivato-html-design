@@ -1844,12 +1844,13 @@
         background: $pd-black-alpha;
         width: 100%;
         border-radius: $pd-border-radius-sm;
+
         @media screen and (max-width: 575px) {
             padding: $pd-block-padding-ex-sm;
         }
+
         @media (min-width: 576px) {
             padding: $pd-block-padding-sm;
-            
         }
     }
 }
@@ -1962,7 +1963,7 @@
     @media (min-width: 992px) and (max-width: 1199px) {
         & {
             --pd-grid-13-gradient: radial-gradient(
-            circle 1000px at 120% 40%, 
+            circle 1200px at 120% 0%, 
             #{$secondary} 5%, 
             #{$info} 55%, 
             #{$primary} 100%
@@ -1973,7 +1974,7 @@
     @media (min-width: 1200px) {
         & {
             --pd-grid-13-gradient: radial-gradient(
-            circle 1200px at 110% 30%, 
+            circle 1400px at 110% 0%, 
             #{$secondary} 5%, 
             #{$info} 55%, 
             #{$primary} 100%
@@ -2048,12 +2049,12 @@
         border-radius: $pd-border-radius-sm;
         width: 100%;
         background: $pd-black-alpha;
-
         display: flex;
+
         @media screen and (max-width: 767px) {
             flex-direction: column;
         }
-        
+
         @media (min-width: 768px) {
             flex-direction: row;
         }
@@ -2065,9 +2066,10 @@
             overflow: hidden;
 
             @media screen and (max-width: 767px) {
-                flex: 0 0 240px;
+                flex: 0 0 300px;
                 border-top-right-radius: $pd-border-radius-sm;
             }
+
             @media (min-width: 768px) and (max-width: 991px) {
                 flex: 0 0 30%;
                 border-bottom-left-radius: $pd-border-radius-sm;
@@ -2077,18 +2079,16 @@
                 flex: 0 0 24%;
                 border-bottom-left-radius: $pd-border-radius-sm;
             }
-
         }
 
         // *** content ***
         .pd-grid-13-card-content {
-            
             @media screen and (max-width: 575px) {
                 padding: $pd-block-padding-ex-sm;
             }
+
             @media (min-width: 576px) {
                 padding: $pd-block-padding-sm;
-                
             }
         }
     }
