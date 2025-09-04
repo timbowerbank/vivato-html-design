@@ -1952,7 +1952,7 @@
     @media (min-width: 576px) and (max-width: 991px) {
         & {
             --pd-grid-13-gradient: radial-gradient(
-            circle 850px at 120% 30%, 
+            circle 850px at 120% 0%, 
             #{$secondary} 5%, 
             #{$info} 55%, 
             #{$primary} 100%
@@ -1963,7 +1963,7 @@
     @media (min-width: 992px) and (max-width: 1199px) {
         & {
             --pd-grid-13-gradient: radial-gradient(
-            circle 1200px at 120% 0%, 
+            circle 1200px at 140% 0%, 
             #{$secondary} 5%, 
             #{$info} 55%, 
             #{$primary} 100%
@@ -1974,7 +1974,7 @@
     @media (min-width: 1200px) {
         & {
             --pd-grid-13-gradient: radial-gradient(
-            circle 1400px at 110% 0%, 
+            circle 1400px at 130% 0%, 
             #{$secondary} 5%, 
             #{$info} 55%, 
             #{$primary} 100%

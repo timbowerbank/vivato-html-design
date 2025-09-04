@@ -146,7 +146,7 @@
     padding: $pd-btn-padding;
     border: $pd-btn-border;
     text-decoration: none;
-    display: inline-block;
+    // display: inline-block;
     text-transform: uppercase;
     border-radius: 50em;
     font-weight: $pd-font-weight-heavy;
@@ -154,6 +154,14 @@
     letter-spacing: $pd-letter-spacing;
     background-color: $primary;
     transition: background-color 0.3s ease;
+
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-shrink: 0;
+    word-wrap: break-word;
+    hyphens: auto;
 
     img,
     svg {

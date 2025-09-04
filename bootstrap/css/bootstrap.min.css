@@ -32730,7 +32730,7 @@ textarea.form-control-lg {
 @media (min-width: 576px) and (max-width: 991px) {
   .pd-grid-13 {
     --pd-grid-13-gradient: radial-gradient(
-    circle 850px at 120% 30%,
+    circle 850px at 120% 0%,
     #C895FA 5%,
     #E84F49 55%,
     #25215F 100%
@@ -32740,7 +32740,7 @@ textarea.form-control-lg {
 @media (min-width: 992px) and (max-width: 1199px) {
   .pd-grid-13 {
     --pd-grid-13-gradient: radial-gradient(
-    circle 1200px at 120% 0%,
+    circle 1200px at 140% 0%,
     #C895FA 5%,
     #E84F49 55%,
     #25215F 100%
@@ -32750,7 +32750,7 @@ textarea.form-control-lg {
 @media (min-width: 1200px) {
   .pd-grid-13 {
     --pd-grid-13-gradient: radial-gradient(
-    circle 1400px at 110% 0%,
+    circle 1400px at 130% 0%,
     #C895FA 5%,
     #E84F49 55%,
     #25215F 100%
@@ -34125,10 +34125,9 @@ textarea.form-control-lg {
 
 .pd-btn {
   color: #fff;
-  padding: 8px 18px 8px 16px;
+  padding: 8px 24px 8px 22px;
   border: 1px solid #25215F;
   text-decoration: none;
-  display: inline-block;
   text-transform: uppercase;
   border-radius: 50em;
   font-weight: 500;
@@ -34137,6 +34136,25 @@ textarea.form-control-lg {
   background-color: #25215F;
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
 .pd-btn img,
 .pd-btn svg {
