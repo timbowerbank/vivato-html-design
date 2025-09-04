@@ -36260,6 +36260,11 @@ textarea.form-control-lg {
           align-items: flex-start;
   margin-top: 20px;
 }
+@media screen and (max-width: 1049px) {
+  .pd-mega-menu-sub-menu-nav-item {
+    margin-left: 20px;
+  }
+}
 .pd-mega-menu-sub-menu-nav-item .pd-mega-menu-sub-menu-icon-outer {
   margin-right: 8px;
 }
@@ -36291,11 +36296,6 @@ textarea.form-control-lg {
 .pd-mega-menu-sub-menu-nav-item .pd-mega-menu-sub-menu-label-outer strong {
   font-weight: 700;
   padding-right: 20px;
-}
-.pd-mega-menu-sub-menu-nav-item .pd-mega-menu-sub-menu-label-outer p {
-  font-weight: 300;
-  margin-bottom: 0;
-  font-size: 0.7rem;
 }
 .pd-mega-menu-sub-menu-nav-item:hover .pd-mega-menu-sub-menu-label-outer, .pd-mega-menu-sub-menu-nav-item:focus .pd-mega-menu-sub-menu-label-outer {
   color: #000000;
@@ -36507,6 +36507,11 @@ textarea.form-control-lg {
 
 .pd-mega-dropdown-nav-item {
   margin-bottom: 20px;
+}
+@media screen and (max-width: 1049px) {
+  .pd-mega-dropdown-nav-item {
+    margin-left: 20px;
+  }
 }
 .pd-mega-dropdown-nav-item a {
   font-weight: 700;

@@ -317,6 +317,10 @@ $pd-mega-menu-border-color: $secondary;
     align-items: flex-start;
     margin-top: 20px;
 
+    @media screen and (max-width: $pd-mega-mobile-breakpoint) {
+        margin-left: 20px;
+    }
+
     .pd-mega-menu-sub-menu-icon-outer {
         margin-right: 8px;
 
@@ -342,11 +346,11 @@ $pd-mega-menu-border-color: $secondary;
             padding-right: 20px;
         }
 
-        p {
-            font-weight: 300;
-            margin-bottom: 0;
-            font-size: 0.7rem;
-        }
+        // p {
+        //     font-weight: 300;
+        //     margin-bottom: 0;
+        //     font-size: 0.7rem;
+        // }
     }
 
     &:hover,
@@ -562,6 +566,10 @@ $pd-mega-menu-border-color: $secondary;
 // this is the dropdown's li
 .pd-mega-dropdown-nav-item {
     margin-bottom: 20px;
+
+    @media screen and (max-width: $pd-mega-mobile-breakpoint) {
+        margin-left: 20px;
+    }
 
     a {
         font-weight: 700;
