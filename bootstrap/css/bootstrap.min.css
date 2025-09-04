@@ -32632,10 +32632,19 @@ textarea.form-control-lg {
   z-index: 3;
 }
 .pd-grid-10 .pd-grid-10-card-outer {
-  border-radius: 20px;
-  padding: 40px;
   background: rgba(35, 31, 32, 0.4);
   width: 100%;
+  border-radius: 20px;
+}
+@media screen and (max-width: 575px) {
+  .pd-grid-10 .pd-grid-10-card-outer {
+    padding: 30px;
+  }
+}
+@media (min-width: 576px) {
+  .pd-grid-10 .pd-grid-10-card-outer {
+    padding: 40px;
+  }
 }
 .pd-grid-11 .pd-grid-11-outer {
   display: grid;
@@ -34000,6 +34009,58 @@ textarea.form-control-lg {
 .pd-btn.pd-inverted:focus-visible {
   outline: 1px dotted #fff;
   outline-offset: 4px;
+}
+
+.pd-btn-secondary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+  margin-bottom: 12px;
+  text-decoration: none;
+  padding: 7px 24px 7px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50em;
+  color: #fff;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  min-width: 0;
+  max-width: 100%;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+.pd-btn-secondary img,
+.pd-btn-secondary svg {
+  fill: #C895FA;
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+}
+.pd-btn-secondary:hover {
+  background: #fff;
+  color: #25215F;
+  border: 1px solid #25215F;
+}
+.pd-btn-secondary:hover svg {
+  fill: #E84F49;
 }
 
 .pd-link {

@@ -207,6 +207,48 @@
     }
 }
 
+.pd-btn-secondary {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: transparent;
+    transition: background-color $pd-transition-speed ease;
+    margin-right: 10px;
+    margin-bottom: 12px;
+    text-decoration: none;
+    padding: 7px 24px 7px 20px;
+    border: 1px solid rgba($white, 0.3);
+    border-radius: 50em;
+    color: $white;
+    font-size: $pd-font-ex-sm;
+    text-transform: uppercase;
+    letter-spacing: $pd-letter-spacing;
+
+    flex-shrink: 1;
+    min-width: 0;
+    max-width: 100%;
+    word-wrap: break-word;
+    hyphens: auto;
+    img,
+    svg {
+        fill: $secondary;
+        width: 16px;
+        height: 16px;
+        margin-left: 8px;
+    }
+
+    &:hover {
+        background: $white;
+        color: $primary;
+        border: 1px solid $primary;
+
+        svg {
+            fill: $info;
+        }
+    }
+}
+
 // links
 .pd-link {
     color: $primary;

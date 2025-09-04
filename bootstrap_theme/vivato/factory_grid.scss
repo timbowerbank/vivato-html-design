@@ -1841,10 +1841,16 @@
     }
 
     .pd-grid-10-card-outer {
-        border-radius: $pd-border-radius-sm;
-        padding: $pd-block-padding-sm;
         background: $pd-black-alpha;
         width: 100%;
+        border-radius: $pd-border-radius-sm;
+        @media screen and (max-width: 575px) {
+            padding: $pd-block-padding-ex-sm;
+        }
+        @media (min-width: 576px) {
+            padding: $pd-block-padding-sm;
+            
+        }
     }
 }
 
