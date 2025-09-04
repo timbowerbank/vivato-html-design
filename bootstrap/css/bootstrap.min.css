@@ -32711,6 +32711,177 @@ textarea.form-control-lg {
 .pd-grid-11 .pd-grid-11-chip:hover svg {
   fill: #E84F49;
 }
+
+.pd-grid-13 {
+  min-height: 400px;
+  position: relative;
+  background: var(--pd-grid-13-gradient);
+}
+@media screen and (max-width: 575px) {
+  .pd-grid-13 {
+    --pd-grid-13-gradient: radial-gradient(
+    circle 500px at 130% 0%,
+    #C895FA 5%,
+    #E84F49 55%,
+    #25215F 100%
+    );
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .pd-grid-13 {
+    --pd-grid-13-gradient: radial-gradient(
+    circle 850px at 120% 30%,
+    #C895FA 5%,
+    #E84F49 55%,
+    #25215F 100%
+    );
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .pd-grid-13 {
+    --pd-grid-13-gradient: radial-gradient(
+    circle 1000px at 120% 40%,
+    #C895FA 5%,
+    #E84F49 55%,
+    #25215F 100%
+    );
+  }
+}
+@media (min-width: 1200px) {
+  .pd-grid-13 {
+    --pd-grid-13-gradient: radial-gradient(
+    circle 1200px at 110% 30%,
+    #C895FA 5%,
+    #E84F49 55%,
+    #25215F 100%
+    );
+  }
+}
+.pd-grid-13 .pd-logo-13-gradient-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background: var(--pd-grid-13-gradient);
+  -webkit-mask-image: url(/images/design-assets/_vivato/logo-vivato-mask.svg);
+  mask-image: url(/images/design-assets/_vivato/logo-vivato-mask.svg);
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+@media screen and (max-width: 575px) {
+  .pd-grid-13 .pd-logo-13-gradient-background {
+    mask-size: 300px 72px;
+    -webkit-mask-size: 300px 72px;
+    mask-position: center top;
+    -webkit-mask-position: center top;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .pd-grid-13 .pd-logo-13-gradient-background {
+    mask-size: 500px 120px;
+    -webkit-mask-size: 500px 120px;
+    mask-position: center top;
+    -webkit-mask-position: center top;
+  }
+}
+@media (min-width: 992px) {
+  .pd-grid-13 .pd-logo-13-gradient-background {
+    mask-size: 800px 192px;
+    -webkit-mask-size: 800px 192px;
+    mask-position: center top;
+    -webkit-mask-position: center top;
+  }
+}
+.pd-grid-13 .pd-grid-13-spacer-white {
+  position: relative;
+  z-index: 0;
+  background: white;
+  top: -1px;
+}
+@media screen and (max-width: 575px) {
+  .pd-grid-13 .pd-grid-13-spacer-white {
+    width: 100%;
+    height: 72px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .pd-grid-13 .pd-grid-13-spacer-white {
+    width: 100%;
+    height: 120px;
+  }
+}
+@media (min-width: 992px) {
+  .pd-grid-13 .pd-grid-13-spacer-white {
+    width: 100%;
+    height: 192px;
+  }
+}
+.pd-grid-13 .container {
+  z-index: 3;
+}
+.pd-grid-13 .pd-grid-13-card-outer {
+  border-radius: 20px;
+  width: 100%;
+  background: rgba(35, 31, 32, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .pd-grid-13 .pd-grid-13-card-outer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (min-width: 768px) {
+  .pd-grid-13 .pd-grid-13-card-outer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+.pd-grid-13 .pd-grid-13-card-outer .pd-grid-13-img-outer {
+  position: relative;
+  border-top-left-radius: 20px;
+  overflow: hidden;
+}
+@media screen and (max-width: 767px) {
+  .pd-grid-13 .pd-grid-13-card-outer .pd-grid-13-img-outer {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 240px;
+            flex: 0 0 240px;
+    border-top-right-radius: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .pd-grid-13 .pd-grid-13-card-outer .pd-grid-13-img-outer {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 30%;
+            flex: 0 0 30%;
+    border-bottom-left-radius: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .pd-grid-13 .pd-grid-13-card-outer .pd-grid-13-img-outer {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 24%;
+            flex: 0 0 24%;
+    border-bottom-left-radius: 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .pd-grid-13 .pd-grid-13-card-outer .pd-grid-13-card-content {
+    padding: 30px;
+  }
+}
+@media (min-width: 576px) {
+  .pd-grid-13 .pd-grid-13-card-outer .pd-grid-13-card-content {
+    padding: 40px;
+  }
+}
 .pd-widget-1 .pd-widget-1-label {
   font-size: 1rem;
   font-weight: 700;
