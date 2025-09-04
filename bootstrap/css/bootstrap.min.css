@@ -34663,12 +34663,7 @@ textarea.form-control-lg {
           justify-content: center;
   bottom: -4px;
   width: 100%;
-}
-.pd-watermark .pd-vivato-img-outer {
-  width: 80vw;
-}
-.pd-watermark .pd-vivato-img-outer img, .pd-watermark .pd-vivato-img-outer svg {
-  opacity: 0.1;
+  z-index: 2;
 }
 .pd-watermark .pd-v-outer {
   position: absolute;
@@ -34692,6 +34687,12 @@ textarea.form-control-lg {
 .pd-watermark .pd-v-outer img .svg-fill,
 .pd-watermark .pd-v-outer svg .svg-fill {
   fill: rgba(255, 255, 255, 0.1);
+}
+.pd-watermark .pd-vivato-img-outer {
+  width: 80vw;
+}
+.pd-watermark .pd-vivato-img-outer img, .pd-watermark .pd-vivato-img-outer svg {
+  opacity: 0.1;
 }
 @media screen and (max-width: 575px) {
   .pd-watermark .pd-vivato-img-outer {

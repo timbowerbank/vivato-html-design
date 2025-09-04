@@ -673,14 +673,7 @@
     justify-content: center;
     bottom: -4px;
     width: 100%;
-
-    // div wrapping svg
-    .pd-vivato-img-outer {
-        width: 80vw;
-        img, svg {
-            opacity: 0.1;
-        }
-    }
+    z-index: 2;
 
     // div wrapping svg
     .pd-v-outer {
@@ -704,6 +697,16 @@
             }
         }
     }
+
+    // div wrapping svg
+    .pd-vivato-img-outer {
+        width: 80vw;
+        img, svg {
+            opacity: 0.1;
+        }
+    }
+
+    
 
     @media screen and (max-width: 575px) {
         .pd-vivato-img-outer {
