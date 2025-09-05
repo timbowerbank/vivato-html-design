@@ -22769,6 +22769,7 @@ textarea.form-control-lg {
   color: #fff;
   margin-bottom: 10px;
   font-size: 0.9rem;
+  max-width: 300px;
 }
 .pd-footer-3 .pd-divider {
   background-color: #E84F49;
@@ -34693,7 +34694,8 @@ textarea.form-control-lg {
 .pd-watermark .pd-vivato-img-outer {
   width: 80vw;
 }
-.pd-watermark .pd-vivato-img-outer img, .pd-watermark .pd-vivato-img-outer svg {
+.pd-watermark .pd-vivato-img-outer img,
+.pd-watermark .pd-vivato-img-outer svg {
   opacity: 0.1;
 }
 @media screen and (max-width: 575px) {
