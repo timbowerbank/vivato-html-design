@@ -1207,20 +1207,18 @@
 // start pd-testimonial-slider-9
 .pd-testimonial-slider-9 {
     .pd-testimonial-slider-9-card-outer {
-        
-        
         p {
             font-weight: $pd-font-weight-light;
             color: $primary;
             line-height: $pd-line-height-ex-lg;
         }
+
         @media screen and (max-width: 575px) {
             font-size: $pd-font-md;
         }
-        
+
         @media (min-width: 576px) {
             font-size: $pd-font-lg;
-
         }
 
         footer p {
@@ -1272,14 +1270,15 @@
         button.glide__arrow--left {
             margin-right: 16px;
 
-            img, svg {
+            img,
+            svg {
                 margin-right: 5px;
             }
         }
 
         button.glide__arrow--right {
-
-            img, svg {
+            img,
+            svg {
                 margin-left: 5px;
             }
         }

@@ -2390,10 +2390,9 @@
             align-items: stretch;
         }
 
-        // anchor tag wraps image
-        .pd-cards-18-card-img-outer {
+        .pd-cards-18-card-left-col {
+            position: relative;
             @media screen and (max-width: 767px) {
-                width: 100%;
                 min-height: 300px;
                 border-radius: $pd-border-radius-sm $pd-border-radius-sm 0px 0px;
             }
@@ -2403,29 +2402,72 @@
                 flex: 0 0 45%;
                 min-height: 240px;
                 border-radius: $pd-border-radius-sm 0px 0px $pd-border-radius-sm;
+
             }
 
-            display: inline-block;
-            position: relative;
-            overflow: hidden;
 
-            img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                object-position: center center;
-                transition: transform $pd-transition-speed ease;
-            }
-
-            &:hover {
+            // anchor tag wraps image
+            .pd-cards-18-card-img-outer {
+                @media screen and (max-width: 767px) {
+                    width: 100%;
+                    min-height: 300px;
+                    border-radius: $pd-border-radius-sm $pd-border-radius-sm 0px 0px;
+                }
+    
+                @media (min-width: 768px) {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: $pd-border-radius-sm 0px 0px $pd-border-radius-sm;
+                }
+    
+                display: block;
+                position: relative;
+                overflow: hidden;
+    
                 img {
-                    transform: scale(1.1);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center center;
+                    transition: transform $pd-transition-speed ease;
+                }
+    
+                &:hover {
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+    
+                
+            }
+
+            // play button
+            .pd-cards-18-play-icon {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                cursor: pointer;
+
+                img,
+                svg {
+                    width: 120px;
+                    height: 120px;
+                    transition: transform $pd-transition-speed ease;
+                }
+
+                &:hover {
+                    img,
+                    svg {
+                        transform: scale(1.1);
+                    }
                 }
             }
         }
+
 
         .pd-cards-18-card-content-outer {
             flex: 1 0 50%;

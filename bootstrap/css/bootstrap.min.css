@@ -19424,20 +19424,17 @@ textarea.form-control-lg {
             align-items: stretch;
   }
 }
-.pd-cards-18 .pd-cards-18-card-lg-outer .pd-cards-18-card-img-outer {
-  display: inline-block;
+.pd-cards-18 .pd-cards-18-card-lg-outer .pd-cards-18-card-left-col {
   position: relative;
-  overflow: hidden;
 }
 @media screen and (max-width: 767px) {
-  .pd-cards-18 .pd-cards-18-card-lg-outer .pd-cards-18-card-img-outer {
-    width: 100%;
+  .pd-cards-18 .pd-cards-18-card-lg-outer .pd-cards-18-card-left-col {
     min-height: 300px;
     border-radius: 20px 20px 0px 0px;
   }
 }
 @media (min-width: 768px) {
-  .pd-cards-18 .pd-cards-18-card-lg-outer .pd-cards-18-card-img-outer {
+  .pd-cards-18 .pd-cards-18-card-lg-outer .pd-cards-18-card-left-col {
     min-width: 45%;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 45%;
@@ -19446,7 +19443,26 @@ textarea.form-control-lg {
     border-radius: 20px 0px 0px 20px;
   }
 }
-.pd-cards-18 .pd-cards-18-card-lg-outer .pd-cards-18-card-img-outer img {
+.pd-cards-18 .pd-cards-18-card-lg-outer .pd-cards-18-card-left-col .pd-cards-18-card-img-outer {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (max-width: 767px) {
+  .pd-cards-18 .pd-cards-18-card-lg-outer .pd-cards-18-card-left-col .pd-cards-18-card-img-outer {
+    width: 100%;
+    min-height: 300px;
+    border-radius: 20px 20px 0px 0px;
+  }
+}
+@media (min-width: 768px) {
+  .pd-cards-18 .pd-cards-18-card-lg-outer .pd-cards-18-card-left-col .pd-cards-18-card-img-outer {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 0px 0px 20px;
+  }
+}
+.pd-cards-18 .pd-cards-18-card-lg-outer .pd-cards-18-card-left-col .pd-cards-18-card-img-outer img {
   position: absolute;
   top: 0;
   left: 0;
@@ -19461,7 +19477,31 @@ textarea.form-control-lg {
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
-.pd-cards-18 .pd-cards-18-card-lg-outer .pd-cards-18-card-img-outer:hover img {
+.pd-cards-18 .pd-cards-18-card-lg-outer .pd-cards-18-card-left-col .pd-cards-18-card-img-outer:hover img {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.pd-cards-18 .pd-cards-18-card-lg-outer .pd-cards-18-card-left-col .pd-cards-18-play-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.pd-cards-18 .pd-cards-18-card-lg-outer .pd-cards-18-card-left-col .pd-cards-18-play-icon img,
+.pd-cards-18 .pd-cards-18-card-lg-outer .pd-cards-18-card-left-col .pd-cards-18-play-icon svg {
+  width: 120px;
+  height: 120px;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.pd-cards-18 .pd-cards-18-card-lg-outer .pd-cards-18-card-left-col .pd-cards-18-play-icon:hover img,
+.pd-cards-18 .pd-cards-18-card-lg-outer .pd-cards-18-card-left-col .pd-cards-18-play-icon:hover svg {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
