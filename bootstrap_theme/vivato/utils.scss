@@ -529,6 +529,7 @@
 // *********************
 // *** IMAGE EFFECTS ***
 // *********************
+// nested in a card
 .pd-special-img-outer {
     position: relative;
     overflow: hidden;
@@ -556,12 +557,12 @@
 
 
         @media screen and (max-width: 340px) {
-            width: 280px;
+            width: 100%;
             height: 373px;
         }
 
         @media (min-width: 341px) and (max-width: 575px) {
-            width: 320px;
+            width: 100%;
             height: 427px;
         }
 
@@ -605,74 +606,74 @@
 }
 
 // nearest to main image
-.pd-special-img-outer-1 {
-    position: relative;
-    overflow: hidden;
-    border-top-right-radius: $pd-border-radius-sm;
-    border-bottom-right-radius: $pd-border-radius-sm;
+// .pd-special-img-outer-1 {
+//     position: relative;
+//     overflow: hidden;
+//     border-top-right-radius: $pd-border-radius-sm;
+//     border-bottom-right-radius: $pd-border-radius-sm;
 
-    @media screen and (max-width: 575px) {
-        width: 31px;
-        height: 256px;
-    }
+//     @media screen and (max-width: 575px) {
+//         width: 31px;
+//         height: 256px;
+//     }
 
-    @media (min-width: 576px) and (max-width: 991px) {
-        width: 55px;
-        height: 452px;
-    }
+//     @media (min-width: 576px) and (max-width: 991px) {
+//         width: 55px;
+//         height: 452px;
+//     }
 
-    @media (min-width: 992px) and (max-width: 1199px) {
-        width: 40px;
-        height: 332px;
-    }
+//     @media (min-width: 992px) and (max-width: 1199px) {
+//         width: 40px;
+//         height: 332px;
+//     }
 
-    @media (min-width: 1200px) {
-        width: 48px;
-        height: 400px;
-    }
-}
+//     @media (min-width: 1200px) {
+//         width: 48px;
+//         height: 400px;
+//     }
+// }
 
-.pd-special-img-outer-1.pd-left {
-    border-top-left-radius: $pd-border-radius-sm;
-    border-bottom-left-radius: $pd-border-radius-sm;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
+// .pd-special-img-outer-1.pd-left {
+//     border-top-left-radius: $pd-border-radius-sm;
+//     border-bottom-left-radius: $pd-border-radius-sm;
+//     border-top-right-radius: 0;
+//     border-bottom-right-radius: 0;
+// }
 
 // furthest from main image
-.pd-special-img-outer-2 {
-    position: relative;
-    overflow: hidden;
-    border-top-right-radius: $pd-border-radius-sm;
-    border-bottom-right-radius: $pd-border-radius-sm;
+// .pd-special-img-outer-2 {
+//     position: relative;
+//     overflow: hidden;
+//     border-top-right-radius: $pd-border-radius-sm;
+//     border-bottom-right-radius: $pd-border-radius-sm;
 
-    @media screen and (max-width: 575px) {
-        width: 24px;
-        height: 192px;
-    }
+//     @media screen and (max-width: 575px) {
+//         width: 24px;
+//         height: 192px;
+//     }
 
-    @media (min-width: 576px) and (max-width: 991px) {
-        width: 42px;
-        height: 339px;
-    }
+//     @media (min-width: 576px) and (max-width: 991px) {
+//         width: 42px;
+//         height: 339px;
+//     }
 
-    @media (min-width: 992px) and (max-width: 1199px) {
-        width: 31px;
-        height: 249px;
-    }
+//     @media (min-width: 992px) and (max-width: 1199px) {
+//         width: 31px;
+//         height: 249px;
+//     }
 
-    @media (min-width: 1200px) {
-        width: 37px;
-        height: 300px;
-    }
-}
+//     @media (min-width: 1200px) {
+//         width: 37px;
+//         height: 300px;
+//     }
+// }
 
-.pd-special-img-outer-2.pd-left {
-    border-top-left-radius: $pd-border-radius-sm;
-    border-bottom-left-radius: $pd-border-radius-sm;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
+// .pd-special-img-outer-2.pd-left {
+//     border-top-left-radius: $pd-border-radius-sm;
+//     border-bottom-left-radius: $pd-border-radius-sm;
+//     border-top-right-radius: 0;
+//     border-bottom-right-radius: 0;
+// }
 
 // image border-radius
 .pd-image-border-radius {
