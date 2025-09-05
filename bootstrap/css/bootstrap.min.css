@@ -22740,10 +22740,17 @@ textarea.form-control-lg {
 .pd-footer-3 {
   background: -webkit-gradient(linear, left top, left bottom, from(#25215f), color-stop(30%, rgba(37, 33, 95, 0.9)), color-stop(60%, rgba(37, 33, 95, 0.9)), to(#25215f));
   background: linear-gradient(#25215f 0%, rgba(37, 33, 95, 0.9) 30%, rgba(37, 33, 95, 0.9) 60%, #25215f 100%);
+  position: relative;
 }
 .pd-footer-3 p {
   margin-bottom: 3px;
   font-size: 0.9rem;
+}
+.pd-footer-3 .pd-footer-3-card {
+  padding: 30px;
+  color: #25215F;
+  background: #f8f9fa;
+  border-radius: 20px;
 }
 .pd-footer-3 .pd-icon-card-link {
   display: block;
@@ -22803,16 +22810,6 @@ textarea.form-control-lg {
     width: auto;
     height: 40px;
   }
-}
-.pd-footer-3 .pd-review-card {
-  text-decoration: none;
-}
-.pd-footer-3 .pd-review-card .pd-rating span {
-  color: #fff;
-}
-.pd-footer-3 .pd-review-card .pd-rating img {
-  margin-bottom: 4px;
-  margin-right: 2px;
 }
 
 .pd-footer-4 {
@@ -22919,7 +22916,8 @@ textarea.form-control-lg {
   border: 2px solid white;
   color: #2a2a2a;
 }
-.pd-footer-4 .pd-footer-4-grid .pd-footer-4-grid-card:hover .pd-footer-4-grid-card-right-col h2, .pd-footer-4 .pd-footer-4-grid .pd-footer-4-grid-card:hover .pd-footer-4-grid-card-right-col .h2, .pd-footer-4 .pd-footer-4-grid .pd-footer-4-grid-card:hover .pd-footer-4-grid-card-right-col p {
+.pd-footer-4 .pd-footer-4-grid .pd-footer-4-grid-card:hover .pd-footer-4-grid-card-right-col h2, .pd-footer-4 .pd-footer-4-grid .pd-footer-4-grid-card:hover .pd-footer-4-grid-card-right-col .h2,
+.pd-footer-4 .pd-footer-4-grid .pd-footer-4-grid-card:hover .pd-footer-4-grid-card-right-col p {
   color: #2a2a2a;
 }
 @media screen and (max-width: 991px) {
