@@ -146,6 +146,7 @@
     padding: $pd-btn-padding;
     border: $pd-btn-border;
     text-decoration: none;
+
     // display: inline-block;
     text-transform: uppercase;
     border-radius: 50em;
@@ -154,7 +155,6 @@
     letter-spacing: $pd-letter-spacing;
     background-color: $primary;
     transition: background-color 0.3s ease;
-
     display: inline-flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -186,6 +186,11 @@
         outline: 1px dotted $primary;
         outline-offset: 4px;
     }
+}
+
+.pd-btn.pd-btn-lg {
+    font-size: $pd-font-sm;
+    padding: $pd-btn-padding-lg;
 }
 
 .pd-btn.pd-inverted {
@@ -536,51 +541,45 @@
     border-radius: $pd-border-radius-lg;
 
     // @media screen and (max-width: 575px) {
-    //     width: 240px;
-    //     height: 320px;
+    // width: 240px;
+    // height: 320px;
     // }
-
     // @media (min-width: 576px) and (max-width: 991px) {
-    //     width: 424px;
-    //     height: 565px;
+    // width: 424px;
+    // height: 565px;
     // }
-
     // @media (min-width: 992px) and (max-width: 1199px) {
-    //     width: 312px;
-    //     height: 416px;
+    // width: 312px;
+    // height: 416px;
     // }
-
     // @media (min-width: 1200px) {
-    //     width: 376px;
-    //     height: 500px;
+    // width: 376px;
+    // height: 500px;
     // }
+    @media screen and (max-width: 340px) {
+        width: 100%;
+        height: 373px;
+    }
 
+    @media (min-width: 341px) and (max-width: 575px) {
+        width: 100%;
+        height: 427px;
+    }
 
-        @media screen and (max-width: 340px) {
-            width: 100%;
-            height: 373px;
-        }
+    @media (min-width: 576px) and (max-width: 991px) {
+        width: 424px;
+        height: 565px;
+    }
 
-        @media (min-width: 341px) and (max-width: 575px) {
-            width: 100%;
-            height: 427px;
-        }
+    @media (min-width: 992px) and (max-width: 1199px) {
+        width: 312px;
+        height: 416px;
+    }
 
-        @media (min-width: 576px) and (max-width: 991px) {
-            width: 424px;
-            height: 565px;
-        }
-
-        @media (min-width: 992px) and (max-width: 1199px) {
-            width: 312px;
-            height: 416px;
-        }
-
-        @media (min-width: 1200px) {
-            width: 376px;
-            height: 500px;
-        }
-
+    @media (min-width: 1200px) {
+        width: 376px;
+        height: 500px;
+    }
 
     .pd-special-img-play-icon {
         position: absolute;
@@ -607,74 +606,62 @@
 
 // nearest to main image
 // .pd-special-img-outer-1 {
-//     position: relative;
-//     overflow: hidden;
-//     border-top-right-radius: $pd-border-radius-sm;
-//     border-bottom-right-radius: $pd-border-radius-sm;
-
-//     @media screen and (max-width: 575px) {
-//         width: 31px;
-//         height: 256px;
-//     }
-
-//     @media (min-width: 576px) and (max-width: 991px) {
-//         width: 55px;
-//         height: 452px;
-//     }
-
-//     @media (min-width: 992px) and (max-width: 1199px) {
-//         width: 40px;
-//         height: 332px;
-//     }
-
-//     @media (min-width: 1200px) {
-//         width: 48px;
-//         height: 400px;
-//     }
+// position: relative;
+// overflow: hidden;
+// border-top-right-radius: $pd-border-radius-sm;
+// border-bottom-right-radius: $pd-border-radius-sm;
+// @media screen and (max-width: 575px) {
+// width: 31px;
+// height: 256px;
 // }
-
+// @media (min-width: 576px) and (max-width: 991px) {
+// width: 55px;
+// height: 452px;
+// }
+// @media (min-width: 992px) and (max-width: 1199px) {
+// width: 40px;
+// height: 332px;
+// }
+// @media (min-width: 1200px) {
+// width: 48px;
+// height: 400px;
+// }
+// }
 // .pd-special-img-outer-1.pd-left {
-//     border-top-left-radius: $pd-border-radius-sm;
-//     border-bottom-left-radius: $pd-border-radius-sm;
-//     border-top-right-radius: 0;
-//     border-bottom-right-radius: 0;
+// border-top-left-radius: $pd-border-radius-sm;
+// border-bottom-left-radius: $pd-border-radius-sm;
+// border-top-right-radius: 0;
+// border-bottom-right-radius: 0;
 // }
-
 // furthest from main image
 // .pd-special-img-outer-2 {
-//     position: relative;
-//     overflow: hidden;
-//     border-top-right-radius: $pd-border-radius-sm;
-//     border-bottom-right-radius: $pd-border-radius-sm;
-
-//     @media screen and (max-width: 575px) {
-//         width: 24px;
-//         height: 192px;
-//     }
-
-//     @media (min-width: 576px) and (max-width: 991px) {
-//         width: 42px;
-//         height: 339px;
-//     }
-
-//     @media (min-width: 992px) and (max-width: 1199px) {
-//         width: 31px;
-//         height: 249px;
-//     }
-
-//     @media (min-width: 1200px) {
-//         width: 37px;
-//         height: 300px;
-//     }
+// position: relative;
+// overflow: hidden;
+// border-top-right-radius: $pd-border-radius-sm;
+// border-bottom-right-radius: $pd-border-radius-sm;
+// @media screen and (max-width: 575px) {
+// width: 24px;
+// height: 192px;
 // }
-
+// @media (min-width: 576px) and (max-width: 991px) {
+// width: 42px;
+// height: 339px;
+// }
+// @media (min-width: 992px) and (max-width: 1199px) {
+// width: 31px;
+// height: 249px;
+// }
+// @media (min-width: 1200px) {
+// width: 37px;
+// height: 300px;
+// }
+// }
 // .pd-special-img-outer-2.pd-left {
-//     border-top-left-radius: $pd-border-radius-sm;
-//     border-bottom-left-radius: $pd-border-radius-sm;
-//     border-top-right-radius: 0;
-//     border-bottom-right-radius: 0;
+// border-top-left-radius: $pd-border-radius-sm;
+// border-bottom-left-radius: $pd-border-radius-sm;
+// border-top-right-radius: 0;
+// border-bottom-right-radius: 0;
 // }
-
 // image border-radius
 .pd-image-border-radius {
     border-radius: $pd-border-radius-sm;
@@ -719,6 +706,7 @@
         width: 100%;
         height: 800px;
         overflow: hidden;
+
         img,
         svg {
             position: absolute;
@@ -737,12 +725,12 @@
     // div wrapping svg
     .pd-vivato-img-outer {
         width: 80vw;
-        img, svg {
+
+        img,
+        svg {
             opacity: 0.1;
         }
     }
-
-    
 
     @media screen and (max-width: 575px) {
         .pd-vivato-img-outer {
@@ -763,7 +751,6 @@
             display: none;
         }
     }
-
 }
 
 // *******************

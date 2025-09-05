@@ -34226,6 +34226,11 @@ textarea.form-control-lg {
   outline-offset: 4px;
 }
 
+.pd-btn.pd-btn-lg {
+  font-size: 1rem;
+  padding: 12px 28px 12px 26px;
+}
+
 .pd-btn.pd-inverted {
   color: #fff;
   border: 1px solid #E84F49;
