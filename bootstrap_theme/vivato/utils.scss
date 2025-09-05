@@ -534,25 +534,52 @@
     overflow: hidden;
     border-radius: $pd-border-radius-lg;
 
-    @media screen and (max-width: 575px) {
-        width: 240px;
-        height: 320px;
-    }
+    // @media screen and (max-width: 575px) {
+    //     width: 240px;
+    //     height: 320px;
+    // }
 
-    @media (min-width: 576px) and (max-width: 991px) {
-        width: 424px;
-        height: 565px;
-    }
+    // @media (min-width: 576px) and (max-width: 991px) {
+    //     width: 424px;
+    //     height: 565px;
+    // }
 
-    @media (min-width: 992px) and (max-width: 1199px) {
-        width: 312px;
-        height: 416px;
-    }
+    // @media (min-width: 992px) and (max-width: 1199px) {
+    //     width: 312px;
+    //     height: 416px;
+    // }
 
-    @media (min-width: 1200px) {
-        width: 376px;
-        height: 500px;
-    }
+    // @media (min-width: 1200px) {
+    //     width: 376px;
+    //     height: 500px;
+    // }
+
+
+        @media screen and (max-width: 340px) {
+            width: 280px;
+            height: 373px;
+        }
+
+        @media (min-width: 341px) and (max-width: 575px) {
+            width: 320px;
+            height: 427px;
+        }
+
+        @media (min-width: 576px) and (max-width: 991px) {
+            width: 424px;
+            height: 565px;
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            width: 312px;
+            height: 416px;
+        }
+
+        @media (min-width: 1200px) {
+            width: 376px;
+            height: 500px;
+        }
+
 
     .pd-special-img-play-icon {
         position: absolute;

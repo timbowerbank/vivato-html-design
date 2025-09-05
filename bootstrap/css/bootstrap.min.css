@@ -34570,10 +34570,16 @@ textarea.form-control-lg {
   overflow: hidden;
   border-radius: 40px;
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 340px) {
   .pd-special-img-outer {
-    width: 240px;
-    height: 320px;
+    width: 280px;
+    height: 373px;
+  }
+}
+@media (min-width: 341px) and (max-width: 575px) {
+  .pd-special-img-outer {
+    width: 320px;
+    height: 427px;
   }
 }
 @media (min-width: 576px) and (max-width: 991px) {
