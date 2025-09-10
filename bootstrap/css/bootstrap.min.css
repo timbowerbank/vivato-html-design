@@ -16293,7 +16293,8 @@ textarea.form-control-lg {
   margin-bottom: 0px;
   font-weight: 300;
 }
-.pd-heroesHalf-7 .pd-heroesHalf-7-content-outer .pd-heroesHalf-7-notification-outer .pd-heroesHalf-7-mobile-outer p strong, .pd-heroesHalf-7 .pd-heroesHalf-7-content-outer .pd-heroesHalf-7-notification-outer .pd-heroesHalf-7-mobile-outer p em {
+.pd-heroesHalf-7 .pd-heroesHalf-7-content-outer .pd-heroesHalf-7-notification-outer .pd-heroesHalf-7-mobile-outer p strong,
+.pd-heroesHalf-7 .pd-heroesHalf-7-content-outer .pd-heroesHalf-7-notification-outer .pd-heroesHalf-7-mobile-outer p em {
   font-style: normal;
   font-weight: 800;
 }
@@ -16441,6 +16442,16 @@ textarea.form-control-lg {
 @media (min-width: 768px) {
   .pd-heroesHalf-8 .pd-heroesHalf-8-img-outer {
     height: 100%;
+    border-radius: 0 40px 40px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pd-heroesHalf-8 .pd-heroesHalf-8-img-outer .pd-brand-v {
+    border-radius: 40px 40px 0 0;
+  }
+}
+@media (min-width: 768px) {
+  .pd-heroesHalf-8 .pd-heroesHalf-8-img-outer .pd-brand-v {
     border-radius: 0 40px 40px 0;
   }
 }
@@ -22535,6 +22546,30 @@ textarea.form-control-lg {
     bottom: 60px;
     right: 60px;
     background-color: #25215F;
+  }
+}
+.pd-section-26 .pd-section-26-grid-outer {
+  display: grid;
+  gap: 40px;
+}
+@media screen and (max-width: 575px) {
+  .pd-section-26 .pd-section-26-grid-outer {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .pd-section-26 .pd-section-26-grid-outer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .pd-section-26 .pd-section-26-grid-outer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 992px) {
+  .pd-section-26 .pd-section-26-grid-outer {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -34341,6 +34376,13 @@ textarea.form-control-lg {
   fill: #342e85;
 }
 
+.pd-link.pd-inverted {
+  color: #fff;
+}
+.pd-link.pd-inverted svg {
+  fill: #fff;
+}
+
 .pd-headline {
   color: #25215F;
   font-weight: 400;
@@ -34485,6 +34527,10 @@ textarea.form-control-lg {
 
 .pd-card-headline.pd-inverted {
   color: #fff;
+}
+
+.pd-card-headline.pd-font-md {
+  font-size: 1.4rem;
 }
 
 .pd-card-body {
@@ -34809,6 +34855,10 @@ textarea.form-control-lg {
 }
 .pd-brand-v .pd-brand-v-card-img .svg-fill {
   fill: rgba(255, 255, 255, 0.4);
+}
+
+.pd-brand-badge-sm {
+  max-width: 220px;
 }
 .pd-tabs-1 .pd-tabs-1-outer {
   background-color: #e9ecef;

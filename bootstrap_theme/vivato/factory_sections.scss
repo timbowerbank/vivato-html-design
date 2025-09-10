@@ -2711,3 +2711,37 @@
     }
 }
 
+// end pd-section-25
+
+// start pd-section-26
+.pd-section-26 {
+
+    .pd-section-26-grid-outer {
+        display: grid;
+        gap: $pd-grid-gap-lg;
+        @media screen and (max-width: 575px) {
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 576px) and (max-width: 767px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (min-width: 992px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        // .pd-section-26-grid-card {
+
+
+        // }
+
+        
+    }
+
+}
+

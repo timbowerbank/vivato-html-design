@@ -283,6 +283,14 @@
     }
 }
 
+.pd-link.pd-inverted {
+    color: $white;
+
+    svg {
+        fill: $white;
+    }
+}
+
 // headline
 .pd-headline {
     color: $primary;
@@ -425,6 +433,10 @@
 
 .pd-card-headline.pd-inverted {
     color: $white;
+}
+
+.pd-card-headline.pd-font-md {
+    font-size: $pd-font-md;
 }
 
 .pd-card-body {
@@ -837,4 +849,8 @@
             // $white, 0.1
         }
     }
+}
+
+.pd-brand-badge-sm {
+    max-width: 220px;
 }
