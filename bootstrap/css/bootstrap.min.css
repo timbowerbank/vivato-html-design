@@ -30332,6 +30332,95 @@ textarea.form-control-lg {
     width: 42px;
   }
 }
+.pd-blog-post-3 .pd-intro-heading-sm {
+  text-decoration: none;
+}
+@media screen and (max-width: 575px) {
+  .pd-blog-post-3 .pd-gradient-full-width-800h {
+    background: radial-gradient(circle 500px at 100% 0%, #C895FA 5%, #E84F49 55%, #25215F 100%);
+  }
+}
+@media (min-width: 576px) {
+  .pd-blog-post-3 .pd-gradient-full-width-800h {
+    background: radial-gradient(circle 1000px at 100% 0%, #C895FA 5%, #E84F49 55%, #25215F 100%);
+  }
+}
+.pd-blog-post-3 .pd-blog-post-3-top {
+  padding-bottom: 200px;
+}
+.pd-blog-post-3 .pd-blog-post-3-top header p {
+  margin-bottom: 0px;
+}
+.pd-blog-post-3 .pd-blog-post-3-top .pd-blog-label {
+  color: #fff;
+  font-weight: 300;
+  font-size: 0.8rem;
+  margin-bottom: 0px;
+  text-decoration: none;
+}
+.pd-blog-post-3 .pd-blog-post-3-top .pd-blog-post-3-img-outer {
+  position: relative;
+}
+@media screen and (max-width: 575px) {
+  .pd-blog-post-3 .pd-blog-post-3-top .pd-blog-post-3-img-outer {
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    margin-bottom: -30px;
+    height: 300px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .pd-blog-post-3 .pd-blog-post-3-top .pd-blog-post-3-img-outer {
+    width: calc(100% + 120px);
+    margin-left: -60px;
+    margin-bottom: -60px;
+    height: 400px;
+  }
+}
+@media (min-width: 992px) {
+  .pd-blog-post-3 .pd-blog-post-3-top .pd-blog-post-3-img-outer {
+    height: 600px;
+    width: calc(100% + 120px);
+    margin-left: -60px;
+    margin-bottom: -60px;
+  }
+}
+.pd-blog-post-3 .pd-blog-post-3-content-outer {
+  background: rgba(255, 255, 255, 0.85);
+  margin-top: -200px;
+  border-radius: 0 0 20px 20px;
+}
+@media screen and (max-width: 575px) {
+  .pd-blog-post-3 .pd-blog-post-3-content-outer {
+    padding: 30px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .pd-blog-post-3 .pd-blog-post-3-content-outer {
+    padding: 60px;
+  }
+}
+@media (min-width: 991px) {
+  .pd-blog-post-3 .pd-blog-post-3-content-outer {
+    padding: 60px;
+  }
+}
+.pd-blog-post-3 .pd-blog-post-3-tag-icon-outer svg {
+  fill: #C895FA;
+}
+.pd-blog-post-3 .pd-blog-post-3-tag-group a {
+  margin-bottom: 12px;
+  margin-right: 12px;
+  display: inline-block;
+  font-size: 0.8rem;
+  border: 1px solid #E84F49;
+  border-radius: 50em;
+  padding: 7px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  color: #fff;
+}
 
 .pd-forms-1 {
   background: -webkit-gradient(linear, left top, left bottom, from(#25215F), to(#161439));
