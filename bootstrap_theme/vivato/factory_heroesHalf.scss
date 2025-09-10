@@ -835,6 +835,7 @@
 
         @media (min-width: 768px) {
             height: 100%;
+            min-height: 340px;
             border-radius: 0 $pd-border-radius-lg $pd-border-radius-lg 0;
         }
 
@@ -845,6 +846,28 @@
 
             @media (min-width: 768px) {
                 border-radius: 0 $pd-border-radius-lg $pd-border-radius-lg 0;
+            }
+        }
+
+        .pd-heroesHalf-8-play-icon {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+
+            img,
+            svg {
+                width: 120px;
+                height: 120px;
+                transition: transform $pd-transition-speed ease;
+            }
+
+            &:hover {
+                img,
+                svg {
+                    transform: scale(1.1);
+                }
             }
         }
     }

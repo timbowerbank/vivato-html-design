@@ -1,6 +1,6 @@
 .pd-text-1 {
-    border-top: 1px solid $gray-300;
-    border-bottom: 1px solid $gray-300;
+    // border-top: 1px solid $gray-300;
+    // border-bottom: 1px solid $gray-300;
 
     h1,
     h2,
@@ -8,8 +8,8 @@
     h4,
     h5,
     h6 {
-        font-weight: 700;
-        color: $black;
+        font-weight: $pd-font-weight-heavy;
+        color: $primary;
 
         &:not(:first-child) {
             margin-top: 30px;
@@ -17,46 +17,47 @@
     }
 
     strong {
-        font-weight: 700;
+        font-weight: $pd-font-weight-heavy;
     }
 
     p {
-        color: $gray-700;
-        line-height: 1.9;
-        font-size: 1.1rem;
+        color: $dark;
+        line-height: $pd-line-height-ex-lg;
+        font-size: $pd-font-sm;
+        font-weight: $pd-font-weight-medium;
     }
 
     ul {
-        color: $gray-700;
-        line-height: 1.9;
-        font-size: 1rem;
+        color: $dark;
+        line-height: $pd-line-height-ex-lg;
+        font-size: $pd-font-sm;
 
         ul li {
-            font-size: 0.9rem;
+            font-size: $pd-font-sm;
 
             ul li {
-                color: $black;
-                font-size: 0.8rem;
+                color: $dark;
+                font-size: $pd-font-sm;
             }
         }
     }
 
     ol {
         li {
-            color: $gray-700;
-            line-height: 1.9;
-            font-size: 1rem;
+            color: $dark;
+            line-height: $pd-line-height-ex-lg;
+            font-size: $pd-font-sm;
 
             ol {
                 li {
                     list-style-type: lower-alpha;
-                    font-size: 0.9rem;
+                    font-size: $pd-font-sm;
 
                     ol {
                         li {
                             list-style-type: lower-roman;
-                            color: $black;
-                            font-size: 0.8rem;
+                            color: $dark;
+                            font-size: $pd-font-sm;
                         }
                     }
                 }
@@ -65,13 +66,13 @@
     }
 
     a {
-        color: blue;
+        color: $primary;
         transition: color 0.4s;
         text-decoration: none;
-        font-weight: 700;
+        font-weight: $pd-font-weight-heavy;
 
         &:hover {
-            color: lighten(blue, 10%);
+            color: lighten($primary, 10%);
         }
 
         &:focus {
@@ -83,22 +84,23 @@
         display: block;
         width: 100%;
         height: auto;
-        max-width: 800px;
-        margin-left: auto;
-        margin-right: auto;
+        max-width: 1000px;
+        // margin-left: auto;
+        // margin-right: auto;
         padding-top: 20px;
         padding-bottom: 36px;
     }
 
     blockquote {
-        background: $gray-100;
+        background: $light;
         padding-left: 40px;
         padding-right: 20px;
         padding-top: 20px;
         padding-bottom: 20px;
-        border-left: 6px solid $primary;
+        border-left: 6px solid $info;
         margin-top: 20px;
         margin-bottom: 30px;
+        color: $primary
     }
 }
 

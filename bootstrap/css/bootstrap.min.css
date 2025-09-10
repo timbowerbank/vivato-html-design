@@ -16442,6 +16442,7 @@ textarea.form-control-lg {
 @media (min-width: 768px) {
   .pd-heroesHalf-8 .pd-heroesHalf-8-img-outer {
     height: 100%;
+    min-height: 340px;
     border-radius: 0 40px 40px 0;
   }
 }
@@ -16454,6 +16455,30 @@ textarea.form-control-lg {
   .pd-heroesHalf-8 .pd-heroesHalf-8-img-outer .pd-brand-v {
     border-radius: 0 40px 40px 0;
   }
+}
+.pd-heroesHalf-8 .pd-heroesHalf-8-img-outer .pd-heroesHalf-8-play-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.pd-heroesHalf-8 .pd-heroesHalf-8-img-outer .pd-heroesHalf-8-play-icon img,
+.pd-heroesHalf-8 .pd-heroesHalf-8-img-outer .pd-heroesHalf-8-play-icon svg {
+  width: 120px;
+  height: 120px;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.pd-heroesHalf-8 .pd-heroesHalf-8-img-outer .pd-heroesHalf-8-play-icon:hover img,
+.pd-heroesHalf-8 .pd-heroesHalf-8-img-outer .pd-heroesHalf-8-play-icon:hover svg {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .pd-testimonial-1 {
@@ -24082,7 +24107,7 @@ textarea.form-control-lg {
   font-weight: 300;
   font-size: 2rem;
   color: #25215F;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 .pd-testimonial-slider-8 .pd-testimonial-slider-8-card p.pd-testimonial-slider-8-author {
   font-size: 1rem;
@@ -24160,7 +24185,7 @@ textarea.form-control-lg {
 .pd-testimonial-slider-9 .pd-testimonial-slider-9-card-outer p {
   font-weight: 300;
   color: #25215F;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 @media screen and (max-width: 575px) {
   .pd-testimonial-slider-9 .pd-testimonial-slider-9-card-outer {
@@ -30882,11 +30907,6 @@ textarea.form-control-lg {
   color: #161B33;
   font-weight: 700;
 }
-
-.pd-text-1 {
-  border-top: 1px solid #dee2e6;
-  border-bottom: 1px solid #dee2e6;
-}
 .pd-text-1 h1, .pd-text-1 .h1,
 .pd-text-1 h2,
 .pd-text-1 .h2,
@@ -30898,8 +30918,8 @@ textarea.form-control-lg {
 .pd-text-1 .h5,
 .pd-text-1 h6,
 .pd-text-1 .h6 {
-  font-weight: 700;
-  color: #231F20;
+  font-weight: 500;
+  color: #25215F;
 }
 .pd-text-1 h1:not(:first-child), .pd-text-1 .h1:not(:first-child),
 .pd-text-1 h2:not(:first-child),
@@ -30915,48 +30935,49 @@ textarea.form-control-lg {
   margin-top: 30px;
 }
 .pd-text-1 strong {
-  font-weight: 700;
+  font-weight: 500;
 }
 .pd-text-1 p {
-  color: #495057;
-  line-height: 1.9;
-  font-size: 1.1rem;
+  color: #343a40;
+  line-height: 1.7;
+  font-size: 1rem;
+  font-weight: 400;
 }
 .pd-text-1 ul {
-  color: #495057;
-  line-height: 1.9;
+  color: #343a40;
+  line-height: 1.7;
   font-size: 1rem;
 }
 .pd-text-1 ul ul li {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .pd-text-1 ul ul li ul li {
-  color: #231F20;
-  font-size: 0.8rem;
+  color: #343a40;
+  font-size: 1rem;
 }
 .pd-text-1 ol li {
-  color: #495057;
-  line-height: 1.9;
+  color: #343a40;
+  line-height: 1.7;
   font-size: 1rem;
 }
 .pd-text-1 ol li ol li {
   list-style-type: lower-alpha;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .pd-text-1 ol li ol li ol li {
   list-style-type: lower-roman;
-  color: #231F20;
-  font-size: 0.8rem;
+  color: #343a40;
+  font-size: 1rem;
 }
 .pd-text-1 a {
-  color: blue;
+  color: #25215F;
   -webkit-transition: color 0.4s;
   transition: color 0.4s;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 500;
 }
 .pd-text-1 a:hover {
-  color: #3333ff;
+  color: #342e85;
 }
 .pd-text-1 a:focus {
   outline: 2px dotted #25215F;
@@ -30965,9 +30986,7 @@ textarea.form-control-lg {
   display: block;
   width: 100%;
   height: auto;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1000px;
   padding-top: 20px;
   padding-bottom: 36px;
 }
@@ -30977,9 +30996,10 @@ textarea.form-control-lg {
   padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-left: 6px solid #25215F;
+  border-left: 6px solid #E84F49;
   margin-top: 20px;
   margin-bottom: 30px;
+  color: #25215F;
 }
 
 .pd-text-2 {
@@ -34425,7 +34445,7 @@ textarea.form-control-lg {
   color: #25215F;
   font-size: 1.4rem;
   font-weight: 300;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 .pd-sub-headline.pd-inverted {
@@ -34522,7 +34542,7 @@ textarea.form-control-lg {
   color: #25215F;
   font-weight: 500;
   font-size: 2rem;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 .pd-card-headline.pd-inverted {
