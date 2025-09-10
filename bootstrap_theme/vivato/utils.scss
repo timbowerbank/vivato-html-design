@@ -499,6 +499,16 @@
     }
 }
 
+.pd-block-primary.pd-left {
+    @media screen and (max-width: 767px) {
+        border-radius: 0 0 $pd-border-radius-lg $pd-border-radius-lg;
+    }
+
+    @media (min-width: 768px) {
+        border-radius: $pd-border-radius-lg 0 0 $pd-border-radius-lg;
+    }
+}
+
 .pd-block-transparent {
     border-radius: $pd-border-radius-lg;
     padding: $pd-block-padding-lg;
