@@ -29280,6 +29280,9 @@ textarea.form-control-lg {
   text-decoration: none;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
 }
 .pd-cards-posts-7 .pd-cards-posts-7-category-outer ul li a:hover {
   color: #e6e6e6;
@@ -29304,6 +29307,115 @@ textarea.form-control-lg {
 .pd-cards-posts-7 .pd-cards-posts-7-tags-outer a:hover {
   background-color: #25215F;
   color: #fff;
+}
+.pd-cards-posts-7 .pd-slider-1-card-outer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+}
+.pd-cards-posts-7 .pd-slider-1-card-outer .pd-slider-1-img-outer {
+  position: relative;
+  min-height: 260px;
+  overflow: hidden;
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+}
+.pd-cards-posts-7 .pd-slider-1-card-outer .pd-slider-1-img-outer img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.pd-cards-posts-7 .pd-slider-1-card-outer .pd-slider-1-img-outer:hover img {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.pd-cards-posts-7 .pd-slider-1-card-outer .pd-slider-1-text-content-outer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  padding: 30px;
+  background-color: #f8f9fa;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-radius: 0px 0px 20px 20px;
+}
+.pd-cards-posts-7 .pd-slider-1-card-outer .pd-slider-1-text-content-outer header a {
+  text-decoration: none;
+}
+.pd-cards-posts-7 .pd-slider-1-card-outer .pd-slider-1-text-content-outer header a h3, .pd-cards-posts-7 .pd-slider-1-card-outer .pd-slider-1-text-content-outer header a .h3 {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #25215F;
+  -webkit-transform: color 0.3s ease;
+      -ms-transform: color 0.3s ease;
+          transform: color 0.3s ease;
+}
+.pd-cards-posts-7 .pd-slider-1-card-outer .pd-slider-1-text-content-outer header a:hover h3, .pd-cards-posts-7 .pd-slider-1-card-outer .pd-slider-1-text-content-outer header a:hover .h3 {
+  color: #342e85;
+}
+.pd-cards-posts-7 .pd-slider-1-card-outer .pd-slider-1-text-content-outer header a.pd-category-link {
+  display: inline-block;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  background-color: #f8f9fa;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.pd-cards-posts-7 .pd-slider-1-card-outer .pd-slider-1-text-content-outer header a.pd-category-link:hover {
+  color: #342e85;
+}
+.pd-cards-posts-7 .pd-slider-1-card-outer .pd-slider-1-text-content-outer header p {
+  color: #25215F;
+  font-size: 0.8rem;
+}
+.pd-cards-posts-7 .pd-slider-1-card-outer .pd-slider-1-text-content-outer .pd-slider-1-card-tags-outer svg {
+  fill: #C895FA;
+  width: 24px;
+  height: 24px;
+}
+.pd-cards-posts-7 .pd-slider-1-card-outer .pd-slider-1-text-content-outer .pd-slider-1-card-tags-outer a {
+  margin-bottom: 12px;
+  margin-right: 6px;
+  display: inline-block;
+  font-size: 0.8rem;
+  border: 1px solid #E84F49;
+  border-radius: 50em;
+  padding: 7px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
 }
 .pd-cards-posts-7 .pagination .page-link {
   border: 1px solid #E84F49;

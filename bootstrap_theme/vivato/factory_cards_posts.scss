@@ -1462,6 +1462,9 @@
                     color: $white;
                     text-decoration: none;
                     transition: color $pd-transition-speed ease;
+                    text-transform: uppercase;
+                    font-size: $pd-font-ex-sm;
+                    letter-spacing: $pd-letter-spacing;
 
                     &:hover {
                         color: darken($white, 10%);
@@ -1493,6 +1496,117 @@
             &:hover {
                 background-color: $primary;
                 color: $white;
+            }
+        }
+    }
+
+    // cards
+    .pd-slider-1-card-outer {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+
+        // anchor
+        .pd-slider-1-img-outer {
+            position: relative;
+            min-height: 260px;
+            overflow: hidden;
+            border-radius: $pd-border-radius-sm $pd-border-radius-sm 0px 0px;
+            width: 100%;
+
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+                object-position: center center;
+                transition: transform $pd-transition-speed ease;
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .pd-slider-1-text-content-outer {
+            flex: 1 0 auto;
+            padding: $pd-block-padding-ex-sm;
+            background-color: $light;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            border-radius: 0px 0px $pd-border-radius-sm $pd-border-radius-sm;
+
+            header {
+                // flex-grow: 1;
+                // padding-top: 15px;
+                // padding-bottom: 30px;
+
+                a {
+                    text-decoration: none;
+                    h3 {
+                        font-size: $pd-font-md;
+                        font-weight: $pd-font-weight-light;
+                        color: $primary;
+                        transform: color $pd-transition-speed ease;
+
+                        // margin-bottom: 0px;
+                    }
+
+                    &:hover {
+                        h3 {
+                            color: lighten($primary, 10%);
+                        }
+                    }
+
+                }
+
+                a.pd-category-link {
+                    display: inline-block;
+                    font-size: $pd-font-ex-ex-sm;
+                    letter-spacing: $pd-letter-spacing;
+                    text-transform: uppercase;;
+                    background-color: $light;
+                    transition: color $pd-transition-speed ease;
+
+                    &:hover {
+                        color: lighten($primary, 10%);
+                    }
+
+                }
+
+                p {
+                    color: $primary;
+                    font-size: $pd-font-ex-sm;
+                }
+            }
+
+            .pd-slider-1-card-tags-outer {
+                svg {
+                    fill: $secondary;
+                    width: 24px;
+                    height: 24px;
+                }
+
+                a {
+                    margin-bottom: 12px;
+                    margin-right: 6px;
+                    display: inline-block;
+                    font-size: $pd-font-ex-sm;
+                    border: 1px solid $info;
+                    border-radius: 50em;
+                    padding: 7px 20px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    letter-spacing: $pd-letter-spacing;
+                }
             }
         }
     }
