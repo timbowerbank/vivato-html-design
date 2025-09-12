@@ -30662,6 +30662,12 @@ textarea.form-control-lg {
   text-decoration: none;
   letter-spacing: 0.15em;
   color: #fff;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+.pd-blog-post-3 .pd-blog-post-3-tag-group a:hover {
+  background-color: #fff;
+  color: #25215F;
 }
 .pd-blog-post-3 .pd-blog-post-3-links-outer {
   padding: 30px;

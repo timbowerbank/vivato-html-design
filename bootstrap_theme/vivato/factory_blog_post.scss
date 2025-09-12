@@ -859,6 +859,12 @@
             text-decoration: none;
             letter-spacing: $pd-letter-spacing;
             color: $white;
+            transition: background-color $pd-transition-speed ease;
+
+            &:hover {
+                background-color: $white;
+                color: $primary;
+            }
         }
     }
 
