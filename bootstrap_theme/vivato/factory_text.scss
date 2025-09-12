@@ -75,7 +75,7 @@
             color: lighten($primary, 10%);
         }
 
-        &:focus {
+        &:focus-visible {
             outline: 2px dotted $primary;
         }
     }

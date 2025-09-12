@@ -466,6 +466,11 @@
     &:hover {
         color: lighten($primary, 10%);
     }
+
+    &:focus-visible {
+        outline: 1px dotted $primary;
+        outline-offset: 4px;
+    }
 }
 
 .pd-card-link.pd-inverted {

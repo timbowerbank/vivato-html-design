@@ -30548,6 +30548,10 @@ textarea.form-control-lg {
 }
 .pd-blog-post-3 .pd-intro-heading-sm {
   text-decoration: none;
+  display: inline-block;
+  border: none !important;
+  border-radius: 0%;
+  padding: 8px 0px;
 }
 @media screen and (max-width: 575px) {
   .pd-blog-post-3 .pd-gradient-full-width-800h {
@@ -30658,6 +30662,23 @@ textarea.form-control-lg {
   text-decoration: none;
   letter-spacing: 0.15em;
   color: #fff;
+}
+.pd-blog-post-3 .pd-blog-post-3-links-outer {
+  padding: 30px;
+  border: 1px solid #E84F49;
+  border-radius: 20px;
+}
+.pd-blog-post-3 .pd-blog-post-3-links-outer .pd-blog-post-3-transcription {
+  display: none;
+}
+.pd-blog-post-3 .pd-blog-post-3-links-outer .pd-blog-post-3-transcription.pd-show {
+  display: block;
+}
+.pd-blog-post-3 .pd-blog-post-3-links-outer .pd-blog-post-3-transcription.pd-collapsing {
+  overflow: hidden;
+  -webkit-transition: height 0.35s;
+  transition: height 0.35s;
+  height: 0px;
 }
 
 .pd-forms-1 {
@@ -31306,7 +31327,7 @@ textarea.form-control-lg {
 .pd-text-1 a:hover {
   color: #342e85;
 }
-.pd-text-1 a:focus {
+.pd-text-1 a:focus-visible {
   outline: 2px dotted #25215F;
 }
 .pd-text-1 img {
@@ -34904,6 +34925,10 @@ textarea.form-control-lg {
 }
 .pd-card-link:hover {
   color: #342e85;
+}
+.pd-card-link:focus-visible {
+  outline: 1px dotted #25215F;
+  outline-offset: 4px;
 }
 
 .pd-card-link.pd-inverted {

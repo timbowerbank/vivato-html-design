@@ -727,9 +727,14 @@
 // end pd-blog-post-2
 // start pd-blog-post-3
 .pd-blog-post-3 {
-
     .pd-intro-heading-sm {
         text-decoration: none;
+        display: inline-block;
+        border: none!important;
+        border-radius: 0%;
+        padding: 8px 0px;
+
+    
     }
 
     .pd-gradient-full-width-800h {
@@ -854,6 +859,26 @@
             text-decoration: none;
             letter-spacing: $pd-letter-spacing;
             color: $white;
+        }
+    }
+
+    .pd-blog-post-3-links-outer {
+        padding: $pd-block-padding-ex-sm;
+        border: 1px solid $info;
+        border-radius: $pd-border-radius-sm;
+
+        .pd-blog-post-3-transcription {
+            display: none;
+        }
+
+        .pd-blog-post-3-transcription.pd-show {
+            display: block;
+        }
+
+        .pd-blog-post-3-transcription.pd-collapsing {
+            overflow: hidden;
+            transition: height .35s;
+            height: 0px;
         }
     }
 }
