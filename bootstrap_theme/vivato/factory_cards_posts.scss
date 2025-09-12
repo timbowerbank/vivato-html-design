@@ -1501,14 +1501,15 @@
     }
 
     // cards
-    .pd-slider-1-card-outer {
+    .pd-cards-posts-7-card-outer {
+        position: relative;
         flex: 1;
         display: flex;
         flex-direction: column;
         border-radius: 10px;
 
         // anchor
-        .pd-slider-1-img-outer {
+        .pd-cards-posts-7-img-outer {
             position: relative;
             min-height: 260px;
             overflow: hidden;
@@ -1533,7 +1534,38 @@
             }
         }
 
-        .pd-slider-1-text-content-outer {
+        // play button
+        .pd-cards-posts-7-play-outer {
+            min-height: 260px;
+            position: absolute;
+            width: 100%;
+            pointer-events: none;
+
+            a {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                cursor: pointer;
+                pointer-events: all;
+
+                img,
+                svg {
+                    width: 120px;
+                    height: 120px;
+                    transition: transform $pd-transition-speed ease;
+                }
+
+                &:hover {
+                    img,
+                    svg {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+
+        .pd-cards-posts-7-text-content-outer {
             flex: 1 0 auto;
             padding: $pd-block-padding-ex-sm;
             background-color: $light;
@@ -1588,7 +1620,7 @@
                 }
             }
 
-            .pd-slider-1-card-tags-outer {
+            .pd-cards-posts-7-card-tags-outer {
                 svg {
                     fill: $secondary;
                     width: 24px;
@@ -1606,6 +1638,12 @@
                     text-transform: uppercase;
                     text-decoration: none;
                     letter-spacing: $pd-letter-spacing;
+                    transition: background-color $pd-transition-speed ease;
+
+                    &:hover {
+                        background-color: $primary;
+                        color: $white;
+                    }
                 }
             }
         }
