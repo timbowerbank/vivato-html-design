@@ -525,6 +525,54 @@
     }
 }
 
+// end .pd-people-3
+// start .pd-people-4
+.pd-people-4 {
+    .pd-people-4-card-outer {
+        .pd-people-4-card-img-outer {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: $pd-border-radius-sm $pd-border-radius-sm 0px 0px;
+
+            @media screen and (max-width: 991px) {
+                height: 420px;
+            }
+
+            @media (min-width: 992px) {
+                height: 400px;
+            }
+        }
+
+        .pd-people-4-card-content-outer {
+            padding: $pd-block-padding-ex-sm;
+            border-radius: 0px 0px $pd-border-radius-sm $pd-border-radius-sm;
+            // background: $primary;
+
+            .pd-people-4-card-content {
+                margin-left: -$pd-block-padding-ex-sm;
+                padding: $pd-block-padding-ex-sm;
+                background-color: $pd-black-alpha;
+                border-radius: 0px $pd-border-radius-sm $pd-border-radius-sm 0px;
+                // width: 80%;
+                h2 {
+                    font-weight: $pd-font-weight-medium;
+                    font-size: $pd-font-lg;
+                    color: $white;
+                }
+    
+                p {
+                    color: $white;
+                    font-weight: $pd-font-weight-light;
+                    font-size: $pd-font-sm;
+                }
+
+            }
+
+        }
+    }
+}
+
 
 
 

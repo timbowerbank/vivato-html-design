@@ -1,4 +1,14 @@
 // gradient for small cards
+.pd-gradient-240w-500h {
+    background: radial-gradient(
+            circle 240px at 160% 100%, 
+            $secondary 2%, 
+            $info 75%, 
+            $primary 120%
+        );
+}
+
+
 .pd-gradient-300w-500h {
     background: radial-gradient(
             circle 300px at 120% 100%, 

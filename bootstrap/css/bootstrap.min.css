@@ -25898,6 +25898,42 @@ textarea.form-control-lg {
 .pd-people-3 .pd-people-3-card-outer:hover .pd-people-3-card-profile-text {
   padding-bottom: 40px;
 }
+.pd-people-4 .pd-people-4-card-outer .pd-people-4-card-img-outer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px 20px 0px 0px;
+}
+@media screen and (max-width: 991px) {
+  .pd-people-4 .pd-people-4-card-outer .pd-people-4-card-img-outer {
+    height: 420px;
+  }
+}
+@media (min-width: 992px) {
+  .pd-people-4 .pd-people-4-card-outer .pd-people-4-card-img-outer {
+    height: 400px;
+  }
+}
+.pd-people-4 .pd-people-4-card-outer .pd-people-4-card-content-outer {
+  padding: 30px;
+  border-radius: 0px 0px 20px 20px;
+}
+.pd-people-4 .pd-people-4-card-outer .pd-people-4-card-content-outer .pd-people-4-card-content {
+  margin-left: -30px;
+  padding: 30px;
+  background-color: rgba(35, 31, 32, 0.4);
+  border-radius: 0px 20px 20px 0px;
+}
+.pd-people-4 .pd-people-4-card-outer .pd-people-4-card-content-outer .pd-people-4-card-content h2, .pd-people-4 .pd-people-4-card-outer .pd-people-4-card-content-outer .pd-people-4-card-content .h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  color: #fff;
+}
+.pd-people-4 .pd-people-4-card-outer .pd-people-4-card-content-outer .pd-people-4-card-content p {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1rem;
+}
 .pd-specials-multiBox .pd-specials-multiBox-card-col {
   position: relative;
 }
@@ -34521,6 +34557,10 @@ textarea.form-control-lg {
     color: #231F20;
     background-repeat: no-repeat;
   }
+}
+
+.pd-gradient-240w-500h {
+  background: radial-gradient(circle 240px at 160% 100%, #C895FA 2%, #E84F49 75%, #25215F 120%);
 }
 
 .pd-gradient-300w-500h {
