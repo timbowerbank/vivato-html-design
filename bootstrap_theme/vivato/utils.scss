@@ -8,7 +8,6 @@
         );
 }
 
-
 .pd-gradient-300w-500h {
     background: radial-gradient(
             circle 300px at 120% 100%, 
@@ -87,6 +86,26 @@
     }
 }
 
+.pd-gradient-1000w-500h.pd-top {
+    @media screen and (max-width: 575px) {
+        background: radial-gradient(
+            circle 500px at 100% 0%, 
+            $secondary 5%, 
+            $info 55%, 
+            $primary 100%
+        );
+    }
+
+    @media (min-width: 576px) {
+        background: radial-gradient(
+            circle 1000px at 100% 0%, 
+            $secondary 5%, 
+            $info 55%, 
+            $primary 100%
+        );
+    }
+}
+
 // full screen gradients
 .pd-gradient-full-width-800h {
     @media screen and (max-width: 575px) {
@@ -127,7 +146,6 @@
         );
     }
 }
-
 
 .pd-img-cover {
     position: absolute;
@@ -438,8 +456,16 @@
 .pd-card-headline {
     color: $primary;
     font-weight: $pd-font-weight-heavy;
-    font-size: $pd-font-lg;
     line-height: $pd-line-height-ex-lg;
+    
+    @media screen and (max-width: 1199px) {
+        font-size: $pd-font-md;
+    }
+    
+    @media (min-width: 1200px) {
+        font-size: $pd-font-lg;
+
+    }
 }
 
 .pd-card-headline.pd-inverted {
@@ -504,6 +530,40 @@
 
 .pd-card-bullet.pd-inverted {
     color: $white;
+}
+
+.pd-card-item {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 991px) {
+        margin-bottom: 6px;
+    }
+
+    @media (min-width: 992px) {
+    }
+
+    img,
+    svg {
+        margin-right: 10px;
+        width: 16px;
+        height: 16px;
+        fill: $secondary;
+    }
+
+    p {
+        margin-bottom: 0px;
+        color: $white;
+        font-weight: $pd-font-weight-light;
+
+        em,
+        strong {
+            font-weight: $pd-font-weight-heavy;
+            font-style: normal;
+        }
+
+        ;
+    }
 }
 
 // ******************
@@ -869,4 +929,44 @@
 
 .pd-brand-badge-sm {
     max-width: 220px;
+}
+
+// *********************
+// *** ARROWS **********
+// *********************
+.pd-arrow-horizontal {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50px;
+        width: calc(100% - 100px);
+        height: 2px;
+        background-color: $secondary;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 50px;
+        width: 0;
+        height: 0;
+        border-left: 10px solid $secondary;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        transform: translateY(-50%);
+        z-index: 2;
+    }
+
+    @media screen and (max-width: 767px) {
+        &::after,
+        &::before {
+            display: none;
+        }
+    }
 }
