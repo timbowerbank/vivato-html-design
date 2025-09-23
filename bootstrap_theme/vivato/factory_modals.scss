@@ -222,10 +222,10 @@
 
         @media screen and (max-width: 991px) {
             height: 100vh;
-            padding: 60px 15px 20px;
+            padding: $pd-block-padding-ex-sm 10px $pd-block-padding-ex-sm 10px;;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            // justify-content: center;
         }
 
         @media (min-width: 992px) {
