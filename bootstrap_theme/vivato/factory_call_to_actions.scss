@@ -1115,7 +1115,22 @@
         }
     }
 }
+// end pd-CTA-11
 
+// start pd-CTA-12
+.pd-CTA-12 {
+    // reviews star
+    .pd-CTA-12-rating-outer {
+        svg {
+            width: 30px;
+            height: auto;
+            margin-right: 8px;
+            .pd-icon-fill {
+                fill: $info;
+            }
+        }
+    }
+}
 
 
 

@@ -290,6 +290,19 @@
         }
     }
 }
+.pd-btn-secondary.pd-btn-lg {
+    font-size: $pd-font-sm;
+    padding: $pd-btn-padding-lg;
+}
+
+.pd-btn.pd-btn-info {
+    background: $info;
+}
+
+.pd-btn-info.pd-btn-lg {
+    font-size: $pd-font-sm;
+    padding: $pd-btn-padding-lg;
+}
 
 // links
 .pd-link {
