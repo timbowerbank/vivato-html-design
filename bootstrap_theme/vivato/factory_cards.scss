@@ -2392,6 +2392,7 @@
 
         .pd-cards-18-card-left-col {
             position: relative;
+
             @media screen and (max-width: 767px) {
                 min-height: 300px;
                 border-radius: $pd-border-radius-sm $pd-border-radius-sm 0px 0px;
@@ -2402,9 +2403,7 @@
                 flex: 0 0 45%;
                 min-height: 240px;
                 border-radius: $pd-border-radius-sm 0px 0px $pd-border-radius-sm;
-
             }
-
 
             // anchor tag wraps image
             .pd-cards-18-card-img-outer {
@@ -2413,17 +2412,17 @@
                     min-height: 300px;
                     border-radius: $pd-border-radius-sm $pd-border-radius-sm 0px 0px;
                 }
-    
+
                 @media (min-width: 768px) {
                     width: 100%;
                     height: 100%;
                     border-radius: $pd-border-radius-sm 0px 0px $pd-border-radius-sm;
                 }
-    
+
                 display: block;
                 position: relative;
                 overflow: hidden;
-    
+
                 img {
                     position: absolute;
                     top: 0;
@@ -2434,14 +2433,12 @@
                     object-position: center center;
                     transition: transform $pd-transition-speed ease;
                 }
-    
+
                 &:hover {
                     img {
                         transform: scale(1.1);
                     }
                 }
-    
-                
             }
 
             // play button
@@ -2467,7 +2464,6 @@
                 }
             }
         }
-
 
         .pd-cards-18-card-content-outer {
             flex: 1 0 50%;
@@ -3104,8 +3100,8 @@
         }
     }
 }
-// end pd-cards-22
 
+// end pd-cards-22
 // start pd-cards-23
 .pd-cards-23 {
     position: relative;
@@ -3215,5 +3211,11 @@
 
     .container {
         z-index: 3;
+    }
+}
+
+.pd-cards-24 {
+    .pd-cards-24-card-outer {
+        // for js to target
     }
 }
