@@ -15581,6 +15581,92 @@ textarea.form-control-lg {
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
+.pd-hero-20 .pd-hero-20-features {
+  font-size: 1.4rem;
+  color: #25215F;
+  line-height: 1.7;
+}
+.pd-hero-20 .pd-hero-20-features ul {
+  margin-bottom: 0px;
+}
+.pd-hero-20 .pd-hero-20-logos {
+  display: grid;
+  gap: 40px;
+}
+@media screen and (max-width: 575px) {
+  .pd-hero-20 .pd-hero-20-logos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .pd-hero-20 .pd-hero-20-logos {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 992px) {
+  .pd-hero-20 .pd-hero-20-logos {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.pd-hero-20 .pd-hero-20-main-img-outer {
+  position: relative;
+  overflow: hidden;
+  border-radius: 40px;
+}
+@media screen and (max-width: 340px) {
+  .pd-hero-20 .pd-hero-20-main-img-outer {
+    width: 280px;
+    height: 373px;
+  }
+}
+@media (min-width: 341px) and (max-width: 575px) {
+  .pd-hero-20 .pd-hero-20-main-img-outer {
+    width: 320px;
+    height: 427px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .pd-hero-20 .pd-hero-20-main-img-outer {
+    width: 624px;
+    height: 565px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .pd-hero-20 .pd-hero-20-main-img-outer {
+    width: 380px;
+    height: 575px;
+  }
+}
+@media (min-width: 1200px) {
+  .pd-hero-20 .pd-hero-20-main-img-outer {
+    width: 540px;
+    height: 640px;
+  }
+}
+.pd-hero-20 .pd-hero-20-main-img-outer .pd-hero-20-play-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.pd-hero-20 .pd-hero-20-main-img-outer .pd-hero-20-play-icon img,
+.pd-hero-20 .pd-hero-20-main-img-outer .pd-hero-20-play-icon svg {
+  width: 120px;
+  height: 120px;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.pd-hero-20 .pd-hero-20-main-img-outer .pd-hero-20-play-icon:hover img,
+.pd-hero-20 .pd-hero-20-main-img-outer .pd-hero-20-play-icon:hover svg {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
 .pd-heroesHalf-1 .pd-heroesHalf-1-text-outer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35420,6 +35506,36 @@ textarea.form-control-lg {
   height: 100%;
   overflow: hidden;
 }
+.pd-brand-v .pd-brand-v-banner-img-ex-lg {
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: auto;
+}
+@media screen and (max-width: 991px) {
+  .pd-brand-v .pd-brand-v-banner-img-ex-lg {
+    width: 600px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+@media (min-width: 992px) {
+  .pd-brand-v .pd-brand-v-banner-img-ex-lg {
+    top: 50%;
+    width: 760px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+.pd-brand-v .pd-brand-v-banner-img-ex-lg .svg-fill {
+  fill: rgba(255, 255, 255, 0.4);
+}
 .pd-brand-v .pd-brand-v-banner-img {
   position: absolute;
   -webkit-transform: translateY(-50%);
@@ -36055,7 +36171,7 @@ textarea.form-control-lg {
   width: 100vw;
   height: 100vh;
   z-index: 2001;
-  background: rgba(52, 58, 64, 0.98);
+  background: rgba(0, 0, 0, 0.9);
   opacity: 0;
   -webkit-transition: opacity 0.4s;
   transition: opacity 0.4s;

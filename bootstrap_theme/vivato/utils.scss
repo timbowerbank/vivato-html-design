@@ -290,6 +290,7 @@
         }
     }
 }
+
 .pd-btn-secondary.pd-btn-lg {
     font-size: $pd-font-sm;
     padding: $pd-btn-padding-lg;
@@ -914,7 +915,33 @@
     height: 100%;
     overflow: hidden;
 
-    // for V on banners
+    .pd-brand-v-banner-img-ex-lg {
+        position: absolute;
+        transform: translateY(-50%);
+        height: auto;
+
+        @media screen and (max-width: 991px) {
+            width: 600px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @media (min-width: 992px) {
+            top: 50%;
+            width: 760px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .svg-fill {
+            fill: rgba($white, 0.4);
+
+            // $white, 0.1
+        }
+    }
+
+    // for V on medium banners
     .pd-brand-v-banner-img {
         position: absolute;
         transform: translateY(-50%);
