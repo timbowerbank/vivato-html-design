@@ -540,35 +540,40 @@
             }
 
             @media (min-width: 992px) {
-                height: 400px;
+                height: 320px;
             }
         }
 
         .pd-people-4-card-content-outer {
             padding: $pd-block-padding-ex-sm;
             border-radius: 0px 0px $pd-border-radius-sm $pd-border-radius-sm;
-            // background: $primary;
 
+            // background: $primary;
             .pd-people-4-card-content {
+                display: inline-block;
+                min-width: 92%;
                 margin-left: -$pd-block-padding-ex-sm;
                 padding: $pd-block-padding-ex-sm;
                 background-color: $pd-black-alpha;
                 border-radius: 0px $pd-border-radius-sm $pd-border-radius-sm 0px;
+
                 // width: 80%;
                 h2 {
                     font-weight: $pd-font-weight-medium;
                     font-size: $pd-font-lg;
                     color: $white;
                 }
-    
+
                 p {
+                    display: inline-block;
+                    border: 1px solid $white;
+                    padding: $pd-label-padding;
+                    border-radius: 50em;
                     color: $white;
                     font-weight: $pd-font-weight-light;
-                    font-size: $pd-font-sm;
+                    font-size: $pd-font-ex-sm;
                 }
-
             }
-
         }
     }
 }
