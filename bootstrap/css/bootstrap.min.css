@@ -22722,6 +22722,7 @@ textarea.form-control-lg {
 @media screen and (max-width: 575px) {
   .pd-section-26 .pd-section-26-grid-outer {
     grid-template-columns: 1fr;
+    gap: 60px;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
@@ -22737,6 +22738,12 @@ textarea.form-control-lg {
 @media (min-width: 992px) {
   .pd-section-26 .pd-section-26-grid-outer {
     grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 575px) {
+  .pd-section-26 .pd-section-26-grid-outer .pd-section-26-grid-card {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -31531,6 +31538,12 @@ textarea.form-control-lg {
 .pd-text-1 .h6:not(:first-child) {
   margin-top: 30px;
 }
+@media screen and (max-width: 575px) {
+  .pd-text-1 .col-12 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
 .pd-text-1 strong {
   font-weight: 500;
 }
@@ -31584,8 +31597,9 @@ textarea.form-control-lg {
   width: 100%;
   height: auto;
   max-width: 1000px;
-  padding-top: 20px;
-  padding-bottom: 36px;
+  margin-top: 20px;
+  margin-bottom: 36px;
+  border-radius: 40px;
 }
 .pd-text-1 blockquote {
   background: #f8f9fa;

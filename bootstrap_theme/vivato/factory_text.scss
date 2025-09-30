@@ -1,7 +1,6 @@
 .pd-text-1 {
     // border-top: 1px solid $gray-300;
     // border-bottom: 1px solid $gray-300;
-
     h1,
     h2,
     h3,
@@ -13,6 +12,13 @@
 
         &:not(:first-child) {
             margin-top: 30px;
+        }
+    }
+
+    .col-12 {
+        @media screen and (max-width: 575px) {
+            padding-left: $pd-block-padding-ex-sm;
+            padding-right: $pd-block-padding-ex-sm;
         }
     }
 
@@ -85,10 +91,12 @@
         width: 100%;
         height: auto;
         max-width: 1000px;
+
         // margin-left: auto;
         // margin-right: auto;
-        padding-top: 20px;
-        padding-bottom: 36px;
+        margin-top: 20px;
+        margin-bottom: 36px;
+        border-radius: $pd-border-radius-lg;
     }
 
     blockquote {
@@ -149,6 +157,7 @@
         font-style: italic;
         color: #44687E;
         transition: color 0.3s;
+
         &:hover {
             color: darken(#44687E, 10%);
         }
@@ -157,14 +166,15 @@
     a.btn {
         padding: 6px 32px!important;
         color: $white;
+
         span {
             font-size: 0.9rem;
             font-weight: 400;
         }
+
         font-size: 1.4rem;
         font-weight: 700;
         font-style: italic;
-        
     }
 
     a.btn.btn-primary {
@@ -174,7 +184,5 @@
         &:hover {
             background-color: darken(#44687E, 10%)!important;
         }
-
     }
-
 }
