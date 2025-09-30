@@ -94,7 +94,15 @@
         // margin-right: auto;
         margin-top: 20px;
         margin-bottom: 36px;
-        border-radius: $pd-border-radius-lg;
+
+        @media screen and (max-width: 575px) {
+            border-radius: $pd-border-radius-sm;
+        }
+
+        @media (min-width: 576px) {
+            border-radius: $pd-border-radius-lg;
+
+        }
     }
 
     blockquote {
