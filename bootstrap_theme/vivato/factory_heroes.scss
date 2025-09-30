@@ -2500,17 +2500,17 @@
         }
 
         @media (min-width: 576px) and (max-width: 991px) {
-            width: 424px;
+            width: 624px;
             height: 565px;
         }
 
         @media (min-width: 992px) and (max-width: 1199px) {
-            width: 312px;
+            width: 380px;
             height: 416px;
         }
 
         @media (min-width: 1200px) {
-            width: 376px;
+            width: 540px;
             height: 500px;
         }
 
@@ -2535,6 +2535,25 @@
                 }
             }
         }
+    }
+
+    .pd-hero-19-logos {
+        display: grid;
+        gap: $pd-block-padding-sm;
+        @media screen and (max-width: 575px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (min-width: 576px) and (max-width: 991px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        @media (min-width: 992px) {
+            grid-template-columns: 1fr 1fr 1fr;
+
+        }
+
+
     }
 }
 

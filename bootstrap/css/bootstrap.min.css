@@ -15541,19 +15541,19 @@ textarea.form-control-lg {
 }
 @media (min-width: 576px) and (max-width: 991px) {
   .pd-hero-19 .pd-hero-19-main-img-outer {
-    width: 424px;
+    width: 624px;
     height: 565px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .pd-hero-19 .pd-hero-19-main-img-outer {
-    width: 312px;
+    width: 380px;
     height: 416px;
   }
 }
 @media (min-width: 1200px) {
   .pd-hero-19 .pd-hero-19-main-img-outer {
-    width: 376px;
+    width: 540px;
     height: 500px;
   }
 }
@@ -15580,6 +15580,25 @@ textarea.form-control-lg {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
+}
+.pd-hero-19 .pd-hero-19-logos {
+  display: grid;
+  gap: 40px;
+}
+@media screen and (max-width: 575px) {
+  .pd-hero-19 .pd-hero-19-logos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .pd-hero-19 .pd-hero-19-logos {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 992px) {
+  .pd-hero-19 .pd-hero-19-logos {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 .pd-hero-20 .pd-hero-20-features {
   font-size: 1.4rem;
