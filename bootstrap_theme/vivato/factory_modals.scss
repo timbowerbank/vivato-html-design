@@ -222,9 +222,10 @@
 
         @media screen and (max-width: 991px) {
             height: 100vh;
-            padding: $pd-block-padding-ex-sm 10px $pd-block-padding-ex-sm 10px;;
+            padding: $pd-block-padding-ex-sm 10px $pd-block-padding-ex-sm 10px;
             display: flex;
             flex-direction: column;
+
             // justify-content: center;
         }
 
@@ -308,6 +309,21 @@
     // fill: color('accent');
     // }
     // }
+    .pd-modal-3-card {
+        a {
+            color: $white;
+            font-weight: $pd-font-weight-heavy;
+            text-decoration: none;
+            font-size: $pd-font-md;
+
+            img,
+            svg {
+                width: 32px;
+                height: 32px;
+                margin-right: 8px;
+            }
+        }
+    }
 }
 
 .pd-modal-3.pd-show {
