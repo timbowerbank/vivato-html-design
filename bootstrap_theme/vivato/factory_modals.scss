@@ -237,6 +237,23 @@
     // form
     .pd-modal-3-form-outer {
         // background: $primary;
+        @media screen and (max-width: 575px) {
+            background: radial-gradient(
+                circle 500px at 100% 100%, 
+                $info 5%, 
+                $info 55%, 
+                $primary 100%
+            );
+        }
+
+        @media (min-width: 576px) {
+            background: radial-gradient(
+                circle 1000px at 100% 100%, 
+                $info 5%, 
+                $info 55%, 
+                $primary 100%
+            );
+        }
 
         // border: 1px solid $primary;
         border-radius: $pd-border-radius-lg;

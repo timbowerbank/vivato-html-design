@@ -36276,6 +36276,16 @@ textarea.form-control-lg {
 .pd-modal-3 .pd-modal-3-form-outer {
   border-radius: 40px;
 }
+@media screen and (max-width: 575px) {
+  .pd-modal-3 .pd-modal-3-form-outer {
+    background: radial-gradient(circle 500px at 100% 100%, #E84F49 5%, #E84F49 55%, #25215F 100%);
+  }
+}
+@media (min-width: 576px) {
+  .pd-modal-3 .pd-modal-3-form-outer {
+    background: radial-gradient(circle 1000px at 100% 100%, #E84F49 5%, #E84F49 55%, #25215F 100%);
+  }
+}
 @media screen and (max-width: 991px) {
   .pd-modal-3 .pd-modal-3-form-outer {
     padding: 40px;
