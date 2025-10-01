@@ -35688,7 +35688,7 @@ textarea.form-control-lg {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: 0;
+  bottom: -4px;
   width: 0;
   height: 0;
   border-top: 10px solid #C895FA;
