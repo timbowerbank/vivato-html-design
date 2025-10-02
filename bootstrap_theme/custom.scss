@@ -31,14 +31,19 @@ $pd-font-weight-heavy: 500;
 // used for buttons and SEO tags - i.e. intro headings
 $pd-letter-spacing: 0.15em;
 $pd-label-padding: 8px 16px;
-$pd-btn-padding: 8px 24px 8px 22px; //8px 18px 8px 16px;
+$pd-btn-padding: 8px 24px 8px 22px;
+
+// 8px 18px 8px 16px;
 $pd-btn-padding-lg: 12px 28px 12px 26px;
 $pd-btn-border: 1px solid $primary;
 $pd-btn-border-inverted: 1px solid $info;
 $pd-btn-border-hover: 1px solid $info;
 $pd-btn-border-hover-inverted: 1px solid $info;
 $pd-line-height-lg: 1.4;
-$pd-line-height-ex-lg: 1.7; // was 1.5
+$pd-line-height-ex-lg: 1.7;
+
+// was 1.5
+$pd-line-height-ex-ex-lg: 2.2;
 $pd-transition-speed: 0.3s;
 
 // border-radius
@@ -46,6 +51,7 @@ $pd-border-radius-lg: 40px;
 $pd-border-radius-sm: 20px;
 
 // general padding
+$pd-block-padding-ex-ex-sm: 20px;
 $pd-block-padding-ex-sm: 30px;
 $pd-block-padding-sm: 40px;
 $pd-block-padding-lg: 60px;

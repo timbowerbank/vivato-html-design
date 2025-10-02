@@ -15603,18 +15603,47 @@ textarea.form-control-lg {
 .pd-hero-20 .pd-hero-20-features {
   font-size: 1.4rem;
   color: #25215F;
-  line-height: 1.7;
 }
 .pd-hero-20 .pd-hero-20-features ul {
-  margin-bottom: 0px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.pd-hero-20 .pd-hero-20-features ul li {
+  padding-left: 36px;
+  position: relative;
+  margin-bottom: 18px;
+}
+.pd-hero-20 .pd-hero-20-features ul li:before {
+  content: url(/images/design-assets/_vivato/check_circle_24dp_E84F49_FILL0_wght300_GRAD0_opsz24.svg);
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 0;
+  margin-top: 4px;
 }
 .pd-hero-20 .pd-hero-20-logos {
   display: grid;
   gap: 40px;
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 320px) {
   .pd-hero-20 .pd-hero-20-logos {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+  .pd-hero-20 .pd-hero-20-logos .pd-accred-logo {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media (min-width: 321px) and (max-width: 575px) {
+  .pd-hero-20 .pd-hero-20-logos {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+  .pd-hero-20 .pd-hero-20-logos .pd-accred-logo {
+    max-width: 100%;
+    height: auto;
   }
 }
 @media (min-width: 576px) and (max-width: 991px) {
@@ -15653,13 +15682,13 @@ textarea.form-control-lg {
 @media (min-width: 992px) and (max-width: 1199px) {
   .pd-hero-20 .pd-hero-20-main-img-outer {
     width: 380px;
-    height: 575px;
+    height: 416px;
   }
 }
 @media (min-width: 1200px) {
   .pd-hero-20 .pd-hero-20-main-img-outer {
     width: 540px;
-    height: 640px;
+    height: 500px;
   }
 }
 .pd-hero-20 .pd-hero-20-main-img-outer .pd-hero-20-play-icon {

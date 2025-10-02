@@ -2540,6 +2540,7 @@
     .pd-hero-19-logos {
         display: grid;
         gap: $pd-block-padding-sm;
+
         @media screen and (max-width: 575px) {
             grid-template-columns: 1fr 1fr;
         }
@@ -2550,10 +2551,7 @@
 
         @media (min-width: 992px) {
             grid-template-columns: 1fr 1fr 1fr;
-
         }
-
-
     }
 }
 
@@ -2612,28 +2610,60 @@
     // }
     // }
     // main image
-    
     // @media (min-width: 992px) {
-    //     height: calc(100vh - $pd-nav-height);
-    //     max-height: 900px;
-    //     min-height: 800px;
+    // height: calc(100vh - $pd-nav-height);
+    // max-height: 900px;
+    // min-height: 800px;
     // }
-
     .pd-hero-20-features {
         font-size: $pd-font-md;
         color: $primary;
-        line-height: $pd-line-height-ex-lg;
 
+        // line-height: $pd-line-height-ex-ex-lg;
         ul {
-            margin-bottom: 0px;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                padding-left: 36px;
+                position: relative;
+                margin-bottom: 18px;
+
+                &:before {
+                    content: url(/images/design-assets/_vivato/check_circle_24dp_E84F49_FILL0_wght300_GRAD0_opsz24.svg);
+                    position: absolute;
+                    width: 32px;
+                    height: 32px;
+                    left: 0;
+                    margin-top: 4px;
+                }
+            }
         }
     }
 
     .pd-hero-20-logos {
         display: grid;
         gap: $pd-block-padding-sm;
-        @media screen and (max-width: 575px) {
-            grid-template-columns: 1fr 1fr;
+
+        @media screen and (max-width: 320px) {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: $pd-block-padding-ex-sm;
+
+            .pd-accred-logo {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        @media (min-width: 321px) and (max-width: 575px) {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: $pd-block-padding-ex-sm;
+
+            .pd-accred-logo {
+                max-width: 100%;
+                height: auto;
+            }
         }
 
         @media (min-width: 576px) and (max-width: 991px) {
@@ -2642,10 +2672,7 @@
 
         @media (min-width: 992px) {
             grid-template-columns: 1fr 1fr 1fr;
-
         }
-
-
     }
 
     .pd-hero-20-main-img-outer {
@@ -2670,12 +2697,12 @@
 
         @media (min-width: 992px) and (max-width: 1199px) {
             width: 380px;
-            height: 575px;
+            height: 416px;
         }
 
         @media (min-width: 1200px) {
             width: 540px;
-            height: 640px;
+            height: 500px;
         }
 
         .pd-hero-20-play-icon {
