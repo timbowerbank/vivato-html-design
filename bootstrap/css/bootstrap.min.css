@@ -31469,16 +31469,17 @@ textarea.form-control-lg {
     padding-left: 60px;
   }
 }
-.pd-forms-5 h2, .pd-forms-5 .h2 {
-  font-size: 1.4rem;
-  font-weight: 400;
-}
 .pd-forms-5 .pd-icon-card-link {
   display: block;
   text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.4rem;
 }
 .pd-forms-5 .pd-icon-card-link img {
-  margin-right: 6px;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
 }
 .pd-forms-5 .pd-icon-card-link span {
   color: #fff;
@@ -31500,12 +31501,12 @@ textarea.form-control-lg {
 }
 @media screen and (max-width: 991px) {
   .pd-forms-5 .pd-forms-5-border {
-    border-bottom: 2px solid #E84F49;
+    border-bottom: 2px solid #fff;
   }
 }
 @media (min-width: 992px) {
   .pd-forms-5 .pd-forms-5-border {
-    border-right: 2px solid #E84F49;
+    border-right: 2px solid #fff;
   }
 }
 .pd-forms-5 .pd-forms-5-card {
@@ -31513,6 +31514,10 @@ textarea.form-control-lg {
   color: #25215F;
   background: #f8f9fa;
   border-radius: 20px;
+}
+.pd-forms-5 .pd-forms-5-card p {
+  margin-bottom: 3px;
+  font-size: 0.9rem;
 }
 .pd-text-1 h1, .pd-text-1 .h1,
 .pd-text-1 h2,

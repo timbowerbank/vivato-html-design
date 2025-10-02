@@ -617,17 +617,22 @@
         }
     }
 
-    h2 {
-        font-size: $pd-font-md;
-        font-weight: $pd-font-weight-medium;
-    }
+    // h2 {
+    //     font-size: $pd-font-md;
+    //     font-weight: $pd-font-weight-medium;
+    // }
 
     .pd-icon-card-link {
         display: block;
         text-decoration: none;
+        color: $white;
+        font-weight: $pd-font-weight-heavy;
+        font-size: $pd-font-md;
 
         img {
-            margin-right: 6px;
+            width: 32px;
+            height: 32px;
+            margin-right: 8px;
         }
 
         span {
@@ -653,11 +658,11 @@
 
     .pd-forms-5-border {
         @media screen and (max-width: 991px) {
-            border-bottom: 2px solid $info;
+            border-bottom: 2px solid $white;
         }
 
         @media (min-width: 992px) {
-            border-right: 2px solid $info;
+            border-right: 2px solid $white;
         }
     }
 
@@ -666,6 +671,11 @@
         color: $primary;
         background: $light;
         border-radius: $pd-border-radius-sm;
+
+        p {
+            margin-bottom: 3px;
+            font-size: 0.9rem;
+        }
     }
 }
 
