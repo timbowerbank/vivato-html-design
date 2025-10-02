@@ -3216,6 +3216,15 @@
 
 .pd-cards-24 {
     .pd-cards-24-card-outer {
-        // for js to target
+        // JS targtes this equal header heights
+        background: $white;
+        padding: $pd-block-padding-sm;
+        @media screen and (max-width: 575px) {
+            border-radius: $pd-border-radius-sm;
+        }
+        @media (min-width: 756px) {
+            border-radius: $pd-border-radius-lg;
+
+        }
     }
 }

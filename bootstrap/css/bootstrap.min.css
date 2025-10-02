@@ -20346,6 +20346,20 @@ textarea.form-control-lg {
 .pd-cards-23 .container {
   z-index: 3;
 }
+.pd-cards-24 .pd-cards-24-card-outer {
+  background: #fff;
+  padding: 40px;
+}
+@media screen and (max-width: 575px) {
+  .pd-cards-24 .pd-cards-24-card-outer {
+    border-radius: 20px;
+  }
+}
+@media (min-width: 756px) {
+  .pd-cards-24 .pd-cards-24-card-outer {
+    border-radius: 40px;
+  }
+}
 
 .pd-section-1 {
   border-top: 1px solid #dee2e6;
@@ -35257,6 +35271,14 @@ textarea.form-control-lg {
   .pd-card-headline {
     font-size: 2rem;
   }
+}
+
+.pd-card-headline.pd-font-weight-heavy {
+  font-weight: 500;
+}
+
+.pd-card-headline.pd-font-md {
+  font-size: 1.4rem;
 }
 
 .pd-card-headline.pd-inverted {

@@ -499,6 +499,14 @@
     }
 }
 
+.pd-card-headline.pd-font-weight-heavy {
+    font-weight: $pd-font-weight-heavy;
+}
+
+.pd-card-headline.pd-font-md {
+    font-size: $pd-font-md;
+}
+
 .pd-card-headline.pd-inverted {
     color: $white;
 }
