@@ -37958,10 +37958,21 @@ textarea.form-control-lg {
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
 }
-.pd-mega-menu-sub-menu-col header strong {
+.pd-mega-menu-sub-menu-col header a strong {
   font-weight: 700;
   color: #25215F;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
   font-size: 0.75rem;
+}
+.pd-mega-menu-sub-menu-col header a svg {
+  fill: #25215F;
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+}
+.pd-mega-menu-sub-menu-col header a:hover strong {
+  color: #000000;
 }
 
 .pd-mega-menu-sub-menu.pd-is-active {
