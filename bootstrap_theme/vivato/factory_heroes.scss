@@ -2484,6 +2484,12 @@
     // }
     // }
     // main image
+    .pd-hero-19-col-right {
+        @media (min-width: 576px) and (max-width: 991px) {
+            width: 100%;
+        }
+    }
+
     .pd-hero-19-main-img-outer {
         position: relative;
         overflow: hidden;
@@ -2500,8 +2506,10 @@
         }
 
         @media (min-width: 576px) and (max-width: 991px) {
-            width: 624px;
+            width: 100%;
+            max-width: 624px;
             height: 565px;
+            flex: 1 1 auto;
         }
 
         @media (min-width: 992px) and (max-width: 1199px) {
@@ -2510,7 +2518,7 @@
         }
 
         @media (min-width: 1200px) {
-            width: 540px;
+            width: 520px;
             height: 500px;
         }
 
@@ -2541,8 +2549,24 @@
         display: grid;
         gap: $pd-block-padding-sm;
 
-        @media screen and (max-width: 575px) {
-            grid-template-columns: 1fr 1fr;
+        @media screen and (max-width: 320px) {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: $pd-block-padding-ex-sm;
+
+            .pd-accred-logo {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        @media (min-width: 321px) and (max-width: 575px) {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: $pd-block-padding-ex-sm;
+
+            .pd-accred-logo {
+                max-width: 100%;
+                height: auto;
+            }
         }
 
         @media (min-width: 576px) and (max-width: 991px) {
@@ -2675,6 +2699,12 @@
         }
     }
 
+    .pd-hero-20-col-right {
+        @media (min-width: 576px) and (max-width: 991px) {
+            width: 100%;
+        }
+    }
+
     .pd-hero-20-main-img-outer {
         position: relative;
         overflow: hidden;
@@ -2691,8 +2721,10 @@
         }
 
         @media (min-width: 576px) and (max-width: 991px) {
-            width: 624px;
+            width: 100%;
+            max-width: 624px;
             height: 565px;
+            flex: 1 1 auto;
         }
 
         @media (min-width: 992px) and (max-width: 1199px) {
@@ -2701,7 +2733,7 @@
         }
 
         @media (min-width: 1200px) {
-            width: 540px;
+            width: 520px;
             height: 500px;
         }
 

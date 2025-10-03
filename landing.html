@@ -239,7 +239,7 @@
         <section class="pb-5 pd-hero-20 pt-2 pt-lg-0">
             <div class="container">
                 <div class="row">
-                    <div class="align-items-start col-12 col-lg-7 col-xl-6 d-flex flex-column justify-content-center">
+                    <div class="align-items-start col-12 col-lg-7 col-xl-6 col-xxl-7 d-flex flex-column justify-content-center">
                         <header>
                             <address class="align-items-center d-flex flex-row justify-content-start mb-4"><a href="#" class="pd-icon-label"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#44687E" class="me-1">
                                         <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
@@ -273,8 +273,8 @@
                                     </svg></span></a>
                         </footer>                         
                     </div>
-                    <div class="align-items-center col-12 col-lg-5 col-xl-6 d-flex flex-column justify-content-center pt-5 pt-lg-0">
-                        <div class="align-items-center d-flex flex-row justify-content-lg-end justify-content-start">
+                    <div class="align-items-center align-items-lg-end col-12 col-lg-5 col-xl-6 col-xxl-5 d-flex flex-column justify-content-center pt-5 pt-lg-0">
+                        <div class="align-items-center d-flex flex-lg-row flex-row flex-sm-column justify-content-lg-start justify-content-sm-center justify-content-start pd-hero-20-col-right">
                             <div class="pd-hero-20-main-img-outer">
                                 <picture>
                                     <source srcset="/images/uploads/_vivato/hero-dev-1_result.webp" type="image/webp">
@@ -1626,7 +1626,7 @@
                 </svg>
             </button>
             <div class="container">
-                <div class="justify-content-center row">
+                <div class="row">
                     <div class="col-12 pd-modal-3-scroll-y">
                         <div class="mb-5 mb-sm-0 pd-gradient-1000w-500h pd-modal-3-form-outer">
                             <div class="row">
@@ -1635,65 +1635,67 @@
                                         <p class="mb-2 mb-lg-4 pd-headline pd-inverted">Get In Touch</p>
                                     </header>                                     
                                 </div>
-                                <div class="col-lg-3">
+                                <div class="col-lg-3 d-flex flex-row justify-content-end">
                                     <img src="images/design-assets/_vivato/logo-vivato-wo.svg" alt="vivato logo" width="200" height="48" loading="lazy" class="d-lg-block d-none"> 
                                 </div>
                             </div>
-                            <form id="joinWaitingList" role="form" method="post" action="">
+                            <div>
                                 <div class="row">
                                     <div class="col-12 col-lg-5 pe-0 pe-lg-3">
                                         <div>
                                             <p class="pd-inverted pd-sub-headline">Give us a call, email or complete the form. We&apos;ll get in contact for an initial free consultation to discuss your project in-depth.</p>
                                         </div>
                                         <div class="pd-modal-3-card">
-                                            <div class="align-items-start d-flex flex-column justify-content-start mb-4">
+                                            <div class="align-items-start d-flex flex-column justify-content-start mb-4 mb-lg-0">
                                                 <p class="pd-card-headline pd-inverted">Call Us</p><a href="tel:+442071395093" name="anchor" class="mb-2 mb-lg-4 pd-icon-card-link"><img src="images/design-assets/_vivato/phone_enabled_24dp_FFFFFF_FILL0_wght300_GRAD0_opsz24.svg" width="20" height="20" loading="lazy" alt="phone icon"><span>020 7139 5093</span></a>
-                                                <p class="pd-card-headline pd-inverted">Email Us</p><a href="#" name="anchor" class="mb-2 mb-lg-4 pd-icon-card-link"><img src="/images/design-assets/_vivato/mail_24dp_FFFFFF_FILL0_wght300_GRAD0_opsz24.svg" alt="email icon" width="20" height="20" loading="lazy"><span>hello@vivato.co.uk</span></a>
+                                                <p class="pd-card-headline pd-inverted">Email Us</p><a href="#" name="anchor" class="mb-2 mb-lg-0 pd-icon-card-link"><img src="/images/design-assets/_vivato/mail_24dp_FFFFFF_FILL0_wght300_GRAD0_opsz24.svg" alt="email icon" width="20" height="20" loading="lazy"><span>hello@vivato.co.uk</span></a>
                                             </div>
                                         </div>                                         
                                     </div>
                                     <div class="col-12 col-lg-7">
-                                        <div class="row">
-                                            <div class="col-12 col-md-6">
-                                                <div class="mb-3"> 
-                                                    <label for="first_name">First Name*</label>                                                     
-                                                    <input id="first_name" type="text" class="form-control" name="first_name" placeholder="Enter first name" required> 
-                                                </div>                                                 
+                                        <form id="contactVivato" role="form" method="post" action="">
+                                            <div class="row">
+                                                <div class="col-12 col-md-6">
+                                                    <div class="mb-3"> 
+                                                        <label for="first_name">First Name*</label>                                                         
+                                                        <input id="first_name" type="text" class="form-control" name="first_name" placeholder="Enter first name" required> 
+                                                    </div>                                                     
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3"> 
+                                                        <label for="last_name">Last Name*</label>                                                         
+                                                        <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Enter your last name" required> 
+                                                    </div>                                                     
+                                                </div>
                                             </div>
-                                            <div class="col-md-6">
-                                                <div class="mb-3"> 
-                                                    <label for="last_name">Last Name*</label>                                                     
-                                                    <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Enter your last name" required> 
-                                                </div>                                                 
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="mb-3 position-relative"> 
+                                                        <label for="email">Email*</label>                                                         
+                                                        <input id="email" type="email" class="form-control" name="email" placeholder="Enter email" required> 
+                                                    </div>                                                     
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3 position-relative"> 
+                                                        <label for="phone">Phone</label>                                                         
+                                                        <input type="tel" class="form-control" id="phone" name="telephone" placeholder="Enter Phone"> 
+                                                    </div>                                                     
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="mb-3 position-relative"> 
-                                                    <label for="email">Email*</label>                                                     
-                                                    <input id="email" type="email" class="form-control" name="email" placeholder="Enter email" required> 
-                                                </div>                                                 
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="mb-3 position-relative"> 
-                                                    <label for="phone">Phone</label>                                                     
-                                                    <input type="tel" class="form-control" id="phone" name="telephone" placeholder="Enter Phone"> 
-                                                </div>                                                 
-                                            </div>
-                                        </div>
-                                        <div class="mb-3"> 
-                                            <label for="message">Message*</label>                                             
-                                            <textarea id="message" rows="4" class="form-control" name="message" placeholder="Leave us a message" required>
+                                            <div class="mb-3"> 
+                                                <label for="message">Message*</label>                                                 
+                                                <textarea id="message" rows="4" class="form-control" name="message" placeholder="Leave us a message" required>
     </textarea> 
-                                        </div>
-                                        <button type="submit" class="pd-btn pd-btn-lg">
-                                            Submit<span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#231f20">
-                                                    <path d="m553.85-253.85-42.16-43.38L664.46-450H180v-60h484.46L511.69-662.77l42.16-43.38L780-480 553.85-253.85Z"/>
-                                                </svg></span>
-                                        </button>                                         
+                                            </div>
+                                            <button type="submit" class="pd-btn pd-btn-lg">
+                                                Submit<span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#231f20">
+                                                        <path d="m553.85-253.85-42.16-43.38L664.46-450H180v-60h484.46L511.69-662.77l42.16-43.38L780-480 553.85-253.85Z"/>
+                                                    </svg></span>
+                                            </button>
+                                        </form>                                         
                                     </div>
                                 </div>                                 
-                            </form>
+                            </div>
                         </div>                         
                     </div>
                 </div>
