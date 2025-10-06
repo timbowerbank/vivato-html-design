@@ -19729,6 +19729,11 @@ textarea.form-control-lg {
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
+.pd-cards-18 .pd-cards-18-card-lg-outer .pd-cards-18-card-left-col .pd-cards-18-play-icon:focus-visible {
+  outline: 2px dotted #ffffff;
+  outline-offset: 2px;
+  border-radius: 50em;
+}
 .pd-cards-18 .pd-cards-18-card-lg-outer .pd-cards-18-card-content-outer {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 50%;
@@ -33545,6 +33550,10 @@ textarea.form-control-lg {
 .pd-grid-11 .pd-grid-11-chip:hover svg {
   fill: #E84F49;
 }
+.pd-grid-11 .pd-grid-11-chip:focus-visible {
+  outline: 2px dotted #ffffff;
+  outline-offset: 2px;
+}
 
 .pd-grid-13 {
   min-height: 400px;
@@ -35382,7 +35391,11 @@ textarea.form-control-lg {
   color: #ffffff;
 }
 .pd-card-link.pd-inverted:hover {
-  color: #e6e6e6;
+  color: #CCCCCC;
+}
+.pd-card-link.pd-inverted:focus-visible {
+  outline: 2px dotted #ffffff;
+  outline-offset: 2px;
 }
 
 .pd-card-bullet {

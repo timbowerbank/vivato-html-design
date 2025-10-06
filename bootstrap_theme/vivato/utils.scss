@@ -572,7 +572,12 @@
     color: $white;
 
     &:hover {
-        color: darken($white, 10%);
+        color: $pd-primary-hover;
+    }
+
+    &:focus-visible {
+        outline: $pd-focus-outline-dark;
+        outline-offset: $pd-focus-outline-offset-sm;
     }
 }
 
