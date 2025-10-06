@@ -618,10 +618,9 @@
     }
 
     // h2 {
-    //     font-size: $pd-font-md;
-    //     font-weight: $pd-font-weight-medium;
+    // font-size: $pd-font-md;
+    // font-weight: $pd-font-weight-medium;
     // }
-
     .pd-icon-card-link {
         display: block;
         text-decoration: none;
@@ -629,21 +628,40 @@
         font-weight: $pd-font-weight-heavy;
         font-size: $pd-font-md;
 
-        img {
+        img,
+        svg {
             width: 32px;
             height: 32px;
             margin-right: 8px;
+            fill: $white;
+            transition: fill $pd-transition-speed ease;
         }
 
         span {
             color: $white;
-            font-weight: 700;
+            transition: color $pd-transition-speed ease;
+            font-weight: $pd-font-weight-heavy;
+        }
+
+        &:hover {
+            svg {
+                fill: $pd-primary-hover;
+            }
+
+            span {
+                color: $pd-primary-hover;
+            }
+        }
+
+        &:focus-visible {
+            outline: $pd-focus-outline-dark;
+            outline-offset: $pd-focus-outline-offset-sm;
         }
     }
 
     label {
         font-weight: $pd-font-weight-light;
-        font-size: $pd-font-ex-sm;       
+        font-size: $pd-font-ex-sm;
     }
 
     .pd-forms-5-input-even-width {

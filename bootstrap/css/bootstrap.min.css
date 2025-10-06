@@ -26223,6 +26223,10 @@ textarea.form-control-lg {
   font-weight: 300;
   font-size: 0.8rem;
 }
+.pd-people-4 .pd-people-4-card-outer .pd-people-4-card-content-outer .pd-people-4-card-content a:focus-visible {
+  outline: 2px dotted #ffffff;
+  outline-offset: 2px;
+}
 .pd-specials-multiBox .pd-specials-multiBox-card-col {
   position: relative;
 }
@@ -31660,14 +31664,30 @@ textarea.form-control-lg {
   font-weight: 500;
   font-size: 1.4rem;
 }
-.pd-forms-5 .pd-icon-card-link img {
+.pd-forms-5 .pd-icon-card-link img,
+.pd-forms-5 .pd-icon-card-link svg {
   width: 32px;
   height: 32px;
   margin-right: 8px;
+  fill: #ffffff;
+  -webkit-transition: fill 0.3s ease;
+  transition: fill 0.3s ease;
 }
 .pd-forms-5 .pd-icon-card-link span {
   color: #ffffff;
-  font-weight: 700;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+.pd-forms-5 .pd-icon-card-link:hover svg {
+  fill: #CCCCCC;
+}
+.pd-forms-5 .pd-icon-card-link:hover span {
+  color: #CCCCCC;
+}
+.pd-forms-5 .pd-icon-card-link:focus-visible {
+  outline: 2px dotted #ffffff;
+  outline-offset: 2px;
 }
 .pd-forms-5 label {
   font-weight: 300;

@@ -573,6 +573,14 @@
                     font-weight: $pd-font-weight-light;
                     font-size: $pd-font-ex-sm;
                 }
+
+                // linkedin icon
+                a {
+                    &:focus-visible {
+                        outline: $pd-focus-outline-dark;
+                        outline-offset: $pd-focus-outline-offset-sm;
+                    }
+                }
             }
         }
     }
