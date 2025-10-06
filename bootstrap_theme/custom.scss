@@ -170,23 +170,39 @@ $font-family-sans-serif: 'DMSans', system-ui, -apple-system, sans-serif;
 @import "vivato/factory_mega_menu_nav";
 @import "hamburgers/hamburgers";
 
-// .hamburger {
-    // .hamburger-inner,
-    // .hamburger-inner::before,
-    // .hamburger-inner::after {
-    //     transition: background-color $pd-transition-speed ease;
-    // }
+.hamburger {
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+        transition: transform 0.15s ease, background-color $pd-transition-speed ease;
+    }
 
-//     &:hover {
-//         .hamburger-inner,
-//         .hamburger-inner::before,
-//         .hamburger-inner::after {
-//             background-color: $secondary;
-//         }
-//     }
+    &:hover {
+        .hamburger-inner,
+        .hamburger-inner::before,
+        .hamburger-inner::after {
+            background-color: $pd-primary-hover;
+        }
+    }
 
-//     &:focus-visible {
-//         outline: $pd-focus-outline;
-//         outline-offset: $pd-focus-outline-offset-sm;
-//     }
-// }
+    &.is-active {
+        .hamburger-inner,
+        .hamburger-inner::before,
+        .hamburger-inner::after {
+            transition: transform 0.15s ease, background-color $pd-transition-speed ease;
+        }
+
+        &:hover {
+            .hamburger-inner,
+            .hamburger-inner::before,
+            .hamburger-inner::after {
+                background-color: $pd-primary-hover;
+            }
+        }
+    }
+
+    &:focus-visible {
+        outline: $pd-focus-outline;
+        outline-offset: $pd-focus-outline-offset-sm;
+    }
+}
