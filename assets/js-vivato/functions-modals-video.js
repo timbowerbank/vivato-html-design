@@ -7,6 +7,7 @@ let isModalOpen = false;
 let pdModalWindow;
 var pdVideoId;
 let hasVideoScript = false;
+let previousFocusElement = null;
 
 function initYouTubeVideoButtons() {
 
@@ -16,7 +17,6 @@ function initYouTubeVideoButtons() {
 
     for(const btn of ytBtns) {
         btn.addEventListener("click", toggleYTModalListener);
-        pdVideoId = btn.dataset.videoId;
     }
 
 }
@@ -37,24 +37,40 @@ function toggleYTModalListener(e) {
     if(isModalOpen) {
         closeModal();
     } else {
+        if(e.currentTarget && e.currentTarget.dataset.videoId) {
+            pdVideoId = e.currentTarget.dataset.videoId;
+        }
         openModal();
     }
 }
 
 function openModal() {
-    
+
+    previousFocusElement = document.activeElement;
+
     if(!pdModalWindow.classList.contains('pd-show')) {
         pdModalWindow.classList.add('pd-show');
     }
-    
+
     // force a repaint
     void(pdModalWindow.offsetHeight);
-    
+
     pdModalWindow.style.opacity = 1;
-    
+
     isModalOpen = true;
 
     addVideoScript();
+
+    if(player && typeof player.loadVideoById === 'function' && pdVideoId) {
+        player.loadVideoById(pdVideoId);
+    }
+
+    const closeButton = pdModalWindow.querySelector('.pd-close-modal');
+    if(closeButton) {
+        closeButton.focus();
+    }
+
+    document.addEventListener('keydown', handleEscapeKey);
 }
 
 function closeModal() {
@@ -62,12 +78,25 @@ function closeModal() {
     if(pdModalWindow.classList.contains('pd-show')) {
         pdModalWindow.classList.remove('pd-show');
     }
-    
+
     pdModalWindow.removeAttribute('style');
     isModalOpen = false;
 
     if(player) {
         player.stopVideo();
+    }
+
+    if(previousFocusElement) {
+        previousFocusElement.focus();
+        previousFocusElement = null;
+    }
+
+    document.removeEventListener('keydown', handleEscapeKey);
+}
+
+function handleEscapeKey(e) {
+    if(e.key === 'Escape' && isModalOpen) {
+        closeModal();
     }
 }
 

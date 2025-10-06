@@ -10,14 +10,14 @@
 
         const playerContainer = document.getElementById('player');
         playerContainer.style.width = '100%';
-        playerContainer.style.height = '56.25vw'; 
-        playerContainer.style.maxHeight = '500px'; 
+        playerContainer.style.height = '56.25vw';
+        playerContainer.style.maxHeight = '500px';
 
 
         player = new YT.Player('player', {
             height: '100%',
             width: '100%',
-            videoId: pdVideoId,
+            videoId: window.pdVideoId || pdVideoId,
             playerVars: {
             'playsinline': 1
             },
