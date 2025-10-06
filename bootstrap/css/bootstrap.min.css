@@ -23052,6 +23052,13 @@ textarea.form-control-lg {
   background: linear-gradient(#25215f 0%, rgba(37, 33, 95, 0.9) 30%, rgba(37, 33, 95, 0.9) 60%, #25215f 100%);
   position: relative;
 }
+.pd-footer-3 .container {
+  z-index: 3;
+}
+.pd-footer-3 .pd-footer-3-logo:focus-visible {
+  outline: 2px dotted #ffffff;
+  outline-offset: 4px;
+}
 .pd-footer-3 p {
   margin-bottom: 3px;
   font-size: 0.9rem;
@@ -23063,16 +23070,34 @@ textarea.form-control-lg {
   border-radius: 20px;
 }
 .pd-footer-3 .pd-icon-card-link {
-  display: block;
+  display: inline-block;
   text-decoration: none;
   margin-bottom: 10px;
 }
-.pd-footer-3 .pd-icon-card-link img {
+.pd-footer-3 .pd-icon-card-link img,
+.pd-footer-3 .pd-icon-card-link svg {
+  width: 20px;
+  height: 20px;
   margin-right: 6px;
+  fill: #ffffff;
+  -webkit-transition: fill 0.3s ease;
+  transition: fill 0.3s ease;
 }
 .pd-footer-3 .pd-icon-card-link span {
   color: #ffffff;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
   font-weight: 700;
+}
+.pd-footer-3 .pd-icon-card-link:hover svg {
+  fill: #CCCCCC;
+}
+.pd-footer-3 .pd-icon-card-link:hover span {
+  color: #CCCCCC;
+}
+.pd-footer-3 .pd-icon-card-link:focus {
+  outline: 2px dotted #ffffff;
+  outline-offset: 2px;
 }
 .pd-footer-3 .pd-footer-link {
   text-decoration: none;
@@ -23080,6 +23105,15 @@ textarea.form-control-lg {
   margin-bottom: 10px;
   font-size: 0.9rem;
   max-width: 300px;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.pd-footer-3 .pd-footer-link:hover {
+  color: #CCCCCC;
+}
+.pd-footer-3 .pd-footer-link:focus-visible {
+  outline: 2px dotted #ffffff;
+  outline-offset: 2px;
 }
 .pd-footer-3 .pd-divider {
   background-color: #E84F49;
@@ -23121,6 +23155,10 @@ textarea.form-control-lg {
     width: auto;
     height: 40px;
   }
+}
+.pd-footer-3 .pd-social-logo:focus-visible {
+  outline: 2px dotted #ffffff;
+  outline-offset: 2px;
 }
 
 .pd-footer-4 {
@@ -36939,6 +36977,11 @@ textarea.form-control-lg {
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
+.pd-slider-1 .glide__slide .pd-slider-1-card-outer .pd-slider-1-play-outer a:focus-visible {
+  outline: 2px dotted #ffffff;
+  outline-offset: 2px;
+  border-radius: 50em;
+}
 .pd-slider-1 .glide__slide .pd-slider-1-card-outer .pd-slider-1-text-content-outer {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
@@ -36973,7 +37016,14 @@ textarea.form-control-lg {
           transform: color 0.3s ease;
 }
 .pd-slider-1 .glide__slide .pd-slider-1-card-outer .pd-slider-1-text-content-outer header a:hover h3, .pd-slider-1 .glide__slide .pd-slider-1-card-outer .pd-slider-1-text-content-outer header a:hover .h3 {
-  color: #342e85;
+  color: #CCCCCC;
+}
+.pd-slider-1 .glide__slide .pd-slider-1-card-outer .pd-slider-1-text-content-outer header a:focus-visible {
+  outline: none;
+}
+.pd-slider-1 .glide__slide .pd-slider-1-card-outer .pd-slider-1-text-content-outer header a:focus-visible h3, .pd-slider-1 .glide__slide .pd-slider-1-card-outer .pd-slider-1-text-content-outer header a:focus-visible .h3 {
+  outline: 2px dotted #25215F;
+  outline-offset: 2px;
 }
 .pd-slider-1 .glide__slide .pd-slider-1-card-outer .pd-slider-1-text-content-outer header a.pd-category-link {
   display: inline-block;
@@ -36985,7 +37035,11 @@ textarea.form-control-lg {
   transition: color 0.3s ease;
 }
 .pd-slider-1 .glide__slide .pd-slider-1-card-outer .pd-slider-1-text-content-outer header a.pd-category-link:hover {
-  color: #342e85;
+  color: #CCCCCC;
+}
+.pd-slider-1 .glide__slide .pd-slider-1-card-outer .pd-slider-1-text-content-outer header a.pd-category-link:focus-visible {
+  outline: 2px dotted #25215F;
+  outline-offset: 2px;
 }
 .pd-slider-1 .glide__slide .pd-slider-1-card-outer .pd-slider-1-text-content-outer header p {
   color: #25215F;
@@ -37013,6 +37067,11 @@ textarea.form-control-lg {
 .pd-slider-1 .glide__slide .pd-slider-1-card-outer .pd-slider-1-text-content-outer .pd-slider-1-card-tags-outer a:hover {
   background-color: #25215F;
   color: #ffffff;
+}
+.pd-slider-1 .glide__slide .pd-slider-1-card-outer .pd-slider-1-text-content-outer .pd-slider-1-card-tags-outer a:focus-visible {
+  outline: 2px dotted #25215F;
+  outline-offset: 2px;
+  border-radius: 50em;
 }
 .pd-slider-1 .glide__arrows {
   position: absolute;
@@ -37046,6 +37105,10 @@ textarea.form-control-lg {
 }
 .pd-slider-1 .glide__arrows button.glide__arrow:hover svg {
   fill: #25215F;
+}
+.pd-slider-1 .glide__arrows button.glide__arrow:focus-visible {
+  outline: 2px dotted #ffffff;
+  outline-offset: 4px;
 }
 .pd-slider-1 .glide__arrows button.glide__arrow--left {
   margin-right: 16px;

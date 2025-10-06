@@ -80,6 +80,12 @@
                             transform: scale(1.1);
                         }
                     }
+
+                    &:focus-visible {
+                        outline: $pd-focus-outline-dark;
+                        outline-offset: $pd-focus-outline-offset-sm;
+                        border-radius: 50em;
+                    }
                 }
             }
 
@@ -112,7 +118,15 @@
 
                         &:hover {
                             h3 {
-                                color: lighten($primary, 10%);
+                                color: $pd-primary-hover;
+                            }
+                        }
+
+                        &:focus-visible {
+                            outline: none;
+                            h3 {
+                                outline: $pd-focus-outline;
+                                outline-offset: $pd-focus-outline-offset-sm;
                             }
                         }
 
@@ -127,7 +141,12 @@
                         transition: color $pd-transition-speed ease;
 
                         &:hover {
-                            color: lighten($primary, 10%);
+                            color: $pd-primary-hover;
+                        }
+
+                        &:focus-visible {
+                            outline: $pd-focus-outline;
+                            outline-offset: $pd-focus-outline-offset-sm;
                         }
 
                     }
@@ -161,6 +180,12 @@
                         &:hover {
                             background-color: $primary;
                             color: $white;
+                        }
+
+                        &:focus-visible {
+                            outline: $pd-focus-outline;
+                            outline-offset: $pd-focus-outline-offset-sm;
+                            border-radius: 50em;
                         }
                     }
                 }
@@ -200,6 +225,11 @@
                 svg {
                     fill: $primary;
                 }
+            }
+
+            &:focus-visible {
+                outline: $pd-focus-outline-dark;
+                outline-offset: $pd-focus-outline-offset-lg;
             }
         }
 

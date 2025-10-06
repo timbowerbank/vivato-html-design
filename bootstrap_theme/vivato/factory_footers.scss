@@ -237,6 +237,18 @@
 .pd-footer-3 {
     background: linear-gradient(rgba($primary, 1) 0%, rgba($primary, 0.9) 30%, rgba($primary, 0.9) 60%, rgba($primary,1) 100%);
     position: relative;
+
+    .container {
+        z-index: 3;
+    }
+
+    .pd-footer-3-logo {
+        &:focus-visible {
+            outline: $pd-focus-outline-dark;
+            outline-offset: $pd-focus-outline-offset-lg;
+        }
+    }
+
     // h3 {
     // font-weight: 700;
     // font-size: 1.2rem;
@@ -259,17 +271,38 @@
 
     // this is an anchor
     .pd-icon-card-link {
-        display: block;
+        display: inline-block;
         text-decoration: none;
         margin-bottom: 10px;
 
-        img {
+        img,
+        svg {
+            width: 20px;
+            height: 20px;
             margin-right: 6px;
+            fill: $white;
+            transition: fill $pd-transition-speed ease;
         }
 
         span {
             color: $white;
+            transition: color $pd-transition-speed ease;
             font-weight: 700;
+        }
+
+        &:hover {
+            svg {
+                fill: $pd-primary-hover;
+            }
+
+            span {
+                color: $pd-primary-hover;
+            }
+        }
+
+        &:focus {
+            outline: $pd-focus-outline-dark;
+            outline-offset: $pd-focus-outline-offset-sm;
         }
     }
 
@@ -279,6 +312,16 @@
         margin-bottom: 10px;
         font-size: 0.9rem;
         max-width: 300px;
+        transition: color $pd-transition-speed ease;
+
+        &:hover {
+            color: $pd-primary-hover;
+        }
+
+        &:focus-visible {
+            outline: $pd-focus-outline-dark;
+            outline-offset: $pd-focus-outline-offset-sm;
+        }
     }
 
     .pd-divider {
@@ -326,6 +369,11 @@
                 width: auto;
                 height: 40px;
             }
+        }
+
+        &:focus-visible {
+            outline: $pd-focus-outline-dark;
+            outline-offset: $pd-focus-outline-offset-sm;
         }
     }
 
