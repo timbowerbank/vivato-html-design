@@ -111,7 +111,7 @@
                             font-size: $pd-font-md;
                             font-weight: $pd-font-weight-light;
                             color: $primary;
-                            transform: color $pd-transition-speed ease;
+                            transition: color $pd-transition-speed ease;
     
                             // margin-bottom: 0px;
                         }
