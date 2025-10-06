@@ -2542,6 +2542,12 @@
                     transform: scale(1.1);
                 }
             }
+
+            &:focus-visible {
+                outline: $pd-focus-outline-dark;
+                outline-offset: $pd-focus-outline-offset-sm;
+                border-radius: 50em;
+            }
         }
     }
 

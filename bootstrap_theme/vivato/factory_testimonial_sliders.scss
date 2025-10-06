@@ -1265,6 +1265,12 @@
                     fill: $white;
                 }
             }
+
+            &:focus-visible {
+                outline: $pd-focus-outline;
+                outline-offset: $pd-focus-outline-offset-lg;
+                border-radius: 50em;
+            }
         }
 
         button.glide__arrow--left {

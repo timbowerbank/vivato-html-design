@@ -212,8 +212,8 @@
     }
 
     &:focus-visible {
-        outline: 1px dotted $primary;
-        outline-offset: 4px;
+        outline: $pd-focus-outline;
+        outline-offset: $pd-focus-outline-offset-lg;
     }
 }
 
@@ -244,8 +244,8 @@
     }
 
     &:focus-visible {
-        outline: 1px dotted $white;
-        outline-offset: 4px;
+        outline: $pd-focus-outline-dark;
+        outline-offset: $pd-focus-outline-offset-lg;
     }
 }
 
@@ -289,6 +289,11 @@
             fill: $info;
         }
     }
+
+    &:focus-visible {
+        outline: $pd-focus-outline-dark;
+        outline-offset: $pd-focus-outline-offset-lg;
+    }
 }
 
 .pd-btn-secondary.pd-btn-lg {
@@ -318,11 +323,16 @@
     }
 
     &:hover {
-        color: lighten($primary, 10%);
+        color: $pd-primary-hover;
 
         svg {
-            fill: lighten($primary, 10%);
+            fill: $pd-primary-hover;
         }
+    }
+
+    &:focus-visible {
+        outline: $pd-focus-outline;
+        outline-offset: $pd-focus-outline-offset-sm;
     }
 }
 
@@ -428,12 +438,17 @@
 
     &:hover {
         p {
-            color: lighten($primary, 10%);
+            color: $pd-primary-hover;
         }
 
         svg {
-            fill: $secondary;
+            fill: $pd-primary-hover;
         }
+    }
+
+    &:focus-visible {
+        outline: $pd-focus-outline;
+        outline-offset: $pd-focus-outline-offset-sm;
     }
 }
 
@@ -448,12 +463,17 @@
 
     &:hover {
         p {
-            color: darken($white, 10%);
+            color: $pd-primary-hover;
         }
 
         svg {
-            fill: darken($white, 10%);
+            fill: $pd-primary-hover;
         }
+    }
+
+    &:focus-visible {
+        outline: $pd-focus-outline-dark;
+        outline-offset: $pd-focus-outline-offset-sm;
     }
 }
 
@@ -539,12 +559,12 @@
     }
 
     &:hover {
-        color: lighten($primary, 10%);
+        color: $pd-primary-hover;
     }
 
     &:focus-visible {
-        outline: 1px dotted $primary;
-        outline-offset: 4px;
+        outline: $pd-focus-outline;
+        outline-offset: $pd-focus-outline-offset-sm;
     }
 }
 
@@ -745,6 +765,12 @@
             svg {
                 transform: scale(1.1);
             }
+        }
+
+        &:focus-visible {
+            outline: $pd-focus-outline-dark;
+            outline-offset: $pd-focus-outline-offset-sm;
+            border-radius: 50em;
         }
     }
 }
