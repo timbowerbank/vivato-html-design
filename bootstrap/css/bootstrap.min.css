@@ -38586,32 +38586,6 @@ textarea.form-control-lg {
   transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.hamburger .hamburger-inner,
-.hamburger .hamburger-inner::before,
-.hamburger .hamburger-inner::after {
-  -webkit-transition: background-color 0.3s ease, -webkit-transform 0.15s ease;
-  transition: background-color 0.3s ease, -webkit-transform 0.15s ease;
-  transition: transform 0.15s ease, background-color 0.3s ease;
-  transition: transform 0.15s ease, background-color 0.3s ease, -webkit-transform 0.15s ease;
-}
-.hamburger:hover .hamburger-inner,
-.hamburger:hover .hamburger-inner::before,
-.hamburger:hover .hamburger-inner::after {
-  background-color: #C895FA;
-}
-.hamburger.is-active .hamburger-inner,
-.hamburger.is-active .hamburger-inner::before,
-.hamburger.is-active .hamburger-inner::after {
-  -webkit-transition: background-color 0.3s ease, -webkit-transform 0.15s ease;
-  transition: background-color 0.3s ease, -webkit-transform 0.15s ease;
-  transition: transform 0.15s ease, background-color 0.3s ease;
-  transition: transform 0.15s ease, background-color 0.3s ease, -webkit-transform 0.15s ease;
-}
-.hamburger.is-active:hover .hamburger-inner,
-.hamburger.is-active:hover .hamburger-inner::before,
-.hamburger.is-active:hover .hamburger-inner::after {
-  background-color: #C895FA;
-}
 .hamburger:focus-visible {
   outline: 2px dotted #25215F;
   outline-offset: 2px;

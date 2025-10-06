@@ -171,35 +171,6 @@ $font-family-sans-serif: 'DMSans', system-ui, -apple-system, sans-serif;
 @import "hamburgers/hamburgers";
 
 .hamburger {
-    .hamburger-inner,
-    .hamburger-inner::before,
-    .hamburger-inner::after {
-        transition: transform 0.15s ease, background-color $pd-transition-speed ease;
-    }
-
-    &:hover {
-        .hamburger-inner,
-        .hamburger-inner::before,
-        .hamburger-inner::after {
-            background-color: $pd-primary-hover;
-        }
-    }
-
-    &.is-active {
-        .hamburger-inner,
-        .hamburger-inner::before,
-        .hamburger-inner::after {
-            transition: transform 0.15s ease, background-color $pd-transition-speed ease;
-        }
-
-        &:hover {
-            .hamburger-inner,
-            .hamburger-inner::before,
-            .hamburger-inner::after {
-                background-color: $pd-primary-hover;
-            }
-        }
-    }
 
     &:focus-visible {
         outline: $pd-focus-outline;
