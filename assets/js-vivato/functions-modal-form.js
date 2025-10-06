@@ -6,6 +6,7 @@ let modalForm1, modalForm1Btn;
 let modalForm1OpenBtns = [];
 let isModalForm1Open = false;
 let scrollPositionModalForm1 = 0;
+let previousActiveElement = null;
 
 function initModalForm1() {
     modalForm1 = document.getElementById('pdLandingModal');
@@ -45,6 +46,9 @@ function openModalForm1(e) {
         return;
     }
 
+    // store the element that triggered the modal
+    previousActiveElement = document.activeElement;
+
     scrollPositionModalForm1 = window.scrollY;
 
     // freeze the body
@@ -65,16 +69,21 @@ function openModalForm1(e) {
     // set the boolean
     isModalForm1Open = true;
 
+    // set focus to close button for accessibility
+    if(modalForm1Btn) {
+        modalForm1Btn.focus();
+    }
+
 }
 
-function closeModalForm1(e) {
+function closeModalForm1() {
     if(isModalForm1Open) {
         // lets close it
 
         // unfreeze the body
         document.body.style.position = '';
         document.body.style.top = '';
-        document.body.style.width = ''; 
+        document.body.style.width = '';
         document.body.style.overflow = '';
         modalForm1.style.opacity = '';
 
@@ -90,6 +99,12 @@ function closeModalForm1(e) {
 
         // set the boolean
         isModalForm1Open = false;
+
+        // restore focus to the element that opened the modal
+        if(previousActiveElement) {
+            previousActiveElement.focus();
+            previousActiveElement = null;
+        }
 
     }
 

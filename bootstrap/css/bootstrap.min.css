@@ -36672,17 +36672,36 @@ textarea.form-control-lg {
 .pd-modal-3 .form-control {
   border: 1px solid #f8f9fa;
 }
-.pd-modal-3 .pd-modal-3-card a {
+.pd-modal-3 .pd-btn:hover {
+  background-color: #ffffff;
+}
+.pd-modal-3 .pd-btn:focus-visible {
+  outline: 2px dotted #ffffff;
+}
+.pd-modal-3 .pd-modal-3-card a span {
   color: #ffffff;
   font-weight: 500;
   text-decoration: none;
   font-size: 1.4rem;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 .pd-modal-3 .pd-modal-3-card a img,
 .pd-modal-3 .pd-modal-3-card a svg {
   width: 32px;
   height: 32px;
   margin-right: 8px;
+  fill: #ffffff;
+}
+.pd-modal-3 .pd-modal-3-card a:hover span {
+  color: #CCCCCC;
+}
+.pd-modal-3 .pd-modal-3-card a:hover svg {
+  fill: #CCCCCC;
+}
+.pd-modal-3 .pd-modal-3-card a:focus-visible {
+  outline: 2px dotted #ffffff;
+  outline-offset: 2px;
 }
 
 .pd-modal-3.pd-show {

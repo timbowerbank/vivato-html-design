@@ -288,6 +288,16 @@
         border: 1px solid $light;
     }
 
+    .pd-btn {
+        &:hover {
+            background-color: $white;
+        }
+
+        &:focus-visible {
+            outline: $pd-focus-outline-dark;
+        }
+    }
+
     // .pd-btn {
     // display: inline-block;
     // text-decoration: none;
@@ -311,16 +321,36 @@
     // }
     .pd-modal-3-card {
         a {
-            color: $white;
-            font-weight: $pd-font-weight-heavy;
-            text-decoration: none;
-            font-size: $pd-font-md;
+            span {
+                color: $white;
+                font-weight: $pd-font-weight-heavy;
+                text-decoration: none;
+                font-size: $pd-font-md;
+                transition: color $pd-transition-speed ease;
+            }
+            
 
             img,
             svg {
                 width: 32px;
                 height: 32px;
                 margin-right: 8px;
+                fill: $white;
+            }
+
+            &:hover {
+                span {
+                    color: $pd-primary-hover;
+                }
+
+                svg {
+                    fill: $pd-primary-hover;
+                }
+            }
+
+            &:focus-visible {
+                outline: $pd-focus-outline-dark;
+                outline-offset: $pd-focus-outline-offset-sm;
             }
         }
     }
