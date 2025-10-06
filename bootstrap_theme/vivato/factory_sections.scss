@@ -1813,6 +1813,7 @@
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
+                
 
                 .pd-section-21-card-label {
                     max-width: 80%;
@@ -1821,6 +1822,7 @@
                     font-weight: $pd-font-weight-medium;
                     display: flex;
                     flex-direction: column;
+                    transition: color $pd-transition-speed ease;
 
                     span {
                         font-size: 0.9rem;
@@ -1839,28 +1841,26 @@
                     .pd-section-21-open-close-horizontal {
                         position: absolute;
                         width: 20px;
-                        background: white;
                         height: 2px;
                         left: 0px;
                         top: 9px;
                         transform: rotate(0deg);
                         border-radius: 2px;
-                        background: $primary;
-                        transition: transform 0.4s;
+                        background-color: $primary;
+                        transition: transform $pd-transition-speed ease, background-color $pd-transition-speed ease;
                         pointer-events: none;
                     }
 
                     .pd-section-21-open-close-vertical {
                         position: absolute;
                         width: 20px;
-                        background: white;
                         height: 2px;
                         left: 0px;
                         top: 9px;
                         transform: rotate(90deg);
                         border-radius: 2px;
-                        background: $primary;
-                        transition: transform 0.4s;
+                        background-color: $primary;
+                        transition: transform $pd-transition-speed ease, background-color $pd-transition-speed ease;
                         pointer-events: none;
                     }
                 }
@@ -1873,6 +1873,29 @@
                     .pd-section-21-open-close-vertical {
                         transform: rotate(-45deg);
                     }
+                }
+
+                &:hover {
+                    .pd-section-21-card-label {
+                        color: $pd-primary-hover;
+                    }
+
+                    .pd-section-21-card-toggle {
+
+                        .pd-section-21-open-close-horizontal {
+                            background-color: $pd-primary-hover;
+                        }
+
+                        .pd-section-21-open-close-vertical {
+                            background-color: $pd-primary-hover;
+                        }
+
+                    }
+                }
+
+                &:focus-visible {
+                    outline: $pd-focus-outline;
+                    outline-offset: -4px;
                 }
             }
 

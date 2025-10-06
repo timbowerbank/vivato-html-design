@@ -303,6 +303,31 @@
 
 .pd-btn.pd-btn-info {
     background: $info;
+    color: $white;
+    border: $pd-btn-info-border;
+
+    &:hover {
+        background-color: $white;
+        border: $pd-btn-border-hover-inverted;
+        color: $primary;
+
+        img,
+        svg {
+            fill: $primary;
+        }
+    }
+
+    &:focus-visible {
+        outline: $pd-focus-outline;
+        outline-offset: $pd-focus-outline-offset-lg;
+    }
+}
+
+.pd-btn.pd-btn-info.pd-inverted {
+    &:focus-visible {
+        outline: $pd-focus-outline-dark;
+        outline-offset: $pd-focus-outline-offset-lg;
+    }
 }
 
 .pd-btn-info.pd-btn-lg {

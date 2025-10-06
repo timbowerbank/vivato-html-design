@@ -15753,6 +15753,11 @@ textarea.form-control-lg {
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
+.pd-hero-20 .pd-hero-20-main-img-outer .pd-hero-20-play-icon:focus-visible {
+  outline: 2px dotted #ffffff;
+  outline-offset: 2px;
+  border-radius: 50em;
+}
 .pd-heroesHalf-1 .pd-heroesHalf-1-text-outer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21978,6 +21983,8 @@ textarea.form-control-lg {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 .pd-section-21 .pd-section-21-list-outer .pd-section-21-card .pd-section-21-card-btn .pd-section-21-card-label span {
   font-size: 0.9rem;
@@ -21993,7 +22000,6 @@ textarea.form-control-lg {
 .pd-section-21 .pd-section-21-list-outer .pd-section-21-card .pd-section-21-card-btn .pd-section-21-card-toggle .pd-section-21-open-close-horizontal {
   position: absolute;
   width: 20px;
-  background: white;
   height: 2px;
   left: 0px;
   top: 9px;
@@ -22001,17 +22007,16 @@ textarea.form-control-lg {
       -ms-transform: rotate(0deg);
           transform: rotate(0deg);
   border-radius: 2px;
-  background: #25215F;
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-  transition: transform 0.4s, -webkit-transform 0.4s;
+  background-color: #25215F;
+  -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, -webkit-transform 0.3s ease;
   pointer-events: none;
 }
 .pd-section-21 .pd-section-21-list-outer .pd-section-21-card .pd-section-21-card-btn .pd-section-21-card-toggle .pd-section-21-open-close-vertical {
   position: absolute;
   width: 20px;
-  background: white;
   height: 2px;
   left: 0px;
   top: 9px;
@@ -22019,11 +22024,11 @@ textarea.form-control-lg {
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
   border-radius: 2px;
-  background: #25215F;
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-  transition: transform 0.4s, -webkit-transform 0.4s;
+  background-color: #25215F;
+  -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, -webkit-transform 0.3s ease;
   pointer-events: none;
 }
 .pd-section-21 .pd-section-21-list-outer .pd-section-21-card .pd-section-21-card-btn .pd-section-21-card-toggle.pd-show-content .pd-section-21-open-close-horizontal {
@@ -22035,6 +22040,19 @@ textarea.form-control-lg {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+.pd-section-21 .pd-section-21-list-outer .pd-section-21-card .pd-section-21-card-btn:hover .pd-section-21-card-label {
+  color: #CCCCCC;
+}
+.pd-section-21 .pd-section-21-list-outer .pd-section-21-card .pd-section-21-card-btn:hover .pd-section-21-card-toggle .pd-section-21-open-close-horizontal {
+  background-color: #CCCCCC;
+}
+.pd-section-21 .pd-section-21-list-outer .pd-section-21-card .pd-section-21-card-btn:hover .pd-section-21-card-toggle .pd-section-21-open-close-vertical {
+  background-color: #CCCCCC;
+}
+.pd-section-21 .pd-section-21-list-outer .pd-section-21-card .pd-section-21-card-btn:focus-visible {
+  outline: 2px dotted #25215F;
+  outline-offset: -4px;
 }
 .pd-section-21 .pd-section-21-list-outer .pd-section-21-card .pd-section-21-card-body {
   padding-left: 30px;
@@ -35239,6 +35257,25 @@ textarea.form-control-lg {
 
 .pd-btn.pd-btn-info {
   background: #E84F49;
+  color: #ffffff;
+  border: 1px solid #E84F49;
+}
+.pd-btn.pd-btn-info:hover {
+  background-color: #ffffff;
+  border: 1px solid #E84F49;
+  color: #25215F;
+}
+.pd-btn.pd-btn-info:hover img,
+.pd-btn.pd-btn-info:hover svg {
+  fill: #25215F;
+}
+.pd-btn.pd-btn-info:focus-visible {
+  outline: 2px dotted #25215F;
+  outline-offset: 4px;
+}
+.pd-btn.pd-btn-info.pd-inverted:focus-visible {
+  outline: 2px dotted #ffffff;
+  outline-offset: 4px;
 }
 
 .pd-btn-info.pd-btn-lg {
