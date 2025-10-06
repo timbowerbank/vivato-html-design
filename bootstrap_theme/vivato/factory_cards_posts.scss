@@ -1467,7 +1467,12 @@
                     letter-spacing: $pd-letter-spacing;
 
                     &:hover {
-                        color: darken($white, 10%);
+                        color: $pd-primary-hover;
+                    }
+
+                    &:focus-visible {
+                        outline: $pd-focus-outline-dark;
+                        outline-offset: $pd-focus-outline-offset-sm;
                     }
                 }
 
@@ -1496,6 +1501,11 @@
             &:hover {
                 background-color: $primary;
                 color: $white;
+            }
+
+            &:focus-visible {
+                outline: $pd-focus-outline;
+                outline-offset: $pd-focus-outline-offset-sm;
             }
         }
     }
@@ -1562,6 +1572,12 @@
                         transform: scale(1.1);
                     }
                 }
+
+                &:focus-visible {
+                    outline: $pd-focus-outline-dark;
+                    outline-offset: $pd-focus-outline-offset-sm;
+                    border-radius: 50em;
+                }
             }
         }
 
@@ -1580,38 +1596,50 @@
                 // flex-grow: 1;
                 // padding-top: 15px;
                 // padding-bottom: 30px;
-
                 a {
                     text-decoration: none;
+
                     h3 {
                         font-size: $pd-font-md;
                         font-weight: $pd-font-weight-light;
                         color: $primary;
-                        transform: color $pd-transition-speed ease;
+                        transition: color $pd-transition-speed ease;
 
                         // margin-bottom: 0px;
                     }
 
                     &:hover {
                         h3 {
-                            color: lighten($primary, 10%);
+                            color: $pd-primary-hover;
                         }
                     }
 
+                    &:focus-visible {
+                        outline: none;
+
+                        h3 {
+                            outline: $pd-focus-outline;
+                            outline-offset: $pd-focus-outline-offset-sm;
+                        }
+                    }
                 }
 
                 a.pd-category-link {
                     display: inline-block;
                     font-size: $pd-font-ex-ex-sm;
                     letter-spacing: $pd-letter-spacing;
-                    text-transform: uppercase;;
+                    text-transform: uppercase;
                     background-color: $light;
                     transition: color $pd-transition-speed ease;
 
                     &:hover {
-                        color: lighten($primary, 10%);
+                        color: $pd-primary-hover;
                     }
 
+                    &:focus-visible {
+                        outline: $pd-focus-outline;
+                        outline-offset: $pd-focus-outline-offset-sm;
+                    }
                 }
 
                 p {
@@ -1644,12 +1672,18 @@
                         background-color: $primary;
                         color: $white;
                     }
+
+                    &:focus-visible {
+                        outline: $pd-focus-outline;
+                        outline-offset: $pd-focus-outline-offset-sm;
+                    }
                 }
             }
         }
     }
 
     .pagination {
+
         .page-link {
             border: 1px solid $info;
             background-color: $light;
@@ -1662,8 +1696,9 @@
             }
 
             &:focus {
-                box-shadow: 0 0 0 0.2rem rgba($info, 0.25);
-                border-color: $info;
+                outline: $pd-focus-outline;
+                outline-offset: -4px;
+                box-shadow: none;
             }
         }
 

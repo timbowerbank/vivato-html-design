@@ -16652,6 +16652,11 @@ textarea.form-control-lg {
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
+.pd-heroesHalf-8 .pd-heroesHalf-8-img-outer .pd-heroesHalf-8-play-icon:focus-visible {
+  outline: 2px dotted #ffffff;
+  outline-offset: 2px;
+  border-radius: 50em;
+}
 
 .pd-testimonial-1 {
   border-top: 1px solid #dee2e6;
@@ -29613,7 +29618,11 @@ textarea.form-control-lg {
   letter-spacing: 0.15em;
 }
 .pd-cards-posts-7 .pd-cards-posts-7-category-outer ul li a:hover {
-  color: #e6e6e6;
+  color: #CCCCCC;
+}
+.pd-cards-posts-7 .pd-cards-posts-7-category-outer ul li a:focus-visible {
+  outline: 2px dotted #ffffff;
+  outline-offset: 2px;
 }
 .pd-cards-posts-7 .pd-cards-posts-7-category-outer ul li:last-child {
   border-bottom: none;
@@ -29635,6 +29644,10 @@ textarea.form-control-lg {
 .pd-cards-posts-7 .pd-cards-posts-7-tags-outer a:hover {
   background-color: #25215F;
   color: #ffffff;
+}
+.pd-cards-posts-7 .pd-cards-posts-7-tags-outer a:focus-visible {
+  outline: 2px dotted #25215F;
+  outline-offset: 2px;
 }
 .pd-cards-posts-7 .pd-cards-posts-7-card-outer {
   position: relative;
@@ -29708,6 +29721,11 @@ textarea.form-control-lg {
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
+.pd-cards-posts-7 .pd-cards-posts-7-card-outer .pd-cards-posts-7-play-outer a:focus-visible {
+  outline: 2px dotted #ffffff;
+  outline-offset: 2px;
+  border-radius: 50em;
+}
 .pd-cards-posts-7 .pd-cards-posts-7-card-outer .pd-cards-posts-7-text-content-outer {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
@@ -29737,12 +29755,18 @@ textarea.form-control-lg {
   font-size: 1.4rem;
   font-weight: 300;
   color: #25215F;
-  -webkit-transform: color 0.3s ease;
-      -ms-transform: color 0.3s ease;
-          transform: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 .pd-cards-posts-7 .pd-cards-posts-7-card-outer .pd-cards-posts-7-text-content-outer header a:hover h3, .pd-cards-posts-7 .pd-cards-posts-7-card-outer .pd-cards-posts-7-text-content-outer header a:hover .h3 {
-  color: #342e85;
+  color: #CCCCCC;
+}
+.pd-cards-posts-7 .pd-cards-posts-7-card-outer .pd-cards-posts-7-text-content-outer header a:focus-visible {
+  outline: none;
+}
+.pd-cards-posts-7 .pd-cards-posts-7-card-outer .pd-cards-posts-7-text-content-outer header a:focus-visible h3, .pd-cards-posts-7 .pd-cards-posts-7-card-outer .pd-cards-posts-7-text-content-outer header a:focus-visible .h3 {
+  outline: 2px dotted #25215F;
+  outline-offset: 2px;
 }
 .pd-cards-posts-7 .pd-cards-posts-7-card-outer .pd-cards-posts-7-text-content-outer header a.pd-category-link {
   display: inline-block;
@@ -29754,7 +29778,11 @@ textarea.form-control-lg {
   transition: color 0.3s ease;
 }
 .pd-cards-posts-7 .pd-cards-posts-7-card-outer .pd-cards-posts-7-text-content-outer header a.pd-category-link:hover {
-  color: #342e85;
+  color: #CCCCCC;
+}
+.pd-cards-posts-7 .pd-cards-posts-7-card-outer .pd-cards-posts-7-text-content-outer header a.pd-category-link:focus-visible {
+  outline: 2px dotted #25215F;
+  outline-offset: 2px;
 }
 .pd-cards-posts-7 .pd-cards-posts-7-card-outer .pd-cards-posts-7-text-content-outer header p {
   color: #25215F;
@@ -29783,6 +29811,10 @@ textarea.form-control-lg {
   background-color: #25215F;
   color: #ffffff;
 }
+.pd-cards-posts-7 .pd-cards-posts-7-card-outer .pd-cards-posts-7-text-content-outer .pd-cards-posts-7-card-tags-outer a:focus-visible {
+  outline: 2px dotted #25215F;
+  outline-offset: 2px;
+}
 .pd-cards-posts-7 .pagination .page-link {
   border: 1px solid #E84F49;
   background-color: #f8f9fa;
@@ -29794,9 +29826,10 @@ textarea.form-control-lg {
   color: #ffffff;
 }
 .pd-cards-posts-7 .pagination .page-link:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(232, 79, 73, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(232, 79, 73, 0.25);
-  border-color: #E84F49;
+  outline: 2px dotted #25215F;
+  outline-offset: -4px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 .pd-cards-posts-7 .pagination .page-item.active .page-link {
   background-color: #E84F49;
@@ -30880,6 +30913,15 @@ textarea.form-control-lg {
   border: none !important;
   border-radius: 0%;
   padding: 8px 0px;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.pd-blog-post-3 .pd-intro-heading-sm:hover {
+  color: #CCCCCC;
+}
+.pd-blog-post-3 .pd-intro-heading-sm:focus-visible {
+  outline: 2px dotted #ffffff;
+  outline-offset: 2px;
 }
 @media screen and (max-width: 575px) {
   .pd-blog-post-3 .pd-gradient-full-width-800h {
@@ -30903,6 +30945,10 @@ textarea.form-control-lg {
   font-size: 0.8rem;
   margin-bottom: 0px;
   text-decoration: none;
+}
+.pd-blog-post-3 .pd-blog-post-3-top .pd-blog-label:focus-visible {
+  outline: 2px dotted #ffffff;
+  outline-offset: 2px;
 }
 .pd-blog-post-3 .pd-blog-post-3-top .pd-blog-post-3-img-outer {
   position: relative;
@@ -30955,6 +31001,11 @@ textarea.form-control-lg {
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
+.pd-blog-post-3 .pd-blog-post-3-top .pd-blog-post-3-img-outer .pd-blog-post-3-video-play-outer:focus-visible {
+  outline: 2px dotted #ffffff;
+  outline-offset: 2px;
+  border-radius: 50em;
+}
 .pd-blog-post-3 .pd-blog-post-3-content-outer {
   background: rgba(255, 255, 255, 0.85);
   margin-top: -260px;
@@ -30993,6 +31044,10 @@ textarea.form-control-lg {
 .pd-blog-post-3 .pd-blog-post-3-tag-group a:hover {
   background-color: #ffffff;
   color: #25215F;
+}
+.pd-blog-post-3 .pd-blog-post-3-tag-group a:focus-visible {
+  outline: 2px dotted #ffffff;
+  outline-offset: 2px;
 }
 .pd-blog-post-3 .pd-blog-post-3-links-outer {
   padding: 30px;
@@ -31724,10 +31779,11 @@ textarea.form-control-lg {
   font-weight: 500;
 }
 .pd-text-1 a:hover {
-  color: #342e85;
+  color: #CCCCCC;
 }
 .pd-text-1 a:focus-visible {
   outline: 2px dotted #25215F;
+  outline-offset: 2px;
 }
 .pd-text-1 img {
   display: block;
@@ -35198,6 +35254,10 @@ textarea.form-control-lg {
 }
 .pd-link.pd-inverted svg {
   fill: #ffffff;
+}
+.pd-link.pd-inverted:focus-visible {
+  outline: 2px dotted #ffffff;
+  outline-offset: 2px;
 }
 
 .pd-headline {

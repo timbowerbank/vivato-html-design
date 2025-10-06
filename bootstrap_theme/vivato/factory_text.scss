@@ -76,11 +76,12 @@
         font-weight: $pd-font-weight-heavy;
 
         &:hover {
-            color: lighten($primary, 10%);
+            color: $pd-primary-hover;
         }
 
         &:focus-visible {
-            outline: 2px dotted $primary;
+            outline: $pd-focus-outline;
+            outline-offset: $pd-focus-outline-offset-sm;
         }
     }
 

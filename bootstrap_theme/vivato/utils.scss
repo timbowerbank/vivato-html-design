@@ -342,6 +342,11 @@
     svg {
         fill: $white;
     }
+
+    &:focus-visible {
+        outline: $pd-focus-outline-dark;
+        outline-offset: $pd-focus-outline-offset-sm;
+    }
 }
 
 // headline
