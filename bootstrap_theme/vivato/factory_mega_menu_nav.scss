@@ -42,9 +42,8 @@ $pd-mega-menu-border-color: $secondary;
     margin-bottom: 10px;
 
     &:focus-visible {
-        outline: 2px dotted $info!important;
-        outline-offset: 6px;
-        border-radius: 50em;
+        outline: $pd-focus-outline;
+        outline-offset: $pd-focus-outline-offset-lg;
     }
 }
 
@@ -173,11 +172,21 @@ $pd-mega-menu-border-color: $secondary;
     a {
         text-decoration: none;
         color: $pd-mega-color;
+        transition: color $pd-transition-speed ease;
         font-weight: $pd-mega-font-weight;
         text-transform: capitalize;
 
         svg {
             fill: $info;
+        }
+
+        &:hover {
+            color: $pd-primary-hover;
+        }
+
+        &:focus-visible {
+            outline: $pd-focus-outline;
+            outline-offset: $pd-focus-outline-offset-sm;
         }
     }
 }
@@ -329,6 +338,7 @@ $pd-mega-menu-border-color: $secondary;
             width: 20px;
             height: 20px;
             fill: $pd-mega-menu-icon-color;
+            transition: fill $pd-transition-speed ease;
         }
     }
 
@@ -347,16 +357,15 @@ $pd-mega-menu-border-color: $secondary;
         }
 
         // p {
-        //     font-weight: 300;
-        //     margin-bottom: 0;
-        //     font-size: 0.7rem;
+        // font-weight: 300;
+        // margin-bottom: 0;
+        // font-size: 0.7rem;
         // }
     }
 
-    &:hover,
-    &:focus {
+    &:hover {
         .pd-mega-menu-sub-menu-label-outer {
-            color: #000000;
+            color: $pd-primary-hover;
 
             strong {
                 position: relative;
@@ -369,10 +378,21 @@ $pd-mega-menu-border-color: $secondary;
                 // content: url('/images/design-assets/_vivato/arrow_left_alt_24dp_C895FA_FILL0_wght300_GRAD0_opsz24.svg');
                 // width: 20px;
                 // height: 20px;
-                // // transform: translateY(7px);
+                // transform: translateY(7px);
                 // }
             }
         }
+
+        .pd-mega-menu-sub-menu-icon-outer {
+            svg {
+                fill: $pd-primary-hover;
+            }
+        }
+    }
+
+    &:focus-visible {
+        outline: $pd-focus-outline;
+        outline-offset: $pd-focus-outline-offset-sm;
     }
 }
 
@@ -399,7 +419,7 @@ $pd-mega-menu-border-color: $secondary;
     span {
         display: flex;
         flex-direction: column;
-        transition: transform 0.2s;
+        transition: transform $pd-transition-speed ease;
         margin-bottom: 4px;
         margin-left: 4px;
 
@@ -411,13 +431,12 @@ $pd-mega-menu-border-color: $secondary;
     }
 
     &:hover {
-        color: #000000;
+        color: $pd-primary-hover;
     }
 
     &:focus-visible {
-        outline: 2px dotted $info!important;
-        outline-offset: 8px;
-        border-radius: 50em;
+        outline: $pd-focus-outline;
+        outline-offset: $pd-focus-outline-offset-sm;
     }
 }
 
@@ -515,7 +534,7 @@ $pd-mega-menu-border-color: $secondary;
                 // text-transform: uppercase;
                 font-weight: 700;
                 color: $primary;
-                transition: color 0.2s ease;
+                transition: color $pd-transition-speed ease;
                 font-size: 0.75rem;
             }
 
@@ -524,16 +543,25 @@ $pd-mega-menu-border-color: $secondary;
                 width: 20px;
                 height: 20px;
                 margin-left: 8px;
+                transition: fill $pd-transition-speed ease;
             }
 
             &:hover {
                 strong {
-                    color: #000000;
+                    color: $pd-primary-hover;
                 }
+
+                svg {
+                    fill: $pd-primary-hover;
+                }
+                
             }
 
+            &:focus {
+                outline: $pd-focus-outline;
+                outline-offset: $pd-focus-outline-offset-sm;
+            }
         }
-
     }
 }
 
@@ -593,6 +621,17 @@ $pd-mega-menu-border-color: $secondary;
         font-weight: 700;
         font-size: 0.9rem;
         color: $pd-mega-color;
+        transition: color $pd-transition-speed ease;
+
+        &:hover {
+            color: $pd-primary-hover;
+        }
+
+        &:focus-visible {
+            outline: $pd-focus-outline;
+            outline-offset: $pd-focus-outline-offset-sm;
+        }
+
     }
 
     &:last-child {

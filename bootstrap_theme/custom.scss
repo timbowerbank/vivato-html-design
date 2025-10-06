@@ -5,6 +5,18 @@ $info: #E84F49;
 $black: #231F20;
 $light: #f8f9fa;
 $dark: #343a40;
+$white: #ffffff;
+$pd-primary-hover: #CCCCCC;
+
+// outline light
+$pd-focus-outline: 2px dotted $primary;
+
+// outline dark
+$pd-focus-outline-dark: 2px dotted $white;
+
+// focus offset
+$pd-focus-outline-offset-sm: 2px;
+$pd-focus-outline-offset-lg: 4px;
 
 // nav height
 $pd-nav-height: 87px;
