@@ -767,7 +767,7 @@
     }
 
     .pd-blog-post-3-top {
-        padding-bottom: 260px;
+        padding-bottom: 0px; // was 260px to give overlap
 
         header {
             p {
@@ -856,7 +856,7 @@
         }
 
         background: rgba(255,255,255, 0.85);
-        margin-top: -260px;
+        margin-top: 0px; // was -260px to give overlap
         border-radius: 0 0 $pd-border-radius-sm $pd-border-radius-sm;
     }
 

@@ -30956,7 +30956,7 @@ textarea.form-control-lg {
   }
 }
 .pd-blog-post-3 .pd-blog-post-3-top {
-  padding-bottom: 260px;
+  padding-bottom: 0px;
 }
 .pd-blog-post-3 .pd-blog-post-3-top header p {
   margin-bottom: 0px;
@@ -31030,7 +31030,7 @@ textarea.form-control-lg {
 }
 .pd-blog-post-3 .pd-blog-post-3-content-outer {
   background: rgba(255, 255, 255, 0.85);
-  margin-top: -260px;
+  margin-top: 0px;
   border-radius: 0 0 20px 20px;
 }
 @media screen and (max-width: 575px) {
