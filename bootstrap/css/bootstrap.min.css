@@ -38412,6 +38412,56 @@ textarea.form-control-lg {
   display: block;
 }
 
+.pd-video-1 {
+  position: relative;
+}
+@media (min-width: 1200px) {
+  .pd-video-1 .pd-video-1-video-outer {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.pd-video-1 .pd-video-1-img-placeholder {
+  display: none;
+}
+.pd-video-1 .pd-video-1-img-placeholder.pd-show {
+  display: block;
+}
+.pd-video-1 .pd-video-1-play-btn {
+  position: absolute;
+  display: none;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+}
+.pd-video-1 .pd-video-1-play-btn svg {
+  width: 120px;
+  height: 120px;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.pd-video-1 .pd-video-1-play-btn:hover img,
+.pd-video-1 .pd-video-1-play-btn:hover svg {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.pd-video-1 .pd-video-1-play-btn:focus-visible {
+  outline: 2px dotted #ffffff;
+  outline-offset: 2px;
+  border-radius: 50em;
+}
+.pd-video-1 .pd-video-1-play-btn.pd-show {
+  display: block;
+}
+
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
