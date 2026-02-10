@@ -80,4 +80,12 @@
         background: linear-gradient(rgba($black, 0.9) 0%, rgba($black, 0.85) 20%, rgba($black, 0.85) 80%, rgba($black, 0.9) 100%);
 
     }
+
+    .pd-brand-v {
+        display: none;
+    }
+
+    .pd-brand-v.pd-show {
+        display: block;
+    }
 }
