@@ -38415,6 +38415,16 @@ textarea.form-control-lg {
 .pd-video-1 {
   position: relative;
 }
+.pd-video-1 header, .pd-video-1 footer {
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .pd-video-1 header, .pd-video-1 footer {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media (min-width: 1200px) {
   .pd-video-1 .pd-video-1-video-outer {
     max-width: 1000px;
